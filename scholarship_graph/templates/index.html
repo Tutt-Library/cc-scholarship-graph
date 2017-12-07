@@ -6,7 +6,8 @@
     <div class="row">
         <div class="col-8">
             <h2>Scholarship Database</h2>
-            <form method="POST" action="">
+            <form method="POST" action="{{ url_for('search_triplestore') }}">
+                {{ search_form.csrf_token }}
                 <h3>Search</h3>
                 <div class="form-group">
                     {{ search_form.person.label }}
@@ -20,10 +21,22 @@
                     {{ search_form.keywords.label }}
                     {{ search_form.keywords(class='form-control') }}
                 </div>
-                <input type="submit" class="btn btn-secondary" value="Search"></input> 
+                <div class="btn-group" role="group" aria-label="Search Options">
+                    <input type="submit" class="btn btn-secondary" value="Search"></input> 
+                    <div class="btn-group dropdown">
+                       <button class="btn btn-primary dropdown-toggle" id="browse-dept-menu"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Browse by Department
+                       </button>
+                       <div class="dropdown-menu" aria-labelledby="browse-dept-menu">
+                       {% for row in search_form.department.choices %}
+                           <a class="dropdown-item" href="{{ url_for('org_browsing', uri=row.0) }}">{{ row.1 }}</a>
+                       {% endfor %}
+                       </div>
+                    </div> 
+                    <button class="btn btn-success btn-large">Browse by Subject</button>
+                </div>
             </form>
-            <button class="btn btn-primary btn-large">Browse by Department</button>
-            <button class="btn btn-success btn-large">Browse by Subject</button>
         </div>
         <div class="col-4">
             <div class="card">

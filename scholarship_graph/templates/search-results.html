@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container-fluid">
+    <h2>Search Results</h2>
+    <p class="lead">
+        <strong>Your search terms:</strong>
+        {% for token in query %}{{ token }}{% if not loop.end %},{% endif %}{% endfor %}
+    </p> 
+    <ul>
+        {% for row in people %}
+        <li><a href="{{ url_for('person_view', iri=row.iri) }}">{{ row.name }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock main %}
