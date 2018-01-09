@@ -2,15 +2,31 @@
 
 {% block main %}
 <div class="container-fluid">
-    <h2>Search Results</h2>
-    <p class="lead">
-        <strong>Your search terms:</strong>
-        {% for token in query %}{{ token }}{% if not loop.end %},{% endif %}{% endfor %}
-    </p> 
-    <ul>
-        {% for row in people %}
-        <li><a href="{{ url_for('person_view', iri=row.iri) }}">{{ row.name }}</a></li>
-        {% endfor %}
-    </ul>
+    <div class="row">
+        <section class="col-8">
+            <h2>Search Results {% if people %}{{ people|length }} found{% endif %}</h2>
+            <p class="lead">
+              <strong>Your search terms:</strong>
+              {% if query.person %}
+              <em>Person - </em> {% for token in query.person %}{{ token }}
+              {% if not loop.last %},{% endif %}{% endfor %}
+              {% endif %}
+              {% if query.keywords %}
+              <em>Keywords - </em> 
+              {% for row in query.keywords %}{{ row }}{% if not loop.last %},{% endif %}{% endfor %}
+              {% endif %}
+            </p> 
+        </section>
+        <section class="col-4">
+            <a href="{{ url_for('home') }}" class="btn btn-primary">Back to Search</a>
+        </section>
+    </div>
+            <ul>
+            {% for row in people %}
+                <li><a href="{{ url_for('person_view', iri=row.iri) }}">{{ row.name }}</a>
+                {% if row.statement %}<p>{{ row.statement|safe }}</p>{% endif %}
+                </li>
+            {% endfor %}
+            </ul>
 </div>
 {% endblock main %}
