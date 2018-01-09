@@ -8,9 +8,12 @@ from flask import Flask, render_template, redirect, request, session, url_for
 from .forms import LoginForm, SearchForm
 from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
 from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT
+from rdfframework.connections import ConnManager
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('config.py')
+
+CONNECTION = ConnManager(app.config.get('CONNECTIONS'))
 
 @app.template_filter("get_history")
 def person_history(person_iri):
