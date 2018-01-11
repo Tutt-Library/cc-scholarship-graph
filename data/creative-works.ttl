@@ -1,18 +1,30 @@
+@prefix ns1: <http://> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://doi.org/10.1016/j.jseaes.2015.09.027> a schema:ScholarlyArticle ;
-    schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008> ;
-    schema:name "Subsidence and drowning of a carbonate platform in south-central Mongolia (Gobi Altai region) during the late Eifelian to early Givetian: A synthesis of conodont data, magnetic susceptibility, and paleoecology"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/18e2a0c8-e5d6-11e7-acdb-a41f7283f8d4> .
+<https://doi.org/10.1016/j.jseaes.2015.09.027> a ns1:www.schema.orgScholarlyArticle ;
+    ns1:www.schema.orgpartOf <http://catalog.coloradocollege.edu/82c320d4-f665-11e7-bbd1-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/18e2a0c8-e5d6-11e7-acdb-a41f7283f8d4> a schema:PublicationVolume ;
-    schema:partOf <http://catalog.coloradocollege.edu/35cf6ed8-e5d5-11e7-9b3c-a41f7283f8d4> ;
-    schema:volumeNumber "115" .
+<https://doi.org/10.1177/0003702815615341> a ns1:www.schema.orgScholarlyArticle ;
+    ns1:www.schema.orgpartOf <http://catalog.coloradocollege.edu/82edf999-f665-11e7-8090-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/35cf6ed8-e5d5-11e7-9b3c-a41f7283f8d4> a schema:Periodical ;
-    schema:name "Journal of Asian Earth Sciences"@en .
+<http://catalog.coloradocollege.edu/816c5ad8-f665-11e7-a099-a41f7283f8d4> a ns1:www.schema.orgPeriodical ;
+    ns1:www.schema.orgname "Journal of Asian Earth Sciences"@en .
+
+<http://catalog.coloradocollege.edu/82c320d4-f665-11e7-bbd1-a41f7283f8d4> a ns1:www.schema.orgPublicationVolume ;
+    ns1:www.schema.orgpartOf <http://catalog.coloradocollege.edu/816c5ad8-f665-11e7-a099-a41f7283f8d4> ;
+    ns1:www.schema.orgvolumeNumber "115" .
+
+<http://catalog.coloradocollege.edu/82c320d5-f665-11e7-99f2-a41f7283f8d4> a ns1:www.schema.orgPeriodical ;
+    ns1:www.schema.orgname "Applied Spectroscopy"@en .
+
+<http://catalog.coloradocollege.edu/82edf998-f665-11e7-94ac-a41f7283f8d4> a ns1:www.schema.orgPublicationVolume ;
+    ns1:www.schema.orgissueNumber "1" ;
+    ns1:www.schema.orgpartOf <http://catalog.coloradocollege.edu/82c320d5-f665-11e7-99f2-a41f7283f8d4> ;
+    ns1:www.schema.orgvolumeNumber "70" .
+
+<http://catalog.coloradocollege.edu/82edf999-f665-11e7-8090-a41f7283f8d4> a ns1:www.schema.orgPublicationIssue ;
+    ns1:www.schema.orgpartOf <http://catalog.coloradocollege.edu/82edf998-f665-11e7-94ac-a41f7283f8d4> .
 
