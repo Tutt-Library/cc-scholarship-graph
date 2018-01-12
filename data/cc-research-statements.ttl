@@ -1341,3 +1341,11 @@
             prov:atTime "2017-12-07T15:48:15.418126" ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
+<http://catalog.coloradocollege.edu/cef472dc-f7de-11e7-936d-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Jessy Randall"@en ;
+    schema:accountablePerson <https://orcid.org/0000-0002-5352-9886> ;
+    schema:description "Jessy Randall is the author of several collections of poetry, including, most recently, There Was an Old Woman (Unicorn, 2015) and Suicide Hotline Hold Music (Red Hen, 2016). Her collection of diagram poems made from illustrations in withdrawn library books, How to Tell If You Are Human, will be the next title in Pleiades Press’s visual poetry series, expected fall 2018. Jessy has presented and published on book studies, digital poetry, the publication history of Helen Hunt Jackson’s novel Ramona, and undergraduate use of Special Collections."@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-01-12T21:23:18.502154" ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+

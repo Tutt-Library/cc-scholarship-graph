@@ -39,19 +39,27 @@
             </form>
         </div>
         <div class="col-4">
+            {% if scholar.is_anonymous %}
             <div class="card">
                 <div class="card-header">
-                    CC Single Sign-In
+                     CC Single Sign-In
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ url_for('cc_login') }}" >
+                    <form method="POST" action="{{ url_for('cc_login') }}"  id="cc-login" >
+                    {{ login.csrf_token }}    
                     <div class="form-group">
                         {{ login.username.label }}
                         {{ login.username(class_='form-control') }}
+                        {% if 'username' in login.errors %}
+                        <div class="invalid-feedback">{{ login.errors.get('username') }}</div>
+                        {% endif %}
                     </div>
                     <div class="form-group">
                         {{ login.password.label }}
                         {{ login.password(class_='form-control') }}
+                        {% if 'password' in login.errors %}
+                        <div class="invalid-feedback">{{ login.errors.get('password') }}</div>
+                        {% endif %}
                     </div>
                     <div class="text-center">
                         <input type="submit" class="btn btn-default" value="Sign In"></input>
@@ -59,7 +67,31 @@
                     </form>
                 </div>
             </div>
+            {% else %}
+            <a href="{{ url_for('cc_logout') }}" class="btn btn-lg btn-info">Logout {{ scholar.data.displayName }}</a>
+            <a href="{{ url_for('academic_profile') }}" class="btn btn-lg btn-success">
+                <i class="far fa-address-card"></i> Profile</a>
+            {% endif %}
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block page_js %}
+<script>
+(function() {
+    'use strict';
+    
+    window.addEventListener('load', function() {
+        var form = document.getElementById('cc-login');
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidatity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    }), false);
+})();
+</script>
 {% endblock %}

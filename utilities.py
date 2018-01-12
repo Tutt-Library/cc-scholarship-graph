@@ -163,7 +163,7 @@ people=rdflib.Graph()
 people.parse("C:/CCKnowledgeGraph/tiger-catalog/KnowledgeGraph/cc-people.ttl",format="turtle")
 creative_works=rdflib.Graph()
 # creative_works.parse("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl",format="turtle")
-SCHEMA = rdflib.Namespace("http://www.schema.org")
+SCHEMA = rdflib.Namespace("http://www.schema.org/")
 BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 
 load_citations()

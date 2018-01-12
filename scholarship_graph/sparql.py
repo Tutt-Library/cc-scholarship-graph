@@ -22,9 +22,9 @@ ORG_LISTING = PREFIX + """
 
 SELECT ?iri ?label
 WHERE {
-    ?iri rdf:type schema:CollegeDepartment ; 
-         rdfs:label ?label .
-    OPTIONAL { ?iri rdf:type schema:Library . }
+    ?iri rdfs:label ?label ;
+         rdf:type ?type .
+    FILTER(?type=schema:CollegeDepartment||?type=schema:Library)
 } ORDER BY ?label"""
 
 ORG_PEOPLE = PREFIX + """

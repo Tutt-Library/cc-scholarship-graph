@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h3>Colorado College Scholarship Database</h3>
+    <h1>Academic Profile for {{ scholar.data.displayName }}</h1> 
+    <table class="table table-bordered">
+        <thead>
+            <th>Variable Name</th>
+            <th>Value</th>
+        </thead>
+        <tbody>
+            {% for item in scholar.data|sort %}
+            <tr>
+                <td>{{ item }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock main %}
+
+{% block page_js %}
+
+
+{% endblock %}
