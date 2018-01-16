@@ -245,11 +245,8 @@ def cc_logout():
 @app.route("/")
 def home():
     search_form = SearchForm()
-    result = requests.post(app.config.get("TRIPLESTORE_URL"),
-        data={"query": ORG_LISTING,
-              "format": "json"})
-    bindings = result.json().get('results').get('bindings')
-    for row in bindings:
+    results = CONNECTION.datastore.query(ORG_LISTING)
+    for row in results:
         search_form.department.choices.append(
             (row.get('iri').get('value'),
              row.get('label').get('value')))
