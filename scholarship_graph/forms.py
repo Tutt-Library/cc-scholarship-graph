@@ -1,7 +1,7 @@
 __author__ = "Jeremy Nelson"
 
 from flask_wtf import FlaskForm
-from wtforms import PasswordField, SelectField, StringField
+from wtforms import PasswordField, SelectField, StringField, TextField
 from wtforms.validators import DataRequired
 
 class LoginForm(FlaskForm):
@@ -14,3 +14,8 @@ class SearchForm(FlaskForm):
     department = SelectField("Academic Department", choices=[('nil', 'None')])
     keywords = StringField('Keywords')
 
+class ProfileForm(FlaskForm):
+    family_name = StringField("Family (last) name")
+    given_name = StringField("Given (first) name")
+    orchid = StringField("ORCID")
+    research_stmt = TextField("Research Statement")

@@ -16,6 +16,7 @@ from flask_ldap3_login.forms import LDAPLoginForm
 from .forms import SearchForm
 from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
 from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT
+from rdfframework.configuration import RdfConfigManager
 from rdfframework.connections import ConnManager
 
 app = Flask(__name__, instance_relative_config=True)
@@ -24,7 +25,9 @@ app.config.from_pyfile('config.py')
 login_manager = LoginManager(app)
 ldap_manager = LDAP3LoginManager(app)
 
-CONNECTION = ConnManager(app.config.get('CONNECTIONS'))
+CONFIG_MANAGER = RdfConfigManager(app.config)
+CONNECTION = ConnManager(CONFIG_MANAGER.CONNECTIONS)
+
 USERS = OrderedDict()
 
 class Scholar(UserMixin):
@@ -246,6 +249,7 @@ def cc_logout():
 def home():
     search_form = SearchForm()
     results = CONNECTION.datastore.query(ORG_LISTING)
+    print(CONNECTION.datastore.query("SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o . }"))
     for row in results:
         search_form.department.choices.append(
             (row.get('iri').get('value'),
