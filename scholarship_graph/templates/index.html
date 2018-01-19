@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-8">
             <h2>Scholarship Database</h2>
-            <form method="POST" action="{{ url_for('search_triplestore') }}">
+            <form {#method="POST" action="{{ url_for('search_triplestore') }}"#}>
                 {{ search_form.csrf_token }}
                 <h3>Search</h3>
                 <div class="form-group">
@@ -84,14 +84,16 @@
     
     window.addEventListener('load', function() {
         var form = document.getElementById('cc-login');
-        form.addEventListener('submit', function(event) {
-            if (form.checkValidatity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-        }, false);
-    }), false);
+        var validation = Array.prototype.filter.call(form, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidatity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
 })();
 </script>
 {% endblock %}

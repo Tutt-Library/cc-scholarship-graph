@@ -1,5 +1,7 @@
+"""Flask web application for Colorado College Scholarship Database"""
 __author__ = "Jeremy Nelson"
 
+import datetime
 import re
 import xml.etree.ElementTree as etree
 from collections import OrderedDict
@@ -61,7 +63,7 @@ def user_loader(user_id):
 @app.template_filter("get_history")
 def person_history(person_iri):
     ul = etree.Element("ul")
-    results = CONNECTION.datastore.query(PERSON_HISTORY.format(person_iri))
+    results = CONNECTION.datastore.query(PERSON_HISTORY.format(person_iri), debug=True)
     for row in results:
         li = etree.SubElement(ul, "li")
         li.text = "{} ".format(row.get("rank").get("value"))
@@ -96,22 +98,21 @@ def org_browsing():
     org_iri = request.args.get("uri")
     org_info = {"people":dict(),
                 "url": org_iri, 
-                "years": dict()} 
-    result = requests.post(app.config.get("TRIPLESTORE_URL"),
-        data={"query": ORG_INFO.format(org_iri),
-              "format": "json"})
-    bindings = result.json().get("results").get("bindings")
-    for row in bindings:
+                "years": dict()}
+    now = datetime.datetime.utcnow()
+    org_sparql =  ORG_INFO.format(org_iri, 
+        now.isoformat())
+    results = CONNECTION.datastore.query(org_sparql)
+    for row in results:
         if not "name" in org_info:
             org_info["name"] = row.get("label").get("value")
         year_iri = row.get("year").get("value")
         org_info["years"][year_iri] = {"label": row.get("year_label"),
                                        "people": []}
-    result = requests.post(app.config.get("TRIPLESTORE_URL"),
-        data={"query": ORG_PEOPLE.format(org_iri),
-              "format": "json"})
-    bindings = result.json().get("results").get("bindings")
-    for row in bindings:
+    org_people_sparql = ORG_PEOPLE.format(org_iri, now.isoformat())
+    print(org_people_sparql)
+    people_results = CONNECTION.datastore.query(org_people_sparql)
+    for row in people_results:
         person_iri = row.get("person").get("value")
         event = row.get("event").get("value")
         org_info["years"][event]["people"].append(person_iri)
@@ -249,7 +250,6 @@ def cc_logout():
 def home():
     search_form = SearchForm()
     results = CONNECTION.datastore.query(ORG_LISTING)
-    print(CONNECTION.datastore.query("SELECT (COUNT(*) as ?count) WHERE { ?s ?p ?o . }"))
     for row in results:
         search_form.department.choices.append(
             (row.get('iri').get('value'),
