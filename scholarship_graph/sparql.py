@@ -34,7 +34,7 @@ WHERE {
     FILTER(?type=schema:CollegeDepartment||?type=schema:Library)
 } ORDER BY ?label"""
 
-ORG_PEOPLE = PREFIX + """
+OLD_ORG_PEOPLE = PREFIX + """
 SELECT ?event ?person ?name ?rank ?statement
 WHERE {{
     ?event schema:organizer ?dept ;
@@ -53,6 +53,20 @@ WHERE {{
     FILTER(?end >= "{1}"^^xsd:dateTime) 
 }} ORDER BY ?family"""
 
+ORG_PEOPLE = PREFIX + """
+SELECT ?person ?name ?rank ?statement
+WHERE {{
+    BIND(<{0}> as ?event)
+    ?event ?rank_iri ?person .
+    ?rank_iri rdfs:label ?rank .
+    ?person rdf:type bf:Person ;
+             schema:familyName ?family ;
+             rdfs:label ?name .
+    OPTIONAL {{ ?stmt_iri schema:accountablePerson ?person ;
+                          schema:description ?statement . }}
+      
+}} ORDER BY ?family"""
+
 PERSON_HISTORY = PREFIX + """
 
 SELECT ?org ?event ?year_label ?rank
@@ -61,7 +75,7 @@ WHERE {{
            schema:organizer ?org ;
            rdfs:label ?year_label .
     ?rank_iri rdfs:label ?rank .
-    BIND(<{0}> AS ?person)
+    FILTER(<{0}> = ?person)
 }}"""
 
 PERSON_INFO = PREFIX + """
@@ -71,7 +85,7 @@ WHERE {{
     ?person schema:familyName ?family ;
             schema:givenName ?given ;
             schema:email ?email .
-    BIND(<{0}> AS ?person)
+    FILTER (<{0}> = ?person)
 }}"""
 
 
@@ -80,6 +94,6 @@ SELECT ?statement
 WHERE {{
     ?stmt_iri schema:accountablePerson ?person ;
               schema:description ?statement .
-    BIND(<{0}> AS ?person)
+    FILTER (<{0}> = ?person)
 }}"""
 
