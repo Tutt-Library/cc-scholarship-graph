@@ -36,12 +36,11 @@ def author_lookup(people_graph,lookup_string):
 
 def journal_lookup(creative_works,lookup_string):
 # check the creative works graph for a match on journal title so that duplicates are not created
-    sparql="""SELECT ?name
-              WHERE {{
-              ?name rdf:type bf:name .
-              ?name rdfs:label ?label .
-              FILTER(CONTAINS (?label,"{0}"))
-              }}""".format(lookup_string)
+    sparql="""SELECT ?journal_iri
+	      WHERE {{
+	      ?journal_iri rdf:type schema:Periodical .
+	      ?journal_iri schema:name ?name .
+              FILTER (CONTAINS(?name,'''{0}'''))}}""".format(lookup_string)
 
     results = creative_works.query(sparql)
 
@@ -68,102 +67,211 @@ def unique_IRI(submitted_string):
     journal_url="{}{}".format(submitted_string,uuid.uuid1())
     return journal_url
 
-def load_citations():
-# Take the bibparse data and load it into the creative_works knowledge graph
-    with open('C:/CCKnowledgeGraph/Temp/BibTexTest.txt') as bibtex_file:
-        bibtex_str = bibtex_file.read()
-        bib_database = bibtexparser.loads(bibtex_str)
-    for citation in bib_database.entries:
-        journal_title = citation["journal"]
-        journal_iri = unique_IRI("http://catalog.coloradocollege.edu/")
-        author_string = citation["author"]
-        author_iri=""
-        print(author_string)
-        for name in author_string.split(" and "):
-            if " " in name:
-                author_name_parsed=""
+class Citation(object):
+
+    def __init__(self,raw_citation,creative_works):
+        self.raw_citation=raw_citation
+        self.creative_works=creative_works
+
+    def __unique_IRI__(self):
+        unique_IRI="http://catalog.coloradocollege.edu/{}".format(uuid.uuid1())
+        return rdflib.URIRef(unique_IRI)
+
+    def populate(self):
+        self.__author_string__()
+        self.__CC_author__()
+        self.__year__()
+        self.__abstract__()
+        self.__citation_type__()
+
+    def __author_string__(self):
+        self.author_string=self.raw_citation["author"]
+
+    def __CC_author__(self):
+        
+        # to do: account for multiple CC authors. Currently this will take the last match.
+        # to do: what happens if there are no matches?
+        
+        for name in self.author_string.split(" and "):
+            family_name=""
+            given_name=""
+            author_name_parsed=""
+
+            # reverse last name, first name
+            if "," in name:
+                comma_pos=name.find(",")
+                family_name = name[:comma_pos]
+                given_name = name[comma_pos + 1:]
+                name = given_name + " " + family_name
+
+            # remove initials
+            if "." in name:
                 for part in name.split(" "):
                     if len(part) >= 3:
                         author_name_parsed = author_name_parsed + " "+ part
             else:
-                author_name_parsed = name
-            author_name_parsed = author_name_parsed.lstrip()
-            author_name_parsed = author_name_parsed.rstrip()
-            if str(author_lookup(people,author_name_parsed)) != "None":
-                author_iri = author_iri + str(author_lookup(people,author_name_parsed))
+                author_name_parsed = name    
 
-
-        doi_string = "https://doi.org/" + citation["doi"]
-        article_iri=rdflib.URIRef(doi_string)
-        
-        
-        if "volume" in citation:
-            volume_number = citation["volume"]
-            volume_iri = unique_IRI("http://catalog.coloradocollege.edu/")
-        else:
-            volume_number = ""
-        if "number" in citation:
-            issue_number = citation["number"]
-        else:
-            issue_number = ""
-
-        # add article, with doi as unique identifier
-        # WIP: look to make sure the article is not yet in graph
-        # if article is there, other steps don't need to be taken
-        # more than one CC author can be associated with an article
-        creative_works.add((article_iri,rdflib.RDF.type,SCHEMA.ScholarlyArticle))
-        
-        # add journal, make journal iri
-        # WIP: look to make sure the journal title is not yet in graph
-        # if journal is there, use that identifier
-        journal_iri=rdflib.URIRef(journal_iri)
-        creative_works.add((journal_iri,rdflib.RDF.type,SCHEMA.Periodical))
-        creative_works.add((journal_iri,SCHEMA.name,rdflib.Literal(journal_title,lang="en")))
+            author_name_parsed = author_name_parsed.strip()
+    
+            author_iri=author_lookup(people,author_name_parsed)
             
-        # add volume number, if in the citation
-        # WIP: look to make sure the volume associated with this journal is not yet in graph
-        volume_iri=rdflib.URIRef(volume_iri)
-        if volume_number != "" :
-            creative_works.add((volume_iri,rdflib.RDF.type,SCHEMA.PublicationVolume))
-            creative_works.add((volume_iri,SCHEMA.volumeNumber,rdflib.Literal(volume_number)))
-            creative_works.add((volume_iri,SCHEMA.partOf,journal_iri))
+            if author_iri != None:
+                self.CC_author=author_name_parsed
+                self.author_iri=author_iri
 
-        # add issue number, if in citation
-        # WIP: look to make sure the issue number associated with this journal is not yet in graph
-        if issue_number != "":
-            issue_iri=unique_IRI("http://catalog.coloradocollege.edu/")
-            issue_iri=rdflib.URIRef(issue_iri)
- 
-        if issue_number != "" :
-            creative_works.add((issue_iri,rdflib.RDF.type,SCHEMA.PublicationIssue))
-            creative_works.add((volume_iri,SCHEMA.issueNumber,rdflib.Literal(issue_number)))
-            if volume_number != "":
-                creative_works.add((issue_iri,SCHEMA.partOf,volume_iri))
-            else:
-                creative_works.add((issue_iri,SCHEMA.partOf,journal_iri))
-
-        if volume_number != "" and issue_number != "":
-            creative_works.add((article_iri,SCHEMA.partOf,issue_iri))
-        elif volume_number != "" and issue_number == "":
-            creative_works.add((article_iri,SCHEMA.partOf,volume_iri))
-        elif volume_number == "" and issue_number != "":
-            creative_works.add((article_iri,SCHEMA.partOf,issue_iri))
+    def __year__(self):
+        if "year" in self.raw_citation.keys():
+            self.year = self.raw_citation["year"]         
         else:
-            creative_works.add((article_iri,SCHEMA.partOf,journal_iri))
-        print(journal_iri,journal_title,author_iri,volume_number,issue_number)
+            self.year = "undefined"
 
-        creative_works.add((article_iri,SCHEMA.author,author_iri))
+    def __abstract__(self):
+        if "abstract" in self.raw_citation.keys():
+            self.abstract = self.raw_citation["abstract"]
+        else:
+            self.abstract = "undefined"
 
+    def __citation_type__(self):
+        self.citation_type=self.raw_citation["ENTRYTYPE"]
+        
+                                       
+class Article_Citation(Citation):
+    def __init__(self,raw_citation,creative_works):
+        self.raw_citation=raw_citation
+        self.creative_works=creative_works
+
+    def populate_special(self):
+        self.__journal_title__()
+        self.__doi__()
+        self.__article__()
+        self.__volume__()
+        self.__issue__()
+
+    def __journal_title__(self):
+    # to do: check to make sure this isn't duplicated
+    # to do: issn?
+        self.journal_title = self.raw_citation["journal"]
+        self.journal_string = self.__unique_IRI__()
+        self.journal_iri=rdflib.URIRef(self.journal_string)
+
+    def __article__(self):
+        self.article_title = self.raw_citation["title"]
+        
+    def __doi__(self):
+        # doi is the unique identifier for articles
+        # to do: check for duplicate doi numbers
+        if "doi" in self.raw_citation.keys():
+            self.doi_string = "https://doi.org/" + self.raw_citation["doi"]
+        else:
+            self.doi_string=self.__unique_IRI__()
+        self.doi_iri=rdflib.URIRef(self.doi_string)
+        
+    def __volume__(self):
+        # to do: check for duplicate volumes of the journal title
+        # a citation can have a volume number or none at all
+        self.volume_number="undefined"
+        if "volume" in self.raw_citation.keys():
+            if self.raw_citation["volume"] != "" or self.raw_citation["volume"] != None:
+                self.volume_number = self.raw_citation["volume"]
+                self.volume_iri = self.__unique_IRI__()          
+        
+    def __issue__(self):
+        # to do: check for duplicate issue numbers of the volume of the journal title, or the journal title itself
+        # a journal can have no issue numbers, issue numbers as part of a volume, or issues without volume numbering
+        self.issue_number="undefined"
+        if "number" in self.raw_citation.keys():
+            if (self.raw_citation["number"] !="") or (self.raw_citation["number"] != None):
+                self.issue_number = self.raw_citation["number"]
+                self.issue_iri = self.__unique_IRI__()
+        
+    def add_article(self):
+        # Business logic for adding citations
+
+        # add the journal title
+        self.creative_works.add((self.journal_iri,rdflib.RDF.type,SCHEMA.Periodical))
+        self.creative_works.add((self.journal_iri,SCHEMA.name,rdflib.Literal(self.journal_title,lang="en")))
+
+        # add the article, using doi as unique identifier
+        self.creative_works.add((self.doi_iri,rdflib.RDF.type,SCHEMA.ScholarlyArticle))
+        self.creative_works.add((self.doi_iri,SCHEMA.name,rdflib.Literal(self.article_title,lang="en")))
+        # add doi link or other link here?
+
+
+        # add the author
+        self.creative_works.add((self.doi_iri,SCHEMA.author,self.author_iri))
+        
+        # if there is no volume or issue number, add the article directly to the journal
+        if (self.volume_number == "undefined") and (self.issue_number == "undefined"):
+            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.journal_iri))
+        # if there is a volume but no issue number, add the volume to the journal and add the article to the volume
+        elif (self.volume_number != "undefined") and (self.issue_number == "undefined"):
+            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
+            self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
+            self.creative_works.add((self.volume_iri,SCHEMA.name,rdflib.Literal(self.volume_number)))
+            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.volume_iri))
+        # if there is no volume but there is an issue number, add the the issue to the journal and add the article to the issue
+        elif (self.volume_number == "undefined") and (self.issue_number != "undefined"):
+            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.issueNumber))
+            self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.journal_iri))
+            self.creative_works.add((self.issue_iri,SCHEMA.name,rdflib.Literal(self.issue_number)))
+            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+        # presuming there is a volume and an issue, add the article to the issue, add the issue to the volume, add the volume to the journal
+        else:
+            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
+            self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
+            self.creative_works.add((self.volume_iri,SCHEMA.name,rdflib.Literal(self.volume_number)))
+            self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.volume_iri))
+            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.issueNumber))
+            self.creative_works.add((self.issue_iri,SCHEMA.name,rdflib.Literal(self.issue_number)))
+            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+                
+
+class Book_Citation(Citation):
+    def __init__(self,raw_citation,creative_works):
+        self.raw_citation=raw_citation
+        self.creative_works=creative_works
+
+class Book_Chapter_Citation(Book_Citation):
+    def __init__(self,raw_citation,creative_works):
+        self.raw_citation=raw_citation
+        self.creative_works=creative_works
+
+            
+def load_citations():
+    # Take the bibparse data and load it into the creative_works knowledge graph
+    with open('C:/CCKnowledgeGraph/Temp/BibTexTest2.txt') as bibtex_file:
+        bibtex_str = bibtex_file.read()
+        bib_database = bibtexparser.loads(bibtex_str)
+
+    # remove carriage returns and lower-cap the key values
+    i = 0
+    while i < len(bib_database.entries):
+        for key in bib_database.entries[i].keys():
+            bib_database.entries[i][key]=bib_database.entries[i][key].replace("\n", " ")
+            key = key.lower()
+        i = i + 1
+    
+        
+    for row in bib_database.entries:
+        if row["ENTRYTYPE"]=="article":
+            citation=Article_Citation(row,creative_works)
+            citation.populate()
+            citation.populate_special()
+            citation.add_article()
 
     with open("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl", "wb+") as fo:
         fo.write(creative_works.serialize(format="turtle"))
-	
+
+   
+
 #######################################START########################
 people=rdflib.Graph()
 people.parse("C:/CCKnowledgeGraph/tiger-catalog/KnowledgeGraph/cc-people.ttl",format="turtle")
 creative_works=rdflib.Graph()
-# creative_works.parse("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl",format="turtle")
+creative_works.parse("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl",format="turtle")
 SCHEMA = rdflib.Namespace("http://www.schema.org/")
+creative_works.namespace_manager.bind("schema",SCHEMA)
 BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 
 load_citations()
