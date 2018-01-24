@@ -63,7 +63,7 @@ def user_loader(user_id):
 @app.template_filter("get_history")
 def person_history(person_iri):
     ul = etree.Element("ul")
-    results = CONNECTION.datastore.query(PERSON_HISTORY.format(person_iri), debug=True)
+    results = CONNECTION.datastore.query(PERSON_HISTORY.format(person_iri))
     for row in results:
         li = etree.SubElement(ul, "li")
         li.text = "{} ".format(row.get("rank").get("value"))
@@ -109,13 +109,12 @@ def org_browsing():
         year_iri = row.get("year").get("value")
         org_info["years"][year_iri] = {"label": row.get("year_label"),
                                        "people": []}
-    org_people_sparql = ORG_PEOPLE.format(org_iri, now.isoformat())
-    print(org_people_sparql)
+    event_uri = list(org_info["years"].keys())[0]
+    org_people_sparql = ORG_PEOPLE.format(event_uri)
     people_results = CONNECTION.datastore.query(org_people_sparql)
     for row in people_results:
         person_iri = row.get("person").get("value")
-        event = row.get("event").get("value")
-        org_info["years"][event]["people"].append(person_iri)
+        org_info["years"][event_uri]["people"].append(person_iri)
         org_info["people"][person_iri] = {
             "name": row.get("name").get("value"),
             "rank": row.get("rank").get("value"),
@@ -138,7 +137,8 @@ def org_browsing():
 def person_view():
     person_iri = request.args.get("iri")
     person_info = {"url": person_iri}
-    results = CONNECTION.datastore.query(PERSON_INFO.format(person_iri))
+    sparql = PERSON_INFO.format(person_iri)
+    results = CONNECTION.datastore.query(sparql)
     for row in results:
         email = row.get('email').get('value')
         if "email" in person_info:
@@ -155,6 +155,7 @@ def search_results():
     query = session.get("query", {})
     results = __people_search__(query['person'])
     results.extend(__keyword_search__(query['keywords']))
+    print("In search results {}".format(results))
     return render_template("search-results.html",
         query=query,
         people=results)
@@ -234,7 +235,6 @@ def cc_login():
     """Login Method """
     form = LDAPLoginForm()
     validation = form.validate_on_submit()
-    print(validation, form.errors)
     if validation:
         login_user(form.user)
         return redirect(url_for('academic_profile'))
