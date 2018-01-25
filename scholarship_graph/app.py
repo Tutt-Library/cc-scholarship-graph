@@ -148,7 +148,6 @@ def person_view():
         person_info["familyName"] = row.get("family").get("value")
         person_info["email"] = [email,]
     citation_sparql = CITATION.format(person_iri)
-    print(citation_sparql)
     citations_result = CONNECTION.datastore.query(citation_sparql)
     for row in citations_result:
         person_info["citations"].append(row)
@@ -160,7 +159,6 @@ def search_results():
     query = session.get("query", {})
     results = __people_search__(query['person'])
     results.extend(__keyword_search__(query['keywords']))
-    print("In search results {}".format(results))
     return render_template("search-results.html",
         query=query,
         people=results)

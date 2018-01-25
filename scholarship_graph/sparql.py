@@ -13,8 +13,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>"""
 CITATION = PREFIX + """
 SELECT DISTINCT ?article ?name ?datePublished
 WHERE {{
-	?article rdf:type schema:ScholarlyArticle .
-	?article schema:author ?author .
+	?article rdf:type schema:ScholarlyArticle ;
+                 schema:name ?name ;
+	         schema:author ?author .
 	OPTIONAL {{?article schema:datePublished ?datePublished.}}
 	FILTER(<{0}> = ?author)
 	}}"""

@@ -27,9 +27,8 @@
             {% endfor %}
 
 		<h3>Works</h3>
-		 {{ info.citations  	}}
 		{% for row in info.citations %}
-			<p>{{ row }}</p>
+			<p><em><a href="{{ row.article.value }}">{{ row.name.value }}</a></em> ({{ row.datePublished.value }})</p>
 		{% endfor %}
 			
         </div>
