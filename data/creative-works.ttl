@@ -4,278 +4,287 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://catalog.coloradocollege.edu/7c9b68ed-0134-11e8-aa2a-a41f7283f8d4> a schema:ScholarlyArticle ;
+<http://catalog.coloradocollege.edu/898821df-0200-11e8-9345-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/b5dbbd7a-b0e1-11e6-b247-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "Ours"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c9b68ef-0134-11e8-a60a-a41f7283f8d4> .
+    schema:pageEnd "630" ;
+    schema:pageStart "629" ;
+    schema:partOf <http://catalog.coloradocollege.edu/898f4601-0200-11e8-88a7-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f5f199-0135-11e8-b496-a41f7283f8d4> a schema:ScholarlyArticle ;
+<http://catalog.coloradocollege.edu/cb3b051f-01fe-11e8-b6a5-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/b5dbbd7a-b0e1-11e6-b247-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "Ours"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f5f19b-0135-11e8-b8f0-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/a73f7176-0132-11e8-bc3d-a41f7283f8d4> a schema:Periodical ;
-    schema:name "FRONTIERS IN IMMUNOLOGY"@en .
-
-<http://catalog.coloradocollege.edu/a74b584c-0132-11e8-b7bd-a41f7283f8d4> a schema:Periodical ;
-    schema:name "AMERICAN ANTHROPOLOGIST"@en .
-
-<http://catalog.coloradocollege.edu/a77fb678-0132-11e8-aec0-a41f7283f8d4> a schema:Periodical ;
-    schema:name "PSYCHONOMIC BULLETIN \\& REVIEW"@en .
-
-<http://catalog.coloradocollege.edu/a7c980f8-0132-11e8-9506-a41f7283f8d4> a schema:Periodical ;
-    schema:name "TERRA NOVA"@en .
-
-<http://catalog.coloradocollege.edu/a8ae0498-0132-11e8-af98-a41f7283f8d4> a schema:Periodical ;
-    schema:name "JOURNAL OF COMPARATIVE NEUROLOGY"@en .
-
-<http://catalog.coloradocollege.edu/a8b9eb76-0132-11e8-a5f2-a41f7283f8d4> a schema:Periodical ;
-    schema:name "TRANSACTIONS OF THE CHARLES S PEIRCE SOCIETY"@en .
-
-<http://catalog.coloradocollege.edu/a8d41a8c-0132-11e8-a276-a41f7283f8d4> a schema:Periodical ;
-    schema:name "HUDSON REVIEW"@en .
-
-<http://catalog.coloradocollege.edu/a8d41a8d-0132-11e8-a597-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:name "Ours"@en .
-
-<http://catalog.coloradocollege.edu/d81c2b81-0133-11e8-aa7b-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:author <http://catalog.coloradocollege.edu/b5dbbd7a-b0e1-11e6-b247-005056c00008> ;
-    schema:name "Ours"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/d81c2b83-0133-11e8-a4df-a41f7283f8d4> .
+    schema:pageEnd "630" ;
+    schema:pageStart "629" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb422941-01fe-11e8-aa73-a41f7283f8d4> .
 
 <https://doi.org/10.1002/cne.24022> a schema:ScholarlyArticle ;
+    schema:about "Despite extensive investigations of the neocortex in the domestic cat, little is known about neuronal morphology in larger felids. To this end, the present study characterized and quantified the somatodendritic morphology of neocortical neurons in prefrontal, motor, and visual cortices of the Siberian tiger (Panthera tigris altaica) and clouded leopard (Neofelis nebulosa). After neurons were stained with a modified Golgi technique (N = 194), dendritic branching and spine distributions were analyzed using computer-assisted morphometry. Qualitatively, aspiny and spiny neurons in both species appeared morphologically similar to those observed in the domestic cat. Although the morphology of spiny neurons was diverse, with the presence of extraverted, inverted, horizontal, and multiapical pyramidal neurons, the most common variant was the typical pyramidal neuron. Gigantopyramidal neurons in the motor cortex were extremely large, confirming the observation of Brodmann ({[}1909] Vergleichende Lokalisationlehre der Grosshirnrinde in ihren Prinzipien dargestellt auf Grund des Zellenbaues. Leipzig, Germany: J.A. Barth), who found large somata for these neurons in carnivores in general, and felids in particular. Quantitatively, a MARSplines analysis of dendritic measures differentiated typical pyramidal neurons between the Siberian tiger and the clouded leopard with 93\\% accuracy. In general, the dendrites of typical pyramidal neurons were more complex in the tiger than in the leopards. Moreover, dendritic measures in tiger pyramidal neurons were disproportionally large relative to body/brain size insofar as they were nearly as extensive as those observed in much larger mammals (e.g., African elephant). Comparison of neuronal morphology in a more diverse collection of larger felids may elucidate the comparative context for the relatively large size of the pyramidal neurons observed in the present study. (C) 2016 Wiley Periodicals, Inc." ;
     schema:author <http://catalog.coloradocollege.edu/a34607ca-b0f4-11e6-ac87-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "Neocortical Neuronal Morphology in the Siberian Tiger (Panthera tigris altaica) and the Clouded Leopard (Neofelis nebulosa)"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c839b38-0134-11e8-a7e0-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/98f12ee4-0135-11e8-8a3e-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/d8045dcc-0133-11e8-a2ff-a41f7283f8d4> .
+    schema:pageEnd "3665" ;
+    schema:pageStart "3641" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8979d9a9-0200-11e8-aac2-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/cb1c1349-01fe-11e8-b43d-a41f7283f8d4> .
+
+<https://doi.org/10.1016/j.jseaes.2015.09.027> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Subsidence and drowning of a carbonate platform in south-central Mongolia (Gobi Altai region) during the late Eifelian to early Givetian: A synthesis of conodont data, magnetic susceptibility, and paleoecology"@en ;
+    schema:pageEnd "213" ;
+    schema:pageStart "204" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8c37593a-01fe-11e8-a4b8-a41f7283f8d4> .
 
 <https://doi.org/10.1111/aman.12738> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/77321234-b0e5-11e6-aa8c-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "The Moroccan Women's Rights Movement"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b3fe0ba-0134-11e8-b8fa-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/979ccace-0135-11e8-8aff-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/d6b71dd6-0133-11e8-8757-a41f7283f8d4> .
+    schema:pageEnd "894" ;
+    schema:pageStart "893" ;
+    schema:partOf <http://catalog.coloradocollege.edu/88361f2f-0200-11e8-bc04-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/c9c7af40-01fe-11e8-9f1e-a41f7283f8d4> .
 
 <https://doi.org/10.1111/ter.12235> a schema:ScholarlyArticle ;
+    schema:about "The Himalayan Foreland Basin in the Ganga Valley is key to assessing the pre-collision relationship between cratonic India and the Himalaya - the world's largest mountain chain. The subsurface Ganga Supergroup, representing the sedimentary basement of the Ganga Valley, has been interpreted as a northern extension of the Proterozoic Vindhyan Supergroup in cratonic India. This interpretation is contentious because the depositional age of the Ganga Supergroup is not resolved: whereas the lower Ganga Supergroup is widely regarded as Proterozoic, the upper Ganga Supergroup has been variously inferred to include Neoproterozoic, lower Palaeozoic, or Cretaceous strata. Here, we integrate biostratigraphic and detrital zircon data from drill cores to show that the entire Ganga Supergroup is likely Proterozoic and can be correlated with Proterozoic successions on the northern Indian craton and in the Lesser Himalaya. This helps redefine the first-order stratigraphic architecture and indicates broad depositional continuity along the northern Indian margin during the Proterozoic." ;
     schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "Biostratigraphic and detrital zircon age constraints on the basement of the Himalayan Foreland Basin: Implications for a Proterozoic link to the Lesser Himalaya and cratonic India"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7bb2228a-0134-11e8-913e-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/98116dfa-0135-11e8-82d8-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/d726fe44-0133-11e8-9540-a41f7283f8d4> .
+    schema:pageEnd "426" ;
+    schema:pageStart "419" ;
+    schema:partOf <http://catalog.coloradocollege.edu/889edb83-0200-11e8-a44b-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/ca3eb3cd-01fe-11e8-a256-a41f7283f8d4> .
+
+<https://doi.org/10.1177/0003702815615341> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/8e5ecb8c-f593-11e7-9016-a41f7283f8d4> ;
+    schema:datePublished "2016" ;
+    schema:name "Nondestructive Determination of the Age of 20th-Century Oil-Binder Ink Prints Using Attenuated Total Reflection Fourier Transform Infrared Spectroscopy (ATR FT-IR): A Case Study with Postage Stamps from the Lodz Ghetto"@en ;
+    schema:pageEnd "173" ;
+    schema:pageStart "162" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8cf8284b-01fe-11e8-a706-a41f7283f8d4> .
 
 <https://doi.org/10.2979/trancharpeirsoc.52.1.03> a schema:ScholarlyArticle ;
+    schema:about "This essay makes the case that one of the most significant errors in aesthetic theory is its failure to account for art as a creative act that emerges from the temporal flow of lived experience. Drawing on John Dewey's aesthetics and contemporary poetics, it articulates a view of creative action in terms of temporal experience. It begins by showing why time must be considered central to aesthetic theory, drawing a connection between time and what Dewey calls the logic of qualitative thought. It then distinguishes between time as a temporal ordering and time as a temporal quality of creative action. Finally, it argues that creative action is only possible because it is a temporally emergent process that is qualitatively experienced. As a result of placing temporality at its core, aesthetic theory shifts from a concern with the products of the art world to the practices of creative action." ;
     schema:author <https://orcid.org/0000-0002-5976-3083> ;
+    schema:datePublished "2016" ;
     schema:name "Time and the Creative Act"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c8f820c-0134-11e8-ab1b-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/98f39038-0135-11e8-92d6-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/d8150760-0133-11e8-9a64-a41f7283f8d4> .
+    schema:pageEnd "61" ;
+    schema:pageStart "47" ;
+    schema:partOf <http://catalog.coloradocollege.edu/897e9c64-0200-11e8-bf61-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/cb2f1e4b-01fe-11e8-8e78-a41f7283f8d4> .
 
 <https://doi.org/10.3389/fimmu.2016.00607> a schema:ScholarlyArticle ;
+    schema:about "Epstein-Barr virus (EBV) is a human.-herpesvirus that establishes latency and lifelong infection in host B cells while achieving a balance with the host immune response. When the immune system is perturbed through immunosuppression or immunodeficiency, however, these latently infected B cells can give rise to aggressive B cell lymphomas. Natural killer (NK) cells are regarded as critical in the early immune response to viral infection, but their role in controlling expansion of infected B cells is not understood. Here, we report that NK cells from healthy human donors display increased killing of autologous B lymphoblastoid cell lines (LCLs) harboring latent EBV compared to primary B cells. Coculture of NK cells with autologous EBV+ LCL identifies an NK cell population that produces IFN gamma and mobilizes the cytotoxic granule protein CD107a. Multi-parameter flow cytometry and Boolean analysis reveal that these functional cells are enriched for expression of the NK cell receptor NKG2A. Further, NKG2A(+) NK cells more efficiently lyse autologous LCL than do NKG2A(-) NK cells. More specifically, NKG2A(+) 2B4(+) CD16(-)CD57(-)NKG2C(-)NKG2D(+) cells constitute the predominant NK cell population that responds to latently infected autologous EBV+ B cells. Thus, a subset of NK cells is enhanced for the ability to recognize and eliminate autologous, EBV-infected transformed cells, laying the groundwork for harnessing this subset for therapeutic use in EBV+ malignancies." ;
     schema:author <http://catalog.coloradocollege.edu/cc42a5e4-b0f0-11e6-8579-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "NKG2A-Expressing Natural Killer Cells Dominate the Response to Autologous Lymphoblastoid Cells Infected with Epstein-Barr Virus"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b38bc99-0134-11e8-9263-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/9798080d-0135-11e8-9cde-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/d6a67441-0133-11e8-b839-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/8820b2d9-0200-11e8-8fc0-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/c976c09c-01fe-11e8-9b30-a41f7283f8d4> .
 
 <https://doi.org/10.3758/s13423-016-1055-0> a schema:ScholarlyArticle ;
+    schema:about "We used a novel task-a blackjack game that naturally involves mental summation of numerical values-to investigate the role of attention in the mental number line (MNL) and to provide insight into the ecological validity of this representational format. By analyzing the spatial position of participants' spontaneous, task-irrelevant eye movements, we avoided some of the limitations of previous research on the MNL, in which the findings could be attributed to task-specific factors such as the use of overt spatial cues. In two experiments, we found that eye movements along the horizontal axis reflected the overall numerical value of participants' hands, with smaller-value hands eliciting fixations toward the left of the screen and larger-value hands eliciting fixations toward the right. This pattern held even when controlling for the number of cards in the hand and the value of the card most recently dealt-suggesting that the effects were driven by mental summation of values, not merely by the processing of serial order or individual numbers. Vertical eye movements, in contrast, reflected hand value less reliably. In showing that spontaneous eye movements along the horizontal axis track the magnitude of internally computed sums in an ecologically relevant task, our findings provide evidence for a dynamic MNL that supports magnitude-driven shifts of attention and that may be recruited during everyday forms of numerical reasoning." ;
     schema:author <http://catalog.coloradocollege.edu/a26c8434-b0f4-11e6-88db-005056c00008> ;
+    schema:datePublished "2016" ;
     schema:name "Gamble on gaze: Eye movements reflect the numerical value of blackjack hands"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b6ab966-0134-11e8-929e-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/97c5421a-0135-11e8-81b0-a41f7283f8d4>,
-        <http://catalog.coloradocollege.edu/d6e1f684-0133-11e8-b8cb-a41f7283f8d4> .
+    schema:pageEnd "1981" ;
+    schema:pageStart "1974" ;
+    schema:partOf <http://catalog.coloradocollege.edu/885c3525-0200-11e8-98b7-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/c9f287e9-01fe-11e8-8b34-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/7b38bc98-0134-11e8-8ee8-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/8820b2d8-0200-11e8-bd83-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1664-3224" ;
     schema:name "FRONTIERS IN IMMUNOLOGY"@en .
 
-<http://catalog.coloradocollege.edu/7b38bc99-0134-11e8-9263-a41f7283f8d4> a schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/8820b2d9-0200-11e8-8fc0-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "7" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b38bc98-0134-11e8-8ee8-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/8820b2d8-0200-11e8-bd83-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/7b3fe0b8-0134-11e8-8661-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/882efb14-0200-11e8-bfff-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1548-1433" ;
+    schema:issn "0002-7294" ;
     schema:name "AMERICAN ANTHROPOLOGIST"@en .
 
-<http://catalog.coloradocollege.edu/7b3fe0b9-0134-11e8-8a79-a41f7283f8d4> schema:name "118" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b3fe0b8-0134-11e8-8661-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7b3fe0ba-0134-11e8-b8fa-a41f7283f8d4> schema:name "4" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b3fe0b9-0134-11e8-8a79-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7b6ab964-0134-11e8-bbb3-a41f7283f8d4> a schema:Periodical ;
-    schema:name "PSYCHONOMIC BULLETIN \\& REVIEW"@en .
-
-<http://catalog.coloradocollege.edu/7b6ab965-0134-11e8-90fe-a41f7283f8d4> schema:name "23" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b6ab964-0134-11e8-bbb3-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7b6ab966-0134-11e8-929e-a41f7283f8d4> schema:name "6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7b6ab965-0134-11e8-90fe-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7bb22288-0134-11e8-81b2-a41f7283f8d4> a schema:Periodical ;
-    schema:name "TERRA NOVA"@en .
-
-<http://catalog.coloradocollege.edu/7bb22289-0134-11e8-bb87-a41f7283f8d4> schema:name "28" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7bb22288-0134-11e8-81b2-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7bb2228a-0134-11e8-913e-a41f7283f8d4> schema:name "6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7bb22289-0134-11e8-bb87-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7c839b36-0134-11e8-82ba-a41f7283f8d4> a schema:Periodical ;
-    schema:name "JOURNAL OF COMPARATIVE NEUROLOGY"@en .
-
-<http://catalog.coloradocollege.edu/7c839b37-0134-11e8-9308-a41f7283f8d4> schema:name "524" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c839b36-0134-11e8-82ba-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7c839b38-0134-11e8-a7e0-a41f7283f8d4> schema:name "17" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c839b37-0134-11e8-9308-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7c8f820a-0134-11e8-9a88-a41f7283f8d4> a schema:Periodical ;
-    schema:name "TRANSACTIONS OF THE CHARLES S PEIRCE SOCIETY"@en .
-
-<http://catalog.coloradocollege.edu/7c8f820b-0134-11e8-899a-a41f7283f8d4> schema:name "52" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c8f820a-0134-11e8-9a88-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7c8f820c-0134-11e8-ab1b-a41f7283f8d4> schema:name "1" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c8f820b-0134-11e8-899a-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7c9b68ec-0134-11e8-a4e5-a41f7283f8d4> a schema:Periodical ;
-    schema:name "HUDSON REVIEW"@en .
-
-<http://catalog.coloradocollege.edu/7c9b68ee-0134-11e8-b0e0-a41f7283f8d4> schema:name "68" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c9b68ec-0134-11e8-a4e5-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/7c9b68ef-0134-11e8-a60a-a41f7283f8d4> schema:name "4" ;
-    schema:partOf <http://catalog.coloradocollege.edu/7c9b68ee-0134-11e8-b0e0-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/9798080c-0135-11e8-8f52-a41f7283f8d4> a schema:Periodical ;
-    schema:name "FRONTIERS IN IMMUNOLOGY"@en .
-
-<http://catalog.coloradocollege.edu/9798080d-0135-11e8-9cde-a41f7283f8d4> a schema:volumeNumber ;
-    schema:name "7" ;
-    schema:partOf <http://catalog.coloradocollege.edu/9798080c-0135-11e8-8f52-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/979ccacc-0135-11e8-ad7b-a41f7283f8d4> a schema:Periodical ;
-    schema:name "AMERICAN ANTHROPOLOGIST"@en .
-
-<http://catalog.coloradocollege.edu/979ccacd-0135-11e8-982e-a41f7283f8d4> a schema:issueNumber,
-        schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/88361f2e-0200-11e8-93a6-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "118" ;
-    schema:partOf <http://catalog.coloradocollege.edu/979ccacc-0135-11e8-ad7b-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/882efb14-0200-11e8-bfff-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/979ccace-0135-11e8-8aff-a41f7283f8d4> schema:name "4" ;
-    schema:partOf <http://catalog.coloradocollege.edu/979ccacd-0135-11e8-982e-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/88361f2f-0200-11e8-bc04-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/88361f2e-0200-11e8-93a6-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/97c54218-0135-11e8-b33c-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/8859d3c2-0200-11e8-b175-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1531-5320" ;
+    schema:issn "1069-9384" ;
     schema:name "PSYCHONOMIC BULLETIN \\& REVIEW"@en .
 
-<http://catalog.coloradocollege.edu/97c54219-0135-11e8-ad86-a41f7283f8d4> a schema:issueNumber,
-        schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/885c3524-0200-11e8-b28f-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "23" ;
-    schema:partOf <http://catalog.coloradocollege.edu/97c54218-0135-11e8-b33c-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/8859d3c2-0200-11e8-b175-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/97c5421a-0135-11e8-81b0-a41f7283f8d4> schema:name "6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/97c54219-0135-11e8-ad86-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/885c3525-0200-11e8-98b7-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/885c3524-0200-11e8-b28f-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98116df8-0135-11e8-94c5-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/889c7a24-0200-11e8-9e61-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1365-3121" ;
+    schema:issn "0954-4879" ;
     schema:name "TERRA NOVA"@en .
 
-<http://catalog.coloradocollege.edu/98116df9-0135-11e8-9a89-a41f7283f8d4> a schema:issueNumber,
-        schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/889edb82-0200-11e8-945d-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "28" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98116df8-0135-11e8-94c5-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/889c7a24-0200-11e8-9e61-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98116dfa-0135-11e8-82d8-a41f7283f8d4> schema:name "6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98116df9-0135-11e8-9a89-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/889edb83-0200-11e8-a44b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/889edb82-0200-11e8-945d-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f12ee2-0135-11e8-a429-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/897516e8-0200-11e8-8fd6-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1096-9861" ;
+    schema:issn "0021-9967" ;
     schema:name "JOURNAL OF COMPARATIVE NEUROLOGY"@en .
 
-<http://catalog.coloradocollege.edu/98f12ee3-0135-11e8-b21e-a41f7283f8d4> a schema:issueNumber,
-        schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/8979d9a8-0200-11e8-a15b-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "524" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f12ee2-0135-11e8-a429-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/897516e8-0200-11e8-8fd6-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f12ee4-0135-11e8-8a3e-a41f7283f8d4> schema:name "17" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f12ee3-0135-11e8-b21e-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/8979d9a9-0200-11e8-aac2-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "17" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8979d9a8-0200-11e8-a15b-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f39036-0135-11e8-9030-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/897e9c62-0200-11e8-b527-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1558-9587" ;
+    schema:issn "0009-1774" ;
     schema:name "TRANSACTIONS OF THE CHARLES S PEIRCE SOCIETY"@en .
 
-<http://catalog.coloradocollege.edu/98f39037-0135-11e8-b6d8-a41f7283f8d4> a schema:issueNumber,
-        schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/897e9c63-0200-11e8-9fd6-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "52" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f39036-0135-11e8-9030-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/897e9c62-0200-11e8-b527-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f39038-0135-11e8-92d6-a41f7283f8d4> schema:name "1" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f39037-0135-11e8-b6d8-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/897e9c64-0200-11e8-bf61-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/897e9c63-0200-11e8-9fd6-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f5f198-0135-11e8-8a0b-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/898821de-0200-11e8-b1fe-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "2325-5935" ;
+    schema:issn "0018-702X" ;
     schema:name "HUDSON REVIEW"@en .
 
-<http://catalog.coloradocollege.edu/98f5f19a-0135-11e8-a339-a41f7283f8d4> a schema:issueNumber,
-        schema:volumeNumber ;
+<http://catalog.coloradocollege.edu/898f4600-0200-11e8-979e-a41f7283f8d4> a schema:volumeNumber ;
     schema:name "68" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f5f198-0135-11e8-8a0b-a41f7283f8d4> .
+    schema:partOf <http://catalog.coloradocollege.edu/898821de-0200-11e8-b1fe-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/98f5f19b-0135-11e8-b8f0-a41f7283f8d4> schema:name "4" ;
-    schema:partOf <http://catalog.coloradocollege.edu/98f5f19a-0135-11e8-a339-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/898f4601-0200-11e8-88a7-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/898f4600-0200-11e8-979e-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d6a67440-0133-11e8-9dad-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/8ba162d8-01fe-11e8-8fd3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Asian Earth Sciences"@en .
+
+<http://catalog.coloradocollege.edu/8c37593a-01fe-11e8-a4b8-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "115" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8ba162d8-01fe-11e8-8fd3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/8cabfc68-01fe-11e8-bb18-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Applied Spectroscopy"@en .
+
+<http://catalog.coloradocollege.edu/8cf8284a-01fe-11e8-b2f6-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "70" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8cabfc68-01fe-11e8-bb18-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/8cf8284b-01fe-11e8-a706-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8cf8284a-01fe-11e8-b2f6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/c8d744c2-01fe-11e8-af45-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1664-3224" ;
     schema:name "FRONTIERS IN IMMUNOLOGY"@en .
 
-<http://catalog.coloradocollege.edu/d6a67441-0133-11e8-b839-a41f7283f8d4> schema:name "7" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d6a67440-0133-11e8-9dad-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/c976c09c-01fe-11e8-9b30-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c8d744c2-01fe-11e8-af45-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d6b71dd4-0133-11e8-9939-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/c9c7af3e-01fe-11e8-9e55-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1548-1433" ;
+    schema:issn "0002-7294" ;
     schema:name "AMERICAN ANTHROPOLOGIST"@en .
 
-<http://catalog.coloradocollege.edu/d6b71dd5-0133-11e8-8b17-a41f7283f8d4> schema:name "118" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d6b71dd4-0133-11e8-9939-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/c9c7af3f-01fe-11e8-89f8-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "118" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c9c7af3e-01fe-11e8-9e55-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d6b71dd6-0133-11e8-8757-a41f7283f8d4> schema:name "4" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d6b71dd5-0133-11e8-8b17-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/c9c7af40-01fe-11e8-9f1e-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c9c7af3f-01fe-11e8-89f8-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d6e1f682-0133-11e8-b057-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/c9f0268a-01fe-11e8-9539-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1531-5320" ;
+    schema:issn "1069-9384" ;
     schema:name "PSYCHONOMIC BULLETIN \\& REVIEW"@en .
 
-<http://catalog.coloradocollege.edu/d6e1f683-0133-11e8-8f0f-a41f7283f8d4> schema:name "23" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d6e1f682-0133-11e8-b057-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/c9f287e8-01fe-11e8-a849-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "23" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c9f0268a-01fe-11e8-9539-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d6e1f684-0133-11e8-b8cb-a41f7283f8d4> schema:name "6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d6e1f683-0133-11e8-8f0f-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/c9f287e9-01fe-11e8-8b34-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c9f287e8-01fe-11e8-a849-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d726fe42-0133-11e8-85cf-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/ca378fac-01fe-11e8-8d6f-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1365-3121" ;
+    schema:issn "0954-4879" ;
     schema:name "TERRA NOVA"@en .
 
-<http://catalog.coloradocollege.edu/d726fe43-0133-11e8-a5ab-a41f7283f8d4> schema:name "28" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d726fe42-0133-11e8-85cf-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/ca3eb3cc-01fe-11e8-80b4-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "28" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ca378fac-01fe-11e8-8d6f-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d726fe44-0133-11e8-9540-a41f7283f8d4> schema:name "6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d726fe43-0133-11e8-a5ab-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/ca3eb3cd-01fe-11e8-a256-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ca3eb3cc-01fe-11e8-80b4-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d8045dca-0133-11e8-aa6c-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/cb175092-01fe-11e8-9ab0-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1096-9861" ;
+    schema:issn "0021-9967" ;
     schema:name "JOURNAL OF COMPARATIVE NEUROLOGY"@en .
 
-<http://catalog.coloradocollege.edu/d8045dcb-0133-11e8-8727-a41f7283f8d4> schema:name "524" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d8045dca-0133-11e8-aa6c-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/cb1c1348-01fe-11e8-8183-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "524" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb175092-01fe-11e8-9ab0-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d8045dcc-0133-11e8-a2ff-a41f7283f8d4> schema:name "17" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d8045dcb-0133-11e8-8727-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/cb1c1349-01fe-11e8-b43d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "17" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb1c1348-01fe-11e8-8183-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d815075e-0133-11e8-ab35-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/cb2598c8-01fe-11e8-8d57-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "1558-9587" ;
+    schema:issn "0009-1774" ;
     schema:name "TRANSACTIONS OF THE CHARLES S PEIRCE SOCIETY"@en .
 
-<http://catalog.coloradocollege.edu/d815075f-0133-11e8-9122-a41f7283f8d4> schema:name "52" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d815075e-0133-11e8-ab35-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/cb2f1e4a-01fe-11e8-8f25-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "52" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb2598c8-01fe-11e8-8d57-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d8150760-0133-11e8-9a64-a41f7283f8d4> schema:name "1" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d815075f-0133-11e8-9122-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/cb2f1e4b-01fe-11e8-8e78-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb2f1e4a-01fe-11e8-8f25-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d81c2b80-0133-11e8-90ee-a41f7283f8d4> a schema:Periodical ;
+<http://catalog.coloradocollege.edu/cb3b051e-01fe-11e8-90eb-a41f7283f8d4> a schema:Periodical ;
+    schema:eissn "2325-5935" ;
+    schema:issn "0018-702X" ;
     schema:name "HUDSON REVIEW"@en .
 
-<http://catalog.coloradocollege.edu/d81c2b82-0133-11e8-b3b2-a41f7283f8d4> schema:name "68" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d81c2b80-0133-11e8-90ee-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/cb422940-01fe-11e8-90ce-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "68" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb3b051e-01fe-11e8-90eb-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/d81c2b83-0133-11e8-a4df-a41f7283f8d4> schema:name "4" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d81c2b82-0133-11e8-b3b2-a41f7283f8d4> .
+<http://catalog.coloradocollege.edu/cb422941-01fe-11e8-aa73-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cb422940-01fe-11e8-90ce-a41f7283f8d4> .
 

@@ -34,8 +34,24 @@ def author_lookup(people_graph,lookup_string):
     for i in results:
         return i[0]
 
+
+def doi_lookup(creative_works,lookup_string):
+# check the creative works graph for a match on doi so that duplicate articles are not created
+
+    sparql="""SELECT ?doi_iri
+            WHERE {{
+            ?doi_iri rdf:type schema:identifier
+            ?doi_iri schema:name ?name
+            FILTER (CONTAINS(?name,'''{0}'''))}}""".format(lookup_string)
+
+    results = creative_works.query(sparql)
+
+    for i in results:
+        return i[0]
+
+
 def journal_lookup(creative_works,lookup_string):
-# check the creative works graph for a match on journal title so that duplicates are not created
+# check the creative works graph for a match on journal title so that duplicate journals are not created
     sparql="""SELECT ?journal_iri
 	      WHERE {{
 	      ?journal_iri rdf:type schema:Periodical .
@@ -149,14 +165,37 @@ class Article_Citation(Citation):
         self.__issue__()
 
     def __journal_title__(self):
-    # to do: check to make sure this isn't duplicated
-    # to do: issn?
+        # to do: check to make sure this isn't duplicated
         self.journal_title = self.raw_citation["journal"]
         self.journal_string = self.__unique_IRI__()
         self.journal_iri=rdflib.URIRef(self.journal_string)
 
+        # add issn and/or eissn if present in raw citation
+        if "issn" in self.raw_citation.keys():
+            self.journal_issn=self.raw_citation["issn"]
+        else:
+            self.journal_issn="undefined"
+        if "eissn" in self.raw_citation.keys():
+            self.journal_eissn=self.raw_citation["eissn"]
+        else:
+            self.journal_eissn="undefined"
+
     def __article__(self):
+        # information specific to the article itself
         self.article_title = self.raw_citation["title"]
+
+        self.page_start = "undefined"
+        self.page_end = "undefined"
+        if "pages" in self.raw_citation.keys():
+            pages=self.raw_citation["pages"]
+            if "-" in pages:
+                pages = pages.replace(" ","") # remove extraneous spaces
+                hyphen=pages.find("-")
+                self.page_start=pages[:hyphen]
+                self.page_end=pages[hyphen+1:]
+            else:
+                self.page_start=pages
+        print("I found start_page to be ",self.page_start, " and end_page to be ",self.page_end)
         
     def __doi__(self):
         # doi is the unique identifier for articles
@@ -184,22 +223,36 @@ class Article_Citation(Citation):
             if (self.raw_citation["number"] !="") or (self.raw_citation["number"] != None):
                 self.issue_number = self.raw_citation["number"]
                 self.issue_iri = self.__unique_IRI__()
-        
+       
     def add_article(self):
         # Business logic for adding citations
 
         # add the journal title
         self.creative_works.add((self.journal_iri,rdflib.RDF.type,SCHEMA.Periodical))
         self.creative_works.add((self.journal_iri,SCHEMA.name,rdflib.Literal(self.journal_title,lang="en")))
-
+        # add the issn and/or eissn if present
+        if self.journal_issn != "undefined":
+            self.creative_works.add((self.journal_iri,SCHEMA.issn,rdflib.Literal(self.journal_issn)))
+        if self.journal_eissn != "undefined":
+            self.creative_works.add((self.journal_iri,SCHEMA.eissn,rdflib.Literal(self.journal_eissn)))
+        
         # add the article, using doi as unique identifier
         self.creative_works.add((self.doi_iri,rdflib.RDF.type,SCHEMA.ScholarlyArticle))
         self.creative_works.add((self.doi_iri,SCHEMA.name,rdflib.Literal(self.article_title,lang="en")))
+        if self.page_start != "undefined":
+            self.creative_works.add((self.doi_iri,SCHEMA.pageStart,rdflib.Literal(self.page_start)))
+        if self.page_end != "undefined":
+            self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
         # add doi link or other link here?
-
 
         # add the author
         self.creative_works.add((self.doi_iri,SCHEMA.author,self.author_iri))
+
+        # add the publication year
+        self.creative_works.add((self.doi_iri,SCHEMA.datePublished,rdflib.Literal(self.year)))
+
+        # add the abstract
+        self.creative_works.add((self.doi_iri,SCHEMA.about,rdflib.Literal(self.abstract)))
         
         # if there is no volume or issue number, add the article directly to the journal
         if (self.volume_number == "undefined") and (self.issue_number == "undefined"):
@@ -212,9 +265,9 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.volume_iri))
         # if there is no volume but there is an issue number, add the the issue to the journal and add the article to the issue
         elif (self.volume_number == "undefined") and (self.issue_number != "undefined"):
-            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.issueNumber))
+            self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
             self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.journal_iri))
-            self.creative_works.add((self.issue_iri,SCHEMA.name,rdflib.Literal(self.issue_number)))
+            self.creative_works.add((self.issue_iri,SCHEMA.issueNumber,rdflib.Literal(self.issue_number)))
             self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
         # presuming there is a volume and an issue, add the article to the issue, add the issue to the volume, add the volume to the journal
         else:
@@ -222,8 +275,8 @@ class Article_Citation(Citation):
             self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
             self.creative_works.add((self.volume_iri,SCHEMA.name,rdflib.Literal(self.volume_number)))
             self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.volume_iri))
-            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.issueNumber))
-            self.creative_works.add((self.issue_iri,SCHEMA.name,rdflib.Literal(self.issue_number)))
+            self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
+            self.creative_works.add((self.issue_iri,SCHEMA.issueNumber,rdflib.Literal(self.issue_number)))
             self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
                 
 
@@ -251,21 +304,24 @@ def load_citations():
             bib_database.entries[i][key]=bib_database.entries[i][key].replace("\n", " ")
             key = key.lower()
         i = i + 1
-    
-        
+            
     for row in bib_database.entries:
         if row["ENTRYTYPE"]=="article":
             citation=Article_Citation(row,creative_works)
             citation.populate()
             citation.populate_special()
             citation.add_article()
+            print("Article successfully added")
+
 
     with open("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl", "wb+") as fo:
         fo.write(creative_works.serialize(format="turtle"))
-
+        print("CC Scholarship Graph written")
    
 
-#######################################START########################
+#######################################START################################
+# initialize graphs and schemas/namespaces
+
 people=rdflib.Graph()
 people.parse("C:/CCKnowledgeGraph/tiger-catalog/KnowledgeGraph/cc-people.ttl",format="turtle")
 creative_works=rdflib.Graph()
@@ -274,4 +330,5 @@ SCHEMA = rdflib.Namespace("http://www.schema.org/")
 creative_works.namespace_manager.bind("schema",SCHEMA)
 BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 
+# load bibtex data, parse it, and attempt to add citations to the creative_works graph
 load_citations()
