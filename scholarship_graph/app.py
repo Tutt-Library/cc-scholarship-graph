@@ -1,5 +1,5 @@
 """Flask web application for Colorado College Scholarship Database"""
-__author__ = "Jeremy Nelson"
+__author__ = "Jeremy Nelson","Diane Westerfield"
 
 import datetime
 import re
@@ -17,7 +17,7 @@ from flask_ldap3_login.forms import LDAPLoginForm
 
 from .forms import SearchForm
 from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
-from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT
+from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT, CITATION
 from rdfframework.configuration import RdfConfigManager
 from rdfframework.connections import ConnManager
 
@@ -136,7 +136,7 @@ def org_browsing():
 @app.route("/person")
 def person_view():
     person_iri = request.args.get("iri")
-    person_info = {"url": person_iri}
+    person_info = {"url": person_iri,"citations":[]}
     sparql = PERSON_INFO.format(person_iri)
     results = CONNECTION.datastore.query(sparql)
     for row in results:
@@ -147,6 +147,11 @@ def person_view():
         person_info["givenName"] = row.get("given").get("value")
         person_info["familyName"] = row.get("family").get("value")
         person_info["email"] = [email,]
+    citation_sparql = CITATION.format(person_iri)
+    print(citation_sparql)
+    citations_result = CONNECTION.datastore.query(citation_sparql)
+    for row in citations_result:
+        person_info["citations"].append(row)
     return render_template("person.html",
         info=person_info)
 
@@ -220,11 +225,8 @@ WHERE {
         for token in people:
             sparql += """\nFILTER(CONTAINS(?label, "{0}"))""".format(token)
     sparql += "} ORDER BY ?family"
-    result = requests.post(app.config.get("TRIPLESTORE_URL"),
-        data={"query": sparql,
-              "format": "json"})
-    bindings = result.json().get("results").get("bindings")
-    for row in bindings:
+    results = CONNECTION.datastore.query(sparql)
+    for row in results:
         output.append({"iri": row.get("person").get("value"),
                        "name": row.get("label").get("value")})
     return output

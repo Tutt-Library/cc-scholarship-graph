@@ -3,10 +3,10 @@ __author__ = "Diane Westerfield"
 import rdflib
 import bibtexparser
 import uuid
+import codecs
 
 # Journal article workflow
 # in Web of Science, set enhanced ID to Colorado College and select a year.
-# Export all to RefWorks, put in a folder
 # Export the folder to BibTex format and copy file to working directory
 # In Python: set up the people and creative works graphs
 # open the BibTex file
@@ -34,7 +34,6 @@ def author_lookup(people_graph,lookup_string):
     for i in results:
         return i[0]
 
-
 def doi_lookup(creative_works,lookup_string):
 # check the creative works graph for a match on doi so that duplicate articles are not created
 
@@ -48,7 +47,6 @@ def doi_lookup(creative_works,lookup_string):
 
     for i in results:
         return i[0]
-
 
 def journal_lookup(creative_works,lookup_string):
 # check the creative works graph for a match on journal title so that duplicate journals are not created
@@ -293,7 +291,7 @@ class Book_Chapter_Citation(Book_Citation):
             
 def load_citations():
     # Take the bibparse data and load it into the creative_works knowledge graph
-    with open('C:/CCKnowledgeGraph/Temp/BibTexTest2.txt') as bibtex_file:
+    with open('C:/CCKnowledgeGraph/Temp/BibTexLoad.txt') as bibtex_file:
         bibtex_str = bibtex_file.read()
         bib_database = bibtexparser.loads(bibtex_str)
 
