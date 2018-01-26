@@ -2,8 +2,13 @@ __author__ = "Diane Westerfield"
 
 import rdflib
 import bibtexparser
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.customization import convert_to_unicode
 import uuid
 import codecs
+
+# tip: export citations from RefWorks. Direct export from Web of Science does not work.
+
 
 # Journal article workflow
 # in Web of Science, set enhanced ID to Colorado College and select a year.
@@ -97,6 +102,7 @@ class Citation(object):
         self.__year__()
         self.__abstract__()
         self.__citation_type__()
+        self.__url__()
 
     def __author_string__(self):
         self.author_string=self.raw_citation["author"]
@@ -133,6 +139,10 @@ class Citation(object):
             if author_iri != None:
                 self.CC_author=author_name_parsed
                 self.author_iri=author_iri
+            else:
+                # to do: add the person to people graph if not there already; department affiliation?
+                self.author_iri=self.__unique_IRI__()
+                self.author_iri=rdflib.URIRef(self.author_iri)
 
     def __year__(self):
         if "year" in self.raw_citation.keys():
@@ -148,7 +158,6 @@ class Citation(object):
 
     def __citation_type__(self):
         self.citation_type=self.raw_citation["ENTRYTYPE"]
-        
                                        
 class Article_Citation(Citation):
     def __init__(self,raw_citation,creative_works):
@@ -158,6 +167,7 @@ class Article_Citation(Citation):
     def populate_special(self):
         self.__journal_title__()
         self.__doi__()
+        self.__url__()
         self.__article__()
         self.__volume__()
         self.__issue__()
@@ -194,7 +204,7 @@ class Article_Citation(Citation):
             else:
                 self.page_start=pages
         print("I found start_page to be ",self.page_start, " and end_page to be ",self.page_end)
-        
+       
     def __doi__(self):
         # doi is the unique identifier for articles
         # to do: check for duplicate doi numbers
@@ -203,7 +213,16 @@ class Article_Citation(Citation):
         else:
             self.doi_string=self.__unique_IRI__()
         self.doi_iri=rdflib.URIRef(self.doi_string)
-        
+
+    def __url__(self):
+        if "doi" not in self.raw_citation.keys():
+            if "url" not in self.raw_citation.keys():
+                self.url="undefined"
+            else:
+                self.url = self.doi_string
+        else:
+            self.url="undefined"
+
     def __volume__(self):
         # to do: check for duplicate volumes of the journal title
         # a citation can have a volume number or none at all
@@ -241,7 +260,9 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.pageStart,rdflib.Literal(self.page_start)))
         if self.page_end != "undefined":
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
-        # add doi link or other link here?
+            
+        # add url - this is the link not the unique identifier(but they can have the same value)
+        self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
 
         # add the author
         self.creative_works.add((self.doi_iri,SCHEMA.author,self.author_iri))
@@ -291,10 +312,10 @@ class Book_Chapter_Citation(Book_Citation):
             
 def load_citations():
     # Take the bibparse data and load it into the creative_works knowledge graph
-    with open('C:/CCKnowledgeGraph/Temp/BibTexLoad.txt') as bibtex_file:
+    with open('C:/CCKnowledgeGraph/Temp/BibTex2016.txt') as bibtex_file:
         bibtex_str = bibtex_file.read()
         bib_database = bibtexparser.loads(bibtex_str)
-
+        
     # remove carriage returns and lower-cap the key values
     i = 0
     while i < len(bib_database.entries):
