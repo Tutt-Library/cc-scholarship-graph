@@ -175,7 +175,7 @@ def search_triplestore():
         if len(token) < 1: continue
         query['keywords'].append(token)
     session['query'] = query
-    return redirect("/results")
+    return redirect(url_for("search_results"))
 
 def __keyword_search__(keywords):
     output = []
