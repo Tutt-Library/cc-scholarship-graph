@@ -1,5 +1,5 @@
-Flask
 Flask-Login
 flask-ldap3-login
 requests
 rdflib
+gunicorn

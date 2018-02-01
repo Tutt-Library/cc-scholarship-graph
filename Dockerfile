@@ -1,20 +1,18 @@
 # Dockerfile for Colorado College Scholarship Knowledge Graph
-FROM python:3.6.4 
-MAINTAINER: Jeremy Nelson <jermnelson@gmail.com>
+FROM tuttlibrary/python-base
+MAINTAINER Jeremy Nelson <jermnelson@gmail.com>
 
 # Environmental variables
 ENV HOME /opt/cc-scholarship-graph
+ 
+RUN mkdir $HOME && cd $HOME && mkdir instance && \
+    touch __init__.py
 
-RUN apt-get update && apt-get install -y && \
-    mkdir $HOME && cd $HOME && mkdir instance
-
-COPY scholarship_graph $HOME
-COPY requirements.txt $HOME
+COPY scholarship_graph $HOME/scholarship_graph/
+COPY run.py $HOME/.
 COPY instance/config.py $HOME/instance/config.py
 
-RUN cd $HOME && python -r requirements.txt && \
-    
 EXPOSE 7225
 WORKDIR $HOME
-CMD ["nohup", "gunicorn", "-b", "0.0.0.0:7225", "scholarship_graph/app:app"]
+CMD ["nohup", "gunicorn", "-b", "0.0.0.0:7225", "run:parent_app"]
 
