@@ -4,6 +4,121 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://catalog.coloradocollege.edu/a1f238e3-06d1-11e8-b0b0-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The closure of Drake's Bay Oyster Farm in Point Reyes National Seashore, California, ignited a heated local and national conflict regarding the roles of stewardship and conservation and private business in protected areas. It is vital to examine parks and conservation critically to identify places where they are exacerbating resource struggles that often result from globalization and development, in the United States and in other countries. This article uses Foucauldian discourse analysis to identify conflicting discourses present in this conflict and to analyze knowledge and power in relation to issues of resource and land use in protected areas. This analysis highlights differences in scale and logic between the discourse used by local stakeholders, and the discourse used by conservation organizations and Park officials, in the Point Reyes conflict and in other National Parks" ;
+    schema:author <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Oyster feuds: conflicting discourses and outcomes in Point Reyes, California"@en ;
+    schema:pageEnd "166" ;
+    schema:pageStart "144" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1f49a42-06d1-11e8-a791-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a327aba3-06d1-11e8-85bd-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Empire of Pictures: Global Media and the 1960s Remaking of American Foreign Policy"@en ;
+    schema:pageEnd "199" ;
+    schema:pageStart "198" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a32a0d03-06d1-11e8-ae5c-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a32c6e63-06d1-11e8-ace6-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "A Sense of Power: The Roots of America's Global Role"@en ;
+    schema:pageEnd "199" ;
+    schema:pageStart "198" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a32ecfc3-06d1-11e8-b63f-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a4774d83-06d1-11e8-8857-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Michael Oakeshott's Cold War Liberalism"@en ;
+    schema:pageEnd "183" ;
+    schema:pageStart "179" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a480d303-06d1-11e8-a3f3-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a4f31504-06d1-11e8-9c84-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a4f31502-06d1-11e8-b1b3-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Visual acuity in birds: Effects of behavior, ecology, and morphology"@en ;
+    schema:pageStart "E209" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4f57662-06d1-11e8-9b6d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a64389d4-06d1-11e8-ac04-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a64389d2-06d1-11e8-9937-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Thermodynamic analysis of a 4x4 internal loop in magnesium riboswitch"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/a6484c92-06d1-11e8-b7e2-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a65694d4-06d1-11e8-8d89-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a65694d2-06d1-11e8-a585-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Thermodynamic Examination of the Bulged-G Motif in the 23S Ribosomal RNA"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/a65b5792-06d1-11e8-bef4-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a93fa335-06d1-11e8-aac1-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/60f09682-b0f0-11e6-bee4-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Land Too Good for Indians: Northern Indian Removal"@en ;
+    schema:pageEnd "192" ;
+    schema:pageStart "191" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a93fa337-06d1-11e8-acc6-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a94deb75-06d1-11e8-a8ee-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/f055f394-b0e3-11e6-819e-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Japanese Prostitutes in the North American West, 1877-1920"@en ;
+    schema:pageEnd "214" ;
+    schema:pageStart "213" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a952ae35-06d1-11e8-a455-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a95e9513-06d1-11e8-8fc2-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/631a5454-b0f0-11e6-9cf2-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Rough Riders: Theodore Roosevelt, His Cowboy Regiment, and the Immortal Charge up San Juan Hill"@en ;
+    schema:pageEnd "198" ;
+    schema:pageStart "197" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a965b935-06d1-11e8-8027-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/a97d86f5-06d1-11e8-ac6a-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a0101452-b0dd-11e6-bb6a-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Salero"@en ;
+    schema:pageEnd "805" ;
+    schema:pageStart "801" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a97d86f7-06d1-11e8-b968-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/b13f36e3-06d1-11e8-b7cf-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/f7c92f54-b0ef-11e6-8116-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Improvisational Ethics and Moral Technologies in Deja Vu"@en ;
+    schema:pageEnd "127" ;
+    schema:pageStart "105" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b143f9a2-06d1-11e8-a13a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <http://catalog.coloradocollege.edu/ba5242ea-02d0-11e8-b0c6-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/ba5242e8-02d0-11e8-82d9-a41f7283f8d4> ;
@@ -160,6 +275,26 @@
     schema:partOf <http://catalog.coloradocollege.edu/c1387c47-02d0-11e8-895d-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1002/2016WR019405> a schema:ScholarlyArticle ;
+    schema:about "In coastal rivers, tidal pumping enhances the exchange of oxygen-rich river water across the sediment-water interface, controlling nitrogen cycling in riverbed sediment. We developed a one-dimensional, fluid flow and solute transport model that quantifies the influence of tidal pumping on nitrate removal and applied it to the tidal freshwater zone (TFZ) of White Clay Creek (Delaware, USA). In field observations and models, both oxygenated river water and anoxic groundwater deliver nitrate to carbon-rich riverbed sediment. A zone of nitrate removal forms beneath the aerobic interval, which expands and contracts over daily timescales due to tidal pumping. At high tide when oxygen-rich river water infiltrates into the bed, denitrification rates decrease by 25% relative to low tide. In the absence of tidal pumping, our model predicts that the aerobic zone would be thinner, and denitrification rates would increase by 10%. As tidal amplitude increases toward the coast, nitrate removal rates should decrease due to enhanced oxygen exchange across the sediment-water interface, based on sensitivity analysis. Denitrification hot spots in TFZs are more likely to occur in less permeable sediment under lower tidal ranges and higher rates of ambient groundwater discharge. Our models suggest that tidal pumping is not efficient at removing surface water nitrate but can remove up to 81% of nitrate from discharging groundwater in the TFZ of White Clay Creek. Given the high population densities of coastal watersheds, the reactive riverbeds of TFZs play a critical role in mitigating new nitrogen loads to coasts." ;
+    schema:author <http://catalog.coloradocollege.edu/a1a3ab82-06d1-11e8-818a-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Tidal controls on riverbed denitrification along a tidal freshwater zone"@en ;
+    schema:pageEnd "816" ;
+    schema:pageStart "799" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1a60ce3-06d1-11e8-b776-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1002/2017GL074312> a schema:ScholarlyArticle ;
+    schema:about "A tear in the subducting Nazca slab is located between the end of the Pampean flat slab and normally subducting oceanic lithosphere. Tomographic studies suggest mantle material flows through this opening. The best way to probe this hypothesis is through observations of seismic anisotropy, such as shear wave splitting. We examine patterns of shear wave splitting using data from two seismic deployments in Argentina that lay updip of the slab tear. We observe a simple pattern of plate-motion-parallel fast splitting directions, indicative of plate-motion-parallel mantle flow, beneath the majority of the stations. Our observed splitting contrasts previous observations to the north and south of the flat slab region. Since plate-motion-parallel splitting occurs only coincidentally with the slab tear, we propose mantle material flows through the opening resulting in Nazca plate-motion-parallel flow in both the subslab mantle and mantle wedge." ;
+    schema:author <http://catalog.coloradocollege.edu/ad843a52-06d1-11e8-a1a2-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Mantle flow through a tear in the Nazca slab inferred from shear wave splitting"@en ;
+    schema:pageEnd "6742" ;
+    schema:pageStart "6735" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad869bb5-06d1-11e8-8df8-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1002/cne.23841> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c8d13c74-02d0-11e8-b3a9-a41f7283f8d4> ;
@@ -190,6 +325,36 @@
     schema:partOf <http://catalog.coloradocollege.edu/c996ce41-02d0-11e8-9c85-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1002/cne.24067> a schema:ScholarlyArticle ;
+    schema:about "Cholinergic innervation of the basal ganglia is important in learning and memory. Striatal cholinergic neurons integrate cognitive and motivational states with behavior. Given these roles, it is not surprising that deficits in cortical cholinergic innervation have been correlated with loss of cognitive function in Alzheimer's disease and schizophrenia. Such evidence suggests the potential significance of subcortical cholinergic innervation in the evolution of the human brain. To compare humans with other closely related primates, the present study quantified axons and interneurons immunoreactive for choline acetyltransferase (ChAT) in regions of the executive and motor loops of the basal ganglia of humans, great apes, and monkeys. We also compared ChAT-immunoreactive (ir) interneuron morphological types among species within striatal regions. The results indicate that humans and great apes differ from monkeys in having a preponderance of multipolar ChAT-ir interneurons in the caudate nucleus and putamen, whereas monkeys have a more heterogeneous representation of multipolar, bipolar, and unipolar interneurons. Cholinergic innervation, as measured by axon and interneuron densities, did not differ across species in the medial caudate nucleus. Differences were detected in the dorsal caudate nucleus, putamen, and globus pallidus but the observed variation did not associate with the phylogenetic structure of the species in the sample. However, combining the present results with previously published data for dopamine revealed a unique pattern of innervation for humans, with higher amounts of dopamine compared with acetylcholine in the striatum. Taken together, these findings indicate a potential evolutionary shift in basal ganglia neurotransmission in humans that may favor increased synaptic plasticity. (C) 2016 Wiley Periodicals, Inc." ;
+    schema:author <http://catalog.coloradocollege.edu/a308b9c2-06d1-11e8-b421-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Cholinergic Innervation of the Basal Ganglia in Humans and Other Anthropoid Primates"@en ;
+    schema:pageEnd "332" ;
+    schema:pageStart "319" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3123f43-06d1-11e8-aff1-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1002/ece3.3272> a schema:ScholarlyArticle ;
+    schema:about "Under climate change, shrubs encroaching into high altitude plant communities disrupt ecosystem processes. Yet effects of encroachment on pollination mutualisms are poorly understood. Here, we probe potential fitness impacts of interference from encroaching Salix (willows) on pollination quality of the alpine skypilot, Polemonium viscosum. Overlap in flowering time of Salix and Polemonium is a precondition for interference and was surveyed in four extant and 25 historic contact zones. Pollinator sharing was ascertained from observations of willow pollen on bumble bees visiting Polemonium flowers and on Polemonium pistils. We probed fitness effects of pollinator sharing by measuring the correlation between Salix pollen contamination and seed set in naturally pollinated Polemonium. To ascertain whether Salix interference occurred during or after pollination, we compared seed set under natural pollination, conspecific pollen addition, and Salix pollen addition. In current and past contact zones Polemonium and Salix overlapped in flowering time. After accounting for variance in flowering date due to latitude, Salix and Polemonium showed similar advances in flowering under warmer summers. This trend supports the idea that sensitivity to temperature promotes reproductive synchrony in both species. Salix pollen is carried by bumble bees when visiting Polemonium flowers and accounts for up to 25% of the grains on Polemonium pistils. Salix contamination correlates with reduced seed set in nature and when applied experimentally. Postpollination processes likely mediate these deleterious effects as seed set in nature was not limited by pollen delivery. Synthesis: As willows move higher with climate change, we predict that they will drive postpollination interference, reducing the fitness benefits of pollinator visitation for Polemonium and selecting for traits that reduce pollinator sharing." ;
+    schema:author <http://catalog.coloradocollege.edu/b12c2be2-06d1-11e8-ae06-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "How shrub encroachment under climate change could threaten pollination services for alpine wildflowers: A case study using the alpine skypilot, Polemonium viscosum"@en ;
+    schema:pageEnd "6971" ;
+    schema:pageStart "6963" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b130eea3-06d1-11e8-9620-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1002/ejsp.559> a schema:ScholarlyArticle ;
+    schema:about "We propose that two psychological dimensions, one relevant to relationships and group life (communion, C) and the other to skill acquisition, talent, and accomplishment (agency, A), aid people in interpreting their social worlds. Moreover, our analysis demonstrates the privileged nature of the C dimension and its relative stability compared to the A dimension across contexts and cultures. In Study I we use a standard compilation of culturally universal practices and show that the C dimension accounts for the majority of these universals, implying that the meaning of A traits varies more across cultures than that of C traits. In Studies 2 and 3, we provide evidence for this proposal using different judgment paradigms and cultural groups. The findings indicate that there is greater similarity and consensus it? how people make sense of and judge information from the C than A dimension. We discuss the findings in terms of the recurring challenges people face over time as a result of living in groups. Copyright (C) 2008 John Wiley & Sons, Ltd." ;
+    schema:author <http://catalog.coloradocollege.edu/1f2ebc82-06e0-11e8-a2c6-a41f7283f8d4> ;
+    schema:datePublished "2008" ;
+    schema:name "Life's recurring challenges and the fundamental dimensions: An integration and its implications for cultural differences and similarities"@en ;
+    schema:pageEnd "1092" ;
+    schema:pageStart "1083" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1f2ebc85-06e0-11e8-9c7b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1002/elps.201500546> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c2515e0c-02d0-11e8-a985-a41f7283f8d4> ;
@@ -198,6 +363,16 @@
     schema:pageEnd "1658" ;
     schema:pageStart "1651" ;
     schema:partOf <http://catalog.coloradocollege.edu/c25620cd-02d0-11e8-8b3c-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1002/elps.201600313> a schema:ScholarlyArticle ;
+    schema:about "A Y-STR multiplex system has been developed with the purpose of complementing the widely used 17 Y-STR haplotyping (AmpFlSTR Y Filer (R) PCR Amplification kit) routinely employed in forensic and population genetic studies. This new multiplex system includes six additional STR loci (DYS576, DYS481, DYS549, DYS533, DYS570, and DYS643) to reach the 23 Y-STR of the PowerPlex (R) Y23 System. In addition, this kit includes the DYS456 and DYS385 loci for traceability purposes. Male samples from 625 individuals from ten worldwide populations were genotyped, including three sample sets from populations previously published with the 17 Y-STR system to expand their current data. Validation studies demonstrated good performance of the panel set in terms of concordance, sensitivity, and stability in the presence of inhibitors and artificially degraded DNA. The results obtained for haplotype diversity and discrimination capacity with this multiplex system were considerably high, providing further evidences of the suitability of this novel Y-STR system for forensic purposes. Thus, the use of this multiplex for samples previously genotyped with 17 Y-STRs will be an efficient and low-cost alternative to complete the set of 23 Y-STRs and improve allele databases for population and forensic purposes." ;
+    schema:author <http://catalog.coloradocollege.edu/a5d147d2-06d1-11e8-930b-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "17 to 23: A novel complementary mini Y-STR panel to extend the Y-STR databases from 17 to 23 markers for forensic purposes"@en ;
+    schema:pageEnd "1021" ;
+    schema:pageStart "1016" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a5d60a93-06d1-11e8-8ac8-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1002/hyp.10623> a schema:ScholarlyArticle ;
@@ -210,6 +385,46 @@
     schema:partOf <http://catalog.coloradocollege.edu/cde287b5-02d0-11e8-af4b-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1007/s00373-017-1812-5> a schema:ScholarlyArticle ;
+    schema:about "All planar graphs are 4-colorable and 5-choosable, while some planar graphs are not 4-choosable. Determining which properties guarantee that a planar graph can be colored using lists of size four has received significant attention. In terms of constraining the structure of the graph, for any , a planar graph is 4-choosable if it is -cycle-free. In terms of constraining the list assignment, one refinement of k-choosability is choosability with separation. A graph is (k, s)-choosable if the graph is colorable from lists of size k where adjacent vertices have at most s common colors in their lists. Every planar graph is (4, 1)-choosable, but there exist planar graphs that are not (4, 3)-choosable. It is an open question whether planar graphs are always (4, 2)-choosable. A chorded -cycle is an -cycle with one additional edge. We demonstrate for each that a planar graph is (4, 2)-choosable if it does not contain chorded -cycles." ;
+    schema:author <http://catalog.coloradocollege.edu/abaf4b74-06d1-11e8-aee7-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "(4,2)-Choosability of Planar Graphs with Forbidden Structures"@en ;
+    schema:pageEnd "787" ;
+    schema:pageStart "751" ;
+    schema:partOf <http://catalog.coloradocollege.edu/abb1acd3-06d1-11e8-a71a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1007/s00429-017-1401-7> a schema:ScholarlyArticle ;
+    schema:about "Handedness and language are two well-studied examples of asymmetrical brain function in humans. Approximately 90% of humans exhibit a right-hand preference, and the vast majority shows left-hemisphere dominance for language function. Although genetic models of human handedness and language have been proposed, the actual gene expression differences between cerebral hemispheres in humans remain to be fully defined. In the present study, gene expression profiles were examined in both hemispheres of three cortical regions involved in handedness and language in humans and their homologues in rhesus macaques: ventrolateral prefrontal cortex, posterior superior temporal cortex (STC), and primary motor cortex. Although the overall pattern of gene expression was very similar between hemispheres in both humans and macaques, weighted gene correlation network analysis revealed gene co-expression modules associated with hemisphere, which are different among the three cortical regions examined. Notably, a receptor-enriched gene module in STC was particularly associated with hemisphere and showed different expression levels between hemispheres only in humans." ;
+    schema:author <http://catalog.coloradocollege.edu/b0ee4822-06d1-11e8-b3e8-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Interhemispheric gene expression differences in the cerebral cortex of humans and macaque monkeys"@en ;
+    schema:pageEnd "3254" ;
+    schema:pageStart "3241" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0f7cda3-06d1-11e8-9311-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1007/s00429-017-1433-z> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/b0832a42-06d1-11e8-89e8-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Interhemispheric gene expression differences in the cerebral cortex of humans and macaque monkeys (vol 222, pg 3241, 2017)"@en ;
+    schema:pageEnd "3368" ;
+    schema:pageStart "3367" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0858ba3-06d1-11e8-8be6-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1007/s00442-017-3822-7> a schema:ScholarlyArticle ;
+    schema:about "Resource availability can significantly alter host-parasite dynamics. Abundant food can provide more resources for hosts to resist infections, but also increase host tolerance of infections by reducing competition between hosts and parasites for food. Whether abundant food favors host resistance or tolerance (or both) might depend on the type of resource that the parasite exploits (e.g., host tissue vs. food), which can vary based on the stage of infection. In our study, we evaluated how low and high resource diets affect Cuban tree frog (Osteopilus septentrionalis) resistance and tolerance of a skin-penetrating, gut nematode Aplectana sp. at each stage of the infection. Compared to a low resource diet, a high resource diet enhanced frog resistance to worm penetration and tolerance while worms traveled to the gut. In contrast, a low resource diet increased resistance to establishment of the infection. After the infection established and worms could access food resources in the gut, a high resource diet enhanced host tolerance of parasites. On a high resource diet, parasitized frogs consumed significantly more food than non-parasitized frogs; when food was then restricted, mass of non-parasitized frogs did not change, whereas mass of parasitized frogs decreased significantly. Thus, a high resource diet increased frog tolerance of established worms because frogs could fully compensate for energy lost to the parasites. Our study shows that host-parasite dynamics are influenced by the effect of resource availability on host resistance and tolerance, which depends on when parasites have access to food and the stage of infection." ;
+    schema:author <http://catalog.coloradocollege.edu/a5368e74-06d1-11e8-95f0-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Host resistance and tolerance of parasitic gut worms depend on resource availability"@en ;
+    schema:pageEnd "1040" ;
+    schema:pageStart "1031" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a54013f5-06d1-11e8-b327-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1007/s10021-015-9934-1> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/bb5f3dda-02d0-11e8-b858-a41f7283f8d4> ;
@@ -220,6 +435,25 @@
     schema:partOf <http://catalog.coloradocollege.edu/bb640099-02d0-11e8-801c-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1007/s10533-017-0299-8> a schema:ScholarlyArticle ;
+    schema:about "Several decades of research in alpine ecosystems have demonstrated links among the critical zone, hydrologic response, and the fate of elevated atmospheric nitrogen (N) deposition. Less research has occurred in mid-elevation forests, which may be important for retaining atmospheric N deposition. To explore the fate of N in the montane zone, we conducted plot-scale experimental rainfall events across a north-south transect within a catchment of the Boulder Creek Critical Zone Observatory. Rainfall events mimicked relatively common storms (20-50% annual exceedance probability) and were labeled with N-15-nitrate () and lithium bromide tracers. For 4 weeks, we measured soil-water and leachate concentrations of Br-, and daily, followed by recoveries of N-15 species in bulk soils and microbial biomass. Tracers moved immediately into the subsurface of north-facing slope plots, exhibiting breakthrough at 10 and 30 cm over 22 days. Conversely, little transport of Br- or occurred in south-facing slope plots; tracers remained in soil or were lost via pathways not measured. Hillslope position was a significant determinant of soil N-15- recoveries, while soil depth and time were significant determinants of N-15 recovery in microbial biomass. Overall, N-15 recovery in microbial biomass and leachate was greater in upper north-facing slope plots than lower north-facing (toeslope) and both south-facing slope plots in August; by October, N-15 recovery in microbial N biomass within south-facing slope plots had increased substantially. Our results point to the importance of soil properties in controlling the fate of N in mid-elevation forests during the summer season." ;
+    schema:author <http://catalog.coloradocollege.edu/a16a8a82-06d1-11e8-99b8-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Critical zone properties control the fate of nitrogen during experimental rainfall in montane forests of the Colorado Front Range"@en ;
+    schema:pageEnd "231" ;
+    schema:pageStart "213" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a16cebe3-06d1-11e8-8e7b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1007/s10533-017-0358-1> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/ae2d6302-06d1-11e8-9991-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Critical zone properties control the fate of nitrogen during experimental rainfall in montane forests of the Colorado Front Range (vol 132, pg 213, 2017)"@en ;
+    schema:pageStart "371" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ae2fc463-06d1-11e8-b16f-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1007/s10711-016-0150-8> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/8a413e7a-c8a0-11e7-a718-005056c00008> ;
@@ -228,6 +462,16 @@
     schema:pageEnd "142" ;
     schema:pageStart "123" ;
     schema:partOf <http://catalog.coloradocollege.edu/c82116ff-02d0-11e8-b6bf-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1007/s11139-016-9806-0> a schema:ScholarlyArticle ;
+    schema:about "We obtain a presentation of the principal subspace of the basic D-4((3))-module. We use this presentation to construct exact sequences involving this principal subspace, and obtain a recursion satisfied by its multigraded dimension. Solving this recursion, we obtain the multigraded dimension of the principal subspace of the basic D-4((3))-module." ;
+    schema:author <http://catalog.coloradocollege.edu/adbaf9f4-06d1-11e8-b3ec-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Vertex-algebraic structure of principal subspaces of basic D-4((3))-modules"@en ;
+    schema:pageEnd "617" ;
+    schema:pageStart "571" ;
+    schema:partOf <http://catalog.coloradocollege.edu/adbd5b53-06d1-11e8-b421-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1007/s12553-016-0132-8> a schema:ScholarlyArticle ;
@@ -248,6 +492,16 @@
     schema:pageEnd "423" ;
     schema:pageStart "415" ;
     schema:partOf <http://catalog.coloradocollege.edu/be118b76-02d0-11e8-a289-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.bmcl.2017.07.032> a schema:ScholarlyArticle ;
+    schema:about "In 2014, a published report of the high-throughput screen of >42,000 kinase inhibitors from GlaxoSmithKline against T. brucei identified 797 potent and selective hits. From this rich data set, we selected NEU-0001101 (1) for hit-to-lead optimization. Through our preliminary compound synthesis and SAR studies, we have confirmed the previously reported activity of 1 in a T. brucei cell proliferation assay and have identified alternative groups to replace the pyridyl ring in 1. Pyrazole 24 achieves improvements in both potency and lipophilicity relative to 1, while also showing good in vitro metabolic stability. The SAR developed on 24 provides new directions for further optimization of this novel scaffold for anti-trypanosomal drug discovery. (C) 2017 Elsevier Ltd. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/503d8ea4-b0e0-11e6-afdc-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Novel 1,2-dihydroquinazolin-2-ones: Design, synthesis, and biological evaluation against Trypanosoma brucei"@en ;
+    schema:pageEnd "3635" ;
+    schema:pageStart "3629" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0003ea3-06d1-11e8-acbd-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1016/j.forsciint.2016.02.006> a schema:ScholarlyArticle ;
@@ -280,6 +534,25 @@
     schema:partOf <http://catalog.coloradocollege.edu/ca638429-02d0-11e8-9417-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1016/j.gene.2016.08.040> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a46b66a2-06d1-11e8-8af7-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "On the Bantu expansion (vol 593, pg 48, 2016)"@en ;
+    schema:pageStart "57" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a46dc802-06d1-11e8-8234-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.gene.2017.09.004> a schema:ScholarlyArticle ;
+    schema:about "Notwithstanding the general interest and the geopolitical importance of the island countries in the Greater Antilles, little is known about the specific ancestral Native American and African populations that settled them. In an effort to alleviate this lacuna of information on the genetic constituents of the Greater Antilles, we comprehensively compared the mtDNA compositions of Cuba, Dominican Republic, Haiti, Jamaica and Puerto Rico. To accomplish this, the mtDNA HVRI and HVRII regions, as well as coding diagnostic sites, were assessed in the Haitian general population and compared to data from reference populations. The Taino maternal DNA is prominent in the ex-Spanish colonies (61.3%-22.0%) while it is basically non-existent in the ex-French and ex English colonies of Haiti (0.0%) and Jamaica (0.5%), respectively. The most abundant Native American mtDNA haplogroups in the Greater Antilles are A2, B2 and C1. The African mtDNA component is almost fixed in Haiti (98.2%) and Jamaica (98.5%), and the frequencies of specific African haplogroups vary considerably among the five island nations. The strong persistence of Taino mtDNA in the ex-Spanish colonies (and especially in Puerto Rico), and its absence in the French and English excolonies is likely the result of different social norms regarding mixed marriages with Taino women during the early years after the first contact with Europeans. In addition, this article reports on the results of an integrative approach based on mtDNA analysis and demographic data that tests the hypothesis of a southward shift in raiding zones along the African west coast during the period encompassing the Transatlantic Slave Trade." ;
+    schema:author <http://catalog.coloradocollege.edu/b4a35912-06d1-11e8-a8c4-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Taino and African maternal heritage in the Greater Antilles"@en ;
+    schema:pageEnd "40" ;
+    schema:pageStart "33" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b4a5ba74-06d1-11e8-b973-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1016/j.gloenvcha.2016.04.015> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c01d391c-02d0-11e8-ad4b-a41f7283f8d4> ;
@@ -288,6 +561,36 @@
     schema:pageEnd "107" ;
     schema:pageStart "98" ;
     schema:partOf <http://catalog.coloradocollege.edu/c01d391e-02d0-11e8-bc72-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.jce.2016.07.003> a schema:ScholarlyArticle ;
+    schema:about "During the 2006 Democratic Movement in Nepal, the parliament unanimously decided to strip the over two century-old Shah monarchy of absolute power. We study the short run effects of the arrival of democracy on different measures of women's empowerment by exploiting exogenous variation in the government through abolition of the monarchy. This paper employs a propensity score matching estimator to evaluate the linkage between change in political regime and opinions related to women's empowerment from 2006 Nepal Demographic and Health Surveys (NDHS). Results show that women's say in decision making increased significantly, and opinions on violence against women strengthened. We further scrutinize the treatment effect estimates with Rosenbaum bounds and observe if they are sensitive to possible hidden selection bias. We also test for heterogeneity of the treatment effect across gender and find that males report higher probability of mutual household decision-making among couples than females. Journal of Comparative Economics 45 (2017) 325-343. University of Massachusetts Amherst, 80 Campus Center Way, Amherst, MA 01003, United States; Colorado College, 14 E. Cache La Poudre St., Colorado Springs, CO 80903, United States. (C) 2016 Association for Comparative Economic Studies. Published by Elsevier Inc. All rights reserved." ;
+    schema:author <http://orcid.org/0000-0002-8157-8837> ;
+    schema:datePublished "2017" ;
+    schema:name "Demographic responses to a political transformation: Evidence of women's empowerment from Nepal"@en ;
+    schema:pageEnd "343" ;
+    schema:pageStart "325" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a83e8eb6-06d1-11e8-b8ee-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.jesp.2005.04.008> a schema:ScholarlyArticle ;
+    schema:about "In this research the outcome of an affective priming experiment is shown to critically depend on the frequency of occurrence of the target words used. Low frequency target words (5.7 occurrences per million words) resulted in an affective congruency effect, i.e., faster responses following affectively congruent than incongruent primes. High frequency target words (32.6 occurrences per million) resulted in a reverse priming effect, i.e., faster responses following incongruent than congruent primes. The size of the congruency effect was larger than the size of the reverse priming effect, thus masking its emergence when word frequency was not taken into account. We propose that target word frequency has its influence via an accessibility-related mechanism having to do with differences in observed changes in affect between prime and target. (PsycINFO Database Record (c) 2017 APA, all rights reserved)" ;
+    schema:author <http://catalog.coloradocollege.edu/1e7bc034-06e0-11e8-bb29-a41f7283f8d4> ;
+    schema:datePublished "2006" ;
+    schema:name "Reversing the affective congruency effect: The role of target word frequency of occurrence"@en ;
+    schema:pageEnd "372" ;
+    schema:pageStart "365" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1e7e2193-06e0-11e8-b9e2-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.jfluchem.2016.08.013> a schema:ScholarlyArticle ;
+    schema:about "Incorporation of fluorinated heterocyclic framework into organic molecules results in profound changes in their physical, chemical and biological properties. Realizing that the fluorinated thiochroman-4-ones are important scaffolds in medicinal chemistry and are rare in the chemical literature, one-pot synthesis of 2-/3-(trifluoromethyl)thiochroman-4-ones was attempted. Direct access to 2-/3-(trifluoromethyl) thiochroman-4-ones was achieved by a tandem allcylation-cyclic acylation process promoted by superelectrophilic activation of 2-/3-(trifluoromethyl)acrylic acid in superacidic trifluoromethanesulfonic acid under microwave-assisted Friedel-Crafts alkylation of benzenethiols followed by cyclization (via intramolecular acylation). Synthesis of a series of 2-13-(trifluoromethyl)thiochroman-4-ones from protosolvated 2-/3-(trifluoromethyl)acrylic acid intermediates and benzenethiols is described. (C) 2016 Elsevier B.V. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/a6307ed2-06d1-11e8-967e-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Direct synthesis of 2-/3-(trifluoromethyl)thiochroman-4-ones: Superacid-induced tandem alkylation-cyclic acylation of benzenethiols using 2-/3-(trifluoromethyl)acrylic acid"@en ;
+    schema:pageEnd "66" ;
+    schema:pageStart "63" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a6354192-06d1-11e8-9dbc-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1016/j.jhydrol.2015.12.007> a schema:ScholarlyArticle ;
@@ -330,6 +633,26 @@
     schema:partOf <http://catalog.coloradocollege.edu/cda242ae-02d0-11e8-a7db-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1016/j.jtherbio.2017.08.009> a schema:ScholarlyArticle ;
+    schema:about "The critical thermal maximum (CTmax) of insects can be determined using flow-through thermolimit respirometry. It has been demonstrated that respiratory patterns cease and insects do not recover once the CTmax), temperature has been reached. However, if high temperatures are maintained following the CTmax, researchers have observed a curious phenomenon whereby the insect body releases a large burst of carbon dioxide at a rate and magnitude that often exceed that of the live insect. This carbon dioxide release has been termed the post mortal peak (PMP). We demonstrate here that the PMP is observed only at high temperatures, is oxygen-dependent, is prevented by cyanide exposure, and is associated with concomitant consumption of oxygen. We conclude that the PMP derives from highly active, aerobic metabolism in the mitochondria. The insect tracheal system contains air-filled tubes that reach deep into the tissues and allow mitochondria access to oxygen even upon organismal death. This unique condition permits the investigation of mitochondrial function during thermal failure in a manner that cannot be achieved using vertebrate organisms or in vitro preparations." ;
+    schema:author <http://catalog.coloradocollege.edu/b2ff0782-06d1-11e8-b4bc-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Aerobic function in mitochondria persists beyond death by heat stress in insects"@en ;
+    schema:pageEnd "274" ;
+    schema:pageStart "267" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b303ca42-06d1-11e8-8168-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.landusepol.2017.07.020> a schema:ScholarlyArticle ;
+    schema:about "Smallholder agricultural carbon market projects have potential to achieve climate-smart agriculture (CSA), a \"triple-win\" for food security, climate change mitigation, and adaptation. Farmer participation is critical for achieving widespread impact, yet their adoption of sustainable land management practices is constrained by eligibility, willingness, and ability to participate. This research examines how the Kenya Agricultural Carbon Project enabled smallholder participation, with results emphasizing the importance of institutional conditions and farmers' perteptions. Findings highlight the necessity of international collaborations and high levels of synergistic coordination. Building social capital and adopting participatory learning approaches are strategies that can increase participation and create inclusive climate-smart agriculture projects." ;
+    schema:author <http://catalog.coloradocollege.edu/2735ebac-b0e5-11e6-8834-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Farmer participation in a climate-smart future: Evidence from the Kenya Agricultural Carbon Project"@en ;
+    schema:pageEnd "79" ;
+    schema:pageStart "72" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3c499a2-06d1-11e8-866f-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1016/j.legalmed.2016.04.007> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/d0c9337a-02d0-11e8-bfd9-a41f7283f8d4> ;
@@ -338,6 +661,55 @@
     schema:pageEnd "32" ;
     schema:pageStart "29" ;
     schema:partOf <http://catalog.coloradocollege.edu/d0c9337c-02d0-11e8-9ecd-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.ntt.2017.02.002> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a18dd07a-b0f4-11e6-8553-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Response to Golub, Herr, and Sobin"@en ;
+    schema:pageStart "133" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a789a634-06d1-11e8-af75-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.physd.2017.02.004> a schema:ScholarlyArticle ;
+    schema:about "Data assimilation of traffic flow remains a challenging problem. One difficulty is that data come from different sources ranging from stationary sensors and camera data to GPS and cell phone data from moving cars. Sensors and cameras give information about traffic density, while GPS data provide information about the positions and velocities of individual cars. Previous methods for assimilating Lagrangian data collected from individual cars relied on specific properties of the underlying computational model or its reformulation in Lagrangian coordinates. These approaches make it hard to assimilate both Eulerian density and Lagrangian positional data simultaneously. In this paper, we propose an alternative approach that allows us to assimilate both Eulerian and Lagrangian data. We show that the proposed algorithm is accurate and works well in different traffic scenarios and regardless of whether ensemble Kalman or particle filters are used. We also show that the algorithm is capable of estimating parameters and assimilating real traffic observations and synthetic observations obtained from microscopic models. (C) 2017 Elsevier B.V. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/a6f87252-06d1-11e8-9c62-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Assimilating Eulerian and Lagrangian data in traffic-flow models"@en ;
+    schema:pageEnd "72" ;
+    schema:pageStart "59" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a6f87254-06d1-11e8-90db-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.psychsport.2017.06.003> a schema:ScholarlyArticle ;
+    schema:about "Objectives: To assess whether a subtle stereotype threat of student-athletes would cause a decrease in both academic effort and performance. Design: A 2 (Male/Female) x 2 (Athlete Prime/No Athlete Prime) design was used to assess effort and performance on a math test. Method: A subtle threat manipulation was used to prime half of 60 NCAA Division III student-athletes with their athletic identity prior to taking a difficult math test. Results: Supporting the hypotheses, student-athletes who were primed with their athletic identity attempted significantly fewer problems and received lower mean math scores than those who were not primed. Contrary to hypotheses, gender did not impact effort or performance, and there was no evidence of buffering effects of priming non-athlete identities. Conclusions: The results of this experiment provide evidence for stereotype threat effects across genders and into Division III athletes, which potentially impact student-athlete academic performance. (C) 2017 Elsevier Ltd. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/9a0726a4-b0f0-11e6-8e32-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "The effect of stereotype threat on student-athlete math performance"@en ;
+    schema:pageEnd "57" ;
+    schema:pageStart "54" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b01ccf22-06d1-11e8-8d50-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.quascirev.2016.11.024> a schema:ScholarlyArticle ;
+    schema:about "Cosmogenic Be-10 surface-exposure dating and numerical glacier modeling are used to reconstruct glacial chronology and climate in the Colorado Sangre de Cristo Mountains during the local last glacial maximum (LLGM) and the subsequent deglaciation. Twenty-two surface-exposure ages on moraine boulders and polished-bedrock outcrops in the Willow Creek valley and ten in two adjacent valleys indicate that glaciers were at or near their maxima from similar to 21 ka until 17-16 ka, and then retreated rapidly, nearly deglaciating the Willow Creek valley entirely by similar to 14 ka. Coupled energy/mass-balance and flow modeling of two of the glaciers indicates that, if changing ice extent was driven only by temperature and insolation changes, temperature depressions of 5.0 and 5.1 degrees C from modern conditions, with an uncertainty of approximately +1.5/ 1.0 degrees C, would have sustained the glaciers in mass-balance equilibrium at their LLGM extents. Doubling or halving of modern precipitation during the LLGM would have been associated with 2.7-3.0 degrees C and 6.9-7.0 degrees C temperature depression respectively. Approximately half of the subsequent LLGM to-modern climate change was accomplished by similar to 14 ka. If the rapid main phase of deglaciation between about 16 ka and 14 ka was driven solely by temperature and insolation changes, it would have been associated with a temperature rise of about 2.5 degrees C, at a mean rate of approximately 1.1 degrees C/ky. This new chronology of the last glaciation is generally consistent with others developed recently in the Colorado Rocky Mountains. The numerical modeling, however, suggests a lesser LLGM temperature depression from modern conditions than have most previous studies in Colorado. (C) 2016 Elsevier Ltd. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/a415b522-06d1-11e8-8504-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Late Pleistocene glaciation and deglaciation in the Crestone Peaks area, Colorado Sangre de Cristo Mountains, USA - chronology and paleoclimate"@en ;
+    schema:pageEnd "144" ;
+    schema:pageStart "127" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a41cd942-06d1-11e8-b4d1-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1016/j.tetlet.2017.01.008> a schema:ScholarlyArticle ;
+    schema:about "The cyclic hydroxamic acid functional group is critical to the biological activity of numerous natural products and drug candidates. Efficient, reliable, and green synthetic methods to produce cyclic hydroxamic acids are needed. Herein, flow hydrogenation has been explored as a novel approach toward achieving the selective partial reduction of 2-nitrophenylacetic acid to 1-hydroxyindolin-2-one. The bidentate ligand, 1,10-phenanthroline, has been identified as a unique inhibitor for modulating product selectivity in this Pt/C-catalyzed process. Under the newly optimized reaction conditions, the targeted hydroxamic acid is produced with high selectivity (49:1) over the lactam by-product. The scope of the reaction is demonstrated for a variety of 2-nitrophenylacetic acid derivatives. (C) 2017 Elsevier Ltd. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/503d8ea4-b0e0-11e6-afdc-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "A safe and selective method for reduction of 2-nitrophenylacetic acid systems to N-aryl hydroxamic acids using continuous flow hydrogenation"@en ;
+    schema:pageEnd "585" ;
+    schema:pageStart "582" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a35c09e4-06d1-11e8-a8e9-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1016/j.topol.2015.12.001> a schema:ScholarlyArticle ;
@@ -358,6 +730,46 @@
     schema:pageEnd "500" ;
     schema:pageStart "499" ;
     schema:partOf <http://catalog.coloradocollege.edu/bfdf5577-02d0-11e8-b598-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1017/S0140525X16002156> a schema:ScholarlyArticle ;
+    schema:about "Leibovich et al. claim that number representations are nonexistent early in life and that the associations between number and continuous magnitudes reside in stimulus confounds. We challenge both claims - positing, instead, that number is represented independently of continuous magnitudes already in infancy, but is nonetheless more deeply connected to other magnitudes through adulthood than acknowledged by the \"sense of magnitude\" theory." ;
+    schema:author <http://catalog.coloradocollege.edu/a26c8434-b0f4-11e6-88db-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Right idea, wrong magnitude system"@en ;
+    schema:pageEnd "30" ;
+    schema:pageStart "29" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2301ca3-06d1-11e8-8a1b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1017/S1477175617000057> a schema:ScholarlyArticle ;
+    schema:about "People often assume that everyone can be divided by sex/gender (that is, by physical and social characteristics having to do with maleness and femaleness) into two tidy categories: male and female. Careful thought, however, leads us to reject that simple `binary' picture, since not all people fall precisely into one group or the other. But if we do not think of sex/gender in terms of those two categories, how else might we think of it? Here I consider four distinct models; each model correctly captures some features of sex/gender, and so each is appropriate in some contexts. But the first three models are inadequate when tough questions arise, like whether trans women should be admitted as students at a women's college or when it is appropriate for intersex athletes to compete in women's athletic events. (`Trans' refers to the wide range of people who have an atypical gender identity for someone of their birth-assigned sex, and `intersex' refers to people whose bodies naturally develop with markedly different physical sex characteristics than are paradigmatic of either men or women.) Such questions of inclusion and exclusion matter enormously to the people whose lives are affected by them, but ordinary notions of sex/gender offer few answers. The fourth model I describe is especially designed to make those hard decisions easier by providing a process to clarify what matters." ;
+    schema:author <http://catalog.coloradocollege.edu/7ee5c5dc-b0f1-11e6-8239-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Modelling Sex/gender"@en ;
+    schema:pageEnd "92" ;
+    schema:pageStart "79" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9257414-06d1-11e8-9f4e-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1017/S1537592716004667> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Machiavelli's Gospel: The Critique of Christianity in The Prince"@en ;
+    schema:pageEnd "219" ;
+    schema:pageStart "218" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d1c1c3-06d1-11e8-a43c-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1017/jog.2017.16> a schema:ScholarlyArticle ;
+    schema:about "Taylor Glacier hosts an active englacial hydrologic system that feeds Blood Falls, a supraglacial outflow of iron-rich subglacial brine at the terminus, despite mean annual air temperatures of -17 degrees C and limited surface melt. Taylor Glacier is an outlet glacier of the East Antarctic ice sheet that terminates in Lake Bonney, McMurdo Dry Valleys. To image and map the brine feeding Blood Falls, we used radio echo sounding to delineate a subhorizontal zone of englacial brine upstream from Blood Falls and elongated in the ice flow direction. We estimate volumetric brine content in excess of 13% within 2 m of the central axis of this zone, and likely much higher at its center. Brine content decreases, but remains detectable, up to 45 m away along some transects. Hence, we infer a network of subparallel basal crevasses allowing injection of pressurized subglacial brine into the ice. Subglacial brine is routed towards Blood Falls by hydraulic potential gradients associated with deeply incised supraglacial valleys. The brine remains liquid within the subglacial and englacial environments through latent heat of freezing coupled with elevated salt content. Our findings suggest that cold glaciers could support freshwater hydrologic systems through localized warming by latent heat alone." ;
+    schema:author <http://catalog.coloradocollege.edu/a908e392-06d1-11e8-9123-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "An englacial hydrologic system of brine within a cold glacier: Blood Falls, McMurdo Dry Valleys, Antarctica"@en ;
+    schema:pageEnd "400" ;
+    schema:pageStart "387" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a908e395-06d1-11e8-b60b-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1017/jpa.2015.74> a schema:ScholarlyArticle ;
@@ -409,6 +821,15 @@
     schema:partOf <http://catalog.coloradocollege.edu/bccb6f9f-02d0-11e8-9e3f-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1038/nature22976> a schema:ScholarlyArticle ;
+    schema:about "T cell receptor (TCR) sequences are very diverse, with many more possible sequence combinations than T cells in any one individual(1-4). Here we define the minimal requirements for TCR antigen specificity, through an analysis of TCR sequences using a panel of peptide and major histocompatibility complex (pMHC)-tetramer-sorted cells and structural data. From this analysis we developed an algorithm that we term GLIPH (grouping of lymphocyte interactions by paratope hotspots) to cluster TCRs with a high probability of sharing specificity owing to both conserved motifs and global similarity of complementarity-determining region 3 (CDR3) sequences. We show that GLIPH can reliably group TCRs of common specificity from different donors, and that conserved CDR3 motifs help to define the TCR clusters that are often contact points with the antigenic peptides. As an independent validation, we analysed 5,711 TCR beta chain sequences from reactive CD4 T cells from 22 individuals with latent Mycobacterium tuberculosis infection. We found 141 TCR specificity groups, including 16 distinct groups containing TCRs from multiple individuals. These TCR groups typically shared HLA alleles, allowing prediction of the likely HLA restriction, and a large number of M. tuberculosis T cell epitopes enabled us to identify pMHC ligands for all five of the groups tested. Mutagenesis and de novo TCR design confirmed that the GLIPH-identified motifs were critical and sufficient for shared-antigen recognition. Thus the GLIPH algorithm can analyse large numbers of TCR sequences and define TCR specificity groups shared by TCRs and individuals, which should greatly accelerate the analysis of T cell responses and expedite the identification of specific ligands." ;
+    schema:author <http://catalog.coloradocollege.edu/acebe252-06d1-11e8-a8a7-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Identifying specificity groups in the T cell receptor repertoire"@en ;
+    schema:pageStart "+" ;
+    schema:partOf <http://catalog.coloradocollege.edu/acf567d3-06d1-11e8-b155-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1039/c5cc09167e> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/d02c18fa-02d0-11e8-bcf7-a41f7283f8d4> ;
@@ -419,6 +840,26 @@
     schema:partOf <http://catalog.coloradocollege.edu/d02e7a5d-02d0-11e8-bb8e-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1039/c7cc02281f> a schema:ScholarlyArticle ;
+    schema:about "Addition of NaEt3BH to ((DI)-D-Ph2PPr)CoCl2 affords the corresponding monohydride, ((DI)-D-Ph2PPr)CoH. X-ray diffraction and DFT calculations indicate that this compound possesses a radical monoanion alpha-DI chelate and a Co(II) centre. Notably, ((DI)-D-Ph2PPr)CoH catalyzes the hydroboration of alkynes and dihydroboration of nitriles under mild conditions." ;
+    schema:author <http://catalog.coloradocollege.edu/ad43f534-06d1-11e8-9f1d-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Hydroboration of alkynes and nitriles using an alpha-diimine cobalt hydride catalyst"@en ;
+    schema:pageEnd "7336" ;
+    schema:pageStart "7333" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad43f537-06d1-11e8-9f16-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/00036846.2016.1208361> a schema:ScholarlyArticle ;
+    schema:about "Financial regulators are challenged with finding the most efficient and effective ways to monitor banks given an expanding and complex international financial system. Market discipline has grown in importance as a way to discourage banks from taking on unnecessary risk. One of the main drivers of market discipline is information disclosure. While the literature on market discipline is expansive, there are no known studies on the impact of individual information disclosure requirements on market discipline. Our study investigates which specific disclosure requirements influence financial investors to discipline banks and which do not. We find that information disclosure requirements primarily reduce or have no impact on market discipline practices." ;
+    schema:author <http://catalog.coloradocollege.edu/a0b5a202-06d1-11e8-a7b1-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "The impact of international information disclosure requirements on market discipline"@en ;
+    schema:pageEnd "971" ;
+    schema:pageStart "954" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a0b80363-06d1-11e8-a0ed-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1080/00224545.2015.1076761> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/cd006570-02d0-11e8-9035-a41f7283f8d4> ;
@@ -427,6 +868,26 @@
     schema:pageEnd "189" ;
     schema:pageStart "179" ;
     schema:partOf <http://catalog.coloradocollege.edu/cd09eaef-02d0-11e8-8f67-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/00288306.2016.1275707> a schema:ScholarlyArticle ;
+    schema:about "The dextral-reverse Alpine Fault offsets alluvial terraces of the Maruia River at Calf Paddock. RTK-GPS surveying of the faulted terraces yields detailed measurements of fault slip across terraces T1-T5. Pits were excavated to log the stratigraphy, date the deposits and to thereby constrain fault slip rates for this site. The mean of the four largest dextral offsets across terrace T2 is 12.0 +/- 1.3 m. The corresponding mean vertical offset is 1.6 +/- 0.6 m. A single charcoal date with an age of 1095-1275 cal yr BP is used to derive minimum dextral and reverse slip rates of 10 +/- 2 and 1.3 +/- 0.5 mm/yr, respectively. These rates are comparable with others observed nearby at Little and Lost Mary creeks and from previous studies at Calf Paddock. These new late Holocene slip rate estimates highlight the northeastward decrease in strike-slip and dip-slip rate along the northern section of the Alpine Fault as motion is partitioned onto faults of the Marlborough Fault System. The lack of aseismic creep observed across 'Evison's wall' highlights that slip is achieved at Calf Paddock during metre-scale coseismic displacements." ;
+    schema:author <http://catalog.coloradocollege.edu/012ccc6e-72be-11e6-9c71-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Slip rate estimates and slip gradient for the Alpine Fault at Calf Paddock, Maruia River, New Zealand"@en ;
+    schema:pageEnd "88" ;
+    schema:pageStart "73" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a88d1c14-06d1-11e8-b2bc-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/00380253.2016.1248133> a schema:ScholarlyArticle ;
+    schema:about "As Hartmann illuminates, it is important for sociologists to engage in public sociology. Yet, public audiences do not always receive research results in a passive and positive manner. Instead, as we discuss in this brief essay, research results can contested by multiple publics. At times, particularly in social media, the attacks can be swift. Research that is not intended to be a form of public sociology can inadvertently be brought into the public discourse. We discuss how interest groups, such as patient groups, can contest research results. Researchers can be personally attacked as well. These conflicts can create a turbulent environment where sociologists can lose control of their message. While most studies are released without incident, it is helpful to build the capacity of sociologists to participate in public sociology and manage challenges of their research results." ;
+    schema:author <http://catalog.coloradocollege.edu/41073d14-b0f5-11e6-bc35-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Conflict in Public Sociology"@en ;
+    schema:pageEnd "23" ;
+    schema:pageStart "19" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a133cae4-06d1-11e8-86ee-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1080/00927872.2014.990025> a schema:ScholarlyArticle ;
@@ -469,6 +930,26 @@
     schema:partOf <http://catalog.coloradocollege.edu/ccbb5daf-02d0-11e8-aea6-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1080/07351690.2017.1263118> a schema:ScholarlyArticle ;
+    schema:about "The article uses a self psychological lens to explore the notion of hysterical personality from our earliest understanding of it as the root of all psychogenic disorders, as discovered by Breuer and Freud, to its present elimination in the DSM-V. Can hysteria still be considered an applicable diagnosis or character style in the modern time? Or is it a culturally and historically limited phenomenon that no longer holds validity? Considering the case of Dora from Heinz Kohut's revolutionary view, which privileges the subjective and empathic stance in treatment, one can infer that Dora's own hysterical symptoms were not pathological, as Freud thought, but rather healthy attempts to bolster an enfeebled self. Nevertheless, both Kohut and his followers conclude that from a self psychological perspective both object-instinctual understandings, and self-object transferences, are essential for successful analytic treatment." ;
+    schema:author <http://catalog.coloradocollege.edu/a1b45522-06d1-11e8-87ca-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Hysteria and Self Psychology"@en ;
+    schema:pageEnd "72" ;
+    schema:pageStart "66" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1b917e3-06d1-11e8-b7e0-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/09639489.2017.1354816> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/4178d71c-b0f5-11e6-824d-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "The France of the little-middles: a suburban housing development in greater Paris"@en ;
+    schema:pageEnd "454" ;
+    schema:pageStart "453" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a234df64-06d1-11e8-992e-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1080/13549839.2015.1116064> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/29646506-b0f2-11e6-9bc8-005056c00008> ;
@@ -477,6 +958,16 @@
     schema:pageEnd "1371" ;
     schema:pageStart "1354" ;
     schema:partOf <http://catalog.coloradocollege.edu/c0c63a75-02d0-11e8-860b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/13803395.2016.1250870> a schema:ScholarlyArticle ;
+    schema:about "Mild traumatic brain injury (mTBI) and concussion are terms often used interchangeably. However, mTBI is frequently seen as representing a broader injury that encompasses the construct of concussion, which often conveys transience or decreased severity. The present study examined the influence of varying diagnostic terminology on acute injury expectations in an undergraduate population (N=105). Participants were presented with an mTBI vignette and were randomly assigned to one of two conditions in which the term mTBI or concussion was used to describe the injury. There were no significant differences between the two conditions on anxiety, symptomatology, timeline, or consequence scales. However, participants in the mTBI group allocated more days to return to play than participants in the concussion group, suggesting that terminology has an effect on perceptions of the severity of the injury. Varsity athletes allocated fewer days to return to play than nonathletes. Individuals with a history of concussion, both athletes and nonathletes, indicated fewer days to return to play, but greater symptomatology than individuals with no history of concussion. Clinicians should consider the influence of diagnostic terminology, athletic background, and history of concussion on perceptions of the severity of an injury because expectations can influence injury outcomes and compliance in a recovery process." ;
+    schema:author <http://catalog.coloradocollege.edu/9a0726a4-b0f0-11e6-8e32-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Diagnostic terminology, athlete status, and history of concussion affect return to play expectations and anticipated symptoms following mild traumatic brain injury"@en ;
+    schema:pageEnd "595" ;
+    schema:pageStart "587" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ada32c35-06d1-11e8-8691-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1080/14790718.2016.1217604> a schema:ScholarlyArticle ;
@@ -499,6 +990,46 @@
     schema:partOf <http://catalog.coloradocollege.edu/bf8742bb-02d0-11e8-816c-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1080/19369816.2016.1257852> a schema:ScholarlyArticle ;
+    schema:about "This essay draws on correspondence between Smithsonian Institution curators and Edgar Alexander Mearns, an army surgeon who served in the Philippines during the first decade of the twentieth century, in order to explore ideas about loss in natural history collections. Beneath the appearance of abundance in these collections lies a constant concern with loss, not simply with the loss of specimens to spoil and slippage, but also with the loss of data and sometimes the loss of opportunities to acquire and describe new material. I explore the ways curators considered loss historically but also the ways that reconnecting natural history specimens and field books today offer possibilities for repairing some of these losses and more fully understanding the historical and cultural context of collection." ;
+    schema:author <http://catalog.coloradocollege.edu/603c9c4c-b0f0-11e6-8e46-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "More than birds: Loss and reconnection at the National Museum of Natural History"@en ;
+    schema:pageEnd "96" ;
+    schema:pageStart "83" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1dccc83-06d1-11e8-838d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/20539320.2017.1319629> a schema:ScholarlyArticle ;
+    schema:about "This paper is an argument for drawing creative practice to the center of philosophical aesthetics. Such an approach would engage philosophical problems that originate from artistic practices. It would also give aesthetics a role in the cultivation of creative practices, both inside and outside of traditional artistic fields. As such aesthetics would begin to engage questions that are pertinent to creativity and the enhancement of artful living." ;
+    schema:author <https://orcid.org/0000-0002-5976-3083> ;
+    schema:datePublished "2017" ;
+    schema:name "Toward an Aesthetics of Creative Practice"@en ;
+    schema:pageEnd "56" ;
+    schema:pageStart "45" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1f6fba3-06d1-11e8-8a7a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/21550085.2017.1342965> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Addressing the Harms of Climate Change: Making Sense of Loss and Damage INTRODUCTION"@en ;
+    schema:pageEnd "128" ;
+    schema:pageStart "125" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a253d143-06d1-11e8-bd4a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1080/24720038.2017.1289756> a schema:ScholarlyArticle ;
+    schema:about "In this article, I explore what I find to be the essence of Coburn's and Maduro's articles: the tension between thinking of humans as independent selves and as contextually determined. I try to show that this \"dialectical core of self psychology,\" as problematic as it might seem, is necessary if we are to have an adequate basis for a system of ethics and justice, and that the West's overemphasis on autonomy has been deeply injurious. I, then, integrate the two papers by proposing, along with Coburn, that the ability to concomitantly \"own\" one's contextuality and individual freedom is the basis for a new concept of psychological maturity, and that Maduro's concepts of courageous knowing, emotional experiencing, and rigorous relationality are the keys to developing this innovative vision of psychological maturity." ;
+    schema:author <http://catalog.coloradocollege.edu/80fe459c-b0f1-11e6-99dd-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "The Dialectical Core of Self Psychology: a Reflection on Coburn's and Maduro's Essays"@en ;
+    schema:pageEnd "180" ;
+    schema:pageStart "173" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a23c0383-06d1-11e8-88c7-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1086/684535> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
@@ -507,6 +1038,36 @@
     schema:pageEnd "229" ;
     schema:pageStart "228" ;
     schema:partOf <http://catalog.coloradocollege.edu/cca852b7-02d0-11e8-af8d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1086/690461> a schema:ScholarlyArticle ;
+    schema:about "Premise of research.The serpentine grassland system provides the opportunity to examine whether drought response traits may have contributed to differentiation in the stress-tolerant genus Clarkia. Commonly utilized drought responses might be indicative of traits important to species diversification in stressful environments. Methodology.We examined the drought response strategies of populations of Clarkia gracilis (Onagraceae) from both serpentine and nonserpentine soils. Physiological, morphological, and biomass data were collected under controlled greenhouse conditions. Pivotal results.Serpentine-derived plants exhibited faster growth and germination rates and larger leaf size than nonserpentine-derived plants under increasing water stress, indicating drought escape strategies. However, serpentine-derived plants also employed dehydration avoidance by increasing their water-use efficiency (decreased transpiration rate) under drought stress. In terms of biomass, serpentine-derived plants had a higher fitness potential than nonserpentine-derived plants. Nonserpentine-derived plants tended toward dehydration avoidance through decreased growth rate, decreased transpiration, and smaller leaf size. Conclusions.Our data support transpiration rate as a trait important to stress tolerance. Moreover, serpentine-derived plants avoid drought with drought escape strategies more than nonserpentine plants and may have a higher fitness potential, particularly in water-limiting conditions. Thus, serpentine populations may be competitively superior to nonserpentine populations under drought stress conditions." ;
+    schema:author <http://catalog.coloradocollege.edu/a7319352-06d1-11e8-8dfa-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Drought Response Strategies of Clarkia Gracilis (Onagraceae) Populations from Serpentine and Nonserpentine Soils"@en ;
+    schema:pageEnd "319" ;
+    schema:pageStart "313" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a733f4b5-06d1-11e8-8d85-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1086/690479> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/1d84f7b4-b0f5-11e6-a36e-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "For Freedom or Bondage? A Critique of African Pastoral Practices"@en ;
+    schema:pageEnd "260" ;
+    schema:pageStart "259" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a544d6b6-06d1-11e8-b41d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1086/690783> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/603c9c4c-b0f0-11e6-8e46-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "World's Fairs on the Eve of War: Science, Technology, and Modernity, 1937-1942"@en ;
+    schema:pageEnd "222" ;
+    schema:pageStart "221" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d8e5e4-06d1-11e8-bc5d-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1093/beheco/arw014> a schema:ScholarlyArticle ;
@@ -519,6 +1080,16 @@
     schema:partOf <http://catalog.coloradocollege.edu/be3a02c7-02d0-11e8-bdf2-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1093/fh/crx060> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/b460b292-06d1-11e8-bbcc-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Sentimental Savants: Philosophical Families in Enlightenment France"@en ;
+    schema:pageEnd "539" ;
+    schema:pageStart "538" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b46313f5-06d1-11e8-94f1-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1093/jahist/jav791> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c4799c26-02d0-11e8-a365-a41f7283f8d4> ;
@@ -529,6 +1100,16 @@
     schema:partOf <http://catalog.coloradocollege.edu/c4799c29-02d0-11e8-ab96-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1093/oep/gpw044> a schema:ScholarlyArticle ;
+    schema:about "We model the diffusion of economic knowledge using an epidemiological model of susceptible, exposed, infected/inspired, and recovered populations (SEIR). Treating peer-reviewed journal publications as evidence of a scholar's infection/inspiration with energy for an idea or theme, we estimate the coefficients of a four-equation simultaneous system for each of 759 sub-fields of economics. Results show that some sub-fields of economics (or viruses, here) grow endogenously much faster than others, and just over half have basic reproduction properties sufficient to ensure survival without the annual addition of new protege scholars." ;
+    schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Viral economics: an epidemiological model of knowledge diffusion in economics"@en ;
+    schema:pageEnd "331" ;
+    schema:pageStart "320" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1d34704-06d1-11e8-890d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1093/petrology/egw039> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/012ccc6e-72be-11e6-9c71-005056c00008> ;
@@ -537,6 +1118,16 @@
     schema:pageEnd "1278" ;
     schema:pageStart "1241" ;
     schema:partOf <http://catalog.coloradocollege.edu/c4ca8ac7-02d0-11e8-a33a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1097/NOR.0000000000000312> a schema:ScholarlyArticle ;
+    schema:about "Surgical site infections (SSIs) cost an estimated $27,288 per case. An analysis of the National Surgical Quality Improvement Program data at the University of Rochester Medical Center suggested that rates of SSIs could be lowered in comparison with both peers and baseline. The aim of this study was to reduce the number of SSIs to zero through the implementation of a \"bundle\" or a combination of practices. Meetings were held with the multidisciplinary care team that includes surgeons and staff from pediatric pharmacy, pediatric infectious diseases, anesthesia, and nursing to create a care bundle for all pediatric orthopaedic surgery patients. Bundle elements included use of chlorhexidine gluconate wipes the night before surgery and the day of surgery, use of preoperative nutrition screens, development and use of a prophylactic antibiotic dosing chart, use of methicillin-resistant Staphylococcus aureus screening, maintenance of normal patient temperature, and use of nasal swabs in the operating room. The SSI rate dropped from a baseline figure of 4% in 2013 (n = 154) and 3.2% in 2014 (n = 189) to 0.0% (n = 198) in 2015 after the bundles were implemented. Both compliance with the bundle and SSI rates must be monitored monthly. Staff and providers should be offered monthly feedback on SSI rates and care bundle compliance. If an SSI does occur, a root-cause analysis is performed with the multidisciplinary care team using a standardized review form." ;
+    schema:author <http://catalog.coloradocollege.edu/a1199bc2-06d1-11e8-bd4a-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Implementation of a Pediatric Orthopaedic Bundle to Reduce Surgical Site Infections"@en ;
+    schema:pageEnd "59" ;
+    schema:pageStart "49" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a11bfd23-06d1-11e8-be83-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1103/PhysRevD.93.043540> a schema:ScholarlyArticle ;
@@ -586,6 +1177,16 @@
     schema:partOf <http://catalog.coloradocollege.edu/c0c177b7-02d0-11e8-9718-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1111/aje.12386> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/4f5507c6-b0f1-11e6-b84c-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Roads as travel corridors for mammals and ground birds in Tarangire National Park, Tanzania"@en ;
+    schema:pageEnd "704" ;
+    schema:pageStart "701" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b45008f5-06d1-11e8-aa22-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1111/aman.12738> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/77321234-b0e5-11e6-aa8c-005056c00008> ;
@@ -594,6 +1195,16 @@
     schema:pageEnd "894" ;
     schema:pageStart "893" ;
     schema:partOf <http://catalog.coloradocollege.edu/cfdd8bc0-02d0-11e8-a259-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1111/cogs.12393> a schema:ScholarlyArticle ;
+    schema:about "Categories can affect our perception of the world, rendering between-category differences more salient than within-category ones. Across many studies, such categorical perception (CP) has been observed for the basic-level categories of one's native language. Other research points to categorical distinctions beyond the basic level, but it does not demonstrate CP for such distinctions. Here we provide such a demonstration. Specifically, we show CP in English speakers for the non-basic distinction between warm and cool colors, claimed to represent the earliest stage of color lexicon evolution. Notably, the advantage for discriminating colors that straddle the warm-cool boundary was restricted to the right visual fieldthe same behavioral signature previously observed for basic-level categories. This pattern held in a replication experiment with increased power. Our findings show that categorical distinctions beyond the basic-level repertoire of one's native language are psychologically salient and may be spontaneously accessed during normal perceptual processing." ;
+    schema:author <http://catalog.coloradocollege.edu/a77439d2-06d1-11e8-8219-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Categorical Perception Beyond the Basic Level: The Case of Warm and Cool Colors"@en ;
+    schema:pageEnd "1147" ;
+    schema:pageStart "1135" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7769b35-06d1-11e8-81ea-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1111/ecin.12336> a schema:ScholarlyArticle ;
@@ -616,6 +1227,16 @@
     schema:partOf <http://catalog.coloradocollege.edu/c8472cef-02d0-11e8-95ef-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1111/jola.12149> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/9f8a62ba-b0dd-11e6-b14a-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Fixing the Books: Secrecy, Literacy, and Perfectibility in Indigenous New Mexico"@en ;
+    schema:pageEnd "254" ;
+    schema:pageStart "252" ;
+    schema:partOf <http://catalog.coloradocollege.edu/adf6a363-06d1-11e8-abfd-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1111/jpcu.12400> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/778a09be-b0e5-11e6-b859-005056c00008> ;
@@ -624,6 +1245,16 @@
     schema:pageEnd "305" ;
     schema:pageStart "289" ;
     schema:partOf <http://catalog.coloradocollege.edu/c7546113-02d0-11e8-9f81-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1111/pala.12323> a schema:ScholarlyArticle ;
+    schema:about "The age of the sedimentary basement of the Ganga Valley in northern India, which is represented by the entirely subsurface Ganga Supergroup, is key for addressing issues related to the tectonic history of the Himalaya. However, the stratigraphic correlations between the Ganga Supergroup in the Ganga Valley, the Vindhyan Supergroup in cratonic India to the south, and Proterozoic successions in the Lesser Himalaya to the north have long been a matter of controversy. This is largely because of the poor age constraint of the Madhubani Group of the upper Ganga Supergroup, which has been variously interpreted as Proterozoic, lower Palaeozoic, or even Mesozoic. To address this issue, we used a low manipulation maceration technique to extract organic-walled microfossils from the Ujhani and Tilhar formations of the lower Madhubani Group. Our study recovered a total of 24 taxa, including Devisphaera corallis gen. et sp. nov. The co-occurrence of Trachyhystrichosphaera aimika, Caudosphaera expansa and Annulusia annulata in the lower Madhubani Group indicates a late Mesoproterozoic to early Neoproterozoic age. Thus, the biostratigraphical data suggest a > 300 myr depositional gap between the Madhubani Group and the immediately underlying Bahraich Group, which has been independently constrained to be upper Palaeoproterozoic to lower Mesoproterozoic in age. Therefore, the first-order stratigraphic architecture, with a Palaeoproterozoic-Mesoproterozoic succession unconformably overlain by a Mesoproterozoic-Neoproterozoic succession, is closely similar throughout the Vindhyan Basin, Ganga Valley and Lesser Himalaya, suggesting a shared sedimentary and tectonic history among them." ;
+    schema:author <http://catalog.coloradocollege.edu/b3af2d42-06d1-11e8-b84d-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Late Mesoproterozoic - Early Neoproterozoic Organic-Walled Microfossils from the Madhubani Group of the Ganga Valley, Northern India"@en ;
+    schema:pageEnd "891" ;
+    schema:pageStart "869" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3af2d45-06d1-11e8-bfe3-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1111/phc3.12302> a schema:ScholarlyArticle ;
@@ -636,6 +1267,15 @@
     schema:partOf <http://catalog.coloradocollege.edu/cc6a6f11-02d0-11e8-9727-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1111/spc3.12329> a schema:ScholarlyArticle ;
+    schema:about "In this article, we ask how well people fulfill informational motives by using the judgments of others. We build on advice-taking research from the judgment and decision making literature, which has developed a distinct paradigm to test how accurately people incorporate information from others. We use a literature review to show that people have mixed success in fulfilling informational motivesthey increase their accuracy through the use of advice, but not as much as they could. We develop insights about how people perceive advisors and try to pursue adviceand where their perceptions may lead them astray. We conclude by proposing that future work further investigate the reasons people fail to use advice by building on the current advice taking paradigm used in judgment and decision making, but with a richer understanding of advice taking as a dynamic process that often entails complex decisions and normative motives." ;
+    schema:author <http://catalog.coloradocollege.edu/addc4d34-06d1-11e8-ab1c-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Advice as a form of social influence: Informational motives and the consequences for accuracy"@en ;
+    schema:pageStart "e12329" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ade37153-06d1-11e8-8c78-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1111/ter.12235> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008> ;
@@ -644,6 +1284,25 @@
     schema:pageEnd "426" ;
     schema:pageStart "419" ;
     schema:partOf <http://catalog.coloradocollege.edu/bfc9e91f-02d0-11e8-953b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1119/1.5000802> a schema:ScholarlyArticle ;
+    schema:about "General relativity predicts that clocks run more slowly near massive objects. The effect is small-a clock at sea level lags behind one 1000 m above sea level by only 9.4 ns/day. Here, we demonstrate that a measurement of this effect can be done by undergraduate students. Our paper describes an experiment conducted by undergraduate researchers at Colorado College and the United States Air Force Academy to measure gravitational time dilation. The measurement was done by comparing the signals generated by a GPS frequency standard (sea-level time) to a Cs-beam frequency standard at seven different altitudes above sea level. We found that our measurements are consistent with the predictions of general relativity. (C) 2017 American Association of Physics Teachers." ;
+    schema:author <http://catalog.coloradocollege.edu/b204c902-06d1-11e8-96bc-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Measurement of gravitational time dilation: An undergraduate research project"@en ;
+    schema:pageEnd "762" ;
+    schema:pageStart "757" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2072a63-06d1-11e8-b101-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1126/sciadv.1601430> a schema:ScholarlyArticle ;
+    schema:about "Abrupt perturbations of the global carbon cycle during the early Eocene are associated with rapid global warming events, which are analogous in many ways to present greenhouse warming. Mammal dwarfing has been observed, alongwith other changes in community structure, during the largest of these ancient global warming events, known as the Paleocene-Eocene Thermal Maximum [PETM; similar to 56 million years ago (Ma)]. We show that mammalian dwarfing accompanied the subsequent, smaller-magnitude warming event known as Eocene Thermal Maximum 2 [ETM2 (similar to 53 Ma)]. Statistically significant decrease in body size during ETM2 is observed in two of four taxonomic groups analyzed in this study andis most clearly observed inearly equids (horses). During ETM2, the best-sampledlineage of equids decreased in size by similar to 14%, as opposed to similar to 30% during the PETM. Thus, dwarfing appears to be a common evolutionary response of somemammals during past globalwarming events, and the extent of dwarfing seems related to the magnitude of the event." ;
+    schema:author <http://catalog.coloradocollege.edu/a4beb6c2-06d1-11e8-9e4b-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Repetitive mammalian dwarfing during ancient greenhouse warming events"@en ;
+    schema:pageStart "e1601430" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4beb6c5-06d1-11e8-801b-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1127/phyto/2016/0128> a schema:ScholarlyArticle ;
@@ -666,6 +1325,16 @@
     schema:partOf <http://catalog.coloradocollege.edu/c0a4e743-02d0-11e8-9b87-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1130/B31835.1> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/ac10e3d2-06d1-11e8-8380-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Depositional history, tectonics, and provenance of the Cambrian-Ordovician boundary interval in the western margin of the North China block: Reply"@en ;
+    schema:pageEnd "1024" ;
+    schema:pageStart "1022" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ac10e3d5-06d1-11e8-a125-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1130/G38284.1> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c3064642-02d0-11e8-ac67-a41f7283f8d4> ;
@@ -674,6 +1343,16 @@
     schema:pageEnd "958" ;
     schema:pageStart "955" ;
     schema:partOf <http://catalog.coloradocollege.edu/c3064645-02d0-11e8-98ff-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1139/cjm-2017-0393> a schema:ScholarlyArticle ;
+    schema:about "Natural transformation is the acquisition of new genetic material via the uptake of exogenous DNA by competent bacteria. Acinetobacter baylyi is model for natural transformation. Here we focus on the natural transformation of A. baylyi ATCC 33305 grown in complex media and seek environmental conditions that appreciably affect transformation efficiency. We find that the transformation efficiency for A. baylyi is a resilient characteristic that remains high under most conditions tested. We do find several distinct conditions that alter natural transformation efficiency including addition of succinate, Fe2+ (ferrous) iron chelation, and substitution of sodium ions with potassium ones. These distinct conditions could be useful to fine tune transformation efficiency for researchers using A. baylyi as a model organism to study natural transformation." ;
+    schema:author <http://catalog.coloradocollege.edu/ccffc7dc-b0f0-11e6-9273-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Succinate, iron chelation, and monovalent cations affect the transformation efficiency of Acinetobacter baylyi ATCC 33305 during growth in complex media"@en ;
+    schema:pageEnd "856" ;
+    schema:pageStart "851" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2666163-06d1-11e8-9a4c-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1142/S0218196716500247> a schema:ScholarlyArticle ;
@@ -696,6 +1375,35 @@
     schema:partOf <http://catalog.coloradocollege.edu/c54b14cd-02d0-11e8-845e-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1161/JAHA.116.005465> a schema:ScholarlyArticle ;
+    schema:about "Background-Cigarette smoking plays a major role in cardiovascular diseases. The acute effects of cigarette smoking produce central nervous system-mediated activation of the sympathetic nervous system. The overactive sympathetic nervous system stimulates the secretion of serotonin (5-HT) and catecholamine into blood at supraphysiological levels. The correlation between these pathological conditions induced by smoking and the increased risk of thrombosis has not been thoroughly investigated. The goal of our study was to explore cigarette smoking-associated changes in platelet biology mediated by elevated 5-HT and catecholamine levels in blood plasma. Methods and Results-Using blood samples collected from healthy nonsmokers and smokers (15 minutes after smoking), we determined that cigarette smoking increased the plasma 5-HT/catecholamine concentration by several fold and the percent aggregation of platelets 2-fold. Liquid chromatography-tandem mass spectrometry analysis of proteins eluted from platelet plasma membranes of smokers and nonsmokers demonstrated that GTPase-activating proteins and proteins participating in the actin cytoskeletal network were differentially and significantly elevated in smokers' platelet membranes compared with those of nonsmokers. Interestingly, Matrix-assisted laser desorption/ionization-mass spectrometry analyses of the glycans eluted from platelet plasma membranes of the smokers demonstrated that the level and structures of glycans are different from the nonsmokers' platelet surface glycans. Pharmacological blockade of 5-HT or catecholamine receptors counteracted the 5-HT/catecholamine-mediated aggregation and altered the level and composition of glycan on platelet surfaces. Conclusions-Based on our findings, we propose that smoking-associated 5-HT/catecholamine signaling accelerates the trafficking dynamics of platelets, and this remodels the surface proteins and glycans and predisposes platelets to hyperactive levels. Smokers' platelets also had correspondingly higher resting concentrations of intracellular calcium and transglutaminase activity. These findings suggest a link among smoking, platelet 5-HT, catecholamine signaling, and their downstream effectorsincluding phospholipase C and inositol-1,4,5-triphosphate pathways-resulting in an increased tonic level of platelet activation in smokers." ;
+    schema:author <http://catalog.coloradocollege.edu/a826c0f4-06d1-11e8-a1aa-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Cigarette Smoking-Associated Alterations in Serotonin/Adrenalin Signaling Pathways of Platelets"@en ;
+    schema:pageStart "e005465" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a826c0f7-06d1-11e8-934c-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.11646/phytotaxa.295.2.1> a schema:ScholarlyArticle ;
+    schema:about "Most of the species studied in this paper have previously been placed in either Pleurothallis or Lepanthes. However, at one time or another, members of the group have also been placed in the genera Andinia, Brachycladium, Lueranthos, Masdeval-liantha, Neooreophilus, Oreophilus, Penducella, Salpistele and Xenosia. Phylogenetic analyses of nuclear ITS and plastid matK sequences indicate that these species form a strongly supported clade that is only distantly related to Lepanthes and is distinct from Pleurothallis and Salpistele. Since this clade includes the type species of Andinia, A. dielsii, and it has taxonomic precedence over all other generic names belonging to this group, Andinia is re-circumscribed and expanded to include 72 species segregated into five subgenera: Aenigma, Andinia, Brachycladium, Masdevalliantha and Minuscula. The required taxonomic transfers are made herein. We hypothesize that convergent evolution towards a similar pollinator syndrome involving deceit pollination via pseudocopulation by Diptera resulted in a similar floral morphology between species of subgenus Brachycladium and species of Lepanthes; hence the prior placement of the species of subgenus Brachycladium in Lepanthes. Species of the re-circumscribed Andinia are confined exclusively to the Andes, ranging from about 1,200 to 3,800 m, from Colombia south to Bolivia, making the generic name very apt. Elevational distributions of the individual clades are discussed in relation to the possible evolutionary diversification of the most species-rich clade, subgenus Brachycladium." ;
+    schema:author <http://catalog.coloradocollege.edu/a3aa9742-06d1-11e8-9bb0-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Phylogenetic analysis of Andinia (Pleurothallidinae; Orchidaceae) and a systematic re-circumscription of the genus"@en ;
+    schema:pageEnd "131" ;
+    schema:pageStart "101" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3aa9745-06d1-11e8-a52d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.11646/phytotaxa.308.1.6> a schema:ScholarlyArticle ;
+    schema:about "A new orchid species in Pleurothallis subsection Macrophyllae-Fasciculatae, is described and illustrated. It was discovered in semi-deciduous premontane forest from Southwestern Ecuador. The new species is named herein as Pleurothallis marioi; information about its distribution, habitat, phenology, and conservation status is provided. The new taxon is compared with P. acestrophylla, P. arctata, P. calamifolia, P. lemniscifolia, P. portillae, and P. subtilis, species to which it is morphologically similar." ;
+    schema:author <http://catalog.coloradocollege.edu/51431c24-b0f1-11e6-a374-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "A new species of Pleurothallis (Orchidaceae: Pleurothallidinae) from Southwestern Ecuador: Pleurothallis marioi"@en ;
+    schema:pageEnd "88" ;
+    schema:pageStart "80" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9ad2275-06d1-11e8-bc8c-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1177/0003702815615341> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/ca1e7c66-02d0-11e8-b2bd-a41f7283f8d4> ;
@@ -704,6 +1412,56 @@
     schema:pageEnd "173" ;
     schema:pageStart "162" ;
     schema:partOf <http://catalog.coloradocollege.edu/ca20ddc7-02d0-11e8-aa79-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1177/0047117817723067> a schema:ScholarlyArticle ;
+    schema:about "This essay offers a constitutional perspective on the American encounter with the problem of international order. Its point of departure is the American Founding, a subject often invisible in both the history of international thought and contemporary International Relations theory. Although usually considered as an incident within the domestic politics of the United States, the Founding displays many key ideas that have subsequently played a vital role in both international political thought and IR theory. The purpose of this essay is to explore these ideas and to take account of their passage through time, up to and including the present day. Those ideas shine a light not only on how we organize our scholarly enterprises but also on the contemporary direction of US foreign policy and the larger question of world order." ;
+    schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "American diplomatic history and international thought: a constitutional perspective"@en ;
+    schema:pageEnd "340" ;
+    schema:pageStart "322" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b15bc763-06d1-11e8-b96a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1177/0096144217726959> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/3fa1a61c-b0f5-11e6-b081-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Agency in Policing the Poor: Protecting Social Status and Fortifying Punishment"@en ;
+    schema:pageEnd "973" ;
+    schema:pageStart "968" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3d7a4a3-06d1-11e8-bba7-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1177/0146167207310454> a schema:ScholarlyArticle ;
+    schema:about "Social interaction is a central feature of people's life and engages a variety of cognitive resources. Thus, social interaction should facilitate general cognitive functioning. Previous studies suggest such a link, but they used special populations (e. g., elderly with cognitive impairment), measured social interaction indirectly (e. g., via marital status), and only assessed effects of extended interaction in correlational designs. Here the relation between mental functioning and direct indicators of social interaction was examined in a younger and healthier population. Study 1 using survey methodology found a positive relationship between social interaction, assessed via amount of actual social contact, and cognitive functioning in people from three age groups including younger adults. Study 2 using an experimental design found that a small amount of social interaction (10 min) can facilitate cognitive performance. The findings are discussed in the context of the benefits social relationships have for so many aspects of people's lives." ;
+    schema:author <http://catalog.coloradocollege.edu/1ed44842-06e0-11e8-abb1-a41f7283f8d4> ;
+    schema:datePublished "2008" ;
+    schema:name "Mental exercising through simple socializing: Social interaction promotes general cognitive functioning"@en ;
+    schema:pageEnd "259" ;
+    schema:pageStart "248" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1eddcdc3-06e0-11e8-a8da-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1177/1948550610370214> a schema:ScholarlyArticle ;
+    schema:about "Psychological research has devoted much attention to how people judge and predict others. However, a full understanding of social perception necessitates incorporating the responses of the targets, who may have little interest in being predicted. The authors argue that whether people want to be predicted depends on the interpersonal context-in particular, competitive or cooperative ones. Study 1 used a unique behavioral measure and showed that competition participants, when asked to draw the flight path of a moth in a separate study, produced significantly more variable and significantly less predictable trajectories than did cooperation participants. Study 2 examined participants' self-assessments and showed that participants expecting a competitive interaction indicated that they were more difficult to predict, less willing to open up, and more willing to mislead. Together, the findings suggest that people are not always open to being predicted and that the form of these tendencies depends on features of the situation." ;
+    schema:author <http://catalog.coloradocollege.edu/1f8792b4-06e0-11e8-b6ef-a41f7283f8d4> ;
+    schema:datePublished "2010" ;
+    schema:name "Being Unpredictable: Friend or Foe Matters"@en ;
+    schema:pageEnd "267" ;
+    schema:pageStart "259" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1f911835-06e0-11e8-a357-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1215/00141801-3789177> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/9f02c8c0-b0dd-11e6-b1ed-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Marianne Stoller"@en ;
+    schema:pageEnd "299" ;
+    schema:pageStart "297" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a550bd93-06d1-11e8-9e6e-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.1216/RMJ-2016-46-5-1559> a schema:ScholarlyArticle ;
@@ -726,6 +1484,112 @@
     schema:partOf <http://catalog.coloradocollege.edu/cfe4afdb-02d0-11e8-8008-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.1353/mgs.2017.0040> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Austerity Measures: The New Greek Poetry."@en ;
+    schema:pageEnd "612" ;
+    schema:pageStart "608" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b21a3563-06d1-11e8-b8b0-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1353/rvs.2017.0042> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/c3372e36-b0f5-11e6-bf02-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "The rhetoric of the south: Representations and speeches about Andalusia in the democratic period"@en ;
+    schema:pageEnd "477" ;
+    schema:pageStart "474" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a978c435-06d1-11e8-ab9d-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1371/journal.pgen.1007092> a schema:ScholarlyArticle ;
+    schema:about "In haploid cells of Ogataea (Hansenula) polymorpha an environmental signal, nitrogen starvation, induces a reversible change in the structure of a chromosome. This process, mating-type switching, inverts a 19-kb DNA region to place either MATa or MATa genes under centromeric repression of transcription, depending on the orientation of the region. Here, we investigated the genetic pathway that controls switching. We characterized the transcriptomes of haploid and diploid O. polymorpha by RNAseq in rich and nitrogen-deficient media, and found that there are no constitutively a-specific or alpha-specific genes other than the MAT genes themselves. We mapped a switching defect in a sibling species (O. parapolymorpha strain DL-1) by interspecies bulk segregant analysis to a frameshift in the transcription factor EFG1, which in Candida albicans regulates filamentous growth and white-opaque switching. Gene knockout, overexpression and ChIPseq experiments show that EFG1 regulates RME1, which in turn regulates STE12, to achieve mating-type switching. All three genes are necessary both for switching and for mating. Overexpression of RME1 or STE12 is sufficient to induce switching without a nitrogen depletion signal. The homologous recombination genes RAD51 and RAD17 are also necessary for switching. The pathway controlling switching in O. polymorpha shares no components with the regulation of HO in S. cerevisiae, which does not involve any environmental signal, but it shares some components with mating-type switching in Kluyveromyces lactis and with white-opaque phenotypic switching in C. albicans." ;
+    schema:author <http://catalog.coloradocollege.edu/b3f594b4-06d1-11e8-8fe6-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Flip/flop mating-type switching in the methylotrophic yeast Ogataea polymorpha is regulated by an Efg1-Rme1-Ste12 pathway"@en ;
+    schema:pageStart "e1007092" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3fcb8d3-06d1-11e8-8662-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1371/journal.pone.0182139> a schema:ScholarlyArticle ;
+    schema:about "Here we present an examination of type IV pilus genes associated with competence and twitching in the bacterium Acinetobacter baylyi (strain ADP1, BD413). We used bioinformatics to identify potential competence and twitching genes and their operons. We measured the competence and twitching phenotypes of the bioinformatically-identified genes. These results demonstrate that competence and twitching in A. baylyi both rely upon a core of the same type IV pilus proteins. The core includes the inner membrane assembly platform (PilC), a periplasmic assemblage connecting the inner membrane assembly platform to the secretin (ComM), a secretin (ComQ) and its associated pilotin (PilF) that assists with secretin assembly and localization, both cytoplasmic pilus retraction ATPases (PilU, PilT), and pilins (ComP, ComB, PilX). Proteins not needed for both competence and twitching are instead found to specialize in either of the two traits. The pilins are varied in their specialization with some required for either competence (FimT) and others for twitching (ComE). The protein that transports DNA across the inner membrane (ComA) specializes in competence, while signal transduction proteins (PilG, PilS, and PilR) specialize in twitching. Taken together our results suggest that the function of accessory proteins should not be based on homology alone. In addition the results suggest that in A. baylyi the mechanisms of natural transformation and twitching are mediated by the same set of core Type IV pilus proteins with distinct specialized proteins required for each phenotype. Finally, since competence requires multiple pilins as well as both pilus retraction motors PilU and PilT, this suggests that A. baylyi employs a pilus in natural transformation." ;
+    schema:author <http://catalog.coloradocollege.edu/ccffc7dc-b0f0-11e6-9273-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "The role of core and accessory type IV pilus genes in natural transformation and twitching motility in the bacterium Acinetobacter baylyi"@en ;
+    schema:pageStart "e0182139" ;
+    schema:partOf <http://catalog.coloradocollege.edu/aea92a84-06d1-11e8-ad74-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1371/journal.pone.0187531> a schema:ScholarlyArticle ;
+    schema:about "Women are underrepresented in a number of science, technology, engineering, and mathematics (STEM) disciplines. Limited diversity in the development of the STEM workforce has negative implications for scientific innovation, creativity, and social relevance. The current study reports the first-year results of the PROmoting Geoscience Research, Education, and SuccesS (PROGRESS) program, a novel theory-driven informal mentoring program aimed at supporting first- and second-year female STEM majors. Using a prospective, longitudinal, multi-site (i.e., 7 universities in Colorado/Wyoming Front Range & Carolinas), propensity score matched design, we compare mentoring and persistence outcomes for women in and out of PROGRESS (N = 116). Women in PROGRESS attended an off-site weekend workshop and gained access to a network of volunteer female scientific mentors from on- and off-campus (i.e., university faculty, graduate students, and outside scientific professionals). The results indicate that women in PROGRESS had larger networks of developmental mentoring relationships and were more likely to be mentored by faculty members and peers than matched controls. Mentoring support from a faculty member benefited early-undergraduate women by strengthening their scientific identity and their interest in earth and environmental science career pathways. Further, support from a faculty mentor had a positive indirect impact on women's scientific persistence intentions, through strengthened scientific identity development. These results imply that first- and second- year undergraduate women's mentoring support networks can be enhanced through provision of protege training and access to more senior women in the sciences willing to provide mentoring support." ;
+    schema:author <http://catalog.coloradocollege.edu/b36ee822-06d1-11e8-8e5e-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Promoting professional identity, motivation, and persistence: Benefits of an informal mentoring program for female undergraduate students"@en ;
+    schema:pageStart "e0187531" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3760c43-06d1-11e8-8035-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1416/87920> a schema:ScholarlyArticle ;
+    schema:about "The linear progression of time defines the very notion of the \"Modern\" as a discernible epoch along the continuum of a common understanding of the progression of time. To alter the relationship of the subject to the normative progression of time or, more radically, to alter temporality itself is to fracture the firmament of the Modern as both a discernible epoch and its existence as context for thinking. This paper is to examine avant garde jazz music and its abandonment of the fundamentals of western music, particularly meter, as a foray into the creation of a sonic representation of alternative modes of subjective relation to temporality. This art is further analyzed in relation to the conception of subjectivity provided by Ellison and Du Bois, and regarded as an attempt to create a revolutionary space of radical freedom for the radical \"Other\"." ;
+    schema:author <http://catalog.coloradocollege.edu/e4a0608c-b0f4-11e6-874a-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Radical Time, Fictive Realism, and Revolution as Context. Sonic Implosion of the Modern"@en ;
+    schema:pageEnd "458" ;
+    schema:pageStart "445" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b435d9d3-06d1-11e8-920c-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1513/AnnalsATS.201701-081OC> a schema:ScholarlyArticle ;
+    schema:about "Rationale: Nontuberculous mycobacteria (NTM) are ubiquitous environmental microorganisms. Infection is thought to result primarily from exposure to soil and/or water sources. NTM disease prevalence varies greatly by geographic region, but the geospatial factors influencing this variation remain unclear. Objectives: To identify sociodemographic and environmental ecological risk factors associated with NTM infection and disease in Colorado. Methods: We conducted an ecological study, combining data from patients with a diagnosis of NTM disease from National Jewish Health's electronic medical record database and ZIP code-level sociodemographic and environmental exposure data obtained from the U.S. Geological Survey, the U.S. Department of Agriculture, and the U.S. Census Bureau. We used spatial scan methods to identify high-risk clusters of NTM disease in Colorado. Ecological risk factors for disease were assessed using Bayesian generalized linear models assuming Poisson-distributed discrete responses (case counts by ZIP code) with the log link function. Results: We identified two statistically significant high-risk clusters of disease. The primary cluster included ZIP codes in urban regions of Denver and Aurora, as well as regions south of Denver, on the east side of the Continental Divide. The secondary cluster was located on the west side of the Continental Divide in rural and mountainous regions. After adjustment for sociodemographic, drive time, and soil variables, we identified three watershed areas with relative risks of 12.2, 4.6, and 4.2 for slowly growing NTM infections compared with the mean disease risk for all watersheds in Colorado. This study population carries with it inherent limitations that may introduce bias. The lack of complete capture of NTM cases in Colorado may be related to factors such as disease severity, education and income levels, and insurance status. Conclusions: Our findings provide evidence that water derived from particular watersheds may be an important source of NTM exposure in Colorado. The watershed with the greatest risk of NTM disease contains the Dillon Reservoir. This reservoir is also the main water supply for major cities located in the two watersheds with the second and third highest disease risk in the state, suggesting an important possible source of infection." ;
+    schema:author <http://catalog.coloradocollege.edu/b2b53ce2-06d1-11e8-8b80-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "A Geospatial Epidemiologic Analysis of Nontuberculous Mycobacterial Infection: An Ecological Study in Colorado"@en ;
+    schema:pageEnd "1532" ;
+    schema:pageStart "1523" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2b79e43-06d1-11e8-be43-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1515/mgzs-2017-0167> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/631a5454-b0f0-11e6-9cf2-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "A Bavarian Prince and a Soldier of Germany"@en ;
+    schema:pageEnd "174" ;
+    schema:pageStart "168" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b15704a2-06d1-11e8-8bf5-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1521/soco.2014.32.3.256> a schema:ScholarlyArticle ;
+    schema:about "Warmth and competence are fundamental dimensions used to characterize people, animals, and even corporations. Based on observations from a preliminary survey (Study 1) on the impact of scandals on several brands, we predicted that an organization that caused a disaster would be judged more harshly if its warmth rather than competence reputation was called into question. Study 1 surveyed a nationally representative sample of American adults and results showed that not all scandals had the same consequences on the perception of warmth, competence, and on consumer attitudes. Study 2 suggested that framing the cause of a local environmental disaster in terms of low warmth resulted in harsher judgments toward the responsible organization than framing the cause related to incompetence. Study 3 found that a warmth frame for post-disaster cleanup was ineffective compared to a competence frame. These results suggested that warmth and competence shape perceivers' blame attribution following a corporate or organizational disaster." ;
+    schema:author <http://catalog.coloradocollege.edu/1fd15d52-06e0-11e8-bf68-a41f7283f8d4> ;
+    schema:datePublished "2014" ;
+    schema:name "Not all Disasters are Equal in the Public's Eye: the Negativity Effect on Warmth in Brand Perception"@en ;
+    schema:pageEnd "275" ;
+    schema:pageStart "256" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1fd3beb5-06e0-11e8-88e0-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1525/abt.2017.79.1.2> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/a0c8ad02-06d1-11e8-8689-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Untitled"@en ;
+    schema:pageStart "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a0cb0e63-06d1-11e8-a56b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.1534/genetics.117.202036> a schema:ScholarlyArticle ;
+    schema:about "Cell differentiation in yeast species is controlled by a reversible, programmed DNA-rearrangement process called mating-type switching. Switching is achieved by two functionally similar but structurally distinct processes in the budding yeast Saccharomyces cerevisiae and the fission yeast Schizosaccharomyces pombe. In both species, haploid cells possess one active and two silent copies of the mating-type locus (a three-cassette structure), the active locus is cleaved, and synthesis-dependent strand annealing is used to replace it with a copy of a silent locus encoding the opposite mating-type information. Each species has its own set of components responsible for regulating these processes. In this review, we summarize knowledge about the function and evolution of mating-type switching components in these species, including mechanisms of heterochromatin formation, MAT locus cleavage, donor bias, lineage tracking, and environmental regulation of switching. We compare switching in these well-studied species to others such as Kluyveromyces lactis and the methylotrophic yeasts Ogataea polymorpha and Komagataella phaffii. We focus on some key questions: Which cells switch mating type? What molecular apparatus is required for switching? Where did it come from? And what is the evolutionary purpose of switching?" ;
+    schema:author <http://catalog.coloradocollege.edu/a7612ed2-06d1-11e8-948a-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "An Evolutionary Perspective on Yeast Mating-Type Switching"@en ;
+    schema:pageEnd "32" ;
+    schema:pageStart "9" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7639035-06d1-11e8-8cdb-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.1785/0120150114> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/2c7e25f4-b0e3-11e6-8530-005056c00008> ;
@@ -734,6 +1598,26 @@
     schema:pageEnd "288" ;
     schema:pageStart "281" ;
     schema:partOf <http://catalog.coloradocollege.edu/cd5d3aea-02d0-11e8-8072-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.18172/cig.3234> a schema:ScholarlyArticle ;
+    schema:about "The availability of almost 180 cosmogenic-radionuclide (CRN) surface-exposure ages from moraine boulders and glacially polished bedrock surfaces makes possible an assessment of the timing and character of the local Last Glacial Maximum (LLGM) and subsequent deglaciation in the Colorado Rocky Mountains. A review of glacial chronologies and numerical modeling results indicates that although glaciers across Colorado responded broadly synchronously, apparent differences in the timing and magnitude of glacier retreat following the LLGM suggest that spatially variable regional forcing, possibly precipitation related, played a role in glacier behavior along with more spatially uniform hemispheric or global forcing. Glaciers in the five ranges examined reached their greatest LLGM extents before similar to 19.5 ka and abandoned their outermost LLGM moraines between similar to 23.5 and 19.5 ka. Detailed deglaciation chronologies are available for glaciers in four of the ranges. In the Sawatch Range and Sangre de Cristo Mountains, glaciers were near their LLGM extents at 17-16 ka, before retreating rapidly. In the San Juan Mountains and the Front Range, glaciers may have begun their post-LLGM recession earlier, although early deglaciation is indicated by only a few ages on polished bedrock that potentially contains pre-LLGM CRN inheritance, and thus may be too old. Regardless of the timing of the onset of deglaciation, the equilibrium-line rise associated with deglaciation was earlier and significantly larger in the San Juan Mountains than elsewhere in Colorado. This suggests that the San Juan Mountains, located well to the southwest of the other ranges, may have experienced enhanced precipitation during the LLGM, as did areas farther to the south and west, while LLGM conditions may have been drier in the northern and eastern Colorado ranges. A breakdown in this pattern after the LLGM, with precipitation decreasing in the south and west and increasing in the north and east, may have led to the range-to-range differences evident across Colorado. Deglaciation was nearly complete in all four ranges by 15-13 ka. While some proxy records indicate a later Younger Dryas-age cooling in the Colorado mountains, there is not clear moraine evidence of glacier readvance at that time." ;
+    schema:author <http://catalog.coloradocollege.edu/a29677c2-06d1-11e8-8a0d-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Deglaciation of the Colorado Rocky Mountains Following the Last Glacial Maximum"@en ;
+    schema:pageEnd "526" ;
+    schema:pageStart "497" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a29ffd43-06d1-11e8-ac9a-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.2140/pjm.2017.288.87> a schema:ScholarlyArticle ;
+    schema:about "We continue our study of ends of noncompact manifolds, with a focus on the inward tameness condition. For manifolds with compact boundary, inward tameness, by itself, has significant implications. For example, such manifolds have stable homology at infinity in all dimensions. Here we show that these manifolds have \"almost perfectly semistable\" fundamental group at each of their ends. That observation leads to further analysis of the grouptheoretic conditions at infinity, and to the notion of a \"near pseudocollar\" structure. We obtain a complete characterization of n-manifolds (n >= 6) admitting such a structure, thereby generalizing our previous work (Geom. Topol. 10 (2006), 541-556). We also construct examples illustrating the necessity and usefulness of the new conditions introduced here. Variations on the notion of a perfect group, with corresponding versions of the Quillen plus construction, form an underlying theme of this work." ;
+    schema:author <http://catalog.coloradocollege.edu/a74e23d2-06d1-11e8-9e6d-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Noncompact Manifolds that are Inward Tame"@en ;
+    schema:pageEnd "128" ;
+    schema:pageStart "87" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7508535-06d1-11e8-981b-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.2979/trancharpeirsoc.52.1.03> a schema:ScholarlyArticle ;
@@ -766,6 +1650,26 @@
     schema:partOf <http://catalog.coloradocollege.edu/c35734e3-02d0-11e8-b760-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.3197/096327117X14809634978717> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Science and the Self: Animals, Evolution, and Ethics: Essays in Honour of Mary Midgley"@en ;
+    schema:pageEnd "116" ;
+    schema:pageStart "114" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3254a43-06d1-11e8-ab7b-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.3197/096327117X14913285800643> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Beyond the Anthropocene: Perspectives on Human-Nature Relations, Old and New"@en ;
+    schema:pageEnd "267" ;
+    schema:pageStart "263" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a91e4ff5-06d1-11e8-98db-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.3366/jqs.2016.0252> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c8557526-02d0-11e8-bc27-a41f7283f8d4> ;
@@ -774,6 +1678,16 @@
     schema:pageEnd "122" ;
     schema:pageStart "116" ;
     schema:partOf <http://catalog.coloradocollege.edu/c85c9947-02d0-11e8-a546-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.3368/m.109.2.343> a schema:ScholarlyArticle ;
+    schema:about "undefined" ;
+    schema:author <http://catalog.coloradocollege.edu/f1a7182c-b0e3-11e6-b750-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Time and Technoimagination. A new Imagination in Novels of the 21st Century"@en ;
+    schema:pageEnd "345" ;
+    schema:pageStart "343" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a93ae075-06d1-11e8-8cad-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.3389/fimmu.2016.00607> a schema:ScholarlyArticle ;
@@ -785,6 +1699,15 @@
     schema:partOf <http://catalog.coloradocollege.edu/c9fac7d8-02d0-11e8-a73c-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.3389/fnins.2017.00419> a schema:ScholarlyArticle ;
+    schema:about "Williams syndrome (WS) is a unique neurodevelopmental disorder with a specific behavioral and cognitive profile, which includes hyperaffiliative behavior, poor social judgment, and lack of social inhibition. Here we examined the morphology of basal dendrites on pyramidal neurons in the cortex of two rare adult subjects with WS. Specifically, we examined two areas in the prefrontal cortex (PFC) - the frontal pole (Brodmann area 10) and the orbitofrontal cortex (Brodmann area 11) - and three areas in the motor, sensory, and visual cortex (BA 4, BA 3-1-2, BA 18). The findings suggest that the morphology of basal dendrites on the pyramidal neurons is altered in the cortex of WS, with differences that were layer-specific, more prominent in PFC areas, and displayed an overall pattern of dendritic organization that differentiates WS from other disorders. In particular, and unlike what was expected based on typically developing brains, basal dendrites in the two PFC areas did not display longer and more branched dendrites compared to motor, sensory and visual areas. Moreover, dendritic branching, dendritic length, and the number of dendritic spines differed little within PFC and between the central executive region (BA 10) and BA 11 that is part of the orbitofrontal region involved into emotional processing. In contrast, the relationship between the degree of neuronal branching in supra-versus infra-granular layers was spared in WS. Although this study utilized tissue held in formalin for a prolonged period of time and the number of neurons available for analysis was limited, our findings indicate that WS cortex, similar to that in other neurodevelopmental disorders such as Down syndrome, Rett syndrome, Fragile X, and idiopathic autism, has altered morphology of basal dendrites on pyramidal neurons, which appears more prominent in selected areas of the PFC. Results were examined from developmental perspectives and discussed in the context of other neurodevelopmental disorders. We have proposed hypotheses for further investigations of morphological changes on basal dendrites in WS, a syndrome of particular interest given its unique social and cognitive phenotype." ;
+    schema:author <http://catalog.coloradocollege.edu/af039ec2-06d1-11e8-b619-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Basal Dendritic Morphology of Cortical Pyramidal Neurons in Williams Syndrome: Prefrontal Cortex and Beyond"@en ;
+    schema:pageStart "419" ;
+    schema:partOf <http://catalog.coloradocollege.edu/af086182-06d1-11e8-9b3f-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.3758/s13423-016-1055-0> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/c4ee3f54-02d0-11e8-b94d-a41f7283f8d4> ;
@@ -793,6 +1716,16 @@
     schema:pageEnd "1981" ;
     schema:pageStart "1974" ;
     schema:partOf <http://catalog.coloradocollege.edu/c4f0a0b5-02d0-11e8-82ed-a41f7283f8d4> ;
+    schema:url "undefined" .
+
+<https://doi.org/10.3758/s13423-017-1268-x> a schema:ScholarlyArticle ;
+    schema:about "The spatial relation of support has been regarded as universally privileged in nonlinguistic cognition and immune to the influence of language. English, but not Korean, obligatorily distinguishes support from nonsupport via basic spatial terms. Despite this linguistic difference, previous research suggests that English and Korean speakers show comparable nonlinguistic sensitivity to the support/nonsupport distinction. Here, using a paradigm previously found to elicit cross-language differences in color discrimination, we provide evidence for a difference in sensitivity to support/nonsupport between native English speakers and native Korean speakers who were late English learners and tested in a context that privileged Korean. Whereas the former group showed categorical perception (CP) when discriminating spatial scenes capturing the support/nonsupport distinction, the latter did not. An additional group of native Korean speakers-relatively early English learners tested in an English-salient context-patterned with the native English speakers in showing CP for support/nonsupport. These findings suggest that obligatory marking of support/nonsupport in one's native language can affect nonlinguistic sensitivity to this distinction, contra earlier findings, but that such sensitivity may also depend on aspects of language background and the immediate linguistic context." ;
+    schema:author <http://catalog.coloradocollege.edu/b41baab4-06d1-11e8-a5be-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Revisiting the role of language in spatial cognition: Categorical perception of spatial relations in English and Korean speakers"@en ;
+    schema:pageEnd "2036" ;
+    schema:pageStart "2031" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b422ced3-06d1-11e8-aecf-a41f7283f8d4> ;
     schema:url "undefined" .
 
 <https://doi.org/10.4171/GGD/367> a schema:ScholarlyArticle ;
@@ -815,6 +1748,16 @@
     schema:partOf <http://catalog.coloradocollege.edu/cbe52249-02d0-11e8-ac25-a41f7283f8d4> ;
     schema:url "undefined" .
 
+<https://doi.org/10.5194/acp-17-6925-2017> a schema:ScholarlyArticle ;
+    schema:about "Atmospheric chemistry and transport of mercury play a key role in the global mercury cycle. However, there are still considerable knowledge gaps concerning the fate of mercury in the atmosphere. This is the second part of a model intercomparison study investigating the impact of atmospheric chemistry and emissions on mercury in the atmosphere. While the first study focused on ground-based observations of mercury concentration and deposition, here we investigate the vertical and interhemispheric distribution and speciation of mercury from the planetary boundary layer to the lower stratosphere. So far, there have been few model studies investigating the vertical distribution of mercury, mostly focusing on single aircraft campaigns. Here, we present a first comprehensive analysis based on various aircraft observations in Europe, North America, and on intercontinental flights. The investigated models proved to be able to reproduce the distribution of total and elemental mercury concentrations in the troposphere including interhemispheric trends. One key aspect of the study is the investigation of mercury oxidation in the troposphere. We found that different chemistry schemes were better at reproducing observed oxidized mercury patterns depending on altitude. High concentrations of oxidized mercury in the upper troposphere could be reproduced with oxidation by bromine while elevated concentrations in the lower troposphere were better reproduced by OH and ozone chemistry. However, the results were not always conclusive as the physical and chemical parameterizations in the chemistry transport models also proved to have a substantial impact on model results." ;
+    schema:author <http://catalog.coloradocollege.edu/ab2078f4-06d1-11e8-8f09-a41f7283f8d4> ;
+    schema:datePublished "2017" ;
+    schema:name "Multi-model study of mercury dispersion in the atmosphere: vertical and interhemispheric distribution of mercury species"@en ;
+    schema:pageEnd "6955" ;
+    schema:pageStart "6925" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ab29fe75-06d1-11e8-a9e9-a41f7283f8d4> ;
+    schema:url "undefined" .
+
 <https://doi.org/10.7717/peerj.1657> a schema:ScholarlyArticle ;
     schema:about "undefined" ;
     schema:author <http://catalog.coloradocollege.edu/cd32623a-02d0-11e8-a357-a41f7283f8d4> ;
@@ -823,6 +1766,994 @@
     schema:pageStart "e1657" ;
     schema:partOf <http://catalog.coloradocollege.edu/cd32623c-02d0-11e8-ab38-a41f7283f8d4> ;
     schema:url "undefined" .
+
+<http://catalog.coloradocollege.edu/1e7bc035-06e0-11e8-acfc-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of experimental social psychology"@en .
+
+<http://catalog.coloradocollege.edu/1e7e2192-06e0-11e8-a1e0-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "42" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1e7bc035-06e0-11e8-acfc-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1e7e2193-06e0-11e8-b9e2-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1e7e2192-06e0-11e8-a1e0-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1ed44843-06e0-11e8-a40a-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Personality and Social Psychology Bulletin"@en .
+
+<http://catalog.coloradocollege.edu/1eddcdc2-06e0-11e8-b9c0-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "34" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1ed44843-06e0-11e8-a40a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1eddcdc3-06e0-11e8-a8da-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1eddcdc2-06e0-11e8-b9c0-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1f2ebc83-06e0-11e8-8cc3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "European Journal of Social Psychology"@en .
+
+<http://catalog.coloradocollege.edu/1f2ebc84-06e0-11e8-afc2-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "38" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1f2ebc83-06e0-11e8-8cc3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1f2ebc85-06e0-11e8-9c7b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1f2ebc84-06e0-11e8-afc2-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1f8792b5-06e0-11e8-94bb-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Social Psychological and Personality Science"@en .
+
+<http://catalog.coloradocollege.edu/1f911834-06e0-11e8-b151-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1f8792b5-06e0-11e8-94bb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1f911835-06e0-11e8-a357-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1f911834-06e0-11e8-b151-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1fd15d53-06e0-11e8-9c7f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Social Cognition"@en .
+
+<http://catalog.coloradocollege.edu/1fd3beb4-06e0-11e8-94a6-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "32" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1fd15d53-06e0-11e8-9c7f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/1fd3beb5-06e0-11e8-88e0-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/1fd3beb4-06e0-11e8-94a6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a0b5a203-06d1-11e8-a079-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Applied Economics"@en .
+
+<http://catalog.coloradocollege.edu/a0b80362-06d1-11e8-8697-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "49" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a0b5a203-06d1-11e8-a079-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a0b80363-06d1-11e8-a0ed-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "10" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a0b80362-06d1-11e8-8697-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a0c8ad03-06d1-11e8-b45e-a41f7283f8d4> a schema:Periodical ;
+    schema:name "American Biology Teacher"@en .
+
+<http://catalog.coloradocollege.edu/a0cb0e62-06d1-11e8-b23b-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "79" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a0c8ad03-06d1-11e8-b45e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a0cb0e63-06d1-11e8-a56b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a0cb0e62-06d1-11e8-b23b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1199bc3-06d1-11e8-89e7-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Orthopaedic Nursing"@en .
+
+<http://catalog.coloradocollege.edu/a11bfd22-06d1-11e8-8d35-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "36" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1199bc3-06d1-11e8-89e7-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a11bfd23-06d1-11e8-be83-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a11bfd22-06d1-11e8-8d35-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a133cae2-06d1-11e8-ab65-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Sociological Quarterly"@en .
+
+<http://catalog.coloradocollege.edu/a133cae3-06d1-11e8-86c3-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "58" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a133cae2-06d1-11e8-ab65-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a133cae4-06d1-11e8-86ee-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a133cae3-06d1-11e8-86c3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a16a8a83-06d1-11e8-ade5-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Biogeochemistry"@en .
+
+<http://catalog.coloradocollege.edu/a16cebe2-06d1-11e8-83a5-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "132" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a16a8a83-06d1-11e8-ade5-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a16cebe3-06d1-11e8-8e7b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1-2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a16cebe2-06d1-11e8-83a5-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1a3ab83-06d1-11e8-aeb6-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Water Resources Research"@en .
+
+<http://catalog.coloradocollege.edu/a1a60ce2-06d1-11e8-8491-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "53" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1a3ab83-06d1-11e8-aeb6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1a60ce3-06d1-11e8-b776-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1a60ce2-06d1-11e8-8491-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1b45523-06d1-11e8-91bb-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Psychoanalytic Inquiry"@en .
+
+<http://catalog.coloradocollege.edu/a1b917e2-06d1-11e8-9301-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "37" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1b45523-06d1-11e8-91bb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1b917e3-06d1-11e8-b7e0-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1b917e2-06d1-11e8-9301-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1d34702-06d1-11e8-a6b3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Oxford Economic Papers-New Series"@en .
+
+<http://catalog.coloradocollege.edu/a1d34703-06d1-11e8-8add-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "69" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1d34702-06d1-11e8-a6b3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1d34704-06d1-11e8-890d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1d34703-06d1-11e8-8add-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1da6b22-06d1-11e8-95aa-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Museum History Journal"@en .
+
+<http://catalog.coloradocollege.edu/a1dccc82-06d1-11e8-b57e-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "10" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1da6b22-06d1-11e8-95aa-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1dccc83-06d1-11e8-838d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1dccc82-06d1-11e8-b57e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1f238e2-06d1-11e8-8847-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Political Ecology"@en .
+
+<http://catalog.coloradocollege.edu/a1f49a42-06d1-11e8-a791-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "24" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1f238e2-06d1-11e8-8847-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1f49a43-06d1-11e8-a278-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Aesthetics and Phenomenology"@en .
+
+<http://catalog.coloradocollege.edu/a1f6fba2-06d1-11e8-8db9-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1f49a43-06d1-11e8-a278-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a1f6fba3-06d1-11e8-8a7a-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a1f6fba2-06d1-11e8-8db9-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a2301ca2-06d1-11e8-a49b-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Behavioral and Brain Sciences"@en .
+
+<http://catalog.coloradocollege.edu/a2301ca3-06d1-11e8-8a1b-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "40" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2301ca2-06d1-11e8-a49b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a234df62-06d1-11e8-9ede-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Modern & Contemporary France"@en .
+
+<http://catalog.coloradocollege.edu/a234df63-06d1-11e8-a314-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "25" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a234df62-06d1-11e8-9ede-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a234df64-06d1-11e8-992e-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a234df63-06d1-11e8-a314-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a239a222-06d1-11e8-8439-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Psychoanalysis Self and Context"@en .
+
+<http://catalog.coloradocollege.edu/a23c0382-06d1-11e8-849e-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "12" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a239a222-06d1-11e8-8439-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a23c0383-06d1-11e8-88c7-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a23c0382-06d1-11e8-849e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a2516fe2-06d1-11e8-b96d-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Ethics Policy & Environment"@en .
+
+<http://catalog.coloradocollege.edu/a253d142-06d1-11e8-b084-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "20" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2516fe2-06d1-11e8-b96d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a253d143-06d1-11e8-bd4a-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a253d142-06d1-11e8-b084-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a29677c3-06d1-11e8-9bcb-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Cuadernos De Investigacion Geografica"@en .
+
+<http://catalog.coloradocollege.edu/a29ffd42-06d1-11e8-8256-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "43" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a29677c3-06d1-11e8-9bcb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a29ffd43-06d1-11e8-ac9a-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a29ffd42-06d1-11e8-8256-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a308b9c3-06d1-11e8-a49d-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Comparative Neurology"@en .
+
+<http://catalog.coloradocollege.edu/a3123f42-06d1-11e8-9081-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "525" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a308b9c3-06d1-11e8-a49d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a3123f43-06d1-11e8-aff1-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3123f42-06d1-11e8-9081-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a31bc4c2-06d1-11e8-8d46-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Environmental Values"@en .
+
+<http://catalog.coloradocollege.edu/a3254a42-06d1-11e8-8944-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "26" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a31bc4c2-06d1-11e8-8d46-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a3254a43-06d1-11e8-ab7b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3254a42-06d1-11e8-8944-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a327aba2-06d1-11e8-ada5-a41f7283f8d4> a schema:Periodical ;
+    schema:name "American Historical Review"@en .
+
+<http://catalog.coloradocollege.edu/a32a0d02-06d1-11e8-8de2-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "122" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a327aba2-06d1-11e8-ada5-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a32a0d03-06d1-11e8-ae5c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a32a0d02-06d1-11e8-8de2-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a32c6e62-06d1-11e8-8a6a-a41f7283f8d4> a schema:Periodical ;
+    schema:name "American Historical Review"@en .
+
+<http://catalog.coloradocollege.edu/a32ecfc2-06d1-11e8-87e6-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "122" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a32c6e62-06d1-11e8-8a6a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a32ecfc3-06d1-11e8-b63f-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a32ecfc2-06d1-11e8-87e6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a35c09e2-06d1-11e8-bc6a-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Tetrahedron letters"@en .
+
+<http://catalog.coloradocollege.edu/a35c09e3-06d1-11e8-a54f-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "58" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a35c09e2-06d1-11e8-bc6a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a35c09e4-06d1-11e8-a8e9-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a35c09e3-06d1-11e8-a54f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a3aa9743-06d1-11e8-8766-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Phytotaxa"@en .
+
+<http://catalog.coloradocollege.edu/a3aa9744-06d1-11e8-bf38-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "295" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3aa9743-06d1-11e8-8766-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a3aa9745-06d1-11e8-a52d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3aa9744-06d1-11e8-bf38-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a415b523-06d1-11e8-9dee-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Quaternary Science Reviews"@en .
+
+<http://catalog.coloradocollege.edu/a41cd942-06d1-11e8-b4d1-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "158" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a415b523-06d1-11e8-9dee-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a46b66a3-06d1-11e8-8148-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Gene"@en .
+
+<http://catalog.coloradocollege.edu/a46dc802-06d1-11e8-8234-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "602" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a46b66a3-06d1-11e8-8148-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4774d82-06d1-11e8-9079-a41f7283f8d4> a schema:Periodical ;
+    schema:name "History of Political Thought"@en .
+
+<http://catalog.coloradocollege.edu/a480d302-06d1-11e8-8f97-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "38" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4774d82-06d1-11e8-9079-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a480d303-06d1-11e8-a3f3-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a480d302-06d1-11e8-8f97-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4beb6c3-06d1-11e8-a97f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Science Advances"@en .
+
+<http://catalog.coloradocollege.edu/a4beb6c4-06d1-11e8-adad-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4beb6c3-06d1-11e8-a97f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4beb6c5-06d1-11e8-801b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4beb6c4-06d1-11e8-adad-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4ca9da2-06d1-11e8-a860-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Perspectives on Politics"@en .
+
+<http://catalog.coloradocollege.edu/a4d1c1c2-06d1-11e8-a5d9-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "15" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4ca9da2-06d1-11e8-a860-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4d1c1c3-06d1-11e8-a43c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d1c1c2-06d1-11e8-a5d9-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4d8e5e2-06d1-11e8-ba11-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Isis"@en .
+
+<http://catalog.coloradocollege.edu/a4d8e5e3-06d1-11e8-988c-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "108" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d8e5e2-06d1-11e8-ba11-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4d8e5e4-06d1-11e8-bc5d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d8e5e3-06d1-11e8-988c-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4f31503-06d1-11e8-bdb3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Integrative and Comparative Biology"@en .
+
+<http://catalog.coloradocollege.edu/a4f57662-06d1-11e8-9b6d-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "57" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4f31503-06d1-11e8-bdb3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a5368e75-06d1-11e8-b4a6-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Oecologia"@en .
+
+<http://catalog.coloradocollege.edu/a54013f4-06d1-11e8-945d-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "183" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a5368e75-06d1-11e8-b4a6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a54013f5-06d1-11e8-b327-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a54013f4-06d1-11e8-945d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a544d6b4-06d1-11e8-9294-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Religion"@en .
+
+<http://catalog.coloradocollege.edu/a544d6b5-06d1-11e8-9ad6-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "97" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a544d6b4-06d1-11e8-9294-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a544d6b6-06d1-11e8-b41d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a544d6b5-06d1-11e8-9ad6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a54e5c34-06d1-11e8-a8a7-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Ethnohistory"@en .
+
+<http://catalog.coloradocollege.edu/a550bd92-06d1-11e8-ba5b-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "64" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a54e5c34-06d1-11e8-a8a7-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a550bd93-06d1-11e8-9e6e-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a550bd92-06d1-11e8-ba5b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a5d147d3-06d1-11e8-8cb9-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Electrophoresis"@en .
+
+<http://catalog.coloradocollege.edu/a5d60a92-06d1-11e8-a282-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "38" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a5d147d3-06d1-11e8-8cb9-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a5d60a93-06d1-11e8-8ac8-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a5d60a92-06d1-11e8-a282-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a6307ed3-06d1-11e8-bc3f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Fluorine Chemistry"@en .
+
+<http://catalog.coloradocollege.edu/a6354192-06d1-11e8-9dbc-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "196" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a6307ed3-06d1-11e8-bc3f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a64389d3-06d1-11e8-b734-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Faseb Journal"@en .
+
+<http://catalog.coloradocollege.edu/a6484c92-06d1-11e8-b7e2-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "31" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a64389d3-06d1-11e8-b734-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a65694d3-06d1-11e8-b4ee-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Faseb Journal"@en .
+
+<http://catalog.coloradocollege.edu/a65b5792-06d1-11e8-bef4-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "31" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a65694d3-06d1-11e8-b4ee-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a6f87253-06d1-11e8-a143-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Physica D-Nonlinear Phenomena"@en .
+
+<http://catalog.coloradocollege.edu/a6f87254-06d1-11e8-90db-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "346" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a6f87253-06d1-11e8-a143-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7319353-06d1-11e8-94c9-a41f7283f8d4> a schema:Periodical ;
+    schema:name "International journal of plant sciences"@en .
+
+<http://catalog.coloradocollege.edu/a733f4b4-06d1-11e8-bd00-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "178" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7319353-06d1-11e8-94c9-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a733f4b5-06d1-11e8-8d85-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a733f4b4-06d1-11e8-bd00-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a74e23d3-06d1-11e8-99bf-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Pacific Journal of Mathematics"@en .
+
+<http://catalog.coloradocollege.edu/a7508534-06d1-11e8-b34a-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "288" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a74e23d3-06d1-11e8-99bf-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7508535-06d1-11e8-981b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7508534-06d1-11e8-b34a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7612ed3-06d1-11e8-9e80-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Genetics"@en .
+
+<http://catalog.coloradocollege.edu/a7639034-06d1-11e8-aa45-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "206" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7612ed3-06d1-11e8-9e80-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7639035-06d1-11e8-8cdb-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7639034-06d1-11e8-aa45-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a77439d3-06d1-11e8-aa51-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Cognitive Science"@en .
+
+<http://catalog.coloradocollege.edu/a7769b34-06d1-11e8-a8d1-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "41" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a77439d3-06d1-11e8-aa51-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7769b35-06d1-11e8-81ea-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7769b34-06d1-11e8-a8d1-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7828212-06d1-11e8-b131-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Neurotoxicology and teratology"@en .
+
+<http://catalog.coloradocollege.edu/a789a634-06d1-11e8-af75-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "61" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7828212-06d1-11e8-b131-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a826c0f5-06d1-11e8-82ee-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of the American Heart Association"@en .
+
+<http://catalog.coloradocollege.edu/a826c0f6-06d1-11e8-aec5-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a826c0f5-06d1-11e8-82ee-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a826c0f7-06d1-11e8-934c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "5" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a826c0f6-06d1-11e8-aec5-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a83e8eb4-06d1-11e8-ac2d-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Comparative Economics"@en .
+
+<http://catalog.coloradocollege.edu/a83e8eb5-06d1-11e8-8fdd-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "45" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a83e8eb4-06d1-11e8-ac2d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a83e8eb6-06d1-11e8-b8ee-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a83e8eb5-06d1-11e8-8fdd-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a88d1c12-06d1-11e8-aec3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "New Zealand Journal of Geology and Geophysics"@en .
+
+<http://catalog.coloradocollege.edu/a88d1c13-06d1-11e8-80c0-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "60" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a88d1c12-06d1-11e8-aec3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a88d1c14-06d1-11e8-b2bc-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a88d1c13-06d1-11e8-80c0-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a908e393-06d1-11e8-800f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Glaciology"@en .
+
+<http://catalog.coloradocollege.edu/a908e394-06d1-11e8-aeff-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "63" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a908e393-06d1-11e8-800f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a908e395-06d1-11e8-b60b-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "239" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a908e394-06d1-11e8-aeff-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a9198d34-06d1-11e8-b4cb-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Environmental Values"@en .
+
+<http://catalog.coloradocollege.edu/a91e4ff4-06d1-11e8-8ee2-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "26" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9198d34-06d1-11e8-b4cb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a91e4ff5-06d1-11e8-98db-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a91e4ff4-06d1-11e8-8ee2-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a9257412-06d1-11e8-ad45-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Think-Philosophy for Everyone"@en .
+
+<http://catalog.coloradocollege.edu/a9257413-06d1-11e8-8c31-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "16" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9257412-06d1-11e8-ad45-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a9257414-06d1-11e8-9f4e-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "46" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9257413-06d1-11e8-8c31-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a933bc52-06d1-11e8-9020-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Monatshefte"@en .
+
+<http://catalog.coloradocollege.edu/a93ae074-06d1-11e8-86c4-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "109" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a933bc52-06d1-11e8-9020-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a93ae075-06d1-11e8-8cad-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a93ae074-06d1-11e8-86c4-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a93fa334-06d1-11e8-8b6f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of American History"@en .
+
+<http://catalog.coloradocollege.edu/a93fa336-06d1-11e8-bfe8-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "104" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a93fa334-06d1-11e8-8b6f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a93fa337-06d1-11e8-acc6-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a93fa336-06d1-11e8-bfe8-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a94deb74-06d1-11e8-915f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Western Historical Quarterly"@en .
+
+<http://catalog.coloradocollege.edu/a952ae34-06d1-11e8-8f75-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "48" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a94deb74-06d1-11e8-915f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a952ae35-06d1-11e8-a455-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a952ae34-06d1-11e8-8f75-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a95e9512-06d1-11e8-9b0c-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Western Historical Quarterly"@en .
+
+<http://catalog.coloradocollege.edu/a965b934-06d1-11e8-b081-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "48" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a95e9512-06d1-11e8-9b0c-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a965b935-06d1-11e8-8027-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a965b934-06d1-11e8-b081-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a9740174-06d1-11e8-a0f9-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Revista De Estudios Hispanicos"@en .
+
+<http://catalog.coloradocollege.edu/a978c434-06d1-11e8-b32a-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "51" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9740174-06d1-11e8-a0f9-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a978c435-06d1-11e8-ab9d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a978c434-06d1-11e8-b32a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a97d86f4-06d1-11e8-a0db-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Anthropological Quarterly"@en .
+
+<http://catalog.coloradocollege.edu/a97d86f6-06d1-11e8-8565-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "90" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a97d86f4-06d1-11e8-a0db-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a97d86f7-06d1-11e8-b968-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a97d86f6-06d1-11e8-8565-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a9aac112-06d1-11e8-9e6e-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Phytotaxa"@en .
+
+<http://catalog.coloradocollege.edu/a9ad2274-06d1-11e8-bbe3-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "308" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9aac112-06d1-11e8-9e6e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a9ad2275-06d1-11e8-bc8c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9ad2274-06d1-11e8-bbe3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ab2078f5-06d1-11e8-ad6b-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Atmospheric Chemistry and Physics"@en .
+
+<http://catalog.coloradocollege.edu/ab29fe74-06d1-11e8-801d-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "17" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ab2078f5-06d1-11e8-ad6b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ab29fe75-06d1-11e8-a9e9-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "11" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ab29fe74-06d1-11e8-801d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/abaf4b75-06d1-11e8-994a-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Graphs and Combinatorics"@en .
+
+<http://catalog.coloradocollege.edu/abb1acd2-06d1-11e8-bb9c-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "33" ;
+    schema:partOf <http://catalog.coloradocollege.edu/abaf4b75-06d1-11e8-994a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/abb1acd3-06d1-11e8-a71a-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/abb1acd2-06d1-11e8-bb9c-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ac10e3d3-06d1-11e8-ae4f-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Geological Society of America Bulletin"@en .
+
+<http://catalog.coloradocollege.edu/ac10e3d4-06d1-11e8-aa00-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "129" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ac10e3d3-06d1-11e8-ae4f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ac10e3d5-06d1-11e8-a125-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7-8" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ac10e3d4-06d1-11e8-aa00-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/acebe253-06d1-11e8-93cb-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Nature"@en .
+
+<http://catalog.coloradocollege.edu/acf567d2-06d1-11e8-9263-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "547" ;
+    schema:partOf <http://catalog.coloradocollege.edu/acebe253-06d1-11e8-93cb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/acf567d3-06d1-11e8-b155-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7661" ;
+    schema:partOf <http://catalog.coloradocollege.edu/acf567d2-06d1-11e8-9263-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ad43f535-06d1-11e8-9259-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Chemical Communications"@en .
+
+<http://catalog.coloradocollege.edu/ad43f536-06d1-11e8-b652-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "53" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad43f535-06d1-11e8-9259-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ad43f537-06d1-11e8-9f16-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "53" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad43f536-06d1-11e8-b652-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ad843a53-06d1-11e8-9cb9-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Geophysical Research Letters"@en .
+
+<http://catalog.coloradocollege.edu/ad869bb4-06d1-11e8-a557-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "44" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad843a53-06d1-11e8-9cb9-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ad869bb5-06d1-11e8-8df8-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "13" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad869bb4-06d1-11e8-a557-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ada0cad2-06d1-11e8-a45e-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Clinical and Experimental Neuropsychology"@en .
+
+<http://catalog.coloradocollege.edu/ada32c34-06d1-11e8-ab96-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "39" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ada0cad2-06d1-11e8-a45e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ada32c35-06d1-11e8-8691-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ada32c34-06d1-11e8-ab96-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/adbaf9f5-06d1-11e8-b24b-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Ramanujan Journal"@en .
+
+<http://catalog.coloradocollege.edu/adbd5b52-06d1-11e8-85f7-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "43" ;
+    schema:partOf <http://catalog.coloradocollege.edu/adbaf9f5-06d1-11e8-b24b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/adbd5b53-06d1-11e8-b421-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/adbd5b52-06d1-11e8-85f7-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/addc4d35-06d1-11e8-95ec-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Social and Personality Psychology Compass"@en .
+
+<http://catalog.coloradocollege.edu/ade37152-06d1-11e8-ae59-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "11" ;
+    schema:partOf <http://catalog.coloradocollege.edu/addc4d35-06d1-11e8-95ec-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ade37153-06d1-11e8-8c78-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "8" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ade37152-06d1-11e8-ae59-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/adecf6d2-06d1-11e8-b9f0-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Linguistic Anthropology"@en .
+
+<http://catalog.coloradocollege.edu/adf6a362-06d1-11e8-9b09-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "27" ;
+    schema:partOf <http://catalog.coloradocollege.edu/adecf6d2-06d1-11e8-b9f0-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/adf6a363-06d1-11e8-abfd-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/adf6a362-06d1-11e8-9b09-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ae2d6303-06d1-11e8-a26a-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Biogeochemistry"@en .
+
+<http://catalog.coloradocollege.edu/ae2fc462-06d1-11e8-a068-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "134" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ae2d6303-06d1-11e8-a26a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ae2fc463-06d1-11e8-b16f-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ae2fc462-06d1-11e8-a068-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/aea92a82-06d1-11e8-a276-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Plos One"@en .
+
+<http://catalog.coloradocollege.edu/aea92a83-06d1-11e8-b53b-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "12" ;
+    schema:partOf <http://catalog.coloradocollege.edu/aea92a82-06d1-11e8-a276-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/aea92a84-06d1-11e8-ad74-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "8" ;
+    schema:partOf <http://catalog.coloradocollege.edu/aea92a83-06d1-11e8-b53b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/af039ec3-06d1-11e8-b940-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Frontiers in Neuroscience"@en .
+
+<http://catalog.coloradocollege.edu/af086182-06d1-11e8-9b3f-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "11" ;
+    schema:partOf <http://catalog.coloradocollege.edu/af039ec3-06d1-11e8-b940-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/aff91a82-06d1-11e8-bcf3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Bioorganic & medicinal chemistry letters"@en .
+
+<http://catalog.coloradocollege.edu/b0003ea2-06d1-11e8-8300-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "27" ;
+    schema:partOf <http://catalog.coloradocollege.edu/aff91a82-06d1-11e8-bcf3-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b0003ea3-06d1-11e8-acbd-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "16" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0003ea2-06d1-11e8-8300-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b01a6dc2-06d1-11e8-8b88-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Psychology of Sport and Exercise"@en .
+
+<http://catalog.coloradocollege.edu/b01ccf22-06d1-11e8-8d50-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "32" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b01a6dc2-06d1-11e8-8b88-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b0832a43-06d1-11e8-b283-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Brain Structure & Function"@en .
+
+<http://catalog.coloradocollege.edu/b0858ba2-06d1-11e8-b832-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "222" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0832a43-06d1-11e8-b283-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b0858ba3-06d1-11e8-8be6-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0858ba2-06d1-11e8-b832-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b0ee4823-06d1-11e8-b73a-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Brain Structure & Function"@en .
+
+<http://catalog.coloradocollege.edu/b0f7cda2-06d1-11e8-9e5b-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "222" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0ee4823-06d1-11e8-b73a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b0f7cda3-06d1-11e8-9311-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0f7cda2-06d1-11e8-9e5b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b12c2be3-06d1-11e8-aca4-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Ecology and Evolution"@en .
+
+<http://catalog.coloradocollege.edu/b130eea2-06d1-11e8-9746-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b12c2be3-06d1-11e8-aca4-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b130eea3-06d1-11e8-9620-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "17" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b130eea2-06d1-11e8-9746-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b13f36e2-06d1-11e8-af24-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Cultural Critique"@en .
+
+<http://catalog.coloradocollege.edu/b143f9a2-06d1-11e8-a13a-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "97" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b13f36e2-06d1-11e8-af24-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b14fe082-06d1-11e8-aa89-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Militargeschichtliche Zeitschrift"@en .
+
+<http://catalog.coloradocollege.edu/b15704a2-06d1-11e8-8bf5-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "76" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b14fe082-06d1-11e8-aa89-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b1596602-06d1-11e8-83a7-a41f7283f8d4> a schema:Periodical ;
+    schema:name "International Relations"@en .
+
+<http://catalog.coloradocollege.edu/b15bc762-06d1-11e8-9826-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "31" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b1596602-06d1-11e8-83a7-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b15bc763-06d1-11e8-b96a-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b15bc762-06d1-11e8-9826-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b204c903-06d1-11e8-9f88-a41f7283f8d4> a schema:Periodical ;
+    schema:name "American Journal of Physics"@en .
+
+<http://catalog.coloradocollege.edu/b2072a62-06d1-11e8-af11-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "85" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b204c903-06d1-11e8-9f88-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b2072a63-06d1-11e8-b101-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "10" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2072a62-06d1-11e8-af11-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b210afe2-06d1-11e8-a38e-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Modern Greek Studies"@en .
+
+<http://catalog.coloradocollege.edu/b21a3562-06d1-11e8-8b49-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "35" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b210afe2-06d1-11e8-a38e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b21a3563-06d1-11e8-b8b0-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b21a3562-06d1-11e8-8b49-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b25f3d42-06d1-11e8-b908-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Canadian journal of microbiology"@en .
+
+<http://catalog.coloradocollege.edu/b2666162-06d1-11e8-92b6-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "63" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b25f3d42-06d1-11e8-b908-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b2666163-06d1-11e8-9a4c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "10" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2666162-06d1-11e8-92b6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b2b53ce3-06d1-11e8-9be4-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Annals of the American Thoracic Society"@en .
+
+<http://catalog.coloradocollege.edu/b2b79e42-06d1-11e8-8444-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "14" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2b53ce3-06d1-11e8-9be4-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b2b79e43-06d1-11e8-be43-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "10" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2b79e42-06d1-11e8-8444-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b2ff0783-06d1-11e8-96aa-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of thermal biology"@en .
+
+<http://catalog.coloradocollege.edu/b303ca42-06d1-11e8-8168-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "69" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2ff0783-06d1-11e8-96aa-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b36ee823-06d1-11e8-9921-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Plos One"@en .
+
+<http://catalog.coloradocollege.edu/b3760c42-06d1-11e8-b711-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "12" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b36ee823-06d1-11e8-9921-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3760c43-06d1-11e8-8035-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "11" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3760c42-06d1-11e8-b711-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3af2d43-06d1-11e8-8fa2-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Palaeontology"@en .
+
+<http://catalog.coloradocollege.edu/b3af2d44-06d1-11e8-b5f8-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "60" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3af2d43-06d1-11e8-8fa2-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3af2d45-06d1-11e8-bfe3-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3af2d44-06d1-11e8-b5f8-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3bd7582-06d1-11e8-8fe6-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Land Use Policy"@en .
+
+<http://catalog.coloradocollege.edu/b3c499a2-06d1-11e8-866f-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "68" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3bd7582-06d1-11e8-8fe6-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3ce1f22-06d1-11e8-9e47-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Journal of Urban History"@en .
+
+<http://catalog.coloradocollege.edu/b3d7a4a2-06d1-11e8-a615-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "43" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3ce1f22-06d1-11e8-9e47-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3d7a4a3-06d1-11e8-bba7-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3d7a4a2-06d1-11e8-a615-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3f594b5-06d1-11e8-87a8-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Plos Genetics"@en .
+
+<http://catalog.coloradocollege.edu/b3fcb8d2-06d1-11e8-a87c-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "13" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3f594b5-06d1-11e8-87a8-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b3fcb8d3-06d1-11e8-8662-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "11" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b3fcb8d2-06d1-11e8-a87c-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b41baab5-06d1-11e8-a316-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Psychonomic bulletin & review"@en .
+
+<http://catalog.coloradocollege.edu/b422ced2-06d1-11e8-b98f-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "24" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b41baab5-06d1-11e8-a316-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b422ced3-06d1-11e8-aecf-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b422ced2-06d1-11e8-b98f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b42eb5b4-06d1-11e8-a270-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Filosofia Politica"@en .
+
+<http://catalog.coloradocollege.edu/b435d9d2-06d1-11e8-96f1-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "31" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b42eb5b4-06d1-11e8-a270-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b435d9d3-06d1-11e8-920c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b435d9d2-06d1-11e8-96f1-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b44da792-06d1-11e8-90ea-a41f7283f8d4> a schema:Periodical ;
+    schema:name "African Journal of Ecology"@en .
+
+<http://catalog.coloradocollege.edu/b45008f4-06d1-11e8-8cb0-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "55" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b44da792-06d1-11e8-90ea-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b45008f5-06d1-11e8-aa22-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b45008f4-06d1-11e8-8cb0-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b460b293-06d1-11e8-9384-a41f7283f8d4> a schema:Periodical ;
+    schema:name "French History"@en .
+
+<http://catalog.coloradocollege.edu/b46313f4-06d1-11e8-8603-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "31" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b460b293-06d1-11e8-9384-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b46313f5-06d1-11e8-94f1-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b46313f4-06d1-11e8-8603-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b4a35913-06d1-11e8-b756-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Gene"@en .
+
+<http://catalog.coloradocollege.edu/b4a5ba74-06d1-11e8-b973-a41f7283f8d4> a schema:volumeNumber ;
+    schema:name "637" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b4a35913-06d1-11e8-b756-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/ba5242e9-02d0-11e8-a2d1-a41f7283f8d4> a schema:Periodical ;
     schema:name "Faseb Journal"@en .

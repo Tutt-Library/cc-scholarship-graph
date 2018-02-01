@@ -44,9 +44,9 @@ def doi_lookup(creative_works,lookup_string):
 
     sparql="""SELECT ?doi_iri
             WHERE {{
-            ?doi_iri rdf:type schema:identifier
-            ?doi_iri schema:name ?name
-            FILTER (CONTAINS(?name,'''{0}'''))}}""".format(lookup_string)
+            ?doi_iri rdf:type schema:identifier .
+            ?doi_iri schema:ScholarlyArticle ?name .
+            FILTER(CONTAINS (?name,''{0}''))}}""".format(lookup_string)
 
     results = creative_works.query(sparql)
 
@@ -312,7 +312,7 @@ class Book_Chapter_Citation(Book_Citation):
             
 def load_citations():
     # Take the bibparse data and load it into the creative_works knowledge graph
-    with open('C:/CCKnowledgeGraph/Temp/BibTex2016.txt') as bibtex_file:
+    with open('C:/CCKnowledgeGraph/Temp/EmilyChan.txt') as bibtex_file:
         bibtex_str = bibtex_file.read()
         bib_database = bibtexparser.loads(bibtex_str)
         

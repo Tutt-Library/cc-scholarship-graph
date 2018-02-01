@@ -11,12 +11,27 @@ PREFIX schema: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>"""
 
 CITATION = PREFIX + """
-SELECT DISTINCT ?article ?name ?datePublished
+SELECT DISTINCT ?article ?name ?datePublished ?journal_title ?volume_number ?issue_number ?page_start ?page_end
 WHERE {{
 	?article rdf:type schema:ScholarlyArticle ;
                  schema:name ?name ;
 	         schema:author ?author .
 	OPTIONAL {{?article schema:datePublished ?datePublished.}}
+	OPTIONAL {{?article schema:partOf ?issue .
+				?issue schema:issueNumber ?issue_number .}}
+	OPTIONAL {{?article schema:partOf ?volume .
+				?volume schema:name ?volume_number .
+				?volume schema:partOf ?journal .
+				?journal schema:name ?journal_title .}}
+	OPTIONAL {{?article schema:partOf ?journal .
+				?journal schema:name ?journal_title .}}
+	OPTIONAL {{?article schema:partOf ?issue .
+				?issue schema:partOf ?volume .
+				?volume schema:partOf ?journal .
+				?journal schema:name ?journal_title .}}
+	OPTIONAL {{?article schema:pageStart ?page_start .}}
+	OPTIONAL {{?article schema:pageEnd ?page_end .}}
+				
 	FILTER(<{0}> = ?author)
 	}}"""
 
