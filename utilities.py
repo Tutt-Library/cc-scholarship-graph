@@ -312,7 +312,7 @@ class Book_Chapter_Citation(Book_Citation):
             
 def load_citations():
     # Take the bibparse data and load it into the creative_works knowledge graph
-    with open('C:/CCKnowledgeGraph/Temp/EmilyChan.txt') as bibtex_file:
+    with open('C:/CCKnowledgeGraph/Temp/file_load.txt') as bibtex_file:
         bibtex_str = bibtex_file.read()
         bib_database = bibtexparser.loads(bibtex_str)
         
