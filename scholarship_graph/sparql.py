@@ -31,9 +31,10 @@ WHERE {{
 				?journal schema:name ?journal_title .}}
 	OPTIONAL {{?article schema:pageStart ?page_start .}}
 	OPTIONAL {{?article schema:pageEnd ?page_end .}}
-				
 	FILTER(<{0}> = ?author)
-	}}"""
+
+	}}
+	ORDER BY DESC(?article)"""
 
 ORG_INFO = PREFIX + """
 SELECT DISTINCT ?label ?year ?year_label
