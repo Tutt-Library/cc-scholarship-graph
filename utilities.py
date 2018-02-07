@@ -1,11 +1,13 @@
 __author__ = "Diane Westerfield"
 
+import uuid
+import click
+import codecs
+
 import rdflib
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
-import uuid
-import codecs
 
 # tip: export citations from RefWorks. Direct export from Web of Science does not work.
 
@@ -310,9 +312,9 @@ class Book_Chapter_Citation(Book_Citation):
         self.creative_works=creative_works
 
             
-def load_citations():
+def load_citations(bibtext_filepath, creative_works_path):
     # Take the bibparse data and load it into the creative_works knowledge graph
-    with open('C:/CCKnowledgeGraph/Temp/file_load.txt') as bibtex_file:
+    with open(bibtext_filepath) as bibtex_file:
         bibtex_str = bibtex_file.read()
         bib_database = bibtexparser.loads(bibtex_str)
         
@@ -333,21 +335,34 @@ def load_citations():
             print("Article successfully added")
 
 
-    with open("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl", "wb+") as fo:
+    with open(creative_works_path, "wb+") as fo:
         fo.write(creative_works.serialize(format="turtle"))
         print("CC Scholarship Graph written")
    
 
+@click.command()
+@click.option("--people_path", 
+    help="Full file path to tiger-catalog/KnowledgGraph/cc-people.ttl")
+@click.option("--creative_works_path", 
+    help="Full file path to cc-scholarship-graph/data/creative-works.ttl")
+@click.option("--bibtext_path",
+    default=None,
+    help="Full file path to bibtext text file")
 #######################################START################################
 # initialize graphs and schemas/namespaces
+def initialize(people_path, creative_works_path, bibtext_path):
+    global people, creative_works, SCHEMA, BF
+    people=rdflib.Graph()
+    people.parse(people_path, format="turtle")
+    creative_works=rdflib.Graph()
+    creative_works.parse(creative_works_path, format="turtle")
+    SCHEMA = rdflib.Namespace("http://schema.org/")
+    creative_works.namespace_manager.bind("schema",SCHEMA)
+    BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
 
-people=rdflib.Graph()
-people.parse("C:/CCKnowledgeGraph/tiger-catalog/KnowledgeGraph/cc-people.ttl",format="turtle")
-creative_works=rdflib.Graph()
-creative_works.parse("C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl",format="turtle")
-SCHEMA = rdflib.Namespace("http://schema.org/")
-creative_works.namespace_manager.bind("schema",SCHEMA)
-BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+    # load bibtex data, parse it, and attempt to add citations to the creative_works graph
+    if bibtext_path:
+        load_citations(bibtext_path, creative_works_path)
 
-# load bibtex data, parse it, and attempt to add citations to the creative_works graph
-load_citations()
+if __name__ == '__main__':
+    initialize()
