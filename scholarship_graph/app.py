@@ -19,7 +19,6 @@ from .forms import SearchForm
 from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
 from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT, CITATION
 from rdfframework.configuration import RdfConfigManager
-from rdfframework.connections import ConnManager
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('config.py')
@@ -28,7 +27,7 @@ login_manager = LoginManager(app)
 ldap_manager = LDAP3LoginManager(app)
 
 CONFIG_MANAGER = RdfConfigManager(app.config)
-CONNECTION = ConnManager(CONFIG_MANAGER.CONNECTIONS)
+CONNECTION = CONFIG_MANAGER.conns
 
 USERS = OrderedDict()
 
