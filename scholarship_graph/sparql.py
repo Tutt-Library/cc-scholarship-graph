@@ -114,6 +114,18 @@ WHERE {{
     FILTER (<{0}> = ?person)
 }}"""
 
+PROFILE = PREFIX + """
+SELECT ?person ?statement
+WHERE {{
+    ?person rdf:type bf:Person .
+    ?person schema:familyName ?family .
+    ?person schema:givenName ?given .
+    FILTER(CONTAINS(?family, "{0}"))
+    FILTER(CONTAINS(?given, "{1}"))
+    OPTIONAL {{ ?person schema:email "{2}" . }}
+    OPTIONAL {{ ?stmt_iri schema:accountablePerson ?person ;
+                           schema:description ?statement . }}
+}}"""
 
 RESEARCH_STMT = PREFIX + """
 SELECT ?statement

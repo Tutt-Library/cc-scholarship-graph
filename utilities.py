@@ -348,6 +348,9 @@ def load_citations(bibtext_filepath, creative_works_path):
 @click.option("--bibtext_path",
     default=None,
     help="Full file path to bibtext text file")
+def main(people_path, creative_works_path, bibtext_path):
+    initialize(people_path, creative_works_path, bibtext_path)
+
 #######################################START################################
 # initialize graphs and schemas/namespaces
 def initialize(people_path, creative_works_path, bibtext_path):
@@ -365,4 +368,4 @@ def initialize(people_path, creative_works_path, bibtext_path):
         load_citations(bibtext_path, creative_works_path)
 
 if __name__ == '__main__':
-    initialize()
+    main()

@@ -88,6 +88,11 @@ def research_statement(person_iri):
 def academic_profile():
     """Displays Personal Academic Profile and allows 
     authenticated users to edit their own profile"""
+    email = current_user.data.get("mail")
+    label = current_user.data.get("displayName")
+    familyName = current_user.data.get("sn")
+    givenName = current_user.data.get("givenName")
+    
     return render_template('academic-profile.html',
                            scholar=current_user)
     
