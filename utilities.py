@@ -104,9 +104,9 @@ class Citation(object):
         self.__year__()
         self.__abstract__()
         self.__citation_type__()
-        self.__url__()
-
+        
     def __author_string__(self):
+        # need to define RDF type for multiple author. Not in Schema.org or LOC.
         self.author_string=self.raw_citation["author"]
 
     def __CC_author__(self):
@@ -169,8 +169,8 @@ class Article_Citation(Citation):
     def populate_special(self):
         self.__journal_title__()
         self.__doi__()
-        self.__url__()
         self.__article__()
+        self.__month__()
         self.__volume__()
         self.__issue__()
 
@@ -197,15 +197,23 @@ class Article_Citation(Citation):
         self.page_start = "undefined"
         self.page_end = "undefined"
         if "pages" in self.raw_citation.keys():
-            pages=self.raw_citation["pages"]
+            pages = self.raw_citation["pages"]
             if "-" in pages:
                 pages = pages.replace(" ","") # remove extraneous spaces
-                hyphen=pages.find("-")
-                self.page_start=pages[:hyphen]
-                self.page_end=pages[hyphen+1:]
+                pages = pages.replace("--","-") # turn double hyphens into single hypens
+                hyphen = pages.find("-")
+                self.page_start = pages[:hyphen]
+                self.page_end = pages[hyphen+1:]
             else:
                 self.page_start=pages
         print("I found start_page to be ",self.page_start, " and end_page to be ",self.page_end)
+
+    def __month__(self):
+        import pdb; pdb.set_trace()
+        if "month" in self.raw_citation.keys():
+            self.month=self.raw_citation["month"]
+        else:
+            self.month="undefined"
        
     def __doi__(self):
         # doi is the unique identifier for articles
@@ -215,15 +223,6 @@ class Article_Citation(Citation):
         else:
             self.doi_string=self.__unique_IRI__()
         self.doi_iri=rdflib.URIRef(self.doi_string)
-
-    def __url__(self):
-        if "doi" not in self.raw_citation.keys():
-            if "url" not in self.raw_citation.keys():
-                self.url="undefined"
-            else:
-                self.url = self.doi_string
-        else:
-            self.url="undefined"
 
     def __volume__(self):
         # to do: check for duplicate volumes of the journal title
@@ -264,13 +263,16 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
             
         # add url - this is the link not the unique identifier(but they can have the same value)
-        self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
+        # self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
 
         # add the author
         self.creative_works.add((self.doi_iri,SCHEMA.author,self.author_iri))
 
         # add the publication year
         self.creative_works.add((self.doi_iri,SCHEMA.datePublished,rdflib.Literal(self.year)))
+
+        # add the month. Need to add an RDF type for this, not in Schema.org or LOC
+        self.creative_works.add((self.doi_iri,CITATION_EXTENSION.month,rdflib.Literal(self.month)))
 
         # add the abstract
         self.creative_works.add((self.doi_iri,SCHEMA.about,rdflib.Literal(self.abstract)))
@@ -354,7 +356,7 @@ def main(people_path, creative_works_path, bibtext_path):
 #######################################START################################
 # initialize graphs and schemas/namespaces
 def initialize(people_path, creative_works_path, bibtext_path):
-    global people, creative_works, SCHEMA, BF
+    global people, creative_works, SCHEMA, BF, CITATION_EXTENSION
     people=rdflib.Graph()
     people.parse(people_path, format="turtle")
     creative_works=rdflib.Graph()
@@ -362,6 +364,8 @@ def initialize(people_path, creative_works_path, bibtext_path):
     SCHEMA = rdflib.Namespace("http://schema.org/")
     creative_works.namespace_manager.bind("schema",SCHEMA)
     BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+    CITATION_EXTENSION = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation")
+    creative_works.namespace_manager.bind("cite",CITATION_EXTENSION)
 
     # load bibtex data, parse it, and attempt to add citations to the creative_works graph
     if bibtext_path:
