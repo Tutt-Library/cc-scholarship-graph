@@ -30,7 +30,7 @@
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/0292b776-db66-11e7-826a-005056c00008> a schema:DigitalDocument ;
-    rdfs:label "Research Statement for Daniel Arroyo-Rodriguez"@en ;
+    rdfs:label "Research Statement for pDaniel Arroyo-Rodriguez"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/c3372e36-b0f5-11e6-bf02-005056c00008> ;
     schema:description "Daniel specializes in the study of 20th century Spanish literature and film, particularly in the post-Franco period (1975–present). His research has a strong emphasis on literary analysis and on political and social theories. His most recent work focuses on the study of the Movement for the Recuperation of Historical Memory that is currently taking place in Spain. Throughout his research, Daniel explores literary and cinematographic discourse as a valuable window through which we can analyze the frontier between politics, memory, and representation in contemporary Spain. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
@@ -376,7 +376,7 @@
 <http://catalog.coloradocollege.edu/049cb846-db66-11e7-a5fd-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Katherine Giuffre"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/4028b06c-b0f5-11e6-979a-005056c00008> ;
-    schema:description "Kathy Giuffre is a sociologist who specializes in the social network analysis, particularly in the art world. Her most recent publications are: “The Drunken Spelunker’s Guide to Plato” (Blair 2015), “Communities and Social Networks: Using Social Network Analysis to Re-think Urban and Community Studies” (Polity 2012), “Collective Creativity: Art and Society in the South Pacific” (Ashgate Press 2009), “An Afternoon in Summer: My Year in the South Seas” (Awa Press 2010), “Cultural Production in Networks” in the International Encyclopedia of the Social and Behavioral Sciences (2015), “The Return of the Natives: Globalization and Negative Ties” in Poetics (2010), and “Half the Right People: Network Density and Creativity” in Culture Unbound (2011). She is currently working on a new book project, tentatively titled “Outrage: Social Transgression and the Reception of Genius.” "@en ;
+    schema:description "Kathy Giuffre is a sociologist who specializes in the social network analysis, particularly in the art world. Her most recent publications are: \"The Drunken Spelunker's Guide to Plato\" (Blair 2015), \"Communities and Social Networks: Using Social Network Analysis to Re-think Urban and Community Studies\" (Polity 2012), \"Collective Creativity: Art and Society in the South Pacific\" (Ashgate Press 2009), \"An Afternoon in Summer: My Year in the South Seas\" (Awa Press 2010), \"Cultural Production in Networks\" in the International Encyclopedia of the Social and Behavioral Sciences (2015), \"The Return of the Natives: Globalization and Negative Ties\" in Poetics (2010), and \"Half the Right People: Network Density and Creativity\" in Culture Unbound (2011). She is currently working on a new book project, tentatively titled \"Outrage: Social Transgression and the Reception of Genius.\" "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2017-12-07T15:48:06.861626" ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
@@ -1314,15 +1314,15 @@
     schema:accountablePerson <http://catalog.coloradocollege.edu/e934722c-b0f5-11e6-9094-005056c00008> ;
     schema:description "Shawn Womack’s recent choreography investigates ways in which dancing bodies assimilate with and/or are alienated within difficult environments. In 2016, she collaborated with the Colorado Springs dance company Ormao to create “Press,” a site-specific performance in the former press room of the Springs daily newspaper The Gazette. “Drift,” created for the Russian dance company Pantera, was performed in 2015 in the central Russian cities of Kazan and Saransk as part of Kazan’s international dance festival, Telovidenie. This dance theatre work employed gesture and spoken word, dynamic and contemplative action, as well as Arctic imagery to evoke harrowing accounts of polar explorers adrift amongst polar ice floes. Shawn’s first project with Pantera, “Terrain,” was completed in 2014. Through video and live action, “Terrain” investigated the memories and promise of various landscapes within Kazan. In May 2016, Shawn’s essay “In/Visible City: Transporting Histories and Intersecting Identities in Post-war Serbia” was published in “Dah Theatre: A Sourcebook.” "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
-            prov:atTime "2017-12-07T15:48:15.241626" ;
+            prov:atTime "2017-12-07T15:48:15.241626"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/09a57a24-db66-11e7-ac1b-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Naomi Wood"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/c63ae4cc-b0f5-11e6-88a3-005056c00008> ;
-    schema:description "Naomi is a scholar of Hispanic and Luso-Brazilian literatures and cultures and feminist and gender studies. Her current research project examines the ways that “queer” as an identity, theoretical frame, and verb has traveled and transformed throughout Latin America. Her May 2015 article “Sketches of Chica da Silva: Fictional, Filmic, and Choreographic Accounts” uses dance theory methodologies to connect the African diaspora in the Caribbean, Brazil, and Latin America. Her forthcoming article, “Publicando el placer: los gestos queer en la música y el performance de Kumbia Queers y Krudas Cubensi” look at two queer feminist musical performance groups and the ways that they question gay-rights rhetoric through queer of color critique and an emphasis on the pleasures of queer rather than the struggles of homosexuality. "@en ;
+    schema:description "Naomi is a scholar of Hispanic and Luso-Brazilian literatures and cultures and feminist and gender studies. Her current research project examines the ways that \"queer\" as an identity, theoretical frame, and verb has traveled and transformed throughout Latin America. Her May 2015 article “Sketches of Chica da Silva: Fictional, Filmic, and Choreographic Accounts” uses dance theory methodologies to connect the African diaspora in the Caribbean, Brazil, and Latin America. Her forthcoming article, “Publicando el placer: los gestos queer en la música y el performance de Kumbia Queers y Krudas Cubensi” look at two queer feminist musical performance groups and the ways that they question gay-rights rhetoric through queer of color critique and an emphasis on the pleasures of queer rather than the struggles of homosexuality. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
-            prov:atTime "2017-12-07T15:48:15.307626" ;
+            prov:atTime "2017-12-07T15:48:15.307626"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/09a9ac5c-db66-11e7-9240-005056c00008> a schema:DigitalDocument ;
@@ -1330,7 +1330,7 @@
     schema:accountablePerson <http://catalog.coloradocollege.edu/1e5e19a4-b0f5-11e6-a896-005056c00008> ;
     schema:description "Peter continues to work on his book manuscript entitled “Varieties of Islamic Humanism: Prophetic, Cosmopolitan, Gnostic, and Ecstatic,” under contract with Oneworld Books (London). "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
-            prov:atTime "2017-12-07T15:48:15.335626" ;
+            prov:atTime "2017-12-07T15:48:15.335626"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/09b64306-db66-11e7-a83b-005056c00008> a schema:DigitalDocument ;
@@ -1338,14 +1338,120 @@
     schema:accountablePerson <http://catalog.coloradocollege.edu/f1fb52ae-b0e3-11e6-99dc-005056c00008> ;
     schema:description "Fanny Zhang is a Chinese lecturer currently focusing on developing oral and written language tools that not only give students basic language skills but a broader context to meet different forms of communication and mediums. From casual conversations to business communications, these tools will help students apply their language knowledge to real-world scenarios and help students infer meanings of unfamiliar content, furthering their language development beyond the classroom. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
-            prov:atTime "2017-12-07T15:48:15.418126" ;
+            prov:atTime "2017-12-07T15:48:15.418126"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/44fcabba-15be-11e8-993b-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Kathy Bizzarro"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/c6b9639c-b0f5-11e6-8cbc-005056c00008> ;
+    schema:description "Kathleen Bizzarro investigated, established, and directed the Spanish in Spain program 2004-2013 in Salamanca, Spain. The program enjoyed the participation of Dean Emily Chan as a Mellon Grant student of Spanish, visits by Dean Eric Popkin, the participation of the teaching staff from all members of the Spanish/Portuguese Department and a special visit by President Jill Tiefenthaler in Summer 2013. Building upon the consistent academic excellence and popularity of the program, Kathleen was asked to investigate, establish, and direct the first Colorado College Winter Start Fall Semester Program in Salamanca, Spain, in 2014. The success of that endeavor has resulted in a follow up 2015 Winter Start Fall Semester program in England, France, Italy, and Slavonia. The last year has been spent working with the Fulbright Spain Teacher’s Program for recent college graduates interested in teaching English in Spain. Kathleen also teaches Spanish 101 and 201. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T21:47:49.564743"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/491e781c-15d0-11e8-a2cd-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for David Weddle"@en ;
+    schema:accountablePerson <http://id.loc.gov/authorities/names/n85091931> ;
+    schema:description "David was named the 2009 Regional Senior Scholar by the Rocky Mountain-Great Plains Region of the American Academy of Religion and Society of Biblical Literature and delivered a plenary address at the spring meeting, entitled “Ceci n’est pas une pipe: The Problem of Representation and the Future of Religious Studies.” In 2010 he delivered a paper at the regional meeting of the AAR-SBL at Creighton University entitled, “Miracles as Reasons: Religious Argument in Christianity and Islam.” His book, Miracles: Wonder and Meaning in World Religions, was published by New York University Press in July. He lectured on the meaning of miracles at Cornell College in 2011 and at the University of Oklahoma in 2012. This fall he was awarded a life-time membership in the American Academy of Religion in recognition of forty years of service. He is currently working on a book manuscript entitled, Sacrifice: Cost and Meaning in World Religions. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T23:56:49.427161"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/4afcc640-15cc-11e8-ba83-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Kris Stanec"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/07315f54-b0e1-11e6-a0d5-005056c00008> ;
+    schema:description "Kris is interested in the arts in education, specifically teaching with/in/about/through the arts, including visual, drama, dance, and music. Her recent focus of research is on integration models that bring a depth of meaning to each content area as opposed to parallel arts instruction. Kris recently succeeded in expanding the Education Department’s secondary visual art licensure program to a K-12 license. Other areas of interest include service-learning partnerships, problem-based learning, and using technology for performance-based assessment. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T23:28:28.063908"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/66e629dc-15d1-11e8-80b8-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Barbara Whitten"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/bf2ddfc6-15d0-11e8-9e63-005056c00008> ;
+    schema:description "Barbara’s physics research is in theoretical atomic and molecular physics. She has worked on problems in x-ray laser plasmas and collisions involving oriented atoms. Recently she has become interested in issues involving women in physics. She has conducted NSF-funded research on what makes a Physics Department female-friendly, and talked to many groups in order to spread the word about this topic. For a summary of their results, please see:   www.aps.org/programs/women/workshops/upload/whitten.pdf. With a group of students, she is also working on “Physics for Everyone,” in which she is writing a series of introductory physics problems that are designed to appeal to a broader range of students. You can learn more about “Physics for Everyone” at http://acad.coloradocollege.edu/dept/pc/RepresentativePhy/pages/home.htm. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-20T00:04:25.724402"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/67e24ba8-15ce-11e8-85ac-005056c00008> a schema:DigitalDocument .
+
+<http://catalog.coloradocollege.edu/6bf2a176-15c7-11e8-b142-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Katharine Leonard"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/d187eb9a-b0de-11e6-a68d-005056c00008> ;
+    schema:description "Kate directs the Graphics Research Lab, an innovative program in printmaking and design. She works from her studio in Manitou Springs, a vibrant art community at the foothills of Pikes Peak, and travels widely, teaching workshops on photographic transfer techniques for printmaking and painting. (Anderson Ranch in Colorado, the Valand School of Art in Gothenburg, Sweden, and the Saimaa University of Applied Sciences in Lappeenranta, Finland.) "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T22:54:01.026348"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/6ea5d006-15c6-11e8-ba3b-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Judy Laux"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/3dab5a5e-bcd4-11e6-a06f-005056c00008> ;
+    schema:description "Judy completed the final two articles in her series in finance (“Working Capital Management” and “Financial Management: An Organic Approach”) and published with three students: Abdoulaye Dabo (“A Probability Model for Earnings Restatement”), Yannick Schindler (“Mortgage Meltdown: Default Sensitivity to Declining Home Values and Loan-to-Value Ratios”), and Rachel Vitale (“The Economic Efficacy of Banking Mergers: 2006-2008”). "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T22:46:22.902848"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/a1f79b7e-15cb-11e8-a5d0-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Tomi-Ann Roberts"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/a3ad551c-b0f4-11e6-a3d1-005056c00008> ;
+    schema:description "Tomi-Ann is involved in personal and collaborative research on the social psychology of gender, emotions, and the body. Her work on the psychological consequences of the sexual objectification of girls and women has resulted in numerous articles, chapters, presentations, and popular press editorials. She was a member of the American Psychological Association’s Task Force on the Sexualization of Girls, and is co-author of “The Sexualization of Girls: Causes, Consequences and Resistance,” published by Oxford University Press. Specific areas of research interest presently include embodiment of emotion, the self-conscious, moral and aesthetic emotions as they relate to bodies, women’s reproductive health and positive psychology. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T23:23:49.125848"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/ab144252-15c2-11e8-a07b-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Prentiss Dantzler II"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/3fa1a61c-b0f5-11e6-b081-005056c00008> ;
+    schema:description "Prentiss's research interests include urban poverty and inequality, neighborhood change and community development practice.  His studies focus on aspects of housing and residential mobility, racial politics, and public policy within urban areas.  Prentiss has forthcoming papers entitled, \"Exclusionary Zoning: State & Local Reactions to the Mount Laurel Doctrine\" in The Urban Lawyer Journal and a review essay in the Journal of Urban History entitled, \"Agency in Policing the Poor: Protecting Social Status and Fortifying Punishment.\" He currently has three papers under review centered on poverty spells amongst public housing residents; neighborhood satisfaction within a poor, urban area; and the intersections of feminist thought and community activism exemplified by the Black Lives Matter movement. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T22:19:37.416205"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/ada27934-15cd-11e8-a823-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Fred Tinsley"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/e3fbb21c-15cc-11e8-be02-005056c00008> ;
+    schema:description "Fred’s interest in high-dimensional geometric topology continues. He and a colleague at the University of Wisconsin-Milwaukee are studying generalizations of their recently published work. Results to this point are encouraging. Steven Janke and Fred are continuing a project investigating meaningful applications of advanced undergraduate mathematical statistics to data analyses. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T23:37:54.609243"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/b9064fa4-15c9-11e8-86ef-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Jeff Livesay"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/64d27bd4-15c8-11e8-8487-005056c00008> ;
+    schema:description "Jeff is doing theoretical work on the “generative turn” over the past few decades in social theory (from a focus on causal forces to one on the constitutive power of human agency), in sociological descriptions of late modern societies (from an emphasis on normatively regulated order to one on a destructuring resulting from an expanded range of choice), and in welfare policy (from income-support to asset-based programs). "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T23:09:56.036348"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/bc924de2-15ba-11e8-91a9-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Richard Agee"@en ;
+    schema:accountablePerson <http://id.loc.gov/authorities/names/n83151257> ;
+    schema:description "Richard's research explores relationships among music-printing firms in Italy in the context of the early modern period. Toward that end, he has focused on monophonic plainchant, since this relatively stable repertoire enables more comprehensive comparisons among printing concerns than the less stable and unpredictable polyphonic repertoire. He has already located and obtained copies of every known surviving Roman Gradual (the book containing the music for Mass) printed in Italy, and secured copies of most of the Roman Antiphoners (the books containing the music for the Holy Office) also printed in Italy between the late 15th century and the late 17th century, the period of the most printing activity for plainchant editions. To date, he has delivered a number of papers and published several articles that have clarified the transmission of this printed repertoire and has successfully made analogies between the printed transmission of musical repertory and the earlier manuscript transmission of both monophony and polyphony (i.e., typesetter replaces scribe)."@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T21:31:48.082985"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/cef472dc-f7de-11e7-936d-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Jessy Randall"@en ;
     schema:accountablePerson <https://orcid.org/0000-0002-5352-9886> ;
-    schema:description "Jessy Randall is the author of several collections of poetry, including, most recently, There Was an Old Woman (Unicorn, 2015) and Suicide Hotline Hold Music (Red Hen, 2016). Her collection of diagram poems made from illustrations in withdrawn library books, How to Tell If You Are Human, will be the next title in Pleiades Press’s visual poetry series, expected fall 2018. Jessy has presented and published on book studies, digital poetry, the publication history of Helen Hunt Jackson’s novel Ramona, and undergraduate use of Special Collections."@en ;
+    schema:description "Jessy Randall is the author of several collections of poetry, including, most recently, There Was an Old Woman (Unicorn, 2015) and Suicide Hotline Hold Music (Red Hen, 2016). Her collection of diagram poems made from illustrations in withdrawn library books, How to Tell If You Are Human, will be the next title in Pleiades Press's visual poetry series, expected fall 2018. Jessy has presented and published on book studies, digital poetry, the publication history of Helen Hunt Jackson's novel Ramona, and undergraduate use of Special Collections."@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
-            prov:atTime "2018-01-12T21:23:18.502154" ;
+            prov:atTime "2018-01-12T21:23:18.502154"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/d006f24c-15be-11e8-9163-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Nate Bower"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/8e5ecb8c-f593-11e7-9016-a41f7283f8d4> ;
+    schema:description "Nate has applied analytical chemistry to problems in archaeology, art conservation, biogeochemistry, biomaterials, chemical ecology, forensic science, numismatics and environmental toxicology. This past year, Nate used elemental analyses at Colorado College, isotopic analyses at the University of Illinois, and neutron diffraction at Oak Ridge National Laboratory to determine the origin, method of manufacture, and relative chronology of various Biblical coins used to date events in the Middle East. With his students, he used GIS and historical mining records to develop 19th century isoscapes for the American West useful in the forensic identification of skeletons from a lost cemetery at the Colorado Mental Health Institute. He also co-taught an art and archaeochemical analysis workshop at Villanova for undergraduate faculty during the summer. He looks forward to continuing research collaborations this year with colleagues, both faculty and students. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T21:54:37.773369"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/fef7b568-15c0-11e8-8aaf-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Shane Burns"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/c03ea058-15bf-11e8-8fe9-005056c00008> ;
+    schema:description "Shane's principal research interest is cosmology. He is a member of the Supernova Cosmology Project, one of two research teams whose leaders received the 2011 Nobel Prize in Physics. The prize was awarded for the groups' discovery that the universe is expanding at an accelerated rate. He is currently working on a textbook on particle physics and cosmology. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-19T22:08:39.616204"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 

@@ -22,12 +22,13 @@ from rdfframework.configuration import RdfConfigManager
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('config.py')
+CONFIG_MANAGER = RdfConfigManager(app.config)
+CONNECTION = CONFIG_MANAGER.conns
 
 login_manager = LoginManager(app)
 ldap_manager = LDAP3LoginManager(app)
 
-CONFIG_MANAGER = RdfConfigManager(app.config)
-CONNECTION = CONFIG_MANAGER.conns
+
 
 USERS = OrderedDict()
 
