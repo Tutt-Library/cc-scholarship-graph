@@ -15,7 +15,7 @@ from flask_ldap3_login import log as ldap_manager_log
 from flask_ldap3_login.forms import LDAPLoginForm
 
 
-from .forms import SearchForm
+from .forms import ProfileForm, SearchForm
 from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
 from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT, CITATION
 from rdfframework.configuration import RdfConfigManager
@@ -83,6 +83,14 @@ def research_statement(person_iri):
         return row.get("statement").get("value")
     return ''
 
+@app.template_filter("is_admin")
+def is_administrator(user):
+    if hasattr(user, 'mail'):
+        print(user.mail, user.mail in app.config.ADMINS)
+        if user.mail in app.config.ADMINS:
+            return True
+    return False
+
 @app.route("/academic-profile", methods=["POST", "GET"])
 @login_required
 def academic_profile():
@@ -93,8 +101,13 @@ def academic_profile():
     familyName = current_user.data.get("sn")
     givenName = current_user.data.get("givenName")
     
+    profile_form = ProfileForm(email=email, 
+        family_name=familyName, 
+        given_name=givenName)
+    
     return render_template('academic-profile.html',
-                           scholar=current_user)
+                           scholar=current_user, 
+                           form=profile_form)
     
 
     
@@ -157,6 +170,7 @@ def person_view():
     for row in citations_result:
         person_info["citations"].append(row)
     return render_template("person.html",
+        user=current_user,
         info=person_info)
 
 @app.route("/results")

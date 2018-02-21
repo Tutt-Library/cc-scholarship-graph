@@ -2,18 +2,35 @@
 
 {% block main %}
 <div class="container">
-    <h3>Colorado College Scholarship Database</h3>
+    <h3>
+    <a href="{{ url_for('home') }}"><i class="fas fa-graduation-cap"></i></a>
+    Colorado College Scholarship Database</h3>
     <h1>Academic Profile for {{ scholar.data.displayName }}</h1> 
+    <form class="form" action="{{ url_for('academic_profile') }}" method="POST">
+        <div class="row">
+            <div class="col">
+                <label>{{ form.given_name.label }}</label>
+                {{ form.given_name(class_='form-control') }}
+            </div>
+            <div class="col">
+                <label>{{ form.family_name.label }}</label>
+                {{ form.family_name(class_='form-control') }}
+            </div>
+        </div>
+        <label>{{ form.research_stmt.label }}</label>
+        {{ form.research_stmt(class_='form-control') }}
+    </form>
     <table class="table table-bordered">
         <thead>
             <th>Variable Name</th>
             <th>Value</th>
         </thead>
         <tbody>
-            {% for item in scholar.data|sort %}
+            {% for key,item in scholar.data.items() %}
             <tr>
+                <td>{{ key }}</td>
                 <td>{{ item }}</td>
-                <td>{{ scholar.data.get(item) }}</td>
+                {#<td>{ scholar.data }}</td>#}
             </tr>
             {% endfor %}
         </tbody>
