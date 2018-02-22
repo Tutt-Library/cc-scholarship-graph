@@ -86,6 +86,7 @@ def research_statement(person_iri):
 @app.template_filter("is_admin")
 def is_administrator(user):
     if hasattr(user, 'mail'):
+        import pdb; pdb.set_trace()
         print(user.mail, user.mail in app.config.ADMINS)
         if user.mail in app.config.ADMINS:
             return True
@@ -212,7 +213,8 @@ WHERE {
     for token in keywords:
         for row in token.split(","):
             if len(row) < 1: continue
-            sparql += """\nFILTER(CONTAINS(?statement, "{0}"))""".format(row)
+            sparql += """\nFILTER(CONTAINS(lcase(str(?statement)), "{0}"))""".format(
+                row.lower())
     sparql += "} ORDER BY ?person"""
     result = requests.post(app.config.get("TRIPLESTORE_URL"),
         data={"query": sparql,
@@ -240,7 +242,8 @@ WHERE {
         sparql += "} "
     else:
         for token in people:
-            sparql += """\nFILTER(CONTAINS(?label, "{0}"))""".format(token)
+            sparql += """\nFILTER(CONTAINS(lcase(str(?label)), "{0}"))""".format(
+                token.lower())
     sparql += "} ORDER BY ?family"
     results = CONNECTION.datastore.query(sparql)
     for row in results:

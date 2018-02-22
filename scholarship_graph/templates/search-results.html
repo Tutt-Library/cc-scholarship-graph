@@ -2,6 +2,10 @@
 
 {% block main %}
 <div class="container-fluid">
+    <h3>
+        <a href="{{ url_for('home') }}"><i class="fas fa-graduation-cap"></i></a>
+        Colorado College Scholarship Database
+    </h3>
     <div class="row">
         <section class="col-8">
             <h2>Search Results {% if people %}{{ people|length }} found{% endif %}</h2>
