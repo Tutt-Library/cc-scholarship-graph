@@ -5,11 +5,9 @@ MAINTAINER Jeremy Nelson <jermnelson@gmail.com>
 # Environmental variables
 ENV HOME /opt/cc-scholarship-graph
  
-RUN mkdir $HOME && cd $HOME && mkdir instance && \
-    touch __init__.py
+RUN git clone https://github.com/Tutt-Library/cc-scholarship-graph.git $HOME && \ 
+    cd $HOME && mkdir instance
 
-COPY scholarship_graph $HOME/scholarship_graph/
-COPY run.py $HOME/.
 COPY instance/config.py $HOME/instance/config.py
 
 EXPOSE 7225

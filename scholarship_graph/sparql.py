@@ -1,5 +1,26 @@
 __author__ = "Jeremy Nelson"
 
+import datetime
+import rdflib
+
+PROV = rdflib.Namespace("http://www.w3.org/ns/prov#")
+
+def add_qualified_revision(graph, target_entity, revisedBy, label=None):
+    """Takes a rdflib Graph, target entity IRI, revisedBy IRI, and an 
+    optional label and generates a revision"""
+    qualified_revision = rdflib.BNode()
+    graph.add((target_entity, PROV.qualifiedRevision, qualified_revision))
+    graph.add((qualified_revision, rdflib.RDF.type, PROV.Revision))
+    graph.add((qualified_revision, PROV.atTime,
+               rdflib.Literal(datetime.datetime.utcnow().isoformat(),
+                              datatype=rdflib.XSD.dateTime)))
+    graph.add((qualified_revision, PROV.wasGeneratedBy, revisedBy))
+    if not label is None:
+        graph.add((qualified_revision,
+                   PROV.label,
+                   label))
+
+
 PREFIX = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
 PREFIX cc_fac: <https://www.coloradocollege.edu/ns/faculty/>
 PREFIX cc_info: <https://www.coloradocollege.edu/ns/info/>  

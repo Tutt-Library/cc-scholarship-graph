@@ -7,7 +7,8 @@ import xml.etree.ElementTree as etree
 from collections import OrderedDict
 import requests
 
-from flask import Flask, render_template, redirect, request, session, url_for
+from flask import Flask, jsonify, render_template, redirect, request, session 
+from flask import url_for
 from flask_login import login_required, login_user, logout_user, current_user
 from flask_login import LoginManager, UserMixin
 from flask_ldap3_login import LDAP3LoginManager
@@ -16,6 +17,7 @@ from flask_ldap3_login.forms import LDAPLoginForm
 
 
 from .forms import ProfileForm, SearchForm
+from .sparql import add_qualified_revision
 from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
 from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT, CITATION
 from rdfframework.configuration import RdfConfigManager
@@ -85,9 +87,8 @@ def research_statement(person_iri):
 
 @app.template_filter("is_admin")
 def is_administrator(user):
-    if hasattr(user, 'mail'):
-        import pdb; pdb.set_trace()
-        print(user.mail, user.mail in app.config.ADMINS)
+    if hasattr(user, 'data'):
+        print(user.data.mail, user.data.mail in app.config.ADMINS)
         if user.mail in app.config.ADMINS:
             return True
     return False
@@ -97,6 +98,8 @@ def is_administrator(user):
 def academic_profile():
     """Displays Personal Academic Profile and allows 
     authenticated users to edit their own profile"""
+    if request.method.startswith("POST"):
+        return "Saved should redirect to profile"
     email = current_user.data.get("mail")
     label = current_user.data.get("displayName")
     familyName = current_user.data.get("sn")
@@ -111,6 +114,19 @@ def academic_profile():
                            form=profile_form)
     
 
+@app.route("/fast")
+def fast_suggest():
+    term = request.args.get('q')
+    start = request.args.get("start", 0)
+    oclc_fast_base = "http://fast.oclc.org/searchfast/fastsuggest"
+    url = "{}?query={}&wt=json&fl=suggestall&queryReturn=suggestall,id".format(
+        oclc_fast_base,
+        term)
+    if int(start) > 0:
+        url += "&start={}".format(start)
+    fast_result = requests.get(url)
+    return jsonify(fast_result.json().get("response").get('docs'))
+    
     
 @app.route("/org")
 def org_browsing():
