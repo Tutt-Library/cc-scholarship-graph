@@ -3,8 +3,11 @@ __author__ = "Diane Westerfield"
 import uuid
 import click
 import codecs
-
+import re
+import sys
+from sys import exit
 import rdflib
+from rdflib import RDFS
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
@@ -28,12 +31,26 @@ from bibtexparser.customization import convert_to_unicode
 # if all matches (the article is already there) then don't add a duplicate
 
 def author_lookup(people_graph,lookup_string):
-# check the people graph for a match
+# check the people graph for a match on name
     sparql="""SELECT ?person
               WHERE {{
               ?person rdf:type bf:Person .
               ?person rdfs:label ?label .
               FILTER (CONTAINS (?label,"{0}"))
+              }}""".format(lookup_string)
+
+    results = people_graph.query(sparql)
+
+    for i in results:
+        return i[0]
+
+def alternate_author_lookup(people_graph,lookup_string):
+# check the people graph for a match on alternateName
+    sparql="""SELECT ?person
+              WHERE {{
+              ?person rdf:type bf:Person .
+              ?person schema:alternateName ?AN .
+              FILTER (CONTAINS (?AN,"{0}"))
               }}""".format(lookup_string)
 
     results = people_graph.query(sparql)
@@ -108,9 +125,9 @@ class Citation(object):
         self.__year__()
         self.__abstract__()
         self.__citation_type__()
+        self.__url__()
         
     def __author_string__(self):
-        # need to define RDF type for multiple author. Not in Schema.org or LOC.
         self.author_string = self.raw_citation["author"]
         self.author_string = self.author_string.replace(" and ",", ")
         # add period to end of string
@@ -121,38 +138,146 @@ class Citation(object):
         
         # to do: account for multiple CC authors. Currently this will take the last match.
         # to do: what happens if there are no matches?
-        
-        for name in self.author_string.split(" and "):
+        self.cc_authors=[]
+        for name in self.raw_citation["author"].split(" and "):
             family_name=""
             given_name=""
+            name_parsed=""
             author_name_parsed=""
+            author_iri=""
+            # import pdb;pdb.set_trace()
 
+            # OLD AUTHOR PARSING CODE HERE
             # reverse last name, first name
-            if "," in name:
-                comma_pos=name.find(",")
-                family_name = name[:comma_pos]
-                given_name = name[comma_pos + 1:]
-                name = given_name + " " + family_name
+            #if "," in name:
+            #    comma_pos=name.find(",")
+            #    family_name = name[:comma_pos]
+            #    given_name = name[comma_pos + 1:]
+            #    name = given_name + " " + family_name
 
             # remove initials
-            if "." in name:
-                for part in name.split(" "):
-                    if len(part) >= 3:
-                        author_name_parsed = author_name_parsed + " "+ part
-            else:
-                author_name_parsed = name    
+            #if "." in name:
+            #    for part in name.split(" "):
+            #        if len(part) >= 3:
+            #            author_name_parsed = author_name_parsed + " "+ part
+            #else:
+            #    author_name_parsed = name    
 
+            # import pdb;pdb.set_trace()
+
+            #to do: regex expression that covers all parsing
+            #import pdb;pdb.set_trace()
+            name = name.strip()
+            if "." in name:
+                try:
+                    # GivenName Initial FamilyName ex. Jane C. Doe
+                    name_parsed = re.search(r"(\w+)\s\w?\.\s(\w+\-?\w+)",name).groups()
+                except:
+                    # Initial GivenName FamilyName ex. C. Jane Doe
+                    if re.search(r"w?\.\s(\w+)\s(\w+\-?\w+)",name) != None:
+                        name_parsed = re.search(r"w?\.\s(\w+)\s(\w+\-?\w+)",name).groups()
+                    # Initial Initial FamilyName ex. J. C. Doe
+                    elif re.search(r"(\w+\.)\s(\w+\.)\s(\w+)",name) != None:
+                        name_parsed = re.search(r"(\w+\.)\s(\w+\.)\s(\w+)",name).groups()
+                    # GivenName Initial Initial Family Name ex. Jane C. D. Doe
+                    elif re.search(r"(\w+)\s\w?\.\s\w?\.\s(\w+\-?\w+)",name) !=None:
+                        name_parsed = re.search(r"(\w+)\s\w?\.\s\w?\.\s(\w+\-?\w+)",name).groups()       
+                    # Initial FamilyName ex. J. Doe
+                    elif re.search(r"(\w+\.)\s(\w+)",name) != None:
+                        name_parsed = re.search(r"(\w+\.)\s(\w+)",name).groups()
+                else:
+                    name_parsed = []
+                    for word in name.split(" "):
+                        word = word.strip()
+                        if word != None or word != "":
+                            name_parsed.append(word)
+
+                    
+            else: # GivenName [middle name] FamilyName ex. Jane Doe or Jane Carla Doe
+                name_parsed = []
+                for word in name.split(" "):
+                    name_parsed.append(word)
+            print("The name is",name_parsed,"for ",self.raw_citation["title"])
+
+            given_name = name_parsed[0]
+            family_name = name_parsed[len(name_parsed)-1]
+            author_name_parsed = given_name + " " + family_name            
             author_name_parsed = author_name_parsed.strip()
-    
-            author_iri=author_lookup(people,author_name_parsed)
-            
-            if author_iri != None:
-                self.CC_author=author_name_parsed
-                self.author_iri=author_iri
+               
+            if author_lookup(people,author_name_parsed) != None:
+                author_iri=author_lookup(people,author_name_parsed)
+                print("Author",author_name_parsed,"found in author lookup")
+                self.cc_authors.append(author_iri)
+            elif alternate_author_lookup(people,author_name_parsed) != None:
+                author_iri=alternate_author_lookup(people,author_name_parsed)
+                print("Author",author_name_parsed,"found in alternate author lookup")
+                self.cc_authors.append(author_iri)
+            #elif author_lookup(people,family_name) != None:
+            #    print("Hey is this the correct person?",family_name)
+            #    correct=input("Enter y or no")
+            #    if correct == "y":
+            #        author_iri=author_lookup(people,family_name)
+            #        self.cc_authors.append(author_iri)
+            #        print("Author",author_name_parsed,"found by searching family name in author lookup")
+                
             else:
-                # to do: add the person to people graph if not there already; department affiliation?
-                self.author_iri=self.__unique_IRI__()
-                self.author_iri=rdflib.URIRef(self.author_iri)
+                print("Author",author_name_parsed,"not found")
+                pass
+                
+
+        
+        if self.cc_authors == []:
+            print("The following citation is lacking one or more CC authors: ")
+            print(self.raw_citation)
+            user_submission=input("No CC author found, input one CC author, or multiple authors separated by semicolons >")
+            if user_submission=="":
+                print("ERROR NO CC AUTHOR",self.raw_citation)
+                sys.exit(0)
+            else:
+                for person in user_submission.split(";"):
+                    has_id = input("Does this person have an ORCID (o) or CCID (c) or no ID and needs one (n)?")
+                    in_graph = input("Does this person already exist in the people graph? (y) or (n)")
+                    if has_id == "o":
+                        author_iri = input("ORCID >")
+                    elif has_id == "c":
+                        author_iri = input("CCID >")
+                    elif has_id == "n":
+                        author_iri = "http://catalog.coloradocollege.edu/{}".format(uuid.uuid1())
+                        print("Author_iri assigned ",author_iri)
+                    else:
+                        print("NOT UNDERSTOOD, QUITTING")
+                        sys.exit(0)
+                    author_iri=rdflib.URIRef(author_iri)
+                    self.cc_authors.append(author_iri)
+                    if in_graph == "n":                                                
+                        people.add((author_iri,rdflib.RDF.type,bf.Person))
+                        people.add((author_iri,RDFS.label,rdflib.Literal(person,lang="en")))
+                        given_name=input("What is the author's given (first) name?")
+                        people.add((author_iri,SCHEMA.givenName,rdflib.Literal(given_name,lang="en")))
+                        family_name=input("What is the author's family name?")
+                        people.add((author_iri,SCHEMA.familyName,rdflib.Literal(family_name,lang="en")))
+                        email=input("What is the person's email?")
+                        people.add((author_iri,SCHEMA.email,rdflib.Literal(email)))
+                        with open("C:/CCKnowledgeGraph/tiger-catalog/KnowledgeGraph/cc-people.ttl","wb+") as fo:
+                            fo.write(people.serialize(format="turtle"))
+                        print("YOU STILL NEED TO ADD THIS PERSON TO THE ACADEMIC YEAR GRAPH(s)")
+
+        if self.cc_authors == []:
+            print("ERROR NO CC AUTHOR",self.raw_citation)
+            sys.exit(0)
+
+        #check cc_authors list for valid URIRef
+        i = 0
+        while i < len(self.cc_authors):      
+            if type(self.cc_authors[i]) != rdflib.term.URIRef:
+                self.cc_authors[i]=rdflib.URIRef(self.cc_authors[i])
+            i = i + 1
+        print("CC Authors: ",self.cc_authors,"for ",self.raw_citation["title"])
+        
+        #else:
+        # to do: add the person to people graph if not there already; department affiliation?
+        #    self.author_iri=self.__unique_IRI__()
+        #    self.author_iri=rdflib.URIRef(self.author_iri)
 
     def __year__(self):
         if "year" in self.raw_citation.keys():
@@ -168,6 +293,12 @@ class Citation(object):
 
     def __citation_type__(self):
         self.citation_type=self.raw_citation["ENTRYTYPE"]
+
+    def __url__(self):
+        if "url" in self.raw_citation.keys():
+            self.url = self.raw_citation["url"]
+        else:
+            self.url = ""
                                        
 class Article_Citation(Citation):
     def __init__(self,raw_citation,creative_works):
@@ -215,6 +346,7 @@ class Article_Citation(Citation):
             else:
                 self.page_start=pages
 
+
     def __month__(self):
         
         if "month" in self.raw_citation.keys():
@@ -230,6 +362,7 @@ class Article_Citation(Citation):
         else:
             self.doi_string=self.__unique_IRI__()
         self.doi_iri=rdflib.URIRef(self.doi_string)
+
 
     def __volume__(self):
         # to do: check for duplicate volumes of the journal title
@@ -251,7 +384,7 @@ class Article_Citation(Citation):
        
     def add_article(self):
         # Business logic for adding citations
-
+        # print(self.raw_citation)
         # add the journal title
         self.creative_works.add((self.journal_iri,rdflib.RDF.type,SCHEMA.Periodical))
         self.creative_works.add((self.journal_iri,SCHEMA.name,rdflib.Literal(self.journal_title,lang="en")))
@@ -270,10 +403,12 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
             
         # add url - this is the link not the unique identifier(but they can have the same value)
-        # self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
+        if self.url != "":
+            self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
 
         # add the author
-        self.creative_works.add((self.doi_iri,SCHEMA.author,self.author_iri))
+        for author in self.cc_authors:
+            self.creative_works.add((self.doi_iri,SCHEMA.author,author))
 
         # add the author string
         self.creative_works.add((self.doi_iri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
@@ -349,6 +484,7 @@ def load_citations(bibtext_filepath, creative_works_path):
             citation.populate_special()
             citation.add_article()
             i = i  + 1
+            print(i)
 
     # save the graph to disk
     with open(creative_works_path, "wb+") as fo:
@@ -377,8 +513,8 @@ def initialize(people_path, creative_works_path, bibtext_path):
     creative_works.parse(creative_works_path, format="turtle")
     SCHEMA = rdflib.Namespace("http://schema.org/")
     creative_works.namespace_manager.bind("schema",SCHEMA)
-    BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
-    CITATION_EXTENSION = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation")
+    bf = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+    CITATION_EXTENSION = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/")
     creative_works.namespace_manager.bind("cite",CITATION_EXTENSION)
 
     # load bibtex data, parse it, and attempt to add citations to the creative_works graph
