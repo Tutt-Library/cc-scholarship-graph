@@ -30,7 +30,7 @@
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/0292b776-db66-11e7-826a-005056c00008> a schema:DigitalDocument ;
-    rdfs:label "Research Statement for pDaniel Arroyo-Rodriguez"@en ;
+    rdfs:label "Research Statement for Daniel Arroyo-Rodriguez"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/c3372e36-b0f5-11e6-bf02-005056c00008> ;
     schema:description "Daniel specializes in the study of 20th century Spanish literature and film, particularly in the post-Franco period (1975–present). His research has a strong emphasis on literary analysis and on political and social theories. His most recent work focuses on the study of the Movement for the Recuperation of Historical Memory that is currently taking place in Spain. Throughout his research, Daniel explores literary and cinematographic discourse as a valuable window through which we can analyze the frontier between politics, memory, and representation in contemporary Spain. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
@@ -1339,6 +1339,17 @@
     schema:description "Fanny Zhang is a Chinese lecturer currently focusing on developing oral and written language tools that not only give students basic language skills but a broader context to meet different forms of communication and mediums. From casual conversations to business communications, these tools will help students apply their language knowledge to real-world scenarios and help students infer meanings of unfamiliar content, furthering their language development beyond the classroom. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2017-12-07T15:48:15.418126"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/376894d2-1c16-11e8-9022-005056c00008> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Jeremy Nelson"@en ;
+    schema:about <http://id.worldcat.org/fast/01086226>,
+        <http://id.worldcat.org/fast/01896555>,
+        <http://id.worldcat.org/fast/01920455> ;
+    schema:accountablePerson <http://orcid.org/0000-0002-7543-3893> ;
+    schema:description "Jeremy Nelson is the Metadata and Systems Librarian at Colorado College. In addition to working on the library's research help desk, providing information literacy instruction to undergraduates, and supervising the library's systems and cataloging departments. He actively researches and develops various components and open-source tools in the BIBCAT Catalog Pull Platform for use by Colorado College, the Library of Congress, DP.LA, and other libraries and organizations. He received his BA from Knox College and his MS in Library and Information Science from the University of Illinois Urbana/Champaign. Nelson is an active speaker at various library and technology conferences and is the author of two books; Becoming a Lean Library and Mastering Redis. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-27T23:30:37.926409"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/44fcabba-15be-11e8-993b-005056c00008> a schema:DigitalDocument ;

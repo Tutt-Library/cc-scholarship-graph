@@ -23,7 +23,7 @@ from .forms import ProfileForm, SearchForm
 from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PREFIX, PROFILE, RESEARCH_STMT
-from .sparql import SUBJECTS
+from .sparql import SUBJECTS, SUBJECTS_IRI
 from rdfframework.configuration import RdfConfigManager
 
 app = Flask(__name__, instance_relative_config=True)
@@ -31,13 +31,13 @@ app.config.from_pyfile('config.py')
 CONFIG_MANAGER = RdfConfigManager(app.config)
 CONNECTION = CONFIG_MANAGER.conns
 #! Should get theses from rdfframework namespace manager
-SCHEMA = rdflib.Namespace("http://schema.org/")
+#SCHEMA = rdflib.Namespace("http://schema.org/")
+SCHEMA = CONFIG_MANAGER.nsm.schema
 
 login_manager = LoginManager(app)
 ldap_manager = LDAP3LoginManager(app)
 
-
-
+PROJECT_BASE = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 USERS = OrderedDict()
 
 class Scholar(UserMixin):
@@ -138,12 +138,14 @@ def __add_profile__(form):
 
 def __update_profile__(form):
     """Updates existing triples based on form values"""
-    research_path = os.path.join(
-        os.path.abspath(os.path.dirname(os.path.dirname(__file__))),
+    research_path = os.path.join(PROJECT_BASE,
         "data/cc-research-statements.ttl")
     cc_research = rdflib.Graph()
-    cc_research.parse(research_path,
-        format='turtle')
+    cc_research.parse(research_path, format='turtle')
+    subjects_path = os.path.join(PROJECT_BASE,
+        "data/cc-fast-subjects.ttl")
+    fast_subjects = rdflib.Graph()
+    fast_subjects.parse(subjects_path, format='turtle')
     output = ''
     person_iri = rdflib.URIRef(form.get("iri"))
     results = CONNECTION.datastore.query(
@@ -153,39 +155,67 @@ def __update_profile__(form):
         generated_by = rdflib.URIRef(results[0].get("person").get('value'))
     else:
         generated_by = person_iri
-    statement_iri = cc_research.value(predicate=SCHEMA.accountablePerson,
+    statement_iri = cc_research.value(predicate=SCHEMA.accountablePerson.rdflib,
                                       object=person_iri)
     if statement_iri is None:
         statement_iri = rdflib.URIRef(
             "http://catalog.coloradocollege.edu/{}".format(uuid.uuid1()))
-        cc_research.add((statement_iri, rdflib.RDF.type, SCHEMA.DigitalDocument))
-        cc_research.add((statement_iri, SCHEMA.accountablePerson, person_iri))
+        cc_research.add((statement_iri, 
+                         rdflib.RDF.type, 
+                         SCHEMA.DigitalDocument.rdflib))
+        cc_research.add((statement_iri, 
+                         SCHEMA.accountablePerson.rdflib, 
+                         person_iri))
         cc_research.add((statement_iri, 
                          rdflib.RDFS.label, 
                          rdflib.Literal("Research Statement for {} {}".format(
                             form.get('given_name'),
                             form.get('family_name')), lang="en")))
         add_qualified_generation(cc_research, statement_iri, generated_by)
+    else:
+        add_qualified_revision(cc_research, statement_iri, generated_by)    
     statement = form.get("research_stmt")
     existing_stmt = cc_research.value(subject=statement_iri,
-                                      predicate=SCHEMA.description)
+                                      predicate=SCHEMA.description.rdflib)
 
     if existing_stmt and str(existing_stmt) != statement:
         cc_research.remove((statement_iri, 
-                            SCHEMA.description, 
+                            SCHEMA.description.rdflib, 
                             existing_stmt))
     cc_research.add((statement_iri, 
-                     SCHEMA.description, 
+                     SCHEMA.description.rdflib, 
                      rdflib.Literal(statement, lang="en")))
 
-    fast_subjects = form.getlist("subjects")
-    for fast_id in fast_subjects:
-        fast_uri = rdflib.URIRef("http://id.worldcat.org/fast/{}".format(fast_id[3:]))
-        cc_research.add((statement_iri, SCHEMA.about, fast_uri))
-    add_qualified_revision(cc_research, statement_iri, generated_by)
+    form_subjects = form.getlist("subjects")
+    new_subjects = {} 
+    for row in form_subjects:
+        fast_id, fast_label = row.split(":")
+        fast_uri = "http://id.worldcat.org/fast/{}".format(fast_id[3:])
+        new_subjects[fast_uri] = fast_label
+    subjects = CONNECTION.datastore.query(
+        SUBJECTS_IRI.format(person_iri))
+    # Remove any existing subjects that aren't current
+    for existing_subject in subjects:
+        if not existing_subject in new_subjects:
+            cc_research.remove((statement_iri,
+                                SCHEMA.about.rdflib,
+                                rdflib.URIRef(existing_subject)))
+    for fast_subject, fast_label  in new_subjects.items():
+        iri_subject = rdflib.URIRef(fast_subject)
+        cc_research.add((statement_iri,
+                         SCHEMA.about.rdflib,
+                         iri_subject))
+        existing_label = fast_subjects.value(subject=iri_subject,
+                                             predicate=rdflib.RDFS.label)
+        if existing_label is None:
+            fast_subjects.add((iri_subject, 
+                               rdflib.RDFS.label,
+                               rdflib.Literal(fast_label, lang="en")))
     #! Replace this with a Github commit message
     with open(research_path, "wb+") as fo:
         fo.write(cc_research.serialize(format='turtle'))
+    with open(subjects_path, "wb+") as fo:
+        fo.write(fast_subjects.serialize(format='turtle'))
     return output
 
 @app.route("/fast")

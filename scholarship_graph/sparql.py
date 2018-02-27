@@ -182,3 +182,10 @@ WHERE {{
     ?statement schema:about ?subject .
     FILTER (CONTAINS(?email, "{0}"))
 }}""" 
+
+SUBJECTS_IRI = PREFIX + """
+SELECT ?subject
+WHERE {{
+    ?statement schema:accountablePerson ?person .
+    FILTER (?person = <{0}>)
+}}"""

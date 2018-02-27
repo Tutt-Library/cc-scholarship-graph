@@ -41,7 +41,12 @@
             {% endfor %}
         </tbody>
     </table>#}
-    {% if "orcid" in form.iri.data %}ORCID ID is <input type="input" class="form-control" readonly value="{{ form.iri.data}}"></input>{% endif %}
+    <img src="{{ url_for('static', filename='img/orcid-logo.png') }}" alt="ORCID Logo">
+    {% if "orcid" in form.iri.data %}<input type="input" class="form-control" readonly value="{{ form.iri.data}}"></input>
+    {% else %}
+        <a href="https://orcid.org/register" class="btn btn-info">Register for ORCID iD</a> and then 
+        enter your ORCID iD <input type="input" name="orcid" class="form-control"> 
+    {% endif %}
     <h2>FAST Subject Headings</h2>
     <div class="row">
         <div class="col-3">
@@ -100,12 +105,13 @@
                 }
             }
     }).on('typeahead:selected', function(obj, datum) {
+        $("#subject-of").trigger(':reset');
         $("#research-subjects").append(
-            ['<div class="alert alert-primary alert-dismissible fade show"><input type="hidden" name="subjects" value="' + datum.id +'">',
+            ['<div class="alert alert-primary alert-dismissible fade show">',
+             '<input type="hidden" name="subjects" value="' + datum.id +':' + datum.suggestall + '">',
               datum.suggestall,
               '<button type="button" class="close" data-dismiss="alert" aria-label="Close">',
               '<span aria-hidden="true">&times;</span></button></div>'].join('\n'));
-            $("#subject-of").val('');
     });
 
 
