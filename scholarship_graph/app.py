@@ -2,13 +2,16 @@
 __author__ = "Jeremy Nelson","Diane Westerfield"
 
 import datetime
+import os
 import re
 import xml.etree.ElementTree as etree
 from collections import OrderedDict
 import requests
+import rdflib
+import uuid
 
 from flask import Flask, jsonify, render_template, redirect, request, session 
-from flask import url_for
+from flask import current_app, url_for
 from flask_login import login_required, login_user, logout_user, current_user
 from flask_login import LoginManager, UserMixin
 from flask_ldap3_login import LDAP3LoginManager
@@ -17,15 +20,18 @@ from flask_ldap3_login.forms import LDAPLoginForm
 
 
 from .forms import ProfileForm, SearchForm
-from .sparql import add_qualified_revision
-from .sparql import ORG_INFO, ORG_LISTING, ORG_PEOPLE, PERSON_HISTORY
-from .sparql import PERSON_INFO, PREFIX, RESEARCH_STMT, CITATION
+from .sparql import add_qualified_generation, add_qualified_revision
+from .sparql import CITATION, EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
+from .sparql import PERSON_HISTORY, PERSON_INFO, PREFIX, PROFILE, RESEARCH_STMT
+from .sparql import SUBJECTS
 from rdfframework.configuration import RdfConfigManager
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('config.py')
 CONFIG_MANAGER = RdfConfigManager(app.config)
 CONNECTION = CONFIG_MANAGER.conns
+#! Should get theses from rdfframework namespace manager
+SCHEMA = rdflib.Namespace("http://schema.org/")
 
 login_manager = LoginManager(app)
 ldap_manager = LDAP3LoginManager(app)
@@ -99,20 +105,88 @@ def academic_profile():
     """Displays Personal Academic Profile and allows 
     authenticated users to edit their own profile"""
     if request.method.startswith("POST"):
-        return "Saved should redirect to profile"
+        if request.form.get("iri") is None:
+            msg = __add_profile__(request.form)
+        else:
+            msg = __update_profile__(request.form)
+        return jsonify({"message": msg})
     email = current_user.data.get("mail")
     label = current_user.data.get("displayName")
     familyName = current_user.data.get("sn")
     givenName = current_user.data.get("givenName")
-    
-    profile_form = ProfileForm(email=email, 
-        family_name=familyName, 
-        given_name=givenName)
-    
+    fields = {"email": email, 
+              "family_name": familyName, 
+              "given_name": givenName}
+    results = CONNECTION.datastore.query(
+        PROFILE.format(familyName, givenName, email))
+    if len(results) == 1:
+        fields["iri"] = results[0].get("person").get("value")
+        if "statement" in results[0]:
+            fields["research_stmt"] = results[0].get('statement').get('value')
+    profile_form = ProfileForm(**fields)
+    subjects = CONNECTION.datastore.query(
+        SUBJECTS.format(email))
     return render_template('academic-profile.html',
                            scholar=current_user, 
-                           form=profile_form)
-    
+                           form=profile_form,
+                           subjects=subjects)
+
+def __add_profile__(form):
+    """Adds a profile stub to scholarship graph"""
+    output = '' 
+    return output
+
+def __update_profile__(form):
+    """Updates existing triples based on form values"""
+    research_path = os.path.join(
+        os.path.abspath(os.path.dirname(os.path.dirname(__file__))),
+        "data/cc-research-statements.ttl")
+    cc_research = rdflib.Graph()
+    cc_research.parse(research_path,
+        format='turtle')
+    output = ''
+    person_iri = rdflib.URIRef(form.get("iri"))
+    results = CONNECTION.datastore.query(
+        EMAIL_LOOKUP.format(
+            current_user.data.get('mail').lower()))
+    if len(results) > 0:
+        generated_by = rdflib.URIRef(results[0].get("person").get('value'))
+    else:
+        generated_by = person_iri
+    statement_iri = cc_research.value(predicate=SCHEMA.accountablePerson,
+                                      object=person_iri)
+    if statement_iri is None:
+        statement_iri = rdflib.URIRef(
+            "http://catalog.coloradocollege.edu/{}".format(uuid.uuid1()))
+        cc_research.add((statement_iri, rdflib.RDF.type, SCHEMA.DigitalDocument))
+        cc_research.add((statement_iri, SCHEMA.accountablePerson, person_iri))
+        cc_research.add((statement_iri, 
+                         rdflib.RDFS.label, 
+                         rdflib.Literal("Research Statement for {} {}".format(
+                            form.get('given_name'),
+                            form.get('family_name')), lang="en")))
+        add_qualified_generation(cc_research, statement_iri, generated_by)
+    statement = form.get("research_stmt")
+    existing_stmt = cc_research.value(subject=statement_iri,
+                                      predicate=SCHEMA.description)
+
+    if existing_stmt and str(existing_stmt) != statement:
+        cc_research.remove((statement_iri, 
+                            SCHEMA.description, 
+                            existing_stmt))
+    cc_research.add((statement_iri, 
+                     SCHEMA.description, 
+                     rdflib.Literal(statement, lang="en")))
+
+    fast_subjects = form.getlist("subjects")
+    for fast_id in fast_subjects:
+        fast_uri = rdflib.URIRef("http://id.worldcat.org/fast/{}".format(fast_id[3:]))
+        cc_research.add((statement_iri, SCHEMA.about, fast_uri))
+    add_qualified_revision(cc_research, statement_iri, generated_by)
+    #! Replace this with a Github commit message
+    with open(research_path, "wb+") as fo:
+        fo.write(cc_research.serialize(format='turtle'))
+    return output
 
 @app.route("/fast")
 def fast_suggest():

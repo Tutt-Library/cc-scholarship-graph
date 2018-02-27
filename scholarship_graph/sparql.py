@@ -20,6 +20,18 @@ def add_qualified_revision(graph, target_entity, revisedBy, label=None):
                    PROV.label,
                    label))
 
+def add_qualified_generation(graph, entity_iri, generatedBy):
+    """Takes a rdflib Grpah, target entity iri, and generatedBy iri and 
+    creates a generation event"""
+    gen_bnode = rdflib.BNode()
+    graph.add((entity_iri, PROV.qualifiedGeneration, gen_bnode))
+    graph.add((gen_bnode, rdflib.RDF.type, PROV.Generation))
+    graph.add((gen_bnode, 
+               PROV.atTime, 
+               rdflib.Literal(datetime.datetime.utcnow().isoformat(), 
+                              datatype=rdflib.XSD.dateTime)))
+    graph.add((gen_bnode, PROV.wasGeneratedBy, generatedBy))
+
 
 PREFIX = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
 PREFIX cc_fac: <https://www.coloradocollege.edu/ns/faculty/>
@@ -56,6 +68,12 @@ WHERE {{
 
 	}}
 	ORDER BY DESC(?article)"""
+
+EMAIL_LOOKUP = PREFIX + """SELECT ?person 
+WHERE {{ ?person schema:email ?email .
+       FILTER(CONTAINS(?email, "{0}")) 
+}}"""
+ 
 
 ORG_INFO = PREFIX + """
 SELECT DISTINCT ?label ?year ?year_label
@@ -156,3 +174,11 @@ WHERE {{
     FILTER (<{0}> = ?person)
 }}"""
 
+SUBJECTS = PREFIX + """
+SELECT ?subject
+WHERE {{
+    ?person schema:email ?email .
+    ?statement schema:accountablePerson ?person .
+    ?statement schema:about ?subject .
+    FILTER (CONTAINS(?email, "{0}"))
+}}""" 

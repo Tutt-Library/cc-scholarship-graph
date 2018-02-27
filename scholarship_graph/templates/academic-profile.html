@@ -5,8 +5,9 @@
 {% endblock %}
 
 {% block main %}
-<form class="form" action="{{ url_for('academic_profile') }}" method="POST">
+<form class="form" action="{{ url_for('academic_profile') }}" id="academic-profile" method="POST">
 {{ form.csrf_token }}
+{{ form.iri(class_='form-control') }}
 <div class="container">
     <h3>
     <a href="{{ url_for('home') }}"><i class="fas fa-graduation-cap"></i></a>
@@ -40,18 +41,24 @@
             {% endfor %}
         </tbody>
     </table>#}
-    <h2>Assign FAST Subject Headings</h2>
+    {% if "orcid" in form.iri.data %}ORCID ID is <input type="input" class="form-control" readonly value="{{ form.iri.data}}"></input>{% endif %}
+    <h2>FAST Subject Headings</h2>
     <div class="row">
-        <div class="col">
+        <div class="col-3">
+            <h4>Find subjects</h4>
             <div id="fast-suggestion">
                 <input class="typeahead form-control" type="text" id='subject-of'></input>
             </div>
         </div>
         <div class="col">
-            <ul id="research-subjects">
-
-
-            </ul>
+            <div id="research-subjects">
+                {% for subject in subjects %}
+                    <div class="alert alert-primary alert-dismissible fade show">
+                        <input type="hidden" name="subjects" value="{{ subject }}"></input>
+                        {{ subject }}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div> 
     <div class="w-50 mx-auto">
@@ -89,18 +96,31 @@
                     '</div>'
                 ].join('\n'),
                 suggestion: function(data) {
-                    return '<div id="' + data.id + '">' + data.suggestall + '</div>';
+                    return '<div style="background-color: white" id="' + data.id + '">' + data.suggestall + '</div>';
                 }
             }
     }).on('typeahead:selected', function(obj, datum) {
-        console.log("Datum is " + datum.id + " name " + datum.suggestall);
         $("#research-subjects").append(
-            ['<li id="' + datum.id +'"><span class="badge badge-primary">',
+            ['<div class="alert alert-primary alert-dismissible fade show"><input type="hidden" name="subjects" value="' + datum.id +'">',
               datum.suggestall,
-              '<button type="button" class="close float-right" aria-label="Close">',
-              '<span aria-hidden="true">&times;</span></button></span></li>'].join('\n'));
+              '<button type="button" class="close" data-dismiss="alert" aria-label="Close">',
+              '<span aria-hidden="true">&times;</span></button></div>'].join('\n'));
+            $("#subject-of").val('');
     });
 
 
+$("#academic-profile").on('submit', function(e) {
+     e.preventDefault();
+     var data = $("#academic-profile :input").serializeArray();
+     console.log("Input " + data.length);
+     var action = $("#academic-profile").attr("action");
+     $.post(action,
+            data=data,
+            success=function(data) {
+                alert("Return from server " + data['message']);
+            }
+      );
+
+});
 </script> 
 {% endblock %}

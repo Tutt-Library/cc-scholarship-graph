@@ -47,6 +47,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ url_for('cc_login') }}"  id="cc-login" >
                     {{ login.csrf_token }}    
+                    {% if login.errors  %}{{ login.errors }}{% endif %}
                     <div class="form-group">
                         {{ login.username.label }}
                         {{ login.username(class_='form-control') }}
