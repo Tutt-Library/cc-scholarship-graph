@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    <h1>{{ subject.label }}</h1>
+    {% for person in subject.assignments %}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ person.label }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">
+            {% for row in person.current_affliation %}
+            {{ row }}{% if not loop.last %}, {% endif %}
+            </h6>
+            <p class="card-text">{{ person.statement }}</p>
+            <a href="{{ url_for('person_view', iri=person.iri) }}">More &hellip;</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
