@@ -1458,6 +1458,15 @@
             prov:atTime "2018-02-19T21:54:37.773369"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
+<http://catalog.coloradocollege.edu/fcb5c2e2-1c17-11e8-a25c-a41f7283f8d4> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Diane Westerfield"@en ;
+    schema:about <http://id.worldcat.org/fast/00997916> ;
+    schema:accountablePerson <https://orcid.org/0000-0002-8845-2954> ;
+    schema:description ""@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-02-27T23:43:18.439600"^^xsd:dateTime ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] .
+
 <http://catalog.coloradocollege.edu/fef7b568-15c0-11e8-8aaf-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Shane Burns"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/c03ea058-15bf-11e8-8fe9-005056c00008> ;

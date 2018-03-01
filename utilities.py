@@ -63,22 +63,21 @@ def doi_lookup(creative_works,lookup_string):
 
     sparql="""SELECT ?doi_iri
             WHERE {{
-            ?doi_iri rdf:type schema:identifier .
-            FILTER(CONTAINS (?name,"{0}"))
+            ?doi_iri rdf:type schema:ScholarlyArticle .
+            FILTER(CONTAINS (str(?doi_iri),"{0}"))
             }}""".format(lookup_string)
 
     results = creative_works.query(sparql)
 
     for i in results:
         return i[0]
-
-
+    
 def journal_lookup(creative_works,lookup_string):
 # check the creative works graph for a match on journal title so that duplicate journals are not created
     sparql="""SELECT ?journal_iri
 	      WHERE {{
 	      ?journal_iri rdf:type schema:Periodical .
-	      ?journal_iri rdfs:name ?label .
+	      ?journal_iri schema:name ?label .
               FILTER (CONTAINS (?label,"{0}"))
               }}""".format(lookup_string)
 
@@ -87,13 +86,12 @@ def journal_lookup(creative_works,lookup_string):
     for i in results:
         return i[0]
 
-
 def journal_volume_lookup(creative_works,lookup_string):
 # check the creative works graph for a match on journal volume so that duplicates are not created
     sparql="""SELECT ?volume
               WHERE {{
-              ?volume rdf:type bf:volume .
-              ?volume rdfs:label ?label .
+              ?volume rdf:type schema:volumeNumber .
+              ?volume schema:volumeNumber ?label .
               FILTER(CONTAINS (?label,"{0}"))
               }}""".format(lookup_string)
 
@@ -101,7 +99,22 @@ def journal_volume_lookup(creative_works,lookup_string):
 
     for i in results:
         return i[0]
-    
+
+def journal_issue_lookup(creative_works,lookup_string):
+# check the creative works graph for a match on journal issue so that duplicates are not created
+    sparql="""SELECT ?issue
+              WHERE {{
+              ?issue rdf:type schema:issueNumber .
+              ?issue schema:issueNumber ?label .
+              FILTER(CONTAINS (?label,"{0}"))
+              }}""".format(lookup_string)
+
+    results = creative_works.query(sparql)
+
+    for i in results:
+        return i[0]
+
+
     
 # function to return unique IRI using UUID
 def unique_IRI(submitted_string):
@@ -145,25 +158,6 @@ class Citation(object):
             name_parsed=""
             author_name_parsed=""
             author_iri=""
-            # import pdb;pdb.set_trace()
-
-            # OLD AUTHOR PARSING CODE HERE
-            # reverse last name, first name
-            #if "," in name:
-            #    comma_pos=name.find(",")
-            #    family_name = name[:comma_pos]
-            #    given_name = name[comma_pos + 1:]
-            #    name = given_name + " " + family_name
-
-            # remove initials
-            #if "." in name:
-            #    for part in name.split(" "):
-            #        if len(part) >= 3:
-            #            author_name_parsed = author_name_parsed + " "+ part
-            #else:
-            #    author_name_parsed = name    
-
-            # import pdb;pdb.set_trace()
 
             #to do: regex expression that covers all parsing
             #import pdb;pdb.set_trace()
@@ -212,20 +206,13 @@ class Citation(object):
                 author_iri=alternate_author_lookup(people,author_name_parsed)
                 print("Author",author_name_parsed,"found in alternate author lookup")
                 self.cc_authors.append(author_iri)
-            #elif author_lookup(people,family_name) != None:
-            #    print("Hey is this the correct person?",family_name)
-            #    correct=input("Enter y or no")
-            #    if correct == "y":
-            #        author_iri=author_lookup(people,family_name)
-            #        self.cc_authors.append(author_iri)
-            #        print("Author",author_name_parsed,"found by searching family name in author lookup")
+            #to do: code to search on family name plus initial first letter of givenname?
                 
             else:
                 print("Author",author_name_parsed,"not found")
                 pass
-                
-
-        
+               
+        # attempt to salvage a citation with no matched CC authors        
         if self.cc_authors == []:
             print("The following citation is lacking one or more CC authors: ")
             print(self.raw_citation)
@@ -295,8 +282,8 @@ class Citation(object):
         self.citation_type=self.raw_citation["ENTRYTYPE"]
 
     def __url__(self):
-        if "url" in self.raw_citation.keys():
-            self.url = self.raw_citation["url"]
+        if "link" in self.raw_citation.keys():
+            self.url = self.raw_citation["link"]
         else:
             self.url = ""
                                        
