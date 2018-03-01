@@ -3,3 +3,4 @@ flask-ldap3-login
 requests
 rdflib
 gunicorn
+pygithub

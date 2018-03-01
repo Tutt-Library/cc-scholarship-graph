@@ -8,6 +8,8 @@
 <form class="form" action="{{ url_for('academic_profile') }}" id="academic-profile" method="POST">
 {{ form.csrf_token }}
 {{ form.iri(class_='form-control') }}
+<input type="hidden" name="email" value="{{ scholar.data.mail }}"></input>
+<input type="hidden" name="label" value="{{ scholar.data.displayName }}"></input>
 <div class="container">
     <h3>
     <a href="{{ url_for('home') }}"><i class="fas fa-graduation-cap"></i></a>
@@ -41,12 +43,14 @@
             {% endfor %}
         </tbody>
     </table>#}
+    <hr>
     <img src="{{ url_for('static', filename='img/orcid-logo.png') }}" alt="ORCID Logo">
     {% if "orcid" in form.iri.data %}<input type="input" class="form-control" readonly value="{{ form.iri.data}}"></input>
     {% else %}
         <a href="https://orcid.org/register" class="btn btn-info">Register for ORCID iD</a> and then 
         enter your ORCID iD <input type="input" name="orcid" class="form-control"> 
     {% endif %}
+    <hr>
     <h2>FAST Subject Headings</h2>
     <div class="row">
         <div class="col-3">
@@ -59,15 +63,27 @@
             <div id="research-subjects">
                 {% for subject in subjects %}
                     <div class="alert alert-primary alert-dismissible fade show">
-                        <input type="hidden" name="subjects" value="{{ subject }}"></input>
-                        {{ subject }}
+                        <input type="hidden" name="subjects" value="{{ subject.subject.value }}=={{ subject.label.value }}"></input>
+                        {{ subject.label.value }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                 {% endfor %}
             </div>
         </div>
     </div> 
+    <hr>
+    <h3>Creative Works (books, articles, visual, audio, video, etc.)</h3>
+    <button class="btn btn-secondary" 
+            data-toggle="modal" data-target="#new-work-dlg"
+            aria-label="Add Work">
+                        <i class="fas fa-plus"></i>
+    </button>
     <div class="w-50 mx-auto">
-        <input type="submit" class="btn btn-success btn-lg" value="Save"></input>
+        <button type="submit" class="btn btn-success btn-lg">
+            <i class="fas fa-save"></i> Save Profile
+        </button>
     </div>
 </div>
 </form>
@@ -105,10 +121,10 @@
                 }
             }
     }).on('typeahead:selected', function(obj, datum) {
-        $("#subject-of").trigger(':reset');
+        $('.typeahead').typeahead('val','');
         $("#research-subjects").append(
             ['<div class="alert alert-primary alert-dismissible fade show">',
-             '<input type="hidden" name="subjects" value="' + datum.id +':' + datum.suggestall + '">',
+             '<input type="hidden" name="subjects" value="' + datum.id +'==' + datum.suggestall + '">',
               datum.suggestall,
               '<button type="button" class="close" data-dismiss="alert" aria-label="Close">',
               '<span aria-hidden="true">&times;</span></button></div>'].join('\n'));
@@ -129,4 +145,8 @@ $("#academic-profile").on('submit', function(e) {
 
 });
 </script> 
+{% endblock %}
+
+{% block dialogs %}
+{% include 'add-work-dlg.html' %}
 {% endblock %}

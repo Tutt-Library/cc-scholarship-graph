@@ -175,11 +175,12 @@ WHERE {{
 }}"""
 
 SUBJECTS = PREFIX + """
-SELECT ?subject
+SELECT ?subject ?label
 WHERE {{
     ?person schema:email ?email .
     ?statement schema:accountablePerson ?person .
     ?statement schema:about ?subject .
+    ?subject rdfs:label ?label .
     FILTER (CONTAINS(?email, "{0}"))
 }}""" 
 

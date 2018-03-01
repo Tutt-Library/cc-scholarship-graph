@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
 
+{% set admin_mode = user|is_admin %}
+
 {% block main %}
 <div class="container">
     <h3>        
         <a href="{{ url_for('home') }}"><i class="fas fa-graduation-cap"></i></a>
         Colorado College Scholarship Database 
     </h3>
-    <h1>{{ info.givenName }}{{ info.familyName }}</h1>
+    <h1>{{ info.givenName }} {{ info.familyName }}</h1>
     <div class="row">
         <div class="col-md-6">
             <article class="card">
                 <div class="card-header">Research</div>
                 <div class="card-body">
-                    {% if user|is_admin %}
-                    <textarea cols=10 rows=5 id='research-stmt'>
+                    {% if admin_mode %}
+                    <textarea cols=10 rows=5 id='research-stmt' class="form-control">
                         {{ info.url|get_statement }}
                     </textarea>
                     {% else %}
@@ -21,6 +23,17 @@
                     {% endif %}
                 </div>
             </article>
+            {% if info.subjects %}
+            <h3>FAST Subjects</h3>
+            <ul>
+            {% for subject in info.subjects %}
+                <li><a href="{{ url_for('subject_view', iri=subject.subject.value) }}">
+                    {{ subject.label.value }}</a>
+                    {% if admin_mode %}<a href="#"><i class="fas fa-minus"></a>{% endif %}
+            {% endfor %}
+            </ul>
+            {% endif %}
+            <h3>
         </div>
         <div class="col-md-6">
             <h3>CC Affiliations</h3>
@@ -34,10 +47,19 @@
 
 			
 		<h3>Works</h3>
+                {% if admin_mode %}
+                <div class="btn-group" role="group" aria-label="Works Toolbar">
+                    <button type="button" class="btn btn-secondary" 
+                            data-toggle="modal" data-target="#new-work-dlg"
+                            aria-label="Add Work">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                {% endif %}
 		{% for row in info.citations %}
 			<p>
 			<a href="{{ row.article.value }}">{{ row.name.value }}</a>
-			<em>{{ row.journal_title.value }}</em> ({{ row.datePublished.value }}) 
+			{% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }}) 
 			{% if row.page_start %}p.{{ row.page_start.value }}-{% endif %}{% if row.page_end %}{{ row.page_end.value }}{% endif %}
 			</p>
 		{% endfor %}
@@ -46,3 +68,10 @@
     </div>
 </div>
 {% endblock main %}
+
+{% block dialogs %}
+{% if admin_mode %}
+{% include 'add-work-dlg.html' %}
+{% endif %}
+{% endblock %}
+

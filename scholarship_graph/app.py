@@ -20,19 +20,27 @@ from flask_ldap3_login.forms import LDAPLoginForm
 
 
 from .forms import ProfileForm, SearchForm
+from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PREFIX, PROFILE, RESEARCH_STMT
 from .sparql import SUBJECTS, SUBJECTS_IRI
 from rdfframework.configuration import RdfConfigManager
 
+
+
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('config.py')
 CONFIG_MANAGER = RdfConfigManager(app.config)
 CONNECTION = CONFIG_MANAGER.conns
-#! Should get theses from rdfframework namespace manager
-#SCHEMA = rdflib.Namespace("http://schema.org/")
+BF = CONFIG_MANAGER.nsm.bf
 SCHEMA = CONFIG_MANAGER.nsm.schema
+
+cc_github = Github(app.config.get("GITHUB_USER"),
+                   app.config.get("GITHUB_PWD"))
+tutt_github = cc_github.get_organization("Tutt-Library")
+TIGER_REPO = tutt_github.get_repo("tiger-catalog")
+SCHOLARSHIP_REPO = tutt_github.get_repo("cc-scholarship-graph")
 
 login_manager = LoginManager(app)
 ldap_manager = LDAP3LoginManager(app)
@@ -94,9 +102,7 @@ def research_statement(person_iri):
 @app.template_filter("is_admin")
 def is_administrator(user):
     if hasattr(user, 'data'):
-        print(user.data.mail, user.data.mail in app.config.ADMINS)
-        if user.mail in app.config.ADMINS:
-            return True
+        return user.data.get("mail") in app.config.get("ADMINS")
     return False
 
 @app.route("/academic-profile", methods=["POST", "GET"])
@@ -131,9 +137,108 @@ def academic_profile():
                            form=profile_form,
                            subjects=subjects)
 
-def __add_profile__(form):
+def __add_profile__(**kwargs):
     """Adds a profile stub to scholarship graph"""
-    output = '' 
+    output = ''
+    cc_people = rdflib.Graph()
+    cc_people_git = TIGER_REPO.get_file_contents(
+        "KnowledgeGraph/cc-people.ttl")
+    cc_people.parse(data=cc_people_git.decoded_content, 
+        format='turtle')
+    current_year = rdflib.Graph()
+    now = datetime.datetime.utcnow()
+    if now.month < 7:
+        start_year = now.year - 1
+        end_year = now.year
+    else:
+        start_year = now.year
+        end_year = now.year + 1
+    current_year_git = TIGER_REPO.get_file_contents(
+        "KnowledgeGraph/cc-{0}-{1}.ttl".format(
+            start_year, end_year))
+    current_year.parse(data=current_year_git.decoded_content,
+        format='turtle')
+    research_stmts = rdflib.Graph()
+    research_stmts_git = SCHOLARSHIP_REPO.get_file_contents(
+        "data/cc-research-statements.ttl")
+    research_stmts.parse(data=research_stmts_git.decoded_content,
+        format='turtle')
+    generated_by = rdflib.URIRef(kwargs.get("generated_by"))
+    fast_subjects = rdflib.Graph()
+    fast_subject_path = os.path.join(PROJECT_BASE,
+        "data/cc-fast-subjects.ttl")
+    fast_subjects.parse(fast_subject_path,
+         format='turtle')       
+    person_uri = kwargs.get("uri")
+    if person_uri is None:
+        person_uri = "http://catalog.coloradocollege.edu/{}".format(
+            uuid.uuid1())
+    person_iri = rdflib.URIRef(person_uri)
+    cc_people.add((person_iri, 
+                   rdflib.RDF.type, 
+                   BF.Person.rdflib))
+    label = kwargs.get("label")
+    if label is not None:
+        cc_people.add((person_iri, 
+                       rdflib.RDFS.label, 
+                       rdflib.Literal(label, lang="en")))
+    given_name = kwargs.get("given_name")
+    if given_name is not None:
+        cc_people.add((person_iri,
+                       SCHEMA.givenName.rdflib,
+                       rdflib.Literal(given_name, lang="en")))
+    family_name = kwargs.get("family_name")
+    if family_name is not None:
+        cc_people.add((person_iri,
+                       SCHEMA.familyName.rdflib,
+                       rdflib.Literal(family_name, lang="en")))
+    email = kwargs.get("email")
+    if email is not None:
+        cc_people.add((person_iri,
+                       SCHEMA.email.rdflib,
+                       rdflib.Literal(email)))
+    add_qualified_generation(cc_people, person_iri, generated_by)
+    dept_year = kwargs.get("year-iri")
+    if dept_year is not None:
+        dept_year_iri = rdflib.URIRef(dept_year_iri)
+        title = kwargs.get("title-iri")
+        current_year.add((dept_year_iri, 
+                          rdflib.URIRef(title),
+                          person_iri))
+    statement = kwargs.get("statement")
+    if statement is not None:
+        statement_iri = rdflib.URIRef("http://catalog.coloradocollege.edu/{}".format(
+            uuid.uuid1()))
+        research_stmts.add((statement_iri,
+                            rdflib.RDF.type,
+                            SCHEMA.DigitalDocument.rdflib))
+        research_stmts.add((statement_iri,
+                            rdflib.RDFS.label,
+                            rdflib.Literal("Research Statement for {}".format(label),
+                                lang="en")))
+        research_stmts.add((statement_iri,
+                            SCHEMA.accountablePerson.rdflib,
+                            person_iri))
+        research_stmts.add((statement_iri,
+                            SCHEMA.description.rdflib,
+                            rdflib.Literal(statement, lang="en")))
+        
+        add_qualified_generation(research_stmts, statement_iri, generated_by)
+    TIGER_REPO.update_file("KnowledgeGraph/cc-people.ttl",
+        "Adding person {} to CC People".format(label),
+        cc_people.serialize(format='turtle'),
+        cc_people_git.sha)
+    TIGER_REPO.update_file("KnowledgeGraph/cc-{0}-{1}.ttl".format(
+            start_year, end_year),
+        "Adding person to Department for {}-{} school year".format(
+            start_year, end_year),
+        current_year.serialize(format='turtle'),
+        current_year_git.sha)
+    SCHOLARSHIP_REPO.update_file("data/cc-research-statements.ttl",
+        "Adding Research Statement for {}".format(label),
+        research_stmts.serialize(format='turtle'),
+        research_stmts_git.sha) 
+    # SCHOLARSHIP_REPO.update_file("data/cc-fast-subjects.ttl",
     return output
 
 def __update_profile__(form):
@@ -189,14 +294,17 @@ def __update_profile__(form):
     form_subjects = form.getlist("subjects")
     new_subjects = {} 
     for row in form_subjects:
-        fast_id, fast_label = row.split(":")
-        fast_uri = "http://id.worldcat.org/fast/{}".format(fast_id[3:])
+        fast_id, fast_label = row.split("==")
+        if fast_id.startswith("http"):
+            fast_uri = fast_id
+        else:
+            fast_uri = "http://id.worldcat.org/fast/{}".format(fast_id[3:])
         new_subjects[fast_uri] = fast_label
     subjects = CONNECTION.datastore.query(
         SUBJECTS_IRI.format(person_iri))
     # Remove any existing subjects that aren't current
     for existing_subject in subjects:
-        if not existing_subject in new_subjects:
+        if not existing_subject in new_subjects.keys():
             cc_research.remove((statement_iri,
                                 SCHEMA.about.rdflib,
                                 rdflib.URIRef(existing_subject)))
@@ -290,6 +398,11 @@ def person_view():
     citations_result = CONNECTION.datastore.query(citation_sparql)
     for row in citations_result:
         person_info["citations"].append(row)
+
+    subjects = CONNECTION.datastore.query(
+        SUBJECTS.format(email))
+    if len(subjects) > 0:
+        person_info["subjects"] = subjects
     return render_template("person.html",
         user=current_user,
         info=person_info)
@@ -371,6 +484,13 @@ WHERE {
                        "name": row.get("label").get("value")})
     return output
 
+@app.route("/subject")
+def subject_view():
+    subject_iri = request.args.get("iri")
+    info = {"subject": subject_iri}
+      
+    return render_template("subject.html",
+        subject=info)
 
 @app.route("/login", methods=['POST'])
 def cc_login():
