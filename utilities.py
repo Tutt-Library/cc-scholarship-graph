@@ -138,7 +138,6 @@ class Citation(object):
         self.__year__()
         self.__abstract__()
         self.__citation_type__()
-        self.__url__()
         
     def __author_string__(self):
         self.author_string = self.raw_citation["author"]
@@ -281,12 +280,7 @@ class Citation(object):
     def __citation_type__(self):
         self.citation_type=self.raw_citation["ENTRYTYPE"]
 
-    def __url__(self):
-        if "link" in self.raw_citation.keys():
-            self.url = self.raw_citation["link"]
-        else:
-            self.url = ""
-                                       
+                                      
 class Article_Citation(Citation):
     def __init__(self,raw_citation,creative_works):
         self.raw_citation=raw_citation
@@ -295,6 +289,7 @@ class Article_Citation(Citation):
     def populate_special(self):
         self.__journal_title__()
         self.__doi__()
+        self.__url__()
         self.__article__()
         self.__month__()
         self.__volume__()
@@ -332,7 +327,16 @@ class Article_Citation(Citation):
                 self.page_end = pages[hyphen+1:]
             else:
                 self.page_start=pages
-
+    
+    def __url__(self):
+        # If there is a doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
+        if "doi" in self.raw_citation.keys():
+            self.url="https://doi.org/" + self.raw_citation["doi"]
+        elif "link" in self.raw_citation.keys():
+            if self.raw_citation["link"].startswith("http"):
+                self.url = self.raw_citation["link"]
+        else:
+            self.url = ""        
 
     def __month__(self):
         
@@ -345,7 +349,7 @@ class Article_Citation(Citation):
         # doi is the unique identifier for articles
         # to do: check for duplicate doi numbers
         if "doi" in self.raw_citation.keys():
-            self.doi_string = "https://doi.org/" + self.raw_citation["doi"]
+            self.doi_string = self.raw_citation["doi"]
         else:
             self.doi_string=self.__unique_IRI__()
         self.doi_iri=rdflib.URIRef(self.doi_string)
@@ -368,11 +372,15 @@ class Article_Citation(Citation):
             if (self.raw_citation["number"] !="") or (self.raw_citation["number"] != None):
                 self.issue_number = self.raw_citation["number"]
                 self.issue_iri = self.__unique_IRI__()
-       
+  
     def add_article(self):
         # Business logic for adding citations
         # print(self.raw_citation)
         # add the journal title
+        if doi_lookup(creative_works,self.doi_iri):
+            print("Article exists!")
+            sys.exit(0)
+        
         self.creative_works.add((self.journal_iri,rdflib.RDF.type,SCHEMA.Periodical))
         self.creative_works.add((self.journal_iri,SCHEMA.name,rdflib.Literal(self.journal_title,lang="en")))
         # add the issn and/or eissn if present
@@ -389,9 +397,8 @@ class Article_Citation(Citation):
         if self.page_end != "":
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
             
-        # add url - this is the link not the unique identifier(but they can have the same value)
-        if self.url != "":
-            self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
+        # add url
+        self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
 
         # add the author
         for author in self.cc_authors:

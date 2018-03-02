@@ -44,11 +44,12 @@ PREFIX schema: <http://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>"""
 
 CITATION = PREFIX + """
-SELECT DISTINCT ?article ?name ?datePublished ?journal_title ?volume_number ?issue_number ?page_start ?page_end
+SELECT DISTINCT ?article ?name ?datePublished ?journal_title ?volume_number ?issue_number ?page_start ?page_end ?url
 WHERE {{
 	?article rdf:type schema:ScholarlyArticle ;
                  schema:name ?name ;
 	         schema:author ?author .
+	OPTIONAL {{?article schema:url ?url.}}
 	OPTIONAL {{?article schema:datePublished ?datePublished.}}
 	OPTIONAL {{?article schema:partOf ?issue .
 				?issue schema:issueNumber ?issue_number .}}

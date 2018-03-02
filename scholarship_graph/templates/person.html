@@ -46,7 +46,7 @@
             {% endfor %}
 
 			
-		<h3>Works</h3>
+		<h3>Recent Works</h3>
                 {% if admin_mode %}
                 <div class="btn-group" role="group" aria-label="Works Toolbar">
                     <button type="button" class="btn btn-secondary" 
@@ -58,7 +58,7 @@
                 {% endif %}
 		{% for row in info.citations %}
 			<p>
-			<a href="{{ row.article.value }}">{{ row.name.value }}</a>
+			{{ row|article_link_filter|safe }}
 			{% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }}) 
 			{% if row.page_start %}p.{{ row.page_start.value }}-{% endif %}{% if row.page_end %}{{ row.page_end.value }}{% endif %}
 			</p>

@@ -520,3 +520,12 @@ def home():
         login=LDAPLoginForm(),
         search_form=search_form,
         scholar=current_user)
+
+@app.template_filter("article_link_filter")
+def article_link(citation):
+	url = str(citation["url"]["value"])
+	if url.startswith("http"):
+		link = "<a href='" + url + "' target='_blank'>" + citation["name"]["value"]+"</a>"
+	else:
+		link = citation["name"]["value"]
+	return(link)
