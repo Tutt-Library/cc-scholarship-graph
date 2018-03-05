@@ -154,6 +154,14 @@ WHERE {{
     FILTER (<{0}> = ?person)
 }}"""
 
+PERSON_LABEL = PREFIX + """
+
+SELECT ?label
+WHERE {{
+    ?person rdfs:label ?label .
+    FILTER(<{0}> = ?person)
+}}"""
+
 PROFILE = PREFIX + """
 SELECT ?person ?statement
 WHERE {{
@@ -188,6 +196,7 @@ WHERE {{
 SUBJECTS_IRI = PREFIX + """
 SELECT ?subject
 WHERE {{
-    ?statement schema:accountablePerson ?person .
+    ?statement schema:accountablePerson ?person ;
+        schema:about ?subject .
     FILTER (?person = <{0}>)
 }}"""
