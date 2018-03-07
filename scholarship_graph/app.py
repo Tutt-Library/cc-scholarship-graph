@@ -1,6 +1,7 @@
 """Flask web application for Colorado College Scholarship Database"""
 __author__ = "Jeremy Nelson","Diane Westerfield"
 
+import base64
 import datetime
 import os
 import re
@@ -141,7 +142,8 @@ class GitProfile(object):
 
     def __init__(self):
         self.cc_people_git = TIGER_REPO.get_file_contents(
-            "KnowledgeGraph/cc-people.ttl")
+            "/KnowledgeGraph/cc-people.ttl",
+            ref="development")
         self.cc_people = rdflib.Graph()
         self.cc_people.parse(data=self.cc_people_git.decoded_content,
             format='turtle')
@@ -152,41 +154,44 @@ class GitProfile(object):
         else:
             start_year = now.year
             end_year = now.year + 1
-        self.current_year_path = "KnowledgeGraph/cc-{0}-{1}.ttl".format(
+        self.current_year_path = "/KnowledgeGraph/cc-{0}-{1}.ttl".format(
                 start_year, end_year)
         self.current_year_git = TIGER_REPO.get_file_contents(
-            self.current_year_path)
+            self.current_year_path,
+            ref="development")
         self.current_year = rdflib.Graph()
         self.current_year.parse(data=self.current_year_git.decoded_content,
             format='turtle')
         
         self.research_statements = rdflib.Graph()
         self.research_stmts_git = SCHOLARSHIP_REPO.get_file_contents(
-            "data/cc-research-statements.ttl")
+            "/data/cc-research-statements.ttl")
         self.research_statements.parse(
             data=self.research_stmts_git.decoded_content,
             format='turtle')
         self.fast_subjects = rdflib.Graph()
         self.fast_subjects_git = SCHOLARSHIP_REPO.get_file_contents(
-            "data/cc-fast-subjects.ttl")
+            "/data/cc-fast-subjects.ttl")
         self.fast_subjects.parse(
             data=self.fast_subjects_git.decoded_content,
             format='turtle')
     
     def update_all(self, person_label, action="Add"):
-        TIGER_REPO.update_file("KnowledgeGraph/cc-people.ttl",
+        TIGER_REPO.update_file("/KnowledgeGraph/cc-people.ttl",
             "{} {} to CC People".format(action, person_label),
             self.cc_people.serialize(format='turtle'),
-            self.cc_people_git.sha)
+            self.cc_people_git.sha,
+            branch="development")
         TIGER_REPO.update_file(self.current_year_path,
             "{} person to Department for school year".format(action),
             self.current_year.serialize(format='turtle'),
-            self.current_year_git.sha)
-        SCHOLARSHIP_REPO.update_file("data/cc-research-statements.ttl",
-            "{} Research Statement for {}".format(action, label),
+            self.current_year_git.sha,
+            branch="development")
+        SCHOLARSHIP_REPO.update_file("/data/cc-research-statements.ttl",
+            "{} Research Statement for {}".format(action, person_label),
             self.research_statements.serialize(format='turtle'),
             self.research_stmts_git.sha)
-        SCHOLARSHIP_REPO.update_file("data/cc-fast-subjects.ttl",
+        SCHOLARSHIP_REPO.update_file("/data/cc-fast-subjects.ttl",
             "Fast subject added",
             self.fast_subjects.serialize(format='turtle'),
             self.fast_subjects.sha)
