@@ -5,7 +5,11 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://id.worldcat.org/fast/00946584> rdfs:label "Graph theory"@en .
+
 <http://id.worldcat.org/fast/00997916> rdfs:label "Library science"@en .
+
+<http://id.worldcat.org/fast/01084736> rdfs:label "Python (Computer program language)"@en .
 
 <http://id.worldcat.org/fast/01086226> rdfs:label "RDF (Document markup language)"@en .
 
