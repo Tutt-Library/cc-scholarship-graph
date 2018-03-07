@@ -1343,16 +1343,20 @@
 
 <http://catalog.coloradocollege.edu/376894d2-1c16-11e8-9022-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Jeremy Nelson"@en ;
-    schema:about <http://id.worldcat.org/fast/01084736>,
+    schema:about <http://id.worldcat.org/fast/00946584>,
+        <http://id.worldcat.org/fast/01084736>,
         <http://id.worldcat.org/fast/01086226>,
         <http://id.worldcat.org/fast/01896555>,
         <http://id.worldcat.org/fast/01920455> ;
     schema:accountablePerson <http://orcid.org/0000-0002-7543-3893> ;
-    schema:description "Jeremy Nelson is the Metadata and Systems Librarian at Colorado College. In addition to working on the library's research help desk, providing information literacy instruction to undergraduates, and supervising the library's systems and cataloging departments. He actively researches and develops various components and open-source tools in the BIBCAT Catalog Pull Platform for use by Colorado College, the Library of Congress, DP.LA, and other libraries and organizations. He received his BA from Knox College and his Masters of Science in Library and Information Science from the University of Illinois Urbana/Champaign. Nelson is an active speaker at various library and technology conferences and is the author of two books; Becoming a Lean Library and Mastering Redis. "@en ;
+    schema:description "Jeremy Nelson is the Metadata and Systems Librarian at Colorado College. In addition to working on the library's research help desk, providing information literacy instruction to undergraduates, and supervising the library's systems and cataloging departments. He actively researches and develops various components and open-source tools in the BIBCAT Catalog Pull Platform for use by Colorado College, the Library of Congress, DP.LA, and other libraries and organizations. He received his Bachelor of Arts from Knox College and his Masters of Science in Library and Information Science from the University of Illinois Urbana/Champaign. Nelson is an active speaker at various library and technology conferences and is the author of two books; Becoming a Lean Library and Mastering Redis. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-02-27T23:30:37.926409"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
     prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-03-07T19:08:06.023025"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
+        [ a prov:Revision ;
             prov:atTime "2018-03-07T19:03:59.395843"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
