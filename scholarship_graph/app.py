@@ -194,7 +194,7 @@ class GitProfile(object):
         SCHOLARSHIP_REPO.update_file("/data/cc-fast-subjects.ttl",
             "Fast subject added",
             self.fast_subjects.serialize(format='turtle'),
-            self.fast_subjects.sha)
+            self.fast_subjects_git.sha)
 
 
 
