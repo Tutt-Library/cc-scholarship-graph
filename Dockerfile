@@ -6,7 +6,7 @@ MAINTAINER Jeremy Nelson <jermnelson@gmail.com>
 ENV HOME /opt/cc-scholarship-graph
  
 RUN git clone https://github.com/Tutt-Library/cc-scholarship-graph.git $HOME && \ 
-    cd $HOME && mkdir instance
+    cd $HOME && mkdir instance && pip install bibtexparser PyGithub
 
 COPY instance/config.py $HOME/instance/config.py
 

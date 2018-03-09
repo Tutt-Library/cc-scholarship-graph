@@ -32,7 +32,7 @@ from rdfframework.configuration import RdfConfigManager
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_pyfile('config.py')
-CONFIG_MANAGER = RdfConfigManager(app.config)
+CONFIG_MANAGER = RdfConfigManager(app.config, verify=False)
 CONNECTION = CONFIG_MANAGER.conns
 BF = CONFIG_MANAGER.nsm.bf
 SCHEMA = CONFIG_MANAGER.nsm.schema
