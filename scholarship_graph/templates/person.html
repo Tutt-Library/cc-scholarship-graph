@@ -59,7 +59,8 @@
 		{% for row in info.citations %}
 			<p>
 			{{ row|article_link_filter|safe }}
-			{% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }}) 
+			{% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
+			{% if row|volume_issue_filter|safe %} {{ row|volume_issue_filter|safe }} {% endif %}
 			{% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
 			</p>
 		{% endfor %}
