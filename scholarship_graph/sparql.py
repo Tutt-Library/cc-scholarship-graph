@@ -54,14 +54,16 @@ WHERE {{
 	OPTIONAL {{?article schema:partOf ?issue .
 				?issue schema:issueNumber ?issue_number .}}
 	OPTIONAL {{?article schema:partOf ?volume .
-				?volume schema:name ?volume_number .
+				?volume schema:volumeNumber ?volume_number .
 				?volume schema:partOf ?journal .
 				?journal schema:name ?journal_title .}}
 	OPTIONAL {{?article schema:partOf ?journal .
 				?journal schema:name ?journal_title .}}
 	OPTIONAL {{?article schema:partOf ?issue .
 				?issue schema:partOf ?volume .
+				?issue schema:issueNumber ?issue_number .
 				?volume schema:partOf ?journal .
+				?volume schema:volumeNumber ?volume_number .
 				?journal schema:name ?journal_title .}}
 	OPTIONAL {{?article schema:pageStart ?page_start .}}
 	OPTIONAL {{?article schema:pageEnd ?page_end .}}
