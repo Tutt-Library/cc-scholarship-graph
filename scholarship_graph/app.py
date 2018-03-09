@@ -571,6 +571,25 @@ def article_link(citation):
 		link = citation["name"]["value"]
 	return(link)
 
+@app.template_filter("volume_issue_filter")
+def volume_issue(citation):
+	volume_issue_string = ""
+	volume_number = ""
+	issue_number = ""
+	if "volume_number" in citation.keys():
+		volume_number = str(citation["volume_number"]["value"])
+	if "issue_number" in citation.keys():
+		issue_number = str(citation["issue_number"]["value"])
+		
+	if volume_number != "":
+		volume_issue_string = "v." + volume_number
+		if issue_number != "":
+			volume_issue_string = volume_issue_string + " no." + issue_number
+	if volume_number == "" and issue_number != "":
+		volume_issue_string = "no." + issue_number
+	
+	return(volume_issue_string)
+	
 @app.template_filter("page_number_filter")
 def page_number(citation):
 	page_string = ""
