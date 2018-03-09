@@ -570,3 +570,20 @@ def article_link(citation):
 	else:
 		link = citation["name"]["value"]
 	return(link)
+
+@app.template_filter("page_number_filter")
+def page_number(citation):
+	page_string = ""
+	page_start = ""
+	page_end = ""
+	if "page_start" in citation.keys():
+		page_start = str(citation["page_start"]["value"])
+	if "page_end" in citation.keys():
+		page_end = str(citation["page_end"]["value"])
+	if page_start != "":
+		page_string = "p." + page_start
+	if page_end != "":
+		page_string = page_string + "-" + page_end
+	if page_string != "":
+		page_string = page_string + "."
+	return(page_string)
