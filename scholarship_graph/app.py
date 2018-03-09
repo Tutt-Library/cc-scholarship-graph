@@ -196,6 +196,14 @@ class GitProfile(object):
             self.fast_subjects.serialize(format='turtle'),
             self.fast_subjects_git.sha)
 
+    def __reload_triplestore__(self):
+        # Deletes existing triplestore if blazegraph
+        if CONNECTION.datastore.type == "blazegraph":
+            triplestore_url = app.config.get("TRIPLESTORE_URL") 
+            requests.delete(triplestore_url)
+        
+        
+
 
 
        
