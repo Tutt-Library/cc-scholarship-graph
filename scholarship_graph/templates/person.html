@@ -60,7 +60,7 @@
 			<p>
 			{{ row|article_link_filter|safe }}
 			{% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }}) 
-			{% if row.page_start %}p.{{ row.page_start.value }}-{% endif %}{% if row.page_end %}{{ row.page_end.value }}{% endif %}
+			{% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
 			</p>
 		{% endfor %}
 			
