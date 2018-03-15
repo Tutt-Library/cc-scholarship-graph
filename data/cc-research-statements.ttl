@@ -163,6 +163,9 @@
     schema:description "Emily is a social psychologist with broad interest in social cognition. She is interested in topics relating to how people perceive other social entities (branding of corporations in terms of warmth and competence), the expression of prejudices and discrimination, stereotype threat and interventions, and the cultural analysis of religious cognitions. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2017-12-07T15:48:04.864126" ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
+    prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-03-15T22:04:41.135547"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
 <http://catalog.coloradocollege.edu/037821ee-db66-11e7-9539-005056c00008> a schema:DigitalDocument ;
