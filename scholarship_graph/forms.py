@@ -16,6 +16,8 @@ class SearchForm(FlaskForm):
     keywords = StringField('Keywords')
 
 class ProfileForm(FlaskForm):
+    display_label = HiddenField()
+    email = StringField("Email")
     family_name = StringField("Family (last) name")
     given_name = StringField("Given (first) name")
     iri = HiddenField()

@@ -148,12 +148,13 @@ WHERE {{
 
 PERSON_INFO = PREFIX + """
 
-SELECT ?family ?given ?email
+SELECT ?family ?given ?email ?label
 WHERE {{
+    BIND(<{0}> as ?person)
     ?person schema:familyName ?family ;
             schema:givenName ?given ;
-            schema:email ?email .
-    FILTER (<{0}> = ?person)
+            schema:email ?email ;
+            rdfs:label ?label .
 }}"""
 
 PERSON_LABEL = PREFIX + """

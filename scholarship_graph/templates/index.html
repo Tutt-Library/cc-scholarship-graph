@@ -40,6 +40,11 @@
         </div>
         <div class="col-4">
             {% if scholar.is_anonymous %}
+            {% with login_errors = get_flashed_messages() %}
+              {% for error in login_error %}
+                  <div class="alert alert-danger">{{ error }}</div>
+              {% endfor %}
+            {% endwith %}
             <div class="card">
                 <div class="card-header">
                      CC Single Sign-In

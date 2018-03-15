@@ -14,8 +14,10 @@
     <h3>
     <a href="{{ url_for('home') }}"><i class="fas fa-graduation-cap"></i></a>
     Colorado College Scholarship Database</h3>
-    <h1>Academic Profile for {{ scholar.data.displayName }}</h1> 
+    <h1>Academic Profile for {{ form.display_label.data }}</h1> 
+    {% if form.email.data == scholar.data.mail %}
     <h2>{{ scholar.data.title }}</h2>
+    {% endif %}
         <div class="row">
             <div class="col">
                 <label>{{ form.given_name.label }}</label>
@@ -80,6 +82,24 @@
             aria-label="Add Work">
                         <i class="fas fa-plus"></i>
     </button>
+    {% for row in citations %}
+    <div class="row">
+        <div class="col-8">
+         {{ row|article_link_filter|safe }}
+         {% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
+         {% if row|volume_issue_filter|safe %} {{ row|volume_issue_filter|safe }} {% endif %}
+         {% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
+        </div>
+        <div class="col-4">
+            <button class="btn btn-warning">
+                <i class="fas fa-edit"></i>
+            </button>
+            <button class="btn btn-danger" onclick="alert('Delete Citation {{ row.uri }}')">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+        </div>
+    </div>
+    {% endfor %}
     <div class="w-50 mx-auto">
         <button type="submit" class="btn btn-success btn-lg">
             <i class="fas fa-save"></i> Save Profile
@@ -129,6 +149,7 @@
               '<button type="button" class="close" data-dismiss="alert" aria-label="Close">',
               '<span aria-hidden="true">&times;</span></button></div>'].join('\n'));
     });
+
 
 
 $("#academic-profile").on('submit', function(e) {

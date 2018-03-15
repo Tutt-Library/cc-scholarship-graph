@@ -3,16 +3,18 @@ __author__ = "Jeremy Nelson","Diane Westerfield"
 
 import base64
 import datetime
+import hashlib
 import os
 import re
 import xml.etree.ElementTree as etree
 from collections import OrderedDict
+import click
 import requests
 import rdflib
 import uuid
 
 from flask import Flask, jsonify, render_template, redirect, request, session 
-from flask import current_app, url_for
+from flask import current_app, url_for, flash
 from flask_login import login_required, login_user, logout_user, current_user
 from flask_login import LoginManager, UserMixin
 from flask_ldap3_login import LDAP3LoginManager
@@ -111,42 +113,64 @@ def is_administrator(user):
 def academic_profile():
     """Displays Personal Academic Profile and allows 
     authenticated users to edit their own profile"""
+    fields = dict()
     if request.method.startswith("POST"):
         if request.form.get("iri") is None:
             msg = __add_profile__(request.form)
         else:
             msg = __update_profile__(request.form)
         return jsonify({"message": msg})
-    email = current_user.data.get("mail")
-    label = current_user.data.get("displayName")
-    familyName = current_user.data.get("sn")
-    givenName = current_user.data.get("givenName")
-    fields = {"email": email, 
-              "family_name": familyName, 
-              "given_name": givenName}
+    # Editing a profile as an admin
+    elif "person" in request.args:
+        person_iri = request.args.get("person")
+        person_results = CONNECTION.datastore.query(
+            PERSON_INFO.format(person_iri))
+        fields["iri"] = person_iri
+        for row in person_results:
+            fields["email"] = row.get('email').get('value')
+            fields["given_name"] = row.get("given").get("value")
+            fields["family_name"] = row.get("family").get("value")
+            fields["display_label"] = row.get("label").get("value")
+    # Editing own profile
+    else: 
+        fields["email"] = current_user.data.get("mail")
+        fields["family_name"] = current_user.data.get("sn")
+        fields["given_name"] = current_user.data.get("givenName")
+        fields["display_label"] = current_user.data.get("displayName")
     results = CONNECTION.datastore.query(
-        PROFILE.format(familyName, givenName, email))
+        PROFILE.format(fields.get("family_name"), 
+            fields.get("given_name"), 
+            fields.get("email")))
     if len(results) == 1:
         fields["iri"] = results[0].get("person").get("value")
         if "statement" in results[0]:
             fields["research_stmt"] = results[0].get('statement').get('value')
     profile_form = ProfileForm(**fields)
+    citations = []
+    citation_sparql = CITATION.format(fields["iri"])
+    citations_result = CONNECTION.datastore.query(citation_sparql)
+    for row in citations_result:
+        citations.append(row)
     subjects = CONNECTION.datastore.query(
-        SUBJECTS.format(email))
+        SUBJECTS.format(fields.get("email")))
     return render_template('academic-profile.html',
                            scholar=current_user, 
                            form=profile_form,
+                           citations=citations,
                            subjects=subjects)
 
 class GitProfile(object):
 
     def __init__(self):
+        self.graph_hashes = {}
         self.cc_people_git = TIGER_REPO.get_file_contents(
             "/KnowledgeGraph/cc-people.ttl",
             ref="development")
         self.cc_people = rdflib.Graph()
         self.cc_people.parse(data=self.cc_people_git.decoded_content,
             format='turtle')
+        self.graph_hashes["cc_people"] = hashlib.sha1(
+            self.cc_people.serialize(format='n3')).hexdigest()
         now = datetime.datetime.utcnow()
         if now.month < 7:
             start_year = now.year - 1
@@ -162,46 +186,106 @@ class GitProfile(object):
         self.current_year = rdflib.Graph()
         self.current_year.parse(data=self.current_year_git.decoded_content,
             format='turtle')
-        
+        self.graph_hashes["current_year"] = hashlib.sha1(
+            self.current_year.serialize(format='n3')).hexdigest()
         self.research_statements = rdflib.Graph()
-        self.research_stmts_git = SCHOLARSHIP_REPO.get_file_contents(
+        self.research_statements_git = SCHOLARSHIP_REPO.get_file_contents(
             "/data/cc-research-statements.ttl")
         self.research_statements.parse(
-            data=self.research_stmts_git.decoded_content,
+            data=self.research_statements_git.decoded_content,
             format='turtle')
+        self.graph_hashes["research_statements"] = hashlib.sha1(
+            self.research_statements.serialize(format='n3')).hexdigest()
+
         self.fast_subjects = rdflib.Graph()
         self.fast_subjects_git = SCHOLARSHIP_REPO.get_file_contents(
             "/data/cc-fast-subjects.ttl")
         self.fast_subjects.parse(
             data=self.fast_subjects_git.decoded_content,
             format='turtle')
+        self.graph_hashes["fast_subjects"] = hashlib.sha1(
+            self.fast_subjects.serialize(format='n3')).hexdigest()
+
+
+    def __save_graph__(self, **kwargs):
+        git_repo = kwargs.get("git_repo") 
+        file_path = kwargs.get("file_path")
+        graph_name = kwargs.get("graph_name")
+        branch = kwargs.get("branch")
+        message = kwargs.get("message", "Updating {}".format(graph_name))
+        graph = getattr(self, graph_name)
+        graph_sha1 = hashlib.sha1(graph.serialize(format='n3')).hexdigest()
+        #click.echo("{}: org={}\ncurrent={} are equal? {}\n\n".format(
+        #    graph_name,
+        #    self.graph_hashes[graph_name],
+        #    graph_sha1,
+        #    graph_sha1 == self.graph_hashes[graph_name]))
+        if graph_sha1 == self.graph_hashes[graph_name]:
+            return
+        git_graph = getattr(self, "{}_git".format(graph_name))
+        if branch:
+            git_repo.update_file(file_path,
+                message,
+                graph.serialize(format='turtle'),
+                git_graph.sha,
+                branch=branch)
+        else:
+            git_repo.update_file(file_path,
+                message,
+                graph.serialize(format='turtle'),
+                git_graph.sha)
+                
     
     def update_all(self, person_label, action="Add"):
-        TIGER_REPO.update_file("/KnowledgeGraph/cc-people.ttl",
-            "{} {} to CC People".format(action, person_label),
-            self.cc_people.serialize(format='turtle'),
-            self.cc_people_git.sha,
+        self.__save_graph__(
+            git_repo=TIGER_REPO,
+            file_path="/KnowledgeGraph/cc-people.ttl",
+            graph_name="cc_people",
+            message="{} {} to CC People".format(action, person_label),
             branch="development")
-        TIGER_REPO.update_file(self.current_year_path,
-            "{} person to Department for school year".format(action),
-            self.current_year.serialize(format='turtle'),
-            self.current_year_git.sha,
+        self.__save_graph__(
+            git_repo=TIGER_REPO,
+            file_path=self.current_year_path,
+            graph_name="current_year",
+            message="{} person to Department for school year".format(action),
             branch="development")
-        SCHOLARSHIP_REPO.update_file("/data/cc-research-statements.ttl",
-            "{} Research Statement for {}".format(action, person_label),
-            self.research_statements.serialize(format='turtle'),
-            self.research_stmts_git.sha)
-        SCHOLARSHIP_REPO.update_file("/data/cc-fast-subjects.ttl",
-            "Fast subject added",
-            self.fast_subjects.serialize(format='turtle'),
-            self.fast_subjects_git.sha)
+        self.__save_graph__(
+            git_repo=SCHOLARSHIP_REPO,
+            file_path="/data/cc-research-statements.ttl",
+            graph_name="research_statements",
+            message="{} Research Statement for {}".format(
+                action, person_label))
+        self.__save_graph__(
+            git_repo=SCHOLARSHIP_REPO,
+            file_path ="/data/cc-fast-subjects.ttl",
+            graph_name="fast_subjects",
+            message="Fast subject added")
+        self.__reload_triplestore__()
 
     def __reload_triplestore__(self):
         # Deletes existing triplestore if blazegraph
         if CONNECTION.datastore.type == "blazegraph":
             triplestore_url = app.config.get("TRIPLESTORE_URL") 
             requests.delete(triplestore_url)
-        
+            # Reloads all of CC's base Knowledge Graph
+            for row in TIGER_REPO.get_dir_contents("/KnowledgeGraph",
+                ref="development"):
+                raw_turtle = TIGER_REPO.get_file_contents(
+                    row.path,
+                    ref="development")
+                requests.post(triplestore_url,
+                    data=raw_turtle,
+                    headers={"Content-Type": "text/turtle"})
+            # Reloads Scholarship graphs
+            for row in SCHOLARSHIP_REPO.get_dir_content("/data"):
+                raw_turtle = SCHOLARSHIP_REPO.get_file_contents(row.path)
+                requests.post(triplestore_url,
+                    data=raw_turtle,
+                    headers={"Content-Type": "text/turtle"})
+        else:
+            import pdb; pdb.set_trace()
+
+
         
 
 
@@ -432,7 +516,8 @@ def org_browsing():
 @app.route("/person")
 def person_view():
     person_iri = request.args.get("iri")
-    person_info = {"url": person_iri,"citations":[]}
+    person_info = {"url": person_iri,
+                   "citations":[]}
     sparql = PERSON_INFO.format(person_iri)
     results = CONNECTION.datastore.query(sparql)
     for row in results:
@@ -550,9 +635,10 @@ def cc_login():
         login_user(form.user)
         return redirect(url_for('academic_profile'))
     else:
+        flash("Invalid username or password")
         return redirect(url_for('home'))
 
-@app.route('/logout', methods=['POST'])
+@app.route('/logout', methods=['POST', 'GET'])
 def cc_logout():
     logout_user()
     return redirect(url_for('home'))
@@ -560,11 +646,12 @@ def cc_logout():
 @app.route("/")
 def home():
     search_form = SearchForm()
-    results = CONNECTION.datastore.query(ORG_LISTING)
-    for row in results:
-        search_form.department.choices.append(
-            (row.get('iri').get('value'),
-             row.get('label').get('value')))
+    if len(search_form.department.choices) < 2:
+        results = CONNECTION.datastore.query(ORG_LISTING)
+        for row in results:
+            search_form.department.choices.append(
+                (row.get('iri').get('value'),
+                 row.get('label').get('value')))
     return render_template("index.html", 
         login=LDAPLoginForm(),
         search_form=search_form,
