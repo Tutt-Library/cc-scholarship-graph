@@ -12,5 +12,5 @@ COPY instance/config.py $HOME/instance/config.py
 
 EXPOSE 7225
 WORKDIR $HOME
-CMD ["nohup", "gunicorn", "-b", "0.0.0.0:7225", "run:parent_app"]
+CMD ["nohup", "gunicorn", "-b", "0.0.0.0:7225", "run:app"]
 
