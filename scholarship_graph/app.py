@@ -77,7 +77,9 @@ def user_loader(user_id):
         return USERS[user_id]
     return None
 
-
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
 
 @app.template_filter("get_history")
 def person_history(person_iri):
@@ -118,7 +120,8 @@ def academic_profile():
         if request.form.get("iri") is None:
             msg = __add_profile__(request.form)
         else:
-            msg = __update_profile__(request.form)
+            msg = "None"
+            #msg = __update_profile__(request.form)
         return jsonify({"message": msg})
     # Editing a profile as an admin
     elif "person" in request.args:
