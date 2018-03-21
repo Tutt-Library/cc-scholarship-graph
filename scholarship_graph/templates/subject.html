@@ -2,19 +2,29 @@
 
 {% block main %}
 <div class="container">
+    <h2 class="text-muted">FAST Subject 
+        <a href="#about-fast" data-target="#about-fast" data-toggle="modal">
+            <i class="fas fa-info-circle fa-sm"></i>
+        </a> 
+    </h2>
     <h1>{{ subject.label }}</h1>
     {% for person in subject.assignments %}
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">{{ person.label }}</h5>
+            <h5 class="card-title">{{ person.label.value }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">
-            {% for row in person.current_affliation %}
-            {{ row }}{% if not loop.last %}, {% endif %}
+            {{ person.iri|get_history|safe }}
             </h6>
-            <p class="card-text">{{ person.statement }}</p>
+            <p class="card-text">{{ person.iri|get_statement|safe }}</p>
             <a href="{{ url_for('person_view', iri=person.iri) }}">More &hellip;</a>
         </div>
     </div>
     {% endfor %}
 </div>
+{% endblock %}
+
+
+{% block dialogs %}
+{% include 'about-fast-dlg.html' %}
+
 {% endblock %}

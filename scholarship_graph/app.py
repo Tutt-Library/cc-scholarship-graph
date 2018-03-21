@@ -624,8 +624,28 @@ WHERE {
 @app.route("/subject")
 def subject_view():
     subject_iri = request.args.get("iri")
-    info = {"subject": subject_iri}
-      
+    info = {"subject": subject_iri, 
+            "assignments": []}
+    subject_prefix = PREFIX + """
+SELECT ?label
+WHERE {{
+    BIND(<{0}> as ?subject)""".format(subject_iri)
+    subject_sparql = subject_prefix + """
+    ?subject rdfs:label ?label . }"""
+    info["label"] = CONNECTION.datastore.query(subject_sparql)[0].get("label").get("value")
+    person_sparql = PREFIX + """
+SELECT ?person 
+WHERE {{
+    BIND(<{0}> as ?subject)
+    ?stmt schema:about ?subject ;
+          schema:accountablePerson ?person .}}""".format(subject_iri)
+    for row in CONNECTION.datastore.query(person_sparql):
+        person_iri = row.get("person").get("value")
+        person_info = {"iri": person_iri}
+        person_info.update(CONNECTION.datastore.query(
+            PERSON_INFO.format(person_iri))[0])
+        
+        info["assignments"].append(person_info)
     return render_template("subject.html",
         subject=info)
 

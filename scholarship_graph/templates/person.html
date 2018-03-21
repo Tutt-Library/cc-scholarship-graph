@@ -22,12 +22,13 @@
                 </div>
             </article>
             {% if info.subjects %}
-            <h3>FAST Subjects</h3>
+            <h3>FAST Subjects <sup><a href="#about-fast" data-target="#about-fast" data-toggle="modal">
+            <i class="fas fa-info-circle fa-sm"></i>
+        </a></sup></h3>
             <ul>
             {% for subject in info.subjects %}
                 <li><a href="{{ url_for('subject_view', iri=subject.subject.value) }}">
-                    {{ subject.label.value }}</a>
-                    {% if admin_mode %}<a href="#"><i class="fas fa-minus"></a>{% endif %}
+                    {{ subject.label.value }}</a></li>
             {% endfor %}
             </ul>
             {% endif %}
@@ -58,3 +59,7 @@
     </div>
 </div>
 {% endblock main %}
+
+{% block dialogs %}
+{% include 'about-fast-dlg.html' %}
+{% endblock %}
