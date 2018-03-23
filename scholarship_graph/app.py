@@ -22,7 +22,7 @@ from flask_ldap3_login import log as ldap_manager_log
 from flask_ldap3_login.forms import LDAPLoginForm
 
 
-from .forms import ProfileForm, SearchForm
+from .forms import ProfileForm, SearchForm, ArticleForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
@@ -160,6 +160,7 @@ def academic_profile():
                            scholar=current_user, 
                            form=profile_form,
                            citations=citations,
+                           new_article_form = ArticleForm(),
                            subjects=subjects)
 
 class GitProfile(object):

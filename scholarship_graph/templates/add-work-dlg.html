@@ -8,7 +8,16 @@
         </button>
       </div>
       <div class="modal-body">
-            <h3>Form</h3>
+            <h3>New Article Form</h3>
+			<form method = "POST"
+			action = "">
+			<label>{{ new_article_form.CC_author.label }}</label>
+			{{ new_article_form.CC_author(class_="form-control") }}
+			{{ new_article_form.author_string(class_="form-control") }}
+			{{ new_article_form.year(class_="form-control") }}
+			{{ new_article_form.abstract(class_="form-control") }}
+			{{ new_article_form.citation_type(class_="form-control") }}
+			</form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
