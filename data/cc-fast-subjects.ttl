@@ -15,5 +15,7 @@
 
 <http://id.worldcat.org/fast/01896555> rdfs:label "Linked data"@en .
 
+<http://id.worldcat.org/fast/01896579_4.2> rdfs:label "NoSQL databases"@en .
+
 <http://id.worldcat.org/fast/01920455> rdfs:label "BIBFRAME (Conceptual model)"@en .
 
