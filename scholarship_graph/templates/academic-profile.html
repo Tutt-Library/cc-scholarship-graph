@@ -53,7 +53,8 @@
         enter your ORCID iD <input type="input" name="orcid" class="form-control"> 
     {% endif %}
     <hr>
-    <h2>FAST Subject Headings</h2>
+    <h2>FAST<sup><a href="#about-fast" data-target="#about-fast" data-toggle="modal"> <i class="fas fa-info-circle fa-sm"></i>
+        </a></sup> Subject Headings</h2>
     <div class="row">
         <div class="col-3">
             <h4>Find subjects</h4>
@@ -154,13 +155,15 @@
 
 $("#academic-profile").on('submit', function(e) {
      e.preventDefault();
+     $("#processingProfile").modal('show');
      var data = $("#academic-profile :input").serializeArray();
      console.log("Input " + data.length);
      var action = $("#academic-profile").attr("action");
      $.post(action,
             data=data,
             success=function(data) {
-                alert("Return from server " + data['message']);
+               $("#processingProfile").modal('hide');
+               $("#successUpdate").modal('show'); 
             }
       );
 
@@ -169,5 +172,8 @@ $("#academic-profile").on('submit', function(e) {
 {% endblock %}
 
 {% block dialogs %}
+{% include 'about-fast-dlg.html' %}
 {% include 'add-work-dlg.html' %}
+{% include 'process-profile.html' %}
+{% include 'success-profile-update.html' %}
 {% endblock %}

@@ -39,12 +39,12 @@
             </form>
         </div>
         <div class="col-4">
-            {% if scholar.is_anonymous %}
             {% with login_errors = get_flashed_messages() %}
               {% for error in login_error %}
                   <div class="alert alert-danger">{{ error }}</div>
               {% endfor %}
             {% endwith %}
+            {% if scholar.is_anonymous %}
             <div class="card">
                 <div class="card-header">
                      CC Single Sign-In
@@ -73,11 +73,7 @@
                     </form>
                 </div>
             </div>
-            {% else %}
-            <a href="{{ url_for('cc_logout') }}" class="btn btn-lg btn-info">Logout {{ scholar.data.displayName }}</a>
-            <a href="{{ url_for('academic_profile') }}" class="btn btn-lg btn-success">
-                <i class="far fa-address-card"></i> Profile</a>
-            {% endif %}
+           {% endif %}
         </div>
     </div>
 </div>
