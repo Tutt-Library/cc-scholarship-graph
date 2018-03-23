@@ -86,40 +86,63 @@ def journal_lookup(creative_works,lookup_string):
     for i in results:
         return i[0]
 
-def journal_volume_lookup(creative_works,lookup_string):
+def volume_lookup(creative_works,lookup_string,journal_iri):
 # check the creative works graph for a match on journal volume so that duplicates are not created
     sparql="""SELECT ?volume
               WHERE {{
+              BIND(<{1}> as ?journal_iri)
+	      BIND("{0}" as ?label)
               ?volume rdf:type schema:volumeNumber .
               ?volume schema:volumeNumber ?label .
-              FILTER(CONTAINS (?label,"{0}"))
-              }}""".format(lookup_string)
+              ?volume schema:partOf ?journal_iri .
+              }}""".format(lookup_string,journal_iri)
 
     results = creative_works.query(sparql)
 
     for i in results:
         return i[0]
 
-def journal_issue_lookup(creative_works,lookup_string):
-# check the creative works graph for a match on journal issue so that duplicates are not created
+def issue_lookup(creative_works,lookup_string,journal_iri):
+# check the creative works graph for a match on journal issue that is part of journal volume, so that duplicate issues are not created
     sparql="""SELECT ?issue
               WHERE {{
+              BIND(<{1}> as ?journal_iri)
+	      BIND("{0}" as ?label)
               ?issue rdf:type schema:issueNumber .
               ?issue schema:issueNumber ?label .
-              FILTER(CONTAINS (?label,"{0}"))
-              }}""".format(lookup_string)
+              ?issue schema:partOf ?journal_iri .
+              }}""".format(lookup_string,journal_iri)
+
 
     results = creative_works.query(sparql)
 
     for i in results:
         return i[0]
 
+def issue_volume_lookup(creative_works,lookup_issue,lookup_volume,journal_iri):
+# check the creative works graph for a match on journal issue that is part of journal volume, so that duplicate issues are not created
+    sparql="""SELECT ?issue ?volume
+              WHERE {{
+              BIND("{2}" as volume_label)
+              BIND("{1}" as ?issue_label)
+              BIND(<{0}> as ?journal_iri)
+              ?issue rdf:type schema:issueNumber .
+              ?volume rdf:type schema:volumeNumber .
+              ?issue schema:partOf ?volumeNumber .
+              ?issue schema:issueNumber ?issue_label .
+              ?issue schema:partOf ?volume_iri .
+              }}""".format(lookup_string,volume_iri)
+
+    results = creative_works.query(sparql)
+
+    for i in results:
+        return i[0]
 
     
 # function to return unique IRI using UUID
-def unique_IRI(submitted_string):
-    journal_url="{}{}".format(submitted_string,uuid.uuid1())
-    return journal_url
+def unique_IRI(self):
+        unique_IRI="http://catalog.coloradocollege.edu/{}".format(uuid.uuid1())
+        return rdflib.URIRef(unique_IRI)
 
 
 class Citation(object):
@@ -286,7 +309,7 @@ class Article_Citation(Citation):
         self.raw_citation=raw_citation
         self.creative_works=creative_works
 
-    def populate_special(self):
+    def populate_article(self):
         self.__journal_title__()
         self.__doi__()
         self.__url__()
@@ -296,9 +319,12 @@ class Article_Citation(Citation):
         self.__issue__()
 
     def __journal_title__(self):
-        # to do: check to make sure this isn't duplicated
         self.journal_title = self.raw_citation["journal"]
-        self.journal_string = self.__unique_IRI__()
+        # check for duplicates
+        if journal_lookup(creative_works,self.journal_title) != None:
+            self.journal_string=journal_lookup(creative_works,self.journal_title)
+        else:
+            self.journal_string = self.__unique_IRI__()
         self.journal_iri=rdflib.URIRef(self.journal_string)
 
         # add issn and/or eissn if present in raw citation
@@ -329,14 +355,15 @@ class Article_Citation(Citation):
                 self.page_start=pages
     
     def __url__(self):
-        # If there is a doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
+        # If there is a real doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
+        # Please note some citations have a doi field entry which isn't a real doi but a base link.
+        self.url = ""
         if "doi" in self.raw_citation.keys():
-            self.url="https://doi.org/" + self.raw_citation["doi"]
+            if self.raw_citation["doi"].startswith("http") == False:
+                self.url="https://doi.org/" + self.raw_citation["doi"]
         elif "link" in self.raw_citation.keys():
             if self.raw_citation["link"].startswith("http"):
                 self.url = self.raw_citation["link"]
-        else:
-            self.url = ""        
 
     def __month__(self):
         
@@ -347,26 +374,33 @@ class Article_Citation(Citation):
        
     def __doi__(self):
         # doi is the unique identifier for articles
-        # to do: check for duplicate doi numbers
         if "doi" in self.raw_citation.keys():
-            self.doi_string = self.raw_citation["doi"]
+            if doi_lookup(creative_works,self.raw_citation["doi"]):
+                print("ERROR DUPLICATE DOI FOUND",self.raw_citation["doi"])
+                sys.exit(0)
+            if "doi" in self.raw_citation.keys():
+                self.doi_string = self.raw_citation["doi"]
         else:
             self.doi_string=self.__unique_IRI__()
         self.doi_iri=rdflib.URIRef(self.doi_string)
 
 
     def __volume__(self):
-        # to do: check for duplicate volumes of the journal title
         # a citation can have a volume number or none at all
         self.volume_number=""
         if "volume" in self.raw_citation.keys():
-            if self.raw_citation["volume"] != "" or self.raw_citation["volume"] != None:
+            if (self.raw_citation["volume"] != None):
                 self.volume_number = self.raw_citation["volume"]
-                self.volume_iri = self.__unique_IRI__()          
+                if self.raw_citation["volume"] != "" or self.raw_citation["volume"] != None:
+                    #check for duplicates else assign new iri for volume
+                    if volume_lookup(creative_works,self.volume_number,self.journal_iri):
+                        self.volume_iri = volume_lookup(creative_works,self.volume_number,self.journal_iri)
+                    else:    
+                        self.volume_iri = self.__unique_IRI__()     
         
     def __issue__(self):
-        # to do: check for duplicate issue numbers of the volume of the journal title, or the journal title itself
         # a journal can have no issue numbers, issue numbers as part of a volume, or issues without volume numbering
+        # logic of avoiding duplicates has to sit in add_article()
         self.issue_number=""
         if "number" in self.raw_citation.keys():
             if (self.raw_citation["number"] !="") or (self.raw_citation["number"] != None):
@@ -396,7 +430,7 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.pageStart,rdflib.Literal(self.page_start)))
         if self.page_end != "":
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
-            
+        
         # add url
         self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
 
@@ -419,35 +453,140 @@ class Article_Citation(Citation):
         # if there is no volume or issue number, add the article directly to the journal
         if (self.volume_number == "") and (self.issue_number == ""):
             self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.journal_iri))
-        # if there is a volume but no issue number, add the volume to the journal and add the article to the volume
+            
+        # if there is a volume but no issue number, and the volume is not prexisting, add the volume to the journal and add the article to the volume
+        # else just add the article to the preexisting volume
         elif (self.volume_number != "") and (self.issue_number == ""):
-            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
-            self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
-            self.creative_works.add((self.volume_iri,SCHEMA.volumeNumber,rdflib.Literal(self.volume_number)))
-            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.volume_iri))
+            if volume_lookup(creative_works,self.volume_number,self.journal_iri) != None:
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.volume_iri))
+            else:
+                self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
+                self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
+                self.creative_works.add((self.volume_iri,SCHEMA.volumeNumber,rdflib.Literal(self.volume_number)))
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.volume_iri))
+
         # if there is no volume but there is an issue number, add the the issue to the journal and add the article to the issue
         elif (self.volume_number == "") and (self.issue_number != ""):
-            self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
-            self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.journal_iri))
-            self.creative_works.add((self.issue_iri,SCHEMA.issueNumber,rdflib.Literal(self.issue_number)))
-            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+            #check for dups
+            if issue_lookup(creative_works,self.issue_number,self.journal_iri) != None:
+                self.issue_iri=issue_lookup(creative_works,self.issue_number,self.journal_iri)
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+            else:
+                self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
+                self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.journal_iri))
+                self.creative_works.add((self.issue_iri,SCHEMA.issueNumber,rdflib.Literal(self.issue_number)))
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+            
         # presuming there is a volume and an issue, add the article to the issue, add the issue to the volume, add the volume to the journal
+        # check for dups
         else:
-            self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
-            self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
-            self.creative_works.add((self.volume_iri,SCHEMA.volumeNumber,rdflib.Literal(self.volume_number)))
-            self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.volume_iri))
-            self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
-            self.creative_works.add((self.issue_iri,SCHEMA.issueNumber,rdflib.Literal(self.issue_number)))
-            self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+            if issue_volume_lookup(creative_works,self.issue_number,self.volume_number,journal_iri) != None:
+                issue_volume=(creative_works,self.issue_number,self.volume_number,journal_iri)
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+            else:
+                self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
+                self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
+                self.creative_works.add((self.volume_iri,SCHEMA.volumeNumber,rdflib.Literal(self.volume_number)))
+                self.creative_works.add((self.issue_iri,SCHEMA.partOf,self.volume_iri))
+                self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
+                self.creative_works.add((self.issue_iri,SCHEMA.issueNumber,rdflib.Literal(self.issue_number)))
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
                 
 
 class Book_Citation(Citation):
     def __init__(self,raw_citation,creative_works):
         self.raw_citation=raw_citation
         self.creative_works=creative_works
+        
+    def __populate_book__(self):
+        self.__title__()
+        self.__publisher__()
+        self.__publisher_address__()
+        self.__edition__()
+        self.__isbn__()
+        self.__note__()
+        self.__edited_by__()
+        self.__abstract__()
 
+    def __title__(self):
+        self.title=self.raw_citation["title"]
 
+    def __publisher__(self):
+        if "publisher" in self.raw_citation.keys():
+            self.publisher = self.raw_citation["publisher"]
+        else:
+            self.publisher = ""
+
+    def __publisher_adddress__(self):
+        if "address" in self.raw_citation.keys():
+            self.publisher_address = self.raw_citation["address"]
+        else:
+            self.publisher_addres = " "
+
+    def __edition__(self):
+        if "edition" in self.raw_citation.keys():
+            self.edition = self.raw_citation["edition"]
+        else:
+            self.edition = ""
+
+    def __isbn__(self):
+        # may need code in here to isolate single ISBN, as there may be multiple in bib records exported to RefWorks
+        if "isbn" in self.raw_citation.keys():
+            self.isbn = self.raw_citation["isbn"]
+        else:
+            self.isbn = ""
+
+    def __note__(self):
+        if "note" in self.raw_citation.keys():
+            self.note = self.raw_citation["note"]
+        else:
+            self.note = ""
+
+    def __abstract__(self):
+        if "abstract" in self.raw_citation.keys():
+            self.abstract = self.raw_citation["abstract"]
+        else:
+            self.abstract = ""
+
+    def add_book(self):
+
+        #bib number as unique ID?
+        if "bib" in self.raw_citation.keys():
+            self.bib=self.raw_citation["bib"]
+        else:
+            self.bib=self.__unique_IRI__()
+        self.bib_uri=rdflib.URIRef(self.bib)
+
+        # check for duplicates
+
+        #add isbn
+        if "isbn" in self.raw_citation.keys():
+            self.isbn=self.raw_citation["isbn"]
+        else:
+            self.isbn = ""
+        creative_works.add((self.bib_uri,bf.Type.isbn,(rdflib.Literal(self.isbn))))
+
+        #add author - use author instead of agent to be consistent with articles
+        #for author in self.cc_authors():
+        #    self.creative_works.add((isbn,SCHEMA.author,author))
+    
+        #add title
+        creative_works.add((self.bib_uri,bf.title,))
+        creative_works.add((self.bib_uri,SCHEMA.name,rdflib.Literal(self.title,lang="en")))
+
+        #add publisher
+        creative_works.add((self.bib_uri,SCHEMA.publisher,rdflib.Literal(self.publisher,lang="en")))
+
+        #add year
+        creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
+                 
+        #add edition
+        creative_works.add((self.bib_uri,SCHEMA.edition,rdflib.Literal(self.edition,lang="en")))
+               
+        #add note & abstract
+        creative_works.add((self.bib_uri,SCHEMA.about,rdflib.Literal(self.about,lang="en")))
+
+    
 class Book_Chapter_Citation(Book_Citation):
     def __init__(self,raw_citation,creative_works):
         self.raw_citation=raw_citation
@@ -475,10 +614,16 @@ def load_citations(bibtext_filepath, creative_works_path):
         if row["ENTRYTYPE"]=="article":
             citation=Article_Citation(row,creative_works)
             citation.populate()
-            citation.populate_special()
+            citation.populate_article()
             citation.add_article()
             i = i  + 1
             print(i)
+        elif row["ENTRYTYPE"]=="book":
+            citation=Book_Citation(row,creative_works)
+            citation.populate()
+            citation.populate_book()
+            citation.add_book()
+            i = i + 1
 
     # save the graph to disk
     with open(creative_works_path, "wb+") as fo:
