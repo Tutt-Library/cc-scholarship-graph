@@ -72,7 +72,7 @@ def user_loader(user_id):
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template("404.html"), 404
+    return render_template("404.html", scholar=current_user), 404
 
 @app.template_filter("get_history")
 def person_history(person_iri):
@@ -212,6 +212,7 @@ def org_browsing():
     org_info["years"][event]["people"].sort(
         key=lambda x: org_info["people"][x]["name"])
     return render_template("organization.html",
+        scholar=current_user, 
         info=org_info)    
 
 
@@ -240,7 +241,7 @@ def person_view():
     if len(subjects) > 0:
         person_info["subjects"] = subjects
     return render_template("person.html",
-        user=current_user,
+        scholar=current_user,
         info=person_info)
 
 @app.route("/results")
@@ -249,6 +250,7 @@ def search_results():
     results = __people_search__(query['person'])
     results.extend(__keyword_search__(query['keywords']))
     return render_template("search-results.html",
+        scholar=current_user, 
         query=query,
         people=results)
 
@@ -346,6 +348,7 @@ WHERE {{
         
         info["assignments"].append(person_info)
     return render_template("subject.html",
+        scholar=current_user,
         subject=info)
 
 @app.route("/login", methods=['POST'])

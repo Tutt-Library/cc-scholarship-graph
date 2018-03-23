@@ -3,17 +3,18 @@ __author__ = "Jeremy Nelson"
 
 import datetime
 import hashlib
+import os
+import subprocess
 import uuid
 
+import click
 import rdflib
+import requests
 from flask import current_app
 from github import Github
 
 from .sparql import EMAIL_LOOKUP, SUBJECTS_IRI
 from .sparql import add_qualified_generation, add_qualified_revision 
-
-#BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
-#SCHEMA = rdflib.Namespace("http://schema.org/")
 
 class GitProfile(object):
 
@@ -125,27 +126,19 @@ class GitProfile(object):
         if connection:
             self.__reload_triplestore__(connection)
 
-    def __reload_triplestore__(self, connection):
-        # Deletes existing triplestore if blazegraph
-        if connection.datastore.type == "blazegraph":
-            requests.delete(self.triplestore_url)
-            # Reloads all of CC's base Knowledge Graph
-            for row in self.tiger_repo.get_dir_contents("/KnowledgeGraph",
-                ref="development"):
-                raw_turtle = self.tiger_repo.get_file_contents(
-                    row.path,
-                    ref="development")
-                requests.post(self.triplestore_url,
-                    data=raw_turtle,
-                    headers={"Content-Type": "text/turtle"})
-            # Reloads Scholarship graphs
-            for row in self.scholarship_repo.get_dir_content("/data"):
-                raw_turtle = self.scholarship_REPO.get_file_contents(row.path)
-                requests.post(triplestore_url,
-                    data=raw_turtle,
-                    headers={"Content-Type": "text/turtle"})
-        else:
-            import pdb; pdb.set_trace()
+    def __reload_triplestore__(self, config_mgr):
+        data_upload = []
+        for row in config_mgr.get("CONNECTIONS"):
+            if row.get("name").startswith("datastore"):
+                for directory_row in row.get("data_upload"):
+                    data_upload.append(directory_row[1])
+        # Pull in the latest changes in each repository
+        for directory in data_upload:
+            os.chdir(directory)
+            result = subprocess.run(['git', 'pull', 'origin', 'master'])
+            click.echo(result.returncode, result.stdout)
+        config_mgr.conns.datastore.mgr.reset()
+        
 
 def add_profile(**kwargs):
     """Adds a profile stub to scholarship graph"""
@@ -319,5 +312,5 @@ def update_profile(**kwargs):
                 (iri_subject, 
                  rdflib.RDFS.label,
                  rdflib.Literal(fast_label, lang="en")))
-    git_profile.update_all(person_iri, "Update", connection)
+    git_profile.update_all(person_iri, "Update", config_manager)
     return output

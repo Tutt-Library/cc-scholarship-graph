@@ -13,6 +13,18 @@
   <body>
     {% block header %}
         {% include 'header.html' %}
+        <div class="btn-group float-right mt-1 mr-2">
+            <a href="{{ url_for('home') }}" class="btn btn-primary" alt="Search Scholar Database">
+                <i class="fas fa-search"></i> Search
+            </a>
+            {% if not scholar.is_anonymous %}
+            <a href="{{ url_for('academic_profile') }}" 
+              class="btn btn-success {% if request.path.endswith('academic-profile') %}disabled{% endif %}">
+                <i class="far fa-address-card"></i> Profile</a>
+            </a>
+            <a href="{{ url_for('cc_logout') }}" class="btn btn-info"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            {% endif %}
+        </div>
     {% endblock %}
     <br>
     {% block main %}
