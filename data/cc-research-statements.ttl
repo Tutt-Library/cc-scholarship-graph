@@ -160,11 +160,14 @@
 <http://catalog.coloradocollege.edu/036bd964-db66-11e7-b236-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Emily Chan"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ;
-    schema:description "Emily is a social psychologist with broad interest in social cognition. She is interested in topics relating to how people perceive other social entities (branding of corporations in terms of warmth and competence), the expression of prejudices and discrimination, stereotype threat and interventions, and the cultural analysis of religious cognitions. "@en ;
+    schema:description "Emily is a social psychologist with broad interest in social cognition. She is interested in topics relating to how people perceive other social entities (branding of corporations in terms of warmth and competence), the expression of prejudices and discrimination, stereotype threat and interventions, organizational dynamics, and the cultural analysis of religious cognitions. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2017-12-07T15:48:04.864126" ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
     prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-03-24T22:05:41.686271"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ],
+        [ a prov:Revision ;
             prov:atTime "2018-03-15T22:27:25.389817"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
         [ a prov:Revision ;
