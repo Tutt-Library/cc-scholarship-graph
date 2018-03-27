@@ -112,8 +112,12 @@ def academic_profile():
     authenticated users to edit their own profile"""
     fields = dict()
     if request.method.startswith("POST"):
-        if request.form.get("iri") is None:
-            msg = add_profile(request.form)
+        if len(request.form.get("iri")) < 1:
+            msg = add_profile(
+                form=request.form,
+                config=app.config,
+                config_manager=CONFIG_MANAGER,
+                current_user=current_user)
         else:
             msg = "None"
             msg = update_profile(
@@ -149,10 +153,11 @@ def academic_profile():
             fields["research_stmt"] = results[0].get('statement').get('value')
     profile_form = ProfileForm(**fields)
     citations = []
-    citation_sparql = CITATION.format(fields["iri"])
-    citations_result = CONNECTION.datastore.query(citation_sparql)
-    for row in citations_result:
-        citations.append(row)
+    if "iri" in fields:
+        citation_sparql = CITATION.format(fields["iri"])
+        citations_result = CONNECTION.datastore.query(citation_sparql)
+        for row in citations_result:
+            citations.append(row)
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
     return render_template('academic-profile.html',

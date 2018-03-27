@@ -47,7 +47,8 @@
     </table>#}
     <hr>
     <img src="{{ url_for('static', filename='img/orcid-logo.png') }}" alt="ORCID Logo">
-    {% if "orcid" in form.iri.data %}<input type="input" class="form-control" readonly value="{{ form.iri.data}}"></input>
+    
+    {% if form.iri.data and "orcid" in form.iri.data %}<input type="input" class="form-control" readonly value="{{ form.iri.data}}"></input>
     {% else %}
         <a href="https://orcid.org/register" class="btn btn-info">Register for ORCID iD</a> and then 
         enter your ORCID iD <input type="input" name="orcid" class="form-control"> 

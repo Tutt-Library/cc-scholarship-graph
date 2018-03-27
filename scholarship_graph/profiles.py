@@ -140,48 +140,56 @@ class GitProfile(object):
         config_mgr.conns.datastore.mgr.reset()
         
 
+
 def add_profile(**kwargs):
     """Adds a profile stub to scholarship graph"""
     config = kwargs.get("config")
-    output = ''
     git_profile = GitProfile(config)
-    generated_by = rdflib.URIRef(kwargs.get("generated_by"))
-    person_uri = kwargs.get("uri")
-    if person_uri is None:
+    current_user = kwargs.get("current_user")
+    config_manager = kwargs.get('config_manager')
+    connection = config_manager.conns
+    BF = config_manager.nsm.bf
+    SCHEMA = config_manager.nsm.schema
+    results = connection.datastore.query(
+        EMAIL_LOOKUP.format(
+            current_user.data.get('mail').lower()))
+    if len(results) > 0:
+        generated_by = rdflib.URIRef(results[0].get("person").get('value'))
+    else:
+        generated_by = None
+    form = kwargs.get("form")
+    if form.get("orcid"):
+        person_uri = form.get("orcid")
+    else:
         person_uri = "http://catalog.coloradocollege.edu/{}".format(
             uuid.uuid1())
     person_iri = rdflib.URIRef(person_uri)
+    if generated_by is None:
+        generated_by = person_iri
     git_profile.cc_people.add(
         (person_iri, 
          rdflib.RDF.type, 
          BF.Person.rdflib))
-    label = kwargs.get("label")
-    if label is not None:
-        git_profile.cc_people.add(
-            (person_iri, 
-             rdflib.RDFS.label, 
-             rdflib.Literal(label, lang="en")))
-    given_name = kwargs.get("given_name")
+    
+    given_name = form.get("given_name")
     if given_name is not None:
         git_profile.cc_people.add(
             (person_iri,
              SCHEMA.givenName.rdflib,
              rdflib.Literal(given_name, lang="en")))
-    family_name = kwargs.get("family_name")
+    family_name = form.get("family_name")
     if family_name is not None:
         git_profile.cc_people.add((person_iri,
             SCHEMA.familyName.rdflib,
             rdflib.Literal(family_name, lang="en")))
-    if label is None:
-        label = "{} {}".format(given_name, family_name)
-        git_profile.cc_people.add((person_iri,
-            rdflib.RDFS.label,
-            rdflib.Literal(label, lang="en")))
-    email = kwargs.get("email")
-    if email is not None:
-        self.cc_people.add((person_iri,
-            SCHEMA.email.rdflib,
-            rdflib.Literal(email)))
+    label = "{} {}".format(given_name, family_name)
+    git_profile.cc_people.add((person_iri,
+        rdflib.RDFS.label,
+        rdflib.Literal(label, lang="en")))
+    email = form.get("email")
+    git_profile.cc_people.add((person_iri,
+        SCHEMA.email.rdflib,
+        rdflib.Literal(email)))
     add_qualified_generation(git_profile.cc_people, 
         person_iri, 
         generated_by)
@@ -193,7 +201,7 @@ def add_profile(**kwargs):
             (dept_year_iri, 
              rdflib.URIRef(title),
              person_iri))
-    statement = kwargs.get("statement")
+    statement = kwargs.get("statement", form.get("research_stmt"))
     if statement is not None:
         statement_iri = rdflib.URIRef("http://catalog.coloradocollege.edu/{}".format(
             uuid.uuid1()))
@@ -217,8 +225,13 @@ def add_profile(**kwargs):
         add_qualified_generation(git_profile.research_statements, 
             statement_iri, 
             generated_by)
-    git_profile.save(label)
-    return output
+    #git_profile.update_all(person_iri, "Add", config_manager)
+    with open("D:/2018/tmp/cc-people.ttl", "wb+") as fo:
+        fo.write(git_profile.cc_people.serialize(format='turtle'))
+
+    return "Added {} as {} to Colorado College's Scholarship Graph".format(
+        label,
+        person_iri)
 
 def update_profile(**kwargs):
     """Updates existing triples based on form values"""
