@@ -22,13 +22,9 @@ from flask_ldap3_login import log as ldap_manager_log
 from flask_ldap3_login.forms import LDAPLoginForm
 
 
-<<<<<<< HEAD
 from .forms import ProfileForm, SearchForm, ArticleForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
-=======
-from .forms import ProfileForm, SearchForm
->>>>>>> 61d5b653fdee7446eb544e31be18bb197ac3d2dd
 from .sparql import CITATION, EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
