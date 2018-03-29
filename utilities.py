@@ -15,21 +15,6 @@ from bibtexparser.customization import convert_to_unicode
 # tip: export citations from RefWorks. Direct export from Web of Science does not work.
 
 
-# Journal article workflow
-# in Web of Science, set enhanced ID to Colorado College and select a year.
-# Export the folder to BibTex format and copy file to working directory
-# In Python: set up the people and creative works graphs
-# open the BibTex file
-# for each entry in the bibtex file:
-# look for an author match. There can be multiple matches or none.
-# if more than one author, have to add those authors
-# if no author matched, may need human attention - or add the author automatically with a warning message?
-# look for a journal match. If there is more than one journal returned, this is an error that needs human attention.
-# if there is a journal match, look up volume.
-# if no volume match, add the volume and refer to the journal.
-# if no journal match, add the journal. still need to add the volume.
-# if all matches (the article is already there) then don't add a duplicate
-
 def author_lookup(people_graph,lookup_string):
 # check the people graph for a match on name
     sparql="""SELECT ?person
@@ -123,7 +108,7 @@ def issue_volume_lookup(creative_works,lookup_issue,lookup_volume,journal_iri):
 # check the creative works graph for a match on journal issue that is part of journal volume, so that duplicate issues are not created
     sparql="""SELECT ?issue ?volume
               WHERE {{
-              BIND("{2}" as volume_label)
+              BIND("{2}" as ?volume_label)
               BIND("{1}" as ?issue_label)
               BIND(<{0}> as ?journal_iri)
               ?issue rdf:type schema:issueNumber .
@@ -327,15 +312,15 @@ class Article_Citation(Citation):
             self.journal_string = self.__unique_IRI__()
         self.journal_iri=rdflib.URIRef(self.journal_string)
 
-        # add issn and/or eissn if present in raw citation
-        if "issn" in self.raw_citation.keys():
-            self.journal_issn=self.raw_citation["issn"]
+        # add issn if present in raw citation; currently noted as isbn in bibtex format
+        if "isbn" in self.raw_citation.keys():
+            self.journal_issn=self.raw_citation["isbn"]
         else:
             self.journal_issn=""
-        if "eissn" in self.raw_citation.keys():
-            self.journal_eissn=self.raw_citation["eissn"]
-        else:
-            self.journal_eissn=""
+        #if "eissn" in self.raw_citation.keys():
+        #    self.journal_eissn=self.raw_citation["eissn"]
+        #else:
+        #    self.journal_eissn=""
 
     def __article__(self):
         # information specific to the article itself
@@ -420,8 +405,8 @@ class Article_Citation(Citation):
         # add the issn and/or eissn if present
         if self.journal_issn != "":
             self.creative_works.add((self.journal_iri,SCHEMA.issn,rdflib.Literal(self.journal_issn)))
-        if self.journal_eissn != "":
-            self.creative_works.add((self.journal_iri,SCHEMA.eissn,rdflib.Literal(self.journal_eissn)))
+        #if self.journal_eissn != "":
+        #    self.creative_works.add((self.journal_iri,SCHEMA.eissn,rdflib.Literal(self.journal_eissn)))
         
         # add the article, using doi as unique identifier
         self.creative_works.add((self.doi_iri,rdflib.RDF.type,SCHEMA.ScholarlyArticle))
