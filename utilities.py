@@ -104,25 +104,21 @@ def issue_lookup(creative_works,lookup_string,journal_iri):
     for i in results:
         return i[0]
 
-def issue_volume_lookup(creative_works,lookup_issue,lookup_volume,journal_iri):
+def volume_issue_lookup(creative_works,volume_iri,lookup_issue):
 # check the creative works graph for a match on journal issue that is part of journal volume, so that duplicate issues are not created
-    sparql="""SELECT ?issue ?volume
+    sparql="""SELECT ?issue
               WHERE {{
-              BIND("{2}" as ?volume_label)
-              BIND("{1}" as ?issue_label)
-              BIND(<{0}> as ?journal_iri)
+              BIND(<{1}> as ?volume_iri)
+              BIND("{0}" as ?issue_label)
               ?issue rdf:type schema:issueNumber .
-              ?volume rdf:type schema:volumeNumber .
-              ?issue schema:partOf ?volumeNumber .
-              ?issue schema:issueNumber ?issue_label .
+              ?issue schema:issueNumber ?label .
               ?issue schema:partOf ?volume_iri .
-              }}""".format(lookup_string,volume_iri)
+              }}""".format(lookup_issue,volume_iri)
 
     results = creative_works.query(sparql)
 
     for i in results:
         return i[0]
-
     
 # function to return unique IRI using UUID
 def unique_IRI(self):
@@ -465,9 +461,10 @@ class Article_Citation(Citation):
         # presuming there is a volume and an issue, add the article to the issue, add the issue to the volume, add the volume to the journal
         # check for dups
         else:
-            if issue_volume_lookup(creative_works,self.issue_number,self.volume_number,journal_iri) != None:
-                issue_volume=(creative_works,self.issue_number,self.volume_number,journal_iri)
-                self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
+            volume_check_iri=volume_lookup(creative_works,self.volume_number,self.journal_iri)
+            if volume_issue_lookup(creative_works,volume_check_iri,self.issue_number) != None:
+                issue_check_iri=volume_issue_lookup(creative_works,volume_check_iri,self.issue_number)
+                self.creative_works.add((self.doi_iri,SCHEMA.partOf,issue_check_iri))
             else:
                 self.creative_works.add((self.volume_iri,rdflib.RDF.type,SCHEMA.volumeNumber))
                 self.creative_works.add((self.volume_iri,SCHEMA.partOf,self.journal_iri))
