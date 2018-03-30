@@ -1515,9 +1515,13 @@
     rdfs:label "Research Statement for Diane Westerfield"@en ;
     schema:about <http://id.worldcat.org/fast/00997916> ;
     schema:accountablePerson <https://orcid.org/0000-0002-8845-2954> ;
-    schema:description ""@en ;
+    schema:description ""@en,
+        "Test"@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-02-27T23:43:18.439600"^^xsd:dateTime ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-03-30T22:08:46.769478"^^xsd:dateTime ;
             prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] .
 
 <http://catalog.coloradocollege.edu/fef7b568-15c0-11e8-8aaf-005056c00008> a schema:DigitalDocument ;
