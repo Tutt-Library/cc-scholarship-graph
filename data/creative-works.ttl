@@ -5,17 +5,17 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<//dx.doi.org/10.1016/j.gene.2016.07.044> a schema:ScholarlyArticle ;
+<10.1016/j.gene.2016.07.044> a schema:ScholarlyArticle ;
     schema:about "Here we report the results of fine resolution Y chromosomal analyses (Y-SNP and Y-STR) of 267 Bantu-speaking males from three populations located in the southeast region of Africa. In an effort to determine the relative Y chromosomal affinities of these three genotyped populations, the findings are interpreted in the context of 74 geographically and ethnically targeted African reference populations representing four major ethno-linguistic groups (Afro-Asiatic, Niger Kordofanin, Khoisan and Pygmoid). In this investigation, we detected a general similarity in the Y chromosome lineages among the geographically dispersed Bantu-speaking populations suggesting a shared heritage and the shallow time depth of the Bantu Expansion. Also, micro-variations in the Bantu Y chromosomal composition across the continent highlight location-specific gene flow patterns with non-Bantu-speaking populations (Khoisan, Pygmy, Afro-Asiatic). Our Y chromosomal results also indicate that the three Bantu-speaking Southeast populations genotyped exhibit unique gene flow patterns involving Eurasian populations but fail to reveal a prevailing genetic affinity to East or Central African Bantu-speaking groups. In addition, the Y-SNP data underscores a longitudinal partitioning in sub-Sahara Africa of two R1b1 subgroups, R1b1-P25* (west) and R1b1a2-M269 (east). No evidence was observed linking the B2a haplogroup detected in the genotyped Southeast African Bantu-speaking populations to gene flow from contemporary Khoisan groups." ;
     schema:author <http://catalog.coloradocollege.edu/cb2d6552-b0f0-11e6-96cb-005056c00008> ;
     schema:datePublished "2016" ;
     schema:name "On the paternal heritage of the Bantu expansion in Southeast Africa [electronic resource]"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ba342670-337b-11e8-829d-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1016/j.gene.2016.07.044" ;
+    schema:url "https://doi.org/10.1016/j.gene.2016.07.044" ;
     cite:authorString "Daine J. Rowold, David Perez-Benedico, Oliver Stojkovic, Ralph Bertrand, Rene J. Herrera." ;
     cite:month "" .
 
-<//dx.doi.org/10.1080/02508060.2016.1108442> a schema:ScholarlyArticle ;
+<10.1080/02508060.2016.1108442> a schema:ScholarlyArticle ;
     schema:about "The US state of New Mexico shifted its management and legal treatment of water in the 20th century to a private property access right, weakening communal notions of water. This article explains how New Mexico has redefined and territorialized water rights as private property through the adjudication process and administrative governance rules. State adjudication of water rights disrupts horizontal social relations. The process also results in territorialization ©Ø?€?“ not of fluid water per se ©Ø?€?“ but of water users themselves. As water users have adjusted to this rescaling of governance, the state has found new ways to govern users vertically through water-crisis measures." ;
     schema:author <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
     schema:datePublished "2016" ;
@@ -23,7 +23,7 @@
     schema:pageEnd "188" ;
     schema:pageStart "173" ;
     schema:partOf <http://catalog.coloradocollege.edu/625be901-337c-11e8-abb2-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1080/02508060.2016.1108442" ;
+    schema:url "https://doi.org/10.1080/02508060.2016.1108442" ;
     cite:authorString "Eric P. Perramond." ;
     cite:month "" .
 
