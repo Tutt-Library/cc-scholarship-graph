@@ -264,10 +264,6 @@ class Citation(object):
             i = i + 1
         print("CC Authors: ",self.cc_authors,"for ",self.raw_citation["title"])
         
-        #else:
-        # to do: add the person to people graph if not there already; department affiliation?
-        #    self.author_iri=self.__unique_IRI__()
-        #    self.author_iri=rdflib.URIRef(self.author_iri)
 
     def __year__(self):
         if "year" in self.raw_citation.keys():
@@ -359,8 +355,9 @@ class Article_Citation(Citation):
             if doi_lookup(creative_works,self.raw_citation["doi"]):
                 print("ERROR DUPLICATE DOI FOUND",self.raw_citation["doi"])
                 sys.exit(0)
-            if "doi" in self.raw_citation.keys():
+            if ("doi" in self.raw_citation.keys()) and (self.raw_citation["doi"]!="") :
                 self.doi_string = self.raw_citation["doi"]
+                self.doi_string = "https://doi.org/" + self.doi_string
         else:
             self.doi_string=self.__unique_IRI__()
         self.doi_iri=rdflib.URIRef(self.doi_string)
@@ -430,6 +427,9 @@ class Article_Citation(Citation):
 
         # add the abstract
         self.creative_works.add((self.doi_iri,SCHEMA.about,rdflib.Literal(self.abstract)))
+
+        # add the citation type
+        self.creative_works.add((self.doi_iri,CITATION_EXTENSION.citationType,rdflib.Literal(self.citation_type)))
         
         # if there is no volume or issue number, add the article directly to the journal
         if (self.volume_number == "") and (self.issue_number == ""):
@@ -480,10 +480,9 @@ class Book_Citation(Citation):
         self.raw_citation=raw_citation
         self.creative_works=creative_works
         
-    def __populate_book__(self):
+    def populate_book(self):
         self.__title__()
-        self.__publisher__()
-        self.__publisher_address__()
+        self.__publisher_provision__()
         self.__edition__()
         self.__isbn__()
         self.__note__()
@@ -493,23 +492,27 @@ class Book_Citation(Citation):
     def __title__(self):
         self.title=self.raw_citation["title"]
 
-    def __publisher__(self):
+    def __publisher_provision__(self):
         if "publisher" in self.raw_citation.keys():
             self.publisher = self.raw_citation["publisher"]
         else:
-            self.publisher = ""
-
-    def __publisher_adddress__(self):
+            self.publisher = "[Publisher not identified]"
         if "address" in self.raw_citation.keys():
             self.publisher_address = self.raw_citation["address"]
         else:
-            self.publisher_addres = " "
+            self.publisher_address = "[Place of publication not identified]"
+        self.publisher_provision = ""
+        self.publisher_provision = self.publisher_address + " : " + self.publisher + ", " + self.year 
 
     def __edition__(self):
         if "edition" in self.raw_citation.keys():
             self.edition = self.raw_citation["edition"]
         else:
             self.edition = ""
+
+    def __edited_by__(self):
+        # how to find editors?
+        pass
 
     def __isbn__(self):
         # may need code in here to isolate single ISBN, as there may be multiple in bib records exported to RefWorks
@@ -524,51 +527,57 @@ class Book_Citation(Citation):
         else:
             self.note = ""
 
-    def __abstract__(self):
-        if "abstract" in self.raw_citation.keys():
-            self.abstract = self.raw_citation["abstract"]
-        else:
-            self.abstract = ""
 
     def add_book(self):
 
+        bf = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
         #bib number as unique ID?
         if "bib" in self.raw_citation.keys():
             self.bib=self.raw_citation["bib"]
+            self.bib = "https://tiger.coloradocollege.edu/record=" + self.bib[0:8] + "~s5"
         else:
             self.bib=self.__unique_IRI__()
+
         self.bib_uri=rdflib.URIRef(self.bib)
 
         # check for duplicates
+        
 
         #add isbn
         if "isbn" in self.raw_citation.keys():
             self.isbn=self.raw_citation["isbn"]
         else:
             self.isbn = ""
-        creative_works.add((self.bib_uri,bf.Type.isbn,(rdflib.Literal(self.isbn))))
+        creative_works.add((self.bib_uri,bf.isbn,rdflib.Literal(self.isbn)))
 
         #add author - use author instead of agent to be consistent with articles
-        #for author in self.cc_authors():
-        #    self.creative_works.add((isbn,SCHEMA.author,author))
+        for author in self.cc_authors:
+            self.creative_works.add((self.bib_uri,SCHEMA.author,author))
     
         #add title
-        creative_works.add((self.bib_uri,bf.title,))
-        creative_works.add((self.bib_uri,SCHEMA.name,rdflib.Literal(self.title,lang="en")))
+        creative_works.add((self.bib_uri,bf.title,rdflib.Literal(self.title,lang="en")))
+        
+        #add provision_publisher (provision activity statement in bf, equivalent to 264 field)
+        creative_works.add((self.bib_uri,bf.provisionActivityStatement,rdflib.Literal(self.publisher_provision,lang="en")))
 
-        #add publisher
-        creative_works.add((self.bib_uri,SCHEMA.publisher,rdflib.Literal(self.publisher,lang="en")))
-
-        #add year
+        #add year (in case it is needed separately)
         creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
                  
         #add edition
-        creative_works.add((self.bib_uri,SCHEMA.edition,rdflib.Literal(self.edition,lang="en")))
+        creative_works.add((self.bib_uri,bf.editionStatement,rdflib.Literal(self.edition,lang="en")))
                
-        #add note & abstract
-        creative_works.add((self.bib_uri,SCHEMA.about,rdflib.Literal(self.about,lang="en")))
+        #add abstract (summary)
+        if self.abstract != "":
+            creative_works.add((self.bib_uri,bf.Summary,rdflib.Literal(self.abstract,lang="en")))
 
-    
+        #add note
+        if self.note != "":
+            creative_works.add((self.bib_uri,bf.Note,rdflib.Literal(self.note,lang="en")))
+
+        # add the citation type
+        self.creative_works.add((self.bib_uri,CITATION_EXTENSION.citationType,rdflib.Literal(self.citation_type)))
+
+            
 class Book_Chapter_Citation(Book_Citation):
     def __init__(self,raw_citation,creative_works):
         self.raw_citation=raw_citation
@@ -635,6 +644,7 @@ def initialize(people_path, creative_works_path, bibtext_path):
     SCHEMA = rdflib.Namespace("http://schema.org/")
     creative_works.namespace_manager.bind("schema",SCHEMA)
     bf = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+    creative_works.namespace_manager.bind("bf",bf)
     CITATION_EXTENSION = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/")
     creative_works.namespace_manager.bind("cite",CITATION_EXTENSION)
 
