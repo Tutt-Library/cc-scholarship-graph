@@ -28,7 +28,7 @@ class CitationForm(FlaskForm):
     CC_author = StringField("CC Author(s)",validators=[DataRequired()])
     year = StringField("Year of publication", validators=[DataRequired()])
     abstract = TextAreaField("Abstract")
-    citation_type = SelectField("Citation type", choices=[('Article','Book')])
+    citation_type = SelectField("Citation type", choices=[('Article','Article'),('Book','Book')])
 
 class ArticleForm(CitationForm):
     journal_title = StringField("Journal title",validators=[DataRequired()])
