@@ -159,15 +159,18 @@ def academic_profile():
         for row in book_citations_result:
             citations.append(row)
 	
-    book_citations = []
-    if "iri" in fields:
-        book_citations_sparql = BOOK_CITATION.format(fields["iri"])
-        book_citations_result = CONNECTION.datastore.query(book_citation_sparql)
-        for row in book_citations_result:
-            book_citations.append(row)
-                                                            
+    #book_citations = []
+    
+    #if "iri" in fields:
+        # book_citations_sparql = BOOK_CITATION.format(fields["iri"])
+        # click.echo("BOOK {}".format(book_citations_sparql))
+        # book_citations_result = CONNECTION.datastore.query(book_citation_sparql)
+        # for row in book_citations_result:
+        #    book_citations.append(row)
+        # click.echo(book_citations)
+        
     subjects = CONNECTION.datastore.query(
-        SUBJECTS.format(fields.get("email")))
+    SUBJECTS.format(fields.get("email")))
     return render_template('academic-profile.html',
                            scholar=current_user, 
                            form=profile_form,
@@ -236,7 +239,8 @@ def org_browsing():
 def person_view():
     person_iri = request.args.get("iri")
     person_info = {"url": person_iri,
-                   "citations":[]}
+                   "citations":[],
+                   "book_citations": []}
     sparql = PERSON_INFO.format(person_iri)
     results = CONNECTION.datastore.query(sparql)
     for row in results:
@@ -247,11 +251,18 @@ def person_view():
         person_info["givenName"] = row.get("given").get("value")
         person_info["familyName"] = row.get("family").get("value")
         person_info["email"] = [email,]
+        
     citation_sparql = CITATION.format(person_iri)
     citations_result = CONNECTION.datastore.query(citation_sparql)
     for row in citations_result:
         person_info["citations"].append(row)
 
+    book_citations_sparql = BOOK_CITATION.format(person_iri)
+    click.echo(book_citations_sparql)
+    book_citations_result = CONNECTION.datastore.query(book_citations_sparql)
+    for row in book_citations_result:
+        person_info["book_citations"].append(row)
+    
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(email))
     if len(subjects) > 0:
@@ -442,3 +453,16 @@ def page_number(citation):
 	if page_string != "":
 		page_string = page_string + "."
 	return(page_string)
+
+@app.template_filter("book_title_filter")
+def book_title(book_citation):
+    title_string=""
+    title = book_citation["title"]["value"] 
+    uri = str(book_citation["book"]["value"])
+    if uri.startswith("https://tiger.coloradocollege.edu/"):
+        title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
+    #elif book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
+    #    title_string = "<a href='" + book_citation["url"]["value"] + ",target= 'blank'>" + title + "</a>"
+    else:
+        title_string = title
+    return(title_string)

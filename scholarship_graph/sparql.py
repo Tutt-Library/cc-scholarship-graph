@@ -70,24 +70,23 @@ WHERE {{
 	FILTER(<{0}> = ?author)
 
 	}}
-	ORDER BY DESC(?article)"""
+	ORDER BY DESC(?publicationDate)"""
 	
 BOOK_CITATION = PREFIX + """
-SELECT DISTINCT ?book ?author ?title ?isbn ?datePublished ?publisherProvision ?summary ?note ?url
+SELECT DISTINCT ?book ?author ?title ?isbn ?publicationDate ?provisionActivityStatement ?summary ?note ?url
 WHERE {{
 	?book rdf:type bf:Book ;
-                 bf:Title ?title ;
+                 bf:title ?title ;
 	         schema:author ?author .
+	FILTER(<{0}> = ?author)
 	OPTIONAL {{?book bf:isbn ?isbn.}}
-	OPTIONAL {{?book schema:datePublished ?datePublished.}}
-	OPTIONAL {{?book bf:publisherProvision ?publisherProvision.}}
+	OPTIONAL {{?book schema:publicationDate ?publicationDate.}}
+	OPTIONAL {{?book bf:provisionActivityStatement ?provisionActivityStatement.}}
 	OPTIONAL {{?book bf:summary ?summary.}}
 	OPTIONAL {{?book bf:note ?note.}}
 	OPTIONAL {{?book schema:url ?url.}}
-	FILTER(<{0}> = ?author)
-
 	}}
-	ORDER BY DESC(?book)"""
+	ORDER BY DESC(?publicationDate)"""
 	
 EMAIL_LOOKUP = PREFIX + """SELECT ?person 
 WHERE {{ ?person schema:email ?email .

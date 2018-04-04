@@ -58,7 +58,9 @@
 		<h4>Books</h4>
 		{% for row in info.book_citations %}
 			<p>
-			{% if 'title' in row %}{{ row.title.value }} {% endif %}
+			<em>{{ row|book_title_filter|safe }}</em>. 
+			{{ row.publicationDate.value }}. 
+			{{ row.provisionActivityStatement.value }}.
 			</p>
 		{% endfor %}	
         </div>
