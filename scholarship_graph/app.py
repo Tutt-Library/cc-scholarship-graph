@@ -25,7 +25,7 @@ from flask_ldap3_login.forms import LDAPLoginForm
 from .forms import ProfileForm, SearchForm, ArticleForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
-from .sparql import CITATION, EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
+from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .profiles import add_profile, update_profile
@@ -156,8 +156,16 @@ def academic_profile():
     if "iri" in fields:
         citation_sparql = CITATION.format(fields["iri"])
         citations_result = CONNECTION.datastore.query(citation_sparql)
-        for row in citations_result:
+        for row in book_citations_result:
             citations.append(row)
+	
+    book_citations = []
+    if "iri" in fields:
+        book_citations_sparql = BOOK_CITATION.format(fields["iri"])
+        book_citations_result = CONNECTION.datastore.query(book_citation_sparql)
+        for row in book_citations_result:
+            book_citations.append(row)
+                                                            
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
     return render_template('academic-profile.html',
