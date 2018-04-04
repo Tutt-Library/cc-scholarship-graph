@@ -1838,6 +1838,17 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/80d4a3a9-3827-11e8-9712-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "As the adage states, \"You'll be known by the company you keep.\" As such, the implications for Canada's biopharmaceutical sector are rather dismal. While an extensive body of evidence demonstrates that patents and other intellectual property protections are critical to the future of innovation and the development of new treatments and cures, Canadian legislation fails to measure up. For example, Canada's intellectual property rights protections more closely mirror those of China, Turkey, Poland and the United Arab Emirates than industry leaders such as the United States, the United Kingdom, Switzerland and Germany. ABSTRACT FROM PUBLISHER]" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Canadian property rights law fails innovation sectors"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/80d4a3a8-3827-11e8-a13c-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=n5h&AN=Q4KRKON2017020241364466" ;
+    cite:authorString "Kristina Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/81f0b5d5-378e-11e8-80c6-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Drawing on psychological and sociological theories, this paper offers suggestions for redefining and implementing academic rigor in higher education. After examining the misunderstandings and misuse of rigor through an overview of common definitions and measurements, I propose a new conceptualization of rigor grounded in developmental and cognitive psychology. Rooted in that definition, I provide two pedagogical methods, with detailed examples, for cultivating academically rigorous experiences in college classrooms. Lastly, I briefly summarize the cultural and structural changes necessary in academe to facilitate the progression of rigor from theory to praxis. ABSTRACT FROM AUTHOR]" ;
     schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008> ;
@@ -1848,6 +1859,66 @@
     schema:partOf <http://catalog.coloradocollege.edu/81f9dd91-378e-11e8-b379-a41f7283f8d4> ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=eue&AN=115005664" ;
     cite:authorString "Manya Whitaker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/849b7db7-3827-11e8-8705-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Biologic medicines save lives and improve the quality of life for millions of people. To date, almost 200 biologic medicines have been brought to market. It's projected that by 2017, biologics could comprise seven of the top 10 global pharmaceuticals and account for up to 30 per cent of pharmaceuticals under development." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Weak protection impedes biologic medicines"@en ;
+    schema:pageStart "A7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/849b7db6-3827-11e8-b484-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=n5h&AN=7BS949426994" ;
+    cite:authorString "Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/8aa0c580-3827-11e8-938b-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Biologic medicines save lives and improve the quality of life for millions of people. To date, almost 200 biologic medicines have been brought to market. It's projected that by 2017 biologics could comprise seven of the top 10 global pharmaceuticals and account for up to 30 per cent of pharmaceuticals under development. That's great news for patients. Unfortunately, biologic medicines are difficult and expensive to develop and manufacture, and Canadian policies, particularly Canada's weak protections of intellectual property, are making it even harder. ABSTRACT FROM PUBLISHER]" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Better IP protection for biologic medicine could save lives"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/80d4a3a8-3827-11e8-a13c-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=n5h&AN=Q4KRKON2016071938906092" ;
+    cite:authorString "Troy Media, Kristina Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/937b8aaf-3827-11e8-844e-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The article discusses the importance of pharmaceutical innovation and intellectual property rights to improving the U.S.' public health. Topics include the provisions on the standards of protection for pharmaceuticals contained in the Trans-Pacific Partnership Trade Agreement, the need for the global community too address the issues that inhibit access to medicines, and the link between better health and incentivizing the development of treatments for diseases of the poor." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Rights Are Critical"@en ;
+    schema:pageStart "34" ;
+    schema:partOf <http://catalog.coloradocollege.edu/938e95a7-3827-11e8-bcef-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=f5h&AN=109010769" ;
+    cite:authorString "Kristina Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/9c40cc19-3827-11e8-af3d-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The article focuses on whether bulk purchasing of pharmaceuticals by provincial governments in Canada will help in reducing drug prices and provide better medical care, and also discusses the risks associated with these agreements. It says that the governments should learn from the experience of other countries like the U.S. and New Zealand which have already used these agreements. It says that bulk purchasing offers cost savings, but also delays the introduction of innovative treatments." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Lower drug prices, lower costs, better care?"@en ;
+    schema:pageEnd "30" ;
+    schema:pageStart "29" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9c40cc18-3827-11e8-b249-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=bth&AN=89367214" ;
+    cite:authorString "Kristina M. Lybecker, Nadeem Esmail." ;
+    cite:citationType "article" ;
+    cite:month "Jul" .
+
+<http://catalog.coloradocollege.edu/9c7eafbf-3827-11e8-b14f-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "In an effort to explore the potential for financing environmental innovation, this paper examines different forms of financing and attempts to evaluate their effectiveness. The study considers both public and private forms of funding as well as providing policy suggestions for the support of appropriate financing for eco-innovation. ABSTRACT FROM AUTHOR]; Copyright of Electronic Green Journal is the property of Electronic Green Journal and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
+    schema:datePublished "2012" ;
+    schema:name "Paying for Green: An economics literature review on the constraints to financing environmental innovation"@en ;
+    schema:pageStart "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9c91bab7-3827-11e8-98d2-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=f5h&AN=87658344" ;
+    cite:authorString "Daniel Johnson, Kristina M. Lybecker." ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -3037,6 +3108,19 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<https://doi.org///ccsenet.org/journal/index.php/ibr/issue/archive> a schema:ScholarlyArticle ;
+    schema:about "The recent stagnation of electronic commerce highlights the need to understand contemporary online consumer behavior. E-commerce's slow growth has coincided with an explosion in the usage of Web 2.0 activities. These novel online venues have created many new channels for online retailers to reach buyers, yet these online activities have gone largely unstudied. This study incorporates current user demographics and Web 2.0 activities to dynamically model the determinants of two key measurements of recent online shopping, a recent purchase and the novel dependent variable, percentage of income spent online. Regression analysis is applied to a nationally representative 2007 survey of the U.S. online population. Determinants of a recent online purchase include, ownership of a credit card, PayPalTM account, listening to podcasts, participating in online auctions, and for the first time, female gender. In a second regression, positive determinants for the percentage of income spent online include male gender, educational attainment, online auctions, instant messaging, and online dating. Online spending increases with time online, and appears to compete with other forms of online entertainment and social networking. These results produce snapshots of contemporary online shoppers that can be used by electronic retailers to determine which product characteristics to highlight for greatest impact, and to efficiently target specific Web 2.0 activities, such as entertainment, podcast and social network websites, to develop new and robust marketing platforms." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2010" ;
+    schema:name "Determinants of Recent Online Purchasing and the Percentage of Income Spent Online"@en ;
+    schema:pageEnd "71" ;
+    schema:pageStart "60" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a725b07b-3827-11e8-a843-a41f7283f8d4> ;
+    schema:url "https://doi.org///ccsenet.org/journal/index.php/ibr/issue/archive" ;
+    cite:authorString "Brendan Hannah, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <https://doi.org///dx.doi.org/10.1016/j.gene.2016.07.044> a schema:ScholarlyArticle ;
     schema:about "Here we report the results of fine resolution Y chromosomal analyses (Y-SNP and Y-STR) of 267 Bantu-speaking males from three populations located in the southeast region of Africa. In an effort to determine the relative Y chromosomal affinities of these three genotyped populations, the findings are interpreted in the context of 74 geographically and ethnically targeted African reference populations representing four major ethno-linguistic groups (Afro-Asiatic, Niger Kordofanin, Khoisan and Pygmoid). In this investigation, we detected a general similarity in the Y chromosome lineages among the geographically dispersed Bantu-speaking populations suggesting a shared heritage and the shallow time depth of the Bantu Expansion. Also, micro-variations in the Bantu Y chromosomal composition across the continent highlight location-specific gene flow patterns with non-Bantu-speaking populations (Khoisan, Pygmy, Afro-Asiatic). Our Y chromosomal results also indicate that the three Bantu-speaking Southeast populations genotyped exhibit unique gene flow patterns involving Eurasian populations but fail to reveal a prevailing genetic affinity to East or Central African Bantu-speaking groups. In addition, the Y-SNP data underscores a longitudinal partitioning in sub-Sahara Africa of two R1b1 subgroups, R1b1-P25* (west) and R1b1a2-M269 (east). No evidence was observed linking the B2a haplogroup detected in the genotyped Southeast African Bantu-speaking populations to gene flow from contemporary Khoisan groups." ;
     schema:author <http://catalog.coloradocollege.edu/cb2d6552-b0f0-11e6-96cb-005056c00008> ;
@@ -3074,6 +3158,19 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<https://doi.org///journals.cambridge.org/action/displayBackIssues?jid=HEP> a schema:ScholarlyArticle ;
+    schema:about "Rising pharmaceutical prices, increasing demand for more effective innovative drugs and growing public outrage have heightened criticism of the pharmaceutical industry. The public debate has focused on drug prices and access. As a consequence, the patent system is being reexamined as an efficient mechanism for encouraging pharmaceutical innovation and drug development. We propose an alternative to the existing patent system, instead rewarding the innovating firm with direct tax credits in exchange for marginal cost pricing. This concept is based on the fundamental assumption that innovation that benefits society at large may be financed publicly. As an industry which produces a social good characterized by high fixed costs, high information and regulatory costs, and relatively low marginal costs of production, pharmaceuticals are well-suited to such a mechanism. Under this proposal, drug prices fall, consumer surplus increases, access is enhanced, and the incentives to innovate are preserved." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2007" ;
+    schema:name "Funding Pharmaceutical Innovation through Direct Tax Credits"@en ;
+    schema:pageEnd "284" ;
+    schema:pageStart "267" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b07fee43-3827-11e8-acee-a41f7283f8d4> ;
+    schema:url "https://doi.org///journals.cambridge.org/action/displayBackIssues?jid=HEP" ;
+    cite:authorString "Kristina M. Lybecker, Robert A. Freeman." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <https://doi.org///link.springer.com/journal/volumesAndIssues/11113> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
@@ -3097,6 +3194,30 @@
     schema:partOf <http://catalog.coloradocollege.edu/08525f3f-3822-11e8-9b86-a41f7283f8d4> ;
     schema:url "https://doi.org///link.springer.com/journal/volumesAndIssues/11150" ;
     cite:authorString "Amy Farmer, Jill Tiefenthaler." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org///www.degruyter.com/view/j/bejeap> a schema:ScholarlyArticle ;
+    schema:about "In this paper, we employ three simple theoretical models of nonprofit hospitals to investigate equilibrium behavior when hospitals compete. Utilizing a differentiated Bertrand model, we examine how prices, quantity of patients served, service to the uninsured, and quality of care are affected as nonprofits place more weight on profit maximization. We find that the specification of the nonprofit motive greatly impacts the results. When the nonprofit motive is maximizing output, prices rise for both hospitals as the nonprofit moves away from its nonprofit motive. However, if the nonprofit cares about serving the uninsured, prices in the market fall. Finally, when hospitals compete on price and quality, more emphasis on profits results in an increase in price at the for-profit hospital and a decrease in price at the nonprofit hospital. These results suggest that the importance of the nonprofit motive has been underestimated and should be further investigated." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2005" ;
+    schema:name "The Effect of the Nonprofit Motive on Hospital Competitive Behavior"@en ;
+    schema:pageEnd "15" ;
+    schema:pageStart "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad1d159d-3827-11e8-b08d-a41f7283f8d4> ;
+    schema:url "https://doi.org///www.degruyter.com/view/j/bejeap" ;
+    cite:authorString "Teresa D. Harrison, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org///www.degruyter.com/view/j/jioe> a schema:ScholarlyArticle ;
+    schema:about "This article provides a case study on joint production technologies in the market for blood products. The discussion and analysis are motivated by a patent for a plasma-scrubbing technology, acquired solely by the Red Cross. This example of joint production is used to illustrate questions surrounding the leveraging of monopoly power. Specifically, could the Red Cross utilize its monopoly over one jointly produced good (scrubbed plasma) to extend market power to a non-monopolized good (red blood cells) when competing with the Blood Centers of America? The case considers the potential for a dual monopoly (by the Red Cross in both markets), limit pricing on the part of the Red Cross in the market for red blood cells, and a shared market in which the Red Cross is a monopoly in the market for plasma but competes with the Blood Centers of America in the market for red blood cells." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2007" ;
+    schema:name "Extending Monopoly Power under Joint Production: A Case Study of the Red Cross and the Blood Centers of America"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9fd123b-3827-11e8-8c38-a41f7283f8d4> ;
+    schema:url "https://doi.org///www.degruyter.com/view/j/jioe" ;
+    cite:authorString "Kristina M. Lybecker, Robert J. Lemke." ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -3377,6 +3498,45 @@
     cite:citationType "article" ;
     cite:month "DEC" .
 
+<https://doi.org/10.1002/mde.1359> a schema:ScholarlyArticle ;
+    schema:about "The debate over access to medicines has principally centered on pharmaceutical patents and prohibitively high drug prices. Although a less recognized problem, counterfeit pharmaceuticals are certainly a more insidious barrier to access. Pharmaceutical counterfeiting is an invisible threat, not only by nature, but also because the industry has historically downplayed it. However, that has changed. Pharmaceutical firms now not only readily concede counterfeiting is a threat to their business, but in some cases publicly address their strategies and the anticounterfeiting technologies in use and development. Acknowledging the problem has benefited the industry because it alters the ways in which firms are able to combat counterfeiting, allowing them to more overtly confront the problem. In addition, it allows them to better partner with governments and health advocates since their incentives are aligned in efforts to prevent counterfeiting. In light of the more public and more aggressive campaign against counterfeiting, it is important to examine the variety of strategies firms may utilize to prevent their sale. Through a theoretical model of the market in a representative developing country, several anticounterfeiting strategies are considered. Some strategies appear to be more effective than others in the battle against fake drugs. Copyright ? 2007 John Wiley & Sons, Ltd. ABSTRACT FROM AUTHOR]; Copyright of Managerial & Decision Economics is the property of John Wiley & Sons, Inc. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2007" ;
+    schema:name "Rx Roulette: combatting counterfeit pharmaceuticals in developing nations"@en ;
+    schema:pageEnd "520" ;
+    schema:pageStart "509" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b888024b-3827-11e8-b8f9-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1002/mde.1359" ;
+    cite:authorString "Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org/10.1002/mde.1405> a schema:ScholarlyArticle ;
+    schema:about "Although pharmaceutical counterfeiting incidents can be traced back thousands of years, it has been downplayed and even dismissed by pharmaceutical manufacturers in the past. That has changed. Pharmaceutical firms are newly dedicated to eradicate counterfeits globally and spending more money on anticounterfeiting efforts than ever before. The confluence of three factors seems to have drastically changed the existing paradigm for the pharmaceutical industry: increasing globalization, advancing technology, and the controversies surrounding the WTO Trade-related Aspects of Intellectual Property Rights Agreement and access to medicines. Given that counterfeit pharmaceuticals slip into the supply chain at every link, multinational pharmaceutical firms are searching for global solutions through increased interfirm cooperation along the supply chain. This research presents a theoretical model for characterizing the implications of these interventions on the motivations driving counterfeiters. The interventions are shown to increase the share of real pharmaceuticals and decrease the welfare losses attributable to counterfeiting. In practice, it is too early to evaluate the success of these new measures, but this research reflects on the extent of cooperation both across the supply chain and national boundaries and examines the likely long-run implications of these measures. Copyright ? 2008 John Wiley & Sons, Ltd. ABSTRACT FROM AUTHOR]; Copyright of Managerial & Decision Economics is the property of John Wiley & Sons, Inc. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2008" ;
+    schema:name "Keeping it real: anticounterfeiting strategies in the pharmaceutical industry"@en ;
+    schema:pageEnd "405" ;
+    schema:pageStart "389" ;
+    schema:partOf <http://catalog.coloradocollege.edu/bbe2fb53-3827-11e8-b0cf-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1002/mde.1405" ;
+    cite:authorString "Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org/10.1002/mde.1406> a schema:ScholarlyArticle ;
+    schema:about "The resource-based view of the firm suggests that direct control over unique assets can form the basis of sustained competitive advantage. In contrast, the papers presented in this Special Issue examine the payoffs to cross-boundary resource management. These papers demonstrate the potency of combining resources across intra-firm and inter-firm boundaries in dynamic industries?pharmaceuticals, semiconductors, cellular, software, and engineering services. The effective pooling of resources is found to enhance business-level strategy by mitigating uncertainty, laying the groundwork for formal relationships such as alliances, and improving product quality and new product development performance. Copyright ? 2008 John Wiley & Sons, Ltd. ABSTRACT FROM AUTHOR]; Copyright of Managerial & Decision Economics is the property of John Wiley & Sons, Inc. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2008" ;
+    schema:name "Managing across boundaries: introduction to the Special Issue"@en ;
+    schema:pageEnd "388" ;
+    schema:pageStart "383" ;
+    schema:partOf <http://catalog.coloradocollege.edu/bbe2fb53-3827-11e8-b0cf-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1002/mde.1406" ;
+    cite:authorString "Melissa M. Appleyard, Kristina M. Lybecker, Clara Y. Wang." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <https://doi.org/10.1002/spp2.1017> a schema:ScholarlyArticle ;
     schema:about "A synoptic analysis of previously published material and new finds reveals that Himalayan Cambrian brachiopods can be referred to 18 genera, of which 17 are considered herein. These contain 20 taxa assigned to species, of which five are new: Eohadrotreta haydeni, Aphelotreta khemangarensis, Hadrotreta timchristiorum, Prototreta? sumnaensis and Amictocracens? brocki. Well-preserved topo-type material from the classic Parahio Valley section is described for three species that have not previously been illustrated photographically. A biostratigraphical scheme based on Cambrian brachiopod occurrence is integrated with that recently proposed for trilobites. Regional correlations based on shared taxa within and across Himalayan lithotectonic belts demonstrate that erosion of Cambrian rocks in the Kurgiakh orogeny in the Parahio Valley removed little of the Parahio Formation and that all of the fossil-bearing lithotectonic zones share similar late early Cambrian brachiopods, suggesting regional faunal continuity at the time. Palaeobiogeographical analysis of the Cambrian brachiopod faunas from the Himalaya shows that they occupied a marginal position of the Australasian segment of Gondwana." ;
     schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008> ;
@@ -3648,6 +3808,19 @@
     cite:authorString "Michael Penn, Christopher Sadowski." ;
     cite:citationType "article" ;
     cite:month "AUG" .
+
+<https://doi.org/10.1007/s11151-011-9316-6> a schema:ScholarlyArticle ;
+    schema:about "Using patent citation data for the U.S., we test whether knowledge spillovers in biotechnology are sensitive to distance, and whether that sensitivity has changed over time. Controlling for self-citation by inventor, assignee, and examiner, cohort-based regression analysis shows that physical distance is becoming less important for spillovers with time." ;
+    schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
+    schema:datePublished "2012" ;
+    schema:name "Does Distance Matter Less Now? The Changing Role of Geography in Biotechnology Innovation"@en ;
+    schema:pageEnd "35" ;
+    schema:pageStart "21" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9cef631f-3827-11e8-a0d7-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1007/s11151-011-9316-6" ;
+    cite:authorString "Daniel Johnson, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "FEB" .
 
 <https://doi.org/10.1007/s11153-011-9322-5> a schema:ScholarlyArticle ;
     schema:about "In his discourses on 'the lily of the field and the bird of the air,' Kierkegaard presents faith as the best possible response to our precarious and uncertain condition, and as the ideal way to cope with the insecurities and concerns that his readers will recognize as common features of human existence. Reading these discourses together, we are introduced to the portrait of a potential believer who, like the 'divinely appointed teachers'aEuro\"the lily and the bird-succeeds in leading a life that is full of care, but free of worry. Such a portrait, we claim, echoes Kierkegaard's portrait of the knight of faith in Fear and Trembling. In this essay we suggest that faith, as characterized in the 'lily and bird' discourses, is a kind of existential trust that would allow us to overcome worry, while remaining wholeheartedly engaged in the finite realm of our cares and concerns. We claim that Kierkegaard's goal in these discourses is not to belittle our earthly cares, but to invite us to develop a modified attitude toward all that we are susceptible to worry about." ;
@@ -4398,6 +4571,58 @@
     cite:authorString "Laura S. Sherman, Joel D. Blum, J. T. Dvonch, Lynne E. Gratz, Matthew S. Landis." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<https://doi.org/10.1016/j.soscij.2012.11.001> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2012" ;
+    schema:name "Enduring Legacies: Ethnic Histories and Cultures of Colorado"@en ;
+    schema:pageEnd "555" ;
+    schema:pageStart "554" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2230b35-3827-11e8-8ae1-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1016/j.soscij.2012.11.001" ;
+    cite:authorString "Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "DEC" .
+
+<https://doi.org/10.1016/j.soscij.2013.07.016> a schema:ScholarlyArticle ;
+    schema:about "Utilizing variation across U.S. state abortion restrictions on minors and different levels of provider availability, we measure whether women under the age of 25 are less careful in using contraception if abortions are less costly, in terms of both financial and opportunity cost. The effects of abortion restrictions for minors are largest and the most significant for women aged 18 and younger, and the effect of these restrictions decrease in magnitude and significance gradually as women age. As the percent of the state's women without a provider increases, abortions are more difficult to obtain, and women are more likely to use the pill. When a larger percentage of women have a provider, abortions are more easily obtained, and there is a negative effect on pill usage. These results indicate that young women are forward thinking when making their contraceptive decisions, relative to the direct and indirect restrictions on abortion access. (C) 2013 Western Social Science Association. Published by Elsevier Inc. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2014" ;
+    schema:name "Utilization of oral contraception: The impact of direct and indirect restrictions on access to abortion"@en ;
+    schema:pageEnd "56" ;
+    schema:pageStart "44" ;
+    schema:partOf <http://catalog.coloradocollege.edu/969b5f35-3827-11e8-be4f-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1016/j.soscij.2013.07.016" ;
+    cite:authorString "Amanda J. Felkey, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "MAR" .
+
+<https://doi.org/10.1016/j.soscij.2013.12.007> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2014" ;
+    schema:name "The war of the sexes: How conflict and cooperation have shaped men and women from prehistory to the present"@en ;
+    schema:pageEnd "157" ;
+    schema:pageStart "156" ;
+    schema:partOf <http://catalog.coloradocollege.edu/969b5f35-3827-11e8-be4f-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1016/j.soscij.2013.12.007" ;
+    cite:authorString "Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "MAR" .
+
+<https://doi.org/10.1016/j.soscij.2014.03.010> a schema:ScholarlyArticle ;
+    schema:about "This paper examines the extent to which product liability risk contributes to the high costs of pharmaceuticals in the United States relative to prices in the United Kingdom. Research on pharmaceutical prices rarely accounts for the impact of liability risk, and none that we are aware of compares the United States and United Kingdom. Drawing on a dataset of 77 brand name drugs sold in both the U.S. and the U.K., we analyze relative manufacturers' factory prices in each nation. We utilize several proxies for liability risk including drug litigation history, the percentage of plaintiff wins, and controlled substance classification. Importantly, under U.S. law there are no caps on the amount that can be awarded to a plaintiff claiming economic losses in the U.S. However, payouts in the U.K. are limited. Accounting for market differences and regulatory environments, we find liability risk can account for a portion of the price differential that exists between the U.S. and U.K., warranting further investigation. (C) 2014 Western Social Science Association. Published by Elsevier Inc. All rights reserved." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Liability risk in the pharmaceutical industry: Tort law in the US and UK"@en ;
+    schema:pageEnd "448" ;
+    schema:pageStart "433" ;
+    schema:partOf <http://catalog.coloradocollege.edu/90d9aff9-3827-11e8-a58d-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1016/j.soscij.2014.03.010" ;
+    cite:authorString "Kristina M. Lybecker, Lachlan Watkins." ;
+    cite:citationType "article" ;
+    cite:month "DEC" .
 
 <https://doi.org/10.1016/j.tetlet.2017.01.008> a schema:ScholarlyArticle ;
     schema:about "The cyclic hydroxamic acid functional group is critical to the biological activity of numerous natural products and drug candidates. Efficient, reliable, and green synthetic methods to produce cyclic hydroxamic acids are needed. Herein, flow hydrogenation has been explored as a novel approach toward achieving the selective partial reduction of 2-nitrophenylacetic acid to 1-hydroxyindolin-2-one. The bidentate ligand, 1,10-phenanthroline, has been identified as a unique inhibitor for modulating product selectivity in this Pt/C-catalyzed process. Under the newly optimized reaction conditions, the targeted hydroxamic acid is produced with high selectivity (49:1) over the lactam by-product. The scope of the reaction is demonstrated for a variety of 2-nitrophenylacetic acid derivatives. (C) 2017 Elsevier Ltd. All rights reserved." ;
@@ -5156,6 +5381,19 @@
     schema:partOf <http://catalog.coloradocollege.edu/f98b6079-3821-11e8-9fd5-a41f7283f8d4> ;
     schema:url "https://doi.org/10.1080/07393148.2011.619822" ;
     cite:authorString "William Hurst, Christian Sorace." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org/10.1080/08832323.2010.532240> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
+    schema:datePublished "2011" ;
+    schema:name "Retention of Economics Principles by Undergraduates on Alternative Curricular Structures"@en ;
+    schema:pageEnd "338" ;
+    schema:pageStart "332" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2896627-3827-11e8-a7df-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1080/08832323.2010.532240" ;
+    cite:authorString "Daniel Johnson, Kristina M. Lybecker, Corrine H. Taylor." ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -5993,6 +6231,19 @@
     cite:citationType "article" ;
     cite:month "JAN" .
 
+<https://doi.org/10.1111/j.1467-9701.2005.00668.x> a schema:ScholarlyArticle ;
+    schema:about "Developing nations are challenged to strike a balance between their patent obligations as members of the World Trade Organisation (WTO) and their drug pricing strategies. The Brazilian approach to pharmaceutical price negotiations has been strikingly effective. Describing the context of the Brazilian pharmaceutical sector, their public health system and the Brazilian AIDS policy, this paper examines the Brazilian strategy vis-?-vis the international pharmaceutical manufacturers to explore why their tactics were successful and the potential for wider application by other developing countries. ABSTRACT FROM AUTHOR]; Copyright of World Economy is the property of Wiley-Blackwell and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2005" ;
+    schema:name "AIDS Policy and Pharmaceutical Patents: Brazil's Strategy to Safeguard Public Health"@en ;
+    schema:pageEnd "230" ;
+    schema:pageStart "211" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b5f1899d-3827-11e8-8cdb-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1111/j.1467-9701.2005.00668.x" ;
+    cite:authorString "Jillian Clare Cohen, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <https://doi.org/10.1111/j.1467-9736.2012.00776.x> a schema:ScholarlyArticle ;
     schema:about "The poem \"The New Dope\" by David Mason is presented. First Line: It was softer on the throat, Last Line: of coffee in my hands." ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
@@ -6018,6 +6269,19 @@
     cite:citationType "article" ;
     cite:month "MAR" .
 
+<https://doi.org/10.1111/j.1468-2257.2011.00569.x> a schema:ScholarlyArticle ;
+    schema:about "In reaction to public dismay over the technological inadequacy of electoral equipment in the 2000 presidential elections, Congress quickly enacted the Help America Vote Act, legislation to fund the acquisition of advanced vote-counting technology. The intention was to enable, rather than mandate, choices of new equipment. This paper utilizes a unique historical opportunity to test whether electoral equipment follows the pattern predicted by well-established models of innovation diffusion, merging electoral data with census data on socio-economic characteristics. We infer that fiscal constraints to acquisition are strong but not the only limitations to technology adoption, particularly within certain easily identifiable populations." ;
+    schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
+    schema:datePublished "2011" ;
+    schema:name "Does HAVA (Help America Vote Act) Help the Have-Nots? US Adoption of New Election Equipment, 1980-2008"@en ;
+    schema:pageEnd "627" ;
+    schema:pageStart "601" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2dcb625-3827-11e8-a2cf-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1111/j.1468-2257.2011.00569.x" ;
+    cite:authorString "Daniel Johnson, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "DEC" .
+
 <https://doi.org/10.1111/j.1502-3885.2009.00097.x> a schema:ScholarlyArticle ;
     schema:about "Precipitation patterns during the Last Glacial Maximum (LGM) in the Rocky Mountains varied due to the influence of the continental ice sheets and pluvial lakes. However, no constraints have been placed on potential changes of southeasterly Gulf of Mexico-derived moisture that today contributes considerable precipitation to the easternmost ranges of the southern and middle Rocky Mountains. The Sangre de Cristo Mountains of southern Colorado are ideally situated to assess the relative importance of westerly and southeasterly-derived moisture during the LGM. Based on reconstructions of 30 palaeoglaciers in the Sangre de Cristo Mountains, we find that LGM equilibrium-line altitudes (ELAs) on the east side of the range were systematically 100-200 m lower than ELAs on the west side. The observed ELA pattern is strikingly similar to modern precipitation patterns in the study area, suggesting that southeasterly-derived precipitation had a significant influence on the mass balances of LGM glaciers." ;
     schema:author <http://catalog.coloradocollege.edu/2db4969c-b0e3-11e6-9eb7-005056c00008> ;
@@ -6041,6 +6305,19 @@
     schema:partOf <http://catalog.coloradocollege.edu/08c266c1-3822-11e8-ba95-a41f7283f8d4> ;
     schema:url "https://doi.org/10.1111/j.1741-3737.2005.00154.x" ;
     cite:authorString "Jill Tiefenthaler, Amy Farmer, Amandine Sambira." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org/10.1111/j.1748-720X.2009.00367.x> a schema:ScholarlyArticle ;
+    schema:about "This paper examines two recent examples of compulsory licensing legislation: one globally embraced regime and one internationally controversial regime operating under the same WTO rules. In particular, we consider Canadian legislation and the use of compulsory licensing for HIV/AIDS drugs destined for a developing country. This is then contrasted with the conditions under which Thai authorities are pursuing compulsory licenses, the outcomes of their compulsory licenses, as well as the likely impact of the Thai policy. Finally, we construct a rubric to evaluate characteristics of a successful regime. This is used to analyze the Canadian and Thai regimes and frame the expected implications of each national policy. It is hoped that the assessment will guide changes to compulsory licensing design to ensure that legitimate regimes are embraced while illegitimate ones are disallowed." ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2009" ;
+    schema:name "Compulsory Licensing in Canada and Thailand: Comparing Regimes to Ensure Legitimate Use of the WTO Rules"@en ;
+    schema:pageEnd "239" ;
+    schema:pageStart "222" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c116da19-3827-11e8-811e-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1111/j.1748-720X.2009.00367.x" ;
+    cite:authorString "Kristina M. Lybecker, Elisabeth Fowler." ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -6591,6 +6868,19 @@
     cite:citationType "article" ;
     cite:month "FEB" .
 
+<https://doi.org/10.1177/0569434517692972> a schema:ScholarlyArticle ;
+    schema:about "Over the past decade, more than 25 U.S. states enacted legislation surrounding abortions. By analyzing state abortion legislation and proxying how the cost of obtaining an abortion varies across states, this study assesses the implications of legislative changes on women?s contraceptive choices. Examining women by race/ethnicity, income, age, and religious affiliation, the results show that women respond to increased restrictions on abortion availability and cost but that the effects are very small. This study demonstrates that legislation restricting women?s access to abortions fails to promote greater use of more effective contraceptive methods, increasing the likelihood of unwanted births and illegal abortion procedures.JEL Classifications: D1, D81, I18, J13 ABSTRACT FROM AUTHOR]; Copyright of American Economist is the property of Sage Publications Inc. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2018" ;
+    schema:name "Do Restrictions Beget Responsibility? The Case of U.S. Abortion Legislation"@en ;
+    schema:pageEnd "70" ;
+    schema:pageStart "59" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8e1f82bb-3827-11e8-8d3f-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1177/0569434517692972" ;
+    cite:authorString "Amanda J. Felkey, Kristina M. Lybecker." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <https://doi.org/10.1177/1557085114554258> a schema:ScholarlyArticle ;
     schema:about "Many scholars argue that intimate partner violence is too complex to address through the \"one-size-fits-all\" approaches that are common in most criminal justice venues. Instead, they advocate for coordinated approaches that address the unique circumstances of each offender. For 3 years, El Paso County ran a \"Pilot Program,\" which applied in-depth analytical tools to tailor court orders to each defendant. The program, to which offenders were randomly assigned, ran parallel to the county's \"one-size-fits-all\" program, providing a rare opportunity to assess the efficacy of each approach. We find the Pilot Program significantly increased compliance and reduced the likelihood of recidivism." ;
     schema:author <http://catalog.coloradocollege.edu/4178d71c-b0f5-11e6-824d-005056c00008>,
@@ -6669,6 +6959,18 @@
     cite:authorString "Shaojie Song, Noelle E. Selin, Lynne E. Gratz, Jesse L. Ambrose, Daniel A. Jaffe, Viral Shah, Lyatt JaeglÃ©, Amanda Giang, Bin Yuan, Lisa Kaser, Eric C. Apel, Rebecca S. Hornbrook, Nicola J. Blake, Andrew J. Weinheimer, Roy L. Mauldin, Christopher A. Cantrell, Mark S. Castro, Gary Conley, Thomas M. Holsen, Winston T. Luke, Robert Talbot." ;
     cite:citationType "article" ;
     cite:month "APR 8" .
+
+<https://doi.org/10.1300/J371v15n02_05> a schema:ScholarlyArticle ;
+    schema:about "The confluence of rising drug costs, more effective innovative medicines, and increasing public outrage have intensified the debate over pharmaceutical prices and access. We propose an alternative to the traditional patent system, providing direct tax credits to the pharmaceutical patent-holder in exchange for marginal cost pricing of the drug. This proposal is especially suited to the pharmaceutical industry, which produces a social good characterized by high fixed costs, high information and regulatory costs, and relatively low marginal costs of production. While preserving incentives to innovate, we posit that access and consumer surplus should increase through the elimination of monopoly prices. ABSTRACT FROM AUTHOR]; Copyright of Journal of Pharmaceutical Finance, Economics & Policy is the property of Taylor & Francis Ltd and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2006" ;
+    schema:name "Drugs and Taxes: Lower Prescription Drug Prices Through Direct Tax Credits"@en ;
+    schema:pageStart "69" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b360be11-3827-11e8-b96c-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.1300/J371v15n02_05" ;
+    cite:authorString "Kristina M. Lybecker, Robert A. Freeman." ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <https://doi.org/10.1353/com.2015.0001> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -7349,6 +7651,19 @@
     schema:partOf <http://catalog.coloradocollege.edu/bcdc3282-3821-11e8-86fd-a41f7283f8d4> ;
     schema:url "https://doi.org/10.5840/tpm201571101" ;
     cite:authorString "Marion Hourdequin." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org/10.5912/jcb731> a schema:ScholarlyArticle ;
+    schema:about "Biopharmaceutical research and development is overwhelmingly focused in the U.S. because here it is incentivized and encouraged through a robust intellectual property rights protection environment. Across the board, the United States provides the most comprehensive, effective intellectual property rights protections for biopharmaceuticals. As a result, the industry locates here, researches here and thrives here. With an acknowledgement of the importance of intellectual property rights as well as the wider benefits of biopharmaceutical research and development, it's tremendously disappointing that the recently negotiated Trans-Pacific Partnership (TPP) Trade Agreement fails to deliver sufficient IP protection for biologics. This article explores the importance of a rigorous intellectual property environment for the biopharmaceutical industry through an examination of the importance of data exclusivity provisions. Such protection is critical as the number, complexity and cost of clinical trials increases. Technology inevitably evolves faster than the legal architecture that surrounds it. As technology evolves, making the development of new biologic vaccines and therapies possible, society's commitment to incentivize innovation and protect it must be enshrined in the intellectual property protections of agreements such as the TPP. ABSTRACT FROM AUTHOR]; Copyright of Journal of Commercial Biotechnology is the property of ThinkBiotech, LLC and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Intellectual Property Protection for Biologics: Why the Trans-Pacific Partnership (TPP) Trade Agreement Fails to Deliveri"@en ;
+    schema:pageEnd "48" ;
+    schema:pageStart "42" ;
+    schema:partOf <http://catalog.coloradocollege.edu/87ddd619-3827-11e8-83cf-a41f7283f8d4> ;
+    schema:url "https://doi.org/10.5912/jcb731" ;
+    cite:authorString "Kristina M. Lybecker." ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -9845,6 +10160,10 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/83f473c2-378e-11e8-9904-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/849b7db6-3827-11e8-b484-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0828-1785" ;
+    schema:name "Winnipeg Free Press (MB)"@en .
+
 <http://catalog.coloradocollege.edu/85f74752-378e-11e8-b99c-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1680-7316" ;
     schema:name "Atmospheric Chemistry and Physics"@en .
@@ -9889,6 +10208,10 @@
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/8742d94a-378e-11e8-8f67-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/87cd2c80-3827-11e8-8928-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1462-8732" ;
+    schema:name "Journal of Commercial Biotechnology"@en .
+
 <http://catalog.coloradocollege.edu/87cf3a6e-378e-11e8-a551-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/87c79952-378e-11e8-a599-a41f7283f8d4> ;
     schema:volumeNumber "87" .
@@ -9896,6 +10219,14 @@
 <http://catalog.coloradocollege.edu/87cf3a6f-378e-11e8-a98d-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/87cf3a6e-378e-11e8-a551-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/87ddd618-3827-11e8-8d4e-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/87cd2c80-3827-11e8-8928-a41f7283f8d4> ;
+    schema:volumeNumber "22" .
+
+<http://catalog.coloradocollege.edu/87ddd619-3827-11e8-83cf-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/87ddd618-3827-11e8-8d4e-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/8816f19e-378e-11e8-8941-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0022-3360" ;
@@ -10005,9 +10336,21 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/8d2afacc-378e-11e8-89df-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/8e0ed924-3827-11e8-8c88-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0569-4345" ;
+    schema:name "American Economist"@en .
+
 <http://catalog.coloradocollege.edu/8e107838-378e-11e8-8a45-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/5a429400-378e-11e8-8768-a41f7283f8d4> ;
     schema:volumeNumber "524" .
+
+<http://catalog.coloradocollege.edu/8e1f82ba-3827-11e8-b669-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/8e0ed924-3827-11e8-8c88-a41f7283f8d4> ;
+    schema:volumeNumber "63" .
+
+<http://catalog.coloradocollege.edu/8e1f82bb-3827-11e8-8d3f-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/8e1f82ba-3827-11e8-b669-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/8eb5434c-378e-11e8-b25f-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0022-3530" ;
@@ -10045,6 +10388,14 @@
     schema:issueNumber "5" ;
     schema:partOf <http://catalog.coloradocollege.edu/8f4f6008-378e-11e8-9624-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/90d9aff8-3827-11e8-ae45-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/90c6a500-3827-11e8-905c-a41f7283f8d4> ;
+    schema:volumeNumber "52" .
+
+<http://catalog.coloradocollege.edu/90d9aff9-3827-11e8-a58d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/90d9aff8-3827-11e8-ae45-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/91b00aca-378e-11e8-90b4-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/625d4b80-378e-11e8-b3cb-a41f7283f8d4> ;
     schema:volumeNumber "536" .
@@ -10065,6 +10416,18 @@
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/91d7b6f0-378e-11e8-ab9b-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/937b8aae-3827-11e8-b427-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0883-9859" ;
+    schema:name "Inventors' Digest"@en .
+
+<http://catalog.coloradocollege.edu/938e95a6-3827-11e8-9711-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/937b8aae-3827-11e8-b427-a41f7283f8d4> ;
+    schema:volumeNumber "31" .
+
+<http://catalog.coloradocollege.edu/938e95a7-3827-11e8-bcef-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/938e95a6-3827-11e8-9711-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/95469cb4-378e-11e8-b7e7-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0340-269X" ;
     schema:name "Phytocoenologia"@en .
@@ -10076,6 +10439,10 @@
 <http://catalog.coloradocollege.edu/954fc46d-378e-11e8-94f1-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/954fc46c-378e-11e8-b491-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/969b5f34-3827-11e8-9939-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/90c6a500-3827-11e8-905c-a41f7283f8d4> ;
+    schema:volumeNumber "51" .
 
 <http://catalog.coloradocollege.edu/971fa13a-378e-11e8-84fe-a41f7283f8d4> a schema:Periodical ;
     schema:issn "2214-109X" ;
@@ -10153,6 +10520,34 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9b3c79ca-378e-11e8-a4de-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/9c40cc18-3827-11e8-b249-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0827-7893" ;
+    schema:name "Fraser Forum"@en .
+
+<http://catalog.coloradocollege.edu/9c7eafbe-3827-11e8-97a9-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1076-7975" ;
+    schema:name "Electronic Green Journal"@en .
+
+<http://catalog.coloradocollege.edu/9c91bab6-3827-11e8-960b-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/9c7eafbe-3827-11e8-97a9-a41f7283f8d4> ;
+    schema:volumeNumber "1" .
+
+<http://catalog.coloradocollege.edu/9c91bab7-3827-11e8-98d2-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "33" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9c91bab6-3827-11e8-960b-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/9cdeb986-3827-11e8-9853-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0889-938X" ;
+    schema:name "Review of Industrial Organization"@en .
+
+<http://catalog.coloradocollege.edu/9cef631e-3827-11e8-a1d4-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/9cdeb986-3827-11e8-9853-a41f7283f8d4> ;
+    schema:volumeNumber "40" .
+
+<http://catalog.coloradocollege.edu/9cef631f-3827-11e8-a0d7-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9cef631e-3827-11e8-a1d4-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/9d2a17b6-378e-11e8-8519-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0954-4879" ;
     schema:name "Terra Nova"@en .
@@ -10209,6 +10604,14 @@
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/a1cbd75e-378e-11e8-bd46-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/a2230b34-3827-11e8-8cd5-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/90c6a500-3827-11e8-905c-a41f7283f8d4> ;
+    schema:volumeNumber "49" .
+
+<http://catalog.coloradocollege.edu/a2230b35-3827-11e8-8ae1-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2230b34-3827-11e8-8cd5-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/a24db138-378e-11e8-ba52-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0046-2772" ;
     schema:name "European Journal of Social Psychology"@en .
@@ -10220,6 +10623,30 @@
 <http://catalog.coloradocollege.edu/a2585f93-378e-11e8-ae89-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "7" ;
     schema:partOf <http://catalog.coloradocollege.edu/a2585f92-378e-11e8-be97-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a2765b2e-3827-11e8-9694-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0883-2323" ;
+    schema:name "Journal of Education for Business"@en .
+
+<http://catalog.coloradocollege.edu/a2896626-3827-11e8-9143-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2765b2e-3827-11e8-9694-a41f7283f8d4> ;
+    schema:volumeNumber "86" .
+
+<http://catalog.coloradocollege.edu/a2896627-3827-11e8-a7df-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2896626-3827-11e8-9143-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a2cc0c8a-3827-11e8-a2be-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0017-4815" ;
+    schema:name "Growth and Change"@en .
+
+<http://catalog.coloradocollege.edu/a2dcb624-3827-11e8-bcde-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2cc0c8a-3827-11e8-a2be-a41f7283f8d4> ;
+    schema:volumeNumber "42" .
+
+<http://catalog.coloradocollege.edu/a2dcb625-3827-11e8-a2cf-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a2dcb624-3827-11e8-bcde-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/a2ede870-378e-11e8-8238-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1948-5506" ;
@@ -10244,6 +10671,18 @@
 <http://catalog.coloradocollege.edu/a3773c59-378e-11e8-955e-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "3" ;
     schema:partOf <http://catalog.coloradocollege.edu/a3773c58-378e-11e8-b89c-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a712a582-3827-11e8-b741-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1913-9004" ;
+    schema:name "International Business Research"@en .
+
+<http://catalog.coloradocollege.edu/a725b07a-3827-11e8-ada9-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a712a582-3827-11e8-b741-a41f7283f8d4> ;
+    schema:volumeNumber "3" .
+
+<http://catalog.coloradocollege.edu/a725b07b-3827-11e8-a843-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a725b07a-3827-11e8-ada9-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/a91339da-378e-11e8-b0f6-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/6d1c9466-378e-11e8-8bf3-a41f7283f8d4> ;
@@ -10277,6 +10716,18 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a9e137b4-378e-11e8-b349-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/a9ea0742-3827-11e8-84e9-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1935-5041" ;
+    schema:name "Journal of Industrial Organization Education"@en .
+
+<http://catalog.coloradocollege.edu/a9fd123a-3827-11e8-a3cc-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9ea0742-3827-11e8-84e9-a41f7283f8d4> ;
+    schema:volumeNumber "2" .
+
+<http://catalog.coloradocollege.edu/a9fd123b-3827-11e8-8c38-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a9fd123a-3827-11e8-a3cc-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/aa169f70-378e-11e8-a5bb-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0305-4403" ;
     schema:name "Journal of Archaeological Science"@en .
@@ -10309,6 +10760,10 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/ac38458a-378e-11e8-abdc-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/ad0a0aa4-3827-11e8-b87e-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1935-1682" ;
+    schema:name "B.E.Journal of Economic Analysis and Policy: Contributions to Economic Analysis and Policy"@en .
+
 <http://catalog.coloradocollege.edu/ad1a1976-378e-11e8-9d68-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/7de8ebda-378e-11e8-a262-a41f7283f8d4> ;
     schema:volumeNumber "115" .
@@ -10316,6 +10771,14 @@
 <http://catalog.coloradocollege.edu/ad1a1977-378e-11e8-b25f-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "6" ;
     schema:partOf <http://catalog.coloradocollege.edu/ad1a1976-378e-11e8-9d68-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ad1d159c-3827-11e8-bf90-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad0a0aa4-3827-11e8-b87e-a41f7283f8d4> ;
+    schema:volumeNumber "4" .
+
+<http://catalog.coloradocollege.edu/ad1d159d-3827-11e8-b08d-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ad1d159c-3827-11e8-bf90-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/af026038-378e-11e8-8953-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0021-8693" ;
@@ -10352,6 +10815,18 @@
 <http://catalog.coloradocollege.edu/b0646051-378e-11e8-94e4-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "102" ;
     schema:partOf <http://catalog.coloradocollege.edu/b0646050-378e-11e8-8efe-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b06ce34a-3827-11e8-b76e-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1744-1331" ;
+    schema:name "Health Economics, Policy and Law"@en .
+
+<http://catalog.coloradocollege.edu/b07fee42-3827-11e8-b353-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/b06ce34a-3827-11e8-b76e-a41f7283f8d4> ;
+    schema:volumeNumber "2" .
+
+<http://catalog.coloradocollege.edu/b07fee43-3827-11e8-acee-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b07fee42-3827-11e8-b353-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/b09b75ba-378e-11e8-a58c-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/b05b3898-378e-11e8-a022-a41f7283f8d4> ;
@@ -10405,6 +10880,18 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/b33c3694-378e-11e8-9502-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/b34db318-3827-11e8-adc5-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1538-5698" ;
+    schema:name "Journal of Pharmaceutical Finance, Economics & Policy"@en .
+
+<http://catalog.coloradocollege.edu/b360be10-3827-11e8-bb36-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/b34db318-3827-11e8-adc5-a41f7283f8d4> ;
+    schema:volumeNumber "15" .
+
+<http://catalog.coloradocollege.edu/b360be11-3827-11e8-b96c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b360be10-3827-11e8-bb36-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/b3d038d2-378e-11e8-ab4c-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/6d1c9466-378e-11e8-8bf3-a41f7283f8d4> ;
     schema:volumeNumber "814" .
@@ -10448,6 +10935,26 @@
 <http://catalog.coloradocollege.edu/b49b7791-378e-11e8-9536-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/b49b7790-378e-11e8-833c-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b5de7ea4-3827-11e8-8903-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0378-5920" ;
+    schema:name "World Economy"@en .
+
+<http://catalog.coloradocollege.edu/b5f1899c-3827-11e8-b5fb-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/b5de7ea4-3827-11e8-8903-a41f7283f8d4> ;
+    schema:volumeNumber "28" .
+
+<http://catalog.coloradocollege.edu/b5f1899d-3827-11e8-8cdb-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b5f1899c-3827-11e8-b5fb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/b888024a-3827-11e8-8537-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/b87295f4-3827-11e8-b54f-a41f7283f8d4> ;
+    schema:volumeNumber "28" .
+
+<http://catalog.coloradocollege.edu/b888024b-3827-11e8-b8f9-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "4" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b888024a-3827-11e8-8537-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/b896b2ca-3821-11e8-be82-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0021-8510" ;
@@ -10576,6 +11083,10 @@
 <http://catalog.coloradocollege.edu/bbb33b8d-3821-11e8-9f89-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "4" ;
     schema:partOf <http://catalog.coloradocollege.edu/bbb33b8c-3821-11e8-9e07-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/bbe2fb52-3827-11e8-a90a-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/b87295f4-3827-11e8-b54f-a41f7283f8d4> ;
+    schema:volumeNumber "29" .
 
 <http://catalog.coloradocollege.edu/bbf8ef30-3821-11e8-8ae3-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1075-8216" ;
@@ -10708,6 +11219,18 @@
 <http://catalog.coloradocollege.edu/c0db0499-3821-11e8-ba90-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/c0db0498-3821-11e8-a9da-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/c103cf1e-3827-11e8-abb3-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "1073-1105" ;
+    schema:name "Journal of Law Medicine & Ethics"@en .
+
+<http://catalog.coloradocollege.edu/c116da18-3827-11e8-bcfd-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/c103cf1e-3827-11e8-abb3-a41f7283f8d4> ;
+    schema:volumeNumber "37" .
+
+<http://catalog.coloradocollege.edu/c116da19-3827-11e8-811e-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c116da18-3827-11e8-bcfd-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/c13f735e-3821-11e8-9352-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/52f3de88-378e-11e8-b357-a41f7283f8d4> ;
@@ -11848,6 +12371,9 @@
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/7f1ed2fe-378e-11e8-89a4-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/80d4a3a8-3827-11e8-a13c-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Record, The (Kitchener/Cambridge/Waterloo, ON)"@en .
+
 <http://catalog.coloradocollege.edu/87c79952-378e-11e8-a599-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0006-8977" ;
     schema:name "Brain Behavior and Evolution"@en .
@@ -11859,6 +12385,10 @@
 <http://catalog.coloradocollege.edu/8e107839-378e-11e8-a281-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "10" ;
     schema:partOf <http://catalog.coloradocollege.edu/8e107838-378e-11e8-8a45-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/969b5f35-3827-11e8-be4f-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/969b5f34-3827-11e8-9939-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/9b335210-378e-11e8-8945-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0009-1774" ;
@@ -11885,6 +12415,10 @@
     schema:issn "0048-9697" ;
     schema:name "Science of the Total Environment"@en .
 
+<http://catalog.coloradocollege.edu/b87295f4-3827-11e8-b54f-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0143-6570" ;
+    schema:name "Managerial & Decision Economics"@en .
+
 <http://catalog.coloradocollege.edu/b9016aee-3821-11e8-bc97-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "173" ;
     schema:partOf <http://catalog.coloradocollege.edu/b8fca82e-3821-11e8-9545-a41f7283f8d4> .
@@ -11892,6 +12426,10 @@
 <http://catalog.coloradocollege.edu/bb21b9cb-3821-11e8-9605-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/bb21b9ca-3821-11e8-9525-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/bbe2fb53-3827-11e8-b0cf-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "5" ;
+    schema:partOf <http://catalog.coloradocollege.edu/bbe2fb52-3827-11e8-a90a-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/bfbfb1cc-3821-11e8-a6ca-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-9483" ;
@@ -12044,6 +12582,10 @@
 <http://catalog.coloradocollege.edu/6d1c9466-378e-11e8-8bf3-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0004-637X" ;
     schema:name "Astrophysical Journal"@en .
+
+<http://catalog.coloradocollege.edu/90c6a500-3827-11e8-905c-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0362-3319" ;
+    schema:name "Social Science Journal"@en .
 
 <http://catalog.coloradocollege.edu/9a6e7bf0-378e-11e8-901d-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1352-2310" ;
