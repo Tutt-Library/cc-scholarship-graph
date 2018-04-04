@@ -5,6 +5,7 @@ import click
 import codecs
 import re
 import sys
+import pdb
 from sys import exit
 import rdflib
 from rdflib import RDFS
@@ -194,7 +195,7 @@ class Citation(object):
                 name_parsed = []
                 for word in name.split(" "):
                     name_parsed.append(word)
-            print("The name is",name_parsed,"for ",self.raw_citation["title"])
+            # print("The name is",name_parsed,"for ",self.raw_citation["title"])
 
             given_name = name_parsed[0]
             family_name = name_parsed[len(name_parsed)-1]
@@ -203,16 +204,16 @@ class Citation(object):
                
             if author_lookup(people,author_name_parsed) != None:
                 author_iri=author_lookup(people,author_name_parsed)
-                print("Author",author_name_parsed,"found in author lookup")
+                # print("Author",author_name_parsed,"found in author lookup")
                 self.cc_authors.append(author_iri)
             elif alternate_author_lookup(people,author_name_parsed) != None:
                 author_iri=alternate_author_lookup(people,author_name_parsed)
-                print("Author",author_name_parsed,"found in alternate author lookup")
+                # print("Author",author_name_parsed,"found in alternate author lookup")
                 self.cc_authors.append(author_iri)
             #to do: code to search on family name plus initial first letter of givenname?
                 
             else:
-                print("Author",author_name_parsed,"not found")
+                # print("Author",author_name_parsed,"not found")
                 pass
                
         # attempt to salvage a citation with no matched CC authors        
@@ -352,15 +353,16 @@ class Article_Citation(Citation):
     def __doi__(self):
         # doi is the unique identifier for articles
         if "doi" in self.raw_citation.keys():
-            if doi_lookup(creative_works,self.raw_citation["doi"]):
-                print("ERROR DUPLICATE DOI FOUND",self.raw_citation["doi"])
-                sys.exit(0)
-            if ("doi" in self.raw_citation.keys()) and (self.raw_citation["doi"]!="") :
+            #pdb.set_trace()
+            if self.raw_citation["doi"]!="" :
                 self.doi_string = self.raw_citation["doi"]
                 self.doi_string = "https://doi.org/" + self.doi_string
+                self.doi_iri=rdflib.URIRef(self.doi_string)
         else:
-            self.doi_string=self.__unique_IRI__()
-        self.doi_iri=rdflib.URIRef(self.doi_string)
+            self.doi_iri=self.__unique_IRI__()
+        if doi_lookup(creative_works,self.doi_iri) != None:
+            print("ERROR DUPLICATE DOI FOUND",self.raw_citation["doi"])
+            sys.exit(0)
 
 
     def __volume__(self):
@@ -548,31 +550,34 @@ class Book_Citation(Citation):
             self.isbn=self.raw_citation["isbn"]
         else:
             self.isbn = ""
-        creative_works.add((self.bib_uri,bf.isbn,rdflib.Literal(self.isbn)))
+        self.creative_works.add((self.bib_uri,rdflib.RDF.type,bf.Book))
+
+        self.creative_works.add((self.bib_uri,bf.isbn,rdflib.Literal(self.isbn)))
+
 
         #add author - use author instead of agent to be consistent with articles
         for author in self.cc_authors:
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
     
         #add title
-        creative_works.add((self.bib_uri,bf.title,rdflib.Literal(self.title,lang="en")))
+        self.creative_works.add((self.bib_uri,bf.title,rdflib.Literal(self.title,lang="en")))
         
         #add provision_publisher (provision activity statement in bf, equivalent to 264 field)
-        creative_works.add((self.bib_uri,bf.provisionActivityStatement,rdflib.Literal(self.publisher_provision,lang="en")))
+        self.creative_works.add((self.bib_uri,bf.provisionActivityStatement,rdflib.Literal(self.publisher_provision,lang="en")))
 
         #add year (in case it is needed separately)
-        creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
+        self.creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
                  
         #add edition
-        creative_works.add((self.bib_uri,bf.editionStatement,rdflib.Literal(self.edition,lang="en")))
+        self.creative_works.add((self.bib_uri,bf.editionStatement,rdflib.Literal(self.edition,lang="en")))
                
         #add abstract (summary)
         if self.abstract != "":
-            creative_works.add((self.bib_uri,bf.Summary,rdflib.Literal(self.abstract,lang="en")))
+            self.creative_works.add((self.bib_uri,bf.Summary,rdflib.Literal(self.abstract,lang="en")))
 
         #add note
         if self.note != "":
-            creative_works.add((self.bib_uri,bf.Note,rdflib.Literal(self.note,lang="en")))
+            self.creative_works.add((self.bib_uri,bf.Note,rdflib.Literal(self.note,lang="en")))
 
         # add the citation type
         self.creative_works.add((self.bib_uri,CITATION_EXTENSION.citationType,rdflib.Literal(self.citation_type)))
