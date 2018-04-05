@@ -64,13 +64,14 @@ def journal_lookup(creative_works,lookup_string):
 	      WHERE {{
 	      ?journal_iri rdf:type schema:Periodical .
 	      ?journal_iri schema:name ?label .
-              FILTER (CONTAINS (?label,"{0}"))
+	      
+              FILTER (regex(?label,"^{0}$"))
               }}""".format(lookup_string)
-
     results = creative_works.query(sparql)
 
     for i in results:
         return i[0]
+
 
 def volume_lookup(creative_works,lookup_string,journal_iri):
 # check the creative works graph for a match on journal volume so that duplicates are not created
@@ -201,7 +202,8 @@ class Citation(object):
             family_name = name_parsed[len(name_parsed)-1]
             author_name_parsed = given_name + " " + family_name            
             author_name_parsed = author_name_parsed.strip()
-               
+
+
             if author_lookup(people,author_name_parsed) != None:
                 author_iri=author_lookup(people,author_name_parsed)
                 # print("Author",author_name_parsed,"found in author lookup")
@@ -211,7 +213,6 @@ class Citation(object):
                 # print("Author",author_name_parsed,"found in alternate author lookup")
                 self.cc_authors.append(author_iri)
             #to do: code to search on family name plus initial first letter of givenname?
-                
             else:
                 # print("Author",author_name_parsed,"not found")
                 pass
