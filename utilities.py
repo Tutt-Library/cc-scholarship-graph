@@ -490,6 +490,8 @@ class Book_Citation(Citation):
         self.__note__()
         self.__edited_by__()
         self.__abstract__()
+        self.__call__()
+        self.__url__()
 
     def __title__(self):
         self.title=self.raw_citation["title"]
@@ -529,6 +531,21 @@ class Book_Citation(Citation):
         else:
             self.note = ""
 
+    def __call__(self):
+        if "call" in self.raw_citation.keys():
+            self.call = self.raw_citation["call"]
+        else:
+            self.call = ""
+
+    def __url__(self):
+        if "link" in self.raw_citation.keys():
+            if self.raw_citation["link"].startswith("http"):
+                self.url = self.raw_citation["link"]
+        elif "url" in self.raw_citation.keys():
+            if self.raw_citation["link"].startswith("http"):
+                self.url = self.raw_citation["url"]
+        else:
+            self.url = ""
 
     def add_book(self):
 
@@ -568,20 +585,27 @@ class Book_Citation(Citation):
         #add year (in case it is needed separately)
         self.creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
                  
-        #add edition
+        #add edition if present
         self.creative_works.add((self.bib_uri,bf.editionStatement,rdflib.Literal(self.edition,lang="en")))
                
-        #add abstract (summary)
+        #add abstract (summary) if present
         if self.abstract != "":
             self.creative_works.add((self.bib_uri,bf.Summary,rdflib.Literal(self.abstract,lang="en")))
 
-        #add note
+        # add note if present
         if self.note != "":
             self.creative_works.add((self.bib_uri,bf.Note,rdflib.Literal(self.note,lang="en")))
 
         # add the citation type
-        self.creative_works.add((self.bib_uri,CITATION_EXTENSION.citationType,rdflib.Literal(self.citation_type)))
+        self.creative_works.add((self.bib_uri,CITATION_EXTENSION.citationType,rdflib.Literal(self.citation_type,lang="en")))
 
+        # add call # if present
+        if self.call != "":
+            self.creative_works.add((self.bib_uri,CITATION_EXTENSION.callNumber,rdflib.Literal(self.call)))
+
+        # add url if present (a few books are not in Tiger)
+        if self.url != "":
+            self.creative_works.add((self.bib_uri,SCHEMA.url,rdflib.Literal(self.url)))
             
 class Book_Chapter_Citation(Book_Citation):
     def __init__(self,raw_citation,creative_works):
