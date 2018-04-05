@@ -7195,7 +7195,7 @@
     bf:provisionActivityStatement "New York : Oxford University Press, 2010"@en ;
     bf:title "The paradoxes of the American presidency"@en ;
     schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
-    schema:publicationDate "2010" ;
+    schema:publicationDate "2004" ;
     cite:callNumber "JK516 .C73 2004" ;
     cite:citationType "book"@en .
 
