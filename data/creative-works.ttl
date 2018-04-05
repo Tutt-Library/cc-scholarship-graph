@@ -7192,7 +7192,7 @@
     bf:Note "Thomas E. Cronin, Colorado College, Michael A. Genovese, New York, Oxford University Press; vi, 410 pages : illustrations ; 24 cm; text; unmediated; volume; Includes bibliographical references and index; Co-author Tom Cronin is CC political science professor"@en ;
     bf:editionStatement "Second"@en ;
     bf:isbn "0195167090" ;
-    bf:provisionActivityStatement "New York : Oxford University Press, 2010"@en ;
+    bf:provisionActivityStatement "New York : Oxford University Press, 2004"@en ;
     bf:title "The paradoxes of the American presidency"@en ;
     schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
     schema:publicationDate "2004" ;
