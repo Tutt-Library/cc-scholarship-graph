@@ -466,3 +466,12 @@ def book_title(book_citation):
     else:
         title_string = title
     return(title_string)
+
+@app.template_filter("book_edition_filter")
+def book_edition(book_citation):
+    edition_string=""
+    if "editionStatement" in book_citation.keys():
+        if book_citation["editionStatement"]["value"] != "":
+            ed = book_citation["editionStatement"]["value"]
+            edition_string = ed + " ed. "
+    return(edition_string)

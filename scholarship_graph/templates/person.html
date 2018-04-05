@@ -44,7 +44,7 @@
                 {% if not loop.last %},{% endif %}
             {% endfor %}
 
-			
+		<div style="margin-left:5px; margin-top: 10px;">
 		<h3>Recent Works</h3>
 		<h4>Articles</h4>
 		{% for row in info.citations %}
@@ -59,10 +59,12 @@
 		{% for row in info.book_citations %}
 			<p>
 			<em>{{ row|book_title_filter|safe }}</em>. 
-			{{ row.publicationDate.value }}. 
+			{{ row|book_edition_filter|safe }}
 			{{ row.provisionActivityStatement.value }}.
+			
 			</p>
-		{% endfor %}	
+		{% endfor %}
+		</div>
         </div>
     </div>
 </div>

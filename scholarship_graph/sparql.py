@@ -73,7 +73,7 @@ WHERE {{
 	ORDER BY DESC(?publicationDate)"""
 	
 BOOK_CITATION = PREFIX + """
-SELECT DISTINCT ?book ?author ?title ?isbn ?publicationDate ?provisionActivityStatement ?summary ?note ?url
+SELECT DISTINCT ?book ?author ?title ?isbn ?publicationDate ?provisionActivityStatement ?editionStatement ?summary ?note ?url
 WHERE {{
 	?book rdf:type bf:Book ;
                  bf:title ?title ;
@@ -82,6 +82,7 @@ WHERE {{
 	OPTIONAL {{?book bf:isbn ?isbn.}}
 	OPTIONAL {{?book schema:publicationDate ?publicationDate.}}
 	OPTIONAL {{?book bf:provisionActivityStatement ?provisionActivityStatement.}}
+	OPTIONAL {{?book bf:editionStatement ?editionStatement.}}
 	OPTIONAL {{?book bf:summary ?summary.}}
 	OPTIONAL {{?book bf:note ?note.}}
 	OPTIONAL {{?book schema:url ?url.}}
