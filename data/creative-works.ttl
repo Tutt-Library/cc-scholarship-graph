@@ -133,6 +133,32 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/08ebb42e-39c3-11e8-858e-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
+    schema:datePublished "2001" ;
+    schema:name "Bargaining over Family Size: The Determinants of Fertility in Brazil"@en ;
+    schema:pageEnd "440" ;
+    schema:pageStart "423" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a6503669-3911-11e8-88bc-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=ecn&AN=0601179" ;
+    cite:authorString "Emily Klawon, Jill Tiefenthaler." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/09595a52-39c3-11e8-a22b-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "When parents divorce, child support and visitation must be determined. The 1988 Family Support Act requires all states to have child support guidelines for courts to use in determining child support obligations. However, many divorcing couples arrive at agreements without court intervention, or they simply fail to enforce the court decision ex post. Given that the guidelines provide a starting point for negotiations, couples may be able to find self-negotiated, Pareto-improving solutions. In this paper we model the bargaining process that divorcing couples engage in when coming to agreements on visitation and child support. The model suggests that individuals may arrive at agreements that are Pareto improvements for both parents but that the children's welfare may decline as a result of these self-negotiated settlements. Data from the Stanford Child Custody Study show that the changes made in child support and visitation agreements are consistent with our model in only 30 percent of the cases. Therefore, we consider alternative specifications of the model and show that both significant costs of enforcing the original agreement and alternative assumptions on parental preferences can explain these empirical results." ;
+    schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
+    schema:datePublished "2003" ;
+    schema:name "Strategic Bargaining over Child Support and Visitation"@en ;
+    schema:pageEnd "218" ;
+    schema:pageStart "205" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a779c1cd-3911-11e8-a382-a41f7283f8d4> ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=ecn&AN=0903829" ;
+    cite:authorString "Amy Farmer, Jill Tiefenthaler." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/0a4d4292-3911-11e8-8222-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
@@ -2597,32 +2623,6 @@
     schema:partOf <http://catalog.coloradocollege.edu/31ba8c31-3912-11e8-856b-a41f7283f8d4> ;
     schema:url "https://doi.org///journals.cambridge.org/action/displayBackIssues?jid=HEP" ;
     cite:authorString "Kristina M. Lybecker, Robert A. Freeman." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<https://doi.org///link.springer.com/journal/volumesAndIssues/11113> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
-    schema:datePublished "2001" ;
-    schema:name "Bargaining over Family Size: The Determinants of Fertility in Brazil"@en ;
-    schema:pageEnd "440" ;
-    schema:pageStart "423" ;
-    schema:partOf <http://catalog.coloradocollege.edu/a6503669-3911-11e8-88bc-a41f7283f8d4> ;
-    schema:url "https://doi.org///link.springer.com/journal/volumesAndIssues/11113" ;
-    cite:authorString "Emily Klawon, Jill Tiefenthaler." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<https://doi.org///link.springer.com/journal/volumesAndIssues/11150> a schema:ScholarlyArticle ;
-    schema:about "When parents divorce, child support and visitation must be determined. The 1988 Family Support Act requires all states to have child support guidelines for courts to use in determining child support obligations. However, many divorcing couples arrive at agreements without court intervention, or they simply fail to enforce the court decision ex post. Given that the guidelines provide a starting point for negotiations, couples may be able to find self-negotiated, Pareto-improving solutions. In this paper we model the bargaining process that divorcing couples engage in when coming to agreements on visitation and child support. The model suggests that individuals may arrive at agreements that are Pareto improvements for both parents but that the children's welfare may decline as a result of these self-negotiated settlements. Data from the Stanford Child Custody Study show that the changes made in child support and visitation agreements are consistent with our model in only 30 percent of the cases. Therefore, we consider alternative specifications of the model and show that both significant costs of enforcing the original agreement and alternative assumptions on parental preferences can explain these empirical results." ;
-    schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
-    schema:datePublished "2003" ;
-    schema:name "Strategic Bargaining over Child Support and Visitation"@en ;
-    schema:pageEnd "218" ;
-    schema:pageStart "205" ;
-    schema:partOf <http://catalog.coloradocollege.edu/a779c1cd-3911-11e8-a382-a41f7283f8d4> ;
-    schema:url "https://doi.org///link.springer.com/journal/volumesAndIssues/11150" ;
-    cite:authorString "Amy Farmer, Jill Tiefenthaler." ;
     cite:citationType "article" ;
     cite:month "" .
 
