@@ -26,15 +26,21 @@ class ProfileForm(FlaskForm):
 class CitationForm(FlaskForm):
     author_string = StringField("Full list of authors")
     CC_author = StringField("CC Author(s)",validators=[DataRequired()])
-    year = StringField("Year of publication", validators=[DataRequired()])
+    datePublished = StringField("Year of publication", validators=[DataRequired()])
     abstract = TextAreaField("Abstract")
     citation_type = SelectField("Citation type", choices=[('Article','Article'),('Book','Book')])
 
 class ArticleForm(CitationForm):
     journal_title = StringField("Journal title",validators=[DataRequired()])
     doi = StringField("DOI number if present")
-    #self.__url__()
-    #self.__article__()
-    #self.__month__()
-    #self.__volume__()
-    #self.__issue__()
+    url = StringField("Link, if no DOI number and link is available")
+    article_title = StringField("Article title", validators=[DataRequired()])
+    month = StringField("Month of publication")
+    volume_number = StringField("Journal volume")
+    issue_number = StringField("Issue number")
+    page_start = StringField("Start page of article")
+    page_end = StringField("End page of particle")
+
+class BookForm(CitationForm):
+    book_title = StringField("Book title",validators=[DataRequired()])
+

@@ -22,7 +22,7 @@ from flask_ldap3_login import log as ldap_manager_log
 from flask_ldap3_login.forms import LDAPLoginForm
 
 
-from .forms import ProfileForm, SearchForm, ArticleForm
+from .forms import ProfileForm, SearchForm, ArticleForm, BookForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
@@ -176,6 +176,7 @@ def academic_profile():
                            form=profile_form,
                            citations=citations,
                            new_article_form = ArticleForm(),
+                           book_form = BookForm(),
                            subjects=subjects)
 
        
@@ -258,7 +259,7 @@ def person_view():
         person_info["citations"].append(row)
 
     book_citations_sparql = BOOK_CITATION.format(person_iri)
-    click.echo(book_citations_sparql)
+    #click.echo(book_citations_sparql)
     book_citations_result = CONNECTION.datastore.query(book_citations_sparql)
     for row in book_citations_result:
         person_info["book_citations"].append(row)
@@ -394,6 +395,11 @@ def cc_login():
 def cc_logout():
     logout_user()
     return redirect(url_for('home'))
+
+@app.route("/work",methods=['POST'])
+@login_required
+def add_work():
+    return request.form.keys()
 
 @app.route("/")
 def home():

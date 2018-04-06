@@ -1,0 +1,30 @@
+<div class="modal fade" id="book-dlg" tabindex="-1" role="dialog" aria-labelledby="book-dlg-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Work</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <h3>New Book Form</h3>
+			<form method = "POST"
+			action = "">
+			<label>{{ book_form.CC_author.label }}</label>
+			{{ book_form.CC_author(class_="form-control") }}
+			<label>{{ book_form.author_string.label }}</label>
+			{{ book_form.author_string(class_="form-control") }}
+			<label>{{ book_form.datePublished.label }}</label>
+			{{ book_form.datePublished(class_="form-control") }}
+			<label>{{ book_form.abstract.label }}</label>
+			{{ book_form.abstract(class_="form-control") }}			
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
