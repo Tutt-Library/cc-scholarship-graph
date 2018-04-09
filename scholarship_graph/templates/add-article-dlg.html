@@ -7,14 +7,21 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-            <h3>New Article Form</h3>
-			<form method = "POST"
+	  <form method = "POST" id="add_article_form"
 			action = "{{ url_for('add_work') }}">
-			<label>{{ new_article_form.CC_author.label }}</label>
+			
+      <div class="modal-body">
+			{{ form.csrf_token }}
+            <h3>New Article Form</h3>
+
+			<label>{{ new_article_form.CC_author.label }} <span class="text-danger">*</span></label>
 			{{ new_article_form.CC_author(class_="form-control") }}
 			<label>{{ new_article_form.author_string.label }}</label>
 			{{ new_article_form.author_string(class_="form-control") }}
+			<label> {{ new_article_form.article_title.label }}</label>
+			{{ new_article_form.article_title(class_="form-control") }}
+			<label>{{ new_article_form.journal_title.label }}</label>
+			{{ new_article_form.journal_title(class_="form-control") }}
 			<label>{{ new_article_form.datePublished.label }}</label>
 			{{ new_article_form.datePublished(class_="form-control") }}
 			<label>{{ new_article_form.month.label }}</label>
@@ -49,12 +56,13 @@
 			</div>
 			<label>{{ new_article_form.abstract.label }}</label>
 			{{ new_article_form.abstract(class_="form-control") }}			
-			</form>
+			
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" onclick="saveArticle()">Save changes</button>
       </div>
+	  </form>
     </div>
   </div>
 </div>

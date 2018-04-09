@@ -398,10 +398,16 @@ def cc_logout():
     logout_user()
     return redirect(url_for('home'))
 
-@app.route("/work",methods=['POST'])
+@app.route("/work", methods=['POST'])
 @login_required
 def add_work():
-    return request.form.keys()
+    work_form = ArticleForm(request.form)
+    if work_form.validate():
+        message = "Work fields {}".format(work_form.journal_title.data)
+        
+    else:
+        message = "Invalid fields validated {}".format(work_form.errors)
+    return jsonify({"message": message})
 
 @app.route("/")
 def home():

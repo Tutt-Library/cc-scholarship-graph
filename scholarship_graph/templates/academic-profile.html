@@ -170,7 +170,17 @@
 
  }
 
-
+ function saveArticle() {
+    $("#new-article-dlg").modal('hide');
+	var data = $("#add_article_form :input").serializeArray();
+	var action = $("#add_article_form").attr("action");
+	$.post(action,
+	       data=data,
+		   success=function(data) {
+				alert("Success " + data['message']);
+		   }
+	);
+}
 
  $("#academic-profile").on('submit', function(e) {
      e.preventDefault();
