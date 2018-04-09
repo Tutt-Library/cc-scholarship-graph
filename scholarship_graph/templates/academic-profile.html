@@ -81,12 +81,14 @@
     <h3>Creative Works (books, articles, visual, audio, video, etc.)</h3>
     <button class="btn btn-success" 
             data-toggle="modal" data-target="#new-article-dlg"
+            onclick="return false"
             aria-label="Add Article">
                         <i class="fas fa-file-alt"></i>
     </button>
 	<button class="btn btn-success"
-			data-toggle="modal" data-target="#book-dlg"
-			aria-label="Add Book">
+            onclick="return false"
+	    data-toggle="modal" data-target="#book-dlg"
+	    aria-label="Add Book">
 						<i class="fas fa-book"></i>
 	</button>
     {% for row in citations %}
@@ -98,12 +100,12 @@
          {% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
         </div>
         <div class="col-4">
-            <button class="btn btn-warning">
+            <a href="#" class="btn btn-warning" onclick="editCitation('{{ row.article.value }}');" type="input">
                 <i class="fas fa-edit"></i>
-            </button>
-            <button class="btn btn-danger" onclick="alert('Delete Citation {{ row.uri }}')">
+            </a>
+            <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{{ row.article.value }}');">
                 <i class="fas fa-trash-alt"></i>
-            </button>
+            </a>
         </div>
     </div>
     {% endfor %}
@@ -157,9 +159,20 @@
               '<span aria-hidden="true">&times;</span></button></div>'].join('\n'));
     });
 
+ function deleteCitation(iri) {
+    var yesDelete = confirm("Are you sure you want to delete " + iri);
+    return false;
+ }
+
+ function editCitation(iri) {
+    console.log("editCitation " + iri);
+    return false;
+
+ }
 
 
-$("#academic-profile").on('submit', function(e) {
+
+ $("#academic-profile").on('submit', function(e) {
      e.preventDefault();
      $("#processingProfile").modal('show');
      var data = $("#academic-profile :input").serializeArray();

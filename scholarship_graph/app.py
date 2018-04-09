@@ -156,7 +156,7 @@ def academic_profile():
     if "iri" in fields:
         citation_sparql = CITATION.format(fields["iri"])
         citations_result = CONNECTION.datastore.query(citation_sparql)
-        for row in book_citations_result:
+        for row in citations_result:
             citations.append(row)
 	
     #book_citations = []
@@ -379,10 +379,12 @@ WHERE {{
         scholar=current_user,
         subject=info)
 
-@app.route("/login", methods=['POST'])
+@app.route("/login", methods=['GET', 'POST'])
 def cc_login():
     """Login Method """
     form = LDAPLoginForm()
+    if request.method.startswith("GET"):
+        return render_template("login.html", form=form)
     validation = form.validate_on_submit()
     if validation:
         login_user(form.user)

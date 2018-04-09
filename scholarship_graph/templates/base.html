@@ -23,6 +23,8 @@
                 <i class="far fa-address-card"></i> Profile</a>
             </a>
             <a href="{{ url_for('cc_logout') }}" class="btn btn-info"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            {% else %}
+            <a href="{{ url_for('cc_login') }}" class="btn btn-info"><i class="fas fa-sign-in-alt"></i> CC Sign-in</a>
             {% endif %}
         </div>
     {% endblock %}
