@@ -12,6 +12,7 @@ import click
 import requests
 import rdflib
 import uuid
+import utilities
 
 from flask import Flask, jsonify, render_template, redirect, request, session 
 from flask import current_app, url_for, flash
@@ -159,16 +160,7 @@ def academic_profile():
         for row in citations_result:
             citations.append(row)
 	
-    #book_citations = []
-    
-    #if "iri" in fields:
-        # book_citations_sparql = BOOK_CITATION.format(fields["iri"])
-        # click.echo("BOOK {}".format(book_citations_sparql))
-        # book_citations_result = CONNECTION.datastore.query(book_citation_sparql)
-        # for row in book_citations_result:
-        #    book_citations.append(row)
-        # click.echo(book_citations)
-        
+       
     subjects = CONNECTION.datastore.query(
     SUBJECTS.format(fields.get("email")))
     return render_template('academic-profile.html',
@@ -404,6 +396,37 @@ def add_work():
     work_form = ArticleForm(request.form)
     if work_form.validate():
         message = "Work fields {}".format(work_form.journal_title.data)
+        try:
+            raw_citation = {}
+            raw_citation["author"]=work_form.author_string.data
+            raw_citation["year"]=work_form.datePublished.data
+            raw_citation["journal_title"]=work_form.journal_title.data
+            raw_citation["article_title"]=work_form.article_title.data
+            if work_form.abstract.data != None:
+                raw_citation["abstract"]=work_form.abstract.data
+            if work_form.page_start.data !=None:
+                raw_citation["page_start"]=work_form.page_start.data
+            if work_form.page_end.data !=None:
+                raw_citation["page_end"]=work_form.page_end.data
+            if work_form.month.data != None:
+                raw_citation["month"]=work_form.month.data
+            if work_form.volume_number.data != None:
+                raw_citation["volume_number"]=work_form.volume_number.data
+            if work_form.issue_number.data != None:
+                raw_citation["issue_number"]=work_form.issue_number.data
+            if work_form.doi.data != None:
+                raw_citation["doi"]=work_form.doi.data
+            if work_form.url.data != None:
+                raw_citation["url"]=work_form.url.data
+            message = "raw_citation {}".format(raw_citation)
+            citation = utilities.Article_Citation(raw_citation,creative_works)
+            #citation.populate()
+            #citation.populate_article()
+            #citation.add_article()
+            #message = "Work successfully added"
+            
+        except:
+            message = "Work not successfully added: {}".format(work_form.journal_title.data)
         
     else:
         message = "Invalid fields validated {}".format(work_form.errors)
