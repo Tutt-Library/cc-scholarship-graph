@@ -13,6 +13,7 @@ import requests
 import rdflib
 import uuid
 import utilities
+from utilities import *
 
 from flask import Flask, jsonify, render_template, redirect, request, session 
 from flask import current_app, url_for, flash
@@ -522,10 +523,10 @@ def add_work():
                 raw_citation["url"]=work_form.url.data
             message = "raw_citation {}".format(raw_citation)
             citation = utilities.Article_Citation(raw_citation,creative_works)
-            #citation.populate()
-            #citation.populate_article()
-            #citation.add_article()
-            #message = "Work successfully added"
+            # citation.populate()
+            # citation.populate_article()
+            # citation.add_article()
+            # message = "Work successfully added"
             
         except:
             message = "Work not successfully added: {}".format(work_form.journal_title.data)
