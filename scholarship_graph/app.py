@@ -29,6 +29,7 @@ from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
+from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
 from .profiles import add_profile, update_profile
 from rdfframework.configuration import RdfConfigManager
 
@@ -77,6 +78,55 @@ def user_loader(user_id):
 def page_not_found(e):
     return render_template("404.html", scholar=current_user), 404
 
+def __send_email__(info):
+    sender = app.config.get('EMAIL')['user']
+    recipients = info.get('recipients') 
+    subject = info.get('subject')
+    text = info.get('text')
+    message = """From: <{0}>
+To: <{1}>
+Subject: {2}
+
+
+{3}""".format(
+        sender,
+        ",".join(recipients),
+        subject,
+        text)
+    message = email_text.MIMEText(message, _charset="UTF-8")
+    #try:
+    server = smtplib.SMTP(app.config.get('EMAIL')['host'],
+                              app.config.get('EMAIL')['port'])
+
+    server.ehlo()
+    if app.config.get('EMAIL')['tls']:
+        server.starttls()
+    server.ehlo()
+    server.login(sender,
+                 app.config.get("EMAIL")["password"])
+    server.sendmail(sender, recipients, message.as_string())
+    server.close()
+    #except:
+    #    print("Error trying to send email")
+    #    return False
+    return True
+
+@app.errorhandler(500)
+def server_error(e):
+    body = "Current user: {0}\nURL:{1}\nError:\n{2}".format(
+        current_user,
+        request.url,
+        str(e))
+    if app.config.get("DEBUG"):
+        click.echo(body)
+    else:
+        __send_email__({"recipients": app.config.get("ADMINS"),
+                        "subject": "CC Scholarship 500 Error",
+                        "text": body})
+        
+    return render_template("500.html", scholar=current_user), 500 
+    
+
 @app.template_filter("get_history")
 def person_history(person_iri):
     ul = etree.Element("ul")
@@ -91,6 +141,24 @@ def person_history(person_iri):
         org_link.text = row.get("year_label").get("value")
     return etree.tostring(ul).decode()
     
+
+@app.template_filter("get_stat")
+def generate_statistic(type_of):
+    type_of = type_of.lower()
+    if type_of.startswith("articles"):
+        result = CONNECTION.datastore.query(COUNT_ARTICLES)
+    elif type_of.startswith("book"):
+        result = CONNECTION.datastore.query(COUNT_BOOKS)
+    elif type_of.startswith("journal"):
+        result = CONNECTION.datastore.query(COUNT_JOURNALS)
+    elif type_of.startswith("org"):
+        result = CONNECTION.datastore.query(COUNT_ORGS)
+    elif type_of.startswith("users"):
+        result = CONNECTION.datastore.query(COUNT_PEOPLE)    
+    else:
+        result = None
+    if result:
+        return "{:,}".format(int(result[0].get("count").get("value")))
 
 @app.template_filter("get_statement")
 def research_statement(person_iri):
@@ -162,7 +230,7 @@ def academic_profile():
 	
        
     subjects = CONNECTION.datastore.query(
-    SUBJECTS.format(fields.get("email")))
+        SUBJECTS.format(fields.get("email")))
     return render_template('academic-profile.html',
                            scholar=current_user, 
                            form=profile_form,
@@ -289,32 +357,59 @@ def search_triplestore():
     return redirect(url_for("search_results"))
 
 def __keyword_search__(keywords):
-    output = []
+    weighting = dict()
     if len(keywords) < 1:
         return output
-    sparql = PREFIX
-    sparql += """
-SELECT ?person ?label ?statement
+    subject_sparql = PREFIX
+    subject_sparql += """
+SELECT ?person ?subject ?label ?statement
 WHERE {
-    ?person rdf:type bf:Person ;
-            schema:familyName ?family;
-            rdfs:label ?label .
+    ?subject rdf:type bf:Topic,  
+             rdfs:label ?label .
+    ?person schema:about ?subject .        
+    ?research_statement schema:accountablePerson ?person ;
+            schema:description ?statement .
+    """  
+    people_sparql = PREFIX 
+    people_sparql += """
+SELECT ?person ?statement
+WHERE {
+    ?person rdf:type bf:Person .
     ?research_statement schema:accountablePerson ?person ;
             schema:description ?statement ."""
     for token in keywords:
         for row in token.split(","):
             if len(row) < 1: continue
-            sparql += """\nFILTER(CONTAINS(lcase(str(?statement)), "{0}"))""".format(
+            people_sparql += """\nFILTER(CONTAINS(lcase(str(?statement)), "{0}"))""".format(
                 row.lower())
-    sparql += "} ORDER BY ?person"""
-    result = requests.post(app.config.get("TRIPLESTORE_URL"),
-        data={"query": sparql,
-              "format": "json"})
-    bindings = result.json().get('results').get('bindings')
-    for row in bindings:
-        output.append({"iri": row.get("person").get("value"),
-                       "name": row.get("label").get("value"),
-                       "statement": row.get("statement").get("value")})
+            subject_sparql += """\nFILTER(CONTAINS(lcase(str(?label)), "{0}"))""".format(
+                row.lower())
+    for raw_sparql in [subject_sparql, people_sparql]:
+        raw_sparql += "} ORDER BY ?person"""
+    subject_result = CONNECTION.datastore.query(subject_sparql)
+    for row in subject_result:
+        person_iri = row.get("person").get("value")
+        if person_iri in output:
+            output[person_iri]["subjects"].append(
+                {"iri": row.get("subject").get("value"),
+                 "label": row.get("label").get("value")})
+            output["weight"] += 1
+        else:
+            output[person_iri] = {"subjects": [
+                {"iri": row.get("subject").get("value"),
+                 "label": row.get("label").get("value")},],
+                "statement": row.get("statement").get("value"),
+                "weight": 1}
+    people_result = CONNECTION.datastore.query(people_sparql)
+    for row in people_result:
+        person_iri = row.get("person").get("value")
+        if person_iri in output:
+            output[person_iri]["weight"] += 1
+        else:
+            output[person_iri] = {
+                "statement": row.get("statement").get("value"),
+                "weight": 1}
+        
     return output
          
 
@@ -376,14 +471,21 @@ def cc_login():
     """Login Method """
     form = LDAPLoginForm()
     if request.method.startswith("GET"):
-        return render_template("login.html", form=form)
+        return render_template("login.html", 
+            login=form, 
+            scholar=current_user,
+        )
     validation = form.validate_on_submit()
     if validation:
         login_user(form.user)
         return redirect(url_for('academic_profile'))
     else:
         flash("Invalid username or password")
-        return redirect(url_for('home'))
+        return render_template("login.html", 
+            login=form,
+            scholar=current_user)
+
+
 
 @app.route('/logout', methods=['POST', 'GET'])
 def cc_logout():

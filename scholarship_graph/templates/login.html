@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+    {# Start first row #}
+    <div class="row">
+     {# Start column #}
+     <div class="col-6">
+     {# Start card #}
+      <div class="card">
+          <div class="card-header">
+               <h3 class="card-title">CC Single Sign-In</h3>
+          </div>
+         {# Start card-body #}
+          <div class="card-body">
+              <form method="POST" action="{{ url_for('cc_login') }}" id="cc-login" >
+              {{ login.csrf_token }}    
+              <div class="form-group">
+                  {{ login.username.label }}
+                  {{ login.username(class_='form-control') }}
+                  {% if login.errors %}
+                  <div class="invalid-feedback">{{ login.errors.get('username').0|safe }}</div>
+                  {% endif %}
+              </div>
+              <div class="form-group">
+                  {{ login.password.label }}
+                  {{ login.password(class_='form-control') }}
+                  {% if login.errors %}
+                  <div class="invalid-feedback">{{ login.errors.get('password').0|safe }}</div>
+                  {% endif %}
+              </div>
+              <div class="text-center">
+                  <input type="submit" class="btn btn-default" value="Sign In"></input>
+              </div>
+              </form>
+          {# END card body #}  
+          </div>
+      {# END card #}
+      </div> 
+     {# END column #}
+     </div>
+    {# End first row #}
+    </div>
+</div>
+{% endblock %}
+
+{% block page_js %}
+{% if login.errors %}
+<script>
+{% for key in login.errors.keys() %}
+  $('#{{ key }}').addClass("is-invalid");
+{% endfor %}
+</script>
+{% endif %}
+{% endblock %}
+

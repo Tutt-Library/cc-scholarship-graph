@@ -71,7 +71,8 @@ WHERE {{
 
 	}}
 	ORDER BY DESC(?publicationDate)"""
-	
+
+
 BOOK_CITATION = PREFIX + """
 SELECT DISTINCT ?book ?author ?title ?isbn ?publicationDate ?provisionActivityStatement ?editionStatement ?summary ?note ?url
 WHERE {{
@@ -88,6 +89,39 @@ WHERE {{
 	OPTIONAL {{?book schema:url ?url.}}
 	}}
 	ORDER BY DESC(?publicationDate)"""
+
+COUNT_ARTICLES = PREFIX + """
+SELECT (COUNT(?article) as ?count)
+WHERE {
+    ?article rdf:type schema:ScholarlyArticle .
+}
+"""
+
+COUNT_BOOKS = PREFIX + """
+SELECT (COUNT(?book) as ?count)
+WHERE {
+    ?book rdf:type bf:Book .
+}"""
+
+COUNT_JOURNALS = PREFIX + """
+SELECT (COUNT(?journal) as ?count)
+WHERE {
+    ?journal rdf:type schema:Periodical .
+}"""
+
+COUNT_ORGS = PREFIX + """
+SELECT (COUNT(?org) as ?count)
+WHERE {
+    ?org rdf:type ?type .
+    FILTER(?type=schema:CollegeDepartment||?type=schema:Library)
+}"""
+
+COUNT_PEOPLE = PREFIX + """
+SELECT (COUNT(?person) as ?count)
+WHERE {
+    ?person rdf:type bf:Person .
+}"""
+	
 	
 EMAIL_LOOKUP = PREFIX + """SELECT ?person 
 WHERE {{ ?person schema:email ?email .

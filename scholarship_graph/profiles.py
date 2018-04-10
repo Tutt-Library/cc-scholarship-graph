@@ -237,6 +237,7 @@ def update_profile(**kwargs):
     """Updates existing triples based on form values"""
     config_manager = kwargs.get('config_manager')
     connection = config_manager.conns
+    BF = config_manager.nsm.bf
     SCHEMA = config_manager.nsm.schema
     
     form = kwargs.get('form')
@@ -321,6 +322,10 @@ def update_profile(**kwargs):
             subject=iri_subject,
             predicate=rdflib.RDFS.label)
         if existing_label is None:
+            git_profile.fast_subjects.add(
+                (iri_subject,
+                 rdflib.RDF.type,
+                 BF.Topic.rdflib)) 
             git_profile.fast_subjects.add(
                 (iri_subject, 
                  rdflib.RDFS.label,

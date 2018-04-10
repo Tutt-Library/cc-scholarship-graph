@@ -4,7 +4,7 @@
 <div class="container">
     <h1>Colorado College</h1>
     <div class="row">
-        <div class="col-8">
+        <div class="col-7">
             <h2>Scholarship Database</h2>
             <form method="POST" action="{{ url_for('search_triplestore') }}">
                 {{ search_form.csrf_token }}
@@ -38,42 +38,8 @@
                 </div>
             </form>
         </div>
-        <div class="col-4">
-            {% with login_errors = get_flashed_messages() %}
-              {% for error in login_error %}
-                  <div class="alert alert-danger">{{ error }}</div>
-              {% endfor %}
-            {% endwith %}
-            {% if scholar.is_anonymous %}
-            <div class="card">
-                <div class="card-header">
-                     CC Single Sign-In
-                </div>
-                <div class="card-body">
-                    <form method="POST" action="{{ url_for('cc_login') }}"  id="cc-login" >
-                    {{ login.csrf_token }}    
-                    {% if login.errors  %}{{ login.errors }}{% endif %}
-                    <div class="form-group">
-                        {{ login.username.label }}
-                        {{ login.username(class_='form-control') }}
-                        {% if 'username' in login.errors %}
-                        <div class="invalid-feedback">{{ login.errors.get('username') }}</div>
-                        {% endif %}
-                    </div>
-                    <div class="form-group">
-                        {{ login.password.label }}
-                        {{ login.password(class_='form-control') }}
-                        {% if 'password' in login.errors %}
-                        <div class="invalid-feedback">{{ login.errors.get('password') }}</div>
-                        {% endif %}
-                    </div>
-                    <div class="text-center">
-                        <input type="submit" class="btn btn-default" value="Sign In"></input>
-                    </div>
-                    </form>
-                </div>
-            </div>
-           {% endif %}
+        <div class="col-5">
+            {% include "highlight.html" %}
         </div>
     </div>
 </div>
