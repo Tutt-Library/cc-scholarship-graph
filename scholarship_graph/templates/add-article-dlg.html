@@ -13,19 +13,16 @@
       <div class="modal-body">
 			{{ form.csrf_token }}
             <h3>New Article Form</h3>
-
-			<label>{{ new_article_form.CC_author.label }} <span class="text-danger">*</span></label>
-			{{ new_article_form.CC_author(class_="form-control") }}
-			<label>{{ new_article_form.author_string.label }}</label>
+			<label>{{ new_article_form.author_string.label }} <span class="text-danger">*</span></label>
 			{{ new_article_form.author_string(class_="form-control") }}
-			<label> {{ new_article_form.article_title.label }} <span class="text-danger">*</span></label></label>
+			<label> {{ new_article_form.article_title.label }} <span class="text-danger">*</span></label>
 			{{ new_article_form.article_title(class_="form-control") }}
-			<label>{{ new_article_form.journal_title.label }} <span class="text-danger">*</span></label> </label>
+			<label>{{ new_article_form.journal_title.label }} <span class="text-danger">*</span></label> 
 			{{ new_article_form.journal_title(class_="form-control") }}
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
-						<label>{{ new_article_form.datePublished.label }} <span class="text-danger">*</span></label></label>
+						<label>{{ new_article_form.datePublished.label }} <span class="text-danger">*</span></label>
 						{{ new_article_form.datePublished(class_="form-control") }}
 					</div>
 				</div>
