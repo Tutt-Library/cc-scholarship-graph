@@ -18,14 +18,24 @@
 			{{ new_article_form.CC_author(class_="form-control") }}
 			<label>{{ new_article_form.author_string.label }}</label>
 			{{ new_article_form.author_string(class_="form-control") }}
-			<label> {{ new_article_form.article_title.label }}</label>
+			<label> {{ new_article_form.article_title.label }} <span class="text-danger">*</span></label></label>
 			{{ new_article_form.article_title(class_="form-control") }}
-			<label>{{ new_article_form.journal_title.label }}</label>
+			<label>{{ new_article_form.journal_title.label }} <span class="text-danger">*</span></label> </label>
 			{{ new_article_form.journal_title(class_="form-control") }}
-			<label>{{ new_article_form.datePublished.label }}</label>
-			{{ new_article_form.datePublished(class_="form-control") }}
-			<label>{{ new_article_form.month.label }}</label>
-			{{ new_article_form.month(class_="form-control") }}
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label>{{ new_article_form.datePublished.label }} <span class="text-danger">*</span></label></label>
+						{{ new_article_form.datePublished(class_="form-control") }}
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label>{{ new_article_form.month.label }}</label>
+						{{ new_article_form.month(class_="form-control") }}
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
@@ -54,9 +64,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label>{{ new_article_form.url.label }}</label>
+						{{ new_article_form.url(class_="form-control") }}
+					</div>
+				</div>				
+				<div class="col">
+					<div class="form-group">
+						<label>{{ new_article_form.doi.label }}</label>
+						{{ new_article_form.doi(class_="form-control") }}
+					</div>
+				</div>
+			</div>
 			<label>{{ new_article_form.abstract.label }}</label>
-			{{ new_article_form.abstract(class_="form-control") }}			
-			
+			{{ new_article_form.abstract(class_="form-control") }}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -24,8 +24,8 @@ class ProfileForm(FlaskForm):
     research_stmt = TextAreaField("Research Statement")
 
 class CitationForm(FlaskForm):
-    author_string = StringField("Full list of authors")
-    CC_author = StringField("CC Author(s)",validators=[DataRequired()])
+    author_string = StringField("Full list of authors, if different from CC Authors")
+    CC_author = StringField("CC Author(s). If more than one CC author, please separate with semi-colons",validators=[DataRequired()])
     datePublished = StringField("Year of publication", validators=[DataRequired()])
     abstract = TextAreaField("Abstract")
     citation_type = HiddenField("Citation type")
