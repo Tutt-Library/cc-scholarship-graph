@@ -29,6 +29,12 @@
             {% for row in people %}
                 <li><a href="{{ url_for('person_view', iri=row.iri) }}">{{ row.name }}</a>
                 {% if row.statement %}<p>{{ row.statement|safe }}</p>{% endif %}
+                {% if "subjects" in row %}
+                <h4>FAST Subjects</h4>
+                {% for subject in row.subjects %}
+                   <a href="{{ url_for('subject_view', iri=subject.iri) }}"> {{ subject.label }}</a>
+                {% endfor %}
+                {% endif %}
                 </li>
             {% endfor %}
             </ul>

@@ -358,18 +358,18 @@ def search_triplestore():
     return redirect(url_for("search_results"))
 
 def __keyword_search__(keywords):
-    weighting = dict()
+    output = dict()
     if len(keywords) < 1:
         return output
     subject_sparql = PREFIX
     subject_sparql += """
 SELECT ?person ?subject ?label ?statement
 WHERE {
-    ?subject rdf:type bf:Topic,  
+    ?subject rdf:type bf:Topic;  
              rdfs:label ?label .
-    ?person schema:about ?subject .        
-    ?research_statement schema:accountablePerson ?person ;
-            schema:description ?statement .
+    ?statement_iri schema:about ?subject ;
+                   schema:accountablePerson ?person ;
+                   schema:description ?statement .        
     """  
     people_sparql = PREFIX 
     people_sparql += """
@@ -385,9 +385,10 @@ WHERE {
                 row.lower())
             subject_sparql += """\nFILTER(CONTAINS(lcase(str(?label)), "{0}"))""".format(
                 row.lower())
-    for raw_sparql in [subject_sparql, people_sparql]:
-        raw_sparql += "} ORDER BY ?person"""
+    subject_sparql += "} ORDER BY ?person"
+    people_sparql += "} ORDER BY ?person"
     subject_result = CONNECTION.datastore.query(subject_sparql)
+    click.echo(subject_sparql)
     for row in subject_result:
         person_iri = row.get("person").get("value")
         if person_iri in output:
@@ -399,6 +400,7 @@ WHERE {
             output[person_iri] = {"subjects": [
                 {"iri": row.get("subject").get("value"),
                  "label": row.get("label").get("value")},],
+                "iri": person_iri,
                 "statement": row.get("statement").get("value"),
                 "weight": 1}
     people_result = CONNECTION.datastore.query(people_sparql)
@@ -408,10 +410,14 @@ WHERE {
             output[person_iri]["weight"] += 1
         else:
             output[person_iri] = {
+                "iri": person_iri,
                 "statement": row.get("statement").get("value"),
                 "weight": 1}
-        
-    return output
+    for key in output.keys():
+        name_result = CONNECTION.datastore.query(
+            PERSON_LABEL.format(key))
+        output[key]["name"] = name_result[0].get("label").get("value")
+    return sorted(output.values(), key=lambda x: x['weight'])
          
 
 def __people_search__(people):
