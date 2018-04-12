@@ -1,9 +1,11 @@
 """Profiles for Scholarship App"""
 __author__ = "Jeremy Nelson"
 
+import base64
 import datetime
 import hashlib
 import os
+import pprint
 import subprocess
 import uuid
 
@@ -75,6 +77,7 @@ class GitProfile(object):
                     data=raw_turtle,
                     format='turtle')
             if content.name.startswith("creative-works"):
+                self.creative_works_git = content
                 self.creative_works.parse(
                     data=raw_turtle,
                     format='turtle')
@@ -177,18 +180,19 @@ def __generate_citation_html__(citation):
         span = div.new_tag("span")
         span.string = name
         col_1.append(span)
-    if hasattr(citation, "year"):
-        span = div.new_tag("span")
-        span.string = "({0})".format(citation.year)
     if hasattr(citation, "journal_title"):
         em = div.new_tag("em")
         em.string = citation.journal_title
         col_1.append(em)
+    if hasattr(citation, "year"):
+        span = div.new_tag("span")
+        span.string = "({0})".format(citation.year)
+        col_1.append(span)
     if hasattr(citation, "volume_number") and len(citation.volume_number) > 0:
         span = div.new_tag("span")
         span.string = "v. {}".format(citation.volume_number)
         col_1.append(span)
-    if hasattr(citation, "journal_issue") and len(citation.issue_number) > 0:
+    if hasattr(citation, "issue_number") and len(citation.issue_number) > 0:
         span = div.new_tag("span")
         span.string = " no. {}".format(citation.issue_number)
         col_1.append(span)
@@ -241,38 +245,49 @@ def add_creative_work(**kwargs):
     work_type = kwargs.get("work_type", "article")
     BF = config_manager.nsm.bf
     SCHEMA = config_manager.nsm.schema
-    email_results = connection.datastore.query(
-        EMAIL_LOOKUP.format(
-            current_user.data.get('mail').lower()))
-    if len(results) > 0:
-        generated_by = rdflib.URIRef(results[0].get("person").get('value'))
+    sparql = EMAIL_LOOKUP.format(
+            current_user.data.get('mail').lower())
+    email_results = connection.datastore.query(sparql)
+    if len(email_results) > 0:
+        generated_by = rdflib.URIRef(
+            email_results[0].get("person").get('value'))
 
     if work_type.startswith("article"):
         citation = utilities.Article_Citation(raw_citation,
-            git_profile.creative_works)
+            git_profile.creative_works,
+            git_profile.cc_people,
+            False)
         citation.populate()
         citation.populate_article()
         citation.add_article()
     elif work_type.startswith("book"):
         citation = utilities.Book_Citation(raw_citation,
-            git_profile.creative_works)
+            git_profile.creative_works,
+            git_profile.cc_people,
+            False)
         citation.poulate()
         citation.populate_book()
         citation.add_book()
     if generated_by:
-        add_qualified_generation(git_profile.research_statements, 
-            citation.bib_iri, 
+
+        if hasattr(citation, "bib_iri") :
+            work_iri = citation.bib_iri
+        elif hasattr(citation, "doi_iri"):
+            work_iri = citation.doi_iri
+        add_qualified_generation(git_profile.creative_works, 
+            work_iri, 
             generated_by)
     
-    
-    git_profile.__save_graph__(
-        git_repo=git_profile.scholarship_repo,
-        file_path="/data/creative-works.ttl",
-        graph_name="creative_works")
+    with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
+        fo.write(git_profile.creative_works.serialize(format='turtle'))
+    #git_profile.__save_graph__(
+    #    git_repo=git_profile.scholarship_repo,
+    #    file_path="/data/creative-works.ttl",
+    #    graph_name="creative_works")
     return {"message": "Added {} to Scholarship".format(work_type),
             "status": True,
             "html":  __generate_citation_html__(citation),
-            "iri": citation.bib_iri}
+            "iri": work_iri}
           
 
     

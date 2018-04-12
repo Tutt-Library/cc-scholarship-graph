@@ -79,17 +79,18 @@
     </div> 
     <hr>
     <h3>Creative Works (books, articles, visual, audio, video, etc.)</h3>
+    <span style="font-weight: bold; font-size: 1.2em">Add</span>
     <button class="btn btn-success" 
             data-toggle="modal" data-target="#new-article-dlg"
             onclick="return false"
             aria-label="Add Article">
-                        <i class="fas fa-file-alt"></i>
+                        <i class="fas fa-file-alt"></i> Article
     </button>
 	<button class="btn btn-success"
             onclick="return false"
 	    data-toggle="modal" data-target="#book-dlg"
 	    aria-label="Add Book">
-						<i class="fas fa-book"></i>
+						<i class="fas fa-book"></i> Book
 	</button>
     {% for row in citations %}
     <div class="row citation">

@@ -1,7 +1,7 @@
 """Flask web application for Colorado College Scholarship Database"""
 __author__ = "Jeremy Nelson","Diane Westerfield"
 
-import base64
+
 import datetime
 import hashlib
 import os
@@ -325,7 +325,6 @@ def person_view():
         person_info["citations"].append(row)
 
     book_citations_sparql = BOOK_CITATION.format(person_iri)
-    #click.echo(book_citations_sparql)
     book_citations_result = CONNECTION.datastore.query(book_citations_sparql)
     for row in book_citations_result:
         person_info["book_citations"].append(row)
@@ -393,7 +392,6 @@ WHERE {
     subject_sparql += "} ORDER BY ?person"
     people_sparql += "} ORDER BY ?person"
     subject_result = CONNECTION.datastore.query(subject_sparql)
-    click.echo(subject_sparql)
     for row in subject_result:
         person_iri = row.get("person").get("value")
         if person_iri in output:
@@ -513,48 +511,55 @@ def add_work():
     elif citation_type.startswith("book"):
         work_form = BookForm(request.form)
     if work_form.validate():
-        try:
-            raw_citation = {}
-            raw_citation["author"]=work_form.author_string.data
-            raw_citation["year"]=work_form.datePublished.data
-            if citation_type.startswith("article"):
-                raw_citation["journal_title"]=work_form.journal_title.data
-                raw_citation["article_title"]=work_form.article_title.data
-                if work_form.page_start.data !=None:
-                    raw_citation["page_start"]=work_form.page_start.data
-                if work_form.page_end.data !=None:
-                    raw_citation["page_end"]=work_form.page_end.data
-                if work_form.month.data != None:
-                    raw_citation["month"]=work_form.month.data
-                if work_form.volume_number.data != None:
-                    raw_citation["volume_number"]=work_form.volume_number.data
-                if work_form.issue_number.data != None:
-                    raw_citation["issue_number"]=work_form.issue_number.data
-                if work_form.doi.data != None:
-                    raw_citation["doi"]=work_form.doi.data
-                if work_form.url.data != None:
-                    raw_citation["url"]=work_form.url.data
-            if work_form.abstract.data != None:
-                raw_citation["abstract"]=work_form.abstract.data
-            output = add_creative_work(
-                config=app.config,
-                config_manager=CONFIG_MANAGER,
-                current_user=current_user,
-                work_type=citation_type)
-        except:
-            click.echo("Error {}".format(
-                traceback.print_tb(sys.exc_info()[-1])))
-            output = {
-                "message": """Work from journal {} not added, 
-Stack Trace:\n{}""".format(
-                    work_form.journal_title.data,
-                    traceback.print_tb(sys.exc_info()[-1])),
-                "status": False }
-    else:
-        output = {"message": "Invalid fields",
-                  "status": False,
-                  "errors": work_form.errors}
-    return jsonify(output)
+##        try:
+        raw_citation = {"ENTRYTYPE": citation_type,
+                         "author": work_form.author_string.data,
+                         "year": work_form.datePublished.data}
+        if citation_type.startswith("article"):
+            raw_citation["journal"]=work_form.journal_title.data
+            raw_citation["title"]=work_form.article_title.data
+            if work_form.page_start.data !=None:
+                raw_citation["page_start"]=work_form.page_start.data
+            if work_form.page_end.data !=None:
+                raw_citation["page_end"]=work_form.page_end.data
+            if work_form.month.data != None:
+                raw_citation["month"]=work_form.month.data
+            if work_form.volume_number.data != None:
+                raw_citation["volume_number"]=work_form.volume_number.data
+            if work_form.issue_number.data != None:
+                raw_citation["number"]=work_form.issue_number.data
+            if work_form.doi.data != None:
+                raw_citation["doi"]=work_form.doi.data
+            if work_form.url.data != None:
+                raw_citation["link"]=work_form.url.data
+        elif citation_type.startswith("book-chapter"):
+            pass
+        elif citation_type.startswith("book"):
+            raw_citation["title"] = work_form.book_title.data
+        else:
+            abort(500)
+        if work_form.abstract.data != None:
+            raw_citation["abstract"]=work_form.abstract.data
+        output = add_creative_work(
+            config=app.config,
+            citation=raw_citation,
+            config_manager=CONFIG_MANAGER,
+            current_user=current_user,
+            work_type=citation_type)
+##        except:
+##            click.echo("Error {}".format(
+##                traceback.print_tb(sys.exc_info()[-1])))
+##            output = {
+##                "message": """Work from journal {} not added, 
+##Stack Trace:\n{}""".format(
+##                    work_form.journal_title.data,
+##                    traceback.print_tb(sys.exc_info()[-1])),
+##                "status": False }
+##    else:
+##        output = {"message": "Invalid fields",
+##                  "status": False,
+##                  "errors": work_form.errors}
+        return jsonify(output)
 
 @app.route("/")
 def home():

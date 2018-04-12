@@ -14,7 +14,9 @@ from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
 
 # tip: export citations from RefWorks. Direct export from Web of Science does not work.
-
+BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+CITATION_EXTENSION = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/")
+SCHEMA = rdflib.Namespace("http://schema.org/")
 
 def author_lookup(people_graph,lookup_string):
 # check the people graph for a match on name
@@ -130,9 +132,15 @@ def unique_IRI(self):
 
 class Citation(object):
 
-    def __init__(self,raw_citation,creative_works):
+    def __init__(self, 
+            raw_citation, 
+            creative_works, 
+            people, 
+            is_interactive=True):
         self.raw_citation=raw_citation
         self.creative_works=creative_works
+        self.people = people
+        self.is_interactive=is_interactive
 
     def __unique_IRI__(self):
         unique_IRI="http://catalog.coloradocollege.edu/{}".format(uuid.uuid1())
@@ -204,12 +212,12 @@ class Citation(object):
             author_name_parsed = author_name_parsed.strip()
 
 
-            if author_lookup(people,author_name_parsed) != None:
-                author_iri=author_lookup(people,author_name_parsed)
+            if author_lookup(self.people, author_name_parsed) != None:
+                author_iri=author_lookup(self.people, author_name_parsed)
                 # print("Author",author_name_parsed,"found in author lookup")
                 self.cc_authors.append(author_iri)
             elif alternate_author_lookup(people,author_name_parsed) != None:
-                author_iri=alternate_author_lookup(people,author_name_parsed)
+                author_iri=alternate_author_lookup(self.people, author_name_parsed)
                 # print("Author",author_name_parsed,"found in alternate author lookup")
                 self.cc_authors.append(author_iri)
             #to do: code to search on family name plus initial first letter of givenname?
@@ -218,7 +226,7 @@ class Citation(object):
                 pass
                
         # attempt to salvage a citation with no matched CC authors        
-        if self.cc_authors == []:
+        if self.cc_authors == [] and self.is_interactive:
             print("The following citation is lacking one or more CC authors: ")
             print(self.raw_citation)
             user_submission=input("No CC author found, input one CC author, or multiple authors separated by semicolons >")
@@ -242,7 +250,7 @@ class Citation(object):
                     author_iri=rdflib.URIRef(author_iri)
                     self.cc_authors.append(author_iri)
                     if in_graph == "n":                                                
-                        people.add((author_iri,rdflib.RDF.type,bf.Person))
+                        people.add((author_iri,rdflib.RDF.type, BF.Person))
                         people.add((author_iri,RDFS.label,rdflib.Literal(person,lang="en")))
                         given_name=input("What is the author's given (first) name?")
                         people.add((author_iri,SCHEMA.givenName,rdflib.Literal(given_name,lang="en")))
@@ -255,7 +263,8 @@ class Citation(object):
                         print("YOU STILL NEED TO ADD THIS PERSON TO THE ACADEMIC YEAR GRAPH(s)")
 
         if self.cc_authors == []:
-            print("ERROR NO CC AUTHOR",self.raw_citation)
+            if self.is_interactive:
+                print("ERROR NO CC AUTHOR",self.raw_citation)
             sys.exit(0)
 
         #check cc_authors list for valid URIRef
@@ -264,7 +273,8 @@ class Citation(object):
             if type(self.cc_authors[i]) != rdflib.term.URIRef:
                 self.cc_authors[i]=rdflib.URIRef(self.cc_authors[i])
             i = i + 1
-        print("CC Authors: ",self.cc_authors,"for ",self.raw_citation["title"])
+        if self.is_interactive:
+            print("CC Authors: ",self.cc_authors,"for ",self.raw_citation["title"])
         
 
     def __year__(self):
@@ -284,9 +294,16 @@ class Citation(object):
 
                                       
 class Article_Citation(Citation):
-    def __init__(self,raw_citation,creative_works):
-        self.raw_citation=raw_citation
-        self.creative_works=creative_works
+    def __init__(self,
+            raw_citation, 
+            creative_works, 
+            people,
+            is_interactive=True):
+        super(Article_Citation, self).__init__(
+            raw_citation,
+            creative_works,
+            people,
+            is_interactive)
 
     def populate_article(self):
         self.__journal_title__()
@@ -300,8 +317,9 @@ class Article_Citation(Citation):
     def __journal_title__(self):
         self.journal_title = self.raw_citation["journal"]
         # check for duplicates
-        if journal_lookup(creative_works,self.journal_title) != None:
-            self.journal_string=journal_lookup(creative_works,self.journal_title)
+        journal_str = journal_lookup(self.creative_works,self.journal_title)
+        if journal_str != None:
+            self.journal_string=journal_str
         else:
             self.journal_string = self.__unique_IRI__()
         self.journal_iri=rdflib.URIRef(self.journal_string)
@@ -337,12 +355,14 @@ class Article_Citation(Citation):
         # If there is a real doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
         # Please note some citations have a doi field entry which isn't a real doi but a base link.
         self.url = ""
-        if "doi" in self.raw_citation.keys():
+        click.echo("URL test: {}".format("doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0))
+        if "doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0:
             if self.raw_citation["doi"].startswith("http") == False:
                 self.url="https://doi.org/" + self.raw_citation["doi"]
         elif "link" in self.raw_citation.keys():
-            if self.raw_citation["link"].startswith("http"):
-                self.url = self.raw_citation["link"]
+            click.echo("Should set link and url")
+            #if self.raw_citation["link"].startswith("http"):
+            self.url = self.raw_citation["link"]
 
     def __month__(self):
         
@@ -353,16 +373,15 @@ class Article_Citation(Citation):
        
     def __doi__(self):
         # doi is the unique identifier for articles
-        if "doi" in self.raw_citation.keys():
-            #pdb.set_trace()
-            if self.raw_citation["doi"]!="" :
-                self.doi_string = self.raw_citation["doi"]
-                self.doi_string = "https://doi.org/" + self.doi_string
-                self.doi_iri=rdflib.URIRef(self.doi_string)
+        if "doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0:
+            self.doi_string = self.raw_citation["doi"]
+            self.doi_string = "https://doi.org/" + self.doi_string
+            self.doi_iri=rdflib.URIRef(self.doi_string)
         else:
             self.doi_iri=self.__unique_IRI__()
-        if doi_lookup(creative_works,self.doi_iri) != None:
-            print("ERROR DUPLICATE DOI FOUND",self.raw_citation["doi"])
+        if doi_lookup(self.creative_works, self.doi_iri) != None: 
+            if self.is_interactive:
+                print("ERROR DUPLICATE DOI FOUND",self.raw_citation["doi"])
             sys.exit(0)
 
 
@@ -374,8 +393,8 @@ class Article_Citation(Citation):
                 self.volume_number = self.raw_citation["volume"]
                 if self.raw_citation["volume"] != "" or self.raw_citation["volume"] != None:
                     #check for duplicates else assign new iri for volume
-                    if volume_lookup(creative_works,self.volume_number,self.journal_iri):
-                        self.volume_iri = volume_lookup(creative_works,self.volume_number,self.journal_iri)
+                    if volume_lookup(self.creative_works, self.volume_number,self.journal_iri):
+                        self.volume_iri = volume_lookup(self.creative_works,self.volume_number,self.journal_iri)
                     else:    
                         self.volume_iri = self.__unique_IRI__()     
         
@@ -392,8 +411,9 @@ class Article_Citation(Citation):
         # Business logic for adding citations
         # print(self.raw_citation)
         # add the journal title
-        if doi_lookup(creative_works,self.doi_iri):
-            print("Article exists!")
+        if doi_lookup(self.creative_works, self.doi_iri):
+            if self.is_interactive:
+                print("Article exists!")
             sys.exit(0)
         
         self.creative_works.add((self.journal_iri,rdflib.RDF.type,SCHEMA.Periodical))
@@ -413,14 +433,16 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
         
         # add url
-        self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.URLRef(self.url)))
+        self.creative_works.add((self.doi_iri, SCHEMA.url, rdflib.URIRef(self.url)))
 
         # add the author
         for author in self.cc_authors:
             self.creative_works.add((self.doi_iri,SCHEMA.author,author))
 
         # add the author string
-        self.creative_works.add((self.doi_iri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
+        self.creative_works.add((self.doi_iri,
+                                 CITATION_EXTENSION.authorString,
+                                 rdflib.Literal(self.author_string)))
 
         # add the publication year
         self.creative_works.add((self.doi_iri,SCHEMA.datePublished,rdflib.Literal(self.year)))
@@ -452,8 +474,8 @@ class Article_Citation(Citation):
         # if there is no volume but there is an issue number, add the the issue to the journal and add the article to the issue
         elif (self.volume_number == "") and (self.issue_number != ""):
             #check for dups
-            if issue_lookup(creative_works,self.issue_number,self.journal_iri) != None:
-                self.issue_iri=issue_lookup(creative_works,self.issue_number,self.journal_iri)
+            if issue_lookup(self.creative_works,self.issue_number,self.journal_iri) != None:
+                self.issue_iri=issue_lookup(self.creative_works,self.issue_number,self.journal_iri)
                 self.creative_works.add((self.doi_iri,SCHEMA.partOf,self.issue_iri))
             else:
                 self.creative_works.add((self.issue_iri,rdflib.RDF.type,SCHEMA.issueNumber))
@@ -479,9 +501,16 @@ class Article_Citation(Citation):
                 
 
 class Book_Citation(Citation):
-    def __init__(self,raw_citation,creative_works):
-        self.raw_citation=raw_citation
-        self.creative_works=creative_works
+    def __init__(self, 
+            raw_citation,
+            creative_works,
+            people,
+            is_interactive=True):
+        super(Book_Citation, self).__init__(
+            raw_citation,
+            creative_works,
+            people,
+            is_interactive)
         
     def populate_book(self):
         self.__title__()
@@ -550,7 +579,6 @@ class Book_Citation(Citation):
 
     def add_book(self):
 
-        bf = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
         #bib number as unique ID?
         if "bib" in self.raw_citation.keys():
             self.bib=self.raw_citation["bib"]
@@ -568,9 +596,9 @@ class Book_Citation(Citation):
             self.isbn=self.raw_citation["isbn"]
         else:
             self.isbn = ""
-        self.creative_works.add((self.bib_uri,rdflib.RDF.type,bf.Book))
+        self.creative_works.add((self.bib_uri,rdflib.RDF.type, BF.Book))
 
-        self.creative_works.add((self.bib_uri,bf.isbn,rdflib.Literal(self.isbn)))
+        self.creative_works.add((self.bib_uri, BF.isbn,rdflib.Literal(self.isbn)))
 
 
         #add author - use author instead of agent to be consistent with articles
@@ -578,24 +606,28 @@ class Book_Citation(Citation):
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
     
         #add title
-        self.creative_works.add((self.bib_uri,bf.title,rdflib.Literal(self.title,lang="en")))
+        self.creative_works.add((self.bib_uri, BF.title,rdflib.Literal(self.title,lang="en")))
         
         #add provision_publisher (provision activity statement in bf, equivalent to 264 field)
-        self.creative_works.add((self.bib_uri,bf.provisionActivityStatement,rdflib.Literal(self.publisher_provision,lang="en")))
+        self.creative_works.add((self.bib_uri,
+                                 BF.provisionActivityStatement,
+                                 rdflib.Literal(
+                                    self.publisher_provision,lang="en")))
 
         #add year (in case it is needed separately)
         self.creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
                  
         #add edition if present
-        self.creative_works.add((self.bib_uri,bf.editionStatement,rdflib.Literal(self.edition,lang="en")))
+        self.creative_works.add((self.bib_uri, BF.editionStatement,rdflib.Literal(self.edition,lang="en")))
                
         #add abstract (summary) if present
         if self.abstract != "":
-            self.creative_works.add((self.bib_uri,bf.Summary,rdflib.Literal(self.abstract,lang="en")))
+            self.creative_works.add((self.bib_uri, BF.Summary,rdflib.Literal(self.abstract,lang="en")))
 
         # add note if present
         if self.note != "":
-            self.creative_works.add((self.bib_uri,bf.Note,rdflib.Literal(self.note,lang="en")))
+            self.creative_works.add((self.bib_uri, 
+                BF.Note,rdflib.Literal(self.note,lang="en")))
 
         # add the citation type
         self.creative_works.add((self.bib_uri,CITATION_EXTENSION.citationType,rdflib.Literal(self.citation_type,lang="en")))
@@ -609,9 +641,16 @@ class Book_Citation(Citation):
             self.creative_works.add((self.bib_uri,SCHEMA.url,rdflib.Literal(self.url)))
             
 class Book_Chapter_Citation(Book_Citation):
-    def __init__(self,raw_citation,creative_works):
-        self.raw_citation=raw_citation
-        self.creative_works=creative_works
+    def __init__(self,
+            raw_citation,
+            creative_works,
+            people,
+            is_interactive=True):
+        super(Book_Chapter_Citation, self).__init__(
+            raw_citation,
+            creative_works,
+            people,
+            is_interactive)
 
             
 def load_citations(bibtext_filepath, creative_works_path):
@@ -633,14 +672,14 @@ def load_citations(bibtext_filepath, creative_works_path):
     print("Working, please wait ...")
     for row in bib_database.entries:
         if row["ENTRYTYPE"]=="article":
-            citation=Article_Citation(row,creative_works)
+            citation=Article_Citation(row, creative_works, people)
             citation.populate()
             citation.populate_article()
             citation.add_article()
             i = i  + 1
             print(i)
         elif row["ENTRYTYPE"]=="book":
-            citation=Book_Citation(row,creative_works)
+            citation=Book_Citation(row, creative_works, people)
             citation.populate()
             citation.populate_book()
             citation.add_book()
@@ -671,11 +710,8 @@ def initialize(people_path, creative_works_path, bibtext_path):
     people.parse(people_path, format="turtle")
     creative_works=rdflib.Graph()
     creative_works.parse(creative_works_path, format="turtle")
-    SCHEMA = rdflib.Namespace("http://schema.org/")
     creative_works.namespace_manager.bind("schema",SCHEMA)
-    bf = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
-    creative_works.namespace_manager.bind("bf",bf)
-    CITATION_EXTENSION = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/")
+    creative_works.namespace_manager.bind("bf", BF)
     creative_works.namespace_manager.bind("cite",CITATION_EXTENSION)
 
     # load bibtex data, parse it, and attempt to add citations to the creative_works graph
