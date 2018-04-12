@@ -1,6 +1,7 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix cite: <https://www.coloradocollege.edu/library/ns/citation/> .
-@prefix prov: <http://www.w3.org/ns/prov> . 
+@prefix ns1: <http://www.w3.org/ns/prov#> .
+@prefix prov: <http://www.w3.org/ns/prov> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -14309,6 +14310,13 @@
     schema:issueNumber "8" ;
     schema:partOf <http://catalog.coloradocollege.edu/ebc7a686-3910-11e8-bdc0-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> a schema:Periodical ;
+    schema:name "test journal title"@en .
+
+<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/ebe8f9b6-3910-11e8-b59f-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-7685" ;
     schema:name "American Biology Teacher"@en .
@@ -14923,6 +14931,20 @@
 <http://catalog.coloradocollege.edu/ff7e187b-3d0e-11e8-b38c-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "16" ;
     schema:partOf <http://catalog.coloradocollege.edu/ff7e187a-3d0e-11e8-bb01-a41f7283f8d4> .
+
+<https://doi.org/10.123489> a schema:ScholarlyArticle ;
+    schema:about "test abstract" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "test article title"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
+    schema:url <https://doi.org/10.123489> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:27:29.553397"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "Nov." .
 
 <http://catalog.coloradocollege.edu/01c2e7fa-3d0f-11e8-8185-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0043-3845" ;
