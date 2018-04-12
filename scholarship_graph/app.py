@@ -511,54 +511,54 @@ def add_work():
     elif citation_type.startswith("book"):
         work_form = BookForm(request.form)
     if work_form.validate():
-##        try:
-        raw_citation = {"ENTRYTYPE": citation_type,
-                         "author": work_form.author_string.data,
-                         "year": work_form.datePublished.data}
-        if citation_type.startswith("article"):
-            raw_citation["journal"]=work_form.journal_title.data
-            raw_citation["title"]=work_form.article_title.data
-            if work_form.page_start.data !=None:
-                raw_citation["page_start"]=work_form.page_start.data
-            if work_form.page_end.data !=None:
-                raw_citation["page_end"]=work_form.page_end.data
-            if work_form.month.data != None:
-                raw_citation["month"]=work_form.month.data
-            if work_form.volume_number.data != None:
-                raw_citation["volume_number"]=work_form.volume_number.data
-            if work_form.issue_number.data != None:
-                raw_citation["number"]=work_form.issue_number.data
-            if work_form.doi.data != None:
-                raw_citation["doi"]=work_form.doi.data
-            if work_form.url.data != None:
-                raw_citation["link"]=work_form.url.data
-        elif citation_type.startswith("book-chapter"):
-            pass
-        elif citation_type.startswith("book"):
-            raw_citation["title"] = work_form.book_title.data
-        else:
-            abort(500)
-        if work_form.abstract.data != None:
-            raw_citation["abstract"]=work_form.abstract.data
-        output = add_creative_work(
-            config=app.config,
-            citation=raw_citation,
-            config_manager=CONFIG_MANAGER,
-            current_user=current_user,
-            work_type=citation_type)
-##        except:
-##            click.echo("Error {}".format(
-##                traceback.print_tb(sys.exc_info()[-1])))
-##            output = {
-##                "message": """Work from journal {} not added, 
-##Stack Trace:\n{}""".format(
-##                    work_form.journal_title.data,
-##                    traceback.print_tb(sys.exc_info()[-1])),
-##                "status": False }
-##    else:
-##        output = {"message": "Invalid fields",
-##                  "status": False,
-##                  "errors": work_form.errors}
+        try:
+            raw_citation = {"ENTRYTYPE": citation_type,
+                             "author": work_form.author_string.data,
+                             "year": work_form.datePublished.data}
+            if citation_type.startswith("article"):
+                raw_citation["journal"]=work_form.journal_title.data
+                raw_citation["title"]=work_form.article_title.data
+                if work_form.page_start.data !=None:
+                    raw_citation["page_start"]=work_form.page_start.data
+                if work_form.page_end.data !=None:
+                    raw_citation["page_end"]=work_form.page_end.data
+                if work_form.month.data != None:
+                    raw_citation["month"]=work_form.month.data
+                if work_form.volume_number.data != None:
+                    raw_citation["volume_number"]=work_form.volume_number.data
+                if work_form.issue_number.data != None:
+                    raw_citation["number"]=work_form.issue_number.data
+                if work_form.doi.data != None:
+                    raw_citation["doi"]=work_form.doi.data
+                if work_form.url.data != None:
+                    raw_citation["link"]=work_form.url.data
+            elif citation_type.startswith("book-chapter"):
+                pass
+            elif citation_type.startswith("book"):
+                raw_citation["title"] = work_form.book_title.data
+            else:
+                abort(500)
+            if work_form.abstract.data != None:
+                raw_citation["abstract"]=work_form.abstract.data
+            output = add_creative_work(
+                config=app.config,
+                citation=raw_citation,
+                config_manager=CONFIG_MANAGER,
+                current_user=current_user,
+                work_type=citation_type)
+        except:
+            click.echo("Error {}".format(
+                traceback.print_tb(sys.exc_info()[-1])))
+            output = {
+                "message": """Work from journal {} not added, 
+Stack Trace:\n{}""".format(
+                    work_form.journal_title.data,
+                    traceback.print_tb(sys.exc_info()[-1])),
+                "status": False }
+    else:
+        output = {"message": "Invalid fields",
+                  "status": False,
+                  "errors": work_form.errors}
         return jsonify(output)
 
 @app.route("/")

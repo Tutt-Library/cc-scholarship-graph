@@ -172,7 +172,6 @@
  }
 
  function saveArticle() {
-    $("#new-article-dlg").modal('hide');
 	var data = $("#add_article_form :input").serializeArray();
 	var action = $("#add_article_form").attr("action");
 	$.post(action,
@@ -180,6 +179,15 @@
 		   success=function(data) {
                         if (data['status'] === true) {
                             $(".citation").append(data['html']);
+                            $("#new-article-dlg").modal('hide');
+
+                        } else {
+                            if(data['message'] === "Invalid fields") {
+                                console.log(data["errors"]);
+                            } else {
+                                alert(data["message"]);
+                            }
+
                         }
 		   }
 	);
