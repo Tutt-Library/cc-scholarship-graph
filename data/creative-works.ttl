@@ -800,7 +800,7 @@
     schema:datePublished "1999" ;
     schema:name "test article title"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/> ;
     ns1:qualifiedGeneration [ a ns1:Generation ;
             ns1:atTime "2018-04-12T20:29:15.651997"^^xsd:dateTime ;
             ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
@@ -1105,6 +1105,20 @@
     cite:authorString "Eli Fahrenkrug, Stephen Maldonado." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/3bcb6ba8-3e90-11e8-9e08-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "test abstract" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "test article title"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
+    schema:url <> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:29:43.747597"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "Nov." .
 
 <http://catalog.coloradocollege.edu/3d1b7e74-3911-11e8-a6bf-a41f7283f8d4> a bf:Book ;
     bf:Summary "SÃ¸ren Kierkegaard's Concluding Unscientific Postscript has provoked a lively variety of divergent interpretations for a century and a half. It has been both celebrated and condemned as the chief inspiration for twentieth-century existential thought, as a subversive parody of philosophical argument, as a critique of mass society, as a forerunner of phenomenology and of postmodern relativism, and as an appeal for a renewal of religious commitment. These 2010 essays written by international Kierkegaard scholars offer a plurality of critical approaches to this fundamental text of existential philosophy. They cover hotly debated topics such as the tension between the Socratic-philosophical and the Christian-religious; the identity and personality of Kierkegaard's pseudonym 'Johannes Climacus'; his conceptions of paradoxical faith and of passionate understanding; his relation to his contemporaries and to some of his more distant predecessors; and, last but not least, his pertinence to our present-day concerns."@en ;
@@ -15332,10 +15346,6 @@
     schema:issn "1069-9384" ;
     schema:name "Psychonomic bulletin & review"@en .
 
-<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "2" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/edb6eac6-3910-11e8-9f90-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0140-525X" ;
     schema:name "Behavioral and Brain Sciences"@en .
@@ -15447,6 +15457,10 @@
 <http://catalog.coloradocollege.edu/e41e448b-3910-11e8-a982-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "4" ;
     schema:partOf <http://catalog.coloradocollege.edu/e41e448a-3910-11e8-89eb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/ef551958-3910-11e8-bec8-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0021-9967" ;
