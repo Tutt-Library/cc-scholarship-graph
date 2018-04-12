@@ -269,7 +269,6 @@ def add_creative_work(**kwargs):
         citation.populate_book()
         citation.add_book()
     if generated_by:
-
         if hasattr(citation, "bib_iri") :
             work_iri = citation.bib_iri
         elif hasattr(citation, "doi_iri"):
@@ -278,12 +277,13 @@ def add_creative_work(**kwargs):
             work_iri, 
             generated_by)
     
-    with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
-        fo.write(git_profile.creative_works.serialize(format='turtle'))
+    #with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
+    #    fo.write(git_profile.creative_works.serialize(format='turtle'))
     git_profile.__save_graph__(
         git_repo=git_profile.scholarship_repo,
         file_path="/data/creative-works.ttl",
         graph_name="creative_works")
+    git_profile.__reload_triplestore__(connection)
     return {"message": "Added {} to Scholarship".format(work_type),
             "status": True,
             "html":  __generate_citation_html__(citation),
@@ -377,9 +377,10 @@ def add_profile(**kwargs):
         add_qualified_generation(git_profile.research_statements, 
             statement_iri, 
             generated_by)
-    #git_profile.update_all(person_iri, "Add", config_manager)
-    with open("D:/2018/tmp/cc-people.ttl", "wb+") as fo:
-        fo.write(git_profile.cc_people.serialize(format='turtle'))
+    git_profile.update_all(person_iri, "Add", config_manager)
+    #with open("D:/2018/tmp/cc-people.ttl", "wb+") as fo:
+    #
+    #    fo.write(git_profile.cc_people.serialize(format='turtle'))
 
     return "Added {} as {} to Colorado College's Scholarship Graph".format(
         label,
