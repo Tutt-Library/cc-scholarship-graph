@@ -1,6 +1,7 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix cite: <https://www.coloradocollege.edu/library/ns/citation/> .
-@prefix prov: <http://www.w3.org/ns/prov> . 
+@prefix ns1: <http://www.w3.org/ns/prov#> .
+@prefix prov: <http://www.w3.org/ns/prov> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -793,6 +794,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/2b138368-3e90-11e8-af7d-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "test abstract" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "test article title"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:29:15.651997"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "Nov." .
+
 <http://catalog.coloradocollege.edu/2b30555f-3912-11e8-8c93-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "As the adage states, \"You'll be known by the company you keep.\" As such, the implications for Canada's biopharmaceutical sector are rather dismal. While an extensive body of evidence demonstrates that patents and other intellectual property protections are critical to the future of innovation and the development of new treatments and cures, Canadian legislation fails to measure up. For example, Canada's intellectual property rights protections more closely mirror those of China, Turkey, Poland and the United Arab Emirates than industry leaders such as the United States, the United Kingdom, Switzerland and Germany. ABSTRACT FROM PUBLISHER]" ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
@@ -1091,6 +1106,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/3bcb6ba8-3e90-11e8-9e08-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "test abstract" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "test article title"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:29:43.747597"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "Nov." .
+
 <http://catalog.coloradocollege.edu/3d1b7e74-3911-11e8-a6bf-a41f7283f8d4> a bf:Book ;
     bf:Summary "SÃ¸ren Kierkegaard's Concluding Unscientific Postscript has provoked a lively variety of divergent interpretations for a century and a half. It has been both celebrated and condemned as the chief inspiration for twentieth-century existential thought, as a subversive parody of philosophical argument, as a critique of mass society, as a forerunner of phenomenology and of postmodern relativism, and as an appeal for a renewal of religious commitment. These 2010 essays written by international Kierkegaard scholars offer a plurality of critical approaches to this fundamental text of existential philosophy. They cover hotly debated topics such as the tension between the Socratic-philosophical and the Christian-religious; the identity and personality of Kierkegaard's pseudonym 'Johannes Climacus'; his conceptions of paradoxical faith and of passionate understanding; his relation to his contemporaries and to some of his more distant predecessors; and, last but not least, his pertinence to our present-day concerns."@en ;
     bf:editionStatement ""@en ;
@@ -1335,6 +1364,20 @@
     cite:authorString "Daniel Arroyo-Rodriguez." ;
     cite:citationType "article" ;
     cite:month "JAN" .
+
+<http://catalog.coloradocollege.edu/5afb234a-3e91-11e8-b623-0242ac130005> a schema:ScholarlyArticle ;
+    schema:about "The Tutt Library at Colorado College is developing a portfolio of library applications for use by patrons and library staff. Developed under an iterative and incremental agile model, these single-use HTML5 applications target multiple devices while using Bootstrap and Django to deliver fast and responsive interfaces to underlying FRBR datastores running on Redis, an advanced NoSQL database server. Two types are delineated: applications for access and discovery, which are available to everyone; and productivity applications, which are primarily for library staff to administer and manage the FRBR-RDA records. The access portfolio includes Book Search, Article Search, Call Number, and Library Hours applications. The productivity side includes an Orders App and a MARC Batch application for ingesting MARC records as FRBR entities using RDA Core attributes. When a critical threshold is reached, the Tutt Library intends to replace its legacy ILS with this library application portfolio." ;
+    schema:author <http://orcid.org/0000-0002-7543-3893> ;
+    schema:datePublished "2013" ;
+    schema:name "Building a Library App Portfolio with Redis and Django"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/5b0a2bb0-3e91-11e8-b623-0242ac130005> ;
+    schema:url <http://journal.code4lib.org/articles/7349> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:37:45.492642"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
+    cite:authorString "Jeremy Nelson." ;
+    cite:citationType "article" ;
+    cite:month "01" .
 
 <http://catalog.coloradocollege.edu/5de4df71-3911-11e8-a6db-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -1725,6 +1768,20 @@
     cite:authorString "David Mason." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/99313504-3e92-11e8-b623-0242ac130005> a schema:ScholarlyArticle ;
+    schema:about "The Tutt Library at Colorado College is developing a portfolio of library applications for use by patrons and library staff. Developed under an iterative and incremental agile model, these single-use HTML5 applications target multiple devices while using Bootstrap and Django to deliver fast and responsive interfaces to underlying FRBR datastores running on Redis, an advanced NoSQL database server. Two types are delineated: applications for access and discovery, which are available to everyone; and productivity applications, which are primarily for library staff to administer and manage the FRBR-RDA records. The access portfolio includes Book Search, Article Search, Call Number, and Library Hours applications. The productivity side includes an Orders App and a MARC Batch application for ingesting MARC records as FRBR entities using RDA Core attributes. When a critical threshold is reached, the Tutt Library intends to replace its legacy ILS with this library application portfolio." ;
+    schema:author <http://orcid.org/0000-0002-7543-3893> ;
+    schema:datePublished "2013" ;
+    schema:name "Building a Library App Portfolio with Redis and Django"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/5b0a2bb0-3e91-11e8-b623-0242ac130005> ;
+    schema:url <http://journal.code4lib.org/articles/7349> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:46:39.343719"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
+    cite:authorString "Jeremy Nelson." ;
+    cite:citationType "article" ;
+    cite:month "01" .
 
 <http://catalog.coloradocollege.edu/9a16e62d-3911-11e8-a7aa-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article reviews the book \"Political Islam Observed,\" by Fr?d?ric Volpi." ;
@@ -11839,6 +11896,9 @@
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/5acc0fcc-3911-11e8-a83b-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/5afb1e7c-3e91-11e8-b623-0242ac130005> a schema:Periodical ;
+    schema:name "Code4Lib Journal"@en .
+
 <http://catalog.coloradocollege.edu/5afbab38-3911-11e8-8da2-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1354-814X" ;
     schema:name "Tpm-the Philosophers Magazine"@en .
@@ -14309,6 +14369,9 @@
     schema:issueNumber "8" ;
     schema:partOf <http://catalog.coloradocollege.edu/ebc7a686-3910-11e8-bdc0-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> a schema:Periodical ;
+    schema:name "test journal title"@en .
+
 <http://catalog.coloradocollege.edu/ebe8f9b6-3910-11e8-b59f-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-7685" ;
     schema:name "American Biology Teacher"@en .
@@ -14924,6 +14987,20 @@
     schema:issueNumber "16" ;
     schema:partOf <http://catalog.coloradocollege.edu/ff7e187a-3d0e-11e8-bb01-a41f7283f8d4> .
 
+<https://doi.org/10.123489> a schema:ScholarlyArticle ;
+    schema:about "test abstract" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "test article title"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
+    schema:url <https://doi.org/10.123489> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:27:29.553397"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "Nov." .
+
 <http://catalog.coloradocollege.edu/01c2e7fa-3d0f-11e8-8185-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0043-3845" ;
     schema:name "Western Humanities Review"@en .
@@ -15100,6 +15177,10 @@
 <http://catalog.coloradocollege.edu/591f9901-3911-11e8-872b-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/591f9900-3911-11e8-808d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/5b0a2bb0-3e91-11e8-b623-0242ac130005> a schema:issueNumber ;
+    schema:issueNumber "19" ;
+    schema:partOf <http://catalog.coloradocollege.edu/5afb1e7c-3e91-11e8-b623-0242ac130005> .
 
 <http://catalog.coloradocollege.edu/5df0c64a-3911-11e8-9764-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/5de4df70-3911-11e8-84d4-a41f7283f8d4> ;
@@ -15411,6 +15492,10 @@
 <http://catalog.coloradocollege.edu/e41e448b-3910-11e8-a982-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "4" ;
     schema:partOf <http://catalog.coloradocollege.edu/e41e448a-3910-11e8-89eb-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/ef551958-3910-11e8-bec8-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0021-9967" ;
