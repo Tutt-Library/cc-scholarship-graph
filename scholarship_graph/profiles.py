@@ -146,9 +146,9 @@ class GitProfile(object):
             message="Fast subject added")
         self.__save_graph__(
             git_repo=self.scholarship_repo,
-            file_path ="/data/cc-fast-subjects.ttl",
-            graph_name="fast_subjects",
-            message="Fast subject added")
+            file_path ="/data/creative-works.ttl",
+            graph_name="creative_works",
+            message="Creative Works added")
         if connection:
             self.__reload_triplestore__(connection)
 
