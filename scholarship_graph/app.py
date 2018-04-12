@@ -28,6 +28,7 @@ from flask_ldap3_login import LDAP3LoginManager
 from flask_ldap3_login import log as ldap_manager_log
 from flask_ldap3_login.forms import LDAPLoginForm
 
+from jinja2 import contextfilter
 
 from .forms import ProfileForm, SearchForm, ArticleForm, BookForm
 from github import Github
@@ -119,6 +120,7 @@ Subject: {2}
 
 @app.errorhandler(500)
 def server_error(e):
+    click.echo("SERVER ERROR: {}".format(e))
     body = "Current user: {0}\nURL:{1}\nError:\n{2}".format(
         current_user,
         request.url,
@@ -149,7 +151,8 @@ def person_history(person_iri):
     
 
 @app.template_filter("get_stat")
-def generate_statistic(type_of):
+@contextfilter
+def generate_statistic(context, type_of):
     type_of = type_of.lower()
     if type_of.startswith("articles"):
         result = CONNECTION.datastore.query(COUNT_ARTICLES)
