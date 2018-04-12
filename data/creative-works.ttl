@@ -794,6 +794,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/2b138368-3e90-11e8-af7d-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "test abstract" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "test article title"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
+    schema:url <> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-12T20:29:15.651997"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "Nov." .
+
 <http://catalog.coloradocollege.edu/2b30555f-3912-11e8-8c93-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "As the adage states, \"You'll be known by the company you keep.\" As such, the implications for Canada's biopharmaceutical sector are rather dismal. While an extensive body of evidence demonstrates that patents and other intellectual property protections are critical to the future of innovation and the development of new treatments and cures, Canadian legislation fails to measure up. For example, Canada's intellectual property rights protections more closely mirror those of China, Turkey, Poland and the United Arab Emirates than industry leaders such as the United States, the United Kingdom, Switzerland and Germany. ABSTRACT FROM PUBLISHER]" ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
@@ -14313,10 +14327,6 @@
 <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> a schema:Periodical ;
     schema:name "test journal title"@en .
 
-<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "2" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/ebe8f9b6-3910-11e8-b59f-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-7685" ;
     schema:name "American Biology Teacher"@en .
@@ -15321,6 +15331,10 @@
 <http://catalog.coloradocollege.edu/eaa7a09c-3910-11e8-aaf0-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1069-9384" ;
     schema:name "Psychonomic bulletin & review"@en .
+
+<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/edb6eac6-3910-11e8-9f90-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0140-525X" ;
