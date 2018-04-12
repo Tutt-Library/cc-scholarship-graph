@@ -9,6 +9,9 @@
 <http://id.worldcat.org/fast/00946584> a bf:Topic ;
     rdfs:label "Graph theory"@en .
 
+<http://id.worldcat.org/fast/00997669> a bf:Topic ;
+    rdfs:label "Library catalogs"@en .
+
 <http://id.worldcat.org/fast/00997916> a bf:Topic ;
     rdfs:label "Library science"@en .
 
