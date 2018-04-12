@@ -92,7 +92,7 @@
 						<i class="fas fa-book"></i>
 	</button>
     {% for row in citations %}
-    <div class="row">
+    <div class="row citation">
         <div class="col-8">
          {{ row|article_link_filter|safe }}
          {% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
@@ -177,7 +177,9 @@
 	$.post(action,
 	       data=data,
 		   success=function(data) {
-				alert("Success " + data['message']);
+                        if (data['status'] === true) {
+                            $(".citation").append(data['html']);
+                        }
 		   }
 	);
 }

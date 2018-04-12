@@ -10,7 +10,9 @@
       <div class="modal-body">
             <h3>New Book Form</h3>
 			<form method = "POST"
-			action = "">
+                            id="add_book_form"
+			    action ="{{ url_for('add_work') }}">
+                        {{ book_form.citation_type(value='book') }}
 			<label>{{ book_form.author_string.label }}</label>
 			{{ book_form.author_string(class_="form-control") }}
 			<label>{{ book_form.datePublished.label }}</label>

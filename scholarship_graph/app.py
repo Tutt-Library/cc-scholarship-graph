@@ -11,9 +11,14 @@ from collections import OrderedDict
 import click
 import requests
 import rdflib
+import sys
+import traceback
 import uuid
 import utilities
-from utilities import *
+#from utilities import *
+
+import email.mime.text as email_text
+import mimetypes
 
 from flask import Flask, jsonify, render_template, redirect, request, session 
 from flask import current_app, url_for, flash
@@ -31,7 +36,7 @@ from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING,
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
-from .profiles import add_profile, update_profile
+from .profiles import add_creative_work, add_profile, update_profile
 from rdfframework.configuration import RdfConfigManager
 
 
@@ -502,44 +507,54 @@ def cc_logout():
 @app.route("/work", methods=['POST'])
 @login_required
 def add_work():
-    work_form = ArticleForm(request.form)
+    citation_type = request.form['citation_type']
+    if citation_type.startswith("article"):
+        work_form = ArticleForm(request.form)
+    elif citation_type.startswith("book"):
+        work_form = BookForm(request.form)
     if work_form.validate():
-        message = "Work fields {}".format(work_form.journal_title.data)
         try:
             raw_citation = {}
             raw_citation["author"]=work_form.author_string.data
             raw_citation["year"]=work_form.datePublished.data
-            raw_citation["journal_title"]=work_form.journal_title.data
-            raw_citation["article_title"]=work_form.article_title.data
+            if citation_type.startswith("article"):
+                raw_citation["journal_title"]=work_form.journal_title.data
+                raw_citation["article_title"]=work_form.article_title.data
+                if work_form.page_start.data !=None:
+                    raw_citation["page_start"]=work_form.page_start.data
+                if work_form.page_end.data !=None:
+                    raw_citation["page_end"]=work_form.page_end.data
+                if work_form.month.data != None:
+                    raw_citation["month"]=work_form.month.data
+                if work_form.volume_number.data != None:
+                    raw_citation["volume_number"]=work_form.volume_number.data
+                if work_form.issue_number.data != None:
+                    raw_citation["issue_number"]=work_form.issue_number.data
+                if work_form.doi.data != None:
+                    raw_citation["doi"]=work_form.doi.data
+                if work_form.url.data != None:
+                    raw_citation["url"]=work_form.url.data
             if work_form.abstract.data != None:
                 raw_citation["abstract"]=work_form.abstract.data
-            if work_form.page_start.data !=None:
-                raw_citation["page_start"]=work_form.page_start.data
-            if work_form.page_end.data !=None:
-                raw_citation["page_end"]=work_form.page_end.data
-            if work_form.month.data != None:
-                raw_citation["month"]=work_form.month.data
-            if work_form.volume_number.data != None:
-                raw_citation["volume_number"]=work_form.volume_number.data
-            if work_form.issue_number.data != None:
-                raw_citation["issue_number"]=work_form.issue_number.data
-            if work_form.doi.data != None:
-                raw_citation["doi"]=work_form.doi.data
-            if work_form.url.data != None:
-                raw_citation["url"]=work_form.url.data
-            message = "raw_citation {}".format(raw_citation)
-            citation = utilities.Article_Citation(raw_citation,creative_works)
-            # citation.populate()
-            # citation.populate_article()
-            # citation.add_article()
-            # message = "Work successfully added"
-            
+            output = add_creative_work(
+                config=app.config,
+                config_manager=CONFIG_MANAGER,
+                current_user=current_user,
+                work_type=citation_type)
         except:
-            message = "Work not successfully added: {}".format(work_form.journal_title.data)
-        
+            click.echo("Error {}".format(
+                traceback.print_tb(sys.exc_info()[-1])))
+            output = {
+                "message": """Work from journal {} not added, 
+Stack Trace:\n{}""".format(
+                    work_form.journal_title.data,
+                    traceback.print_tb(sys.exc_info()[-1])),
+                "status": False }
     else:
-        message = "Invalid fields validated {}".format(work_form.errors)
-    return jsonify({"message": message})
+        output = {"message": "Invalid fields",
+                  "status": False,
+                  "errors": work_form.errors}
+    return jsonify(output)
 
 @app.route("/")
 def home():

@@ -11,7 +11,8 @@
 			action = "{{ url_for('add_work') }}">
 			
       <div class="modal-body">
-			{{ form.csrf_token }}
+			{{ new_article_form.csrf_token }}
+                        {{ new_article_form.citation_type(value='article') }}
             <h3>New Article Form</h3>
 			<label>{{ new_article_form.author_string.label }} <span class="text-danger">*</span></label>
 			{{ new_article_form.author_string(class_="form-control") }}

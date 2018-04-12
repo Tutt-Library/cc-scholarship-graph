@@ -413,7 +413,7 @@ class Article_Citation(Citation):
             self.creative_works.add((self.doi_iri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
         
         # add url
-        self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.Literal(self.url)))
+        self.creative_works.add((self.doi_iri,SCHEMA.url,rdflib.URLRef(self.url)))
 
         # add the author
         for author in self.cc_authors:
