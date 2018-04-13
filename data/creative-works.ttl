@@ -2045,7 +2045,7 @@
     schema:pageEnd "128" ;
     schema:pageStart "120" ;
     schema:partOf <http://catalog.coloradocollege.edu/9a084f31-3f55-11e8-8041-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "M. S. Ficken, K. M. Rusch, Steve Taylor, D. R. Powers." ;
     cite:citationType "article" ;
     cite:month "JAN" .
@@ -2071,7 +2071,7 @@
     schema:pageEnd "230" ;
     schema:pageStart "223" ;
     schema:partOf <http://catalog.coloradocollege.edu/9b04ef11-3f55-11e8-a442-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Steve Taylor, J. E. McPherson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2084,7 +2084,7 @@
     schema:pageEnd "103" ;
     schema:pageStart "101" ;
     schema:partOf <http://catalog.coloradocollege.edu/9b8c9d71-3f55-11e8-8724-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Steve Taylor, G. Tescari, M. Villa." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2097,7 +2097,7 @@
     schema:pageEnd "374" ;
     schema:pageStart "369" ;
     schema:partOf <http://catalog.coloradocollege.edu/9cbfaed1-3f55-11e8-9e13-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "F. M. Wilhelm, M. P. Venarsky, Steve Taylor, F. E. Anderson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2110,7 +2110,7 @@
     schema:pageEnd "9" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9d286b51-3f55-11e8-8423-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Steve Taylor, J. E. McPherson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2135,7 +2135,7 @@
     schema:pageEnd "224" ;
     schema:pageStart "217" ;
     schema:partOf <http://catalog.coloradocollege.edu/9f687811-3f55-11e8-8cec-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "J. E. McPherson, Steve Taylor, S. L. Keffer, J. T. Polhemus." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2148,7 +2148,7 @@
     schema:pageEnd "18" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9fced330-3f55-11e8-82c6-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "J. Kathirithamby, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "SEP 30" .
@@ -2200,7 +2200,7 @@
     schema:pageEnd "60" ;
     schema:pageStart "51" ;
     schema:partOf <http://catalog.coloradocollege.edu/a16e6200-3f55-11e8-b298-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Wanzhi Cai, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "NOV 20" .
@@ -2213,7 +2213,7 @@
     schema:pageEnd "446" ;
     schema:pageStart "433" ;
     schema:partOf <http://catalog.coloradocollege.edu/a217639f-3f55-11e8-b51f-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Jennifer E. Smith, Christopher J. Whelan, Steve Taylor, Michael L. Denight, Mike M. Stake." ;
     cite:citationType "article" ;
     cite:month "MAR" .
@@ -2277,7 +2277,7 @@
     schema:pageEnd "65" ;
     schema:pageStart "47" ;
     schema:partOf <http://catalog.coloradocollege.edu/a5bab980-3f55-11e8-afba-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "William A. Shear, Steve Taylor, J. Judson Wynne, Jean K. Krejca." ;
     cite:citationType "article" ;
     cite:month "JUL 7" .
@@ -2302,7 +2302,7 @@
     schema:pageEnd "18" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a62f83f0-3f55-11e8-a355-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Douglas Zeppelini, Steve Taylor, Michael E. Slay." ;
     cite:citationType "article" ;
     cite:month "AUG 20" .
@@ -2315,10 +2315,24 @@
     schema:pageEnd "138" ;
     schema:pageStart "132" ;
     schema:partOf <http://catalog.coloradocollege.edu/a71feed1-3f55-11e8-b7ca-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "James N. Zahniser, Steve Taylor, Jean K. Krejca." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/a79819de-3f67-11e8-8343-0242ac130005> a schema:ScholarlyArticle ;
+    schema:about "Western State College in Gunnison, Colorado developed an open-source eCataloger Framework, based on Dublin Core metadata, on Google’s App Engine to manage and serve electronic resources to the library’s patrons. Pressed to find new solutions for failing manual workflows for serials and government document resource management, the eCataloger Framework was extended to FRBR to automate and enhance serials management and government documents receiving. Based on successfully FRBRizing the eCataloger, Western State College converted their e-Library management from Dublin Core to FRBR and MODS. This paper examines the processes of each of these implementations using Python, AJAX, and jQuery, the details of the FRBR data model, including using FRBRoo, and the successful user interface supported by a FRBRized catalog." ;
+    schema:author <http://orcid.org/0000-0002-7543-3893> ;
+    schema:datePublished "2010" ;
+    schema:name "FRBRizing an E-Library : Migrating from Dublin Core to FRBR and MODS"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7aa6904-3f67-11e8-8343-0242ac130005> ;
+    schema:url <http://journal.code4lib.org/articles/4357> ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-04-13T22:11:46.388415"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
+    cite:authorString "Jeremy Nelson; Alan Cleary." ;
+    cite:citationType "article" ;
+    cite:month "12" .
 
 <http://catalog.coloradocollege.edu/a7baa830-3f55-11e8-8b46-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "A new supplemented concept of the genus Traegaardhia Zacharda, 1980 (Acari: Rhagidiidae) is presented and descriptions of seven new species of the genus are given. These are Traegaardhia cavernarum n. sp., T. cavernicola n. sp., T. distosolenidia n. sp., T. gracilis n. sp., T. nasuta n. sp., T. subterranea n. sp., from caves located in northeastern Prealps, Italy, and T. similis n. sp. from the Ozark Plateaus, southeastern USA. The neotype of Foveacheles holsingeri Zacharda, 1980 is assigned, the species is redescribed and together with Foveacheles paralleloseta Zacharda, 1985, transferred into the genus Traegaardhia. Foveacheles thaleri n. sp. is described as the possible epigean ancestor of the derivative troglobiotic T. subterranea and the adaptive shift hypothesis and parapatric speciation of T. subterranea is outlined. A key to adults of the known eleven species of the genus Traegaardhia is presented. The biogeography, morphological adaptations to life in caves (troglomorphisms), vicariance and distribution of the presented taxa are briefly discussed. All new taxa are authored by M. Zacharda only." ;
@@ -2328,7 +2342,7 @@
     schema:pageEnd "64" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a7cb51d0-3f55-11e8-ac86-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Miloslav Zacharda, Daniel Fong, Horton H. Hobbs, Erminio Piva, Michael E. Slay, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "MAY 14" .
@@ -2378,7 +2392,7 @@
     schema:pageEnd "40" ;
     schema:pageStart "30" ;
     schema:partOf <http://catalog.coloradocollege.edu/a9671fb0-3f55-11e8-a0b1-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "J. E. McPherson, Richard J. Packauskas, Robert W. Sites, Steve Taylor, C. Scott Bundy, Jeffrey D. Bradshaw, Paula Levin Mitchell." ;
     cite:citationType "article" ;
     cite:month "APR 28" .
@@ -2552,7 +2566,7 @@
     schema:pageEnd "752" ;
     schema:pageStart "740" ;
     schema:partOf <http://catalog.coloradocollege.edu/ad877591-3f55-11e8-87f3-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Steve Taylor, Jean K. Krejca, Matthew L. Niemiller, Michael J. Dreslik, Christopher A. Phillips." ;
     cite:citationType "article" ;
     cite:month "AUG" .
@@ -2678,7 +2692,7 @@
     schema:pageEnd "181" ;
     schema:pageStart "163" ;
     schema:partOf <http://catalog.coloradocollege.edu/b19312c1-3f55-11e8-b51e-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///opt/cc-scholarship-graph/> ;
     cite:authorString "Dante B. Fenolio, Matthew L. Niemiller, Andrew G. Gluesenkamp, Anna M. McKee, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "JUN" .
@@ -14950,6 +14964,13 @@
 <http://catalog.coloradocollege.edu/a779c1cd-3911-11e8-a382-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "3" ;
     schema:partOf <http://catalog.coloradocollege.edu/a779c1cc-3911-11e8-ab92-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a7981600-3f67-11e8-8343-0242ac130005> a schema:Periodical ;
+    schema:name "Code4Lib Journal"@en .
+
+<http://catalog.coloradocollege.edu/a7aa6904-3f67-11e8-8343-0242ac130005> a schema:issueNumber ;
+    schema:issueNumber "12" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a7981600-3f67-11e8-8343-0242ac130005> .
 
 <http://catalog.coloradocollege.edu/a7cb51d0-3f55-11e8-ac86-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2474" ;
