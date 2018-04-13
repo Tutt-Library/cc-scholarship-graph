@@ -2080,7 +2080,7 @@
     cite:month "JAN" .
 
 <http://catalog.coloradocollege.edu/9a16e62d-3911-11e8-a7aa-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "The article reviews the book \"Political Islam Observed,\" by Fr?d?ric Volpi." ;
+    schema:about "The article reviews the book \"Political Islam Observed,\" by Frederic Volpi." ;
     schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008> ;
     schema:datePublished "2011" ;
     schema:name "Political Islam Observed"@en ;
@@ -2623,19 +2623,6 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/aff056ae-3911-11e8-8f3e-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2006" ;
-    schema:name "How poets see the world: The art of description in contemporary poetry."@en ;
-    schema:pageEnd "645" ;
-    schema:pageStart "640" ;
-    schema:partOf <http://catalog.coloradocollege.edu/abe4bb31-3911-11e8-8788-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
 <http://catalog.coloradocollege.edu/b0297798-3911-11e8-8109-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
@@ -2643,7 +2630,7 @@
     schema:name "Antaeus at the mall"@en ;
     schema:pageStart "529" ;
     schema:partOf <http://catalog.coloradocollege.edu/abe4bb31-3911-11e8-8788-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "http://0-www.jstor.org.tiger.coloradocollege.edu/stable/27549893" ;
     cite:authorString "David Mason." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2655,51 +2642,12 @@
     schema:name "Larking for Larkin"@en ;
     schema:pageStart "528" ;
     schema:partOf <http://catalog.coloradocollege.edu/abe4bb31-3911-11e8-8788-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "http://0-www.jstor.org.tiger.coloradocollege.edu/stable/27549892" ;
     cite:authorString "David Mason." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/b0aec45e-3911-11e8-9851-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "Trouble came to the turnip"@en ;
-    schema:pageEnd "175" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<http://catalog.coloradocollege.edu/b0faf03e-3911-11e8-97b1-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "Horse latitudes"@en ;
-    schema:pageEnd "175" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<http://catalog.coloradocollege.edu/b14bdedc-3911-11e8-8cda-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "Man and camel"@en ;
-    schema:pageEnd "168" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<http://catalog.coloradocollege.edu/b177b2f1-3f55-11e8-b4dd-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1656/058.016.0205> a schema:ScholarlyArticle ;
     schema:about "Cambarus cryptodytes (Dougherty Plain Cave Crayfish) is an obligate inhabitant of groundwater habitats (i.e., a stygobiont) with troglomorphic adaptations in the Floridan aquifer system of southwestern Georgia and adjacent Florida panhandle, particularly in the Dougherty Plain and Marianna Lowlands. Documented occurrences of Dougherty Plain Cave Crayfish are spatially distributed as 2 primary clusters separated by a region where few caves and springs have been documented; however, the paucity of humanly accessible karst features in this intermediate region has inhibited investigation of the species' distribution. To work around this constraint, we employed bottle traps to sample for Dougherty Plain Cave Crayfish and other groundwater fauna in 18 groundwater-monitoring wells that access the Floridan aquifer system in 10 counties in southwestern Georgia. We captured 32 Dougherty Plain Cave Crayfish in 9 wells in 8 counties between September 2014 and August 2015. We detected crayfish at depths ranging from 17.9 m to 40.6 m, and established new county records for Early, Miller, Mitchell, and Seminole counties in Georgia, increasing the number of occurrences in Georgia from 8 to 17 sites. In addition, a new US Geological Survey (USGS) Hydrologic Unit Code 8 (HUC8) watershed record was established for the Spring Creek watershed. These new records fill in the distribution gap between the 2 previously known clusters in Georgia and Jackson County, FL. Furthermore, this study demonstrates that deployment of bottle traps in groundwater-monitoring wells can be an effective approach to presence-absence surveys of stygobionts, especially in areas where surface access to groundwater is limited." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2017" ;
@@ -2707,62 +2655,10 @@
     schema:pageEnd "181" ;
     schema:pageStart "163" ;
     schema:partOf <http://catalog.coloradocollege.edu/b19312c1-3f55-11e8-b51e-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url "https://doi.org/10.1656/058.016.0205" ;
     cite:authorString "Dante B. Fenolio, Matthew L. Niemiller, Andrew G. Gluesenkamp, Anna M. McKee, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "JUN" .
-
-<http://catalog.coloradocollege.edu/b19a6c1c-3911-11e8-92e5-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "Chromatic"@en ;
-    schema:pageEnd "175" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<http://catalog.coloradocollege.edu/b1f27ed8-3911-11e8-85b7-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "Everything else in the world"@en ;
-    schema:pageEnd "175" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<http://catalog.coloradocollege.edu/b253153e-3911-11e8-ad6d-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "She alone"@en ;
-    schema:pageEnd "175" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<http://catalog.coloradocollege.edu/b2a1a27e-3911-11e8-aab0-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
-    schema:datePublished "2007" ;
-    schema:name "The 'God of this world to his prophet'"@en ;
-    schema:pageEnd "175" ;
-    schema:pageStart "159" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ac7ad8a3-3911-11e8-8ec0-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David Mason." ;
-    cite:citationType "article" ;
-    cite:month "" .
 
 <http://catalog.coloradocollege.edu/b2f4f27a-3911-11e8-bd53-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3826,7 +3722,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///www.sciencedirect.com/science/journal/01672681> a schema:ScholarlyArticle ;
+<https://doi.org/10.1016/j.jebo.2015.02.016> a schema:ScholarlyArticle ;
     schema:about "To identify which spouses respond to asymmetric information, I play two dictator games with each member of the couple. One decision is kept secret from the respondent's spouse, while another choice is public. Most people give the same amount in public and secret, while a minority behave opportunistically and give more to their spouse in public and less in secret. The types identified in the lab also behave differently at home. For those who behave opportunistically in the lab, greater knowledge about finances at home is associated with worse opportunism in the lab, suggesting that for these couples complete information at home is not due to trust but rather is an endogenous response to non-cooperative behavior. The paper highlights that allowing for heterogeneous types changes the conclusions we draw about appropriate models of the household and suggests that laboratory games can be used to identify household types useful in the interpretation of field data." ;
     schema:author <http://catalog.coloradocollege.edu/3774eaa4-bcd4-11e6-9808-005056c00008> ;
     schema:datePublished "2015" ;
@@ -3834,7 +3730,7 @@
     schema:pageEnd "135" ;
     schema:pageStart "123" ;
     schema:partOf <http://catalog.coloradocollege.edu/02879f5c-3d0f-11e8-a4c1-a41f7283f8d4> ;
-    schema:url "https://doi.org///www.sciencedirect.com/science/journal/01672681" ;
+    schema:url "https://doi.org/10.1016/j.jebo.2015.02.016" ;
     cite:authorString "Jessica B. Hoel." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -14511,14 +14407,6 @@
     schema:partOf <http://catalog.coloradocollege.edu/9bddda2c-3911-11e8-b867-a41f7283f8d4> ;
     schema:volumeNumber "1225" .
 
-<http://catalog.coloradocollege.edu/9c2c1990-3f55-11e8-a76d-a41f7283f8d4> a schema:volumeNumber ;
-    schema:partOf <http://catalog.coloradocollege.edu/9c11ea70-3f55-11e8-95cf-a41f7283f8d4> ;
-    schema:volumeNumber "114" .
-
-<http://catalog.coloradocollege.edu/9c2c1991-3f55-11e8-ad68-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "2" ;
-    schema:partOf <http://catalog.coloradocollege.edu/9c2c1990-3f55-11e8-a76d-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/9ca57fb0-3f55-11e8-a011-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1077-8306" ;
     schema:name "Invertebrate Biology"@en .
@@ -18203,7 +18091,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org/BIBFAA]2.0.CO;2> a schema:ScholarlyArticle ;
+<http://catalog.coloradocollege.edu/e31cfdf0-3f5b-11e8-9540-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "We report on behavioral interactions between fire ants (Solenopsis invicta) and vertebrate predators at two Black-capped Vireo (Vireo atricapilla) nests at Fort Hood, Texas. In the presence of fire ants, an eastern woodrat (Neotoma floridana) failed to depredate a clutch of vireo eggs at one nest, while a rat snake (Elaphe obsoleta lindheimeri) depredated nestlings at another nest, despite tire ants swanning the nest. Neither nest was successful. Direct and indirect effects of interactions among nest predators on avian nesting Success need further assessment." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2004" ;
@@ -18211,7 +18099,7 @@
     schema:pageEnd "166" ;
     schema:pageStart "163" ;
     schema:partOf <http://catalog.coloradocollege.edu/9e545891-3f55-11e8-bc0a-a41f7283f8d4> ;
-    schema:url <https://doi.org/BIBFAA]2.0.CO;2> ;
+    schema:url <http://www.jstor.org/stable/4164652> ;
     cite:authorString "J. E. Smith, Steve Taylor, C. J. Whelan, M. L. Denight, M. M. Stake." ;
     cite:citationType "article" ;
     cite:month "JUN" .
@@ -18229,19 +18117,19 @@
     cite:citationType "article" ;
     cite:month "JUL" .
 
-<https://doi.org/NSRANR]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.1653/0015-4040(2007)90[762:NSRANR]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2007" ;
     schema:name "New state record and northeastern range extension for Caenocholax fenyesi sensu lato (Strepsiptera : Myrmecolacidae)"@en ;
     schema:pageStart "762" ;
     schema:partOf <http://catalog.coloradocollege.edu/a33c2cc1-3f55-11e8-9320-a41f7283f8d4> ;
-    schema:url <https://doi.org/NSRANR]2.0.CO;2> ;
+    schema:url <https://doi.org/10.1653/0015-4040(2007)90[762:NSRANR]2.0.CO;2> ;
     cite:authorString "Jeyaraney Kathirithamby, Steve Taylor, Richard Lareau." ;
     cite:citationType "article" ;
     cite:month "DEC" .
 
-<https://doi.org/OOTFLH]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.3157/0013-872X(2006)117[399:OOTFLH]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "The field life history of Steinovelia stagnalis (Burmeister) was studied in southern Illinois from 1983 through 1986. This species overwintered as adults, which became active in late March and were last collected in late October. Early instars (1sts-3rds) were found from early May to early September, and late instars (4ths-5ths) from late May to mid-September, but the occurrence of each instar was not continuous. The sequences of peaks of the five instars suggest that this species is bivoltine in southern Illinois. A survey of the biological literature is included." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2006" ;
@@ -18249,25 +18137,12 @@
     schema:pageEnd "405" ;
     schema:pageStart "399" ;
     schema:partOf <http://catalog.coloradocollege.edu/a0306b91-3f55-11e8-aeaf-a41f7283f8d4> ;
-    schema:url <https://doi.org/OOTFLH]2.0.CO;2> ;
+    schema:url <https://doi.org/10.3157/0013-872X(2006)117[399:OOTFLH]2.0.CO;2> ;
     cite:authorString "J. E. McPherson, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org/RBACIB]2.0.CO;2> a schema:ScholarlyArticle ;
-    schema:about "Previous studies of Blue-throated Hummingbirds (Lampornis clemenciae) showed that males have elaborate songs and females also sing. Here we report complex territorial systems, sexual behavior, and communicatory repertoires of both sexes. Males typically defended territories along streams throughout the reproductive season. Time budgets revealed that males allocated more time to vocalizing in territorial advertisement than in more energetically costly activities such as chases. Both observations and playback experiments indicated that two vocalizations have different roles in territorial advertisement. Strings of chips served in long distance territorial advertisement, while the lower amplitude song, more prevalent early in the season, attracted females and also repelled males from the immediate area. Agonistic interactions included long chases, some with vocalizations. During close range encounters an array of postures and sounds occurred. Females defended territories against other females during a brief period preceding egg laying. Sexual interactions were unusually intricate, consisting of a series of activities in which the female played an active role. She delivered loud calls advertising sexual readiness and performed aerial displays. Males competed with other. males for access to females. We observed four presumed copulations, all preceded by a song fragment from the male. The vocal repertoire included at least 16 different sounds, all with different functions, an unusually large number for a nonoscine. Male songs were the most complex sounds. Behaviors that differed from many other hummingbirds that have been studied included strong reliance on vocal signals, lack of male aerial displays, and female advertisement of sexual readiness. These attributes may be linked to reduced sexual dichromatism and related to the species' preference for wooded riparian habitats." ;
-    schema:author <http://orcid.org/0000-0002-3020-5205> ;
-    schema:datePublished "2002" ;
-    schema:name "Reproductive behavior and communication in blue-throated hummingbirds"@en ;
-    schema:pageEnd "209" ;
-    schema:pageStart "197" ;
-    schema:partOf <http://catalog.coloradocollege.edu/9c2c1991-3f55-11e8-ad68-a41f7283f8d4> ;
-    schema:url <https://doi.org/RBACIB]2.0.CO;2> ;
-    cite:authorString "M. S. Ficken, K. M. Rusch, Steve Taylor, D. R. Powers." ;
-    cite:citationType "article" ;
-    cite:month "JUN" .
-
-<https://doi.org/SERS.0000032306.20462.22> a schema:ScholarlyArticle ;
+<https://doi.org/10.1023/B:SERS.0000032306.20462.22> a schema:ScholarlyArticle ;
     schema:about "Objectification theory (Fredrickson & Roberts, 1997) holds that American culture coaxes women to develop observers' views of their bodies. The present study was designed to test whether a state of self-objectification can be automatically activated by subtle exposure to objectifying words. A state of self-objectification or of bodily empowerment was primed by the use of a scrambled sentence task. Women's ratings of negative emotions were higher and their ratings of the appeal of physical sex lower when primed with self-objectification than when primed with body competence. Men's ratings were unaffected by the primes. The results of this study suggest that mere exposure to objectifying media can play a significant role in the initiation of a self-objectified state along with its attendant psychological consequences for women." ;
     schema:author <http://catalog.coloradocollege.edu/a3ad551c-b0f4-11e6-a3d1-005056c00008> ;
     schema:datePublished "2004" ;
@@ -18275,12 +18150,12 @@
     schema:pageEnd "27" ;
     schema:pageStart "17" ;
     schema:partOf <http://catalog.coloradocollege.edu/7fed21d1-3f54-11e8-a640-a41f7283f8d4> ;
-    schema:url <https://doi.org/SERS.0000032306.20462.22> ;
+    schema:url <https://doi.org/10.1023/B:SERS.0000032306.20462.22> ;
     cite:authorString "Tomi-Ann Roberts, J. Y. Gettman." ;
     cite:citationType "article" ;
     cite:month "JUL" .
 
-<https://doi.org/SOTTIR]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.1657/1523-0430(2006)38[173:SOTTIR]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "Heavy, increasing recreation on Colorado's high peaks has created numerous social trails requiring restoration. We studied success of turf transplants 3 yr after transplanting on Mount Belford in the Sawatch Range, and Humboldt Peak in the Sangre de Cristo Range. Based on point-intercept data, sum of all vascular species' covers was 12% to 31% lower in transplanted plots than in control areas. We found no differences in canopy density and height between transplant and control plots on Mount Belford, while both were about 40% lower in transplants on Humboldt Peak. Species richness adjusted for plot size was slightly greater in transplant plots on Mount Belford and slightly lower on Humboldt Peak. On both peaks, we found greater absolute cover of grasses in transplant plots, while forb cover was lower. After 3 yr, turf transplants effectively established vegetation cover and maintained high species richness in these communities. Whenever turf is available, e.g., new trail construction, it should be used to restore closed social trails and campsites, and turf transplants can be considered in other ecosystems for small disturbances in high-value areas where restoration would otherwise be slow." ;
     schema:author <http://catalog.coloradocollege.edu/4f5507c6-b0f1-11e6-b84c-005056c00008> ;
     schema:datePublished "2006" ;
@@ -18288,7 +18163,7 @@
     schema:pageEnd "178" ;
     schema:pageStart "173" ;
     schema:partOf <http://catalog.coloradocollege.edu/4eab3d01-3f54-11e8-aa50-a41f7283f8d4> ;
-    schema:url <https://doi.org/SOTTIR]2.0.CO;2> ;
+    schema:url <https://doi.org/10.1657/1523-0430(2006)38[173:SOTTIR]2.0.CO;2> ;
     cite:authorString "R. F. Bay, James J. Ebersole." ;
     cite:citationType "article" ;
     cite:month "MAY" .
