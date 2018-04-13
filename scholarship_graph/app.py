@@ -15,7 +15,7 @@ import sys
 import traceback
 import uuid
 import utilities
-#from utilities import *
+
 
 import email.mime.text as email_text
 import mimetypes
@@ -556,15 +556,15 @@ def add_work():
                 traceback.print_tb(sys.exc_info()[-1])))
             output = {
                 "message": """Work from journal {} not added, 
-Stack Trace:\n{}""".format(
+Error:\n{}""".format(
                     work_form.journal_title.data,
-                    traceback.print_tb(sys.exc_info()[-1])),
+                    sys.exc_info()[0]),
                 "status": False }
     else:
         output = {"message": "Invalid fields",
                   "status": False,
                   "errors": work_form.errors}
-        return jsonify(output)
+    return jsonify(output)
 
 @app.route("/")
 def home():

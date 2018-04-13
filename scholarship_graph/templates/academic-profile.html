@@ -92,24 +92,26 @@
 	    aria-label="Add Book">
 						<i class="fas fa-book"></i> Book
 	</button>
-    {% for row in citations %}
-    <div class="row citation">
-        <div class="col-8">
-         {{ row|article_link_filter|safe }}
-         {% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
-         {% if row|volume_issue_filter|safe %} {{ row|volume_issue_filter|safe }} {% endif %}
-         {% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
-        </div>
-        <div class="col-4">
-            <a href="#" class="btn btn-warning" onclick="editCitation('{{ row.article.value }}');" type="input">
-                <i class="fas fa-edit"></i>
-            </a>
-            <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{{ row.article.value }}');">
-                <i class="fas fa-trash-alt"></i>
-            </a>
-        </div>
+    <div id="citations">
+       {% for row in citations %}
+       <div class="row">
+           <div class="col-8">
+            {{ row|article_link_filter|safe }}
+            {% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
+            {% if row|volume_issue_filter|safe %} {{ row|volume_issue_filter|safe }} {% endif %}
+            {% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
+           </div>
+           <div class="col-4">
+               <a href="#" class="btn btn-warning" onclick="editCitation('{{ row.article.value }}');" type="input">
+                   <i class="fas fa-edit"></i>
+               </a>
+               <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{{ row.article.value }}');">
+                   <i class="fas fa-trash-alt"></i>
+               </a>
+           </div>
+       </div>
+       {% endfor %}
     </div>
-    {% endfor %}
     <div class="w-50 mx-auto">
         <button type="submit" class="btn btn-success btn-lg">
             <i class="fas fa-save"></i> Save Profile
@@ -174,15 +176,20 @@
  function saveArticle() {
 	var data = $("#add_article_form :input").serializeArray();
 	var action = $("#add_article_form").attr("action");
+        $("#new-article-dlg").modal('hide');
+        $("#processingProfile").modal('show');
 	$.post(action,
 	       data=data,
-		   success=function(data) {
+               success=function(data) {
+                        $("#processingProfile").modal('hide');
+
                         if (data['status'] === true) {
-                            $(".citation").append(data['html']);
-                            $("#new-article-dlg").modal('hide');
+                            $("#citations").append(data['html']);
+                            alert(data["message"]);
 
                         } else {
                             if(data['message'] === "Invalid fields") {
+                                $("#new-article-dlg").modal('show');
                                 console.log(data["errors"]);
                             } else {
                                 alert(data["message"]);

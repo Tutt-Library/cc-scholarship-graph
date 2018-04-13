@@ -8,18 +8,42 @@
         </button>
       </div>
       <div class="modal-body">
+
             <h3>New Book Form</h3>
 			<form method = "POST"
                             id="add_book_form"
 			    action ="{{ url_for('add_work') }}">
                         {{ book_form.citation_type(value='book') }}
-			<label>{{ book_form.author_string.label }}</label>
+			<label>{{ book_form.author_string.label }}</label> <span class="text-danger">*</span></label>
 			{{ book_form.author_string(class_="form-control") }}
-			<label>{{ book_form.datePublished.label }}</label>
-			{{ book_form.datePublished(class_="form-control") }}
+			<label>{{ book_form.book_title.label }}</label> <span class="text-danger">*</span></label>
+			{{ book_form.book_title(class_="form-control") }}
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label>{{ book_form.datePublished.label }}</label> <span class="text-danger">*</span></label>
+						{{ book_form.datePublished(class_="form-control") }}
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label>{{ book_form.isbn.label }}</label>
+						{{ book_form.isbn(class_="form-control") }}
+					</div>
+				</div>
+			</div>
+			<label>{{ book_form.provisionActivityStatement.label }}</label>
+			{{ book_form.provisionActivityStatement(class_="form-control") }}
+			<label>{{ book_form.editionStatement.label }}</label>
+			{{ book_form.editionStatement(class_="form-control") }}
+			<label>{{ book_form.url.label }}</label>
+			{{ book_form.url(class_="form-control") }}
 			<label>{{ book_form.abstract.label }}</label>
-			{{ book_form.abstract(class_="form-control") }}			
+			{{ book_form.abstract(class_="form-control") }}
+			<label>{{ book_form.notes.label }}</label>
+			{{ book_form.notes(class_="form-control") }}			
 			</form>
+			<span class="text-danger">* indicates required fields</span>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

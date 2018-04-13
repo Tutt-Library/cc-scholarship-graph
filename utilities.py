@@ -165,7 +165,14 @@ class Citation(object):
         # to do: account for multiple CC authors. Currently this will take the last match.
         # to do: what happens if there are no matches?
         self.cc_authors=[]
-        for name in self.raw_citation["author"].split(" and "):
+        default = " and "
+        delimiters = [";", ","]
+        delimiters.append(default)
+        for row in delimiters:
+            if row in self.raw_citation["author"]:
+                default = row
+                break 
+        for name in self.raw_citation["author"].split(default):
             family_name=""
             given_name=""
             name_parsed=""
@@ -216,7 +223,7 @@ class Citation(object):
                 author_iri=author_lookup(self.people, author_name_parsed)
                 # print("Author",author_name_parsed,"found in author lookup")
                 self.cc_authors.append(author_iri)
-            elif alternate_author_lookup(people,author_name_parsed) != None:
+            elif alternate_author_lookup(self.people, author_name_parsed) != None:
                 author_iri=alternate_author_lookup(self.people, author_name_parsed)
                 # print("Author",author_name_parsed,"found in alternate author lookup")
                 self.cc_authors.append(author_iri)
