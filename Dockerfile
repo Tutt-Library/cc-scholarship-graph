@@ -5,7 +5,8 @@ MAINTAINER Jeremy Nelson <jermnelson@gmail.com>
 # Environmental variables
 ENV HOME /opt/cc-scholarship-graph
  
-RUN git clone https://github.com/Tutt-Library/cc-scholarship-graph.git $HOME && \ 
+RUN git clone https://github.com/Tutt-Library/cc-scholarship-graph.git $HOME && \
+    git clone  https://github.com/Tutt-Library/tiger-catalog.git /opt/tiger-catalog && \
     cd $HOME && mkdir instance && pip install bibtexparser PyGithub
 
 COPY instance/config.py $HOME/instance/config.py
