@@ -166,42 +166,43 @@ class GitProfile(object):
         config_mgr.conns.datastore.mgr.reset()
 
 def __generate_citation_html__(citation):
-    div = BeautifulSoup("""<div class="row citation" />""", 'lxml')
-    col_1 = div.new_tag("div", **{"class": "col-8"})
+    soup = BeautifulSoup("", 'lxml')
+    div = soup.new_tag("div", **{"class": "row citation"})
+    col_1 = soup.new_tag("div", **{"class": "col-8"})
     if hasattr(citation, "article_title"):
         name = citation.article_title
     elif hasattr(citation, "title"):
         name = citation.title
     if hasattr(citation, "url"):
-        work_link = div.new_tag("a", href=citation.url)
+        work_link = soup.new_tag("a", href=citation.url)
         work_link.string = name
         col_1.append(work_link)
     else:
-        span = div.new_tag("span")
+        span = soup.new_tag("span")
         span.string = name
         col_1.append(span)
     if hasattr(citation, "journal_title"):
-        em = div.new_tag("em")
+        em = soup.new_tag("em")
         em.string = citation.journal_title
         col_1.append(em)
     if hasattr(citation, "year"):
-        span = div.new_tag("span")
+        span = soup.new_tag("span")
         span.string = "({0})".format(citation.year)
         col_1.append(span)
     if hasattr(citation, "volume_number") and len(citation.volume_number) > 0:
-        span = div.new_tag("span")
+        span = soup.new_tag("span")
         span.string = "v. {}".format(citation.volume_number)
         col_1.append(span)
     if hasattr(citation, "issue_number") and len(citation.issue_number) > 0:
-        span = div.new_tag("span")
+        span = soup.new_tag("span")
         span.string = " no. {}".format(citation.issue_number)
         col_1.append(span)
     if hasattr(citation, "page_start") and len(citation.page_start) > 0:
-        span = div.new_tag("span")
+        span = soup.new_tag("span")
         span.string = "p. {}".format(citation.page_start)
         col_1.append(span)
     if hasattr(citation, "page_end") and len(citation.page_end) > 0:
-        span = div.new_tag("span")
+        span = soup.new_tag("span")
         if hasattr(citation, "page_start"): 
             page_string = "- {}."
         else:
@@ -209,7 +210,7 @@ def __generate_citation_html__(citation):
         span.string = page_string.format(citation.page_end)
         col_1.append(span)
     div.append(col_1)
-    col_2 = div.new_tag("div", **{"class": "col-4"})
+    col_2 = soup.new_tag("div", **{"class": "col-4"})
     if hasattr(citation, "doi_iri"):
         edit_click = "editCitation('{}');".format(citation.doi_iri)
         delete_click = "deleteCitation('{}');".format(
@@ -218,15 +219,15 @@ def __generate_citation_html__(citation):
         edit_click = "editCitation('{}');".format(citation.bib_iri)
         delete_click = "deleteCitation('{}');".format(
             citation.doi_iri)
-    edit_a = div.new_tag("a", **{"class": "btn btn-warning",
+    edit_a = soup.new_tag("a", **{"class": "btn btn-warning",
                                  "onclick": edit_click,
                                  "type=": "input"})
-    edit_a.append(div.new_tag("i", **{"class": "fas fa-edit"}))
+    edit_a.append(soup.new_tag("i", **{"class": "fas fa-edit"}))
     col_2.append(edit_a)
-    delete_a = div.new_tag("a", **{"class": "btn btn-danger",
+    delete_a = soup.new_tag("a", **{"class": "btn btn-danger",
                                    "onclick": delete_click,
                                    "type=": "input"})
-    delete_a.append(div.new_tag("i", **{"class": "fas fa-trash-alt"}))
+    delete_a.append(soup.new_tag("i", **{"class": "fas fa-trash-alt"}))
     col_2.append(delete_a)
     div.append(col_2)
     return div.prettify()
@@ -277,8 +278,8 @@ def add_creative_work(**kwargs):
             work_iri, 
             generated_by)
     
-    #with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
-    #    fo.write(git_profile.creative_works.serialize(format='turtle'))
+    #! with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
+    #!    fo.write(git_profile.creative_works.serialize(format='turtle'))
     git_profile.__save_graph__(
         git_repo=git_profile.scholarship_repo,
         file_path="/data/creative-works.ttl",

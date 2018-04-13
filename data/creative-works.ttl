@@ -1,7 +1,6 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix cite: <https://www.coloradocollege.edu/library/ns/citation/> .
-@prefix ns1: <http://www.w3.org/ns/prov#> .
-@prefix prov: <http://www.w3.org/ns/prov> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
@@ -801,9 +800,9 @@
     schema:name "test article title"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
     schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/> ;
-    ns1:qualifiedGeneration [ a ns1:Generation ;
-            ns1:atTime "2018-04-12T20:29:15.651997"^^xsd:dateTime ;
-            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-04-12T20:29:15.651997"^^xsd:dateTime ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
     cite:authorString "Diane Westerfield." ;
     cite:citationType "article" ;
     cite:month "Nov." .
@@ -1113,9 +1112,9 @@
     schema:name "test article title"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
     schema:url <file:///opt/cc-scholarship-graph/> ;
-    ns1:qualifiedGeneration [ a ns1:Generation ;
-            ns1:atTime "2018-04-12T20:29:43.747597"^^xsd:dateTime ;
-            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-04-12T20:29:43.747597"^^xsd:dateTime ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
     cite:authorString "Diane Westerfield." ;
     cite:citationType "article" ;
     cite:month "Nov." .
@@ -1465,20 +1464,6 @@
     cite:citationType "article" ;
     cite:month "JAN" .
 
-<http://catalog.coloradocollege.edu/5afb234a-3e91-11e8-b623-0242ac130005> a schema:ScholarlyArticle ;
-    schema:about "The Tutt Library at Colorado College is developing a portfolio of library applications for use by patrons and library staff. Developed under an iterative and incremental agile model, these single-use HTML5 applications target multiple devices while using Bootstrap and Django to deliver fast and responsive interfaces to underlying FRBR datastores running on Redis, an advanced NoSQL database server. Two types are delineated: applications for access and discovery, which are available to everyone; and productivity applications, which are primarily for library staff to administer and manage the FRBR-RDA records. The access portfolio includes Book Search, Article Search, Call Number, and Library Hours applications. The productivity side includes an Orders App and a MARC Batch application for ingesting MARC records as FRBR entities using RDA Core attributes. When a critical threshold is reached, the Tutt Library intends to replace its legacy ILS with this library application portfolio." ;
-    schema:author <http://orcid.org/0000-0002-7543-3893> ;
-    schema:datePublished "2013" ;
-    schema:name "Building a Library App Portfolio with Redis and Django"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/5b0a2bb0-3e91-11e8-b623-0242ac130005> ;
-    schema:url <http://journal.code4lib.org/articles/7349> ;
-    ns1:qualifiedGeneration [ a ns1:Generation ;
-            ns1:atTime "2018-04-12T20:37:45.492642"^^xsd:dateTime ;
-            ns1:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
-    cite:authorString "Jeremy Nelson." ;
-    cite:citationType "article" ;
-    cite:month "01" .
-
 <http://catalog.coloradocollege.edu/5de4df71-3911-11e8-a6db-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/9ebdb96e-b0dd-11e6-95a4-005056c00008> ;
@@ -1596,9 +1581,9 @@
     schema:name "alsdfjk as;ldkfj"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> ;
     schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
-    ns1:qualifiedGeneration [ a ns1:Generation ;
-            ns1:atTime "2018-04-13T15:15:04.547200"^^xsd:dateTime ;
-            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-04-13T15:15:04.547200"^^xsd:dateTime ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
     cite:authorString "Diane Westerfield." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2051,20 +2036,6 @@
     cite:authorString "David Mason." ;
     cite:citationType "article" ;
     cite:month "" .
-
-<http://catalog.coloradocollege.edu/99313504-3e92-11e8-b623-0242ac130005> a schema:ScholarlyArticle ;
-    schema:about "The Tutt Library at Colorado College is developing a portfolio of library applications for use by patrons and library staff. Developed under an iterative and incremental agile model, these single-use HTML5 applications target multiple devices while using Bootstrap and Django to deliver fast and responsive interfaces to underlying FRBR datastores running on Redis, an advanced NoSQL database server. Two types are delineated: applications for access and discovery, which are available to everyone; and productivity applications, which are primarily for library staff to administer and manage the FRBR-RDA records. The access portfolio includes Book Search, Article Search, Call Number, and Library Hours applications. The productivity side includes an Orders App and a MARC Batch application for ingesting MARC records as FRBR entities using RDA Core attributes. When a critical threshold is reached, the Tutt Library intends to replace its legacy ILS with this library application portfolio." ;
-    schema:author <http://orcid.org/0000-0002-7543-3893> ;
-    schema:datePublished "2013" ;
-    schema:name "Building a Library App Portfolio with Redis and Django"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/5b0a2bb0-3e91-11e8-b623-0242ac130005> ;
-    schema:url <http://journal.code4lib.org/articles/7349> ;
-    ns1:qualifiedGeneration [ a ns1:Generation ;
-            ns1:atTime "2018-04-12T20:46:39.343719"^^xsd:dateTime ;
-            ns1:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
-    cite:authorString "Jeremy Nelson." ;
-    cite:citationType "article" ;
-    cite:month "01" .
 
 <http://catalog.coloradocollege.edu/99ee2010-3f55-11e8-b227-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Little is known about the structure and function of hummingbird vocalizations. We studied the vocalizations of Blue-throated Hummingbirds (Lampornis clemenciae) at two sites in southeastern Arizona. Songs were produced by males and females. Male songs consisted of arrays of notes organized in clusters of \"song units.\" Within sites, all males shared the same song units. Individual differences occurred in some temporal aspects of song, and slight but consistent differences in note structure occurred between the two sites. The organization of units within songs was marked by rigid syntax, and long songs were produced by agglutination of units. Male songs may function in territorial advertisement and mate attraction. Female songs were very different acoustically from those of males and typically were given when females were within a few centimeters of a male. In these situations, the female's song often overlapped temporally with the male's song. Of the hummingbird species studied so far, the Blue-throated Hummingbird has the most complex songs and is the only known species with complex female songs. Blue-throated Hummingbirds show convergence with oscines in vocal complexity, song organization, song function, and possible learning of some song elements." ;
@@ -12851,9 +12822,6 @@
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/5acc0fcc-3911-11e8-a83b-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/5afb1e7c-3e91-11e8-b623-0242ac130005> a schema:Periodical ;
-    schema:name "Code4Lib Journal"@en .
-
 <http://catalog.coloradocollege.edu/5afbab38-3911-11e8-8da2-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1354-814X" ;
     schema:name "Tpm-the Philosophers Magazine"@en .
@@ -17809,9 +17777,9 @@
     schema:name "test article title"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
     schema:url <https://doi.org/10.123489> ;
-    ns1:qualifiedGeneration [ a ns1:Generation ;
-            ns1:atTime "2018-04-12T20:27:29.553397"^^xsd:dateTime ;
-            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-04-12T20:27:29.553397"^^xsd:dateTime ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
     cite:authorString "Diane Westerfield." ;
     cite:citationType "article" ;
     cite:month "Nov." .
@@ -18509,10 +18477,6 @@
 <http://catalog.coloradocollege.edu/591f9901-3911-11e8-872b-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/591f9900-3911-11e8-808d-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/5b0a2bb0-3e91-11e8-b623-0242ac130005> a schema:issueNumber ;
-    schema:issueNumber "19" ;
-    schema:partOf <http://catalog.coloradocollege.edu/5afb1e7c-3e91-11e8-b623-0242ac130005> .
 
 <http://catalog.coloradocollege.edu/5b3e519c-3911-11e8-938d-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1050-9585" ;

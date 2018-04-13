@@ -1389,33 +1389,6 @@
             prov:atTime "2018-04-13T18:04:43.596565"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
         [ a prov:Revision ;
-            prov:atTime "2018-04-12T22:26:50.334147"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-04-12T22:17:09.054797"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-04-09T21:02:10.562781"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-04-09T20:56:04.309080"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-04-09T20:26:15.666446"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-03-26T16:15:36.859905"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-03-23T22:01:21.046068"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-03-22T22:28:37.614549"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
-            prov:atTime "2018-03-07T19:08:06.023025"^^xsd:dateTime ;
-            prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ],
-        [ a prov:Revision ;
             prov:atTime "2018-03-07T19:03:59.395843"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
