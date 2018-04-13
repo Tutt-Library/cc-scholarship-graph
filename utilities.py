@@ -355,12 +355,10 @@ class Article_Citation(Citation):
         # If there is a real doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
         # Please note some citations have a doi field entry which isn't a real doi but a base link.
         self.url = ""
-        click.echo("URL test: {}".format("doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0))
         if "doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0:
             if self.raw_citation["doi"].startswith("http") == False:
                 self.url="https://doi.org/" + self.raw_citation["doi"]
         elif "link" in self.raw_citation.keys():
-            click.echo("Should set link and url")
             #if self.raw_citation["link"].startswith("http"):
             self.url = self.raw_citation["link"]
 
