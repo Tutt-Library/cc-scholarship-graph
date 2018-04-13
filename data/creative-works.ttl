@@ -1489,6 +1489,20 @@
     cite:citationType "article" ;
     cite:month "OCT" .
 
+<http://catalog.coloradocollege.edu/7166d91e-3f2d-11e8-9536-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <https://orcid.org/0000-0002-8845-2954> ;
+    schema:datePublished "1999" ;
+    schema:name "alsdfjk as;ldkfj"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> ;
+    schema:url <> ;
+    ns1:qualifiedGeneration [ a ns1:Generation ;
+            ns1:atTime "2018-04-13T15:15:04.547200"^^xsd:dateTime ;
+            ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
+    cite:authorString "Diane Westerfield." ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/727165f5-3911-11e8-9e78-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/c63ae4cc-b0f5-11e6-88a3-005056c00008> ;
@@ -14369,9 +14383,6 @@
     schema:issueNumber "8" ;
     schema:partOf <http://catalog.coloradocollege.edu/ebc7a686-3910-11e8-bdc0-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> a schema:Periodical ;
-    schema:name "test journal title"@en .
-
 <http://catalog.coloradocollege.edu/ebe8f9b6-3910-11e8-b59f-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-7685" ;
     schema:name "American Biology Teacher"@en .
@@ -15380,6 +15391,9 @@
 <http://catalog.coloradocollege.edu/eaa7a09c-3910-11e8-aaf0-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1069-9384" ;
     schema:name "Psychonomic bulletin & review"@en .
+
+<http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> a schema:Periodical ;
+    schema:name "test journal title"@en .
 
 <http://catalog.coloradocollege.edu/edb6eac6-3910-11e8-9f90-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0140-525X" ;
