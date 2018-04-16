@@ -1823,7 +1823,7 @@
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/2db4969c-b0e3-11e6-9eb7-005056c00008>,
         <http://catalog.coloradocollege.edu/37bfeb12-c8a3-11e7-806e-005056c00008>,
-        <http://catalog.coloradocollege.edu/86f4bce4-3149-11e8-ac2e-001fc69cf6df>,
+        <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008>, 
         <http://catalog.coloradocollege.edu/fc919764-b0f0-11e6-ad95-005056c00008> ;
     schema:datePublished "2013" ;
     schema:name "The Hulbert Center for Southwest Studies, Colorado College"@en ;
@@ -4897,7 +4897,7 @@
 
 <https://doi.org/10.1016/j.jhg.2014.11.007> a schema:ScholarlyArticle ;
     schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/86f4bce4-3149-11e8-ac2e-001fc69cf6df> ;
+    schema:author <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
     schema:datePublished "2015" ;
     schema:name "Contested Waters: An Environmental History of the Colorado River"@en ;
     schema:pageEnd "87" ;
@@ -6083,7 +6083,7 @@
 
 <https://doi.org/10.1068/d14113p> a schema:ScholarlyArticle ;
     schema:about "This paper examines how rural communities in Colorado have confronted military expansion. Against the backdrop of a series of base realignments and closures during the past three decades that have streamlined US military holdings nationwide, the US Army base at Fort Carson, Colorado, has been growing. In 1983 Fort Carson expanded into a 95 500-hectare training area in southeastern Colorado known as the Pinon Canyon Maneuver Site (PCMS). In 2006 the Army announced plans to expand the PCMS by 169 000 hectares. Under the Army's proposal, a significant portion of southeastern Colorado would be transformed into the largest Army training ground in the US. This prospect galvanized a diverse coalition of rural residents to oppose the Pinon Canyon expansion. Our research critically considers how the principal actors in this case-the US Army and a rural citizen opposition coalition-mobilized different narrative and political strategies based substantially upon contrasting cartographic representations to shape the debate and construct contested geographies of this space as military training ground versus open range. As of 2014, the expansion of PCMS is on hold, although there is no guarantee that base or military area expansion will not proceed in the future." ;
-    schema:author <http://catalog.coloradocollege.edu/86f4bce4-3149-11e8-ac2e-001fc69cf6df> ;
+    schema:author <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
     schema:datePublished "2015" ;
     schema:name "Militarized spaces and open range: Pinon Canyon and (counter)cartographies of rural resistance"@en ;
     schema:pageEnd "184" ;
