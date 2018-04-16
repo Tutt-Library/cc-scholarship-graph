@@ -59,6 +59,9 @@ WHERE {{
 				?journal schema:name ?journal_title .}}
 	OPTIONAL {{?article schema:partOf ?journal .
 				?journal schema:name ?journal_title .}}
+        OPTIONAL {{ ?article schema:partOf ?issue .
+                    ?issue schema:partOf ?journal .
+                    ?journal schema:name ?journal_title .}}
 	OPTIONAL {{?article schema:partOf ?issue .
 				?issue schema:partOf ?volume .
 				?issue schema:issueNumber ?issue_number .
@@ -192,10 +195,12 @@ SELECT ?org ?event ?year_label ?rank
 WHERE {{
     ?event ?rank_iri ?person ;
            schema:organizer ?org ;
-           rdfs:label ?year_label .
+           rdfs:label ?year_label ;
+           schema:superEvent ?year_event .
+    ?year_event schema:endDate ?end .
     ?rank_iri rdfs:label ?rank .
     FILTER(<{0}> = ?person)
-}}"""
+}} ORDER BY ?end"""
 
 PERSON_INFO = PREFIX + """
 
@@ -281,6 +286,7 @@ WHERE {{
     OPTIONAL {{ ?work schema:partOf ?issue .
                 ?issue schema:partOf ?journal .
                 ?journal schema:name ?journal_title .}}
+    OPTIONAL {{ ?work cite:authorString ?author_string . }}
     OPTIONAL {{?work schema:pageStart ?page_start .}}
     OPTIONAL {{?work schema:pageEnd ?page_end .}}
 }}""" 

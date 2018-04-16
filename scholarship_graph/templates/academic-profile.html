@@ -94,18 +94,24 @@
 	</button>
     <div id="citations">
        {% for row in citations %}
-       <div class="row">
-           <div class="col-8">
+       <div class="row mb-1">
+           <div class="col-1"><i class="{{ row.icon }}"></i></div>
+           <div class="col-7">
+            {% if "article" in row %}
             {{ row|article_link_filter|safe }}
             {% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
             {% if row|volume_issue_filter|safe %} {{ row|volume_issue_filter|safe }} {% endif %}
             {% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
+            {% elif "book" in row %}
+            {{ row.title.value }}{% if 'datePublished' in row %}({{ row.datePublished.value }}){% endif %}
+
+            {% endif %}
            </div>
            <div class="col-4">
-               <a href="#" class="btn btn-warning" onclick="editCitation('{{ row.article.value }}');" type="input">
+               <a href="#" class="btn btn-warning" onclick="editCitation('{% if 'article' in row %}{{ row.article.value }}{% endif %}');" type="input">
                    <i class="fas fa-edit"></i>
                </a>
-               <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{{ row.article.value }}');">
+               <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{% if 'article' in row %}{{ row.article.value }}{% endif %}');">
                    <i class="fas fa-trash-alt"></i>
                </a>
            </div>
