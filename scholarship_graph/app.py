@@ -20,6 +20,7 @@ import utilities
 import email.mime.text as email_text
 import mimetypes
 
+from types import SimpleNamespace
 from flask import Flask, jsonify, render_template, redirect, request, session 
 from flask import current_app, url_for, flash
 from flask_login import login_required, login_user, logout_user, current_user
@@ -37,6 +38,7 @@ from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING,
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
+from .sparql import WORK_INFO
 from .profiles import add_creative_work, add_profile, update_profile
 from rdfframework.configuration import RdfConfigManager
 
@@ -238,10 +240,13 @@ def academic_profile():
         citations_result = CONNECTION.datastore.query(citation_sparql)
         for row in citations_result:
             citations.append(row)
-	
-       
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
+    
+#    current_user = SimpleNamespace()
+#    current_user.data = SimpleNamespace()
+#    current_user.data.email = "testemail@email.com"
+#    current_user.data.displayName = "Test User"
     return render_template('academic-profile.html',
                            scholar=current_user, 
                            form=profile_form,
@@ -565,6 +570,30 @@ Error:\n{}""".format(
                   "status": False,
                   "errors": work_form.errors}
     return jsonify(output)
+
+@app.route("/edit", methods=["GET", "POST"])
+@login_required
+def edit_work():
+    if request.method.startswith("GET"):
+        uri = request.args.get("iri")
+        results = CONNECTION.datastore.query(WORK_INFO.format(uri))
+        if not results or len(results) < 0:
+            abort(404)
+        if results[0].get("type").get("value").endswith("ScholarlyArticle"):
+            article_form = ArticleForm()
+            for key, value in results[0].items():
+                if key.startswith("type"):
+                    continue
+                if key.startswith('name'):
+                    article_form.article_title.data = value.get("value")
+                elif hasattr(article_form, key):
+                    field = getattr(article_form, key)
+                    field.data = value.get('value')
+            dialog_id = uri.split("/")[-1]
+        return jsonify({"html": render_template("add-article-dlg.html",
+                                    new_article_form=article_form,
+                                    dialog_id=dialog_id),
+                        "dialog-id": dialog_id})
 
 @app.route("/")
 def home():

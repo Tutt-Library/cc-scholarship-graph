@@ -168,7 +168,16 @@
  }
 
  function editCitation(iri) {
-    console.log("editCitation " + iri);
+    var data = {"iri": iri};
+    $.get("{{ url_for('edit_work') }}",
+          data=data,
+          success=function(data) {
+                $("#dialogs").append(data['html']);
+                $("#"+data['dialog-id']).modal('show');
+          }
+     );
+        
+    
     return false;
 
  }
@@ -219,9 +228,11 @@
 {% endblock %}
 
 {% block dialogs %}
+<div id="dialogs">
 {% include 'about-fast-dlg.html' %}
 {% include 'add-article-dlg.html' %}
 {% include 'add-book-dlg.html' %}
 {% include 'process-profile.html' %}
 {% include 'success-profile-update.html' %}
+</div>
 {% endblock %}

@@ -254,3 +254,33 @@ WHERE {{
         schema:about ?subject .
     FILTER (?person = <{0}>)
 }}"""
+
+WORK_INFO = PREFIX + """
+SELECT * 
+WHERE {{
+    BIND(<{0}> as ?work)
+    ?work a ?type ;
+          schema:name ?name .
+    OPTIONAL {{?work schema:about ?abstract . }} 
+    OPTIONAL {{?work schema:url ?url.}}
+    OPTIONAL {{?work schema:datePublished ?datePublished.}}
+    OPTIONAL {{?work schema:partOf ?issue .
+				?issue schema:issueNumber ?issue_number .}}
+    OPTIONAL {{?work schema:partOf ?volume .
+				?volume schema:volumeNumber ?volume_number .
+				?volume schema:partOf ?journal .
+				?journal schema:name ?journal_title .}}
+    OPTIONAL {{?work schema:partOf ?journal .
+				?journal schema:name ?journal_title .}}
+    OPTIONAL {{?work schema:partOf ?issue .
+				?issue schema:partOf ?volume .
+				?issue schema:issueNumber ?issue_number .
+				?volume schema:partOf ?journal .
+				?volume schema:volumeNumber ?volume_number .
+				?journal schema:name ?journal_title .}}
+    OPTIONAL {{ ?work schema:partOf ?issue .
+                ?issue schema:partOf ?journal .
+                ?journal schema:name ?journal_title .}}
+    OPTIONAL {{?work schema:pageStart ?page_start .}}
+    OPTIONAL {{?work schema:pageEnd ?page_end .}}
+}}""" 
