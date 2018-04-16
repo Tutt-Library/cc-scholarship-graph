@@ -100,6 +100,13 @@ WHERE {
 }
 """
 
+COUNT_BOOK_AUTHORS = PREFIX + """
+SELECT (COUNT(?author) as ?count)
+WHERE {
+   ?book rdf:type bf:Book ;
+         schema:author ?author .
+}"""
+
 COUNT_BOOKS = PREFIX + """
 SELECT (COUNT(?book) as ?count)
 WHERE {

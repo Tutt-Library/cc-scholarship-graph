@@ -108,10 +108,10 @@
             {% endif %}
            </div>
            <div class="col-4">
-               <a href="#" class="btn btn-warning" onclick="editCitation('{% if 'article' in row %}{{ row.article.value }}{% endif %}');" type="input">
+               <a href="#" class="btn btn-warning" onclick="editCitation('{{ row|get_iri }}');" type="input">
                    <i class="fas fa-edit"></i>
                </a>
-               <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{% if 'article' in row %}{{ row.article.value }}{% endif %}');">
+               <a href="#" class="btn btn-danger" type="input" onclick="deleteCitation('{{ row|get_iri }}');">
                    <i class="fas fa-trash-alt"></i>
                </a>
            </div>

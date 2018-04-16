@@ -22,7 +22,7 @@ import mimetypes
 
 from types import SimpleNamespace
 from flask import Flask, jsonify, render_template, redirect, request, session 
-from flask import current_app, url_for, flash
+from flask import abort, current_app, url_for, flash
 from flask_login import login_required, login_user, logout_user, current_user
 from flask_login import LoginManager, UserMixin
 from flask_ldap3_login import LDAP3LoginManager
@@ -38,7 +38,7 @@ from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING,
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
-from .sparql import WORK_INFO
+from .sparql import COUNT_BOOK_AUTHORS, WORK_INFO
 from .profiles import add_creative_work, add_profile, update_profile
 from rdfframework.configuration import RdfConfigManager
 
@@ -153,6 +153,15 @@ def person_history(person_iri):
         org_link.text = row.get("year_label").get("value")
     return etree.tostring(ul).decode()
     
+@app.template_filter("get_iri")
+def extract_iri(row):
+    if "article" in row:
+        return row.get("article").get("value")
+    elif "book" in row:
+        return row.get("book").get('value')
+    elif "person" in row:
+        return row.get("person").get("value")
+    return ''
 
 @app.template_filter("get_stat")
 @contextfilter
@@ -160,6 +169,8 @@ def generate_statistic(context, type_of):
     type_of = type_of.lower()
     if type_of.startswith("articles"):
         result = CONNECTION.datastore.query(COUNT_ARTICLES)
+    elif type_of.startswith("authors"):
+        result = CONNECTION.datastore.query(COUNT_BOOK_AUTHORS)
     elif type_of.startswith("book"):
         result = CONNECTION.datastore.query(COUNT_BOOKS)
     elif type_of.startswith("journal"):
@@ -167,7 +178,7 @@ def generate_statistic(context, type_of):
     elif type_of.startswith("org"):
         result = CONNECTION.datastore.query(COUNT_ORGS)
     elif type_of.startswith("users"):
-        result = CONNECTION.datastore.query(COUNT_PEOPLE)    
+        result = CONNECTION.datastore.query(COUNT_PEOPLE)
     else:
         result = None
     if result:
@@ -239,6 +250,12 @@ def academic_profile():
         citation_sparql = CITATION.format(fields["iri"])
         citations_result = CONNECTION.datastore.query(citation_sparql)
         for row in citations_result:
+            row['icon'] = 'fas fa-file-alt'
+            citations.append(row)
+        book_sparql = BOOK_CITATION.format(fields["iri"])
+        book_result = CONNECTION.datastore.query(book_sparql)
+        for row in book_result:
+            row['icon'] = 'fas fa-book'
             citations.append(row)
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
@@ -542,24 +559,10 @@ def add_work():
                     raw_citation["doi"]=work_form.doi.data
                 if work_form.url.data != None:
                     raw_citation["link"]=work_form.url.data
-                if work_form.abstract.data != None:
-                    raw_citation["abstract"]=work_form.abstract.data
             elif citation_type.startswith("book-chapter"):
                 pass
             elif citation_type.startswith("book"):
                 raw_citation["title"] = work_form.book_title.data
-                if work_form.isbn.data != None:
-                    raw_citation["isbn"] = work_form.isbn.data
-                if work_form.provisionActivityStatement.data != None:
-                    raw_citation["provisionActivityStatement"] = work_form.provisionActivityStatement.data
-                if work_form.editionStatement.data != None:
-                    raw_citation["editionStatement"] = work_form.editionStatement.data
-                if work_form.url.data != None:
-                    raw_citation["url"] = work_form.url.data
-                if work_form.abstract.data != None:
-                    raw_citation["abstract"] = work_form.abstract.data
-                if work_form.notes.data != None:
-                    raw_citation["notes"] = work_form.notes.data
             else:
                 abort(500)
             if work_form.abstract.data != None:
@@ -591,12 +594,11 @@ def edit_work():
     if request.method.startswith("GET"):
         uri = request.args.get("iri")
         results = CONNECTION.datastore.query(WORK_INFO.format(uri))
+        click.echo("Results are {}\nSPARQ=\n{}".format(results, WORK_INFO.format(uri)))
         if not results or len(results) < 0:
             abort(404)
         if results[0].get("type").get("value").endswith("ScholarlyArticle"):
             article_form = ArticleForm()
-            work_template = "add-article-dlg.html"
-            work_form = article_form
             for key, value in results[0].items():
                 if key.startswith("type"):
                     continue
@@ -606,22 +608,8 @@ def edit_work():
                     field = getattr(article_form, key)
                     field.data = value.get('value')
             dialog_id = uri.split("/")[-1]
-        elif results[0].get("type").get("value").endswith("Book"):
-            book_form = BookForm()
-            work_template = "add-book-dlg.html"
-            work_form = book_form
-            for key, value in results[0].items():
-                if key.startswith("type"):
-                    continue
-                if key.startswith('title'):
-                    book_form.book_title.data = value.get("value")
-                elif hasattr(book_form, key):
-                    field = getattr(book_form, key)
-                    field.data = value.get('value')
-            dialog_id = uri.split("/")[-1]
-
-        return jsonify({"html": render_template(work_template,
-                                    new_work_form=work_form,
+        return jsonify({"html": render_template("add-article-dlg.html",
+                                    new_article_form=article_form,
                                     dialog_id=dialog_id),
                         "dialog-id": dialog_id})
 
