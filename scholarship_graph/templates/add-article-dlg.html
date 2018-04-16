@@ -16,22 +16,22 @@
                         {{ new_article_form.citation_type(value='article') }}
             <h3>{% if dialog_id %}Edit{% else %}New{% endif %} Article Form</h3>
 			{{ new_article_form.author_string.label }} <span class="text-danger">*</span>
-			{{ new_article_form.author_string(class_="form-control") }}
+			{{ new_article_form.author_string(class_="form-control mb-2") }}
 			{{ new_article_form.article_title.label }} <span class="text-danger">*</span>
-			{{ new_article_form.article_title(class_="form-control") }}
+			{{ new_article_form.article_title(class_="form-control mb-2") }}
 			{{ new_article_form.journal_title.label }} <span class="text-danger">*</span>
-			{{ new_article_form.journal_title(class_="form-control") }}
+			{{ new_article_form.journal_title(class_="form-control mb-2") }}
 			<div class="row">
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.datePublished.label }} <span class="text-danger">*</span>
-						{{ new_article_form.datePublished(class_="form-control") }}
+						{{ new_article_form.datePublished(class_="form-control mb-2") }}
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.month.label }}
-						{{ new_article_form.month(class_="form-control") }}
+						{{ new_article_form.month(class_="form-control mb-2") }}
 					</div>
 				</div>
 			</div>
@@ -39,13 +39,13 @@
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.volume_number.label }}
-						{{ new_article_form.volume_number(class_="form-control") }}
+						{{ new_article_form.volume_number(class_="form-control mb-2") }}
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.issue_number.label }}
-						{{ new_article_form.issue_number(class_="form-control") }}
+						{{ new_article_form.issue_number(class_="form-control mb-2") }}
 					</div>
 				</div>
 			</div>
@@ -53,13 +53,13 @@
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.page_start.label }}
-						{{ new_article_form.page_start(class_="form-control") }}
+						{{ new_article_form.page_start(class_="form-control mb-2") }}
 					</div>
 				</div>
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.page_end.label }}
-						{{ new_article_form.page_end(class_="form-control") }}
+						{{ new_article_form.page_end(class_="form-control mb-2") }}
 					</div>
 				</div>
 			</div>
@@ -67,18 +67,18 @@
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.doi.label }}
-						{{ new_article_form.doi(class_="form-control") }}
+						{{ new_article_form.doi(class_="form-control mb-2") }}
 					</div>				
 				</div>
 				<div class="col">
 					<div class="form-group">
 						{{ new_article_form.url.label }}
-						{{ new_article_form.url(class_="form-control") }}
+						{{ new_article_form.url(class_="form-control mb-2") }}
 					</div>
 				</div>
 			</div>
 			{{ new_article_form.abstract.label }}
-			{{ new_article_form.abstract(class_="form-control") }}
+			{{ new_article_form.abstract(class_="form-control mb-2") }}
 			<span class="text-danger">* indicates required fields</span>
       </div>
       <div class="modal-footer">

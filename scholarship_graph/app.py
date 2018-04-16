@@ -239,12 +239,6 @@ def academic_profile():
         citation_sparql = CITATION.format(fields["iri"])
         citations_result = CONNECTION.datastore.query(citation_sparql)
         for row in citations_result:
-            row['icon'] = 'fas fa-file-alt'
-            citations.append(row)
-        book_sparql = BOOK_CITATION.format(fields["iri"])
-        book_result = CONNECTION.datastore.query(book_sparql)
-        for row in book_result:
-            row['icon'] = 'fas fa-book'
             citations.append(row)
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
@@ -548,10 +542,24 @@ def add_work():
                     raw_citation["doi"]=work_form.doi.data
                 if work_form.url.data != None:
                     raw_citation["link"]=work_form.url.data
+                if work_form.abstract.data != None:
+                    raw_citation["abstract"]=work_form.abstract.data
             elif citation_type.startswith("book-chapter"):
                 pass
             elif citation_type.startswith("book"):
                 raw_citation["title"] = work_form.book_title.data
+                if work_form.isbn.data != None:
+                    raw_citation["isbn"] = work_form.isbn.data
+                if work_form.provisionActivityStatement.data != None:
+                    raw_citation["provisionActivityStatement"] = work_form.provisionActivityStatement.data
+                if work_form.editionStatement.data != None:
+                    raw_citation["editionStatement"] = work_form.editionStatement.data
+                if work_form.url.data != None:
+                    raw_citation["url"] = work_form.url.data
+                if work_form.abstract.data != None:
+                    raw_citation["abstract"] = work_form.abstract.data
+                if work_form.notes.data != None:
+                    raw_citation["notes"] = work_form.notes.data
             else:
                 abort(500)
             if work_form.abstract.data != None:
@@ -587,6 +595,8 @@ def edit_work():
             abort(404)
         if results[0].get("type").get("value").endswith("ScholarlyArticle"):
             article_form = ArticleForm()
+            work_template = "add-article-dlg.html"
+            work_form = article_form
             for key, value in results[0].items():
                 if key.startswith("type"):
                     continue
@@ -596,8 +606,22 @@ def edit_work():
                     field = getattr(article_form, key)
                     field.data = value.get('value')
             dialog_id = uri.split("/")[-1]
-        return jsonify({"html": render_template("add-article-dlg.html",
-                                    new_article_form=article_form,
+        elif results[0].get("type").get("value").endswith("Book"):
+            book_form = BookForm()
+            work_template = "add-book-dlg.html"
+            work_form = book_form
+            for key, value in results[0].items():
+                if key.startswith("type"):
+                    continue
+                if key.startswith('title'):
+                    book_form.book_title.data = value.get("value")
+                elif hasattr(book_form, key):
+                    field = getattr(book_form, key)
+                    field.data = value.get('value')
+            dialog_id = uri.split("/")[-1]
+
+        return jsonify({"html": render_template(work_template,
+                                    new_work_form=work_form,
                                     dialog_id=dialog_id),
                         "dialog-id": dialog_id})
 
