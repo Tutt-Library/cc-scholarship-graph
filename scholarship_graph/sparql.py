@@ -36,6 +36,7 @@ def add_qualified_generation(graph, entity_iri, generatedBy):
 PREFIX = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
 PREFIX cc_fac: <https://www.coloradocollege.edu/ns/faculty/>
 PREFIX cc_info: <https://www.coloradocollege.edu/ns/info/>  
+PREFIX cite: <https://www.coloradocollege.edu/library/ns/citation/>
 PREFIX etd: <http://catalog.coloradocollege.edu/ns/etd#> 
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
@@ -272,7 +273,8 @@ SELECT *
 WHERE {{
     BIND(<{0}> as ?work)
     ?work a ?type ;
-          schema:name ?name .
+    OPTIONAL {{?work schema:name ?name . }}
+    OPTIONAL {{?work bf:title ?title . }}
     OPTIONAL {{?work schema:about ?abstract . }} 
     OPTIONAL {{?work schema:url ?url.}}
     OPTIONAL {{?work schema:datePublished ?datePublished.}}
@@ -296,4 +298,9 @@ WHERE {{
     OPTIONAL {{ ?work cite:authorString ?author_string . }}
     OPTIONAL {{?work schema:pageStart ?page_start .}}
     OPTIONAL {{?work schema:pageEnd ?page_end .}}
+    OPTIONAL {{?work bf:provisionActivityStatement ?provisionActivityStatement . }}
+    OPTIONAL {{?work bf:editionStatement ?editionStatement . }}
+    OPTIONAL {{?work bf:isbn ?isbn . }}
+    OPTIONAL {{?work schema:publicationDate ?datePublished .}}
+    OPTIONAL {{?work bf:Note ?notes .}}
 }}""" 

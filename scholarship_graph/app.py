@@ -260,10 +260,10 @@ def academic_profile():
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
     
-#    current_user = SimpleNamespace()
-#    current_user.data = SimpleNamespace()
-#    current_user.data.email = "testemail@email.com"
-#    current_user.data.displayName = "Test User"
+    #current_user = SimpleNamespace()
+    #current_user.data = SimpleNamespace()
+    #current_user.data.email = "testemail@email.com"
+    #current_user.data.displayName = "Test User"
     return render_template('academic-profile.html',
                            scholar=current_user, 
                            form=profile_form,
@@ -593,13 +593,16 @@ Error:\n{}""".format(
 def edit_work():
     if request.method.startswith("GET"):
         uri = request.args.get("iri")
+        dialog_id = uuid.uuid1()
         results = CONNECTION.datastore.query(WORK_INFO.format(uri))
-        click.echo("Results are {}\nSPARQ=\n{}".format(results, WORK_INFO.format(uri)))
         if not results or len(results) < 0:
             abort(404)
-        if results[0].get("type").get("value").endswith("ScholarlyArticle"):
+        work_class = results[0].get("type").get("value")
+        first_work = results[0]
+        click.echo("First work is {}".format(first_work))
+        if work_class.endswith("ScholarlyArticle"):
             article_form = ArticleForm()
-            for key, value in results[0].items():
+            for key, value in first_work.items():
                 if key.startswith("type"):
                     continue
                 if key.startswith('name'):
@@ -607,10 +610,25 @@ def edit_work():
                 elif hasattr(article_form, key):
                     field = getattr(article_form, key)
                     field.data = value.get('value')
-            dialog_id = uri.split("/")[-1]
-        return jsonify({"html": render_template("add-article-dlg.html",
-                                    new_article_form=article_form,
-                                    dialog_id=dialog_id),
+            
+            html_str = render_template("add-article-dlg.html",
+                            new_article_form=article_form,
+                            dialog_id=dialog_id)
+        elif work_class.endswith("Book"):
+            book_form = BookForm()
+            for key, value in first_work.items():
+                click.echo("key={} value={}".format(key, value))
+                if key.startswith("type"):
+                    continue
+                if key.startswith("title"):
+                    book_form.book_title.data = value.get('value')
+                elif hasattr(book_form, key):
+                    field = getattr(book_form, key)
+                    field.data = value.get('value')
+            html_str = render_template("add-book-dlg.html",
+                book_form=book_form,
+                dialog_id=dialog_id)
+        return jsonify({"html": html_str,
                         "dialog-id": dialog_id})
 
 @app.route("/")

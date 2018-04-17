@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New Book</h5>
+        <h5 class="modal-title" id="exampleModalLabel">{% if dialog_id %}Edit{% else %}New{% endif %} Book</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -48,6 +48,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" input type="reset">Reset form</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
