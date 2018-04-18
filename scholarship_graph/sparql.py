@@ -296,6 +296,8 @@ WHERE {{
                 ?issue schema:partOf ?journal .
                 ?journal schema:name ?journal_title .}}
     OPTIONAL {{ ?work cite:authorString ?author_string . }}
+    OPTIONAL {{ ?work schema:author ?author .
+                ?author rdfs:label ?author_string . }}
     OPTIONAL {{?work schema:pageStart ?page_start .}}
     OPTIONAL {{?work schema:pageEnd ?page_end .}}
     OPTIONAL {{?work bf:provisionActivityStatement ?provisionActivityStatement . }}

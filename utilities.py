@@ -182,6 +182,8 @@ class Citation(object):
             #to do: regex expression that covers all parsing
             #import pdb;pdb.set_trace()
             name = name.strip()
+            if name.endswith("."):
+                name = name[:-1]
             if "." in name:
                 try:
                     # GivenName Initial FamilyName ex. Jane C. Doe

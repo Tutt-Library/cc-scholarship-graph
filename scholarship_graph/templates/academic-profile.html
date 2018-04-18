@@ -170,6 +170,20 @@
 
  function deleteCitation(iri) {
     var yesDelete = confirm("Are you sure you want to delete " + iri);
+    if(yesDelete === true) {
+        $("#processingProfile").modal('show');
+        var data = { "iri": iri,
+                     "author": $("#iri").val() };
+        $.ajax({
+            url: "{{ url_for('add_work') }}",
+            type: 'DELETE',
+            data: data,
+            success: function(data) {
+                $("#processingProfile").modal('hide');
+                alert(data['message']);
+            }
+        });
+    }
     return false;
  }
 

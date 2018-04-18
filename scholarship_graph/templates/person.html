@@ -45,8 +45,10 @@
             {% endfor %}
 
 		<div style="margin-left:5px; margin-top: 10px;">
+                {% if info.citations|length > 0 or info.book_citations|length > 0 %}
 		<h3>Recent Works</h3>
 		<h4>Articles</h4>
+                {% if info.citations|length > 0 %}
 		{% for row in info.citations %}
 			<p>
 			{{ row|article_link_filter|safe }}
@@ -55,6 +57,8 @@
 			{% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
 			</p>
 		{% endfor %}
+                {% endif %}
+                {% if info.book_citations|length > 0 %}
 		<h4>Books</h4>
 		{% for row in info.book_citations %}
 			<p>
@@ -64,6 +68,8 @@
 			
 			</p>
 		{% endfor %}
+                {% endif %}
+                {% endif %}
 		</div>
         </div>
     </div>

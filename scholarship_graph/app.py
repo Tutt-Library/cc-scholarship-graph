@@ -39,7 +39,8 @@ from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
 from .sparql import COUNT_BOOK_AUTHORS, WORK_INFO
-from .profiles import add_creative_work, add_profile, update_profile
+from .profiles import add_creative_work, add_profile, delete_creative_work
+from .profiles import edit_creative_work, update_profile
 from rdfframework.configuration import RdfConfigManager
 
 
@@ -529,64 +530,80 @@ def cc_logout():
     logout_user()
     return redirect(url_for('home'))
 
-@app.route("/work", methods=['POST'])
+def __populate_citation__(work_form):
+    citation_type = work_form.citation_type.data
+    raw_citation = {"ENTRYTYPE": citation_type,
+                      "author": work_form.author_string.data,
+                      "year": work_form.datePublished.data}
+    if citation_type.startswith("article"):
+        raw_citation["journal"]=work_form.journal_title.data
+        raw_citation["title"]=work_form.article_title.data
+        if work_form.page_start.data !=None:
+            raw_citation["page_start"]=work_form.page_start.data
+        if work_form.page_end.data !=None:
+            raw_citation["page_end"]=work_form.page_end.data
+        if work_form.month.data != None:
+            raw_citation["month"]=work_form.month.data
+        if work_form.volume_number.data != None:
+            raw_citation["volume_number"]=work_form.volume_number.data
+        if work_form.issue_number.data != None:
+            raw_citation["number"]=work_form.issue_number.data
+        if work_form.doi.data != None:
+            raw_citation["doi"]=work_form.doi.data
+        if work_form.url.data != None:
+            raw_citation["link"]=work_form.url.data
+    elif citation_type.startswith("book-chapter"):
+        pass
+    elif citation_type.startswith("book"):
+       raw_citation["title"] = work_form.book_title.data
+       raw_citation["isbn"] = work_form.isbn.data
+    else:
+        abort(500)
+    if work_form.abstract.data != None:
+        raw_citation["abstract"]=work_form.abstract.data
+    return raw_citation
+
+
+@app.route("/work", methods=['POST', 'DELETE'])
 @login_required
 def add_work():
-    citation_type = request.form['citation_type']
-    if citation_type.startswith("article"):
-        work_form = ArticleForm(request.form)
-    elif citation_type.startswith("book"):
-        work_form = BookForm(request.form)
-    if work_form.validate():
-        try:
-            raw_citation = {"ENTRYTYPE": citation_type,
-                             "author": work_form.author_string.data,
-                             "year": work_form.datePublished.data}
-            if citation_type.startswith("article"):
-                raw_citation["journal"]=work_form.journal_title.data
-                raw_citation["title"]=work_form.article_title.data
-                if work_form.page_start.data !=None:
-                    raw_citation["page_start"]=work_form.page_start.data
-                if work_form.page_end.data !=None:
-                    raw_citation["page_end"]=work_form.page_end.data
-                if work_form.month.data != None:
-                    raw_citation["month"]=work_form.month.data
-                if work_form.volume_number.data != None:
-                    raw_citation["volume_number"]=work_form.volume_number.data
-                if work_form.issue_number.data != None:
-                    raw_citation["number"]=work_form.issue_number.data
-                if work_form.doi.data != None:
-                    raw_citation["doi"]=work_form.doi.data
-                if work_form.url.data != None:
-                    raw_citation["link"]=work_form.url.data
-            elif citation_type.startswith("book-chapter"):
-                pass
-            elif citation_type.startswith("book"):
-                raw_citation["title"] = work_form.book_title.data
-            else:
-                abort(500)
-            if work_form.abstract.data != None:
-                raw_citation["abstract"]=work_form.abstract.data
+    if request.method.endswith("DELETE"):
+        output = delete_creative_work(config=app.config,
+            iri=request.form['iri'],
+            author=request.form["author"],
+            config_manager=CONFIG_MANAGER,
+            current_user=current_user)
+    else:
+        citation_type = request.form['citation_type']
+        if citation_type.startswith("article"):
+            work_form = ArticleForm(request.form)
+        elif citation_type.startswith("book"):
+            work_form = BookForm(request.form)
+        if work_form.validate():
+##        try:
+            raw_citation = __populate_citation__(work_form)
             output = add_creative_work(
                 config=app.config,
                 citation=raw_citation,
                 config_manager=CONFIG_MANAGER,
                 current_user=current_user,
                 work_type=citation_type)
-        except:
-            click.echo("Error {}".format(
-                traceback.print_tb(sys.exc_info()[-1])))
-            output = {
-                "message": """Work not added, 
-Error:\n{}""".format(
-                    sys.exc_info()[0]),
-                "status": False }
-    else:
-        output = {"message": "Invalid fields",
-                  "status": False,
-                  "errors": work_form.errors}
+##        except:
+##            click.echo("Error {}".format(
+##                traceback.print_tb(sys.exc_info()[-1])))
+##            output = {
+##                "message": """Work not added, 
+##Error:\n{}""".format(
+##                    sys.exc_info()[0]),
+##                "status": False }
+        else:
+            output = {"message": "Invalid fields",
+                      "status": False,
+                      "errors": work_form.errors}
     return jsonify(output)
 
+#! We may move this logic to a add_work route and add a 
+#! PUT method
 @app.route("/edit", methods=["GET", "POST"])
 @login_required
 def edit_work():
@@ -598,7 +615,6 @@ def edit_work():
             abort(404)
         work_class = results[0].get("type").get("value")
         first_work = results[0]
-        click.echo("First work is {}".format(first_work))
         if work_class.endswith("ScholarlyArticle"):
             article_form = ArticleForm()
             for key, value in first_work.items():
@@ -621,14 +637,33 @@ def edit_work():
                     continue
                 if key.startswith("title"):
                     book_form.book_title.data = value.get('value')
+                elif key.endswith("author"):
+                    author_results = CONNECTION.datastore.query(
+                        PERSON_LABEL.format(value.get('value')))
+                    if author_results and len(author_results) > 0:
+                        book_form.author_string.data = author_results[0].get("label").get("value")
                 elif hasattr(book_form, key):
                     field = getattr(book_form, key)
                     field.data = value.get('value')
             html_str = render_template("add-book-dlg.html",
                 book_form=book_form,
                 dialog_id=dialog_id)
-        return jsonify({"html": html_str,
-                        "dialog-id": dialog_id})
+        output = {"html": html_str,
+                  "dialog-id": dialog_id}
+    else:
+        work_type = request.form["citation_type"]
+        if work_type.startswith("article"):
+            work_form = ArticleForm()
+        elif work_type.endswith("book"):
+            work_form = BookForm()
+        raw_citation = __populate_citation__(work_form)
+        output = edit_creative_work(config=app.config,
+            citation=raw_citation,
+            config_manager=CONFIG_MANAGER,
+            current_user=current_user,
+            work_type=work_type)
+    return jsonify(output)
+
 
 @app.route("/")
 def home():
