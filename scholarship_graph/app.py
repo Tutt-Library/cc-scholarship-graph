@@ -205,7 +205,7 @@ def academic_profile():
     authenticated users to edit their own profile"""
     fields = dict()
     if request.method.startswith("POST"):
-        if len(request.form.get("iri")) < 1:
+        if len(request.form.get("iri", "")) < 1:
             msg = add_profile(
                 form=request.form,
                 config=app.config,
@@ -577,9 +577,8 @@ def add_work():
             click.echo("Error {}".format(
                 traceback.print_tb(sys.exc_info()[-1])))
             output = {
-                "message": """Work from journal {} not added, 
+                "message": """Work not added, 
 Error:\n{}""".format(
-                    work_form.journal_title.data,
                     sys.exc_info()[0]),
                 "status": False }
     else:

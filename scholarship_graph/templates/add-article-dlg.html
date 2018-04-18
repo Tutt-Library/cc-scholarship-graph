@@ -84,7 +84,8 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-warning" input type="reset">Reset form</button>
-        <button type="button" class="btn btn-primary" onclick="saveArticle()">Save changes</button>
+        <button type="button" class="btn btn-primary" 
+          onclick="saveArticle('{% if dialog_id %}{{ dialog_id }}{% else %}new-article-dlg{% endif %}')">Save changes</button>
       </div>
 	  </form>
     </div>

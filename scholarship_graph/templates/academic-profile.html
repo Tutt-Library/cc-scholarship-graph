@@ -95,7 +95,7 @@
     <div id="citations">
        {% for row in citations %}
        <div class="row mb-1">
-           <div class="col-1"><i class="{{ row.icon }}"></i></div>
+           <div class="col-1 text-center"><i class="{{ row.icon }}"></i></div>
            <div class="col-7">
             {% if "article" in row %}
             {{ row|article_link_filter|safe }}
@@ -188,10 +188,16 @@
 
  }
 
- function saveArticle() {
-	var data = $("#add_article_form :input").serializeArray();
-	var action = $("#add_article_form").attr("action");
-        $("#new-article-dlg").modal('hide');
+ function saveArticle(dlg_id) {
+        var dlg_selector = "#" + dlg_id;
+	var data = $(dlg_selector + " :input").serializeArray();
+        if(dlg_id.startsWith("new-article") > 0) {
+            var form_selector = "#add_article_form";
+        } else {
+            var form_selector = "#edit_article_form";
+        }
+	var action = $(form_selector).attr("action");
+        $(dlg_selector).modal('hide');
         $("#processingProfile").modal('show');
 	$.post(action,
 	       data=data,
@@ -204,7 +210,7 @@
 
                         } else {
                             if(data['message'] === "Invalid fields") {
-                                $("#new-article-dlg").modal('show');
+                                $("#" + dlg_id).modal('show');
                                 console.log(data["errors"]);
                             } else {
                                 alert(data["message"]);
@@ -213,6 +219,42 @@
                         }
 		   }
 	);
+    return false;
+}
+
+function saveBook(dlg_id) {
+    var dlg_selector = "#" + dlg_id;
+    var data = $(dlg_selector + " :input").serializeArray();
+    if(dlg_id.startsWith("book-dlg") > 0) {
+        var form_selector = "#add_book_form";
+    } else {
+        var form_selector = "#edit_book_form";
+    }
+    $(dlg_selector).modal('hide');
+    $("#processingProfile").modal('show');
+    var action = $(form_selector).attr("action");
+    console.log("Action is " + action);
+    $.post(action,
+	       data=data,
+               success=function(data) {
+                        $("#processingProfile").modal('hide');
+
+                        if (data['status'] === true) {
+                            $("#citations").append(data['html']);
+                            alert(data["message"]);
+
+                        } else {
+                            if(data['message'] === "Invalid fields") {
+                                $("#" + dlg_id).modal('show');
+                                console.log(data["errors"]);
+                            } else {
+                                alert(data["message"]);
+                            }
+
+                        }
+		   }
+	);
+  return false; 
 }
 
  $("#academic-profile").on('submit', function(e) {

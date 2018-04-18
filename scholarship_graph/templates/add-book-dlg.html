@@ -49,7 +49,8 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-warning" input type="reset">Reset form</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" 
+            onclick="saveBook('{% if dialog_id %}{{ dialog_id }}{% else %}book-dlg{% endif %}')">Save changes</button>
       </div>
     </div>
   </div>

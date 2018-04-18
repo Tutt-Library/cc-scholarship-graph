@@ -2,12 +2,19 @@
 __author__ = "Jeremy Nelson"
 
 import base64
+import bibcat
 import datetime
 import hashlib
+import io
 import os
 import pprint
+import smtplib
 import subprocess
 import uuid
+
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import mimetypes
 
 import click
 import rdflib
@@ -55,6 +62,7 @@ class GitProfile(object):
                     format='turtle')
         self.graph_hashes["cc_people"] = hashlib.sha1(
             self.cc_people.serialize(format='n3')).hexdigest()
+
         self.graph_hashes["current_year"] = hashlib.sha1(
             self.current_year.serialize(format='n3')).hexdigest()
         # Start retrieving and parsing latest RDF for creative works, 
@@ -165,10 +173,62 @@ class GitProfile(object):
             click.echo(result.returncode, result.stdout)
         config_mgr.conns.datastore.mgr.reset()
 
+def __email_work__(**kwargs):
+    """Function takes a work graph and configuration and emails the graph in
+    turtle format to the administrators for review before adding to production.
+
+    Keyword args:
+        work_graph(rdflib.Graph): RDF Graph of Citation
+        config: Configuration includes logins and administor 
+    """
+    work_graph = kwargs.get("graph")
+    config = kwargs.get("config")
+    sender = config.get('EMAIL')['user']
+    recipients = config.get("ADMINS")
+    subject = kwargs.get('subject')
+    text = kwargs.get('text')
+    message = MIMEMultipart()
+    message["From"] = sender
+    message["Subject"] = subject
+    message["To"] = ",".join(recipients)
+    body = MIMEText(text, _charset="UTF-8")
+    message.attach(body)
+    #message = email_text.MIMEText(
+    work_turtle = io.StringIO(
+        work_graph.serialize(format='turtle').decode())
+    attachment = MIMEText(work_turtle.read())
+    attachment.add_header('Content-Disposition', 
+        'attachment',
+        filename='work.ttl')
+    message.attach(attachment)
+        
+    #try:
+    server = smtplib.SMTP(config.get('EMAIL')['host'],
+                          config.get('EMAIL')['port'])
+
+    server.ehlo()
+    if config.get('EMAIL')['tls']:
+        server.starttls()
+    server.ehlo()
+    server.login(sender,
+                 config.get("EMAIL")["password"])
+    server.sendmail(sender, recipients, message.as_string())
+    server.close()
+
+
 def __generate_citation_html__(citation):
     soup = BeautifulSoup("", 'lxml')
     div = soup.new_tag("div", **{"class": "row citation"})
-    col_1 = soup.new_tag("div", **{"class": "col-8"})
+    col_1 = soup.new_tag("div", **{"class": "col-1"})
+    if citation.citation_type.startswith("article"):
+        col_1.append(soup.new_tag("i", **{"class": "fas fa-file-alt"}))
+    elif citation.citation_type.endswith("book"):
+        col_1.append(soup.new_tag("i", **{"class": "fas fa-book"}))
+    under_review = soup.new_tag("em")
+    under_review.string = "Under Review"
+    col_1.append(under_review)
+    div.append(col_1)  
+    col_2 = soup.new_tag("div", **{"class": "col-7"})
     if hasattr(citation, "article_title"):
         name = citation.article_title
     elif hasattr(citation, "title"):
@@ -176,31 +236,31 @@ def __generate_citation_html__(citation):
     if hasattr(citation, "url"):
         work_link = soup.new_tag("a", href=citation.url)
         work_link.string = name
-        col_1.append(work_link)
+        col_2.append(work_link)
     else:
         span = soup.new_tag("span")
         span.string = name
-        col_1.append(span)
+        col_2.append(span)
     if hasattr(citation, "journal_title"):
         em = soup.new_tag("em")
         em.string = citation.journal_title
-        col_1.append(em)
+        col_2.append(em)
     if hasattr(citation, "year"):
         span = soup.new_tag("span")
         span.string = "({0})".format(citation.year)
-        col_1.append(span)
+        col_2.append(span)
     if hasattr(citation, "volume_number") and len(citation.volume_number) > 0:
         span = soup.new_tag("span")
         span.string = "v. {}".format(citation.volume_number)
-        col_1.append(span)
+        col_2.append(span)
     if hasattr(citation, "issue_number") and len(citation.issue_number) > 0:
         span = soup.new_tag("span")
         span.string = " no. {}".format(citation.issue_number)
-        col_1.append(span)
+        col_2.append(span)
     if hasattr(citation, "page_start") and len(citation.page_start) > 0:
         span = soup.new_tag("span")
         span.string = "p. {}".format(citation.page_start)
-        col_1.append(span)
+        col_2.append(span)
     if hasattr(citation, "page_end") and len(citation.page_end) > 0:
         span = soup.new_tag("span")
         if hasattr(citation, "page_start"): 
@@ -208,31 +268,95 @@ def __generate_citation_html__(citation):
         else:
             page_string = "{}."
         span.string = page_string.format(citation.page_end)
-        col_1.append(span)
-    div.append(col_1)
-    col_2 = soup.new_tag("div", **{"class": "col-4"})
+        col_2.append(span)
+    div.append(col_2)
+    col_3 = soup.new_tag("div", **{"class": "col-4"})
     if hasattr(citation, "doi_iri"):
         edit_click = "editCitation('{}');".format(citation.doi_iri)
         delete_click = "deleteCitation('{}');".format(
             citation.doi_iri)
     elif hasattr(citation, "bib_uri"):
-        edit_click = "editCitation('{}');".format(citation.bib_iri)
+        edit_click = "editCitation('{}');".format(citation.bib_uri)
         delete_click = "deleteCitation('{}');".format(
-            citation.doi_iri)
+            citation.bib_uri)
     edit_a = soup.new_tag("a", **{"class": "btn btn-warning",
                                  "onclick": edit_click,
                                  "type=": "input"})
     edit_a.append(soup.new_tag("i", **{"class": "fas fa-edit"}))
-    col_2.append(edit_a)
+    col_3.append(edit_a)
     delete_a = soup.new_tag("a", **{"class": "btn btn-danger",
                                    "onclick": delete_click,
                                    "type=": "input"})
     delete_a.append(soup.new_tag("i", **{"class": "fas fa-trash-alt"}))
-    col_2.append(delete_a)
-    div.append(col_2)
+    col_3.append(delete_a)
+    div.append(col_3)
     return div.prettify()
  
-                                       
+def __reconcile_article__(work_graph, connection):
+    SCHEMA = rdflib.Namespace("http://schema.org/")
+    for row in work_graph.query(
+        """SELECT ?entity ?label WHERE { ?entity rdf:type schema:Periodical ;
+                                         schema:name ?label . } """):
+
+        entity, label = row
+        break
+    volume, issue = None, None
+    volume_or_issue = work_graph.value(predicate=SCHEMA.partOf,
+                                       object=entity)
+    schema_class = work_graph.value(subject=volume_or_issue,
+        predicate=rdflib.RDF.type)
+    if schema_class is SCHEMA.volumeNumber:
+        volume = volume_or_issue
+        issue = work_graph.value(predicate=SCHEMA.partOf,
+            object=volume)
+    elif schema_class is SCHEMA.issueNumber:
+        issue = volume_or_issue
+    result = connection.datastore.query("""SELECT ?periodical
+WHERE {{
+    ?periodical schema:name ?name .
+    FILTER(CONTAINS(?name, "{0}"))
+    }}""".format(label))
+    if result and len(result) > 0:
+        periodical = result[0].get("periodical").get("value")
+        if periodical != str(entity):
+            new_work = rdflib.URIRef(periodical)
+
+            bibcat.replace_iri(work_graph, entity, new_work)
+            entity = new_work
+    if volume is not None:
+        vol_num = work_graph.value(subject=volume,
+            predicate=SCHEMA.volumeNumber)
+        result = connection.datastore.query("""SELECT ?volume
+WHERE {{
+    ?volume schema:partOf ?work ;
+            schema:volumeNumber ?volumeNumber .
+    BIND(<{0}> as ?work)
+    BIND("{1}" as ?volumeNumber)
+    }}""".format(entity, vol_num))
+        if result and len(result) > 0:
+            new_volume = rdflib.URIRef(result[0].get("volume").get("value"))
+            bibcat.replace_iri(work_graph, volume, new_volume)
+    if issue is not None:
+        issue_number = work_graph.value(subject=issue,
+            predicate=SCHEMA.issueNumber)
+        result = connection.datastore.query("""SELECT ?issue
+WHERE {{
+    ?issue rdf:type schema:issueNumber ;
+           schema:issueNumber ?issue_number .
+    OPTIONAL {{ ?issue schema:partOf ?volume . }}
+    OPTIONAL {{ ?issue schema:partOf ?periodical . }}
+    BIND(<{0}> as ?volume)
+    BIND(<{1}> as ?periodical)
+    BIND("{2}" as ?issue_number)
+    }}""".format(volume, periodical, issue_number)    )
+        if result and len(result) > 0:
+            new_issue = rdflib.URIRef(result[0].get("issue").get("value"))
+            bibcat.replace_iri(work_graph, issue, new_issue)
+    
+            
+    
+
+        
         
 def add_creative_work(**kwargs):
     """Calls utilities to populate and save to datastore"""
@@ -253,39 +377,55 @@ def add_creative_work(**kwargs):
         generated_by = rdflib.URIRef(
             email_results[0].get("person").get('value'))
 
+    temp_work = rdflib.Graph()
+    temp_work.namespace_manager.bind("cite",
+        rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/"))
+    for prefix, namespace in git_profile.cc_people.namespaces():
+            temp_work.namespace_manager.bind(prefix, namespace)
+ 
     if work_type.startswith("article"):
-        citation = utilities.Article_Citation(raw_citation,
-            git_profile.creative_works,
+       citation = utilities.Article_Citation(raw_citation,
+            temp_work,
+            git_profile.cc_people,
+            False)
+       citation.populate()
+       citation.populate_article()
+       citation.add_article()
+    elif work_type.startswith("book"):
+        citation = utilities.Book_Citation(raw_citation,
+            temp_work,
             git_profile.cc_people,
             False)
         citation.populate()
-        citation.populate_article()
-        citation.add_article()
-    elif work_type.startswith("book"):
-        citation = utilities.Book_Citation(raw_citation,
-            git_profile.creative_works,
-            git_profile.cc_people,
-            False)
-        citation.poulate()
         citation.populate_book()
         citation.add_book()
     if generated_by:
-        if hasattr(citation, "bib_iri") :
-            work_iri = citation.bib_iri
+        if hasattr(citation, "bib_uri") :
+            work_iri = citation.bib_uri
         elif hasattr(citation, "doi_iri"):
             work_iri = citation.doi_iri
-        add_qualified_generation(git_profile.creative_works, 
+        add_qualified_generation(temp_work, 
             work_iri, 
             generated_by)
     
     #! with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
     #!    fo.write(git_profile.creative_works.serialize(format='turtle'))
-    git_profile.__save_graph__(
-        git_repo=git_profile.scholarship_repo,
-        file_path="/data/creative-works.ttl",
-        graph_name="creative_works")
-    git_profile.__reload_triplestore__(connection)
-    return {"message": "Added {} to Scholarship".format(work_type),
+    #git_profile.__save_graph__(
+    #    git_repo=git_profile.scholarship_repo,
+    #    file_path="/data/creative-works.ttl",
+    #    graph_name="creative_works")
+    #git_profile.__reload_triplestore__(connection)
+    if work_type.startswith("article"):
+        __reconcile_article__(temp_work, connection)
+    __email_work__(graph=temp_work, 
+        config=config,
+        subject='Add Creative Work {}'.format(work_iri),
+        text="New {} generated by {} on {}, see attached turtle file".format( 
+            citation.citation_type,
+            generated_by, 
+            datetime.datetime.utcnow().isoformat())
+        )
+    return {"message": "New work has been submitted for review",
             "status": True,
             "html":  __generate_citation_html__(citation),
             "iri": work_iri}
