@@ -3558,19 +3558,6 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
-<http://catalog.coloradocollege.edu/a53edec7-4276-11e8-ad47-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/60f09682-b0f0-11e6-bee4-005056c00008> ;
-    schema:datePublished "2003" ;
-    schema:name "Recovering history, constructing race: The Indian, Black, and White roots of Mexican Americans"@en ;
-    schema:pageEnd "361" ;
-    schema:pageStart "360" ;
-    schema:partOf <http://catalog.coloradocollege.edu/a5603207-4276-11e8-a85f-a41f7283f8d4> ;
-    schema:url <> ;
-    cite:authorString "Douglas Monroy." ;
-    cite:citationType "article" ;
-    cite:month "MAR" .
-
 <http://catalog.coloradocollege.edu/a57e96b1-3911-11e8-943a-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses the early Sanskrit versions of the gopis story in the Indian God, Krsna's life. The said versions are called the Hariva?sa and the Bhagavata Pura?a. The former is reportedly the most influential while the latter is said to be not much known. The article also explores both versions and provides a comparison in relation to the identity of the gopis." ;
     schema:author <http://catalog.coloradocollege.edu/1ca0b234-b0f5-11e6-8683-005056c00008> ;
@@ -6019,7 +6006,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///ccsenet.org/journal/index.php/ibr/issue/archive> a schema:ScholarlyArticle ;
+<http://dx.doi.org/10.5539/ibr.v3n4p60> a schema:ScholarlyArticle ;
     schema:about "The recent stagnation of electronic commerce highlights the need to understand contemporary online consumer behavior. E-commerce's slow growth has coincided with an explosion in the usage of Web 2.0 activities. These novel online venues have created many new channels for online retailers to reach buyers, yet these online activities have gone largely unstudied. This study incorporates current user demographics and Web 2.0 activities to dynamically model the determinants of two key measurements of recent online shopping, a recent purchase and the novel dependent variable, percentage of income spent online. Regression analysis is applied to a nationally representative 2007 survey of the U.S. online population. Determinants of a recent online purchase include, ownership of a credit card, PayPalTM account, listening to podcasts, participating in online auctions, and for the first time, female gender. In a second regression, positive determinants for the percentage of income spent online include male gender, educational attainment, online auctions, instant messaging, and online dating. Online spending increases with time online, and appears to compete with other forms of online entertainment and social networking. These results produce snapshots of contemporary online shoppers that can be used by electronic retailers to determine which product characteristics to highlight for greatest impact, and to efficiently target specific Web 2.0 activities, such as entertainment, podcast and social network websites, to develop new and robust marketing platforms." ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
     schema:datePublished "2010" ;
@@ -6027,7 +6014,7 @@
     schema:pageEnd "71" ;
     schema:pageStart "60" ;
     schema:partOf <http://catalog.coloradocollege.edu/308519f5-3912-11e8-a5aa-a41f7283f8d4> ;
-    schema:url "https://doi.org///ccsenet.org/journal/index.php/ibr/issue/archive" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=ecn&AN=1144177" ;
     cite:authorString "Brendan Hannah, Kristina M. Lybecker." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -11636,7 +11623,7 @@
     cite:citationType "article" ;
     cite:month "FEB 2" .
 
-<https://doi.org/1011972930917> a schema:ScholarlyArticle ;
+<https://doi.org/10.1023/A:1011972930917> a schema:ScholarlyArticle ;
     schema:about "\"On-off\" phenomena in Parkinson's disease (PD) are unpredictable motor fluctuations associated with long-term levodopa use. Mood fluctuations have been found to coincide with the motor fluctuations in that depression and anxiety increase while the person with PD is in the \"off\" state. What has been relatively unexplored is whether those persons with PD who have \"on-off\" phenomena differ psychologically in fundamental ways from those who do not have \"on-off\" phenomena. In the present study, depression and anxiety symptoms were assessed in 36 persons with PD (n = 14 with \"on-off\" phenomena, n = 22 without \"on-off\" phenomena). All those with \"on-off\" phenomena were assessed in their \"on\" state. Those persons with PD with \"on-off\" phenomena had significantly higher levels of anxiety than those without \"on-off\" phenomena. However, both groups, regardless of \"on-off\" status, were mildly depressed. Neurobiological interpretations of the results implicate the locus coeruleus in the pathogenesis of both \"on-off\" phenomena and anxiety, whereas psychological interpretations of the results involve the issues of learned helplessness and control over health symptoms in PD." ;
     schema:author <http://catalog.coloradocollege.edu/9a0726a4-b0f0-11e6-8e32-005056c00008> ;
     schema:datePublished "2001" ;
@@ -25179,7 +25166,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org/20041504> a schema:ScholarlyArticle ;
+<https://doi.org/10.1051/0004-6361:20041504> a schema:ScholarlyArticle ;
     schema:about "We present VLT FORS1 and FORS2 spectra of 39 candidate high-redshift supernovae that were discovered as part of a cosmological study using type Ia supernovae (SNe Ia) over a wide range of redshifts. From the spectra alone, 20 candidates are spectrally classified as SNe Ia with redshifts ranging from z=0.212 to z=1.181. Of the remaining 19 candidates, 1 might be a type II supernova and 11 exhibit broad supernova-like spectral features and/or have supernova-like light curves. The candidates were discovered in 8 separate ground-based searches. In those searches in which SNe Ia at zsimilar to0.5 were targeted, over 80% of the observed candidates were spectrally classified as SNe Ia. In those searches in which SNe Ia with z>1 were targeted, 4 candidates with z>1 were spectrally classified as SNe Ia and later followed with ground and space based observatories. We present the spectra of all candidates, including those that could not be spectrally classified as supernova." ;
     schema:author <http://catalog.coloradocollege.edu/c03ea058-15bf-11e8-8fe9-005056c00008> ;
     schema:datePublished "2005" ;
@@ -25192,7 +25179,7 @@
     cite:citationType "article" ;
     cite:month "FEB" .
 
-<https://doi.org/20042463> a schema:ScholarlyArticle ;
+<https://doi.org/10.1051/0004-6361:20042463> a schema:ScholarlyArticle ;
     schema:about "We present a novel technique for fitting restframe I-band light curves on a data set of 42 type Ia supernovae (SNe Ia). Using the result of the fit, we construct a Hubble diagram with 26 SNe from the subset at 0.01 < z < 0.1. Adding two SNe at z similar to 0.5 yields results consistent with a flat Lambda-dominated \"concordance universe\" (Omega(M), Omega(Lambda)) = (0.25, 0.75). For one of these, SN 2000fr, new near infrared data are presented. The high redshift supernova NIR data are also used to test for systematic effects in the use of SNe Ia as distance estimators. A flat, Lambda = 0, universe where the faintness of supernovae at z similar to 0.5 is due to grey dust homogeneously distributed in the intergalactic medium is disfavoured based on the high-z Hubble diagram using this small data-set. However, the uncertainties are large and no firm conclusion may be drawn. We explore the possibility of setting limits on intergalactic dust based on B-I and B-V colour measurements, and conclude that about 20 well measured SNe are needed to give statistically significant results. We also show that the high redshift restframe I-band data points are better fit by light curve templates that show a prominent second peak, suggesting that they are not intrinsically underluminous." ;
     schema:author <http://catalog.coloradocollege.edu/c03ea058-15bf-11e8-8fe9-005056c00008> ;
     schema:datePublished "2005" ;
@@ -25204,7 +25191,7 @@
     cite:citationType "article" ;
     cite:month "JUL" .
 
-<https://doi.org/20065400> a schema:ScholarlyArticle ;
+<https://doi.org/10.1051/0004-6361:20065400> a schema:ScholarlyArticle ;
     schema:about "We develop a method to measure the strength of the absorption features in type Ia supernova ( SN Ia) spectra and use it to make a quantitative comparisons between the spectra of type Ia supernovae at low and high redshifts. In this case study, we apply the method to 12 high-redshift ( 0.212 <= z <= 0.912) SNe Ia observed by the Supernova Cosmology Project. Through measurements of the strengths of these features and of the blueshift of the absorption minimum in Ca ii H&K, we show that the spectra of the high-redshift SNe Ia are quantitatively similar to spectra of nearby SNe Ia ( z < 0.15). One supernova in our high redshift sample, SN 2002fd at z = 0.279, is found to have spectral characteristics that are associated with peculiar SN 1991T/SN 1999aa-like supernovae." ;
     schema:author <http://catalog.coloradocollege.edu/c03ea058-15bf-11e8-8fe9-005056c00008> ;
     schema:datePublished "2007" ;
