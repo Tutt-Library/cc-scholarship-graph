@@ -1506,6 +1506,9 @@
 Colorado College students, interested in developing a research project - either for a block or as a summer research project - are welcome to meet with me and discuss possibilities. I’m happy to help you build a research project out of ideas you may have, or you can plug into one of several projects that are designed to engage college students.  Check my website for more information:  http://sites.coloradocollege.edu/staylor/"""@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-04-20T16:13:38.043446"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://orcid.org/0000-0002-3020-5205> ] ;
+    prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-04-20T16:14:06.119703"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-3020-5205> ] .
 
 <http://catalog.coloradocollege.edu/cef472dc-f7de-11e7-936d-005056c00008> a schema:DigitalDocument ;
