@@ -119,7 +119,7 @@
     schema:pageEnd "40" ;
     schema:pageStart "39" ;
     schema:partOf <http://catalog.coloradocollege.edu/02438131-41c4-11e8-bcd0-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Jane Hilberry." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -303,7 +303,7 @@
     schema:name "Monoterpenes in ponderosa pine as biomarkers of genetic diversity and coevolution."@en ;
     schema:pageStart "U106" ;
     schema:partOf <http://catalog.coloradocollege.edu/06746940-41c4-11e8-82a8-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Howard Drossman, E. Clark, E. Scherer, M. Snyder." ;
     cite:citationType "article" ;
     cite:month "MAR 26" .
@@ -315,7 +315,7 @@
     schema:name "Bioanalytical chemistry: Integrating biochemical content into analytical chemistry classes."@en ;
     schema:pageStart "U316" ;
     schema:partOf <http://catalog.coloradocollege.edu/06746940-41c4-11e8-82a8-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Howard Drossman." ;
     cite:citationType "article" ;
     cite:month "MAR 26" .
@@ -327,7 +327,7 @@
     schema:name "How might we cure color blindness? A chemconnections module."@en ;
     schema:pageStart "U427" ;
     schema:partOf <http://catalog.coloradocollege.edu/06746940-41c4-11e8-82a8-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Howard Drossman, K. Morgan, K. Kester." ;
     cite:citationType "article" ;
     cite:month "MAR 26" .
@@ -339,7 +339,7 @@
     schema:name "Teaching chemistry at the watershed level."@en ;
     schema:pageStart "U478" ;
     schema:partOf <http://catalog.coloradocollege.edu/07d76440-41c4-11e8-9091-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Howard Drossman, H. Hamann." ;
     cite:citationType "article" ;
     cite:month "SEP" .
@@ -388,7 +388,7 @@
     schema:datePublished "2011" ;
     schema:name "Analysis of student satisfaction and achievement of learning objectives with traditional vs environmentally-relevant POGIL exercises"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/0a305030-41c4-11e8-87cb-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Howard Drossman, Mari Titcombe." ;
     cite:citationType "article" ;
     cite:month "MAR 27" .
@@ -1087,7 +1087,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/32429ddc-3d0f-11e8-bafc-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1002/ajpa.22033> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/9ebdb96e-b0dd-11e6-95a4-005056c00008> ;
     schema:datePublished "2012" ;
@@ -1095,31 +1095,31 @@
     schema:pageEnd "144" ;
     schema:pageStart "143" ;
     schema:partOf <http://catalog.coloradocollege.edu/930a21b0-3911-11e8-bc02-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1002/ajpa.22033" ;
     cite:authorString "Krista Fish, Joshua Sodowsky, Kyleen Breslin, Laura Broudy, Sarah Soffer, Ramboazafy Anjarasoaniana." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/329f737a-3d0f-11e8-85bb-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1002/ajpa.22247> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/9ebdb96e-b0dd-11e6-95a4-005056c00008> ;
     schema:datePublished "2013" ;
     schema:name "The role of exotic and ornamental plants in the feeding ecology of mouse lemurs (Microcebus murinus) at Berenty Private Reserve, Madagascar."@en ;
     schema:pageStart "123" ;
     schema:partOf <http://catalog.coloradocollege.edu/32b7413a-3d0f-11e8-91c9-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1002/ajpa.22247" ;
     cite:authorString "Krista Fish." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/3337cb7a-3d0f-11e8-b476-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1002/ajpa.22488> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/9ebdb96e-b0dd-11e6-95a4-005056c00008> ;
     schema:datePublished "2014" ;
     schema:name "Preliminary analysis of habitat usage by sympatric greater and lesser galagos (Otolemur crassicaudatus and Galago moholi) in a montane environment"@en ;
     schema:pageStart "118" ;
     schema:partOf <http://catalog.coloradocollege.edu/334d37dc-3d0f-11e8-9a1e-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1002/ajpa.22488" ;
     cite:authorString "Krista Fish, Michelle Sauther, Frank Cuozzo, Michael Strinden." ;
     cite:citationType "article" ;
     cite:month "MAR" .
@@ -1227,20 +1227,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/3a73e04a-3d0f-11e8-9607-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "Highly ordered crystallineGe microwire arrays with individualdiameters larger than 1 µm have been grown in aqueous solutionsat ambient pressure and below the boiling point of water through anelectrochemical liquid–liquid–solid (ec-LLS) crystalgrowth process. A pertinent feature of this work is the use of a liquidmetal patterning strategy which combines the utility of photolithographywith the simplicity of doctor blading to produce macroscopic (&gt;1cm2) arrays of liquid metal microelectrodes. Optical andelectronmicrographs showed the compatibility of the liquid metal patterningprocess and subsequent ec-LLS microwire growth with a wide assortmentof different conductive substrates, including silicon, indium tinoxide, copper foil, titanium foil, stainless steel, and poly[(3,4-ethylenedioxy)thiophene]/poly(styrenesulfonate).Furthermore, a simple chemical bath lift-off procedure was developedto fully remove the Ge microwire arrays embedded in SU-8 photoresistwithout perturbing the order or quality of the material, resultingin a free-standing composite membrane. Data from energy-dispersivespectroscopy, Auger nanoprobe spectroscopic mapping, and four-terminalsingle microwire electrical measurements indicated that the specificliquid metal used for ec-LLS impacts the morphology and electricalproperties of the resultant Ge microwires. [ABSTRACT FROM AUTHOR]  Copyright of Chemistry of Materials is the property of American Chemical Society and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+<https://doi.org/10.1021/acs.chemmater.5b00644> a schema:ScholarlyArticle ;
+    schema:about "Highly ordered crystallineGe microwire arrays with individual diameters larger than 1 µm have been grown in aqueous solutions at ambient pressure and below the boiling point of water through anelectrochemical liquid–liquid–solid (ec-LLS) crystal growth process. A pertinent feature of this work is the use of a liquid metal patterning strategy which combines the utility of photolithography with the simplicity of doctor blading to produce macroscopic (&gt;1cm2) arrays of liquid metal microelectrodes. Optical and electronmicrographs showed the compatibility of the liquid metal patterning process and subsequent ec-LLS microwire growth with a wide assortment of different conductive substrates, including silicon, indium tinoxide, copper foil, titanium foil, stainless steel, and poly[(3,4-ethylenedioxy)thiophene]/poly(styrenesulfonate). Furthermore, a simple chemical bath lift-off procedure was developed to fully remove the Ge microwire arrays embedded in SU-8 photoresistwithout perturbing the order or quality of the material, resulting in a free-standing composite membrane. Data from energy-dispersive spectroscopy, Auger nanoprobe spectroscopic mapping, and four-terminal single microwire electrical measurements indicated that the specific liquid metal used for ec-LLS impacts the morphology and electrical properties of the resultant Ge microwires. [ABSTRACT FROM AUTHOR]  Copyright of Chemistry of Materials is the property of American Chemical Society and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
     schema:author <http://catalog.coloradocollege.edu/21abceda-c89e-11e7-9baa-005056c00008> ;
     schema:datePublished "2015" ;
-    schema:name "Electrochemical Liquid–Liquid–SolidCrystal Growth of Germanium Microwires on Hard and Soft ConductiveSubstrates at Low Temperature in Aqueous Solution."@en ;
+    schema:name "Electrochemical Liquid–Liquid–Solid Crystal Growth of Germanium Microwires on Hard and Soft Conductive Substrates at Low Temperature in Aqueous Solution."@en ;
     schema:pageEnd "3396" ;
     schema:pageStart "3389" ;
     schema:partOf <http://catalog.coloradocollege.edu/3a8bae0b-3d0f-11e8-ac1b-a41f7283f8d4> ;
-    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=102627456" ;
+    schema:url "https://doi.org/10.1021/acs.chemmater.5b00644" ;
     cite:authorString "Eli Fahrenkrug, Janelle Biehl, Stephen Maldonado." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/3aed466d-3d0f-11e8-bb69-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1021/acs.accounts.5b00158> a schema:ScholarlyArticle ;
     schema:about "This Account describes a new electrochemicalsynthetic strategyfor direct growth of crystalline covalent group IV and III–Vsemiconductor materials at or near ambient temperature conditions.This strategy, which we call “electrochemical liquid–liquid–solid”(ec-LLS) crystal growth, marries the semiconductor solvation propertiesof liquid metal melts with the utility and simplicity of conventionalelectrodeposition. A low-temperature liquid metal (i.e., Hg, Ga, oralloy thereof) acts simultaneously as the source of electrons forthe heterogeneous reduction of oxidized semiconductor precursors dissolvedin an electrolyte as well as the solvent for dissolution of the zero-valentsemiconductor. Supersaturation of the semiconductor in the liquidmetal triggers eventual crystal nucleation and growth. In this way,the liquid electrolyte–liquid metal–solid crystal phaseboundary strongly influences crystal growth. [ABSTRACT FROM AUTHOR]  Copyright of Accounts of Chemical Research is the property of American Chemical Society and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
     schema:author <http://catalog.coloradocollege.edu/21abceda-c89e-11e7-9baa-005056c00008> ;
     schema:datePublished "2015" ;
@@ -1248,7 +1248,7 @@
     schema:pageEnd "1890" ;
     schema:pageStart "1881" ;
     schema:partOf <http://catalog.coloradocollege.edu/3b02b2cb-3d0f-11e8-bd23-a41f7283f8d4> ;
-    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=108466791" ;
+    schema:url "https://doi.org/10.1021/acs.accounts.5b00158" ;
     cite:authorString "Eli Fahrenkrug, Stephen Maldonado." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -1295,7 +1295,7 @@
     schema:name "Linking futures across scales: a dialog on multiscale scenarios"@en ;
     schema:pageStart "17" ;
     schema:partOf <http://catalog.coloradocollege.edu/3e03024b-3d0f-11e8-b495-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://www.ecologyandsociety.org/vol12/iss1/art17/" ;
     cite:authorString "Reinette Biggs, Ciara Raudsepp-Hearne, Carol Atkinson-Palombo, Erin Bohensky, Emily Boyd, Georgina Cundill, Helen Fox, Scott Ingram, Kasper Kok, Stephanie Spehar, Maria Tengo, Dagmar Timmer, Monika Zurek." ;
     cite:citationType "article" ;
     cite:month "JUN" .
@@ -1320,7 +1320,7 @@
     schema:name "Sustainable Small-Scale Agriculture in Semi-Arid Environments"@en ;
     schema:pageStart "26" ;
     schema:partOf <http://catalog.coloradocollege.edu/3f9ed02d-3d0f-11e8-9a60-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://www.ecologyandsociety.org/vol16/iss1/art26/" ;
     cite:authorString "Katherine A. Spielmann, Margaret Nelson, Scott Ingram, Matthew A. Peeples." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -1444,7 +1444,7 @@
     schema:pageEnd "227" ;
     schema:pageStart "225" ;
     schema:partOf <http://catalog.coloradocollege.edu/4ca6b29f-3f54-11e8-9e16-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "J. L. Reynolds, T. N. Feinstein, James J. Ebersole." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -1457,7 +1457,7 @@
     schema:pageEnd "132" ;
     schema:pageStart "129" ;
     schema:partOf <http://catalog.coloradocollege.edu/4e4e6763-3f54-11e8-9678-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "E. B. McCain, J. I. Zlotoff, James J. Ebersole." ;
     cite:citationType "article" ;
     cite:month "JAN" .
@@ -1483,7 +1483,7 @@
     schema:name "An application of air-sampling canisters: Selective herbivory associated with monoterpene emission from ponderosa pine"@en ;
     schema:pageStart "+" ;
     schema:partOf <http://catalog.coloradocollege.edu/528a1541-3f54-11e8-bd35-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "P. P. Jung, N. W. Bower, Marc A. Snyder, D. W. Lehmpuhl." ;
     cite:citationType "article" ;
     cite:month "FEB" .
@@ -1569,7 +1569,7 @@
     schema:pageEnd "82" ;
     schema:pageStart "73" ;
     schema:partOf <http://catalog.coloradocollege.edu/5829a881-3f54-11e8-ac17-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Jonathan Scott Lee." ;
     cite:citationType "article" ;
     cite:month "MAY" .
@@ -1890,7 +1890,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/66a1fae7-3911-11e8-9b40-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1080/10357823.2015.1006322> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/63799edc-b0f0-11e6-bbba-005056c00008> ;
     schema:datePublished "2015" ;
@@ -1898,7 +1898,7 @@
     schema:pageEnd "527" ;
     schema:pageStart "525" ;
     schema:partOf <http://catalog.coloradocollege.edu/66ade1c3-3911-11e8-8958-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1080/10357823.2015.1006322" ;
     cite:authorString "John Williams." ;
     cite:citationType "article" ;
     cite:month "JUL 3" .
@@ -2074,7 +2074,7 @@
     cite:citationType "article" ;
     cite:month "JUN" .
 
-<http://catalog.coloradocollege.edu/6e7f5d4a-3911-11e8-909e-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1093/envhis/emv113> a schema:ScholarlyArticle ;
     schema:about "In this essay I argue that infectious disease is not simply a product of conditions of poverty because the mutability of pathogens allows them to thrive in multiple niches throughout the complex human ecology. Consequently, certain conditions of affluence may actually contribute to the proliferation of certain diseases like the virulent coronavirus that causes severe acute respiratory syndrome (SARS). Thus certain pathogens colonize ecological niches within affluent and technologically sophisticated societies. These so-called plagues of affluence represent a challenge to global health that is largely unaddressed." ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
     schema:datePublished "2015" ;
@@ -2082,7 +2082,7 @@
     schema:pageEnd "778" ;
     schema:pageStart "765" ;
     schema:partOf <http://catalog.coloradocollege.edu/591f9901-3911-11e8-872b-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1093/envhis/emv113" ;
     cite:authorString "Andrew Price-Smith." ;
     cite:citationType "article" ;
     cite:month "OCT" .
@@ -2129,7 +2129,7 @@
     schema:datePublished "1999" ;
     schema:name "alsdfjk as;ldkfj"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     ns1:qualifiedGeneration [ a ns1:Generation ;
             ns1:atTime "2018-04-13T15:15:04.547200"^^xsd:dateTime ;
             ns1:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
@@ -2157,7 +2157,7 @@
     schema:pageEnd "79" ;
     schema:pageStart "68" ;
     schema:partOf <http://catalog.coloradocollege.edu/727d4ccd-3911-11e8-a0fd-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=110779815" ;
     cite:authorString "Naomi Pueo Wood." ;
     cite:citationType "article" ;
     cite:month "NOV" .
@@ -2269,7 +2269,7 @@
     schema:pageEnd "329" ;
     schema:pageStart "324" ;
     schema:partOf <http://catalog.coloradocollege.edu/7e919911-3f54-11e8-a5be-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Tomi-Ann Roberts." ;
     cite:citationType "article" ;
     cite:month "AUG" .
@@ -2309,7 +2309,7 @@
     schema:pageEnd "627" ;
     schema:pageStart "626" ;
     schema:partOf <http://catalog.coloradocollege.edu/83b155c1-3f54-11e8-8b17-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Juan D. Lindau." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2322,7 +2322,7 @@
     schema:pageEnd "170" ;
     schema:pageStart "169" ;
     schema:partOf <http://catalog.coloradocollege.edu/84108cc1-3f54-11e8-adee-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Juan D. Lindau." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2463,7 +2463,7 @@
     schema:pageEnd "922" ;
     schema:pageStart "919" ;
     schema:partOf <http://catalog.coloradocollege.edu/8854e563-3f54-11e8-8bb9-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Carol Neel." ;
     cite:citationType "article" ;
     cite:month "DEC" .
@@ -2554,7 +2554,7 @@
     schema:pageEnd "398" ;
     schema:pageStart "397" ;
     schema:partOf <http://catalog.coloradocollege.edu/8bb9e251-3f54-11e8-b534-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Owen Cramer." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2606,7 +2606,7 @@
     schema:pageEnd "546" ;
     schema:pageStart "545" ;
     schema:partOf <http://catalog.coloradocollege.edu/8d5a72f1-3f54-11e8-8716-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Gail E. Murphy-Geiss." ;
     cite:citationType "article" ;
     cite:month "MAY" .
@@ -2632,7 +2632,7 @@
     schema:pageEnd "272" ;
     schema:pageStart "260" ;
     schema:partOf <http://catalog.coloradocollege.edu/8dadc311-3f54-11e8-8fd9-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Gail Murphy-Geiss." ;
     cite:citationType "article" ;
     cite:month "MAR" .
@@ -2722,7 +2722,7 @@
     schema:pageEnd "84" ;
     schema:pageStart "48" ;
     schema:partOf <http://catalog.coloradocollege.edu/920f86f1-3f54-11e8-994c-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "John Williams." ;
     cite:citationType "article" ;
     cite:month "JUN" .
@@ -2979,7 +2979,7 @@
     schema:pageEnd "128" ;
     schema:pageStart "120" ;
     schema:partOf <http://catalog.coloradocollege.edu/9a084f31-3f55-11e8-8041-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "M. S. Ficken, K. M. Rusch, Steve Taylor, D. R. Powers." ;
     cite:citationType "article" ;
     cite:month "JAN" .
@@ -3031,7 +3031,7 @@
     schema:pageEnd "230" ;
     schema:pageStart "223" ;
     schema:partOf <http://catalog.coloradocollege.edu/9b04ef11-3f55-11e8-a442-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Steve Taylor, J. E. McPherson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -3069,7 +3069,7 @@
     schema:pageEnd "103" ;
     schema:pageStart "101" ;
     schema:partOf <http://catalog.coloradocollege.edu/9b8c9d71-3f55-11e8-8724-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Steve Taylor, G. Tescari, M. Villa." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -3081,7 +3081,7 @@
     schema:name "Thermodynamics of Inosine in small RNA sequences; a nearest neighbor analysis"@en ;
     schema:pageStart "C50" ;
     schema:partOf <http://catalog.coloradocollege.edu/9cb32b41-41c3-11e8-8cf4-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "H. W. Min, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAY 14" .
@@ -3094,7 +3094,7 @@
     schema:pageEnd "374" ;
     schema:pageStart "369" ;
     schema:partOf <http://catalog.coloradocollege.edu/9cbfaed1-3f55-11e8-9e13-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "F. M. Wilhelm, M. P. Venarsky, Steve Taylor, F. E. Anderson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -3106,7 +3106,7 @@
     schema:name "World War IV"@en ;
     schema:pageStart "8" ;
     schema:partOf <http://catalog.coloradocollege.edu/9d1777c7-4276-11e8-b000-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <https://www.commentarymagazine.com/articles/world-war-iv-2/> ;
     cite:authorString "David C. Hendrickson." ;
     cite:citationType "article" ;
     cite:month "MAY" .
@@ -3118,7 +3118,7 @@
     schema:name "Problem-based service-learning in a biochemistry classroom"@en ;
     schema:pageStart "C115" ;
     schema:partOf <http://catalog.coloradocollege.edu/9cb32b41-41c3-11e8-8cf4-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAY 14" .
@@ -3131,7 +3131,7 @@
     schema:pageEnd "9" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9d286b51-3f55-11e8-8423-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Steve Taylor, J. E. McPherson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -3156,7 +3156,7 @@
     schema:name "Divalent metal binding in thio-modified GAAA hairpin RNA"@en ;
     schema:pageStart "C142" ;
     schema:partOf <http://catalog.coloradocollege.edu/9cb32b41-41c3-11e8-8cf4-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "B. Gadd, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAY 14" .
@@ -3193,7 +3193,7 @@
     schema:name "Thermodynamic analysis of domain II constructs"@en ;
     schema:pageStart "A282" ;
     schema:partOf <http://catalog.coloradocollege.edu/9eca7a51-41c3-11e8-afd8-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "P. W. Winter, I. Ferrin-O'Connell, B. Znosko, Neena Grover, D. Turner." ;
     cite:citationType "article" ;
     cite:month "MAR 4" .
@@ -3218,7 +3218,7 @@
     schema:name "Thermodynamic analysis of the UCU bulge region of HIV-1 TAR RNA"@en ;
     schema:pageStart "A282" ;
     schema:partOf <http://catalog.coloradocollege.edu/9eca7a51-41c3-11e8-afd8-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "K. B. MacKay, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAR 4" .
@@ -3231,7 +3231,7 @@
     schema:pageEnd "224" ;
     schema:pageStart "217" ;
     schema:partOf <http://catalog.coloradocollege.edu/9f687811-3f55-11e8-8cec-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "J. E. McPherson, Steve Taylor, S. L. Keffer, J. T. Polhemus." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -3256,7 +3256,7 @@
     schema:name "Service-learning in biological sciences"@en ;
     schema:pageStart "A1341" ;
     schema:partOf <http://catalog.coloradocollege.edu/9eca7a51-41c3-11e8-afd8-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAR 7" .
@@ -3269,7 +3269,7 @@
     schema:pageEnd "18" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9fced330-3f55-11e8-82c6-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "J. Kathirithamby, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "SEP 30" .
@@ -3307,7 +3307,7 @@
     schema:name "Thermodynamic implications of metal-RNA interactions: Analyzing metal binding to TAR RNA"@en ;
     schema:pageStart "A69" ;
     schema:partOf <http://catalog.coloradocollege.edu/a03d1d1f-41c3-11e8-92be-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "D. S. Booth, I. O. Ferrin-O'Connell, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAR 6" .
@@ -3319,7 +3319,7 @@
     schema:name "What is outreach and why should we do it?"@en ;
     schema:pageStart "A1310" ;
     schema:partOf <http://catalog.coloradocollege.edu/a03d1d1f-41c3-11e8-92be-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Neena Grover." ;
     cite:citationType "article" ;
     cite:month "MAR 7" .
@@ -3331,7 +3331,7 @@
     schema:name "Thermodynamic analysis of leadzyme"@en ;
     schema:pageStart "A1027" ;
     schema:partOf <http://catalog.coloradocollege.edu/a1074af1-41c3-11e8-a21e-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Brittney Dianne Thall, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3382,7 +3382,7 @@
     schema:pageEnd "60" ;
     schema:pageStart "51" ;
     schema:partOf <http://catalog.coloradocollege.edu/a16e6200-3f55-11e8-b298-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Wanzhi Cai, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "NOV 20" .
@@ -3406,7 +3406,7 @@
     schema:name "Thermodynamic stabilities of inosine base pairs"@en ;
     schema:pageStart "A1027" ;
     schema:partOf <http://catalog.coloradocollege.edu/a1074af1-41c3-11e8-a21e-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Keri Marie Nelson, Braden Meason, Haewon Min, Lara Senekjian, David S. Booth, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3419,7 +3419,7 @@
     schema:pageEnd "446" ;
     schema:pageStart "433" ;
     schema:partOf <http://catalog.coloradocollege.edu/a217639f-3f55-11e8-b51f-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url "http://0-www.evolutionary-ecology.com.tiger.coloradocollege.edu/abstracts/v09/2124.html" ;
     cite:authorString "Jennifer E. Smith, Christopher J. Whelan, Steve Taylor, Michael L. Denight, Mike M. Stake." ;
     cite:citationType "article" ;
     cite:month "MAR" .
@@ -3431,7 +3431,7 @@
     schema:name "Isothermal calorimetric studies of arginine and divalent ion binding to the TAR RNA"@en ;
     schema:pageStart "A1027" ;
     schema:partOf <http://catalog.coloradocollege.edu/a1074af1-41c3-11e8-a21e-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Bryan Denison Eason, David Booth, Gordon Kresheck, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3443,7 +3443,7 @@
     schema:name "Thermodynamic examination of the role of the base triple in TAR RNA"@en ;
     schema:pageStart "A281" ;
     schema:partOf <http://catalog.coloradocollege.edu/a1074af1-41c3-11e8-a21e-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "David Scott Booth, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3505,7 +3505,7 @@
     schema:datePublished "2009" ;
     schema:name "Thermodynamic Consequences of RNA Editing"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a484b1e2-41c3-11e8-b21b-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Hunter Scott Oliver-Allen, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3529,7 +3529,7 @@
     schema:datePublished "2009" ;
     schema:name "Correlating Divalent Ion Interactions with RNA Structure Changes in TAR RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a484b1e2-41c3-11e8-b21b-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Jessica Hellyer, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3553,7 +3553,7 @@
     schema:datePublished "2009" ;
     schema:name "Thermodynamic Contributions of Divalent Ion Interactions with a Symmetric Internal Loop in RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a484b1e2-41c3-11e8-b21b-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Stephanie K. Furniss, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3579,7 +3579,7 @@
     schema:pageEnd "65" ;
     schema:pageStart "47" ;
     schema:partOf <http://catalog.coloradocollege.edu/a5bab980-3f55-11e8-afba-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "William A. Shear, Steve Taylor, J. Judson Wynne, Jean K. Krejca." ;
     cite:citationType "article" ;
     cite:month "JUL 7" .
@@ -3590,7 +3590,7 @@
     schema:datePublished "2009" ;
     schema:name "Thermodynamics Examination of Divalent Ion Interactions with Trinucleotide Bulged RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a484b1e2-41c3-11e8-b21b-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Chloe Merrick Benson, David Booth, Bryan Eason, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3615,7 +3615,7 @@
     schema:pageEnd "18" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a62f83f0-3f55-11e8-a355-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Douglas Zeppelini, Steve Taylor, Michael E. Slay." ;
     cite:citationType "article" ;
     cite:month "AUG 20" .
@@ -3626,7 +3626,7 @@
     schema:datePublished "2009" ;
     schema:name "Thermodynamics Examination of Divalent Ion Interactions with Trinucleotide Bulged RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a484b1e2-41c3-11e8-b21b-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Chloe Merrick Benson, David Booth, Bryan Eason, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3637,12 +3637,12 @@
     schema:datePublished "2010" ;
     schema:name "Thermodynamic stablity and divalent ion interactions of RNA containing purine-rich bulges"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a6be271e-41c3-11e8-b8cd-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Shane Fancher Strom, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
 
-<http://catalog.coloradocollege.edu/a705bfb0-3f55-11e8-a939-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.3157/021.121.0204> a schema:ScholarlyArticle ;
     schema:about "The invasive leafhopper Balclutha rubrostriata (Melichar) was found in abundance in Bexar County, Texas. An arthropod diversity study along highway fiat-of-way in September and October, 2008 identified B. rubrostriata as the single most abundant species. This is the first peer-reviewed published record of this invasive species in the mainland United States. Other records of this species in the U.S. are discussed. Diagnostic characters of the adults are provided and illustrated, and the nymph is described and illustrated for the first time. Genomic DNA was extracted from one adult and one nymph specimen, and the mitochondrial COI gene was sequenced for each and yielded identical sequences, thus confirming the association of the nymph and adult. Sequences are deposited in GenBank for future use in diagnostic or other studies." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2010" ;
@@ -3650,7 +3650,7 @@
     schema:pageEnd "138" ;
     schema:pageStart "132" ;
     schema:partOf <http://catalog.coloradocollege.edu/a71feed1-3f55-11e8-b7ca-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <https://doi.org/10.3157/021.121.0204> ;
     cite:authorString "James N. Zahniser, Steve Taylor, Jean K. Krejca." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -3661,7 +3661,7 @@
     schema:datePublished "2010" ;
     schema:name "Thermodynamic Examination of Conserved Sequences of TAR RNA in HIV-1"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a6be271e-41c3-11e8-b8cd-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <https://www.fasebj.org/doi/abs/10.1096/fasebj.24.1_supplement.500.3> ;
     cite:authorString "Philipp Lorenz Hannan, Gordon Kresheck, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3672,7 +3672,7 @@
     schema:datePublished "2010" ;
     schema:name "Thermodynamics of small symmetrical internal loops in RNA: sequence, pH and ion effects"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a6be271e-41c3-11e8-b8cd-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <https://www.fasebj.org/doi/abs/10.1096/fasebj.24.1_supplement.500.2> ;
     cite:authorString "Stephanie K. Furniss, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3685,7 +3685,7 @@
     schema:pageEnd "64" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a7cb51d0-3f55-11e8-ac86-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <http://www.mapress.com/zootaxa/2010/f/z02474p064f.pdf> ;
     cite:authorString "Miloslav Zacharda, Daniel Fong, Horton H. Hobbs, Erminio Piva, Michael E. Slay, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "MAY 14" .
@@ -3696,7 +3696,7 @@
     schema:datePublished "2010" ;
     schema:name "Thermodynamic Examination of the Amber/W Site in the Hepatitis Delta Virus Type III"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a6be271e-41c3-11e8-b8cd-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <https://www.fasebj.org/doi/abs/10.1096/fasebj.24.1_supplement.lb73> ;
     cite:authorString "Angela Dang, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3758,7 +3758,7 @@
     schema:datePublished "2011" ;
     schema:name "Thermodynamic Examination of U6 ISL Bulged RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a8ff7430-41c3-11e8-b651-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <https://www.fasebj.org/doi/abs/10.1096/fasebj.25.1_supplement.903.5> ;
     cite:authorString "Allison O'Connell, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3781,7 +3781,7 @@
     schema:datePublished "2011" ;
     schema:name "Examination of Kink-Turn and Related Motifs"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a8ff7430-41c3-11e8-b651-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Travis Justin Garoutte, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3794,7 +3794,7 @@
     schema:pageEnd "40" ;
     schema:pageStart "30" ;
     schema:partOf <http://catalog.coloradocollege.edu/a9671fb0-3f55-11e8-a0b1-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "J. E. McPherson, Richard J. Packauskas, Robert W. Sites, Steve Taylor, C. Scott Bundy, Jeffrey D. Bradshaw, Paula Levin Mitchell." ;
     cite:citationType "article" ;
     cite:month "APR 28" .
@@ -3830,7 +3830,7 @@
     schema:datePublished "2011" ;
     schema:name "Thermodynamic Examination of Leadzyme"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/a8ff7430-41c3-11e8-b651-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Arian Cai Frost, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3853,7 +3853,7 @@
     schema:datePublished "2012" ;
     schema:name "Thermodynamic Examination of Small Symmetric and Asymmetric Loops Containing A center dot C and G center dot U Base Pairs in the Context of Group I Intron"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Evgenia Shishkova, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3888,7 +3888,7 @@
     schema:datePublished "2012" ;
     schema:name "Thermodynamic examination of U6 ISL bulged RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Allison O'Connell, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3912,7 +3912,7 @@
     schema:datePublished "2012" ;
     schema:name "Thermodynamic investigation of the dinucleotide bulge of domain V of group II intron"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Siphelele Leslie Mhlanga, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3949,7 +3949,7 @@
     schema:datePublished "2012" ;
     schema:name "Thermodynamic Examination of Bulge Sequence, Ion Binding, and Helical Context of 2X2 and 2X1 Bulges in RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Priyam Mahajan, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -3985,7 +3985,7 @@
     schema:datePublished "2012" ;
     schema:name "Thermodynamic Comparison of Dinucleotide bulges in DNA and RNA"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "W. Charles Lockwood, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -4009,7 +4009,7 @@
     schema:datePublished "2012" ;
     schema:name "The UAN: Maximizing its Utility to Promote Science Education and Outreach"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Neena Grover, Marilee Benore." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -4058,7 +4058,7 @@
     schema:datePublished "2013" ;
     schema:name "Thermodynamic Examination of the 4x2 Bulge of Leadzyme"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/acee5200-41c3-11e8-94df-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Arian Cai Frost, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -4093,7 +4093,7 @@
     schema:datePublished "2014" ;
     schema:name "Thermodynamic examination of the ion effect and cellular crowding on nucleic acids"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/7ddfc535-3911-11e8-a937-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Hallie Comfort, Neena Grover." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -4118,7 +4118,7 @@
     schema:pageEnd "752" ;
     schema:pageStart "740" ;
     schema:partOf <http://catalog.coloradocollege.edu/ad877591-3f55-11e8-87f3-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Steve Taylor, Jean K. Krejca, Matthew L. Niemiller, Michael J. Dreslik, Christopher A. Phillips." ;
     cite:citationType "article" ;
     cite:month "AUG" .
@@ -4128,7 +4128,7 @@
     schema:author <http://catalog.coloradocollege.edu/3b2997b4-bcd4-11e6-9953-005056c00008> ;
     schema:datePublished "2002" ;
     schema:name "Marketing Michelin: Advertising and Cultural Identity in Twentieth-Century France (Book)"@en ;
-    schema:pageStart "N.PAG" ;
+    schema:pageStart "" ;
     schema:partOf <http://catalog.coloradocollege.edu/ad8ca9e6-4276-11e8-bcb5-a41f7283f8d4> ;
     schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=10948072> ;
     cite:authorString "Esther Redmount." ;
@@ -4153,7 +4153,7 @@
     schema:datePublished "2015" ;
     schema:name "Thermodynamic Examination of the U6 ISL RNA Bulge"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/62832d62-3911-11e8-bdac-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Daniel Lewis, Neena Grover, Allison O'Connell." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -4222,15 +4222,15 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/af2e5b99-4276-11e8-b710-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1080/17437938.2003.9660301> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/3b2997b4-bcd4-11e6-9953-005056c00008> ;
     schema:datePublished "2003" ;
-    schema:name "Economic management and French business: From de Gaulle to Chirac"@en ;
+    schema:name "Book Review: Economic management and French business: From de Gaulle to Chirac, by Mairi Maclean"@en ;
     schema:pageEnd "124" ;
     schema:pageStart "123" ;
     schema:partOf <http://catalog.coloradocollege.edu/af521037-4276-11e8-9044-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <https://doi.org/10.1080/17437938.2003.9660301> ;
     cite:authorString "Esther Redmount." ;
     cite:citationType "article" ;
     cite:month "OCT" .
@@ -4680,7 +4680,7 @@
     schema:pageEnd "143" ;
     schema:pageStart "129" ;
     schema:partOf <http://catalog.coloradocollege.edu/b99bfc9f-41c3-11e8-a0c1-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "George Butte." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -4793,7 +4793,7 @@
     cite:citationType "article" ;
     cite:month "AUG 28" .
 
-<http://catalog.coloradocollege.edu/bc83bb11-41c3-11e8-8a2c-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1111/j.1944-8287.2004.tb00234.x> a schema:ScholarlyArticle ;
     schema:about "While it is clear that there has been a \"regional inversion\" in American patent activity over the past 25 years (i.e., relative rise of the Northwest and Southwest at the expense of the traditional invention hotbeds of the Northeast and Midwest), the reason is still open to speculation. Theory suggests that it can be explained by some combination of changing demographics and industrial composition. We introduce constant market share analysis, typically used only in international trade theory, offer a new extension to this tool, and conclude that industrial shifts have accounted for almost half the regional inversion among states. The results of the regression analysis show how the West capitalized upon the shift via demographics and policy variables, whose importance varies with the planning horizon." ;
     schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
     schema:datePublished "2004" ;
@@ -4801,7 +4801,7 @@
     schema:pageEnd "260" ;
     schema:pageStart "241" ;
     schema:partOf <http://catalog.coloradocollege.edu/bca0729f-41c3-11e8-9437-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <https://doi.org/10.1111/j.1944-8287.2004.tb00234.x> ;
     cite:authorString "Daniel Johnson, A. Brown." ;
     cite:citationType "article" ;
     cite:month "JUL" .
@@ -4861,7 +4861,7 @@
     schema:pageEnd "216" ;
     schema:pageStart "199" ;
     schema:partOf <http://catalog.coloradocollege.edu/bf293891-41c3-11e8-8944-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <http://0-www.jstor.org.tiger.coloradocollege.edu/stable/41323276> ;
     cite:authorString "Joseph M. Crabb, Daniel Johnson." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -4910,7 +4910,7 @@
     schema:pageEnd "5" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/c072799f-41c3-11e8-aeaf-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Bryant T. Ragan, Jeffrey Merrick." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -4989,41 +4989,15 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/c5a9bc1f-3911-11e8-8fba-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
-    schema:datePublished "2001" ;
-    schema:name "Sartre's radicalism and Oakeshott's conservatism: The duplicity of freedom."@en ;
-    schema:pageEnd "463" ;
-    schema:pageStart "461" ;
-    schema:partOf <http://catalog.coloradocollege.edu/c5bf2877-3911-11e8-8646-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "Timothy Fuller." ;
-    cite:citationType "article" ;
-    cite:month "JUN" .
-
-<http://catalog.coloradocollege.edu/c5f5e800-3911-11e8-8280-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
-    schema:datePublished "2001" ;
-    schema:name "The skeptic's Oakeshott."@en ;
-    schema:pageEnd "463" ;
-    schema:pageStart "461" ;
-    schema:partOf <http://catalog.coloradocollege.edu/c5bf2877-3911-11e8-8646-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "Timothy Fuller." ;
-    cite:citationType "article" ;
-    cite:month "JUN" .
-
 <http://catalog.coloradocollege.edu/c64dfaba-3911-11e8-ac71-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
     schema:datePublished "2001" ;
-    schema:name "Oakeshott and his contemporaries: Montaigne, St. Augustine, Hegel, et al."@en ;
+    schema:name "Book Review: Oakeshott and his contemporaries: Montaigne, St. Augustine, Hegel, et al, by Wendell John Coats, Jr.; Sartre's radicalism and Oakeshott's conservatism: The duplicity of freedom, by Anthony Farr; The skeptic's Oakeshott, by Steven Anthony Gerenscer"@en ;
     schema:pageEnd "463" ;
     schema:pageStart "461" ;
     schema:partOf <http://catalog.coloradocollege.edu/c5bf2877-3911-11e8-8646-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "http://0-www.jstor.org.tiger.coloradocollege.edu/stable/3118134" ;
     cite:authorString "Timothy Fuller." ;
     cite:citationType "article" ;
     cite:month "JUN" .
@@ -5067,7 +5041,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/c9300ad4-3911-11e8-a8c5-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1016/S0887-6177(02)00214-7> a schema:ScholarlyArticle ;
     schema:about "Two student groups, introductory psychology (n = 91) and advanced neuroscience (n = 34) undergraduates, were asked to malinger a head injury on Rey's 15-Item Test (FIT) and Dot Counting Test (DCT). The participants were randomly assigned to one of three motivation conditions (no motivation given, compensation, avoidance of blame for a motor vehicle accident) and to one of three coaching conditions (no coaching, coaching post-concussive symptoms, coaching symptoms plus warning of malingering detection). Analyses revealed a Motivation x Student Group interaction on the FIT, indicating that the advanced neuroscience students, particularly when in the compensation condition, malingered the most flagrantly. On the DCT, main effects for motivation and coaching on the qualitative variables and a Motivation x Coaching interaction on the accuracy variables indicated that those in the compensation condition performed the most poorly, and that coaching plus warning only tempers malingering on memory tasks, not timed tasks. (C) 2002 National Academy of Neuropsychology. Published by Elsevier Ltd. All rights reserved." ;
     schema:author <http://catalog.coloradocollege.edu/9a0726a4-b0f0-11e6-8e32-005056c00008> ;
     schema:datePublished "2004" ;
@@ -5075,7 +5049,7 @@
     schema:pageEnd "88" ;
     schema:pageStart "73" ;
     schema:partOf <http://catalog.coloradocollege.edu/c94315cd-3911-11e8-bd11-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1016/S0887-6177(02)00214-7" ;
     cite:authorString "Kristi Erdal." ;
     cite:citationType "article" ;
     cite:month "JAN" .
@@ -5361,11 +5335,11 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/dbc07f2f-3910-11e8-852b-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "The article offers information on the \"DÃ©jÃ  Vu\" film directed Tony Scott. Topics discussed include portrayal of technology in science fiction film; administration of modern technology services in the film along with presentation of technological determinism; and depiction of characters in the film by eminent actors such as Denzel Washington." ;
+<https://doi.org/10.5749/culturalcritique.97.2017.0105> a schema:ScholarlyArticle ;
+    schema:about "The article offers information on the \"Déjà Vu\" film directed Tony Scott. Topics discussed include portrayal of technology in science fiction film; administration of modern technology services in the film along with presentation of technological determinism; and depiction of characters in the film by eminent actors such as Denzel Washington." ;
     schema:author <http://catalog.coloradocollege.edu/f7c92f54-b0ef-11e6-8116-005056c00008> ;
     schema:datePublished "2017" ;
-    schema:name "Improvisational Ethics and Moral Technologies in DÃ©jÃ  Vu"@en ;
+    schema:name "Improvisational Ethics and Moral Technologies in Déjà Vu"@en ;
     schema:pageEnd "127" ;
     schema:pageStart "105" ;
     schema:partOf <http://catalog.coloradocollege.edu/dbc2e08c-3910-11e8-a331-a41f7283f8d4> ;
@@ -5531,7 +5505,7 @@
     schema:pageEnd "244" ;
     schema:pageStart "239" ;
     schema:partOf <http://catalog.coloradocollege.edu/e0e71971-41c3-11e8-8a53-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "Stacey L. Brook, Aju J. Fenn." ;
     cite:citationType "article" ;
     cite:month "NOV" .
@@ -5583,7 +5557,7 @@
     schema:pageEnd "148" ;
     schema:pageStart "130" ;
     schema:partOf <http://catalog.coloradocollege.edu/e2835c81-41c3-11e8-a040-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "David J. Berri, Jennifer Van Gilder, Aju J. Fenn." ;
     cite:citationType "article" ;
     cite:month "MAY" .
@@ -5891,28 +5865,15 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/efa3a695-3910-11e8-94dc-a41f7283f8d4> a schema:ScholarlyArticle ;
+<https://doi.org/10.1093/ahr/122.1.198> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
     schema:datePublished "2017" ;
-    schema:name "Empire of Pictures: Global Media and the 1960s Remaking of American Foreign Policy"@en ;
+    schema:name "Book Review: Empire of Pictures: Global Media and the 1960s Remaking of American Foreign Policy, by Sönke Kunkel; A Sense of Power: The Roots of America's Global Role by John A. Thompson"@en ;
     schema:pageEnd "199" ;
     schema:pageStart "198" ;
     schema:partOf <http://catalog.coloradocollege.edu/efa86953-3910-11e8-a2e6-a41f7283f8d4> ;
-    schema:url "" ;
-    cite:authorString "David C. Hendrickson." ;
-    cite:citationType "article" ;
-    cite:month "FEB" .
-
-<http://catalog.coloradocollege.edu/efcc1de4-3910-11e8-9900-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
-    schema:datePublished "2017" ;
-    schema:name "A Sense of Power: The Roots of America's Global Role"@en ;
-    schema:pageEnd "199" ;
-    schema:pageStart "198" ;
-    schema:partOf <http://catalog.coloradocollege.edu/efa86953-3910-11e8-a2e6-a41f7283f8d4> ;
-    schema:url "" ;
+    schema:url "https://doi.org/10.1093/ahr/122.1.198" ;
     cite:authorString "David C. Hendrickson." ;
     cite:citationType "article" ;
     cite:month "FEB" .
@@ -5976,7 +5937,7 @@
     schema:name "Hydrocarbon films as models for organic aerosols."@en ;
     schema:pageStart "U206" ;
     schema:partOf <http://catalog.coloradocollege.edu/f8f610c0-41c3-11e8-963c-a41f7283f8d4> ;
-    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
+    schema:url <> ;
     cite:authorString "X. Zhang, E. B. Jochnowitz, Ted G. Lindeman, S. Simpson, B. Ellison." ;
     cite:citationType "article" ;
     cite:month "AUG" .
@@ -11636,7 +11597,7 @@
     cite:citationType "article" ;
     cite:month "DEC" .
 
-<https://doi.org/RRFADI]2.0.CO;2> a schema:ScholarlyArticle ;
+<http://catalog.coloradocollege.edu/681e3ada-4e47-11e8-a64c-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "We estimated annual return rate, fidelity, and breeding dispersal in a migratory population of Flammulated Owls (Otus flammeolus) in central Colorado. Return rates, based on capture-recapture histories of 39 males and 52 females from 1981 to 2003, were higher for males (84%) than for females (45%). Annual recapture probability was higher for females, because breeders are easier to capture than nonbreeders and females always attempted to nest, whereas some males were unpaired (did not nest) for up to four years. Territory fidelity was male biased (92%, vs. 56% for females, adjusted for undetected emigration), and mean tenure on territories was more than twice as long for males as for females. Females, but not males, had lower return rates to territories in the year following nesting failure compared with females whose nests were successful. Most males appeared to occupy one territory their entire reproductive lives, countering predictions of habitat-selection models that individuals should move to higher-quality habitats when they become available. We estimated that 74% of pairs retained the same mate in consecutive nesting attempts, but mates that bred together for multiple years had no reproductive advantages over mates that bred together for the first time. In most cases, females dispersed from territories if their mates did not return. When females dispersed, they went to territories where total productivity over the study and lifetime reproductive success of new mates were higher than on original territories, which supports the hypothesis that dispersal by females increases individual fitness." ;
     schema:author <http://catalog.coloradocollege.edu/5077542c-b0f1-11e6-bb80-005056c00008> ;
     schema:datePublished "2007" ;
@@ -11644,7 +11605,7 @@
     schema:pageEnd "275" ;
     schema:pageStart "264" ;
     schema:partOf <http://catalog.coloradocollege.edu/ba5b775f-3911-11e8-8aa3-a41f7283f8d4> ;
-    schema:url "https://doi.org/RRFADI]2.0.CO;2" ;
+    schema:url "http://0-www.jstor.org.tiger.coloradocollege.edu/stable/25150266" ;
     cite:authorString "Brian D. Linkhart, Richard T. Reynolds." ;
     cite:citationType "article" ;
     cite:month "JAN" .
@@ -11833,7 +11794,7 @@
     bf:title "Downward spiral : HIV/AIDS, state capacity, and political conflict in Zimbabwe"@en ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
     schema:publicationDate "2004" ;
-    schema:url "http://purl.access.gpo.gov/GPO/ LPS52388" ;
+    schema:url "http://purl.access.gpo.gov/GPO/LPS52388" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1633217~s5> a bf:Book ;
@@ -13048,12 +13009,8 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/02438130-41c4-11e8-aeaa-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/02730dba-3d0f-11e8-8f03-a41f7283f8d4> a schema:Periodical ;
-    schema:issn "0167-2681" ;
-    schema:name "Journal of Economic Behavior and Organization"@en .
-
 <http://catalog.coloradocollege.edu/02879f5c-3d0f-11e8-a4c1-a41f7283f8d4> a schema:volumeNumber ;
-    schema:partOf <http://catalog.coloradocollege.edu/02730dba-3d0f-11e8-8f03-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/ae976af6-4276-11e8-a7b7-a41f7283f8d4> ;
     schema:volumeNumber "118" .
 
 <http://catalog.coloradocollege.edu/028d8280-41c4-11e8-803b-a41f7283f8d4> a schema:Periodical ;
@@ -16486,7 +16443,7 @@
 
 <http://catalog.coloradocollege.edu/7f2d0528-3911-11e8-b5c0-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1932-8486" ;
-    schema:name "Anatomical Record-Advances in Integrative Anatomy and Evolutionary Biology"@en .
+    schema:name "Anatomical Record"@en .
 
 <http://catalog.coloradocollege.edu/7f364476-4276-11e8-9ef6-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/07d8571c-3d0f-11e8-9602-a41f7283f8d4> ;
@@ -18406,12 +18363,8 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a53bf04c-3911-11e8-b6a3-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/a53edec6-4276-11e8-9806-a41f7283f8d4> a schema:Periodical ;
-    schema:issn "0141-9870" ;
-    schema:name "Ethnic and Racial Studies"@en .
-
 <http://catalog.coloradocollege.edu/a5603206-4276-11e8-a90d-a41f7283f8d4> a schema:volumeNumber ;
-    schema:partOf <http://catalog.coloradocollege.edu/a53edec6-4276-11e8-9806-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/0c647e8a-3d0f-11e8-835a-a41f7283f8d4> ;
     schema:volumeNumber "26" .
 
 <http://catalog.coloradocollege.edu/a5603207-4276-11e8-a85f-a41f7283f8d4> a schema:issueNumber ;
@@ -18460,7 +18413,7 @@
 
 <http://catalog.coloradocollege.edu/a634df58-4276-11e8-9f1a-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0018-2168" ;
-    schema:name "Hahr-Hispanic American Historical Review"@en .
+    schema:name "HAHR-Hispanic American Historical Review"@en .
 
 <http://catalog.coloradocollege.edu/a641ee2e-3911-11e8-bba0-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0167-5923" ;
@@ -25204,7 +25157,7 @@
     cite:citationType "article" ;
     cite:month "AUG" .
 
-<https://doi.org/ALADBF]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.3157/0013-872X(2007)118[279:ALADBF]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2007" ;
@@ -25212,12 +25165,12 @@
     schema:pageEnd "282" ;
     schema:pageStart "279" ;
     schema:partOf <http://catalog.coloradocollege.edu/a2be03e3-3f55-11e8-9889-a41f7283f8d4> ;
-    schema:url <https://doi.org/ALADBF]2.0.CO;2> ;
+    schema:url <https://doi.org/10.3157/0013-872X(2007)118[279:ALADBF]2.0.CO;2> ;
     cite:authorString "Jeyaraney Kathirithamby, Steve Taylor, Jorge E. Valenzuela, Jaime Gomez, Juan F. Barrera." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org/ANSRFO]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.3157/0013-872X(2006)117[351:ANSRFO]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2006" ;
@@ -25225,12 +25178,12 @@
     schema:pageEnd "352" ;
     schema:pageStart "351" ;
     schema:partOf <http://catalog.coloradocollege.edu/a0306b91-3f55-11e8-aeaf-a41f7283f8d4> ;
-    schema:url <https://doi.org/ANSRFO]2.0.CO;2> ;
+    schema:url <https://doi.org/10.3157/0013-872X(2006)117[351:ANSRFO]2.0.CO;2> ;
     cite:authorString "Karlene M. M. Ramsdell, Steve Taylor." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org/FRAHUO]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.1674/0003-0031(2005)154[0097:FRAHUO]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "Cave invertebrate communities are dependent upon exogenous energy sources because their environment generally lacks primary producers. In small caves of central Texas, endemic terrestrial cave invertebrates often rely in part on the energy brought into caves by cave crickets (Ceuthophilus spp.), which forage above ground at night and roost in caves during the daytime. Knowledge of cave cricket foraging range is needed to effectively protect invertebrate communities that include federally endangered species. We marked approximately 2000 C. secretus emerging from Big Red Cave (Coryell County, Texas) with UV bright paint and located 291 previously marked crickets over 17 nights. Crickets foraged up to 105 m from the cave entrance and were present in relatively uniform densities out to 80 m. While 51.1% of the crickets were found within 40 m, 8.1% were found at 80 m or beyond. Relocated crickets were predominantly found in grasses (30.7%), leaf litter (22.4%) and herbaceous vegetation (20.4%) and were found close to ground level (mean = 0.49 cm). Our results show that C. secretus can forage at much greater distances than previously reported. The new data from our study should assist in the development of effective preserve design and management strategies for caves with endangered species in central Texas." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
     schema:datePublished "2005" ;
@@ -25238,12 +25191,12 @@
     schema:pageEnd "114" ;
     schema:pageStart "97" ;
     schema:partOf <http://catalog.coloradocollege.edu/9ede6851-3f55-11e8-8db6-a41f7283f8d4> ;
-    schema:url <https://doi.org/FRAHUO]2.0.CO;2> ;
+    schema:url <https://doi.org/10.1674/0003-0031(2005)154[0097:FRAHUO]2.0.CO;2> ;
     cite:authorString "Steve Taylor, J. K. Krejca, M. L. Denight." ;
     cite:citationType "article" ;
     cite:month "JUL" .
 
-<https://doi.org/TEOMOU]2.0.CO;2> a schema:ScholarlyArticle ;
+<https://doi.org/10.1890/0012-9658(2006)87[892:TEOMOU]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "Can choice of mutualistic partners and the degree of their utilization determine (1) mutualistic partner coexistence, (2) relative abundance of mutualistic partners, and (3) environment-dependent changes in relative abundance? We investigate these questions in the context of the plant-mycorrhizal fungal mutualism by building a biological market model potentially applicable to other mutualisms as well. We examine the situation where a single plant selectively utilizes member(s) of a group of ectomycorrhizal potential trading partners. Under biologically realistic circumstances, the plant may simultaneously utilize multiple partners, its degree of utilization determining the community structure of the fungi. If utilization of multiple partners is optimal, the marginal cost of acquiring additional nitrogen from every trading partner must be equal while the marginal cost of acquiring it from any unutilized partner must be larger. Because the plant's nitrogen demand is light dependent, the composition of the fungal species among its trading partners changes along light-availability gradients. We discuss the design of an experiment to test the key prediction of our model, the equalization of marginal cost." ;
     schema:author <http://catalog.coloradocollege.edu/26f0f36c-b0e5-11e6-94e7-005056c00008> ;
     schema:datePublished "2006" ;
@@ -25251,7 +25204,7 @@
     schema:pageEnd "902" ;
     schema:pageStart "892" ;
     schema:partOf <http://catalog.coloradocollege.edu/cc91b427-4276-11e8-8627-a41f7283f8d4> ;
-    schema:url <https://doi.org/TEOMOU]2.0.CO;2> ;
+    schema:url <https://doi.org/10.1890/0012-9658(2006)87[892:TEOMOU]2.0.CO;2> ;
     cite:authorString "Miroslav Kummel, S. W. Salant." ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -26411,7 +26364,7 @@
 
 <http://catalog.coloradocollege.edu/62774688-3911-11e8-a5d5-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0892-6638" ;
-    schema:name "Faseb Journal"@en .
+    schema:name "FASEB Journal"@en .
 
 <http://catalog.coloradocollege.edu/e48e4c0a-3910-11e8-95aa-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0018-702X" ;
