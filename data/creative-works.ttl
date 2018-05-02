@@ -2069,7 +2069,7 @@
     schema:pageEnd "567" ;
     schema:pageStart "566" ;
     schema:partOf <http://catalog.coloradocollege.edu/6dba1a07-4276-11e8-ab27-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <https://0-pubs-geoscienceworld-org.tiger.coloradocollege.edu/gsa/geology/article/28/9/799/188886/?searchresult=1> ;
     cite:authorString "Henry Fricke, R. R. Rogers." ;
     cite:citationType "article" ;
     cite:month "JUN" .
@@ -2650,7 +2650,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/8e633f27-4276-11e8-add9-a41f7283f8d4> a schema:ScholarlyArticle ;
+<http://doi.org/10.18374/IJSM-13-3.1> a schema:ScholarlyArticle ;
     schema:about "Conventional wisdom suggests that leaders should conform to a style best suited for one's organization, or at least the best style for a particular role. Yet, this approach implies a unitary approach to leadership and assumes chameleon-like capabilities. (Conger 2004) Recent work on the power of authenticity (e.g., George, et al., 2007) and the persistence of personality make it seem unlikely that would-be leaders are sufficiently malleable to change his or her leadership style at will. Instead, we should expect leaders to gravitate toward the roles in which they can be most authentic. We demonstrate this expected, natural sorting by examining US military organizations using Thompson's (1967) division of responsibility and control within organizations. In particular, we apply Yukl's (2008) leadership dimensions and Gangestad and Snyder's (2000) self-monitoring scale to demonstrate that technical core and institutional level leaders rely on very different leadership styles. We then show that the need for authenticity drives different personalities into very different leadership roles." ;
     schema:author <http://catalog.coloradocollege.edu/39a44354-bcd4-11e6-8b8e-005056c00008> ;
     schema:datePublished "2013" ;
@@ -2658,7 +2658,7 @@
     schema:pageEnd "16" ;
     schema:pageStart "5" ;
     schema:partOf <http://catalog.coloradocollege.edu/8e849267-4276-11e8-b323-a41f7283f8d4> ;
-    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=ecn&AN=1525016> ;
+    schema:url <http://doi.org/10.18374/IJSM-13-3.1> ;
     cite:authorString "Kevin J. Davis, David A. Levy, James E. Parco." ;
     cite:citationType "article" ;
     cite:month "" .
@@ -6019,18 +6019,18 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///dx.doi.org/10.1016/j.gene.2016.07.044> a schema:ScholarlyArticle ;
+<https://dx.doi.org/10.1016/j.gene.2016.07.044> a schema:ScholarlyArticle ;
     schema:about "Here we report the results of fine resolution Y chromosomal analyses (Y-SNP and Y-STR) of 267 Bantu-speaking males from three populations located in the southeast region of Africa. In an effort to determine the relative Y chromosomal affinities of these three genotyped populations, the findings are interpreted in the context of 74 geographically and ethnically targeted African reference populations representing four major ethno-linguistic groups (Afro-Asiatic, Niger Kordofanin, Khoisan and Pygmoid). In this investigation, we detected a general similarity in the Y chromosome lineages among the geographically dispersed Bantu-speaking populations suggesting a shared heritage and the shallow time depth of the Bantu Expansion. Also, micro-variations in the Bantu Y chromosomal composition across the continent highlight location-specific gene flow patterns with non-Bantu-speaking populations (Khoisan, Pygmy, Afro-Asiatic). Our Y chromosomal results also indicate that the three Bantu-speaking Southeast populations genotyped exhibit unique gene flow patterns involving Eurasian populations but fail to reveal a prevailing genetic affinity to East or Central African Bantu-speaking groups. In addition, the Y-SNP data underscores a longitudinal partitioning in sub-Sahara Africa of two R1b1 subgroups, R1b1-P25* (west) and R1b1a2-M269 (east). No evidence was observed linking the B2a haplogroup detected in the genotyped Southeast African Bantu-speaking populations to gene flow from contemporary Khoisan groups." ;
     schema:author <http://catalog.coloradocollege.edu/cb2d6552-b0f0-11e6-96cb-005056c00008> ;
     schema:datePublished "2016" ;
-    schema:name "On the paternal heritage of the Bantu expansion in Southeast Africa [electronic resource]"@en ;
+    schema:name "On the paternal heritage of the Bantu expansion in Southeast Africa"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/e8878870-3910-11e8-b30c-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1016/j.gene.2016.07.044" ;
+    schema:url "https://dx.doi.org/10.1016/j.gene.2016.07.044" ;
     cite:authorString "Daine J. Rowold, David Perez-Benedico, Oliver Stojkovic, Ralph Garcia-Bertrand, Rene J. Herrera." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///dx.doi.org/10.1021%2Facsami.6b04825> a schema:ScholarlyArticle ;
+<https://dx.doi.org/10.1021%2Facsami.6b04825> a schema:ScholarlyArticle ;
     schema:about "P-type macroporous gallium phosphide (GaP) photoelectrodes have been prepared by anodic etching of an undoped, intrinsically n-type GaP(100) wafer and followed by drive-in doping with Zn from conformal ZnO films prepared by atomic layer deposition (ALD). Specifically, 30 nm ALD ZnO films were coated on GaP macroporous films and then annealed at T = 650 ©‚?'C for various times to diffuse Zn in GaP. Under 100 mW cm©Ø?€?“©‚?ø white light illumination, the resulting Zn-doped macroporous GaP consistently exhibit strong cathodic photocurrent when measured in aqueous electrolyte containing methyl viologen. Wavelength-dependent photoresponse measurements of the Zn-doped macroporous GaP revealed enhanced collection efficiency at wavelengths longer than 460 nm, indicating that the ALD doping step rendered the entire material p-type and imparted the ability to sustain a strong internal electric field that preferentially drove photogenerated electrons to the GaP/electrolyte interface. Collectively, this work presents a doping strategy with a potentially high degree of controllability for high-aspect ratio III©Ø?€?“V materials, where the ZnO ALD film is a practical dopant source for Zn." ;
     schema:author <http://catalog.coloradocollege.edu/21abceda-c89e-11e7-9baa-005056c00008> ;
     schema:datePublished "2016" ;
@@ -6038,25 +6038,25 @@
     schema:pageEnd "16185" ;
     schema:pageStart "16178" ;
     schema:partOf <http://catalog.coloradocollege.edu/3bad621d-3d0f-11e8-815e-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1021%2Facsami.6b04825" ;
+    schema:url "https://dx.doi.org/10.1021%2Facsami.6b04825" ;
     cite:authorString "Sudarat Lee, Ashley R. Bielinski, Neil P. Dasgupta, Eli Fahrenkrug, Stephen Maldonado." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///dx.doi.org/10.1021%2Fja310897r> a schema:ScholarlyArticle ;
-    schema:about "An electrochemical liquid©Ø?€?“liquid©Ø?€?“solid (ec-LLS) process that yields crystalline silicon at low temperature (80 ©‚?'C) without any physical or chemical templating agent has been demonstrated. Electroreduction of dissolved SiCl©Ø?‚?„ in propylene carbonate using a liquid gallium Ga(l)] pool as the working electrode consistently yielded crystalline Si. X-ray diffraction and electron diffraction data separately indicated that the as-deposited materials were crystalline with the expected patterns for a diamond cubic crystal structure. Scanning and transmission electron microscopies further revealed the as-deposited materials (i.e., with no annealing) to be faceted nanocrystals with diameters in excess of 500 nm. Energy-dispersive X-ray spectra further showed no evidence of any other species within the electrodeposited crystalline Si. Raman spectra separately showed that the electrodeposited films on the Ga(l) electrodes were not composed of amorphous carbon from solvent decomposition. The cumulative data support two primary contentions. First, a liquid-metal electrode can serve simultaneously as both a source of electrons for the heterogeneous reduction of dissolved Si precursor in the electrolyte (i.e., a conventional electrode) and a separate phase (i.e., a solvent) that promotes Si crystal growth. Second, ec-LLS is a process that can be exploited for direct production of crystalline Si at much lower temperatures than ever reported previously. The further prospect of ec-LLS as an electrochemical and non-energy-intensive route for preparing crystalline Si is discussed." ;
+<https://dx.doi.org/10.1021%2Fja310897r> a schema:ScholarlyArticle ;
+    schema:about "An electrochemical liquid–liquid–solid (ec-LLS) process that yields crystalline silicon at low temperature (80 °C) without any physical or chemical templating agent has been demonstrated. Electroreduction of dissolved SiCl4 in propylene carbonate using a liquid gallium [Ga(l)] pool as the working electrode consistently yielded crystalline Si. X-ray diffraction and electron diffraction data separately indicated that the as-deposited materials were crystalline with the expected patterns for a diamond cubic crystal structure. Scanning and transmission electron microscopies further revealed the as-deposited materials (i.e., with no annealing) to be faceted nanocrystals with diameters in excess of 500 nm. Energy-dispersive X-ray spectra further showed no evidence of any other species within the electrodeposited crystalline Si. Raman spectra separately showed that the electrodeposited films on the Ga(l) electrodes were not composed of amorphous carbon from solvent decomposition. The cumulative data support two primary contentions. First, a liquid-metal electrode can serve simultaneously as both a source of electrons for the heterogeneous reduction of dissolved Si precursor in the electrolyte (i.e., a conventional electrode) and a separate phase (i.e., a solvent) that promotes Si crystal growth. Second, ec-LLS is a process that can be exploited for direct production of crystalline Si at much lower temperatures than ever reported previously. The further prospect of ec-LLS as an electrochemical and non-energy-intensive route for preparing crystalline Si is discussed." ;
     schema:author <http://catalog.coloradocollege.edu/21abceda-c89e-11e7-9baa-005056c00008> ;
     schema:datePublished "2013" ;
     schema:name "Direct Electrodeposition of Crystalline Silicon at Low Temperatures"@en ;
     schema:pageEnd "1687" ;
     schema:pageStart "1684" ;
     schema:partOf <http://catalog.coloradocollege.edu/3739e32d-3d0f-11e8-9f95-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1021%2Fja310897r" ;
+    schema:url "https://dx.doi.org/10.1021%2Fja310897r" ;
     cite:authorString "Junsi Gu, Eli Fahrenkrug, Stephen Maldonado." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///dx.doi.org/10.1021%2Fla502403q> a schema:ScholarlyArticle ;
+<https://dx.doi.org/10.1021%2Fla502403q> a schema:ScholarlyArticle ;
     schema:about "The substrate-overlayer approach has been used to acquire surface enhanced Raman spectra (SERS) during and after electrochemical atomic layer deposition (ECALD) of CdSe, CdTe, and CdS thin films. The collected data suggest that SERS measurements performed with off-resonance (i.e. far from the surface plasmonic wavelength of the underlying SERS substrate) laser excitation do not introduce perturbations to the ECALD processes. Spectra acquired in this way afford rapid insight on the quality of the semiconductor film during the course of an ECALD process. For example, SERS data are used to highlight ECALD conditions that yield crystalline CdSe and CdS films. In contrast, SERS measurements with short wavelength laser excitation show evidence of photoelectrochemical effects that were not germane to the intended ECALD process. Using the semiconductor films prepared by ECALD, the substrate-overlayer SERS approach also affords analysis of semiconductor surface adsorbates. Specifically, Raman spectra of benzenethiol adsorbed onto CdSe, CdTe, and CdS films are detailed. Spectral shifts in the vibronic features of adsorbate bonding suggest subtle differences in substrate-adsorbate interactions, highlighting the sensitivity of this methodology." ;
     schema:author <http://catalog.coloradocollege.edu/21abceda-c89e-11e7-9baa-005056c00008> ;
     schema:datePublished "2014" ;
@@ -6064,12 +6064,12 @@
     schema:pageEnd "10353" ;
     schema:pageStart "10344" ;
     schema:partOf <http://catalog.coloradocollege.edu/382f10cb-3d0f-11e8-aee0-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1021%2Fla502403q" ;
+    schema:url "https://dx.doi.org/10.1021%2Fla502403q" ;
     cite:authorString "Junsi Gu, Eli Fahrenkrug, Stephen Maldonado." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///dx.doi.org/10.1080/02508060.2016.1108442> a schema:ScholarlyArticle ;
+<https://dx.doi.org/10.1080/02508060.2016.1108442> a schema:ScholarlyArticle ;
     schema:about "The US state of New Mexico shifted its management and legal treatment of water in the 20th century to a private property access right, weakening communal notions of water. This article explains how New Mexico has redefined and territorialized water rights as private property through the adjudication process and administrative governance rules. State adjudication of water rights disrupts horizontal social relations. The process also results in territorialization Â©Ã˜?â‚¬?â€œ not of fluid water per se Â©Ã˜?â‚¬?â€œ but of water users themselves. As water users have adjusted to this rescaling of governance, the state has found new ways to govern users vertically through water-crisis measures." ;
     schema:author <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
     schema:datePublished "2016" ;
@@ -6077,12 +6077,12 @@
     schema:pageEnd "188" ;
     schema:pageStart "173" ;
     schema:partOf <http://catalog.coloradocollege.edu/0a7f3f5f-3911-11e8-ad49-a41f7283f8d4> ;
-    schema:url "https://doi.org///dx.doi.org/10.1080/02508060.2016.1108442" ;
+    schema:url "<https://dx.doi.org/10.1080/02508060.2016.1108442" ;
     cite:authorString "Eric P. Perramond." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///epn.sagepub.com/content/by/year> a schema:ScholarlyArticle ;
+<https://doi.org/10.1177/0308518X15595897> a schema:ScholarlyArticle ;
     schema:about "Carbon market projects have focused on reducing greenhouse gas emissions, often at the expense of achieving sustainable development goals. A central pillar in sustainable development is equity, yet most projects pay little attention to equity implications for underrepresented farmers, especially women. Agricultural carbon market projects that explicitly seek to promote sustainable agricultural land management practices are quickly gaining attention worldwide for their promise to deliver the 'triple-win': adaptation, food security, and mitigation. Previous experience with other payment for ecosystem services projects indicate that women often are marginalized and their needs ignored. To address this gap, this case study examined the Kenya Agricultural Carbon Project with a focus on gender equity in access, decision making, and outcomes. Results show that women had less access to joining the project than men, because they did not have the same level of influence in decision making at a household level. At the project level, both men and women had little influence in establishing project requirements and potential benefits, as these were decided upon prior to farmer recruitment. Regarding outcomes, women tended to participate in more project activities, and would in return reap more nonmonetary benefits than men. However, the costs involved in achieving these benefits was nontrivial: women's farm labor time increased significantly due to the substantial time and effort required to implement sustainable agricultural land management practices. If agricultural soil carbon market projects are to achieve better outcomes by addressing equity issues, they need to pay special attention to gender and the differing needs of farmers--male, female, young, old, poor, and less poor--by involving them at the project design stage. Our findings show the importance of additional project benefits unrelated to carbon income for addressing the requirements of equity perceived by both the implementing agency and women themselves." ;
     schema:author <http://catalog.coloradocollege.edu/2735ebac-b0e5-11e6-8834-005056c00008> ;
     schema:datePublished "2015" ;
@@ -6090,25 +6090,25 @@
     schema:pageEnd "2096" ;
     schema:pageStart "2080" ;
     schema:partOf <http://catalog.coloradocollege.edu/0185043b-3d0f-11e8-b96f-a41f7283f8d4> ;
-    schema:url "https://doi.org///epn.sagepub.com/content/by/year" ;
+    schema:url "https://doi.org/10.1177/0308518X15595897" ;
     cite:authorString "Jean Lee, Adrian Martin, Patti Kristjanson, Eva Wollenberg." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///hdl.handle.net/10113/34988> a schema:ScholarlyArticle ;
+<https://doi.org/10.3356/0892-1016(2006)40[29:LROFOI]2.0.CO;2> a schema:ScholarlyArticle ;
     schema:about "We investigated lifetime reproductive success (LRS) of 22 male and 46 female adult Flammulated Owls (Otus flammeolus) in Colorado from 1981-2003. Sexual differences in LRS were at least partially attributable to incomplete breeding histories of females, due to females having a higher estimated emigration rate from the study area than males. The mean number of lifetime breeding attempts for males was 3.4 ?l 0.6 (SE; range = 1-12), and for females it was 1.9 ?l 0.3 (range = 1-8). Adjusted for emigration beyond the study area, the estimated mean number of lifetime breeding attempts was 3.6 for males and 2.5 for females. The mean number of lifetime successful breeding attempts (fledging at least one owlet) was similar to lifetime breeding attempts for each sex, reflecting the fact that 84% (85 of 101) of all breeding attempts were successful. Breeding lifespan was correlated with lifetime reproduction for both sexes. Males tended nests that produced 6.9 ?l 1.2 fledglings over 4.3 ?l 0.8 yr, while females produced 4.0 ?l 0.6 fledglings over 2.0 ?l 0.3 yr; adjusted for emigration beyond the study area, males tended nests that produced 7.2 fledglings over 4.5 yr, while females produced 5.2 fledglings over 2.6 yr. Relatively few individuals of each sex produced most of the offspring, as 18% of females and 24% of males produced 50% of total owlets. Our finding that relatively few adults accounted for most offspring appears to be associated with habitat quality in territories. Flammulated Owls tend to have a life-history strategy similar to larger raptors by having a relatively low annual reproductive rate and a relatively long lifespan." ;
     schema:author <http://catalog.coloradocollege.edu/5077542c-b0f1-11e6-bb80-005056c00008> ;
     schema:datePublished "2006" ;
-    schema:name "Lifetime reproduction of flammulated owls in Colorado [electronic resource]"@en ;
+    schema:name "Lifetime reproduction of flammulated owls in Colorado"@en ;
     schema:pageEnd "37" ;
     schema:pageStart "29" ;
     schema:partOf <http://catalog.coloradocollege.edu/b9f059ad-3911-11e8-89a4-a41f7283f8d4> ;
-    schema:url "https://doi.org///hdl.handle.net/10113/34988" ;
+    schema:url "https://doi.org/10.3356/0892-1016(2006)40[29:LROFOI]2.0.CO;2" ;
     cite:authorString "Brian D. Linkhart, Richard T. Reynolds." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///journals.cambridge.org/action/displayBackIssues?jid=HEP> a schema:ScholarlyArticle ;
+<https://doi.org/10.1017/S1744133107004215> a schema:ScholarlyArticle ;
     schema:about "Rising pharmaceutical prices, increasing demand for more effective innovative drugs and growing public outrage have heightened criticism of the pharmaceutical industry. The public debate has focused on drug prices and access. As a consequence, the patent system is being reexamined as an efficient mechanism for encouraging pharmaceutical innovation and drug development. We propose an alternative to the existing patent system, instead rewarding the innovating firm with direct tax credits in exchange for marginal cost pricing. This concept is based on the fundamental assumption that innovation that benefits society at large may be financed publicly. As an industry which produces a social good characterized by high fixed costs, high information and regulatory costs, and relatively low marginal costs of production, pharmaceuticals are well-suited to such a mechanism. Under this proposal, drug prices fall, consumer surplus increases, access is enhanced, and the incentives to innovate are preserved." ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
     schema:datePublished "2007" ;
@@ -6116,12 +6116,12 @@
     schema:pageEnd "284" ;
     schema:pageStart "267" ;
     schema:partOf <http://catalog.coloradocollege.edu/31ba8c31-3912-11e8-856b-a41f7283f8d4> ;
-    schema:url "https://doi.org///journals.cambridge.org/action/displayBackIssues?jid=HEP" ;
+    schema:url "https://doi.org/10.1017/S1744133107004215" ;
     cite:authorString "Kristina M. Lybecker, Robert A. Freeman." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///www.degruyter.com/view/j/bejeap> a schema:ScholarlyArticle ;
+<http://catalog.coloradocollege.edu/21e4a464-4d86-11e8-b007-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "In this paper, we employ three simple theoretical models of nonprofit hospitals to investigate equilibrium behavior when hospitals compete. Utilizing a differentiated Bertrand model, we examine how prices, quantity of patients served, service to the uninsured, and quality of care are affected as nonprofits place more weight on profit maximization. We find that the specification of the nonprofit motive greatly impacts the results. When the nonprofit motive is maximizing output, prices rise for both hospitals as the nonprofit moves away from its nonprofit motive. However, if the nonprofit cares about serving the uninsured, prices in the market fall. Finally, when hospitals compete on price and quality, more emphasis on profits results in an increase in price at the for-profit hospital and a decrease in price at the nonprofit hospital. These results suggest that the importance of the nonprofit motive has been underestimated and should be further investigated." ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
     schema:datePublished "2005" ;
@@ -6129,23 +6129,23 @@
     schema:pageEnd "15" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/3151cfdd-3912-11e8-b0ac-a41f7283f8d4> ;
-    schema:url "https://doi.org///www.degruyter.com/view/j/bejeap" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=ecn&AN=0822141" ;
     cite:authorString "Teresa D. Harrison, Kristina M. Lybecker." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///www.degruyter.com/view/j/jioe> a schema:ScholarlyArticle ;
+<http://catalog.coloradocollege.edu/642f8ab0-4d86-11e8-8249-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "This article provides a case study on joint production technologies in the market for blood products. The discussion and analysis are motivated by a patent for a plasma-scrubbing technology, acquired solely by the Red Cross. This example of joint production is used to illustrate questions surrounding the leveraging of monopoly power. Specifically, could the Red Cross utilize its monopoly over one jointly produced good (scrubbed plasma) to extend market power to a non-monopolized good (red blood cells) when competing with the Blood Centers of America? The case considers the potential for a dual monopoly (by the Red Cross in both markets), limit pricing on the part of the Red Cross in the market for red blood cells, and a shared market in which the Red Cross is a monopoly in the market for plasma but competes with the Blood Centers of America in the market for red blood cells." ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
     schema:datePublished "2007" ;
     schema:name "Extending Monopoly Power under Joint Production: A Case Study of the Red Cross and the Blood Centers of America"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/30eb74e7-3912-11e8-8165-a41f7283f8d4> ;
-    schema:url "https://doi.org///www.degruyter.com/view/j/jioe" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=ecn&AN=1000273" ;
     cite:authorString "Kristina M. Lybecker, Robert J. Lemke." ;
     cite:citationType "article" ;
     cite:month "" .
 
-<https://doi.org///www.tandfonline.com/loi/rjte20> a schema:ScholarlyArticle ;
+<https://doi.org/10.1080/09638199.2014.881416> a schema:ScholarlyArticle ;
     schema:about "This paper examines the compositional changes that occur in economies experiencing current account reversals using sectoral-level data on output and employment growth around 55 reversal episodes. The experiences of developing and industrialized countries are compared, and the role of currency crises is also examined. Labor market adjustment following reversals in developing countries is shown to differ from that of industrialized economies. The possibility that this difference is related to labor market informality is briefly examined." ;
     schema:author <http://catalog.coloradocollege.edu/a885e9c6-7083-11e6-b7f6-005056c00008> ;
     schema:datePublished "2015" ;
@@ -6153,7 +6153,7 @@
     schema:pageEnd "171" ;
     schema:pageStart "147" ;
     schema:partOf <http://catalog.coloradocollege.edu/0b5c1edd-3d0f-11e8-91d9-a41f7283f8d4> ;
-    schema:url "https://doi.org///www.tandfonline.com/loi/rjte20" ;
+    schema:url "https://doi.org/10.1080/09638199.2014.881416" ;
     cite:authorString "William D. Craighead, David R. Hineline." ;
     cite:citationType "article" ;
     cite:month "February" .
@@ -21821,7 +21821,7 @@
     schema:issueNumber "16" ;
     schema:partOf <http://catalog.coloradocollege.edu/ff7e187a-3d0e-11e8-bb01-a41f7283f8d4> .
 
-<https://doi.org///journals.cluteonline.com/index.php/JABR/issue/archive> a schema:ScholarlyArticle ;
+<https://doi.org/10.19030/jabr.v26i1.276> a schema:ScholarlyArticle ;
     schema:about "This paper investigates if NFL teams maximize profits with respect to ticket price. We modify Ferguson et al.'s (1991) NHL paper as it pertains to the NFL. A profit function incorporating variable revenue and cost factors such as gate receipts and player expenses is employed. A systems model is used as the estimation procedure to identify the determinants of ticket prices for NFL franchises. The model implies a Kuhn-Tucker based cross equation parameter restriction that results from attendance capacity constraints. Results from the regression are then used in conjunction with other data to numerically test the first order necessary profit maximization conditions. The results indicate that over 80% of NFL teams set ticket prices in a manner consistent with gate receipt and profit maximization." ;
     schema:author <http://orcid.org/0000-0002-0674-7995> ;
     schema:datePublished "2010" ;
@@ -21834,7 +21834,7 @@
     cite:citationType "article" ;
     cite:month "January" .
 
-<https://doi.org///www.sciencedirect.com/science/journal/01651765> a schema:ScholarlyArticle ;
+<https://doi.org/10.1016/S0165-1765(01)00398-6> a schema:ScholarlyArticle ;
     schema:about "A 1979 US Surgeon General's report provided the first conclusive public information of nicotine's addictive effects. We test the hypothesis that cigarette demand was of a \"myopic\" nature prior to 1979, but forward-looking, or \"rational,\" thereafter." ;
     schema:author <http://orcid.org/0000-0002-0674-7995> ;
     schema:datePublished "2001" ;
@@ -21842,7 +21842,7 @@
     schema:pageEnd "45" ;
     schema:pageStart "39" ;
     schema:partOf <http://catalog.coloradocollege.edu/dbdfbef1-41c3-11e8-9374-a41f7283f8d4> ;
-    schema:url <https://doi.org///www.sciencedirect.com/science/journal/01651765> ;
+    schema:url <https://doi.org/10.1016/S0165-1765(01)00398-6> ;
     cite:authorString "Aju J. Fenn, Frances Antonovitz, John R. Schroeter." ;
     cite:citationType "article" ;
     cite:month "" .
