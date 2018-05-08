@@ -240,12 +240,10 @@ def academic_profile():
         fields["family_name"] = current_user.data.get("sn")
         fields["given_name"] = current_user.data.get("givenName")
         fields["display_label"] = current_user.data.get("displayName")
-    click.echo("Fields are {}".format(fields))
     results = CONNECTION.datastore.query(
         PROFILE.format(fields.get("family_name"), 
             fields.get("given_name"), 
             fields.get("email")))
-    click.echo("Results are {}".format(results))
     if len(results) == 1:
         fields["iri"] = results[0].get("person").get("value")
         if "statement" in results[0]:
@@ -673,12 +671,13 @@ def edit_work():
 @app.route("/")
 def home():
     search_form = SearchForm()
-    if len(search_form.department.choices) < 2:
-        results = CONNECTION.datastore.query(ORG_LISTING)
-        for row in results:
-            search_form.department.choices.append(
+    departments = []
+    results = CONNECTION.datastore.query(ORG_LISTING)
+    for row in results:
+        departments.append(
                 (row.get('iri').get('value'),
                  row.get('label').get('value')))
+    search_form.department.choices = departments
     return render_template("index.html", 
         login=LDAPLoginForm(),
         search_form=search_form,
