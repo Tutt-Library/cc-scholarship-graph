@@ -142,9 +142,13 @@ def server_error(e):
 
 @app.template_filter("get_history")
 def person_history(person_iri):
+    current_date = datetime.datetime.utcnow()
     ul = etree.Element("ul")
-    results = CONNECTION.datastore.query(PERSON_HISTORY.format(person_iri))
+    results = CONNECTION.datastore.query(
+        PERSON_HISTORY.format(person_iri,
+                              current_date.isoformat()))
     for row in results:
+        click.echo("Year end {}".format(row.get("end").get("value")))
         li = etree.SubElement(ul, "li")
         li.text = "{} ".format(row.get("rank").get("value"))
         org_link = etree.SubElement(li, "a")

@@ -199,15 +199,18 @@ WHERE {{
 
 PERSON_HISTORY = PREFIX + """
 
-SELECT ?org ?event ?year_label ?rank
+SELECT ?org ?event ?year_label ?rank ?end
 WHERE {{
     ?event ?rank_iri ?person ;
            schema:organizer ?org ;
            rdfs:label ?year_label ;
            schema:superEvent ?year_event .
-    ?year_event schema:endDate ?end .
+    ?year_event schema:endDate ?end ;
+                schema:startDate ?start .
     ?rank_iri rdfs:label ?rank .
     FILTER(<{0}> = ?person)
+    FILTER (?start < "{1}"^^xsd:dateTime)
+    FILTER (?end > "{1}"^^xsd:dateTime)
 }} ORDER BY ?end"""
 
 PERSON_INFO = PREFIX + """
