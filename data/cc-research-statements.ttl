@@ -165,6 +165,9 @@
             prov:atTime "2017-12-07T15:48:04.864126" ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] ;
     prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-05-08T20:13:45.673080"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ],
+        [ a prov:Revision ;
             prov:atTime "2018-05-08T20:01:52.014562"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ],
         [ a prov:Revision ;
@@ -1402,6 +1405,14 @@
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-02-19T21:47:49.564743"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/4881252e-5300-11e8-9d38-0242ac130003> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Lesley Mackie"@en ;
+    schema:accountablePerson <0000-0001-6911-0281> ;
+    schema:description "Lesley K. Mackie is the Head of Research Services and the Natural Sciences Librarian at Colorado College. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-05-08T20:42:11.633358"^^xsd:dateTime ;
+            prov:wasGeneratedBy <0000-0001-6911-0281> ] .
 
 <http://catalog.coloradocollege.edu/491e781c-15d0-11e8-a2cd-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for David Weddle"@en ;
