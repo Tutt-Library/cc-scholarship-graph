@@ -1433,7 +1433,7 @@
 <http://catalog.coloradocollege.edu/4fe9ebe6-4319-11e8-9292-001fc69cf6df> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Jonathan Driscoll"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/4fe99dba-4319-11e8-83ca-001fc69cf6df> ;
-    schema:description "Researching the use of bananas in sandwiches."@en ;
+    schema:description ""@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-04-18T15:01:02.878386"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://catalog.coloradocollege.edu/4fe99dba-4319-11e8-83ca-001fc69cf6df> ] .
@@ -1491,7 +1491,7 @@
 <http://catalog.coloradocollege.edu/ada27934-15cd-11e8-a823-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Fred Tinsley"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/e3fbb21c-15cc-11e8-be02-005056c00008> ;
-    schema:description "Fred’s interest in high-dimensional geometric topology continues. He and a colleague at the University of Wisconsin-Milwaukee are studying generalizations of their recently published work. Results to this point are encouraging. Steven Janke and Fred are continuing a project investigating meaningful applications of advanced undergraduate mathematical statistics to data analyses. "@en ;
+    schema:description "Fred's interest in high-dimensional geometric topology continues. He and a colleague at the University of Wisconsin-Milwaukee are studying generalizations of their recently published work. Results to this point are encouraging. Steven Janke and Fred are continuing a project investigating meaningful applications of advanced undergraduate mathematical statistics to data analyses. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-02-19T23:37:54.609243"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
