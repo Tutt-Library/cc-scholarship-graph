@@ -1552,9 +1552,12 @@ Colorado College students, interested in developing a research project - either 
 <http://catalog.coloradocollege.edu/f0d71ab8-5304-11e8-b665-0242ac130005> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Lesley Mackie"@en ;
     schema:accountablePerson <http://semantic_server:9999/blazegraph/namespace/kb/0000-0001-6911-0281> ;
-    schema:description "Lesley K. Mackie is the Head of Research Services and the Natural Science Librarian at Colorado College."@en ;
+    schema:description "Lesley K. Mackie is the Head of Research Services and the Natural Sciences Librarian at Colorado College."@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-05-08T21:15:32.040885"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://semantic_server:9999/blazegraph/namespace/kb/0000-0001-6911-0281> ] ;
+    prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-05-08T21:16:04.444559"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://semantic_server:9999/blazegraph/namespace/kb/0000-0001-6911-0281> ] .
 
 <http://catalog.coloradocollege.edu/fcb5c2e2-1c17-11e8-a25c-a41f7283f8d4> a schema:DigitalDocument ;
