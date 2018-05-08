@@ -148,7 +148,6 @@ def person_history(person_iri):
         PERSON_HISTORY.format(person_iri,
                               current_date.isoformat()))
     for row in results:
-        click.echo("Year end {}".format(row.get("end").get("value")))
         li = etree.SubElement(ul, "li")
         li.text = "{} ".format(row.get("rank").get("value"))
         org_link = etree.SubElement(li, "a")
@@ -241,10 +240,12 @@ def academic_profile():
         fields["family_name"] = current_user.data.get("sn")
         fields["given_name"] = current_user.data.get("givenName")
         fields["display_label"] = current_user.data.get("displayName")
+    click.echo("Fields are {}".format(fields))
     results = CONNECTION.datastore.query(
         PROFILE.format(fields.get("family_name"), 
             fields.get("given_name"), 
             fields.get("email")))
+    click.echo("Results are {}".format(results))
     if len(results) == 1:
         fields["iri"] = results[0].get("person").get("value")
         if "statement" in results[0]:
@@ -636,7 +637,7 @@ def edit_work():
         elif work_class.endswith("Book"):
             book_form = BookForm()
             for key, value in first_work.items():
-                click.echo("key={} value={}".format(key, value))
+                #click.echo("key={} value={}".format(key, value))
                 if key.startswith("type"):
                     continue
                 if key.startswith("title"):
