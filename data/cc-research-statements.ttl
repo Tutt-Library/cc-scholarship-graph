@@ -1408,11 +1408,11 @@
 
 <http://catalog.coloradocollege.edu/4881252e-5300-11e8-9d38-0242ac130003> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Lesley Mackie"@en ;
-    schema:accountablePerson <0000-0001-6911-0281> ;
+    schema:accountablePerson <file:///opt/cc-scholarship-graph/0000-0001-6911-0281> ;
     schema:description "Lesley K. Mackie is the Head of Research Services and the Natural Sciences Librarian at Colorado College. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-05-08T20:42:11.633358"^^xsd:dateTime ;
-            prov:wasGeneratedBy <0000-0001-6911-0281> ] .
+            prov:wasGeneratedBy <file:///opt/cc-scholarship-graph/0000-0001-6911-0281> ] .
 
 <http://catalog.coloradocollege.edu/491e781c-15d0-11e8-a2cd-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for David Weddle"@en ;
@@ -1496,6 +1496,14 @@
             prov:atTime "2018-02-19T23:37:54.609243"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
+<http://catalog.coloradocollege.edu/b231d5f0-5304-11e8-b665-0242ac130005> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Lesley Mackie"@en ;
+    schema:accountablePerson <http://li-docker1:9999/blazegraph/0000-0001-6911-0281> ;
+    schema:description "Lesley K. Mackie is the Head of Research Services and the Natural Sciences Librarian at Colorado College. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-05-08T21:13:46.939272"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://li-docker1:9999/blazegraph/0000-0001-6911-0281> ] .
+
 <http://catalog.coloradocollege.edu/b9064fa4-15c9-11e8-86ef-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Jeff Livesay"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/64d27bd4-15c8-11e8-8487-005056c00008> ;
@@ -1540,6 +1548,17 @@ Colorado College students, interested in developing a research project - either 
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-02-19T21:54:37.773369"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
+
+<http://catalog.coloradocollege.edu/f0d71ab8-5304-11e8-b665-0242ac130005> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Lesley Mackie"@en ;
+    schema:accountablePerson <http://semantic_server:9999/blazegraph/namespace/kb/0000-0001-6911-0281> ;
+    schema:description "Lesley K. Mackie is the Head of Research Services and the Natural Sciences Librarian at Colorado College."@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-05-08T21:15:32.040885"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://semantic_server:9999/blazegraph/namespace/kb/0000-0001-6911-0281> ] ;
+    prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-05-08T21:16:04.444559"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://semantic_server:9999/blazegraph/namespace/kb/0000-0001-6911-0281> ] .
 
 <http://catalog.coloradocollege.edu/fcb5c2e2-1c17-11e8-a25c-a41f7283f8d4> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Diane Westerfield"@en ;
