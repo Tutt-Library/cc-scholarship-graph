@@ -123,7 +123,21 @@ def volume_issue_lookup(creative_works,volume_iri,lookup_issue):
 
     for i in results:
         return i[0]
-    
+
+def isbn_lookup(creative_works,isbn):
+    sparql = """SELECT ?book
+                WHERE {{
+                ?book rdf:type bf:Book .
+                ?book bf:isbn ?label .
+                FILTER(CONTAINS (str(?label),"{0}"))
+                }}""".format(isbn)
+
+    results = creative_works.query(sparql)
+
+    for i in results:
+        return i[0]
+
+
 # function to return unique IRI using UUID
 def unique_IRI(self):
         unique_IRI="http://catalog.coloradocollege.edu/{}".format(uuid.uuid1())
@@ -659,6 +673,42 @@ class Book_Chapter_Citation(Book_Citation):
             people,
             is_interactive)
 
+    def populate_book_chapter(self):
+        self.__chapter_title__()
+        self.__editor__()
+        self.__pages__()
+
+    def __chapter_title__(self):
+        self.chapter_title=""
+        if "chapter_title" in self.raw_citation.keys():
+            self.chapter_title = self.raw_citation["chapter_title"]
+
+    def __editor__(self):
+        editor=""
+        if "editor" in self.raw_citation.keys():
+            self.editor = self.raw_citation["editor_statement"]
+            self.editor = self.editor_statement.replace(" and ","; ")
+
+    def __pages__(self):
+        self.pageStart=""
+        self.pageEnd=""
+        if "pages" in self.raw_citation.keys():
+            pages = self.raw_citation["pages"]
+            if "-" in pages:
+                pages = pages.replace(" ","") # remove extraneous spaces
+                pages = pages.replace("--","-") # turn double hyphens into single hypens
+                hyphen = pages.find("-")
+                self.page_start = pages[:hyphen]
+                self.page_end = pages[hyphen+1:]
+            else:
+                self.page_start=pages    
+
+    def add_book_chapter(self):
+        # if book does not yet exist, add book
+        # look up by isbn
+        # if no isbn match look up by book title and year
+        # chapter is "part of" book
+        pass
             
 def load_citations(bibtext_filepath, creative_works_path):
     # Take the bibparse data and load it into the creative_works knowledge graph
@@ -690,6 +740,13 @@ def load_citations(bibtext_filepath, creative_works_path):
             citation.populate()
             citation.populate_book()
             citation.add_book()
+            i = i + 1
+        elif row["ENTRYTPE"]=="inbook":
+            citation=Book_Chapter_Citation(row, creative_works, people)
+            citation.populate()
+            citation.populate_book()
+            citation.populate_book_chapter()
+            citation.add_book_chapter()
             i = i + 1
 
     # save the graph to disk
