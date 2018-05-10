@@ -65,8 +65,7 @@ def journal_lookup(creative_works,lookup_string):
     sparql="""SELECT ?journal_iri
 	      WHERE {{
 	      ?journal_iri rdf:type schema:Periodical .
-	      ?journal_iri schema:name ?label .
-	      
+	      ?journal_iri schema:name ?label .    
               FILTER (regex(?label,"^{0}$"))
               }}""".format(lookup_string)
     results = creative_works.query(sparql)
@@ -124,19 +123,47 @@ def volume_issue_lookup(creative_works,volume_iri,lookup_issue):
     for i in results:
         return i[0]
 
-def isbn_lookup(creative_works,isbn):
-    sparql = """SELECT ?book
-                WHERE {{
-                ?book rdf:type bf:Book .
-                ?book bf:isbn ?label .
-                FILTER(CONTAINS (str(?label),"{0}"))
-                }}""".format(isbn)
+def book_uri_lookup(creative_works,lookup_string):
+# check the creative works graph for a match on doi so that duplicate articles are not created
+
+    sparql="""SELECT ?book_uri
+            WHERE {{
+            ?book_uri rdf:type bf:Book .
+            FILTER(CONTAINS (str(?book_uri),"{0}"))
+            }}""".format(lookup_string)
 
     results = creative_works.query(sparql)
 
     for i in results:
         return i[0]
 
+def isbn_lookup(creative_works,lookup_string):
+    # check creative works graph to see if isbn already exists
+    sparql = """SELECT ?book
+                WHERE {{
+                ?book rdf:type bf:Book .
+                ?isbn bf:isbn ?label .
+                FILTER(CONTAINS (?label),"{0}")
+                }}""".format(lookup_string)
+
+    results = creative_works.query(sparql)
+
+    for i in results:
+        return i[0]
+
+def book_title_lookup(creative_works,lookup_string):
+# check the creative works graph to see if book title already exists
+    sparql="""SELECT ?book
+              WHERE {{
+              ?book rdf:type bf:Book .
+              ?book bf:title ?label .
+              FILTER (CONTAINS (?label,"{0}"))
+              }}""".format(lookup_string)
+
+    results = creative_works.query(sparql)
+
+    for i in results:
+        return i[0]  
 
 # function to return unique IRI using UUID
 def unique_IRI(self):
@@ -537,15 +564,19 @@ class Book_Citation(Citation):
         self.__title__()
         self.__publisher_provision__()
         self.__edition__()
+        self.__editor__()
         self.__isbn__()
         self.__note__()
-        self.__edited_by__()
         self.__abstract__()
         self.__call__()
         self.__url__()
 
     def __title__(self):
         self.title=self.raw_citation["title"]
+
+    def __citation_type__(self):
+        # have to overwrite for book chapters so that the parent book is still a book
+        self.citation_type = "book"
 
     def __publisher_provision__(self):
         if "publisher" in self.raw_citation.keys():
@@ -565,12 +596,17 @@ class Book_Citation(Citation):
         else:
             self.edition = ""
 
-    def __edited_by__(self):
-        # how to find editors?
-        pass
+    def __editor__(self):
+        # need to figure out how to differentiate between editors and authors
+        editor=""
+        # "editor" can refer to one or several editors
+        if "editor" in self.raw_citation.keys():
+            self.editor = self.raw_citation["editor"]
+            self.editor = self.editor.replace(" and ","; ")
 
     def __isbn__(self):
         # may need code in here to isolate single ISBN, as there may be multiple in bib records exported to RefWorks
+        # also the issue of inconsistent punctuation
         if "isbn" in self.raw_citation.keys():
             self.isbn = self.raw_citation["isbn"]
         else:
@@ -625,6 +661,8 @@ class Book_Citation(Citation):
         #add author - use author instead of agent to be consistent with articles
         for author in self.cc_authors:
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
+
+        
     
         #add title
         self.creative_works.add((self.bib_uri, BF.title,rdflib.Literal(self.title,lang="en")))
@@ -674,20 +712,13 @@ class Book_Chapter_Citation(Book_Citation):
             is_interactive)
 
     def populate_book_chapter(self):
-        self.__chapter_title__()
-        self.__editor__()
+        self.__book_chapter_title__()
         self.__pages__()
 
-    def __chapter_title__(self):
-        self.chapter_title=""
-        if "chapter_title" in self.raw_citation.keys():
-            self.chapter_title = self.raw_citation["chapter_title"]
-
-    def __editor__(self):
-        editor=""
-        if "editor" in self.raw_citation.keys():
-            self.editor = self.raw_citation["editor_statement"]
-            self.editor = self.editor_statement.replace(" and ","; ")
+    def __book_chapter_title__(self):
+        self.book_chapter_title=""
+        if "book_chapter_title" in self.raw_citation.keys():
+            self.book_chapter_title = self.raw_citation["book_chapter_title"]
 
     def __pages__(self):
         self.pageStart=""
@@ -704,11 +735,41 @@ class Book_Chapter_Citation(Book_Citation):
                 self.page_start=pages    
 
     def add_book_chapter(self):
-        # if book does not yet exist, add book
-        # look up by isbn
-        # if no isbn match look up by book title and year
-        # chapter is "part of" book
-        pass
+
+        self.book_chapter_uri = ""
+        
+        # if book does not yet exist, add new book, otherwise add chapter to pre-existing book
+        # look for bib record derived uri first, then isbn, then title [and date to exclude different editions]
+        #if "bib" in self.raw_citation.keys():
+        #    self.bib=self.raw_citation["bib"]
+        #    self.bib = "https://tiger.coloradocollege.edu/record=" + self.bib[0:8] + "~s5"
+        #    if book_uri_lookup(creative_works,self.bib) == None:
+        #        if isbn_lookup(self.isbn) == None:
+        #            if book_title_lookup(self.title) == None:
+        #                print("Book not found, need to add book")
+        #                citation.add_book()
+
+        # look for duplicate book chapter
+
+        #add book chapter as uri
+        if self.book_chapter_uri == "":
+            self.book_chapter_uri = self.__unique_IRI__()
+        self.creative_works.add((self.book_chapter_uri,rdflib.RDF.type,SCHEMA.Chapter))
+
+        #add book chapter is part of book
+        self.creative_works.add((self.book_chapter_uri,SCHEMA.PartOf,self.bib_uri))
+    
+        #add book chapter title
+        self.creative_works.add((self.book_chapter_uri,SCHEMA.name,rdflib.Literal(self.book_chapter_title,"en")))
+
+        #add chapter pages
+        if self.page_start != "":
+            self.creative_works.add((self.book_chapter_uri,SCHEMA.pageStart,rdflib.Literal(self.page_start)))
+        if self.page_end != "":
+            self.creative_works.add((self.book_chapter_uri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
+
+        print("Hey I'm in add_book_chapter and it's ",self.book_chapter_title)
+        
             
 def load_citations(bibtext_filepath, creative_works_path):
     # Take the bibparse data and load it into the creative_works knowledge graph
@@ -741,11 +802,12 @@ def load_citations(bibtext_filepath, creative_works_path):
             citation.populate_book()
             citation.add_book()
             i = i + 1
-        elif row["ENTRYTPE"]=="inbook":
+        elif row["ENTRYTYPE"]=="inbook":
             citation=Book_Chapter_Citation(row, creative_works, people)
             citation.populate()
             citation.populate_book()
             citation.populate_book_chapter()
+            citation.add_book()
             citation.add_book_chapter()
             i = i + 1
 
