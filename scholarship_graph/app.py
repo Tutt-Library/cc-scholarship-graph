@@ -35,7 +35,7 @@ from jinja2 import contextfilter
 from .forms import ProfileForm, SearchForm, ArticleForm, BookForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
-from .sparql import CITATION, BOOK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
+from .sparql import CITATION, BOOK_CITATION,BOOK_CHAPTER_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
@@ -373,6 +373,11 @@ def person_view():
     book_citations_result = CONNECTION.datastore.query(book_citations_sparql)
     for row in book_citations_result:
         person_info["book_citations"].append(row)
+
+    book_chapter_citations_sparql = BOOK_CHAPTER_CITATION.format(person_iri)
+    book_chapter_citations_result = CONNECTION.datastore.query(book_chapter_citations_sparql)
+    for row in book_chapter_citations_result:
+        person_info["book_chapter_citations"].append(row)
     
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(email))
@@ -773,3 +778,4 @@ def book_edition(book_citation):
             ed = book_citation["editionStatement"]["value"]
             edition_string = ed + " ed. "
     return(edition_string)
+    
