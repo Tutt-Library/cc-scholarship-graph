@@ -12,6 +12,7 @@ import click
 import requests
 import rdflib
 import sys
+import threading
 import traceback
 import uuid
 import utilities
@@ -40,7 +41,7 @@ from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
 from .sparql import COUNT_BOOK_AUTHORS, WORK_INFO
 from .profiles import add_creative_work, add_profile, delete_creative_work
-from .profiles import edit_creative_work, update_profile
+from .profiles import edit_creative_work, generate_citation_html, update_profile
 from rdfframework.configuration import RdfConfigManager
 
 
@@ -59,6 +60,19 @@ ldap_manager = LDAP3LoginManager(app)
 
 PROJECT_BASE = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 USERS = OrderedDict()
+
+BACKEND_THREAD = None
+
+class EmailThread(threading.Thread):
+
+    def __init__(self, **kwargs):
+        threading.Thread.__init__(self)
+        self.work_function = kwargs.get("function")
+        self.variables = kwargs
+
+    def run(self):
+        results = self.work_function(**self.variables)
+
 
 class Scholar(UserMixin):
 
@@ -96,13 +110,13 @@ def __send_email__(info):
     subject = info.get('subject')
     text = info.get('text')
     message = """From: <{0}>
-To: <{1}>
+To: {1}
 Subject: {2}
 
 
 {3}""".format(
         sender,
-        ",".join(recipients),
+        ",".join(["<{0}>".format(r) for r in recipients]),
         subject,
         text)
     message = email_text.MIMEText(message, _charset="UTF-8")
@@ -536,8 +550,9 @@ def cc_logout():
 def __populate_citation__(work_form):
     citation_type = work_form.citation_type.data
     raw_citation = {"ENTRYTYPE": citation_type,
-                      "author": work_form.author_string.data,
-                      "year": work_form.datePublished.data}
+                    "iri": work_form.iri.data,
+                    "author": work_form.author_string.data,
+                    "year": work_form.datePublished.data}
     if citation_type.startswith("article"):
         raw_citation["journal"]=work_form.journal_title.data
         raw_citation["title"]=work_form.article_title.data
@@ -628,14 +643,14 @@ def edit_work():
                 elif hasattr(article_form, key):
                     field = getattr(article_form, key)
                     field.data = value.get('value')
-            
+            article_form.iri.data = uri
             html_str = render_template("add-article-dlg.html",
                             new_article_form=article_form,
                             dialog_id=dialog_id)
         elif work_class.endswith("Book"):
             book_form = BookForm()
+            book_form.iri.data = uri
             for key, value in first_work.items():
-                #click.echo("key={} value={}".format(key, value))
                 if key.startswith("type"):
                     continue
                 if key.startswith("title"):
@@ -655,16 +670,25 @@ def edit_work():
                   "dialog-id": dialog_id}
     else:
         work_type = request.form["citation_type"]
+        work_iri = request.form["iri"]
         if work_type.startswith("article"):
             work_form = ArticleForm()
         elif work_type.endswith("book"):
             work_form = BookForm()
         raw_citation = __populate_citation__(work_form)
-        output = edit_creative_work(config=app.config,
-            citation=raw_citation,
+        BACKEND_THREAD = EmailThread(
+            config=app.config,
             config_manager=CONFIG_MANAGER,
+            function=edit_creative_work,
+            citation=raw_citation,
             current_user=current_user,
-            work_type=work_type)
+            citation_type=work_type)
+        BACKEND_THREAD.start()
+        output =  {"message": """Your work is being,processed. 
+You should receive an email when your edits are being reviewed""",
+            "html":  generate_citation_html(raw_citation),
+            "iri": work_iri}
+
     return jsonify(output)
 
 

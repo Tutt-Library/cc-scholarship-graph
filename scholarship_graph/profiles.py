@@ -191,7 +191,7 @@ def __email_work__(**kwargs):
     message = MIMEMultipart()
     message["From"] = sender
     message["Subject"] = subject
-    message["To"] = ",".join(recipients)
+    message["To"] = ",".join(["<{0}>".format(r) for r in recipients])
     if len(carbon_copy) > 0:
         message["Cc"] = ','.join(carbon_copy)
         recipients.extend(carbon_copy)
@@ -221,69 +221,71 @@ def __email_work__(**kwargs):
     server.close()
 
 
-def __generate_citation_html__(citation):
+def generate_citation_html(citation):
     soup = BeautifulSoup("", 'lxml')
     div = soup.new_tag("div", **{"class": "row"})
     col_1 = soup.new_tag("div", **{"class": "col-1"})
-    if citation.citation_type.startswith("article"):
-        col_1.append(soup.new_tag("i", **{"class": "fas fa-file-alt"}))
-    elif citation.citation_type.endswith("book"):
+    citation_type = citation.get("ENTRYTYPE")
+    if citation_type.startswith("article"):
+       col_1.append(soup.new_tag("i", **{"class": "fas fa-file-alt"}))
+    elif citation_type.endswith("book"):
         col_1.append(soup.new_tag("i", **{"class": "fas fa-book"}))
     under_review = soup.new_tag("em")
     under_review.string = "In Review"
     col_1.append(under_review)
     div.append(col_1)  
     col_2 = soup.new_tag("div", **{"class": "col-7"})
-    if hasattr(citation, "article_title"):
-        name = citation.article_title
-    elif hasattr(citation, "title"):
-        name = citation.title
-    if hasattr(citation, "url"):
-        work_link = soup.new_tag("a", href=citation.url)
+    if "article_title" in citation:
+        name = citation.get("article_title")
+    elif "title" in citation:
+        name = citation.get("title")
+    if "url" in citation:
+        work_link = soup.new_tag("a", href=citation.get("url"))
         work_link.string = name
         col_2.append(work_link)
     else:
         span = soup.new_tag("span")
         span.string = name
         col_2.append(span)
-    if hasattr(citation, "journal_title"):
+    if "journal_title" in citation:
         em = soup.new_tag("em")
-        em.string = citation.journal_title
+        em.string = citation.get("journal_title")
         col_2.append(em)
-    if hasattr(citation, "year"):
+    if "year" in citation:
         span = soup.new_tag("span")
-        span.string = "({0})".format(citation.year)
+        span.string = "({0})".format(citation.get("year"))
         col_2.append(span)
-    if hasattr(citation, "volume_number") and len(citation.volume_number) > 0:
+    vol_number = citation.get("volume_number")
+    if vol_number and len(vol_number) > 0:
         span = soup.new_tag("span")
-        span.string = "v. {}".format(citation.volume_number)
+        span.string = "v. {}".format(vol_number)
         col_2.append(span)
-    if hasattr(citation, "issue_number") and len(citation.issue_number) > 0:
+    issue_number = citation.get("issue_number")
+    if issue_number and len(issue_number ) > 0:
         span = soup.new_tag("span")
-        span.string = " no. {}".format(citation.issue_number)
+        span.string = " no. {}".format(issue_number)
         col_2.append(span)
-    if hasattr(citation, "page_start") and len(citation.page_start) > 0:
+    page_start = citation.get("page_start")
+    if page_start and len(page_start) > 0:
         span = soup.new_tag("span")
-        span.string = "p. {}".format(citation.page_start)
+        span.string = "p. {}".format(page_start)
         col_2.append(span)
-    if hasattr(citation, "page_end") and len(citation.page_end) > 0:
+    page_end = citation.get("page_end")
+    if page_end and len(page_end) > 0:
         span = soup.new_tag("span")
-        if hasattr(citation, "page_start"): 
+        if "page_start" in citation: 
             page_string = "- {}."
         else:
             page_string = "{}."
-        span.string = page_string.format(citation.page_end)
+        span.string = page_string.format(page_end)
         col_2.append(span)
     div.append(col_2)
     col_3 = soup.new_tag("div", **{"class": "col-4"})
-    if hasattr(citation, "doi_iri"):
-        edit_click = "editCitation('{}');".format(citation.doi_iri)
-        delete_click = "deleteCitation('{}');".format(
-            citation.doi_iri)
-    elif hasattr(citation, "bib_uri"):
-        edit_click = "editCitation('{}');".format(citation.bib_uri)
-        delete_click = "deleteCitation('{}');".format(
-            citation.bib_uri)
+    iri = citation.get("iri")
+    click.echo("IRI is {}".format(iri))
+    if iri:
+        edit_click = "editCitation('{}');".format(iri)
+        delete_click = "deleteCitation('{}');".format(iri)
     edit_a = soup.new_tag("a", **{"class": "btn btn-warning disabled",
                                  "onclick": edit_click,
                                  "type=": "input"})
@@ -433,7 +435,6 @@ def add_creative_work(**kwargs):
         )
     return {"message": "New work has been submitted for review",
             "status": True,
-            "html":  __generate_citation_html__(citation),
             "iri": work_iri}
           
 
@@ -640,10 +641,8 @@ def edit_creative_work(**kwargs):
             datetime.datetime.utcnow().isoformat())
     )
     return {"message": "Changes to work has been submitted for review",
-            "status": True,
-            "html":  __generate_citation_html__(citation),
-            "iri": work_iri}
-
+            "status": True}
+           
 
 def update_profile(**kwargs):
     """Updates existing triples based on form values"""

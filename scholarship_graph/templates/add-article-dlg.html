@@ -14,6 +14,7 @@
       <div class="modal-body">
 			{{ new_article_form.csrf_token }}
                         {{ new_article_form.citation_type(value='article') }}
+                        {{ new_article_form.iri }}
             <h3>{% if dialog_id %}Edit{% else %}New{% endif %} Article Form</h3>
 			{{ new_article_form.author_string.label }} <span class="text-danger">*</span>
 			{{ new_article_form.author_string(class_="form-control mb-2") }}

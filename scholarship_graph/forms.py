@@ -28,6 +28,7 @@ class CitationForm(FlaskForm):
     datePublished = StringField("Year of publication", validators=[DataRequired()])
     abstract = TextAreaField("Abstract")
     citation_type = HiddenField("Citation type")
+    iri = HiddenField()
 
 class ArticleForm(CitationForm):
     journal_title = StringField("Journal title",validators=[DataRequired()])
