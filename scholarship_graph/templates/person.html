@@ -43,9 +43,10 @@
                 <a href="mailto:{{ row }}">{{ row }}</a>
                 {% if not loop.last %},{% endif %}
             {% endfor %}
-
+			
+                {% if info.citations|length > 0 or info.book_citations|length > 0 or info.book_chapter_citations|length > 0 %}
 		<div style="margin-left:5px; margin-top: 10px;">
-                {% if info.citations|length > 0 or info.book_citations|length > 0 %}
+				
 		<h3>Recent Works</h3>
 		<h4>Articles</h4>
                 {% if info.citations|length > 0 %}
@@ -58,6 +59,7 @@
 			</p>
 		{% endfor %}
                 {% endif %}
+				
                 {% if info.book_citations|length > 0 %}
 		<h4>Books</h4>
 		{% for row in info.book_citations %}
@@ -65,12 +67,28 @@
 			<em>{{ row|book_title_filter|safe }}</em>. 
 			{{ row|book_edition_filter|safe }}
 			{{ row.provisionActivityStatement.value }}.
-			
 			</p>
 		{% endfor %}
+
                 {% endif %}
-                {% endif %}
+
+				{% if info.book_chapter_citations|length > 0 %}
+		<h4>Book Chapters</h4>
+		{% for row in info.book_chapter_citations %}
+		<p>
+		{{ row.book_chapter_title.value	 }}
+		{% if row|page_number_filter|safe %}({{ row|page_number_filter|safe }}{% endif %})
+		 in 
+		<em>{{ row|book_title_filter|safe }}</em>
+		(edited by {{ row.editor.value }}.) 
+		{{ row|book_edition_filter|safe }}.
+		{{ row.provisionActivityStatement.value }}.
+		</p>
+		{% endfor %}
+		                {% endif %}
 		</div>
+						{% endif %}
+
         </div>
     </div>
 </div>
