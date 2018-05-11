@@ -603,6 +603,7 @@ class Book_Citation(Citation):
         if "editor" in self.raw_citation.keys():
             self.editor = self.raw_citation["editor"]
             self.editor = self.editor.replace(" and ","; ")
+            self.editor = self.editor.replace(",",", ")
 
     def __isbn__(self):
         # may need code in here to isolate single ISBN, as there may be multiple in bib records exported to RefWorks
@@ -662,8 +663,10 @@ class Book_Citation(Citation):
         for author in self.cc_authors:
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
 
-        
-    
+        #add editor if field present
+        if self.editor != "" and self.editor != None:
+            self.creative_works.add((self.bib_uri,SCHEMA.editor,rdflib.Literal(self.editor,lang="en")))
+           
         #add title
         self.creative_works.add((self.bib_uri, BF.title,rdflib.Literal(self.title,lang="en")))
         
@@ -696,7 +699,7 @@ class Book_Citation(Citation):
             self.creative_works.add((self.bib_uri,CITATION_EXTENSION.callNumber,rdflib.Literal(self.call)))
 
         # add url if present (a few books are not in Tiger)
-        if self.url != "":
+        if self.url != "" and self.url != None:
             self.creative_works.add((self.bib_uri,SCHEMA.url,rdflib.Literal(self.url)))
             
 class Book_Chapter_Citation(Book_Citation):
@@ -763,10 +766,10 @@ class Book_Chapter_Citation(Book_Citation):
         self.creative_works.add((self.book_chapter_uri,SCHEMA.name,rdflib.Literal(self.book_chapter_title,"en")))
 
         #add chapter pages
-        if self.page_start != "":
-            self.creative_works.add((self.book_chapter_uri,SCHEMA.pageStart,rdflib.Literal(self.page_start)))
-        if self.page_end != "":
-            self.creative_works.add((self.book_chapter_uri,SCHEMA.pageEnd,rdflib.Literal(self.page_end)))
+        if self.pageStart != "" and self.pageStart != None:
+            self.creative_works.add((self.book_chapter_uri,SCHEMA.pageStart,rdflib.Literal(self.pageStart)))
+        if self.pageEnd != "" and self.pageEnd != None:
+            self.creative_works.add((self.book_chapter_uri,SCHEMA.pageEnd,rdflib.Literal(self.pageEnd)))
 
         print("Hey I'm in add_book_chapter and it's ",self.book_chapter_title)
         
