@@ -181,6 +181,8 @@ class Citation(object):
         self.raw_citation=raw_citation
         self.creative_works=creative_works
         self.people = people
+        if "iri" in raw_citation:
+            self.iri = raw_citation.get("iri")
         self.is_interactive=is_interactive
 
     def __unique_IRI__(self):
@@ -420,11 +422,14 @@ class Article_Citation(Citation):
             self.month=""
        
     def __doi__(self):
+        citation_fields = self.raw_citation.keys()
         # doi is the unique identifier for articles
-        if "doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0:
+        if "doi" in citation_fields and len(self.raw_citation["doi"]) > 0:
             self.doi_string = self.raw_citation["doi"]
             self.doi_string = "https://doi.org/" + self.doi_string
             self.doi_iri=rdflib.URIRef(self.doi_string)
+        elif "iri" in citation_fields and len(self.raw_citation["iri"]) > 0:
+            self.doi_iri = rdflib.URIRef(self.raw_citation["iri"])
         else:
             self.doi_iri=self.__unique_IRI__()
         if doi_lookup(self.creative_works, self.doi_iri) != None: 
@@ -598,7 +603,7 @@ class Book_Citation(Citation):
 
     def __editor__(self):
         # need to figure out how to differentiate between editors and authors
-        editor=""
+        self.editor=""
         # "editor" can refer to one or several editors
         if "editor" in self.raw_citation.keys():
             self.editor = self.raw_citation["editor"]
@@ -638,9 +643,12 @@ class Book_Citation(Citation):
     def add_book(self):
 
         #bib number as unique ID?
-        if "bib" in self.raw_citation.keys():
+        citation_fields = self.raw_citation.keys()
+        if "bib" in citation_fields:
             self.bib=self.raw_citation["bib"]
             self.bib = "https://tiger.coloradocollege.edu/record=" + self.bib[0:8] + "~s5"
+        elif "iri" in citation_fields:
+            self.bib = self.raw_citation["iri"]
         else:
             self.bib=self.__unique_IRI__()
 
@@ -680,7 +688,8 @@ class Book_Citation(Citation):
         self.creative_works.add((self.bib_uri,SCHEMA.publicationDate,rdflib.Literal(self.year)))
                  
         #add edition if present
-        self.creative_works.add((self.bib_uri, BF.editionStatement,rdflib.Literal(self.edition,lang="en")))
+        if self.edition and len(self.edition) > 0:
+            self.creative_works.add((self.bib_uri, BF.editionStatement,rdflib.Literal(self.edition,lang="en")))
                
         #add abstract (summary) if present
         if self.abstract != "":

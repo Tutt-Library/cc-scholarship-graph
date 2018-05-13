@@ -212,11 +212,11 @@
         }
 	var action = $(form_selector).attr("action");
         $(dlg_selector).modal('hide');
-        $("#processingProfile").modal('show');
+        {#$("#processingProfile").modal('show');#}
 	$.post(action,
 	       data=data,
                success=function(data) {
-                        $("#processingProfile").modal('hide');
+                        {#$("#processingProfile").modal('hide');#}
 
                         if (data['status'] === true) {
                             $("#citations").append(data['html']);
@@ -245,13 +245,13 @@ function saveBook(dlg_id) {
         var form_selector = "#edit_book_form";
     }
     $(dlg_selector).modal('hide');
-    $("#processingProfile").modal('show');
+    {# $("#processingProfile").modal('show');#}
     var action = $(form_selector).attr("action");
     console.log("Action is " + action);
     $.post(action,
 	       data=data,
                success=function(data) {
-                        $("#processingProfile").modal('hide');
+                        {#$("#processingProfile").modal('hide');#}
 
                         if (data['status'] === true) {
                             $("#citations").append(data['html']);

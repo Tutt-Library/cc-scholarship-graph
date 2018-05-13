@@ -282,7 +282,6 @@ def generate_citation_html(citation):
     div.append(col_2)
     col_3 = soup.new_tag("div", **{"class": "col-4"})
     iri = citation.get("iri")
-    click.echo("IRI is {}".format(iri))
     if iri:
         edit_click = "editCitation('{}');".format(iri)
         delete_click = "deleteCitation('{}');".format(iri)
@@ -586,15 +585,15 @@ def delete_creative_work(**kwargs):
 def edit_creative_work(**kwargs):
     config = kwargs.get("config")
     git_profile = GitProfile(config)
-    current_user = kwargs.get("current_user")
+    current_user_email = kwargs.get("current_user_email")
     config_manager = kwargs.get('config_manager')
     connection = config_manager.conns
     revised_by = kwargs.get("revised_by")
     raw_citation = kwargs.get("citation")
     work_type = kwargs.get("work_type", "article")
-    if revised_by is None and current_user:
+    if revised_by is None and current_user_email:
         sparql = EMAIL_LOOKUP.format(
-                current_user.data.get('mail').lower())
+                current_user_email.lower())
         email_results = connection.datastore.query(sparql)
         if len(email_results) > 0:
             revised_by = rdflib.URIRef(
@@ -605,7 +604,6 @@ def edit_creative_work(**kwargs):
 
     for prefix, namespace in git_profile.cc_people.namespaces():
             temp_work.namespace_manager.bind(prefix, namespace)
- 
     if work_type.startswith("article"):
        citation = utilities.Article_Citation(raw_citation,
             temp_work,
@@ -623,19 +621,15 @@ def edit_creative_work(**kwargs):
         citation.populate_book()
         citation.add_book()
     if revised_by:
-        if hasattr(citation, "bib_uri") :
-            work_iri = citation.bib_uri
-        elif hasattr(citation, "doi_iri"):
-            work_iri = citation.doi_iri
         add_qualified_revision(temp_work,
-            work_iri,
-            revised_by)
-    email_subject = 'Edited Creative Work {}'.format(work_iri)
+        rdflib.URIRef(citation.iri),
+        revised_by)
+    email_subject = 'Edited Creative Work {}'.format(citation.iri)
     __email_work__(graph=temp_work, 
         config=config,
-        carbon_copy=[current_user.data.get('mail'),],
+        carbon_copy=[current_user_email,],
         subject=email_subject,
-        text="Edited {} revised by {} on {}, see attached turtle file".format( 
+        text="Edited {} revised by {} on {}, see attached RDF turtle file".format( 
             citation.citation_type,
             revised_by, 
             datetime.datetime.utcnow().isoformat())

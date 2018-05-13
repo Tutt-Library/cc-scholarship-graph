@@ -139,7 +139,6 @@ Subject: {2}
 
 @app.errorhandler(500)
 def server_error(e):
-    click.echo("SERVER ERROR: {}".format(e))
     body = "Current user: {0}\nURL:{1}\nError:\n{2}".format(
         current_user,
         request.url,
@@ -578,8 +577,9 @@ def __populate_citation__(work_form):
     elif citation_type.startswith("book-chapter"):
         pass
     elif citation_type.startswith("book"):
-       raw_citation["title"] = work_form.book_title.data
-       raw_citation["isbn"] = work_form.isbn.data
+        raw_citation["title"] = work_form.book_title.data
+        raw_citation["isbn"] = work_form.isbn.data
+        raw_citation["edition"] = work_form.editionStatement.data
     else:
         abort(500)
     if work_form.abstract.data != None:
@@ -611,6 +611,7 @@ def add_work():
                 config_manager=CONFIG_MANAGER,
                 current_user=current_user,
                 work_type=citation_type)
+            #output["html"] = generate_citation_html(raw_citation)
 ##        except:
 ##            click.echo("Error {}".format(
 ##                traceback.print_tb(sys.exc_info()[-1])))
@@ -686,12 +687,13 @@ def edit_work():
             config_manager=CONFIG_MANAGER,
             function=edit_creative_work,
             citation=raw_citation,
-            current_user=current_user,
-            citation_type=work_type)
+            current_user_email=current_user.data.get("mail"),
+            work_type=work_type)
         BACKEND_THREAD.start()
-        output =  {"message": """Your work is being,processed. 
+        output =  {"message": """Your work is being processed. 
 You should receive an email when your edits are being reviewed""",
             "html":  generate_citation_html(raw_citation),
+            "status": True,
             "iri": work_iri}
 
     return jsonify(output)
