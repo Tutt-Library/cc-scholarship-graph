@@ -100,8 +100,8 @@ WHERE {{
 	?book_chapter_title rdf:type schema:Chapter ;
                  schema:name ?book_chapter_title ;
 				 schema:partOf bf:Book ;
-				 bf:title ?title ;
 	         schema:author ?author .
+
 	FILTER(<{0}> = ?author)
 	OPTIONAL {{?book bf:isbn ?isbn.}}
 	OPTIONAL {{?book_chapter schema:editor ?editor.}}

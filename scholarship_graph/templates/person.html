@@ -72,7 +72,7 @@
 
                 {% endif %}
 
-				{% if info.book_chapter_citations|length > 0 %}
+		        {% if info.book_chapter_citations|length > 0 %}		
 		<h4>Book Chapters</h4>
 		{% for row in info.book_chapter_citations %}
 		<p>
@@ -85,7 +85,7 @@
 		{{ row.provisionActivityStatement.value }}.
 		</p>
 		{% endfor %}
-		                {% endif %}
+		        {% endif %}
 		</div>
 						{% endif %}
 

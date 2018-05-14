@@ -163,7 +163,18 @@ def book_title_lookup(creative_works,lookup_string):
     results = creative_works.query(sparql)
 
     for i in results:
-        return i[0]  
+        return i[0]
+
+def chapter_lookup(creative_works,lookup_string):
+	sparql="""SELECT ?chapter_iri
+		WHERE {{
+		?chapter_iri rdf:type schema:Chapter .
+		?chapter_iri schema:name ?label .
+		FILTER (regex(?label,"^{0}$"))
+		}}""".format(lookup_string)
+	results = creative_works.query(sparql)
+	for i in results:
+		return i[0]
 
 # function to return unique IRI using UUID
 def unique_IRI(self):
@@ -668,8 +679,12 @@ class Book_Citation(Citation):
 
 
         #add author - use author instead of agent to be consistent with articles
+        #WHAT ABOUT BOOKCHAPTER AUTHORS???
         for author in self.cc_authors:
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
+
+        #add author_string
+        self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
 
         #add editor if field present
         if self.editor != "" and self.editor != None:
@@ -770,7 +785,14 @@ class Book_Chapter_Citation(Book_Citation):
 
         #add book chapter is part of book
         self.creative_works.add((self.book_chapter_uri,SCHEMA.PartOf,self.bib_uri))
-    
+
+        #add CC author(s)
+        for author in self.cc_authors:
+            self.creative_works.add((self.doi_iri,SCHEMA.author,author))
+
+        #add author_string
+        self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
+
         #add book chapter title
         self.creative_works.add((self.book_chapter_uri,SCHEMA.name,rdflib.Literal(self.book_chapter_title,"en")))
 
