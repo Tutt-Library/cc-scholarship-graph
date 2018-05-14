@@ -97,22 +97,23 @@ WHERE {{
 BOOK_CHAPTER_CITATION = PREFIX + """
 SELECT DISTINCT ?book ?author ?editor ?title ?book_chapter_title ?isbn ?publicationDate ?provisionActivityStatement ?editionStatement ?summary ?note ?url ?page_start ?page_end
 WHERE {{
-	?book_chapter_title rdf:type schema:Chapter ;
+	?book_chapter rdf:type schema:Chapter ;
                  schema:name ?book_chapter_title ;
-				 schema:partOf bf:Book ;
+				 schema:partOf ?book ;
 	         schema:author ?author .
 
 	FILTER(<{0}> = ?author)
+        OPTIONAL {{?book bf:title ?title . }}
 	OPTIONAL {{?book bf:isbn ?isbn.}}
-	OPTIONAL {{?book_chapter schema:editor ?editor.}}
+	OPTIONAL {{?book schema:editor ?editor.}}
 	OPTIONAL {{?book schema:publicationDate ?publicationDate.}}
 	OPTIONAL {{?book bf:provisionActivityStatement ?provisionActivityStatement.}}
 	OPTIONAL {{?book bf:editionStatement ?editionStatement.}}
 	OPTIONAL {{?book bf:summary ?summary.}}
 	OPTIONAL {{?book bf:note ?note.}}
 	OPTIONAL {{?book schema:url ?url.}}
-	OPTIONAL {{?article schema:pageStart ?page_start .}}
-	OPTIONAL {{?article schema:pageEnd ?page_end .}}
+	OPTIONAL {{?book_chapter schema:pageStart ?page_start .}}
+	OPTIONAL {{?book_chapter schema:pageEnd ?page_end .}}
 	}}
 	ORDER BY DESC(?publicationDate)"""
 	

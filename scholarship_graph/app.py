@@ -351,7 +351,8 @@ def person_view():
     person_iri = request.args.get("iri")
     person_info = {"url": person_iri,
                    "citations":[],
-                   "book_citations": []}
+                   "book_citations": [],
+                   "book_chapter_citations": []}
     sparql = PERSON_INFO.format(person_iri)
     results = CONNECTION.datastore.query(sparql)
     for row in results:
@@ -762,7 +763,10 @@ def page_number(citation):
 @app.template_filter("book_title_filter")
 def book_title(book_citation):
     title_string=""
-    title = book_citation["title"]["value"] 
+    if "title" in book_citation:
+        title = book_citation["title"]["value"]
+    elif "book_chapter_title" in book_citation:
+        title = book_citation["book_chapter_title"]["value"]
     uri = str(book_citation["book"]["value"])
     if uri.startswith("https://tiger.coloradocollege.edu/"):
         title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"

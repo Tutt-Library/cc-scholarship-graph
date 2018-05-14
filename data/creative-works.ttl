@@ -1203,184 +1203,184 @@
 <http://catalog.coloradocollege.edu/4260cfe7-5561-11e8-bf09-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
 	cite:authorString "Eve Grace." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/4260cfe6-5561-11e8-ae74-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/4260cfe6-5561-11e8-ae74-a41f7283f8d4> ;
     schema:name "Rousseau's domestication of Amour-propre"@en .
 
 <http://catalog.coloradocollege.edu/42789da6-5561-11e8-ba52-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
 	cite:authorString "Eve Grace." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1701525~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1701525~s5> ;
     schema:name "The restlessness of 'being': Rousseau's protean sentiment of existence"@en .
 
 <http://catalog.coloradocollege.edu/428ba8a6-5561-11e8-bc72-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
 	cite:authorString "Eve Grace." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1701531~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1701531~s5> ;
     schema:name "Portraying nature : Rousseau's reveries as philosophy and art"@en .
 
 <http://catalog.coloradocollege.edu/42a83927-5561-11e8-acde-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/6254cdec-b0f0-11e6-9a7d-005056c00008> ;
 	cite:authorString "Jamal Ratchford." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/42a83926-5561-11e8-8218-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/42a83926-5561-11e8-8218-a41f7283f8d4> ;
     schema:name "A Silent Protest: The 1968 Olympiad and the Appropriation of Black Athletic Power"@en .
 
 <http://catalog.coloradocollege.edu/42e87e46-5561-11e8-ba19-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008>;
 	cite:authorString "Kathleen V. Hoover-Dempsey, Christa L. Ice, Manya Whitaker." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2452202~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2452202~s5> ;
     schema:name "\"We're way past reading together\" : why and how parental involvement in adolescence makes sense"@en .
 
 <http://catalog.coloradocollege.edu/4310f5a6-5561-11e8-9e98-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008>;
 	cite:authorString "Kathleen V. Hoover-Dempsey, Manya Whitaker." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2452200~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2452200~s5> ;
     schema:name "The parental involvement process: implications for literacy development"@en .
 
 <http://catalog.coloradocollege.edu/432400a6-5561-11e8-942a-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/778a09be-b0e5-11e6-b859-005056c00008>;
 	cite:authorString "Heidi R. Lewis." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2288715~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2288715~s5> ;
     schema:name "An examination of Kanye West's higher education trilogy"@en .
 
 <http://catalog.coloradocollege.edu/4374ef67-5561-11e8-bf32-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/e71fe18a-c8a2-11e7-bfb8-005056c00008>;
 	cite:authorString "James Hudson, William Hurst, and Christian Sorace." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/4374ef66-5561-11e8-9d30-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/4374ef66-5561-11e8-9d30-a41f7283f8d4> ;
     schema:name "Workers in post-socialist China: shattered rice bowls, fragmented subjectivities"@en .
 
 <http://catalog.coloradocollege.edu/4387fa67-5561-11e8-94d9-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/432575ac-b0f5-11e6-929c-005056c00008> ;
 	cite:authorString "Sandra L. Wong." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/4387fa66-5561-11e8-8dc4-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/4387fa66-5561-11e8-8dc4-a41f7283f8d4> ;
     schema:name "Depression level in inner-city Asian American adolescents: the contributions of cultural orientation and interpersonal relationships"@en .
 
 <http://catalog.coloradocollege.edu/43c5de26-5561-11e8-9411-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
 	cite:authorString "Catharine Bond Hill, Jill Tiefenthaler, and Suzanne P. Welsh." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2206011~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2206011~s5> ;
     schema:name "Economics and affordability"@en .
 
 <http://catalog.coloradocollege.edu/43e4d007-5561-11e8-95b1-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/1d84f7b4-b0f5-11e6-a36e-005056c00008> ;
 	cite:authorString "Raimundo C. Barreto and Devaka Premawardhana." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/43e4d006-5561-11e8-96c7-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/43e4d006-5561-11e8-96c7-a41f7283f8d4> ;
     schema:name "Protestantism and Candomblé in Bahia: From intolerance to dialogue (and beyond)"@en .
 
 <http://catalog.coloradocollege.edu/43fcebe6-5561-11e8-9aa3-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/a2e12b7a-b0f4-11e6-8cc2-005056c00008> ;
 	cite:authorString "Horner, John M." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1726557~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1726557~s5> ;
 	bf:Summary "In a paper titled 'How to Make Our Ideas Clear,' C. S. Peirce outlines an elegant thought experiment on scientific progress and the notion of truth. John Staddon offered an interesting corollary to Peirce's thought experiment. For Peirce, truth was found in the dovetailing of inquiry onto a 'fated' agreement among observers. How, Staddon asks, will psychology look when science has run its course and our understanding of behavior has reached its limit--when our theories exhaust our understanding of behavior and answer our questions to the degree possible through scientific method? However interesting the debate over what is true or real is to the philosophically inclined, Peirce's thought experiment raises the question that Staddon finally asks: What can we expect from our theories at the limits of scientific inquiry? And specifically for psychologists: What can we expect from a science of psychology at the limits of inquiry? Psychology has a special interest in this question, because much of the debate on methodology in psychology rests upon what will count as a scientific explanation of psychological phenomena. How can we know what the important questions of our field are, if we do not know what constitutes a suitable explanation? The history of psychology is replete with arguments about the appropriate subject and nature of the study of psychology. We turn next to a short, schematic history of psychological explanation as a way of exploring the tensions within the field over what will count as an explanation. (PsycINFO Database Record (c) 2016 APA, all rights reserved)"@en ;
     schema:name "The end of psychology: What can we expect at the limits of inquiry?"@en .
 
 <http://catalog.coloradocollege.edu/441bddc6-5561-11e8-b139-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/0fe7cbd8-c8a2-11e7-af0a-005056c00008> ;
 	cite:authorString "Kristine M. Lang." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1701200~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1701200~s5> ;
     schema:name "Josephson junction Materials Research Using Phase Qubits"@en .
 
 <http://catalog.coloradocollege.edu/442ee8c7-5561-11e8-aa24-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
 	cite:authorString "Marion Hourdequin." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/442ee8c6-5561-11e8-b5b2-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/442ee8c6-5561-11e8-b5b2-a41f7283f8d4> ;
     schema:name "The limits of empathy"@en .
 
 <http://catalog.coloradocollege.edu/446a6b26-5561-11e8-82f3-a41f7283f8d4> a schema:Chapter ;
 	schema:author <https://orcid.org/0000-0002-5352-9886> ,
         <https://orcid.org/0000-0002-8011-3202> ;
 	cite:authorString "Steve Lawson and Jessy Randall." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2089883~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2089883~s5> ;
     schema:name "The History and Future of the Book, a Half-Block Course at Colorado College"@en .
 
 <http://catalog.coloradocollege.edu/449c6806-5561-11e8-87d5-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/01f28790-369b-11e8-bcfe-a41f7283f8d4>;
 	cite:authorString "S. Snively,T. Freeman, and C. Prentice.";
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1687137~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1687137~s5> ;
     schema:name "Writing centers for graduate students"@en .
 
 <http://catalog.coloradocollege.edu/44af7306-5561-11e8-9613-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://orcid.org/0000-0002-0674-7995>;
 	cite:authorString "Aju J. Fenn." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2199460~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2199460~s5> ;
     schema:name "Competing Leagues, Mergers, and Expansions"@en .
 
 <http://catalog.coloradocollege.edu/44c4df66-5561-11e8-bdf9-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/b4fc51e6-b0e1-11e6-aadc-005056c00008> ;
 	cite:authorString "Claire Oberon Garcia.";
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2111823~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2111823~s5> ;
     schema:name "\"No one, I am sure, is ever homesick in Paris\": Jessie Fauset's French imaginary"@en .
 
 <http://catalog.coloradocollege.edu/44dcad26-5561-11e8-9e57-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/b4fc51e6-b0e1-11e6-aadc-005056c00008> ;
 	cite:authorString "Claire Oberon Garcia.";
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2033737~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2033737~s5> ;
     schema:name "Jessie Redmon Fauset reconsidered"@en .
 
 <http://catalog.coloradocollege.edu/44f21987-5561-11e8-8a33-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/323c2e5e-c89f-11e7-82cd-005056c00008> ,
         <http://catalog.coloradocollege.edu/80fe459c-b0f1-11e6-99dd-005056c00008> ;
 	cite:authorString "Marcia Dobson and John Riker." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/44f21986-5561-11e8-951f-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/44f21986-5561-11e8-951f-a41f7283f8d4> ;
     schema:name "Aristophanes' myth of Eros and contemporary psychologies of the self"@en .
 
 <http://catalog.coloradocollege.edu/450785e6-5561-11e8-9cb0-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
 	cite:authorString "Jonathan Scott Lee." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1455655~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1455655~s5> ;
     schema:name "The Practice of Plotinian Physics"@en .
 
 <http://catalog.coloradocollege.edu/451a90e6-5561-11e8-8fe3-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
 	cite:authorString "Jonathan Scott Lee." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b1558829~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1558829~s5> ;
     schema:name "The Testament of Julius Nyerere"@en .
 
 <http://catalog.coloradocollege.edu/45325ea6-5561-11e8-8997-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
 	cite:authorString "Carol Neel." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2430658~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2430658~s5> ;
     schema:name "Mother, father, king : Dhuoda and Carolingian patriarchy"@en .
 
 <http://catalog.coloradocollege.edu/453982c6-5561-11e8-bbde-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/b72347e6-b0e1-11e6-a709-005056c00008> ;
 	cite:authorString "Jared Richman." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2059368~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2059368~s5> ;
     schema:name "Charlotte Smith and the Spectre of America"@en .
 
 <http://catalog.coloradocollege.edu/4540a6e6-5561-11e8-9c6a-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/b72347e6-b0e1-11e6-a709-005056c00008> ;
 	cite:authorString "Jared Richman." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2357881~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2357881~s5> ;
     schema:name "Kelly, Hugh"@en .
 
 <http://catalog.coloradocollege.edu/455d5e77-5561-11e8-860f-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/f8fe3e24-c89f-11e7-8c52-005056c00008> ;
 	cite:authorString "Ramón Saldívar and Sylvan Goldberg." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/455d5e76-5561-11e8-a198-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/455d5e76-5561-11e8-a198-a41f7283f8d4> ;
     schema:name "The Faulknerian Anthropocene: Scales of Time and History in The Wild Palms and Go Down, Moses"@en .
 
 <http://catalog.coloradocollege.edu/4566e3f7-5561-11e8-8783-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/f8fe3e24-c89f-11e7-8c52-005056c00008> ;
 	cite:authorString "Sylvan Goldberg." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/4566e3f6-5561-11e8-a506-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/4566e3f6-5561-11e8-a506-a41f7283f8d4> ;
     schema:name "'What Is It about You ... That So Irritates Me?': Northern Exposure's Sustainable Feeling"@en .
 
 <http://catalog.coloradocollege.edu/45b57159-5561-11e8-bca1-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://orcid.org/0000-0003-0573-2852> ;
 	cite:authorString "D. Chapman, K. Miller-Stevens, J. C. Morris, and B. O’Hallarn." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/45b57158-5561-11e8-ab4e-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/45b57158-5561-11e8-ab4e-a41f7283f8d4> ;
     schema:name "Social media as a tool for nonprofit advocacy and civic engagement: A case study of Blue Star Families"@en .
 
 <http://catalog.coloradocollege.edu/45cd3f18-5561-11e8-a259-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://orcid.org/0000-0003-0573-2852> ;
 	cite:authorString "Katrina Miller-Stevens." ;
-    schema:PartOf <https://tiger.coloradocollege.edu/record=b2429279~s5> ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2429279~s5> ;
     schema:name "Policy design"@en .
 
 <http://catalog.coloradocollege.edu/45e04a19-5561-11e8-accc-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
 	cite:authorString "Eve Grace." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/45e04a18-5561-11e8-8b1a-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/45e04a18-5561-11e8-8b1a-a41f7283f8d4> ;
     schema:name "Justice in the Soul: The Reveries as Rousseau's Reply to Plato's Glaucon"@en .
 
 <http://catalog.coloradocollege.edu/46dcb368-3911-11e8-b22d-a41f7283f8d4> a schema:ScholarlyArticle ;
@@ -4292,7 +4292,7 @@
 <http://catalog.coloradocollege.edu/b96adb1d-5538-11e8-a87d-a41f7283f8d4> a schema:Chapter ;
 	schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
 	cite:authorString "Henry Fricke." ;
-    schema:PartOf <http://catalog.coloradocollege.edu/b96adb1c-5538-11e8-90ca-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/b96adb1c-5538-11e8-90ca-a41f7283f8d4> ;
     schema:name "Stable isotope geochemistry of bonebed fossils; reconstructing paleoenvironments, paleoecology, and paleobiology"@en ;
     schema:pageEnd "490" ;
     schema:pageStart "437" .
@@ -4883,7 +4883,7 @@
     cite:month "" .
 
 <http://catalog.coloradocollege.edu/d4d343ed-553a-11e8-864e-a41f7283f8d4> a schema:Chapter ;
-    schema:PartOf <http://catalog.coloradocollege.edu/d4d343ec-553a-11e8-b7b0-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/d4d343ec-553a-11e8-b7b0-a41f7283f8d4> ;
     schema:name "Stable isotope geochemistry of bonebed fossils; reconstructing paleoenvironments, paleoecology, and paleobiology"@en ;
     schema:pageEnd "490" ;
     schema:pageStart "437" .
