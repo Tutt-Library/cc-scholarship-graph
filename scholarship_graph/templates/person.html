@@ -80,9 +80,9 @@
 		{% if row|page_number_filter|safe %}({{ row|page_number_filter|safe }}{% endif %})
 		 in 
 		<em>{{ row|book_title_filter|safe }}</em>
-		(edited by {{ row.editor.value }}.) 
+		{% if 'editor' in row %}(edited by {{ row.editor.value }}.) {% endif %}
 		{{ row|book_edition_filter|safe }}.
-		{{ row.provisionActivityStatement.value }}.
+		{% if 'provisionActivityStatement' in row %}{{ row.provisionActivityStatement.value }}.{% endif %}
 		</p>
 		{% endfor %}
 		        {% endif %}
