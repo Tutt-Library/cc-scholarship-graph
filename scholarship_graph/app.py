@@ -477,13 +477,21 @@ def __people_search__(people):
     output = []
     if len(people) < 1:
         return output
+    now = datetime.datetime.utcnow()
     sparql = PREFIX
     sparql += """
-SELECT ?person ?label
-WHERE {
+SELECT DISTINCT ?person ?label
+WHERE {{
     ?person rdf:type bf:Person;
            schema:familyName ?family;
-           rdfs:label ?label . """
+           rdfs:label ?label . 
+    ?event schema:superEvent ?academic_year ;
+           ?role ?person .
+    ?academic_year schema:startDate ?start ;
+                   schema:endDate ?end . 
+    FILTER(?start < "{0}"^^xsd:dateTime)
+    FILTER(?end >= "{0}"^^xsd:dateTime) 
+    FILTER(?role != cc_staff:department-staff-assistant)""".format(now.isoformat())
     if people == ["*"]:
         sparql += "} "
     else:

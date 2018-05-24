@@ -35,7 +35,8 @@ def add_qualified_generation(graph, entity_iri, generatedBy):
 
 PREFIX = """PREFIX bf: <http://id.loc.gov/ontologies/bibframe/>
 PREFIX cc_fac: <https://www.coloradocollege.edu/ns/faculty/>
-PREFIX cc_info: <https://www.coloradocollege.edu/ns/info/>  
+PREFIX cc_info: <https://www.coloradocollege.edu/ns/info/> 
+PREFIX cc_staff: <https://www.coloradocollege.edu/ns/staff/>  
 PREFIX cite: <https://www.coloradocollege.edu/library/ns/citation/>
 PREFIX etd: <http://catalog.coloradocollege.edu/ns/etd#> 
 PREFIX prov: <http://www.w3.org/ns/prov#>
