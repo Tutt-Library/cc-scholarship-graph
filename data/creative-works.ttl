@@ -2065,7 +2065,7 @@
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
     schema:datePublished "2003" ;
-    schema:name "Carbon Isotope Evidence for Ecological Niche Partitioning among Herbivorous Dinosaurs of the Judith River Formation, Montana"@en ;
+    schema:name "Meeting Paper: Carbon Isotope Evidence for Ecological Niche Partitioning among Herbivorous Dinosaurs of the Judith River Formation, Montana"@en ;
     schema:pageStart "100A" ;
     schema:partOf <http://catalog.coloradocollege.edu/6faa9798-4276-11e8-8082-a41f7283f8d4> ;
     schema:url "http://0-www.worldcat.org.tiger.coloradocollege.edu/title/abstracts-of-papers-sixty-third-annual-meeting-society-of-vertebrate-paleontology-science-museum-of-minnesota-october-15-18-2003/oclc/54760370&referer=brief_results" ;
@@ -2077,7 +2077,7 @@
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
     schema:datePublished "2003" ;
-    schema:name "Elucidating the Nature of Dinosaur Ecology and Behavior using Carbon Isotope Ratios of Tooth Enamel and Associated Sedimentary Organic Matter"@en ;
+    schema:name "Meeting Paper: Elucidating the Nature of Dinosaur Ecology and Behavior using Carbon Isotope Ratios of Tooth Enamel and Associated Sedimentary Organic Matter"@en ;
     schema:pageStart "52A" ;
     schema:partOf <http://catalog.coloradocollege.edu/6faa9798-4276-11e8-8082-a41f7283f8d4> ;
     schema:url "http://0-www.worldcat.org.tiger.coloradocollege.edu/title/abstracts-of-papers-sixty-third-annual-meeting-society-of-vertebrate-paleontology-science-museum-of-minnesota-october-15-18-2003/oclc/54760370&referer=brief_results" ;
@@ -2089,7 +2089,7 @@
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
     schema:datePublished "2004" ;
-    schema:name "Correlation between Laramide Basin Sediments and Fossil Localities using Carbon Isotope Chemostratigraphy: Examples from the Late Cretaceous"@en ;
+    schema:name "Meeting Paper: Correlation between Laramide Basin Sediments and Fossil Localities using Carbon Isotope Chemostratigraphy: Examples from the Late Cretaceous"@en ;
     schema:pageStart "61A" ;
     schema:partOf <http://catalog.coloradocollege.edu/71e52619-4276-11e8-8c29-a41f7283f8d4> ;
     schema:url "http://0-www.worldcat.org.tiger.coloradocollege.edu/title/abstracts-of-papers-sixty-fourth-annual-meeting-society-of-vertebrate-paleontology-adams-mark-hotel-denver-colorado-november-3-6-2004/oclc/225554270&referer=brief_results" ;
@@ -2114,7 +2114,7 @@
     schema:about "The richly fossiliferous Two Medicine (TMF) and Judith River (JRF) Formations of Montana provide an exceptional opportunity to document and compare patterns of fossil diagenesis. Bones and teeth were collected from eight well-documented localities that represent a wide range of lithologies and depositional settings. Sampled paleoenvironments include lacustrine facies from upland and coastal regions, fluvial channel deposits, tidally-influenced channel deposits, and sandy shallow marine facies (shoreface). Authigenic cements in 134 bones and teeth were examined using both polarized light microscopy and SEM-EDS. Rare earth element (REE) concentrations were determined for most of the same samples using LA-ICP-MS. Laser ablation techniques expedited the collection of REE data, and also allowed for the tracking of REE patterns within individual fossils (e.g., marginal enrichment). -- Fossil bones collected from fluvial sandstone bodies in the TMF tend to be pervasively filled by calcite and/or iron oxides. Bones and teeth recovered from nearby lacustrine mudstones typically display detrital clay rinds and are infilled with calcite. Bones from a fine-grained paralic TMF site are characterized by fills of calcite and pyrite, and exhibit significant replacement of bone by these same minerals. In contrast, bones recovered from paralic mudstones of the JRF are generally filled with detrital clay and exhibit a paucity of authigenic cements. Bones preserved in shallow marine sandstones of the JRF show abundant pyritization. With regard to REE, TMF fossils tend to have higher overall concentrations relative to JRF fossils and are more enriched in light REE. REE patterns tend to track paleoenvironments closely, and can be used to readily distinguish among localities in both formations. Finally, overall REE patterns in enamel and dentine are similar within a given tooth, but normalized total REE concentrations vary in these tissues from relatively low (enamel) to relatively high (dentine). This pattern is consistent with porosity and crystallite density contrasts in enamel and dentine, and illustrates the importance of these factors in diagenetic processes." ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
     schema:datePublished "2005" ;
-    schema:name "A Comparative Study of Diagenesis in Fossil Bones and Teeth: a Case Study from the Upper Cretaceous Two Medicine and Judith River Formations of Montana"@en ;
+    schema:name "Meeting Paper: A Comparative Study of Diagenesis in Fossil Bones and Teeth: a Case Study from the Upper Cretaceous Two Medicine and Judith River Formations of Montana"@en ;
     schema:pageStart "106A" ;
     schema:partOf <http://catalog.coloradocollege.edu/72982267-4276-11e8-94f7-a41f7283f8d4> ;
     schema:url "http://vertpaleo.org/Annual-Meeting/Future-Past-Meetings/MeetingPdfs/JVPabstracts2005.aspx" ;
@@ -2126,7 +2126,7 @@
     schema:about "This study reconstructs paleohydrologic conditions across the Campanian foreland basin of Montana using d18 O values from unionid bivalve shells, gar scales, crocodile teeth, and carbonate sediments derived from ancient river, stream, pond, lake, and soil deposits. Samples were obtained from the Two Medicine Formation (up-dip alluvial plain) and coeval Judith River Formation (coastal lowlands). This multi-proxy, multi-depositional environment approach captures d18O variability linked to precipitation histories, catchment structure, biologic behaviors, and taphonomic mixing. Lacustrine carbonates, paleosol carbonate nodules, and unionid bivalves from coastal ponds and up-dip streams display d18O values between -8.32‰ (VPDB) and -10.76‰, interpreted to capture local meteoric precipitation within the basin. In contrast, unionid bivalves from large fluvial sandstones display d18O values near -16.22‰, likely due to high elevation runoff in the Sevier highlands. The d18O of gar scales and crocodile teeth display a proximal-to-distal gradient between the up-dip alluvial plain and coastal lowlands with gar scales ~1.28‰ more negative and crocodile teeth ~4.55‰ more negative on average in the up-dip alluvial plain. We attribute this gradient to a combination of (1) progressive rain out as storm tracks move east to west across the basin and possible monsoonal precipitation, (2) movement of the organisms between aquatic environments, and (3) taphonomic contamination between pond and fluvial sites. Finally, our data document a negative shift in regional d18O values between the Campanian and Maastrichtian stages possibly related to global cooling recorded in the marine realm." ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
     schema:datePublished "2008" ;
-    schema:name "A Multi-Proxy, Multi-Depositional Environment Approach to Reconstructing Paleohydrologic Conditions using Stable Isotopes Across the Late Cretaceous (Campanian) Foreland Basin of Montana"@en ;
+    schema:name "Meeting Paper: A Multi-Proxy, Multi-Depositional Environment Approach to Reconstructing Paleohydrologic Conditions using Stable Isotopes Across the Late Cretaceous (Campanian) Foreland Basin of Montana"@en ;
     schema:pageStart "79A" ;
     schema:partOf <http://catalog.coloradocollege.edu/742b0707-4276-11e8-9b6e-a41f7283f8d4> ;
     schema:url "http://vertpaleo.org/Annual-Meeting/Future-Past-Meetings/MeetingPdfs/JVPabstracts2008.aspx" ;
@@ -2709,7 +2709,7 @@
     schema:about "A conference paper about the U.S. history is presented. It discusses the difference between U.S. nationalism and imperialism. It shows that the concept of union must be included in the examination of the past of the U.S. because nationalism and imperialism left out the country's political development. It explains why union was used to deal with the development of U.S. politics, instead of federalism and internationalism." ;
     schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
     schema:datePublished "2005" ;
-    schema:name "Union, Nation, Empire: The Structure and Meaning of American History (previously \"American Orders\")"@en ;
+    schema:name "Conference Paper: Union, Nation, Empire: The Structure and Meaning of American History (previously \"American Orders\")"@en ;
     schema:pageEnd "47" ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/981dc946-4276-11e8-8ff3-a41f7283f8d4> ;
@@ -4703,7 +4703,7 @@
     schema:about "The article reviews the book \"From the Ruins of Empire: The Intellectuals Who Remade Asia\" by Pankaj Mishra." ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2013" ;
-    schema:name "The Unseeable, Unsayable World"@en ;
+    schema:name "Book Review: The Unseeable, Unsayable World"@en ;
     schema:pageEnd "414" ;
     schema:pageStart "407" ;
     schema:partOf <http://catalog.coloradocollege.edu/85dc678b-3911-11e8-8ec7-a41f7283f8d4> ;
@@ -4716,7 +4716,7 @@
     schema:about "The article reviews the books \"Collected Poems 1952-1993\" by W. S. Merwin and edited by J. D. McClatchy, \"Collected Poems 1996-2011\" by W. S. Merwin and edited by J. D. McClatchy, and \"Selected Translations\" by W. S. Merwin." ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2013" ;
-    schema:name "W. S. Merwin, American Proteus"@en ;
+    schema:name "Book Review: W. S. Merwin, American Proteus"@en ;
     schema:pageEnd "594" ;
     schema:pageStart "583" ;
     schema:partOf <http://catalog.coloradocollege.edu/85dc678b-3911-11e8-8ec7-a41f7283f8d4> ;
@@ -4742,7 +4742,7 @@
     schema:about "The article reviews several books including \"For the Time Being: A Christmas Oratorio,\" by W.H. Auden, edited by Alan Jacobs, \"Madame X,\" by William Logan, and \"By Herself,\" by Debora Greger." ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2014" ;
-    schema:name "Levels of Ambition"@en ;
+    schema:name "Book Review: Levels of Ambition"@en ;
     schema:pageEnd "772" ;
     schema:pageStart "764" ;
     schema:partOf <http://catalog.coloradocollege.edu/85dc678b-3911-11e8-8ec7-a41f7283f8d4> ;
@@ -5070,7 +5070,7 @@
     schema:about "Essay review of Gregory John COOPER, The Science of the Struggle for Existence (2003)." ;
     schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
     schema:datePublished "2005" ;
-    schema:name "The Science of the Struggle for Existence: On the Foundations of Ecology. 2003"@en ;
+    schema:name "Book Review: The Science of the Struggle for Existence: On the Foundations of Ecology. 2003"@en ;
     schema:pageEnd "601" ;
     schema:pageStart "594" ;
     schema:partOf <http://catalog.coloradocollege.edu/e1d4d976-4276-11e8-bd5f-a41f7283f8d4> ;
@@ -5258,7 +5258,7 @@
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2017" ;
-    schema:name "Review: Ezra Pound in \"The Bughouse\""@en ;
+    schema:name "Book Review: Ezra Pound in \"The Bughouse\""@en ;
     schema:pageStart "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/e5008ddc-3910-11e8-a314-a41f7283f8d4> ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=126394858" ;
@@ -5475,7 +5475,7 @@
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
     schema:datePublished "2012" ;
-    schema:name "Book Reviews: A Sea in Flames: The Deepwater Horizon Oil Blowout by Carl Safina; In Too Deep: BP and the Drilling Race That Took it Down, by Stanley Reed and Alison Fitzgerald; Blowout in the Gulf: The BP Oil Spill Disaster and the Future of Energy in America, by William R. Freudenburg and Robert Gramling."@en ;
+    schema:name "Book Review: A Sea in Flames: The Deepwater Horizon Oil Blowout by Carl Safina; In Too Deep: BP and the Drilling Race That Took it Down, by Stanley Reed and Alison Fitzgerald; Blowout in the Gulf: The BP Oil Spill Disaster and the Future of Energy in America, by William R. Freudenburg and Robert Gramling."@en ;
     schema:pageEnd "194" ;
     schema:pageStart "185" ;
     schema:partOf <http://catalog.coloradocollege.edu/9efe48c7-4276-11e8-b5f4-a41f7283f8d4> ;
@@ -7528,7 +7528,7 @@
     schema:about "The article reviews the book \"George Gershwin: His Life and Work,\" by Howard Pollack." ;
     schema:author <http://catalog.coloradocollege.edu/fa6de08c-b0f0-11e6-85a6-005056c00008> ;
     schema:datePublished "2009" ;
-    schema:name "George Gershwin: His Life and Work"@en ;
+    schema:name "Book Review: George Gershwin: His Life and Work, by Howard Pollack"@en ;
     schema:pageEnd "374" ;
     schema:pageStart "370" ;
     schema:partOf <http://catalog.coloradocollege.edu/33d0237b-3d0f-11e8-b983-a41f7283f8d4> ;
@@ -9156,7 +9156,7 @@
     schema:about "; Reviews the book \"The Goddesses' Henchmen: Gender in Indian Hero Worship,\" by Lindsey Harlan." ;
     schema:author <http://catalog.coloradocollege.edu/1ca0b234-b0f5-11e6-8683-005056c00008> ;
     schema:datePublished "2004" ;
-    schema:name "The Goddesses' Henchmen: Gender in Indian Hero Worship (Book)"@en ;
+    schema:name "Book Review: The Goddesses' Henchmen: Gender in Indian Hero Worship, by Lindsey Harlan"@en ;
     schema:pageEnd "1042" ;
     schema:pageStart "1040" ;
     schema:partOf <http://catalog.coloradocollege.edu/cd1efe6f-3911-11e8-a69b-a41f7283f8d4> ;
@@ -9837,7 +9837,7 @@
     schema:about "The article reviews the book \"Science and Islam,\" by Muzaffar Iqbal." ;
     schema:author <http://catalog.coloradocollege.edu/61539e14-b0f0-11e6-a66d-005056c00008> ;
     schema:datePublished "2008" ;
-    schema:name "Rethinking History for a New Islamic Science"@en ;
+    schema:name "Book Review: Rethinking History for a New Islamic Science"@en ;
     schema:pageStart "876" ;
     schema:partOf <http://catalog.coloradocollege.edu/1526b65d-3d0f-11e8-903f-a41f7283f8d4> ;
     schema:url "https://doi.org/10.1126/science.1157350" ;
