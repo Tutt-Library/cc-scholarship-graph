@@ -77,10 +77,10 @@
 		{% for row in info.book_chapter_citations %}
 		<p>
 		{{ row.book_chapter_title.value	 }}
-		{% if row|page_number_filter|safe %}({{ row|page_number_filter|safe }}{% endif %})
+		{% if row|page_number_filter|safe %}({{ row|page_number_filter|safe }}){% endif %}
 		 in 
 		<em>{{ row|book_title_filter|safe }}</em>
-		{% if 'editor' in row %}(edited by {{ row.editor.value }}.) {% endif %}
+		{% if 'editor' in row %}({{ row.editor.value }}.) {% endif %}
 		{{ row|book_edition_filter|safe }}.
 		{% if 'provisionActivityStatement' in row %}{{ row.provisionActivityStatement.value }}.{% endif %}
 		</p>

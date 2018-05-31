@@ -102,9 +102,8 @@ WHERE {{
                  schema:name ?book_chapter_title ;
 				 schema:partOf ?book ;
 	         schema:author ?author .
-
+	?book bf:title ?title .
 	FILTER(<{0}> = ?author)
-        OPTIONAL {{?book bf:title ?title . }}
 	OPTIONAL {{?book bf:isbn ?isbn.}}
 	OPTIONAL {{?book schema:editor ?editor.}}
 	OPTIONAL {{?book schema:publicationDate ?publicationDate.}}
@@ -156,8 +155,13 @@ SELECT (COUNT(?person) as ?count)
 WHERE {
     ?person rdf:type bf:Person .
 }"""
-	
-	
+
+COUNT_BOOK_CHAPTERS = PREFIX + """
+SELECT (COUNT (?chapter) as ?count)
+WHERE {
+	?chapter rdf:type schema:Chapter .}
+}"""
+
 EMAIL_LOOKUP = PREFIX + """SELECT ?person 
 WHERE {{ ?person schema:email ?email .
        FILTER(CONTAINS(?email, "{0}")) 

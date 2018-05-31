@@ -1041,8 +1041,9 @@
     schema:author <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ;
     schema:name "The social prediction dynamic: A legacy of cognition and mixed motives"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1778513~s5> ;
-    cite:authorString "Oscar Ybarra, Matthew C. Keller, Emily Chan, Andrew S. Baron, Jeffrey Hutsler, Stephen M. Garcia, Jeffrey Sanchez-Burks, and Kimberly Rios Morrison." .
-
+    cite:authorString "Oscar Ybarra, Matthew C. Keller, Emily Chan, Andrew S. Baron, Jeffrey Hutsler, Stephen M. Garcia, Jeffrey Sanchez-Burks, and Kimberly Rios Morrison." ;
+	cite:citationType "book chapter" .
+	
 <http://catalog.coloradocollege.edu/342f5a7b-3d0f-11e8-8a44-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "You are my sunshine is familiar to many people, for whom it was first heard during childhood as a lullaby or campfire sing-along. Beyond such oral transmission, this song's presence is also maintained in North American culture through recordings. The various recordings of You are my sunshine demonstrate the commercial viability of the song and its widespread appeal to both artists and their listeners, regardless of racial, sociological, or geographical background. Beginning with its supposed composition in the 1940s, a series of songs that form a recorded pedigree for You are my sunshine is examined, demonstrating how each version's musical components contributed to what became the standard (and copyrighted) version of the song." ;
     schema:author <http://catalog.coloradocollege.edu/fa6de08c-b0f0-11e6-85a6-005056c00008> ;
@@ -1209,190 +1210,221 @@
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "Rousseau's domestication of Amour-propre"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4260cfe6-5561-11e8-ae74-a41f7283f8d4> ;
-    cite:authorString "Eve Grace." .
+    cite:authorString "Eve Grace." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/42789da6-5561-11e8-ba52-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "The restlessness of 'being': Rousseau's protean sentiment of existence"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1701525~s5> ;
-    cite:authorString "Eve Grace." .
+    cite:authorString "Eve Grace." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/428ba8a6-5561-11e8-bc72-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "Portraying nature : Rousseau's reveries as philosophy and art"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1701531~s5> ;
-    cite:authorString "Eve Grace." .
+    cite:authorString "Eve Grace." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/42a83927-5561-11e8-acde-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/6254cdec-b0f0-11e6-9a7d-005056c00008> ;
     schema:name "A Silent Protest: The 1968 Olympiad and the Appropriation of Black Athletic Power"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/42a83926-5561-11e8-8218-a41f7283f8d4> ;
-    cite:authorString "Jamal Ratchford." .
+    cite:authorString "Jamal Ratchford." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/42e87e46-5561-11e8-ba19-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008> ;
     schema:name "\"We're way past reading together\" : why and how parental involvement in adolescence makes sense"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2452202~s5> ;
-    cite:authorString "Kathleen V. Hoover-Dempsey, Christa L. Ice, Manya Whitaker." .
+    cite:authorString "Kathleen V. Hoover-Dempsey, Christa L. Ice, Manya Whitaker." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4310f5a6-5561-11e8-9e98-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008> ;
     schema:name "The parental involvement process: implications for literacy development"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2452200~s5> ;
-    cite:authorString "Kathleen V. Hoover-Dempsey, Manya Whitaker." .
+    cite:authorString "Kathleen V. Hoover-Dempsey, Manya Whitaker." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/432400a6-5561-11e8-942a-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/778a09be-b0e5-11e6-b859-005056c00008> ;
     schema:name "An examination of Kanye West's higher education trilogy"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2288715~s5> ;
-    cite:authorString "Heidi R. Lewis." .
+    cite:authorString "Heidi R. Lewis." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4374ef67-5561-11e8-bf32-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/e71fe18a-c8a2-11e7-bfb8-005056c00008> ;
     schema:name "Workers in post-socialist China: shattered rice bowls, fragmented subjectivities"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4374ef66-5561-11e8-9d30-a41f7283f8d4> ;
-    cite:authorString "James Hudson, William Hurst, and Christian Sorace." .
+    cite:authorString "James Hudson, William Hurst, and Christian Sorace." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4387fa67-5561-11e8-94d9-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/432575ac-b0f5-11e6-929c-005056c00008> ;
     schema:name "Depression level in inner-city Asian American adolescents: the contributions of cultural orientation and interpersonal relationships"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4387fa66-5561-11e8-8dc4-a41f7283f8d4> ;
-    cite:authorString "Sandra L. Wong." .
+    cite:authorString "Sandra L. Wong." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/438a7778-5a15-11e8-8f2b-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/e65ebcec-b0f5-11e6-b095-005056c00008> ;
     schema:name "They shootin! or, I ain't neva scared ..."@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2482974~s5> ;
-    cite:authorString "Idris Goodwin." .
+    cite:authorString "Idris Goodwin." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/43c5de26-5561-11e8-9411-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
     schema:name "Economics and affordability"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2206011~s5> ;
-    cite:authorString "Catharine Bond Hill, Jill Tiefenthaler, and Suzanne P. Welsh." .
+    cite:authorString "Catharine Bond Hill, Jill Tiefenthaler, and Suzanne P. Welsh." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/43e4d007-5561-11e8-95b1-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/1d84f7b4-b0f5-11e6-a36e-005056c00008> ;
     schema:name "Protestantism and Candomblé in Bahia: From intolerance to dialogue (and beyond)"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/43e4d006-5561-11e8-96c7-a41f7283f8d4> ;
-    cite:authorString "Raimundo C. Barreto and Devaka Premawardhana." .
+    cite:authorString "Raimundo C. Barreto and Devaka Premawardhana." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/43fcebe6-5561-11e8-9aa3-a41f7283f8d4> a schema:Chapter ;
     bf:Summary "In a paper titled 'How to Make Our Ideas Clear,' C. S. Peirce outlines an elegant thought experiment on scientific progress and the notion of truth. John Staddon offered an interesting corollary to Peirce's thought experiment. For Peirce, truth was found in the dovetailing of inquiry onto a 'fated' agreement among observers. How, Staddon asks, will psychology look when science has run its course and our understanding of behavior has reached its limit--when our theories exhaust our understanding of behavior and answer our questions to the degree possible through scientific method? However interesting the debate over what is true or real is to the philosophically inclined, Peirce's thought experiment raises the question that Staddon finally asks: What can we expect from our theories at the limits of scientific inquiry? And specifically for psychologists: What can we expect from a science of psychology at the limits of inquiry? Psychology has a special interest in this question, because much of the debate on methodology in psychology rests upon what will count as a scientific explanation of psychological phenomena. How can we know what the important questions of our field are, if we do not know what constitutes a suitable explanation? The history of psychology is replete with arguments about the appropriate subject and nature of the study of psychology. We turn next to a short, schematic history of psychological explanation as a way of exploring the tensions within the field over what will count as an explanation. (PsycINFO Database Record (c) 2016 APA, all rights reserved)"@en ;
     schema:author <http://catalog.coloradocollege.edu/a2e12b7a-b0f4-11e6-8cc2-005056c00008> ;
     schema:name "The end of psychology: What can we expect at the limits of inquiry?"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1726557~s5> ;
-    cite:authorString "Horner, John M." .
+    cite:authorString "Horner, John M." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/441bddc6-5561-11e8-b139-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/0fe7cbd8-c8a2-11e7-af0a-005056c00008> ;
     schema:name "Josephson junction Materials Research Using Phase Qubits"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1701200~s5> ;
-    cite:authorString "Kristine M. Lang." .
+    cite:authorString "Kristine M. Lang." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/442ee8c7-5561-11e8-aa24-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
     schema:name "The limits of empathy"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/442ee8c6-5561-11e8-b5b2-a41f7283f8d4> ;
-    cite:authorString "Marion Hourdequin." .
+    cite:authorString "Marion Hourdequin." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/446a6b26-5561-11e8-82f3-a41f7283f8d4> a schema:Chapter ;
     schema:author <https://orcid.org/0000-0002-5352-9886>,
         <https://orcid.org/0000-0002-8011-3202> ;
     schema:name "The History and Future of the Book, a Half-Block Course at Colorado College"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2089883~s5> ;
-    cite:authorString "Steve Lawson and Jessy Randall." .
+    cite:authorString "Steve Lawson and Jessy Randall." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/449c6806-5561-11e8-87d5-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/01f28790-369b-11e8-bcfe-a41f7283f8d4> ;
     schema:name "Writing centers for graduate students"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1687137~s5> ;
-    cite:authorString "S. Snively,T. Freeman, and C. Prentice." .
+    cite:authorString "S. Snively,T. Freeman, and C. Prentice." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44af7306-5561-11e8-9613-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://orcid.org/0000-0002-0674-7995> ;
     schema:name "Competing Leagues, Mergers, and Expansions"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2199460~s5> ;
-    cite:authorString "Aju J. Fenn." .
+    cite:authorString "Aju J. Fenn." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44c4df66-5561-11e8-bdf9-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b4fc51e6-b0e1-11e6-aadc-005056c00008> ;
     schema:name "\"No one, I am sure, is ever homesick in Paris\": Jessie Fauset's French imaginary"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2111823~s5> ;
-    cite:authorString "Claire Oberon Garcia." .
+    cite:authorString "Claire Oberon Garcia." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44dcad26-5561-11e8-9e57-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b4fc51e6-b0e1-11e6-aadc-005056c00008> ;
     schema:name "Jessie Redmon Fauset reconsidered"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2033737~s5> ;
-    cite:authorString "Claire Oberon Garcia." .
+    cite:authorString "Claire Oberon Garcia." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44f21987-5561-11e8-8a33-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/323c2e5e-c89f-11e7-82cd-005056c00008>,
         <http://catalog.coloradocollege.edu/80fe459c-b0f1-11e6-99dd-005056c00008> ;
     schema:name "Aristophanes' myth of Eros and contemporary psychologies of the self"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/44f21986-5561-11e8-951f-a41f7283f8d4> ;
-    cite:authorString "Marcia Dobson and John Riker." .
+    cite:authorString "Marcia Dobson and John Riker." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/450785e6-5561-11e8-9cb0-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
     schema:name "The Practice of Plotinian Physics"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1455655~s5> ;
-    cite:authorString "Jonathan Scott Lee." .
+    cite:authorString "Jonathan Scott Lee." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/451a90e6-5561-11e8-8fe3-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
     schema:name "The Testament of Julius Nyerere"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1558829~s5> ;
-    cite:authorString "Jonathan Scott Lee." .
+    cite:authorString "Jonathan Scott Lee." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45325ea6-5561-11e8-8997-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
     schema:name "Mother, father, king : Dhuoda and Carolingian patriarchy"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2430658~s5> ;
-    cite:authorString "Carol Neel." .
+    cite:authorString "Carol Neel." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/453982c6-5561-11e8-bbde-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b72347e6-b0e1-11e6-a709-005056c00008> ;
     schema:name "Charlotte Smith and the Spectre of America"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2059368~s5> ;
-    cite:authorString "Jared Richman." .
+    cite:authorString "Jared Richman." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4540a6e6-5561-11e8-9c6a-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b72347e6-b0e1-11e6-a709-005056c00008> ;
     schema:name "Kelly, Hugh"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2357881~s5> ;
-    cite:authorString "Jared Richman." .
+    cite:authorString "Jared Richman." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/455d5e77-5561-11e8-860f-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/f8fe3e24-c89f-11e7-8c52-005056c00008> ;
     schema:name "The Faulknerian Anthropocene: Scales of Time and History in The Wild Palms and Go Down, Moses"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/455d5e76-5561-11e8-a198-a41f7283f8d4> ;
-    cite:authorString "Ramón Saldívar and Sylvan Goldberg." .
+    cite:authorString "Ramón Saldívar and Sylvan Goldberg." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4566e3f7-5561-11e8-8783-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/f8fe3e24-c89f-11e7-8c52-005056c00008> ;
     schema:name "'What Is It about You ... That So Irritates Me?': Northern Exposure's Sustainable Feeling"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4566e3f6-5561-11e8-a506-a41f7283f8d4> ;
-    cite:authorString "Sylvan Goldberg." .
+    cite:authorString "Sylvan Goldberg." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45b57159-5561-11e8-bca1-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://orcid.org/0000-0003-0573-2852> ;
     schema:name "Social media as a tool for nonprofit advocacy and civic engagement: A case study of Blue Star Families"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/45b57158-5561-11e8-ab4e-a41f7283f8d4> ;
-    cite:authorString "D. Chapman, K. Miller-Stevens, J. C. Morris, and B. O’Hallarn." .
+    cite:authorString "D. Chapman, K. Miller-Stevens, J. C. Morris, and B. O’Hallarn." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45cd3f18-5561-11e8-a259-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://orcid.org/0000-0003-0573-2852> ;
     schema:name "Policy design"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2429279~s5> ;
-    cite:authorString "Katrina Miller-Stevens." .
+    cite:authorString "Katrina Miller-Stevens." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45e04a19-5561-11e8-accc-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "Justice in the Soul: The Reveries as Rousseau's Reply to Plato's Glaucon"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/45e04a18-5561-11e8-8b1a-a41f7283f8d4> ;
-    cite:authorString "Eve Grace." .
+    cite:authorString "Eve Grace." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/46dcb368-3911-11e8-b22d-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The May 12th, 2008 Sichuan earthquake was a national trauma in China. The reconstruction provided the Party with an opportunity to display its care for the disaster victims and restore the Party's shaken credibility and socialist legitimacy. Despite initial collective solidarity and firm control over the state apparatus, levers of the economy, and domestic media, the Party did not manage to secure broad public approval of its reconstruction effort in the earthquake zone. This article argues that the reasons for this failure can be traced to the Party's political epistemology. The CCP's general assumptions, governmental rationalities, policy calculations, implementation strategies, and legitimating discourses organized the reconstruction. It wanted to build a model of state power and benevolence, but it did not have the proper tools. ABSTRACT FROM AUTHOR]" ;
@@ -4307,7 +4339,7 @@
     schema:name "Stable isotope geochemistry of bonebed fossils; reconstructing paleoenvironments, paleoecology, and paleobiology"@en ;
     schema:pageEnd "490" ;
     schema:pageStart "437" ;
-    schema:partOf <http://catalog.coloradocollege.edu/b96adb1c-5538-11e8-90ca-a41f7283f8d4> ;
+    schema:partOf <http://catalog.coloradocollege.edu/d4d343ec-553a-11e8-b7b0-a41f7283f8d4> ;
     cite:authorString "Henry Fricke." ;
     cite:citationType "book chapter" .
 
@@ -4555,7 +4587,7 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/c1c4cb00-41c3-11e8-9333-a41f7283f8d4> a bf:Book ;
+<http://catalog.coloradocollege.edu/b96adb1c-5538-11e8-90ca-a41f7283f8d4> a bf:Book ;
     bf:Note "edited by Donna L. Whitney, Christian Teyssier, Christine S. Siddoway; : ill., maps ; 28 cm. + 1 CD-ROM (4 3/4 in.; Includes bibliographical references and index; Gift of editor Christine S. Siddoway, CC Geology faculty, 2004.; Special papers (Geological Society of America) ; 380"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0813723809" ;
@@ -4564,8 +4596,8 @@
     schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
     schema:publicationDate "2004" ;
     cite:authorString "Donna L. Whitney, Christian Teyssier, Christine S. Siddoway (editors)." ;
-    cite:citationType "book"@en .
-
+    cite:citationType "book"@en .	
+	
 <http://catalog.coloradocollege.edu/c384ba27-3911-11e8-804a-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Abstract Section 112(m) of the 1990 Clean Air Act Amendments, referred to as the Great Waters Program, mandated an assessment of atmospheric deposition of hazardous air pollutants (HAPs) to Lake Champlain. Mercury (Hg) was listed as a priority HAP and has continued to be a high priority for a number of national and international programs. An assessment of the magnitude and seasonal variation of atmospheric Hg levels and deposition in the Lake Champlain basin was initiated in December 1992 which included event precipitation collection, as well as collection of vapor and particle phase Hg in ambient air. Sampling was performed at the Proctor Maple Research Center in Underhill Center, VT. The range in the annual volume-weighted mean concentration for Hg in precipitation was 7.8–10.5 ng/l for the 11-year sampling period and the average amount of Hg deposited with each precipitation event was 0.10 µg/m2. The average amount of Hg deposited through precipitation each year from 1993 to 2003 was 9.7 µg/m2/yr. A seasonal pattern for Hg in precipitation is clearly evident, with increased Hg concentrations and deposition observed during spring and summer months. While a clear trend in the 11-year event deposition record at Underhill was not observed, a significant decrease in the event max-to-monthly ratio was observed suggesting that a major source influence was controlled over time. Discrete precipitation events were responsible for significant fractions of the monthly and annual loading of Hg to the forested ecosystem in Vermont. Monthly-averaged temperatures were found to be moderately correlated with monthly volume-weighted mean Hg concentrations (r2=0.61) and Hg deposition (r2=0.67) recorded at the Vermont site. Meteorological analysis indicated the highest levels of Hg in precipitation were associated with regional transport from the west, southwest, and south during the warmer months. [ABSTRACT FROM AUTHOR] Copyright of Ecotoxicology is the property of Springer Science &amp; Business Media B.V. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
     schema:author <http://catalog.coloradocollege.edu/2644fbfe-b0e5-11e6-bae0-005056c00008> ;
@@ -4648,7 +4680,8 @@
     schema:author <http://catalog.coloradocollege.edu/b58a4648-b0e1-11e6-b367-005056c00008> ;
     schema:name "Stark County Baseball"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1794198~s5> ;
-    cite:authorString "Steven Hayward." .
+    cite:authorString "Steven Hayward." ;
+	cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/cc6ec959-3911-11e8-90d9-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses the human paradox of wanting to be alone and to be part of the community and how to manage the contradictions. According to the article, an effective leader recognizes the moods and needs of the moment and devises his leadership style to respond accordingly. Amid paradoxes, the article also suggests that a leader must be able to read the signs, adapt a strategy to the demand of the times, work to persuade followers, devise a governing strategy, manage the machinery of the organization and reevaluate and revise strategies." ;
@@ -4892,12 +4925,6 @@
     cite:authorString "David Mason." ;
     cite:citationType "article" ;
     cite:month "" .
-
-<http://catalog.coloradocollege.edu/d4d343ed-553a-11e8-864e-a41f7283f8d4> a schema:Chapter ;
-    schema:name "Stable isotope geochemistry of bonebed fossils; reconstructing paleoenvironments, paleoecology, and paleobiology"@en ;
-    schema:pageEnd "490" ;
-    schema:pageStart "437" ;
-    schema:partOf <http://catalog.coloradocollege.edu/d4d343ec-553a-11e8-b7b0-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/d79afd98-4276-11e8-8430-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "glp-1 encodes a member of the highly conserved LIN-12/Notch family of receptors that mediates the mitosis/meiosis decision in the C. elegans germline. We have characterized three mutations that represent a new genetic and phenotypic class of glp-1 mutants, glp-1(Pro). The glp-1(Pro) mutants display gainof-function germline pattern defects, most notably a proximal proliferation (Pro) phenotype. Each of three glp-1(Pro) alleles encodes a single amino acid change in the extracellular part of the receptor: two in the LIN-12/Notch repeats (LNRs) and one between the LNRs and the transmembrane domain. Unlike other previously described gain-of-function mutations that affect this region of LIN-12/Notch family receptors, the genetic behavior of glp-1(Pro) alleles is not consistent with simple hypermorphic activity. Instead, the mutant phenotype is suppressed by wild-type doses of glp-1. Moreover. a trans-heterozygous combination of two highly penetrant glp-1(Pro) mutations is mutually suppressing. These results lend support to a model for a higher-order receptor complex and/or competition among receptor proteins for limiting factors that are required for proper regulation of receptor activity. Double-mutant analysis with suppressors and enhancers of lin-12 and glp-1 further suggests that the functional defect in glp-1(Pro) mutants occurs prior to or at the level of ligand interaction. ABSTRACT FROM AUTHOR]; Copyright of Genetics is the property of Genetics Society of America and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
@@ -20305,7 +20332,7 @@
     bf:isbn "9780226723709" ;
     bf:provisionActivityStatement "Chicago, IL, United States : The University of Chicago Press, 2007"@en ;
     bf:title "Bonebeds; genesis, analysis, and paleobiological significance."@en ;
-    schema:editor "Rogers,Raymond R.; Eberth,David A.; Fiorillo,Anthony R."@en ;
+    schema:editor "Rogers, Raymond R.; Eberth, David A.; Fiorillo, Anthony R"@en ;
     schema:publicationDate "2007" ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2008-102089" ;
     cite:citationType "book"@en .

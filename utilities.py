@@ -792,7 +792,7 @@ class Book_Chapter_Citation(Book_Citation):
             self.creative_works.add((self.book_chapter_uri,SCHEMA.author,author))
 
         #add author_string
-        self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
+        self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string,"en")))
 
         #add book chapter title
         self.creative_works.add((self.book_chapter_uri,SCHEMA.name,rdflib.Literal(self.book_chapter_title,"en")))
@@ -802,6 +802,9 @@ class Book_Chapter_Citation(Book_Citation):
             self.creative_works.add((self.book_chapter_uri,SCHEMA.pageStart,rdflib.Literal(self.pageStart)))
         if self.pageEnd != "" and self.pageEnd != None:
             self.creative_works.add((self.book_chapter_uri,SCHEMA.pageEnd,rdflib.Literal(self.pageEnd)))
+
+        #add citation type
+        self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.citationType,rdflib.Literal("book chapter","en")))
 
         print("Hey I'm in add_book_chapter and it's ",self.raw_citation)
         

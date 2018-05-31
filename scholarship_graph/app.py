@@ -196,6 +196,8 @@ def generate_statistic(context, type_of):
         result = CONNECTION.datastore.query(COUNT_ORGS)
     elif type_of.startswith("users"):
         result = CONNECTION.datastore.query(COUNT_PEOPLE)
+    elif type_of.startswith("book chapters"):
+        result = CONNECTION.datastore.query(COUNT_BOOK_CHAPTERS)
     else:
         result = None
     if result:
@@ -773,11 +775,15 @@ def book_title(book_citation):
     title_string=""
     if "title" in book_citation:
         title = book_citation["title"]["value"]
-    elif "book_chapter_title" in book_citation:
-        title = book_citation["book_chapter_title"]["value"]
+    #elif "book_chapter_title" in book_citation:
+    #    title = book_citation["book_chapter_title"]["value"]
     uri = str(book_citation["book"]["value"])
+    if book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
+           url = str(book_citation["url"]["value"])
     if uri.startswith("https://tiger.coloradocollege.edu/"):
         title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
+    elif url.startswith("http"):
+        title_string = "<a href='" + url + "', target='_blank'>" + title + "</a>"
     #elif book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
     #    title_string = "<a href='" + book_citation["url"]["value"] + ",target= 'blank'>" + title + "</a>"
     else:
@@ -789,7 +795,8 @@ def book_edition(book_citation):
     edition_string=""
     if "editionStatement" in book_citation.keys():
         if book_citation["editionStatement"]["value"] != "":
-            ed = book_citation["editionStatement"]["value"]
-            edition_string = ed + " ed. "
+            edition_string = book_citation["editionStatement"]["value"]
+            if "ed." or "edition" or "editor" or "edited" not in edition_string:
+                edition_string = edition_string + " ed. "
     return(edition_string)
     
