@@ -208,6 +208,7 @@ class Citation(object):
         self.__citation_type__()
         
     def __author_string__(self):
+        print("Self.author is ",self.raw_citation["author"])
         self.author_string = self.raw_citation["author"]
         self.author_string = self.author_string.replace(" and ",", ")
         # add period to end of string
@@ -684,7 +685,7 @@ class Book_Citation(Citation):
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
 
         #add author_string
-        self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
+        self.creative_works.add((self.bib_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
 
         #add editor if field present
         if self.editor != "" and self.editor != None:
@@ -788,7 +789,7 @@ class Book_Chapter_Citation(Book_Citation):
 
         #add CC author(s)
         for author in self.cc_authors:
-            self.creative_works.add((self.doi_iri,SCHEMA.author,author))
+            self.creative_works.add((self.book_chapter_uri,SCHEMA.author,author))
 
         #add author_string
         self.creative_works.add((self.book_chapter_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
@@ -802,7 +803,7 @@ class Book_Chapter_Citation(Book_Citation):
         if self.pageEnd != "" and self.pageEnd != None:
             self.creative_works.add((self.book_chapter_uri,SCHEMA.pageEnd,rdflib.Literal(self.pageEnd)))
 
-        print("Hey I'm in add_book_chapter and it's ",self.book_chapter_title)
+        print("Hey I'm in add_book_chapter and it's ",self.raw_citation)
         
             
 def load_citations(bibtext_filepath, creative_works_path):
