@@ -156,7 +156,7 @@ WHERE {
     ?person rdf:type bf:Person .
 }"""
 
-COUNT_BOOK_CHAPTERS = PREFIX + """
+COUNT_CHAPTERS = PREFIX + """
 SELECT (COUNT (?chapter) as ?count)
 WHERE {
 	?chapter rdf:type schema:Chapter .}

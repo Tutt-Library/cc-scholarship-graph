@@ -211,9 +211,6 @@ class Citation(object):
         print("Self.author is ",self.raw_citation["author"])
         self.author_string = self.raw_citation["author"]
         self.author_string = self.author_string.replace(" and ",", ")
-        # add period to end of string
-        if self.author_string[len(self.author_string)-1] != ".":
-            self.author_string = self.author_string + "."
 
     def __CC_author__(self):
         

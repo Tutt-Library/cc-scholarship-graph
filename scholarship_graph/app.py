@@ -38,7 +38,7 @@ from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, BOOK_CITATION,BOOK_CHAPTER_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
-from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE
+from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE, COUNT_CHAPTERS
 from .sparql import COUNT_BOOK_AUTHORS, WORK_INFO
 from .profiles import add_creative_work, add_profile, delete_creative_work
 from .profiles import edit_creative_work, generate_citation_html, update_profile
@@ -196,8 +196,8 @@ def generate_statistic(context, type_of):
         result = CONNECTION.datastore.query(COUNT_ORGS)
     elif type_of.startswith("users"):
         result = CONNECTION.datastore.query(COUNT_PEOPLE)
-    elif type_of.startswith("book chapters"):
-        result = CONNECTION.datastore.query(COUNT_BOOK_CHAPTERS)
+    elif type_of.startswith("chapters"):
+        result = CONNECTION.datastore.query(COUNT_CHAPTERS)
     else:
         result = None
     if result:
@@ -778,8 +778,11 @@ def book_title(book_citation):
     #elif "book_chapter_title" in book_citation:
     #    title = book_citation["book_chapter_title"]["value"]
     uri = str(book_citation["book"]["value"])
-    if book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
-           url = str(book_citation["url"]["value"])
+    if "url" in book_citation.keys():
+        if book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
+            url = str(book_citation["url"]["value"])
+        else:
+            url = ""
     if uri.startswith("https://tiger.coloradocollege.edu/"):
         title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
     elif url.startswith("http"):

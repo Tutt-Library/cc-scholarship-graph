@@ -252,6 +252,7 @@
     bf:provisionActivityStatement "New York, N.Y. : Routledge, 2015"@en ;
     bf:title "Advancing collaboration theory: Models, typologies, and evidence"@en ;
     schema:author <http://orcid.org/0000-0003-0573-2852> ;
+	schema:editor "edited by John C. Morris and Katrina Miller-Stevens"@en ;
     schema:publicationDate "2015" ;
     schema:url "https://lccn.loc.gov/2015013414" ;
     cite:citationType "book"@en .
@@ -1042,8 +1043,8 @@
     schema:name "The social prediction dynamic: A legacy of cognition and mixed motives"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1778513~s5> ;
     cite:authorString "Oscar Ybarra, Matthew C. Keller, Emily Chan, Andrew S. Baron, Jeffrey Hutsler, Stephen M. Garcia, Jeffrey Sanchez-Burks, and Kimberly Rios Morrison." ;
-	cite:citationType "book chapter" .
-	
+    cite:citationType "book chapter" .
+
 <http://catalog.coloradocollege.edu/342f5a7b-3d0f-11e8-8a44-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "You are my sunshine is familiar to many people, for whom it was first heard during childhood as a lullaby or campfire sing-along. Beyond such oral transmission, this song's presence is also maintained in North American culture through recordings. The various recordings of You are my sunshine demonstrate the commercial viability of the song and its widespread appeal to both artists and their listeners, regardless of racial, sociological, or geographical background. Beginning with its supposed composition in the 1940s, a series of songs that form a recorded pedigree for You are my sunshine is examined, demonstrating how each version's musical components contributed to what became the standard (and copyrighted) version of the song." ;
     schema:author <http://catalog.coloradocollege.edu/fa6de08c-b0f0-11e6-85a6-005056c00008> ;
@@ -1134,22 +1135,8 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/3bcb6ba8-3e90-11e8-9e08-a41f7283f8d4> a schema:ScholarlyArticle ;
-    schema:about "test abstract" ;
-    schema:author <https://orcid.org/0000-0002-8845-2954> ;
-    schema:datePublished "1999" ;
-    schema:name "test article title"@en ;
-    schema:partOf <http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> ;
-    schema:url <file:///opt/cc-scholarship-graph/> ;
-    prov:qualifiedGeneration [ a prov:Generation ;
-            prov:atTime "2018-04-12T20:29:43.747597"^^xsd:dateTime ;
-            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] ;
-    cite:authorString "Diane Westerfield." ;
-    cite:citationType "article" ;
-    cite:month "Nov." .
-
 <http://catalog.coloradocollege.edu/3d1b7e74-3911-11e8-a6bf-a41f7283f8d4> a bf:Book ;
-    bf:Summary "SÃ¸ren Kierkegaard's Concluding Unscientific Postscript has provoked a lively variety of divergent interpretations for a century and a half. It has been both celebrated and condemned as the chief inspiration for twentieth-century existential thought, as a subversive parody of philosophical argument, as a critique of mass society, as a forerunner of phenomenology and of postmodern relativism, and as an appeal for a renewal of religious commitment. These 2010 essays written by international Kierkegaard scholars offer a plurality of critical approaches to this fundamental text of existential philosophy. They cover hotly debated topics such as the tension between the Socratic-philosophical and the Christian-religious; the identity and personality of Kierkegaard's pseudonym 'Johannes Climacus'; his conceptions of paradoxical faith and of passionate understanding; his relation to his contemporaries and to some of his more distant predecessors; and, last but not least, his pertinence to our present-day concerns."@en ;
+    bf:Summary "Soren Kierkegaard's Concluding Unscientific Postscript has provoked a lively variety of divergent interpretations for a century and a half. It has been both celebrated and condemned as the chief inspiration for twentieth-century existential thought, as a subversive parody of philosophical argument, as a critique of mass society, as a forerunner of phenomenology and of postmodern relativism, and as an appeal for a renewal of religious commitment. These 2010 essays written by international Kierkegaard scholars offer a plurality of critical approaches to this fundamental text of existential philosophy. They cover hotly debated topics such as the tension between the Socratic-philosophical and the Christian-religious; the identity and personality of Kierkegaard's pseudonym 'Johannes Climacus'; his conceptions of paradoxical faith and of passionate understanding; his relation to his contemporaries and to some of his more distant predecessors; and, last but not least, his pertinence to our present-day concerns."@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780521897983" ;
     bf:provisionActivityStatement "Cambridge : Cambridge University Press, 2010"@en ;
@@ -1157,6 +1144,7 @@
     schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
     schema:publicationDate "2010" ;
     schema:url "https://lccn.loc.gov/2010011448" ;
+	schema:editor "Edited by Rick Anthony Furtak."@en ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/3d549f5a-3911-11e8-b088-a41f7283f8d4> a bf:Book ;
@@ -1165,6 +1153,7 @@
     bf:provisionActivityStatement "New York : Fordham Univ. Press, 2012"@en ;
     bf:title "Thoreau's importance for philosophy"@en ;
     schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+	schema:editor "edited by Rick Anthony Furtak, Jonathan Ellsworth, and James D. Reid"@en ;
     schema:publicationDate "2012" ;
     schema:url "https://lccn.loc.gov/2011037076" ;
     cite:citationType "book"@en .
@@ -1211,84 +1200,84 @@
     schema:name "Rousseau's domestication of Amour-propre"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4260cfe6-5561-11e8-ae74-a41f7283f8d4> ;
     cite:authorString "Eve Grace." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/42789da6-5561-11e8-ba52-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "The restlessness of 'being': Rousseau's protean sentiment of existence"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1701525~s5> ;
     cite:authorString "Eve Grace." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/428ba8a6-5561-11e8-bc72-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "Portraying nature : Rousseau's reveries as philosophy and art"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1701531~s5> ;
     cite:authorString "Eve Grace." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/42a83927-5561-11e8-acde-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/6254cdec-b0f0-11e6-9a7d-005056c00008> ;
     schema:name "A Silent Protest: The 1968 Olympiad and the Appropriation of Black Athletic Power"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/42a83926-5561-11e8-8218-a41f7283f8d4> ;
     cite:authorString "Jamal Ratchford." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/42e87e46-5561-11e8-ba19-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008> ;
     schema:name "\"We're way past reading together\" : why and how parental involvement in adolescence makes sense"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2452202~s5> ;
     cite:authorString "Kathleen V. Hoover-Dempsey, Christa L. Ice, Manya Whitaker." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4310f5a6-5561-11e8-9e98-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008> ;
     schema:name "The parental involvement process: implications for literacy development"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2452200~s5> ;
     cite:authorString "Kathleen V. Hoover-Dempsey, Manya Whitaker." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/432400a6-5561-11e8-942a-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/778a09be-b0e5-11e6-b859-005056c00008> ;
     schema:name "An examination of Kanye West's higher education trilogy"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2288715~s5> ;
     cite:authorString "Heidi R. Lewis." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4374ef67-5561-11e8-bf32-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/e71fe18a-c8a2-11e7-bfb8-005056c00008> ;
     schema:name "Workers in post-socialist China: shattered rice bowls, fragmented subjectivities"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4374ef66-5561-11e8-9d30-a41f7283f8d4> ;
     cite:authorString "James Hudson, William Hurst, and Christian Sorace." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4387fa67-5561-11e8-94d9-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/432575ac-b0f5-11e6-929c-005056c00008> ;
     schema:name "Depression level in inner-city Asian American adolescents: the contributions of cultural orientation and interpersonal relationships"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4387fa66-5561-11e8-8dc4-a41f7283f8d4> ;
     cite:authorString "Sandra L. Wong." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/438a7778-5a15-11e8-8f2b-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/e65ebcec-b0f5-11e6-b095-005056c00008> ;
     schema:name "They shootin! or, I ain't neva scared ..."@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2482974~s5> ;
     cite:authorString "Idris Goodwin." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/43c5de26-5561-11e8-9411-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
     schema:name "Economics and affordability"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2206011~s5> ;
     cite:authorString "Catharine Bond Hill, Jill Tiefenthaler, and Suzanne P. Welsh." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/43e4d007-5561-11e8-95b1-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/1d84f7b4-b0f5-11e6-a36e-005056c00008> ;
     schema:name "Protestantism and Candomblé in Bahia: From intolerance to dialogue (and beyond)"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/43e4d006-5561-11e8-96c7-a41f7283f8d4> ;
     cite:authorString "Raimundo C. Barreto and Devaka Premawardhana." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/43fcebe6-5561-11e8-9aa3-a41f7283f8d4> a schema:Chapter ;
     bf:Summary "In a paper titled 'How to Make Our Ideas Clear,' C. S. Peirce outlines an elegant thought experiment on scientific progress and the notion of truth. John Staddon offered an interesting corollary to Peirce's thought experiment. For Peirce, truth was found in the dovetailing of inquiry onto a 'fated' agreement among observers. How, Staddon asks, will psychology look when science has run its course and our understanding of behavior has reached its limit--when our theories exhaust our understanding of behavior and answer our questions to the degree possible through scientific method? However interesting the debate over what is true or real is to the philosophically inclined, Peirce's thought experiment raises the question that Staddon finally asks: What can we expect from our theories at the limits of scientific inquiry? And specifically for psychologists: What can we expect from a science of psychology at the limits of inquiry? Psychology has a special interest in this question, because much of the debate on methodology in psychology rests upon what will count as a scientific explanation of psychological phenomena. How can we know what the important questions of our field are, if we do not know what constitutes a suitable explanation? The history of psychology is replete with arguments about the appropriate subject and nature of the study of psychology. We turn next to a short, schematic history of psychological explanation as a way of exploring the tensions within the field over what will count as an explanation. (PsycINFO Database Record (c) 2016 APA, all rights reserved)"@en ;
@@ -1296,21 +1285,21 @@
     schema:name "The end of psychology: What can we expect at the limits of inquiry?"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1726557~s5> ;
     cite:authorString "Horner, John M." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/441bddc6-5561-11e8-b139-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/0fe7cbd8-c8a2-11e7-af0a-005056c00008> ;
     schema:name "Josephson junction Materials Research Using Phase Qubits"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1701200~s5> ;
     cite:authorString "Kristine M. Lang." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/442ee8c7-5561-11e8-aa24-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
     schema:name "The limits of empathy"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/442ee8c6-5561-11e8-b5b2-a41f7283f8d4> ;
     cite:authorString "Marion Hourdequin." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/446a6b26-5561-11e8-82f3-a41f7283f8d4> a schema:Chapter ;
     schema:author <https://orcid.org/0000-0002-5352-9886>,
@@ -1318,35 +1307,35 @@
     schema:name "The History and Future of the Book, a Half-Block Course at Colorado College"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2089883~s5> ;
     cite:authorString "Steve Lawson and Jessy Randall." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/449c6806-5561-11e8-87d5-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/01f28790-369b-11e8-bcfe-a41f7283f8d4> ;
     schema:name "Writing centers for graduate students"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1687137~s5> ;
     cite:authorString "S. Snively,T. Freeman, and C. Prentice." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44af7306-5561-11e8-9613-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://orcid.org/0000-0002-0674-7995> ;
     schema:name "Competing Leagues, Mergers, and Expansions"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2199460~s5> ;
     cite:authorString "Aju J. Fenn." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44c4df66-5561-11e8-bdf9-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b4fc51e6-b0e1-11e6-aadc-005056c00008> ;
     schema:name "\"No one, I am sure, is ever homesick in Paris\": Jessie Fauset's French imaginary"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2111823~s5> ;
     cite:authorString "Claire Oberon Garcia." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44dcad26-5561-11e8-9e57-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b4fc51e6-b0e1-11e6-aadc-005056c00008> ;
     schema:name "Jessie Redmon Fauset reconsidered"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2033737~s5> ;
     cite:authorString "Claire Oberon Garcia." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/44f21987-5561-11e8-8a33-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/323c2e5e-c89f-11e7-82cd-005056c00008>,
@@ -1354,77 +1343,77 @@
     schema:name "Aristophanes' myth of Eros and contemporary psychologies of the self"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/44f21986-5561-11e8-951f-a41f7283f8d4> ;
     cite:authorString "Marcia Dobson and John Riker." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/450785e6-5561-11e8-9cb0-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
     schema:name "The Practice of Plotinian Physics"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1455655~s5> ;
     cite:authorString "Jonathan Scott Lee." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/451a90e6-5561-11e8-8fe3-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
     schema:name "The Testament of Julius Nyerere"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1558829~s5> ;
     cite:authorString "Jonathan Scott Lee." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45325ea6-5561-11e8-8997-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
     schema:name "Mother, father, king : Dhuoda and Carolingian patriarchy"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2430658~s5> ;
     cite:authorString "Carol Neel." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/453982c6-5561-11e8-bbde-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b72347e6-b0e1-11e6-a709-005056c00008> ;
     schema:name "Charlotte Smith and the Spectre of America"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2059368~s5> ;
     cite:authorString "Jared Richman." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4540a6e6-5561-11e8-9c6a-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/b72347e6-b0e1-11e6-a709-005056c00008> ;
     schema:name "Kelly, Hugh"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2357881~s5> ;
     cite:authorString "Jared Richman." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/455d5e77-5561-11e8-860f-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/f8fe3e24-c89f-11e7-8c52-005056c00008> ;
     schema:name "The Faulknerian Anthropocene: Scales of Time and History in The Wild Palms and Go Down, Moses"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/455d5e76-5561-11e8-a198-a41f7283f8d4> ;
     cite:authorString "Ramón Saldívar and Sylvan Goldberg." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/4566e3f7-5561-11e8-8783-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/f8fe3e24-c89f-11e7-8c52-005056c00008> ;
     schema:name "'What Is It about You ... That So Irritates Me?': Northern Exposure's Sustainable Feeling"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/4566e3f6-5561-11e8-a506-a41f7283f8d4> ;
     cite:authorString "Sylvan Goldberg." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45b57159-5561-11e8-bca1-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://orcid.org/0000-0003-0573-2852> ;
     schema:name "Social media as a tool for nonprofit advocacy and civic engagement: A case study of Blue Star Families"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/45b57158-5561-11e8-ab4e-a41f7283f8d4> ;
     cite:authorString "D. Chapman, K. Miller-Stevens, J. C. Morris, and B. O’Hallarn." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45cd3f18-5561-11e8-a259-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://orcid.org/0000-0003-0573-2852> ;
     schema:name "Policy design"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b2429279~s5> ;
     cite:authorString "Katrina Miller-Stevens." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/45e04a19-5561-11e8-accc-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
     schema:name "Justice in the Soul: The Reveries as Rousseau's Reply to Plato's Glaucon"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/45e04a18-5561-11e8-8b1a-a41f7283f8d4> ;
     cite:authorString "Eve Grace." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/46dcb368-3911-11e8-b22d-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The May 12th, 2008 Sichuan earthquake was a national trauma in China. The reconstruction provided the Party with an opportunity to display its care for the disaster victims and restore the Party's shaken credibility and socialist legitimacy. Despite initial collective solidarity and firm control over the state apparatus, levers of the economy, and domestic media, the Party did not manage to secure broad public approval of its reconstruction effort in the earthquake zone. This article argues that the reasons for this failure can be traced to the Party's political epistemology. The CCP's general assumptions, governmental rationalities, policy calculations, implementation strategies, and legitimating discourses organized the reconstruction. It wanted to build a model of state power and benevolence, but it did not have the proper tools. ABSTRACT FROM AUTHOR]" ;
@@ -1616,19 +1605,19 @@
     schema:pageStart "36" ;
     schema:partOf <http://catalog.coloradocollege.edu/575b6bef-3911-11e8-b8d5-a41f7283f8d4> ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=102238887" ;
-    cite:authorString "Timothy Fuller." ;
+    cite:authorString "Timothy Fuller" ;
     cite:citationType "article" ;
     cite:month "" .
 
 <http://catalog.coloradocollege.edu/576677c0-3f54-11e8-84f1-a41f7283f8d4> a bf:Book ;
-    bf:Note "John H. Riker; ; 24 cm; Includes bibliographical references and index; The moral problem of modernity -- Kohut's theory of the self -- Kohut and the philosophic tradition -- A new metapsychology : Freud, Aristotle, Heidegger, and Kohut -- Why it is good to be good -- A self psychological vision of ethical life -- Self psychology and modernity : actualizing self in the age of desire -- Social transformations; Author is CC professor of philosophy, 2010"@en ;
+    bf:Note "John H. Riker; 24 cm; Includes bibliographical references and index; The moral problem of modernity -- Kohut's theory of the self -- Kohut and the philosophic tradition -- A new metapsychology : Freud, Aristotle, Heidegger, and Kohut -- Why it is good to be good -- A self psychological vision of ethical life -- Self psychology and modernity : actualizing self in the age of desire -- Social transformations; Author is CC professor of philosophy, 2010"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "{9780765707901} bib={b2026057x}" ;
     bf:provisionActivityStatement "Lanham, Md. : Jason Aronson, 2010"@en ;
     bf:title "Why it is good to be good : ethics, Kohut's self psychology, and modern society"@en ;
     schema:author <http://catalog.coloradocollege.edu/80fe459c-b0f1-11e6-99dd-005056c00008> ;
     schema:publicationDate "2010" ;
-    cite:authorString "John H. Riker." ;
+    cite:authorString "John H. Riker" ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/579f98c1-3f54-11e8-9f83-a41f7283f8d4> a schema:ScholarlyArticle ;
@@ -1996,6 +1985,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/68fac600-65d6-11e8-ae91-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2058051~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Getting in bed with your co-writer"@en ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6906ace2-65d6-11e8-9d61-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2195210~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Athena looks on"@en ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/691ac858-4276-11e8-98f6-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Because stable isotope ratios of precipitation and temperatures decrease in a regular manner as elevation increases (i.e. approximately uniform lapse-rates are observed), proxies for these variables have the potential to provide information regarding paleoelevation and paleotopography. Application of lapse-rates is most successful when proxy data from a particular time-slice can be compared among a number of localities that follow the presumed trajectory of rising air masses in the past. However, in areas such as the Cordillera of western North America, where air mass trajectories are variable, where post-range front topography is complex, or where multiple air masses with different sources and rainout histories are present, simple lapse-rate interpretations of isotopic and temperature data can be more ambiguous. In an effort to address these problems, we use a global climate model to simulate atmospheric transport, precipitation, temperature, and isotope ratios of precipitation over North America during the early and late Paleogene for a prescribed geography and topography. This approach allows widespread proxy data to be considered in the context of an integrated climatic-atmospheric-topographic framework. The model is then run several times, changing only the topography of western North America (e.g. high-Sevier orogenic belt, low Sevier-orogenic belt, low-Laramide orogenic belt, high-Laramide orogenic belt, etc.). Results of these simulations are somewhat counterintuitive, suggesting the primary control on isotope ratios of precipitation in the Laramide region is the elevation of the Sevier hinterland, and that ratios decrease as the elevation of the hinterland decreases. Proxy data are broadly consistent with model results, although limits in the spatial and temporal resolution of proxy data make it difficult to discriminate among alternative model results." ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
@@ -2007,6 +2010,34 @@
     cite:authorString "Henry Fricke, Jacob O. Sewall." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/6920dc00-65d6-11e8-bbd8-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b1415543~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/ccffc7dc-b0f0-11e6-9273-005056c00008> ;
+    schema:name "Sexy Science: What's Love Got to Do with It?"@en ;
+    cite:authorString "Phoebe C. Lostroh"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/69422f40-65d6-11e8-8541-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2102505~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/5f93d92e-b0f0-11e6-aeec-005056c00008> ;
+    schema:name "Italian politics -- Enforcing justice: The controversial case of Giuseppe Musolino"@en ;
+    cite:authorString "Susan A. Ashley"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/696aa69e-65d6-11e8-b32f-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2102505~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008> ;
+    schema:name "Italy's Mediterranean vocation"@en ;
+    cite:authorString "Robert Lee"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/698e5b40-65d6-11e8-9e99-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2289210~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008> ;
+    schema:name ""@en ;
+    cite:authorString "Robert Lee"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/69bae0b6-4276-11e8-af32-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Extensive terrestrial deposits of Late Cretaceous age provide a window into this greenhouse world that has allowed for detailed descriptions of past environments and ecosystems. In western North America for example, low-relief river and floodplain environments were located in basins to the east of Sevier Orogeny highlands and west of the Western Interior Seaway (WIS), with these environments extending north-south from Alaska to Mexico. Living in these river and coastal areas was a very diverse assemblage of plants and animals, including the most diverse dinosaur ecosystems described to date. Despite all that is known about the Late Cretaceous in western North America, there are some critical questions that remain unanswered. Considering climate, there is the question of how floodplains and coastal environments are linked to the global carbon cycle, and what role they play in maintaining greenhouse climate conditions. Focusing on ecosystems, a major question is how these forests were able to support such diverse associations of animals, particularly large herbivorous dinosaurs, given the absence of evidence for migratory behaviors. In this study, stable isotope ratios (delta (super 13) C and delta (super 18) O) of hadrosaurid dinosaur teeth collected from a number of Campanian-aged localities along the WIS are used to investigate these questions. Isotope ratios of tooth dentine are altered by diagenetic processes taking place in soils/sediments, and thus provide information on these processes, including those involving carbon. In contrast, isotope ratios of tooth enamel preserve primary biological signals, and can be used to study animal diets, which in the case of hadrosaurids are trees of the floodplain forest. High delta (super 13) C of dentine (> +5 ppm) indicates that CH (sub 4) production took place in certain soils on the floodplain and that this CH (sub 4) was emitted to the atmosphere. Such emission likely played an important role as a climate feedback that helped maintain greenhouse conditions during the Late Cretaceous. Offsets in delta (super 13) C of enamel for co-existing populations of hadrosaurids, including populations with high delta (super 13) C (> -6 ppm), provide evidence for both dietary niche partitioning and for the recycling of soil-derived carbon by overlying vegetation. In turn, the latter indicates that closed-forest canopies were present on the floodplain." ;
@@ -2032,6 +2063,34 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/6ae7829f-65d6-11e8-a508-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <http://catalog.coloradocollege.edu/6ae7829e-65d6-11e8-9b2f-a41f7283f8d4> ;
+    schema:author <http://catalog.coloradocollege.edu/a34607ca-b0f4-11e6-ac87-005056c00008> ;
+    schema:name "Synaptogenesis and development of pyramidal neuron dendritic morphology in the chimpanzee neocortex resembles humans"@en ;
+    cite:authorString "Serena Bianchi, Cheryl D. Stimpson, Tetyana Duka, Michael D. Larsen, William G. M. Janssen, Zachary Collins, Amy L. Bauernfeind, Steven J. Schapiro, Wallace B. Baze, Mark J. McArthur, William D. Hopkins, Derek E. Wildman, Leonard Lipovich, Christopher W. Kuzawa, Bob Jacobs, Patrick R. Hof, Chet C. Sherwood"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6af5cae3-65d6-11e8-b209-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <http://catalog.coloradocollege.edu/6af5cae2-65d6-11e8-b397-a41f7283f8d4> ;
+    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:name "The Value of Being: Thoreau on Appreciating the Beauty of the World"@en ;
+    cite:authorString "Rick Anthony Furtak"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6b04131f-65d6-11e8-8b85-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <http://catalog.coloradocollege.edu/6b04131e-65d6-11e8-bf19-a41f7283f8d4> ;
+    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:name "Kierkegaard and Greek Philosophy"@en ;
+    cite:authorString "Rick Anthony Furtak"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6b256663-65d6-11e8-852a-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <http://catalog.coloradocollege.edu/6b256662-65d6-11e8-9fa6-a41f7283f8d4> ;
+    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:name "Introduction"@en ;
+    cite:authorString "Rainer Maria Rilke, Rick Anthony Furtak"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/6b2c7218-4276-11e8-a3a2-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Terrestrial ecosystems of the Late Cretaceous were both complex and fundamentally different than those of the present day. Those occupying wet coastal floodplains of western North America were characterized by a diverse association of vertebrates, including a number of herbivorous dinosaurs, and by plant communities that included a mix of ferns, cycads, conifers and angiosperms. The density and height of vegetation on the landscape, and the role these forest characteristics may have played in supporting these ecosystems, is not well known. In this study, carbon isotope-based proxies are used to study soil processes and to infer forest structure over a late Cretaceous landscape in southern Utah. It is found that methanogenesis took place in water-logged soils and resulted in the formation of CO (sub 2) with very high carbon isotope ratios. Furthermore, vegetation in some parts of the forest was dense enough and tall enough to allow for recycling of this CO (sub 2) into lower canopy leaves. Lastly, carbon isotope ratios of hadrosaurid tooth enamel suggests these animals had variable habitat preferences, and were restricted in their movement. Recognition that methane formation can take place in soils associated with high water tables has paleoclimatic implications, as methane plays an important role in maintaining of hothouse climate conditions. Growth of a mix of open and closed canopy forests in these soils points to the influence of surface hydrology on forest structure. Similarly, the common occurrence of angiosperms in these forests reflects their role in the development of this type of vegetation structure as far back as the late Cretaceous. These forests appear to have provided a wide variety of ecological niches for vertebrates, with some of the larger taxa (e.g. hadrosaurid dinosaurs) having specific habitat preferences." ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
@@ -2043,6 +2102,34 @@
     cite:authorString "Henry Fricke, Victoria Crystal, Ian M. Miller, Joseph Sertich, Aaron F. Diefendorf." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/6b3f9580-65d6-11e8-bfb5-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2189751~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:name "Radical temporality and the modern moral imagination : two themes in the thought of Michael Oakeshott"@en ;
+    cite:authorString "Timothy Fuller"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6b6f3100-65d6-11e8-85ac-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2272060~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
+    schema:name "On Shakespeare's Commanders and Kings: Leadership, Politics, and Hubris"@en ;
+    cite:authorString "Michael A. Genovese, Tom Cronin"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6b7fda9e-65d6-11e8-97d9-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2476943~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/218c8b64-c89f-11e7-adfd-005056c00008> ;
+    schema:name "Xenophon: the small works"@en ;
+    cite:authorString "Richard Fernando Buxton"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/6baf761e-65d6-11e8-95b4-a41f7283f8d4> a schema:Chapter ;
+    schema:PartOf <https://tiger.coloradocollege.edu/record=b2575985~s5> ;
+    schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
+    schema:name "Conversation with RaÃºl Ruiz, 2008"@en ;
+    cite:authorString "Andreea Marinescu, Tessa de Oliveira Allen"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/6bebb306-4276-11e8-9da9-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The Kaiparowits Formation of southern Utah preserves one of the best records of late Cretaceous plant and animal life in western North America. Sedimentological studies indicate these organisms occupied fluvial landscapes of the Sevier foreland that were low in relief and frequently inundated, while climate model and simulations and oxygen isotope data indicate that monsoonal precipitation was associated with flooding of the landscape. Carbon isotope data from hadrosaur tooth enamel indicates that forest structure varied over these landscapes, with hadrosaurs partitioning resources from a mix of open and closed forest canopies. What remains unknown is detailed surface hydrology of these landscapes, and how surface flooding and subsequent draining varies over small spatial scales and in turn how such variations correspond to differences in forest structure. In this study, oxygen isotope ratios of hadrosaur tooth enamel, fish scales, bivalve shells, pond carbonates and pedogenic carbonates are used to infer the ratio of surface waters over different parts of the paleo-floodplain. Bivalve data indicate there are large rivers recharged by upland precipitation plus varying amounts of lower elevation precipitation, while hadrosaur, fish and pedogenic carbonate data indicate that smaller streams were present that were recharged only by low elevation precipitation. Bivalve, fish and pond micrite data also point to existence of lakes that were recharged by a mix of stream and river water, presumably during seasonal flooding events analogous to those taking place in southeast Asia today. Organic content of sediment and carbon isotope ratios of paleosol carbonate and of hadrosaur dentine from different sites indicate that soils along lake margins were variably saturated, with those closer to the margin being saturated for a longer period of time compared to more distal localities. The more saturated localities are also the ones associated with closed canopy forest structures, which demonstrates the importance of fluvial systems in influencing the distribution of plants over Kaiparowits landscapes." ;
@@ -2116,6 +2203,10 @@
     cite:authorString "Henry Fricke." ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/70efc1c7-4276-11e8-ad61-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "5646" ;
+    schema:partOf <http://catalog.coloradocollege.edu/70efc1c6-4276-11e8-8275-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/71c63436-4276-11e8-8212-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3009,7 +3100,7 @@
     schema:author <https://orcid.org/0000-0003-4477-6436> ;
     schema:publicationDate "2007" ;
     schema:url "https://lccn.loc.gov/2007009010" ;
-    cite:authorString "JoAnn Jacoby, Josephine Z. Kibbee." ;
+    cite:authorString "JoAnn Jacoby, Josephine Z. Kibbee" ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/9e825a37-4276-11e8-a3dc-a41f7283f8d4> a schema:ScholarlyArticle ;
@@ -4334,13 +4425,24 @@
     cite:citationType "article" ;
     cite:month "MAR 25" .
 
+<http://catalog.coloradocollege.edu/b96adb1c-5538-11e8-90ca-a41f7283f8d4> a bf:Book ;
+    bf:Note "edited by Donna L. Whitney, Christian Teyssier, Christine S. Siddoway; : ill., maps ; 28 cm. + 1 CD-ROM (4 3/4 in.; Includes bibliographical references and index; Gift of editor Christine S. Siddoway, CC Geology faculty, 2004.; Special papers (Geological Society of America) ; 380"@en ;
+    bf:editionStatement ""@en ;
+    bf:isbn "0813723809" ;
+    bf:provisionActivityStatement "Boulder, Colo. : Geological Society of America, 2004"@en ;
+    bf:title "Gneiss domes in orogeny"@en ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+	schema:editor "edited by Donna L. Whitney, Christian Teyssier, Christine S. Siddoway" ;
+    schema:publicationDate "2004" ;
+    cite:citationType "book"@en .
+
 <http://catalog.coloradocollege.edu/b96adb1d-5538-11e8-a87d-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/2d22b6dc-b0e3-11e6-8215-005056c00008> ;
     schema:name "Stable isotope geochemistry of bonebed fossils; reconstructing paleoenvironments, paleoecology, and paleobiology"@en ;
     schema:pageEnd "490" ;
     schema:pageStart "437" ;
     schema:partOf <http://catalog.coloradocollege.edu/d4d343ec-553a-11e8-b7b0-a41f7283f8d4> ;
-    cite:authorString "Henry Fricke." ;
+    cite:authorString "Henry Fricke" ;
     cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/b96fa1e6-4276-11e8-9430-a41f7283f8d4> a schema:ScholarlyArticle ;
@@ -4587,17 +4689,6 @@
     cite:citationType "article" ;
     cite:month "" .
 
-<http://catalog.coloradocollege.edu/b96adb1c-5538-11e8-90ca-a41f7283f8d4> a bf:Book ;
-    bf:Note "edited by Donna L. Whitney, Christian Teyssier, Christine S. Siddoway; : ill., maps ; 28 cm. + 1 CD-ROM (4 3/4 in.; Includes bibliographical references and index; Gift of editor Christine S. Siddoway, CC Geology faculty, 2004.; Special papers (Geological Society of America) ; 380"@en ;
-    bf:editionStatement ""@en ;
-    bf:isbn "0813723809" ;
-    bf:provisionActivityStatement "Boulder, Colo. : Geological Society of America, 2004"@en ;
-    bf:title "Gneiss domes in orogeny"@en ;
-    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
-    schema:publicationDate "2004" ;
-    cite:authorString "Donna L. Whitney, Christian Teyssier, Christine S. Siddoway (editors)." ;
-    cite:citationType "book"@en .	
-	
 <http://catalog.coloradocollege.edu/c384ba27-3911-11e8-804a-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Abstract Section 112(m) of the 1990 Clean Air Act Amendments, referred to as the Great Waters Program, mandated an assessment of atmospheric deposition of hazardous air pollutants (HAPs) to Lake Champlain. Mercury (Hg) was listed as a priority HAP and has continued to be a high priority for a number of national and international programs. An assessment of the magnitude and seasonal variation of atmospheric Hg levels and deposition in the Lake Champlain basin was initiated in December 1992 which included event precipitation collection, as well as collection of vapor and particle phase Hg in ambient air. Sampling was performed at the Proctor Maple Research Center in Underhill Center, VT. The range in the annual volume-weighted mean concentration for Hg in precipitation was 7.8–10.5 ng/l for the 11-year sampling period and the average amount of Hg deposited with each precipitation event was 0.10 µg/m2. The average amount of Hg deposited through precipitation each year from 1993 to 2003 was 9.7 µg/m2/yr. A seasonal pattern for Hg in precipitation is clearly evident, with increased Hg concentrations and deposition observed during spring and summer months. While a clear trend in the 11-year event deposition record at Underhill was not observed, a significant decrease in the event max-to-monthly ratio was observed suggesting that a major source influence was controlled over time. Discrete precipitation events were responsible for significant fractions of the monthly and annual loading of Hg to the forested ecosystem in Vermont. Monthly-averaged temperatures were found to be moderately correlated with monthly volume-weighted mean Hg concentrations (r2=0.61) and Hg deposition (r2=0.67) recorded at the Vermont site. Meteorological analysis indicated the highest levels of Hg in precipitation were associated with regional transport from the west, southwest, and south during the warmer months. [ABSTRACT FROM AUTHOR] Copyright of Ecotoxicology is the property of Springer Science &amp; Business Media B.V. and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
     schema:author <http://catalog.coloradocollege.edu/2644fbfe-b0e5-11e6-bae0-005056c00008> ;
@@ -4681,7 +4772,7 @@
     schema:name "Stark County Baseball"@en ;
     schema:partOf <https://tiger.coloradocollege.edu/record=b1794198~s5> ;
     cite:authorString "Steven Hayward." ;
-	cite:citationType "book chapter" .
+    cite:citationType "book chapter" .
 
 <http://catalog.coloradocollege.edu/cc6ec959-3911-11e8-90d9-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses the human paradox of wanting to be alone and to be part of the community and how to manage the contradictions. According to the article, an effective leader recognizes the moods and needs of the moment and devises his leadership style to respond accordingly. Amid paradoxes, the article also suggests that a leader must be able to read the signs, adapt a strategy to the demand of the times, work to persuade followers, devise a governing strategy, manage the machinery of the organization and reevaluate and revise strategies." ;
@@ -11588,51 +11679,51 @@
     cite:month "" .
 
 <https://tiger.coloradocollege.edu/record=b1377552~s5> a bf:Book ;
-    bf:Note "by David Mason; ; 23 cm"@en ;
+    bf:Note "by David Mason; 23 cm"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "1885266804" ;
     bf:provisionActivityStatement "Ashland, OR : Story Line Press, 2000"@en ;
     bf:title "The poetry of life and the life of poetry : essays and reviews"@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:publicationDate "2000" ;
-    cite:authorString "David Mason." ;
+    cite:authorString "David Mason" ;
     cite:callNumber "PS3563.A7879 P64 2000" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1388917~s5> a bf:Book ;
-    bf:Note "edited by Curtis Cook and Juan D. Lindau; ; 24 cm; Includes bibliographical references and index; McGill-Queen's native and northern series"@en ;
+    bf:Note "edited by Curtis Cook and Juan D. Lindau; 24 cm; Includes bibliographical references and index; McGill-Queen's native and northern series"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0773518843" ;
     bf:provisionActivityStatement "Montreal : McGill-Queen's University Press, 2000"@en ;
     bf:title "Aboriginal rights and self-government : the Canadian and Mexican experience in North American perspective"@en ;
     schema:author <http://catalog.coloradocollege.edu/28f6fd36-b0f2-11e6-940f-005056c00008> ;
+	schema:editor "edited by Curtis Cook, Juan D. Lindau"@en ;
     schema:publicationDate "2000" ;
-    cite:authorString "Curtis Cook, Juan D. Lindau (editors)." ;
     cite:callNumber "E91.A26 2000" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1397323~s5> a bf:Book ;
-    bf:Note "edited by Timothy Fuller; ; 24 cm; Includes bibliographical references (p. 247-250); Ethics of everyday life"@en ;
+    bf:Note "edited by Timothy Fuller; 24 cm; Includes bibliographical references (p. 247-250); Ethics of everyday life"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "026801325X" ;
     bf:provisionActivityStatement "Notre Dame, Ind. : University of Notre Dame Press, 2000"@en ;
     bf:title "Leading and leadership"@en ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+	schema:editor "edited by Timothy Fuller"@en ;
     schema:publicationDate "2000" ;
-    cite:authorString "Timothy Fuller (editor)." ;
     cite:callNumber "HM1261 .L43 2000" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1416485~S5> a bf:Book ;
-    bf:Note "edited by Jeffrey Merrick, Bryant T. Ragan, Jr; ; 24 cm; Includes bibliographical references (p. 229-250) and index; Co-author Bryant T. (Tip) Ragan is CC history professor"@en ;
+    bf:Note "edited by Jeffrey Merrick, Bryant T. Ragan, Jr; 24 cm; Includes bibliographical references (p. 229-250) and index; Co-author Bryant T. (Tip) Ragan is CC history professor"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0195102576" ;
     bf:provisionActivityStatement "New York : Oxford University Press, 2001"@en ;
     bf:title "Homosexuality in early modern France : a documentary collection"@en ;
     schema:author <http://catalog.coloradocollege.edu/61ff6e74-b0f0-11e6-a459-005056c00008> ;
+	schema:editor "edited by Jeffrey Merrick, Bryant T. Ragan, Jr."@en ;
     schema:publicationDate "2001" ;
     schema:url <https://tiger.coloradocollege.edu/search~S5> ;
-    cite:authorString "edited by  Jeffrey Merrick, Bryant T. Ragan, Jr." ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1416765~s5> a bf:Book ;
@@ -11643,19 +11734,19 @@
     bf:title "The erotic art of Edgar Britton"@en ;
     schema:author <http://catalog.coloradocollege.edu/b5dbbd7a-b0e1-11e6-b247-005056c00008> ;
     schema:publicationDate "2001" ;
-    cite:authorString "Jane Hilberry." ;
+    cite:authorString "Jane Hilberry" ;
     cite:callNumber "N6537.B697 H55 2001" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1441817~s5> a bf:Book ;
-    bf:Note "edited by Timothy Fuller and John P. Hittinger; ; 23 cm; Includes bibliographical references and index; American Maritain Association publications"@en ;
+    bf:Note "edited by Timothy Fuller and John P. Hittinger; 23 cm; Includes bibliographical references and index; American Maritain Association publications"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0966922638" ;
     bf:provisionActivityStatement "Washington, D.C. : American Maritain Association, 2001"@en ;
     bf:title "Reassessing the liberal state : reading maritain's man and the state"@en ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+	schema:editor "edited by Timothy Fuller and John P. Hittinger"@en ;
     schema:publicationDate "2001" ;
-    cite:authorString "Timothy Fuller and John P. Hittinger (editors)." ;
     cite:callNumber "JC261.M323 R43 2001" ;
     cite:citationType "book"@en .
 
@@ -11667,19 +11758,19 @@
     bf:title "Garden of the Gods restoration report : implementation guide"@en ;
     schema:author <http://catalog.coloradocollege.edu/4f5507c6-b0f1-11e6-b84c-005056c00008> ;
     schema:publicationDate "2000" ;
-    cite:authorString "Bruce Byers, Jim Ebersole, and Mark Hesse (consultants)." ;
+    cite:authorString "Bruce Byers, Jim Ebersole, and Mark Hesse (consultants)" ;
     cite:callNumber "F782.E3 R6 2000" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1458921~s5> a bf:Book ;
-    bf:Note "author, Marion Hourdequin; ; 28 cm; \"September 2001\"; Includes index"@en ;
+    bf:Note "author, Marion Hourdequin; 28 cm; \"September 2001\"; Includes index"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "" ;
     bf:provisionActivityStatement "Fort Collins, CO : U.S. Dept. of Agriculture, Forest Service, Rocky Mountain Research Station, 2001"@en ;
     bf:title "Wilderness fire restoration and management : an annotated reading list"@en ;
     schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
     schema:publicationDate "2001" ;
-    cite:authorString "Marion Hourdequin." ;
+    cite:authorString "Marion Hourdequin" ;
     cite:callNumber "A 13.88:RMRS-GTR-79/V.1" ;
     cite:citationType "book"@en .
 
@@ -11690,25 +11781,25 @@
     bf:provisionActivityStatement "Middleton, Wis. : Published for the American Musicological Society by A-R Editions, Inc., 2002"@en ;
     bf:title "Writing American Indian music : historic transcriptions, notations, and arrangements"@en ;
     schema:author <http://catalog.coloradocollege.edu/fc919764-b0f0-11e6-ad95-005056c00008> ;
+	schema:editor "edited by Victoria Lindsay Levine"@en ;
     schema:publicationDate "2002" ;
-    cite:authorString "Victoria Lindsay Levine (editor)." ;
     cite:callNumber "M2.3.U6 R4 v. 44" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1553831~s5> a bf:Book ;
-    bf:Note "Jean-Jacques Rousseau ; edited by Christopher Kelly and Eve Grace ; translated by Christopher Kelly and Judith R. Bush; ; 24 cm; Includes bibliographical references (p.315-329) and index; Editor, Eve Grace is CC Political Science Dept. faculty; Rousseau, Jean-Jacques, 1712-1778. Works. English. 1990 ; v. 9; Rousseau, Jean-Jacques, 1712-1778. Works. English ; v."@en ;
+    bf:Note "Jean-Jacques Rousseau ; edited by Christopher Kelly and Eve Grace ; translated by Christopher Kelly and Judith R. Bush; 24 cm; Includes bibliographical references (p.315-329) and index; Editor, Eve Grace is CC Political Science Dept. faculty; Rousseau, Jean-Jacques, 1712-1778. Works. English. 1990 ; v. 9; Rousseau, Jean-Jacques, 1712-1778. Works. English ; v."@en ;
     bf:editionStatement ""@en ;
     bf:isbn "1584651644" ;
     bf:provisionActivityStatement "Hanover, N.H. : Dartmouth College, 2001"@en ;
     bf:title "Letter to Beaumont, letters written from the mountain, and related writings"@en ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
+	schema:editor "edited by Christopher Kelly and Eve Grace ; translated by Christopher Kelly and Judith R. Bush"@en ;
     schema:publicationDate "2001" ;
-    cite:authorString "edited by Christopher Kelly and Eve Grace ; translated by Christopher Kelly and Judith R. Bush. " ;
     cite:callNumber "PQ2034 .A3 1990 v. 9" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1577259~s5> a bf:Book ;
-    bf:Note "David C. Hendrickson; ; 24 cm; Includes bibliographical references and index; Gift of the author, CC Pol. Sci. faculty, 2003; American political thought"@en ;
+    bf:Note "David C. Hendrickson; 24 cm; Includes bibliographical references and index; Gift of the author, CC Pol. Sci. faculty, 2003; American political thought"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0700612378" ;
     bf:provisionActivityStatement "Lawrence : University Press of Kansas, 2003"@en ;
@@ -11720,26 +11811,26 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1585392~s5> a bf:Book ;
-    bf:Note "John Frederick Nims, David Mason; ; 23 cm; Includes indexes; Gift of the author, Dave Mason, CC English faculty, 2003"@en ;
+    bf:Note "John Frederick Nims, David Mason; 23 cm; Includes indexes; Gift of the author, Dave Mason, CC English faculty, 2003"@en ;
     bf:editionStatement "4th"@en ;
     bf:isbn "0073031801" ;
     bf:provisionActivityStatement "Boston : McGraw-Hill, 2000"@en ;
     bf:title "Western wind : an introduction to poetry"@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:publicationDate "2000" ;
-    cite:authorString "John Frederick Nims, David Mason." ;
+    cite:authorString "John Frederick Nims, David Mason" ;
     cite:callNumber "PN1042 .N6 2000" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1592129~s5> a bf:Book ;
-    bf:Note "Susan A. Ashley; ; 25 cm; 1530-7263; Includes bibliographical references (p. [171]-191) and index; Gift of the author, Susan Ashley, CC Professor of History, 2003.; Italian and Italian American studies"@en ;
+    bf:Note "Susan A. Ashley; 25 cm; 1530-7263; Includes bibliographical references (p. [171]-191) and index; Gift of the author, Susan Ashley, CC Professor of History, 2003.; Italian and Italian American studies"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0275980626" ;
     bf:provisionActivityStatement "Westport, Conn. : Praeger, 2003"@en ;
     bf:title "Making liberalism work : the Italian experience, 1860- 1914"@en ;
     schema:author <http://catalog.coloradocollege.edu/5f93d92e-b0f0-11e6-aeec-005056c00008> ;
     schema:publicationDate "2003" ;
-    cite:AuthorString "Susan A. Ashley." ;
+    cite:AuthorString "Susan A. Ashley" ;
     cite:callNumber "JC574.2.I8 A78 2003" ;
     cite:citationType "book"@en .
 
@@ -11751,7 +11842,7 @@
     bf:title "The paradoxes of the American presidency"@en ;
     schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
     schema:publicationDate "2004" ;
-    cite:authorString "Thomas E. Cronin, Michael A. Genovese." ;
+    cite:authorString "Thomas E. Cronin, Michael A. Genovese" ;
     cite:callNumber "JK516 .C73 2004" ;
     cite:citationType "book"@en .
 
@@ -11763,19 +11854,19 @@
     bf:title "I know that you know that I know : narrating subjects from Moll Flanders to Marnie"@en ;
     schema:author <http://catalog.coloradocollege.edu/b4511302-b0e1-11e6-bc42-005056c00008> ;
     schema:publicationDate "2004" ;
-    cite:authorString "George Butte." ;
+    cite:authorString "George Butte" ;
     cite:callNumber "PR830.P75 B87 2004" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1611601~s5> a bf:Book ;
-    bf:Note "poems by David Mason; 263: 0405; ; 23 cm; Gift of the author, David Mason, CC Professor of English,"@en ;
+    bf:Note "poems by David Mason; 263: 0405; 23 cm; Gift of the author, David Mason, CC Professor of English,"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "158654036X" ;
     bf:provisionActivityStatement "Ashland, OR : Story Line Press, 2004"@en ;
     bf:title "Arrivals"@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:publicationDate "2004" ;
-    cite:authorString "David Mason." ;
+    cite:authorString "David Mason" ;
     cite:callNumber "PS3563.A7879 A88 2004" ;
     cite:citationType "book"@en .
 
@@ -11786,13 +11877,12 @@
     bf:provisionActivityStatement "Toronto : Published by University of Toronto Press in association with the Medieval Academy of America, 2004"@en ;
     bf:title "Medieval families : perspectives on marriage, household, and children"@en ;
     schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
+	schema:editor "edited by Carol Neel"@en ;
     schema:publicationDate "2004" ;
-    cite:authorString "edited by Carol Neel." ;
     cite:callNumber "HQ513 .M42 2004" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1624935~s5> a bf:Book ;
-    bf:Note "Title from title screen (viewed on July 30, 2004); Mode of access: Internet from the USIP web site. Address as of 7/30/04: http://www.usip.org/pubs/peaceworks/ pwks53.pdf; current access available via PURL"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "" ;
     bf:provisionActivityStatement "Washington, DC : U.S. Institute of Peace, 2004"@en ;
@@ -11800,7 +11890,7 @@
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
     schema:publicationDate "2004" ;
     schema:url "http://purl.access.gpo.gov/GPO/LPS52388" ;
-    cite:authorString "Andrew T. Price-Smith and John L. Daly." ;
+    cite:authorString "Andrew T. Price-Smith and John L. Daly" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1633217~s5> a bf:Book ;
@@ -11810,20 +11900,20 @@
     bf:provisionActivityStatement "Baltimore, MD : Lanahan Publishers, 2004"@en ;
     bf:title "The Lanahan readings in the psychology of women"@en ;
     schema:author <http://catalog.coloradocollege.edu/a3ad551c-b0f4-11e6-a3d1-005056c00008> ;
+	schema:editor "edited by Tomi-Ann Roberts"@en ;
     schema:publicationDate "2004" ;
-    cite:authorString "edited by Tomi-Ann Roberts." ;
     cite:callNumber "HQ1206 .L36 2004" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1637894~s5> a bf:Book ;
-    bf:Note "Rick Anthony Furtak; ; 24 cm; Includes bibliographical references (p. 205-224) and index; Author is CC Professor of Philosophy."@en ;
+    bf:Note "Rick Anthony Furtak; 24 cm; Includes bibliographical references (p. 205-224) and index; Author is CC Professor of Philosophy."@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0268028737" ;
     bf:provisionActivityStatement "Notre Dame, Ind. : University of Notre Dame Press, 2005"@en ;
     bf:title "Wisdom in love : Kierkegaard and the ancient quest for emotional integrity"@en ;
     schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
     schema:publicationDate "2005" ;
-    cite:authorString "Rick Anthony Furtak." ;
+    cite:authorString "Rick Anthony Furtak" ;
     cite:callNumber "B105.E46 F87 2005" ;
     cite:citationType "book"@en .
 
@@ -11835,19 +11925,19 @@
     bf:title "Western wind : an introduction to poetry"@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:publicationDate "2006" ;
-    cite:authorString "David Mason, John Frederick Nims." ;
+    cite:authorString "David Mason, John Frederick Nims" ;
     cite:callNumber "PN1042 .N6 2006" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1650379~s5> a bf:Book ;
-    bf:Note "Jane Hilberry; ; 26 cm; Poems.; Colorado Book Award for Poetry, 2006; Jane Hilberry is CC English faculty"@en ;
+    bf:Note "Jane Hilberry; 26 cm; Poems.; Colorado Book Award for Poetry, 2006; Jane Hilberry is CC English faculty"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "1597090131" ;
     bf:provisionActivityStatement "Los Angeles : Red Hen Press, 2005"@en ;
     bf:title "Body painting : poems"@en ;
     schema:author <http://catalog.coloradocollege.edu/b5dbbd7a-b0e1-11e6-b247-005056c00008> ;
     schema:publicationDate "2005" ;
-    cite:authorString "Jane Hilberry." ;
+    cite:authorString "Jane Hilberry" ;
     cite:callNumber "PS3608.I417 B63 200" ;
     cite:citationType "book"@en .
 
@@ -11859,20 +11949,20 @@
     bf:title "George Crumb & the alchemy of sound : essays on his music"@en ;
     schema:author <http://catalog.coloradocollege.edu/fb2aeefe-b0f0-11e6-b1d9-005056c00008>,
         <http://catalog.coloradocollege.edu/fbdd761c-b0f0-11e6-852e-005056c00008> ;
+	schema:editor "edited by Steven Bruns & Ofer Ben-Amots ; Michael D. Grace, general editor"@en ;
     schema:publicationDate "2005" ;
-    cite:authorString "edited by Steven Bruns & Ofer Ben-Amots ; Michael D. Grace, general editor." ;
     cite:callNumber "MT92 .C78 2005" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1663932~s5> a bf:Book ;
-    bf:Note "edited by Corey Abel and Timothy Fuller; ; 22 cm; Includes bibliographical references and index; Gift of co-editor, Timothy Fuller, CC professor of political science, 2007"@en ;
+    bf:Note "edited by Corey Abel and Timothy Fuller; 22 cm; Includes bibliographical references and index; Gift of co-editor, Timothy Fuller, CC professor of political science, 2007"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "1845400097" ;
     bf:provisionActivityStatement "Exeter : Imprint Academic, 2005"@en ;
     bf:title "The intellectual legacy of Michael Oakeshott"@en ;
-    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:editor "edited by Corey Abel and Timothy Fuller"@en ;
+	schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008>;
     schema:publicationDate "2005" ;
-    cite:authorString "edited by Corey Abel and Timothy Fuller." ;
     cite:callNumber "JA84.O177 I48 2005" ;
     cite:citationType "book"@en .
 
@@ -11889,7 +11979,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1675113~s5> a bf:Book ;
-    bf:Note "[electronic resource] : what went wrong in the Iraq War / David C. Hendrickson, Robert W. Tucker; Electronic data; : digital, PDF file; Title from title screen (viewed Jan. 23, 2006); \"December 2005.\"; Includes bibliographical references (p. 29-36); Electronic book; Also issued in paper format; Electronic reproduction. Carlisle, PA : Army War College, Strategic Studies Institute, 200u; System requirements: Adobe Acrobat Reader; Mode of access: Internet from the SSI web site. Address as of 4/6/06: http://www.strategicstudiesinstitute.army.mil/ pdffiles/PUB637.pdf; current access available via PURL"@en ;
+    bf:Note "What went wrong in the Iraq War / David C. Hendrickson, Robert W. Tucker; Electronic data; : digital, PDF file; Title from title screen (viewed Jan. 23, 2006); \"December 2005.\"; Includes bibliographical references (p. 29-36); Electronic book; Also issued in paper format; Electronic reproduction. Carlisle, PA : Army War College, Strategic Studies Institute, 200u; System requirements: Adobe Acrobat Reader; Mode of access: Internet from the SSI web site. Address as of 4/6/06: http://www.strategicstudiesinstitute.army.mil/ pdffiles/PUB637.pdf; current access available via PURL"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "" ;
     bf:provisionActivityStatement "Carlisle, PA : Strategic Studies Institute, U.S. Army War College, 2005"@en ;
@@ -11897,7 +11987,7 @@
     schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
     schema:publicationDate "2005" ;
     schema:url "http://purl.access.gpo.gov/GPO/LPS68491" ;
-    cite:authorString "David C. Hendrickson, Robert W. Tucker." ;
+    cite:authorString "David C. Hendrickson, Robert W. Tucker" ;
     cite:callNumber "D 101.146:R 32/2" ;
     cite:citationType "book"@en .
 
@@ -11909,7 +11999,7 @@
     bf:title "The health of nations : infectious disease, environmental change, and their effects on national security and development"@en ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
     schema:publicationDate "2002" ;
-    cite:authorString "Andrew T. Price-Smith." ;
+    cite:authorString "Andrew T. Price-Smith" ;
     cite:callNumber "RA643 .P75 2002" ;
     cite:citationType "book"@en .
 
@@ -11920,8 +12010,8 @@
     bf:provisionActivityStatement "Houndmills, Basingstoke, Hampshire; New York : Palgrave, 2001"@en ;
     bf:title "Plagues and politics : infectious disease and international policy"@en ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
+	schema:editor "edited by Andrew T. Price-Smith"@en ;
     schema:publicationDate "2001" ;
-    cite:authorString "edited by Andrew T. Price-Smith." ;
     cite:callNumber "RA643 .P675 2001" ;
     cite:citationType "book"@en .
 
@@ -11933,19 +12023,19 @@
     bf:title "Ludlow : a verse-novel"@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:publicationDate "2007" ;
-    cite:authorString "David Mason." ;
+    cite:authorString "David Mason" ;
     cite:callNumber "PS3563.A7879 L8 2007" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1698831~s5> a bf:Book ;
-    bf:Note "by Jessy Randall; ; 23 cm; Poems; Author is CC archivist and curator of Special Collections"@en ;
+    bf:Note "by Jessy Randall; 23 cm; Poems; Author is CC archivist and curator of Special Collections"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0978945654" ;
     bf:provisionActivityStatement "Denver, Colo. : Ghost Road Press, 2007"@en ;
     bf:title "A day in boyland : poems"@en ;
     schema:author <https://orcid.org/0000-0002-5352-9886> ;
     schema:publicationDate "2007" ;
-    cite:authorString "Jessy Randall." ;
+    cite:authorString "Jessy Randall" ;
     cite:callNumber "PS3618.A625 D39 2007" ;
     cite:citationType "book"@en .
 
@@ -11957,7 +12047,7 @@
     bf:title "Broken heart diet"@en ;
     schema:author <https://orcid.org/0000-0002-5352-9886> ;
     schema:publicationDate "2007" ;
-    cite:authorString "Jessy Randall." ;
+    cite:authorString "Jessy Randall" ;
     cite:callNumber "PS3618.A625 B76 2007" ;
     cite:citationType "book"@en .
 
@@ -11969,19 +12059,19 @@
     bf:title "Violence in the city of women : police and batterers in Bahia, Brazil"@en ;
     schema:author <http://catalog.coloradocollege.edu/9f02c8c0-b0dd-11e6-b1ed-005056c00008> ;
     schema:publicationDate "2007" ;
-    cite:authorString "Sarah J. Hautzinger." ;
+    cite:authorString "Sarah J. Hautzinger" ;
     cite:callNumber "HQ1544.B33 H38 2007" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1712744~s5> a bf:Book ;
-    bf:Note "Tracy Santa; ; 24 cm; Includes bibliographical references (p. 133-143) and indexes; Revising error -- Correction of themes : the controlling gaze (1873-1963) -- Open admissions : Mina Shaughnessy, error, and expectations (1963-1978) -- The study of error : mapping the territory (1978-1989) -- Critical pedagogy : de/reconstructing the basic writer (1989-1999) -- A glance and a silent body : historical consciousness/present reflection (2000-2004); Author Tracy Santa is CC director of the Writing Center, 2008; Research and teaching in rhetoric and composition"@en ;
+    bf:Note "Tracy Santa; 24 cm; Includes bibliographical references (p. 133-143) and indexes; Revising error -- Correction of themes : the controlling gaze (1873-1963) -- Open admissions : Mina Shaughnessy, error, and expectations (1963-1978) -- The study of error : mapping the territory (1978-1989) -- Critical pedagogy : de/reconstructing the basic writer (1989-1999) -- A glance and a silent body : historical consciousness/present reflection (2000-2004); Author Tracy Santa is CC director of the Writing Center, 2008; Research and teaching in rhetoric and composition"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781572737723" ;
     bf:provisionActivityStatement "Cresskill, NJ : Hampton Press, 2008"@en ;
     bf:title "Dead letters : error in composition, 1873-2004"@en ;
     schema:author <http://catalog.coloradocollege.edu/b9a5518c-b0e1-11e6-8781-005056c00008> ;
     schema:publicationDate "2008" ;
-    cite:authorString "Tracy Santa." ;
+    cite:authorString "Tracy Santa" ;
     cite:callNumber "PE1405.U6 S26 2008" ;
     cite:citationType "book"@en .
 
@@ -11993,55 +12083,55 @@
     bf:title "Get smart! : how e-mail can make or break your career and your organization"@en ;
     schema:author <http://catalog.coloradocollege.edu/b5dbbd7a-b0e1-11e6-b247-005056c00008> ;
     schema:publicationDate "2007" ;
-    cite:authorString "Mary Lynn Pulley & Jane Hilberry." ;
+    cite:authorString "Mary Lynn Pulley & Jane Hilberry" ;
     cite:callNumber "HD58.7 .P855 2007" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1720393~s5> a bf:Book ;
-    bf:Note "selected and introduced by Theodore J. Antry and Carol Neel ; preface by Andrew D. Ciferni; ; 24 cm; Includes bibliographical references (p. 243-300) and index; Anselm of Havelberg, apologetic letter -- Herman of Tournai, miracles of St. Mary of Laon -- Life of Godfrey of Cappenberg -- The hagiography of Norbert, the A and B lives -- Version A: life of Norbert, Archbishop of Magdeburg -- Version B: life of Norbert (excerpts) -- Philip of Harvengt, on the knowledge of clerics -- Philip of Harvengt, life of Oda; Contributor Carol Neel is CC history professor; Classics of Western spirituality"@en ;
+    bf:Note "selected and introduced by Theodore J. Antry and Carol Neel ; preface by Andrew D. Ciferni; 24 cm; Includes bibliographical references (p. 243-300) and index; Anselm of Havelberg, apologetic letter -- Herman of Tournai, miracles of St. Mary of Laon -- Life of Godfrey of Cappenberg -- The hagiography of Norbert, the A and B lives -- Version A: life of Norbert, Archbishop of Magdeburg -- Version B: life of Norbert (excerpts) -- Philip of Harvengt, on the knowledge of clerics -- Philip of Harvengt, life of Oda; Contributor Carol Neel is CC history professor; Classics of Western spirituality"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780809105779" ;
     bf:provisionActivityStatement "New York : Paulist Press, 2007"@en ;
     bf:title "Norbert and early Norbertine spirituality"@en ;
     schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
     schema:publicationDate "2007" ;
-    cite:authorString "selected and introduced by Theodore J. Antry and Carol Neel ; preface by Andrew D. Ciferni." ;
+    cite:authorString "selected and introduced by Theodore J. Antry and Carol Neel ; preface by Andrew D. Ciferni" ;
     cite:callNumber "BX3902.3 .N67 2007" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1726356~s5> a bf:Book ;
-    bf:Note "Douglas Monroy; ; 24 cm; Includes bibliographical references (p. [239]-252) and index; NAFTA and the new world border -- Zorro, cows, Indians, and dons : re-creating Californio rancho society -- Ramona, I love you -- Woodrow Wilson's guns : American liberalism and the dilemma of non-progressive peoples -- Death and birth : the missions of California -- How the new world border changes who we are and where we are -- In the footsteps of Padre Serra; Author is CC history professor"@en ;
+    bf:Note "Douglas Monroy; 24 cm; Includes bibliographical references (p. [239]-252) and index; NAFTA and the new world border -- Zorro, cows, Indians, and dons : re-creating Californio rancho society -- Ramona, I love you -- Woodrow Wilson's guns : American liberalism and the dilemma of non-progressive peoples -- Death and birth : the missions of California -- How the new world border changes who we are and where we are -- In the footsteps of Padre Serra; Author is CC history professor"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780816526918" ;
     bf:provisionActivityStatement "Tucson : University of Arizona Press, 2008"@en ;
     bf:title "The borders within : encounters between Mexico and the U.S."@en ;
     schema:author <http://catalog.coloradocollege.edu/60f09682-b0f0-11e6-bee4-005056c00008> ;
     schema:publicationDate "2008" ;
-    cite:authorString "Douglas Monroy." ;
+    cite:authorString "Douglas Monroy" ;
     cite:callNumber "E183.8.M6 M827 2008" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1764776~s5> a bf:Book ;
-    bf:Note "Thomas E. Cronin; ; 21 cm; Includes bibliographical references (p. 145-158) and index; Searching for the perfect president -- The symbolic and shamanistic functions of the American presidency -- Overcoming groupthink, the separation of brain and state, and Machiavelli's flattery conundrum -- President John F. Kennedy : act III politician -- Problematic presidential power in our post-9/11 world; On politics"@en ;
+    bf:Note "Thomas E. Cronin; 21 cm; Includes bibliographical references (p. 145-158) and index; Searching for the perfect president -- The symbolic and shamanistic functions of the American presidency -- Overcoming groupthink, the separation of brain and state, and Machiavelli's flattery conundrum -- President John F. Kennedy : act III politician -- Problematic presidential power in our post-9/11 world; On politics"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781594514906" ;
     bf:provisionActivityStatement "Boulder : Paradigm Publishers, 2009"@en ;
     bf:title "On the presidency : teacher, soldier, shaman, pol"@en ;
     schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
     schema:publicationDate "2009" ;
-    cite:authorString "Thomas E. Cronin." ;
+    cite:authorString "Thomas E. Cronin" ;
     cite:callNumber "JK528 .C77 2009" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1771064~s5> a bf:Book ;
-    bf:Note "Steven Hayward; ; 23 cm; August 7, 1921 -- Buddha Stevens -- Umbrella -- The obituary of Philomena Beviso -- Tower -- My grandfather's beautiful hair -- To dance the beginning of the world -- The sweet second kiss of Florence Ferguson"@en ;
+    bf:Note "Steven Hayward; 23 cm; August 7, 1921 -- Buddha Stevens -- Umbrella -- The obituary of Philomena Beviso -- Tower -- My grandfather's beautiful hair -- To dance the beginning of the world -- The sweet second kiss of Florence Ferguson"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "1550965204" ;
     bf:provisionActivityStatement "Toronto : Exile Editions, 2000"@en ;
     bf:title "Buddha Stevens, and other stories"@en ;
     schema:author <http://catalog.coloradocollege.edu/b58a4648-b0e1-11e6-b367-005056c00008> ;
     schema:publicationDate "2000" ;
-    cite:authorString "Steven Hayward." ;
+    cite:authorString "Steven Hayward" ;
     cite:callNumber "PR9199.3.H394 B83 2000" ;
     cite:citationType "book"@en .
 
@@ -12053,7 +12143,7 @@
     bf:title "Contagion and chaos : disease, ecology, and national security in the era of globalization"@en ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
     schema:publicationDate "2009" ;
-    cite:authorString "Andrew T. Price-Smith." ;
+    cite:authorString "Andrew T. Price-Smith" ;
     cite:callNumber "RA643 .P73 2009" ;
     cite:citationType "book"@en .
 
@@ -12065,7 +12155,7 @@
     bf:title "Collective creativity : art and society in the South Pacific"@en ;
     schema:author <http://catalog.coloradocollege.edu/4028b06c-b0f5-11e6-979a-005056c00008> ;
     schema:publicationDate "2009" ;
-    cite:authorString "Katherine Giuffre." ;
+    cite:authorString "Katherine Giuffre" ;
     cite:callNumber "HM741 .G58 2009" ;
     cite:citationType "book"@en .
 
@@ -12077,12 +12167,12 @@
     bf:title "The paradoxes of the American presidency"@en ;
     schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
     schema:publicationDate "2010" ;
-    cite:authorString "Thomas E. Cronin, Michael A. Genovese." ;
+    cite:authorString "Thomas E. Cronin, Michael A. Genovese" ;
     cite:callNumber "JK516 .C73 2010" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1954090~s5> a bf:Book ;
-    bf:Note "Robert D. Lee; ; 23 cm; Includes bibliographical references (p. 307-320) and index; The political determinants of religion -- Religion as a causal force -- The taming of Islam in Egypt -- The transformation of Judaism in Israel -- The politics of religion in \"secularist\" Turkey -- State Shiism in Iran -- Reconciling religion and politics -- Institutions -- Political culture -- Hypotheses revisited; Both library copies are gift of the author, CC political science professor"@en ;
+    bf:Note "Robert D. Lee; 23 cm; Includes bibliographical references (p. 307-320) and index; The political determinants of religion -- Religion as a causal force -- The taming of Islam in Egypt -- The transformation of Judaism in Israel -- The politics of religion in \"secularist\" Turkey -- State Shiism in Iran -- Reconciling religion and politics -- Institutions -- Political culture -- Hypotheses revisited; Both library copies are gift of the author, CC political science professor"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780813344201" ;
     bf:provisionActivityStatement "Boulder, CO : Westview Press, 2010"@en ;
@@ -12094,7 +12184,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1956546~s5> a bf:Book ;
-    bf:Note "David C. Hendrickson; ; 25 cm; Includes bibliographical references (p. 375-384) and index; The problem and its modes -- American internationalism -- Imperialism and nationalism -- The rival systems of Hamilton and Jefferson -- The causes of war -- Louisiana! -- Balances of power -- The confederation of Europe -- New world and old world -- To the Panama Congress -- Into the deep freeze -- Great and fearfully growing -- The title page -- Constitutional disorder -- Decentralizing tendencies -- The hope of the world -- Reds and whites -- The removal of the Cherokee -- Annexation of Texas and war with Mexico -- The great debate of 1848 -- Intervention for nonintervention: the Kossuth tour -- Invitation to a beheading -- Causes of the war, causes of the peace -- D.I.V.O.R.C.E -- The tragedy of Civil War -- The new nation -- A new birth of freedom? -- \"Free security\" and \"imperial understretch\" -- A world of its own -- The unionist paradigm revisited -- The new nationalism and the Spanish War -- Imperialism and the conquest of the Philippines -- Informal empire and the protection of nationals -- Seward and the new imperialism -- Before the deluge -- \"Great utterance\" and Madisonian moment -- Safe for democracy -- The liberal peace program goes to Paris - - The great debate of 1919 -- Nationalism, internationalism, and imperialism in the 1920s -- The great depression and economic nationalism -- Isolation and neutrality -- The final reckoning; American political thought"@en ;
+    bf:Note "David C. Hendrickson; 25 cm; Includes bibliographical references (p. 375-384) and index; The problem and its modes -- American internationalism -- Imperialism and nationalism -- The rival systems of Hamilton and Jefferson -- The causes of war -- Louisiana! -- Balances of power -- The confederation of Europe -- New world and old world -- To the Panama Congress -- Into the deep freeze -- Great and fearfully growing -- The title page -- Constitutional disorder -- Decentralizing tendencies -- The hope of the world -- Reds and whites -- The removal of the Cherokee -- Annexation of Texas and war with Mexico -- The great debate of 1848 -- Intervention for nonintervention: the Kossuth tour -- Invitation to a beheading -- Causes of the war, causes of the peace -- D.I.V.O.R.C.E -- The tragedy of Civil War -- The new nation -- A new birth of freedom? -- \"Free security\" and \"imperial understretch\" -- A world of its own -- The unionist paradigm revisited -- The new nationalism and the Spanish War -- Imperialism and the conquest of the Philippines -- Informal empire and the protection of nationals -- Seward and the new imperialism -- Before the deluge -- \"Great utterance\" and Madisonian moment -- Safe for democracy -- The liberal peace program goes to Paris - - The great debate of 1919 -- Nationalism, internationalism, and imperialism in the 1920s -- The great depression and economic nationalism -- Isolation and neutrality -- The final reckoning; American political thought"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780700616329" ;
     bf:provisionActivityStatement "Lawrence : University Press of Kansas, 2009"@en ;
@@ -12106,7 +12196,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1956940~s5> a bf:Book ;
-    bf:Note "Conrad Hilberry and Jane Hilberry; ; 23 cm; Co-author Jane Hilberry is CC English faculty"@en ;
+    bf:Note "Conrad Hilberry and Jane Hilberry; 23 cm; Co-author Jane Hilberry is CC English faculty"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780932412829" ;
     bf:provisionActivityStatement "Bay City, MI : Mayapple Press, 2009"@en ;
@@ -12142,7 +12232,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2009988~s5> a bf:Book ;
-    bf:Note "David Mason; ; 22 cm; Special Collections copy is gift of the author, CC professor of English, 2010"@en ;
+    bf:Note "David Mason; 22 cm; Special Collections copy is gift of the author, CC professor of English, 2010"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781597094726" ;
     bf:provisionActivityStatement "Pasadena, Calif. : Red Hen Press, 2010"@en ;
@@ -12154,7 +12244,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2024686~s5> a bf:Book ;
-    bf:Note "Steven Hayward; 263: PR9199; ; 22 cm; Issued also in electronic format; Author is CC English faculty"@en ;
+    bf:Note "Steven Hayward; 263: PR9199; 22 cm; Issued also in electronic format; Author is CC English faculty"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780676977363" ;
     bf:provisionActivityStatement "Toronto : Alfred A. Knopf Canada, 2011"@en ;
@@ -12181,7 +12271,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2032683~s5> a bf:Book ;
-    bf:Note "by David Mason; 263: 1103; ; 21 cm; Two minds of a western poet -- Opening a town -- Some narrative poets of the American West -- Modern American poetry and the hopper of civilization -- The long and the short of Robinson -- The inner drama of James Wright -- \"The contemplation of horror is not edifying\" : Anthony Hecht as a war poet -- Mastered pain -- Richard Wilbur and the \"Blind delight of being\" -- Grace Schulman's Song of praise -- Memory and imagination in the poetry of B.H. Fairchild -- The limits of the literary movement -- The dhow's gaze : thoughts on postcolonial studies -- Close to Seferis; Author is CC professor of English; Poets on poetry"@en ;
+    bf:Note "by David Mason; 263: 1103; 21 cm; Two minds of a western poet -- Opening a town -- Some narrative poets of the American West -- Modern American poetry and the hopper of civilization -- The long and the short of Robinson -- The inner drama of James Wright -- \"The contemplation of horror is not edifying\" : Anthony Hecht as a war poet -- Mastered pain -- Richard Wilbur and the \"Blind delight of being\" -- Grace Schulman's Song of praise -- Memory and imagination in the poetry of B.H. Fairchild -- The limits of the literary movement -- The dhow's gaze : thoughts on postcolonial studies -- Close to Seferis; Author is CC professor of English; Poets on poetry"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780472071425" ;
     bf:provisionActivityStatement "Ann Arbor : The University of Michigan Press, 2011"@en ;
@@ -12205,7 +12295,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2061360~s5> a bf:Book ;
-    bf:Note "by Jessy Randall and Daniel M. Shapiro; 263: 1104; ; 23 cm; Poems; Co-author Jessy Randall is CC archivist and curator of Special Collections"@en ;
+    bf:Note "by Jessy Randall and Daniel M. Shapiro; 263: 1104; 23 cm; Poems; Co-author Jessy Randall is CC archivist and curator of Special Collections"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781931247900" ;
     bf:provisionActivityStatement "San Antonio, TX : Pecan Grove Press, 2011"@en ;
@@ -12217,7 +12307,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2062556~s5> a bf:Book ;
-    bf:Note "(9th : 2008 : Tulane University); Beatriz Helena Domingues, Peter L. Blasenheim, organizadores; ; 23 cm; Texts from a session entitled \"Further New World Soundings\" from the 9th Brazilian Studies Association Conference, 2008; Includes bibliographical references; Special Collections copy is gift of co-editor Peter Blasenheim, CC professor of history; Humanitas (Belo Horizonte, Brazil)"@en ;
+    bf:Note "(9th : 2008 : Tulane University); Beatriz Helena Domingues, Peter L. Blasenheim, organizadores; 23 cm; Texts from a session entitled \"Further New World Soundings\" from the 9th Brazilian Studies Association Conference, 2008; Includes bibliographical references; Special Collections copy is gift of co-editor Peter Blasenheim, CC professor of history; Humanitas (Belo Horizonte, Brazil)"@en ;
     bf:editionStatement "1a"@en ;
     bf:isbn "9788570418241" ;
     bf:provisionActivityStatement "Belo Horizonte : Editora UFMG, 2010"@en ;
@@ -12229,7 +12319,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2064821~s5> a bf:Book ;
-    bf:Note "John A. Gould; ; 24 cm; Includes bibliographical references and index; Introduction -- Politics and structural adjustment in postcommunist Europe -- Privatization and political change -- Designing privatization in Czechoslovakia -- The politics of privatization in the Czech Republic -- The politics of privatization in Slovakia -- Postprivatization entrepreneurs in Ukraine -- The political economy of regime change in Serbia, Georgia, and Azerbaijan -- Conclusion; Author is CC political science faculty"@en ;
+    bf:Note "John A. Gould; 24 cm; Includes bibliographical references and index; Introduction -- Politics and structural adjustment in postcommunist Europe -- Privatization and political change -- Designing privatization in Czechoslovakia -- The politics of privatization in the Czech Republic -- The politics of privatization in Slovakia -- Postprivatization entrepreneurs in Ukraine -- The political economy of regime change in Serbia, Georgia, and Azerbaijan -- Conclusion; Author is CC political science faculty"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781588267580" ;
     bf:provisionActivityStatement "Boulder, Colo. : Lynne Rienner Publishers, 2011"@en ;
@@ -12241,7 +12331,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2094611~s5> a bf:Book ;
-    bf:Note "Susan A. Ashley; ; 19 cm; Author is CC professor of history, and was dean of the college and dean of the faculty, 2004-2012; CC Rm and stacks copies gift of the author, 2012"@en ;
+    bf:Note "Susan A. Ashley; 19 cm; Author is CC professor of history, and was dean of the college and dean of the faculty, 2004-2012; CC Rm and stacks copies gift of the author, 2012"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "" ;
     bf:provisionActivityStatement "Colorado Springs : Colorado College, 2012"@en ;
@@ -12253,7 +12343,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2101283~s5> a bf:Book ;
-    bf:Note "7350072; Thomas E. Cronin, Michael A. Genovese; ; 24 cm; Includes bibliographical references and index; Preface -- The paradoxes of leadership -- Defining leadership -- Leadership realities -- What the classics teach us about leadership: from Gilgamesh to the Bible -- What the classics teach us about leadership: Machiavelli to Shakespeare -- What the classics teach us about leadership: the rise of constitutional democracy -- What business teaches us about leadership -- What politics teaches us about leadership -- What the military teaches us about leadership -- What Hollywood teaches us about leadership -- The darker side of leadership -- The creative side of leadership -- Leadership as a performing art"@en ;
+    bf:Note "7350072; Thomas E. Cronin, Michael A. Genovese; 24 cm; Includes bibliographical references and index; Preface -- The paradoxes of leadership -- Defining leadership -- Leadership realities -- What the classics teach us about leadership: from Gilgamesh to the Bible -- What the classics teach us about leadership: Machiavelli to Shakespeare -- What the classics teach us about leadership: the rise of constitutional democracy -- What business teaches us about leadership -- What politics teaches us about leadership -- What the military teaches us about leadership -- What Hollywood teaches us about leadership -- The darker side of leadership -- The creative side of leadership -- Leadership as a performing art"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781612051420" ;
     bf:provisionActivityStatement "Boulder, CO : Paradigm Publishers, 2012"@en ;
@@ -12277,7 +12367,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2101483~s5> a bf:Book ;
-    bf:Note "Manga \"Botchan\" : Eigoken-ban / gensaku Natsume Soseki ; kanshu Jon E. Erikuson ; cho Masuyama Kazue ; manga Tsukidate Keito; |6880-03 Botchan; ; ill. ; 26 cm; Includes bibliographical references and index; Library copies gift of editor Joan Ericson, CC professor of East Asian languages, 2012; Learning language through literature ; 1 1"@en ;
+    bf:Note "Manga \"Botchan\" : Eigoken-ban / gensaku Natsume Soseki ; kanshu Jon E. Erikuson ; cho Masuyama Kazue ; manga Tsukidate Keito; |6880-03 Botchan; ill. ; 26 cm; Includes bibliographical references and index; Library copies gift of editor Joan Ericson, CC professor of East Asian languages, 2012; Learning language through literature ; 1 1"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9784843335260" ;
     bf:provisionActivityStatement "Tokyo : Yumani Shobo, 2011"@en ;
@@ -12289,7 +12379,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2101838~s5> a bf:Book ;
-    bf:Note "Leslie Stevenson, David L. Haberman, Peter Matthews Wright; ; 21 cm; Rev. ed. of: Ten theories of human nature / Leslie Stevenson, David L. Haberman; Includes bibliographical references and index"@en ;
+    bf:Note "Leslie Stevenson, David L. Haberman, Peter Matthews Wright; 21 cm; Rev. ed. of: Ten theories of human nature / Leslie Stevenson, David L. Haberman; Includes bibliographical references and index"@en ;
     bf:editionStatement "6th"@en ;
     bf:isbn "9780199859030" ;
     bf:provisionActivityStatement "New York : Oxford University Press, 2013"@en ;
@@ -12337,7 +12427,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2111348~s5> a bf:Book ;
-    bf:Note "Steven Hayward ; [vert. uit het Engels Jasper Mutsaers]; ; 22 cm; Dutch language translation; Gift of the author, CC English faculty, 2012"@en ;
+    bf:Note "Steven Hayward ; [vert. uit het Engels Jasper Mutsaers]; 22 cm; Dutch language translation; Gift of the author, CC English faculty, 2012"@en ;
     bf:Summary "De broer van Jim (17, ik-figuur) komt bij een onverklaarbare explosie om het leven. Zijn ouders zijn uit het veld geslagen. Jim moet nu voor zijn jongere broertje zorgen, wat hem in vreemde situaties brengt. Vanaf ca. 15 jaar"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9789049925116" ;
@@ -12877,18 +12967,6 @@
     schema:publicationDate "2018" ;
     cite:authorString "Thomas E. Cronin." ;
     cite:callNumber "PS374.P6 C76 2018" ;
-    cite:citationType "book"@en .
-
-<https://tiger.coloradocollege.edu/record=b2575985~s5> a bf:Book ;
-    bf:Note "M1: 260 pp.; Accession Number: 2017443832. Publication Type: book collection. Language: English. Update Code: 201708. Sequence No: 2017-8-2880."@en ;
-    bf:editionStatement ""@en ;
-    bf:isbn "9780814341063 (pbk.)" ;
-    bf:provisionActivityStatement "Detroit, MI : Wayne State UP, 2017"@en ;
-    bf:title "Raul Ruiz's Cinema of Inquiry"@en ;
-    schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
-    schema:publicationDate "2017" ;
-    cite:authorString "edited by Ignacio López-Vicuña and Andreea Marinescu." ;
-    cite:callNumber "PN1998.3.R8355 R38 2017" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2581844~s5> a bf:Book ;
@@ -16072,6 +16150,50 @@
     schema:partOf <http://catalog.coloradocollege.edu/f649e90a-3910-11e8-bc24-a41f7283f8d4> ;
     schema:volumeNumber "127" .
 
+<http://catalog.coloradocollege.edu/6ae7829e-65d6-11e8-9b2f-a41f7283f8d4> a bf:Book ;
+    bf:Summary "Neocortical development in humans is characterized by an extended period of synaptic proliferation that peaks in mid-childhood, with subsequent pruning through early adulthood, as well as relatively delayed maturation of neuronal arborization in the prefrontal cortex compared with sensorimotor areas. In macaque monkeys, cortical synaptogenesis peaks during early infancy and developmental changes in synapse density and dendritic spines occur synchronously across cortical regions. Thus, relatively prolonged synapse and neuronal maturation in humans might contribute to enhancement of social learning during development and transmission of cultural practices, including language. However, because macaques, which share a last common ancestor with humans ~25 million years ago, have served as the predominant comparative primate model in neurodevelopmental research, the paucity of data from more closely related great apes leaves unresolved when these evolutionary changes in the timing of cortical development became established in the human lineage. To address this question, we used immunohistochemistry, electron microscopy, and Golgi staining to characterize synaptic density and dendritic morphology of pyramidal neurons in primary somatosensory (area 3b), primary motor (area 4), prestriate visual (area 18), and prefrontal (area 10) cortices of developing chimpanzees (Pan troglodytes). We found that synaptogenesis occurs synchronously across cortical areas, with a peak of synapse density during the juvenile period (3-5 years). Moreover, similar to findings in humans, dendrites of prefrontal pyramidal neurons developed later than sensorimotor areas. These results suggest that evolutionary changes to neocortical development promoting greater neuronal plasticity early in postnatal life preceded the divergence of the human and chimpanzee lineages. (PsycINFO Database Record (c) 2016 APA, all rights reserved)"@en ;
+    bf:isbn "0309296404" ;
+    bf:provisionActivityStatement "Washington, DC, US : National Academies Press, 2014"@en ;
+    bf:title "In the light of evolution: Volume VII: The human mental machinery"@en ;
+    schema:author <http://catalog.coloradocollege.edu/a34607ca-b0f4-11e6-ac87-005056c00008> ;
+    schema:editor "Cela-Conde,  Camilo J.; Lombardo, RaÃºl G.; Avise,  John C.; Ayala,  Francisco J."@en ;
+    schema:publicationDate "2014" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=psyh&AN=2014-23001-008" ;
+    cite:authorString "Serena Bianchi, Cheryl D. Stimpson, Tetyana Duka, Michael D. Larsen, William G. M. Janssen, Zachary Collins, Amy L. Bauernfeind, Steven J. Schapiro, Wallace B. Baze, Mark J. McArthur, William D. Hopkins, Derek E. Wildman, Leonard Lipovich, Christopher W. Kuzawa, Bob Jacobs, Patrick R. Hof, Chet C. Sherwood" ;
+    cite:citationType "book"@en .
+
+<http://catalog.coloradocollege.edu/6af5cae2-65d6-11e8-b397-a41f7283f8d4> a bf:Book ;
+    bf:isbn "9780823249541" ;
+    bf:provisionActivityStatement "New York, NY : Fordham UP, 2012"@en ;
+    bf:title "Thoreau's Importance for Philosophy"@en ;
+    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:editor "edited; introduction by: Furtak,  Rick A.,  Ellsworth,  Jonathan,  Reid,  James D."@en ;
+    schema:publicationDate "2012" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=mzh&AN=2016307877" ;
+    cite:authorString "Rick Anthony Furtak" ;
+    cite:citationType "book"@en .
+
+<http://catalog.coloradocollege.edu/6b04131e-65d6-11e8-bf19-a41f7283f8d4> a bf:Book ;
+    bf:isbn "9780199601301" ;
+    bf:provisionActivityStatement "Oxford, England : Oxford UP, 2013"@en ;
+    bf:title "The Oxford Handbook of Kierkegaard"@en ;
+    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:editor "edited; introduction by Lippitt,  John; Pattison,  George"@en ;
+    schema:publicationDate "2013" ;
+    schema:url "http://0-www.oxfordhandbooks.com.tiger.coloradocollege.edu/view/10.1093/oxfordhb/9780199601301.001.0001/oxfordhb-9780199601301" ;
+    cite:authorString "Rick Anthony Furtak" ;
+    cite:citationType "book"@en .
+
+<http://catalog.coloradocollege.edu/6b256662-65d6-11e8-9fa6-a41f7283f8d4> a bf:Book ;
+    bf:Note "Rainer Maria Rilke ; with a philosophical introduction by Rick Anthony Furtak; 18 cm; Includes bibliographical references; Contributor Rick A. Furtak is CC philosophy faculty"@en ;
+    bf:isbn "9781589661608" ;
+    bf:provisionActivityStatement "Scranton : University of Scranton Press, 2007"@en ;
+    bf:title "Sonnets to Orpheus : a new English version"@en ;
+    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:publicationDate "2007" ;
+    cite:authorString "Rainer Maria Rilke, Rick Anthony Furtak" ;
+    cite:citationType "book"@en .
+
 <http://catalog.coloradocollege.edu/6b3442ba-3911-11e8-a14f-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/dcdbc258-3910-11e8-b722-a41f7283f8d4> ;
     schema:volumeNumber "220" .
@@ -16168,6 +16290,10 @@
     schema:issn "1058-4609" ;
     schema:name "Political Communication"@en .
 
+<http://catalog.coloradocollege.edu/6eff3498-4276-11e8-970f-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0016-7037" ;
+    schema:name "Geochimica et Cosmochimica Acta"@en .
+
 <http://catalog.coloradocollege.edu/6f0a301e-3911-11e8-ab35-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/6efe2236-3911-11e8-95d4-a41f7283f8d4> ;
     schema:volumeNumber "32" .
@@ -16215,10 +16341,6 @@
 <http://catalog.coloradocollege.edu/70efc1c6-4276-11e8-8275-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/10340cba-3d0f-11e8-8f02-a41f7283f8d4> ;
     schema:volumeNumber "302" .
-
-<http://catalog.coloradocollege.edu/70efc1c7-4276-11e8-ad61-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "5646" ;
-    schema:partOf <http://catalog.coloradocollege.edu/70efc1c6-4276-11e8-8275-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/70f48a92-3911-11e8-ad83-a41f7283f8d4> a schema:Periodical ;
     schema:issn "2056-2799" ;
@@ -24147,7 +24269,7 @@
     schema:datePublished "2003" ;
     schema:name "Origin and Migration of the Alpine Iceman"@en ;
     schema:pageEnd "866" ;
-    schema:pageStart "862";
+    schema:pageStart "862" ;
     schema:partOf <http://catalog.coloradocollege.edu/6f1e2677-4276-11e8-9c48-a41f7283f8d4> ;
     schema:url <https://doi.org/10.1126/science.1089837> ;
     cite:authorString "W. Muller, Henry Fricke, A. N. Halliday, M. T. McCulloch, J. A. Wartho." ;
@@ -25424,6 +25546,16 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<https://tiger.coloradocollege.edu/record=b1415543~s5> a bf:Book ;
+    bf:isbn "0415926955" ;
+    bf:provisionActivityStatement "New York : Routledge, 2001"@en ;
+    bf:title "Feminist Science Studies: A New Generation"@en ;
+    schema:author <http://catalog.coloradocollege.edu/ccffc7dc-b0f0-11e6-9273-005056c00008> ;
+    schema:editor "Maralee Mayberry,  Banu Subramaniam,  Lisa H. Weasel"@en ;
+    schema:publicationDate "2001" ;
+    cite:callNumber "Q175.5 .M385 2001" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b1455655~s5> a bf:Book ;
     bf:Note "ID: PHL1693168; Cover Date: 2002. Source Information: Author: Wagner, Michael F (ed) 23-42,. Language: English. Journal Announcement: 36-2. Subject: PHYSICS; SCIENCE. Subject Person: PLOTINUS. Update Code: 20180130."@en ;
     bf:editionStatement ""@en ;
@@ -25464,7 +25596,7 @@
     bf:isbn "0387263322" ;
     bf:provisionActivityStatement "New York : Springer, "@en ;
     bf:title "Quantum computing in solid state systems"@en ;
-    schema:editor "{Berardo Ruggiero et al} year={2006}"@en ;
+    schema:editor "edited by Berardo Ruggiero et al"@en ;
     schema:publicationDate "" ;
     cite:callNumber "QA76.889 .Q836x 2006" ;
     cite:citationType "book"@en .
@@ -25481,7 +25613,7 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1701531~s5> a bf:Book ;
-    bf:Note "edited by Thomas Mathien and D.G. Wright; ; 25 cm; Includes bibliographical references and index; Philosophers' autobiographies / Thomas Mathien -- The Confessions of Saint Augustine : accessory to grace / Samantha Thompson -- Who is Peter Abelard? / Calvin G. Normore -- Philosophy without heroism : Montaigne and the vanity of autobiography / D.G. Wright -- Exile and philosophy : Descartes / AndrÃƒÂ© Gombay -- Scrissela da filosofo : the life of Giambattista Vico written by himself / Domenico Pietropaolo -- Hume's \"life\" and the virtues of the dying / Donald C. Ainslie -- Portraying nature : Rousseau's reveries as philosophy and art / Eve Grace -- John Henry Newman and autobiographical philosophy / Jay Newman -- Mill's autobiography / Fred Wilson -- The subject of Nietzsche's Ecce homo / D.G. Wright -- R.G. Collingwood : philosophy as autobiography / Lionel Rubinoff -- Is Bertrand Russell a logical fiction? / John G. Slater; Eve Grace, CC political science faculty, is contributor; Routledge advances in the history of philosophy ; 2"@en ;
+    bf:Note "edited by Thomas Mathien and D.G. Wright; 25 cm; Includes bibliographical references and index; Philosophers' autobiographies / Thomas Mathien -- The Confessions of Saint Augustine : accessory to grace / Samantha Thompson -- Who is Peter Abelard? / Calvin G. Normore -- Philosophy without heroism : Montaigne and the vanity of autobiography / D.G. Wright -- Exile and philosophy : Descartes / AndrÃƒÂ© Gombay -- Scrissela da filosofo : the life of Giambattista Vico written by himself / Domenico Pietropaolo -- Hume's \"life\" and the virtues of the dying / Donald C. Ainslie -- Portraying nature : Rousseau's reveries as philosophy and art / Eve Grace -- John Henry Newman and autobiographical philosophy / Jay Newman -- Mill's autobiography / Fred Wilson -- The subject of Nietzsche's Ecce homo / D.G. Wright -- R.G. Collingwood : philosophy as autobiography / Lionel Rubinoff -- Is Bertrand Russell a logical fiction? / John G. Slater; Eve Grace, CC political science faculty, is contributor; Routledge advances in the history of philosophy ; 2"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "0415327040" ;
     bf:provisionActivityStatement "London; New York : Routledge, 2006"@en ;
@@ -25509,23 +25641,23 @@
     bf:provisionActivityStatement "New York : Psychology Press, 2007"@en ;
     bf:title "Evolution and the social mind : evolutionary psychology and social cognition"@en ;
     schema:publicationDate "2007" ;
-    cite:authorString "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel." ;
+    schema:editor "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel." ;
     cite:callNumber "BF323.S63 E96 2007" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1794198~s5> a bf:Book ;
-    bf:Note "edited by David McGimpsey; ; 22 cm; Gift of contributor Steven Hayward, CC English faculty, 2009; Moosehead anthology (Montreal) ; XI"@en ;
+    bf:Note "edited by David McGimpsey; 22 cm; Gift of contributor Steven Hayward, CC English faculty, 2009; Moosehead anthology (Montreal) ; XI"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9781897190159" ;
     bf:provisionActivityStatement "Montreal : DC Books, 2007"@en ;
     bf:title "Dingers : contemporary baseball writing"@en ;
     schema:publicationDate "2007" ;
-    cite:authorString "edited by David McGimpsey." ;
+    schema:editor "edited by David McGimpsey." ;
     cite:callNumber "PR9194.52.B37 D56 2007" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2033737~s5> a bf:Book ;
-    bf:Note "edited by Jeffrey O.G. Ogbar; ; 24 cm; Includes bibliographical references and index; Introduction -- pt. 1. Aesthetics and the new Negro -- African American representations on stage : minstrel performances and Hurston's dream of a \"real\" Negro theatre / Mónica González Caldeiro -- No Negro Renaissance : Hubert H. Harrison and the role of the new Negro literary critic / Ousmane Kirumu Power-Greene -- It's all sacred music : Duke Ellington, from the Cotton Club to the cathedral / Frank A. Salamone -- pt. 2. Class and place in Harlem -- \"So the girl marries\" : class, the black press, and the Du Bois-Cullen wedding of 1928 / Jacqueline C. Jones -- The meaning and significance of Southern tradition in Rudolph Fisher's stories / Aija Poikane-Daumke -- Back to Harlem : abstract everyday labor during the Harlem Renaissance / Jacob S. Dorman -- pt. 3. Literary icons reconsidered -- Jessie Redmon Fauset reconsidered / Claire Oberon Garcia -- Speak it into existence : James Weldon Johnson's God's trombones and the power of self-definition in the new Negro Harlem Renaissance / McKinley Melton -- Border crossings : the diasporic travels of Claude McKay and Zora Neale Hurston  / Myriam J.A. Chancy -- The search for self in Wallace Thurman's The blacker the berry : color, class, and community / Martha E. Cook -- pt. 4. Gender constructions -- Jack Johnson, Paul Robeson, and the hypermasculine African American Übermensch / Paula Marie Seniors -- Between Black gay men : artistic collaboration and the Harlem Renaissance in Brother to brother / Shawn Anthony Christian -- pt. 5. Politics and the new Negro -- Perspectives on interwar culture : remapping the new Negro era / Perry Hall -- \"Harlem globe-trotters\" : Black sojourners in Stalin's Soviet Union / Maxim Matusevich -- Afterword; Contributor Claire Oberon Garcia is CC professor of English"@en ;
+    bf:Note "edited by Jeffrey O.G. Ogbar; 24 cm; Includes bibliographical references and index; Introduction -- pt. 1. Aesthetics and the new Negro -- African American representations on stage : minstrel performances and Hurston's dream of a \"real\" Negro theatre / Mónica González Caldeiro -- No Negro Renaissance : Hubert H. Harrison and the role of the new Negro literary critic / Ousmane Kirumu Power-Greene -- It's all sacred music : Duke Ellington, from the Cotton Club to the cathedral / Frank A. Salamone -- pt. 2. Class and place in Harlem -- \"So the girl marries\" : class, the black press, and the Du Bois-Cullen wedding of 1928 / Jacqueline C. Jones -- The meaning and significance of Southern tradition in Rudolph Fisher's stories / Aija Poikane-Daumke -- Back to Harlem : abstract everyday labor during the Harlem Renaissance / Jacob S. Dorman -- pt. 3. Literary icons reconsidered -- Jessie Redmon Fauset reconsidered / Claire Oberon Garcia -- Speak it into existence : James Weldon Johnson's God's trombones and the power of self-definition in the new Negro Harlem Renaissance / McKinley Melton -- Border crossings : the diasporic travels of Claude McKay and Zora Neale Hurston  / Myriam J.A. Chancy -- The search for self in Wallace Thurman's The blacker the berry : color, class, and community / Martha E. Cook -- pt. 4. Gender constructions -- Jack Johnson, Paul Robeson, and the hypermasculine African American Übermensch / Paula Marie Seniors -- Between Black gay men : artistic collaboration and the Harlem Renaissance in Brother to brother / Shawn Anthony Christian -- pt. 5. Politics and the new Negro -- Perspectives on interwar culture : remapping the new Negro era / Perry Hall -- \"Harlem globe-trotters\" : Black sojourners in Stalin's Soviet Union / Maxim Matusevich -- Afterword; Contributor Claire Oberon Garcia is CC professor of English"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780801894602" ;
     bf:provisionActivityStatement "Baltimore Md. : Johns Hopkins University Press, 2010"@en ;
@@ -25533,6 +25665,18 @@
     schema:editor "Jeffrey O.G. Ogbar"@en ;
     schema:publicationDate "2010" ;
     cite:callNumber "E185.89.I56 H37 2010" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2058051~s5> a bf:Book ;
+    bf:Note "W.C. Jameson, editor; 23 cm; Anatomy of a story / Margaret Cohen -- Opening a town / David Mason -- Getting in bed with your co-writer / Kym O'Connell Todd and Mark Todd -- From pretty pink bows to chicken manure : embracing poetry as practice / Rosemerry Wahtola Trommer -- The writing life : fraught with monsters, real and imagined / Larry Meredith -- Writing my way from effect to cause : from journalist to journal-ist / Mara Purl -- Journey of discovery / Dan Guenther -- What the hell am I doing? / Kathy Brandt -- Cowboy up! / Mario Acevedo -- Writing my way home / Susan Tweit -- The writer as shaman / Joe Stone -- An elevated view / Laurie Wagner Buyer; Contributor David Mason is CC professor of English"@en ;
+    bf:Summary "\"Editor W.C. Jameson has long been interested in why writers do what they do. Why do they write? What obstacles do they encounter, and how do they overcome inevitable bumps in the road? He also wondered how living in Colorado specifically influences the writing experience. So he asked authors, with no rules or boundaries, to share whatever they wanted about their art and lives. These eclectic essays are a peek inside the minds of Colorado authors as they reflect on topics like the writing process, identity as shaped by place, and the stronghold of Colorado's history as a catalyst for creativity\"--P. [4] of cover"@en ;
+    bf:isbn "9780963082961" ;
+    bf:provisionActivityStatement "Llano, Tex. : Seven Oaks Pub., 2011"@en ;
+    bf:title "An elevated view : Colorado writers on writing"@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:editor "W.C. Jameson,  editor"@en ;
+    schema:publicationDate "2011" ;
+    cite:callNumber "PS571.C6 J347 2011" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2059368~s5> a bf:Book ;
@@ -25568,6 +25712,29 @@
     cite:callNumber "PN6071.P29 P37 2013" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b2189751~s5> a bf:Book ;
+    bf:Note "edited by Paul Franco and Leslie Marsh; 25 cm; Includes bibliographical references and index; The pursuit of intimacy, or rationalism in love / Robert Grant -- The victim of thought : the idealist inheritance / David Boucher -- Philosophy and its moods : Oakeshott on the practice of philosophy / Kenneth McIntyre -- Michael Oakeshott's philosophy of history / Geoffrey Thomas -- Radical temporality and the modern moral imagination : two themes in the thought of Michael Oakeshott / Timothy Fuller -- The religious sensibility of Michael Oakeshott / Elizabeth Corey -- Whatever it turns out to be : Oakeshott on aesthetic experience / Corey Abel -- Un dÃƒÂ©but dans la vie humaine : Michael Oakeshott on education / Paul Franco -- Michael Oakeshott on the history of political thought / Martyn Thompson -- Oakeshott and Hobbes / Noel Malcolm -- The fate of rationalism in Oakeshott's thought / Kenneth Minogue -- Oakeshott and Hayek : situating the mind / Leslie Marsh -- Oakeshott as conservative / Robert Devigne -- Oakeshott on civil association / NoÃƒÂ«l O'Sullivan -- Oakeshott on law / Steven Gerencser; Gift of contributor Tim Fuller, CC professor of political science"@en ;
+    bf:Summary "\"A collection of critical essays by leading scholars on British political philosopher Michael Oakeshott. Essays cover all aspects of Oakeshott's thought, from his theory of knowledge and philosophies of history, religion, art, and education to his reflections on morality, politics, and law\"--Provided by publisher"@en ;
+    bf:isbn "9780271054070" ;
+    bf:provisionActivityStatement "University Park, Penn. : Pennsylvania State University Press, 2012"@en ;
+    bf:title "A companion to Michael Oakeshott"@en ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:editor "edited by Paul Franco; Leslie Marsh."@en ;
+    schema:publicationDate "2012" ;
+    cite:callNumber "B1649.O344 C66 2012" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2195210~s5> a bf:Book ;
+    bf:Note "edited by Sholeh Wolpe; xiii, 140 pages ; 22 cm; text; unmediated; volume; Includes bibliographical references; Call and answer / Robert Bly -- Lady freedom among us / Rita Dove -- Your beauty is overwhelming / Naomi Shihab Nye -- Green / Yusef Komunyakaa -- On reading a biography of George Washington / Eloise Klein Healy -- End of the war, 1949 / Willis Barnstone -- Kubota to Miguel Hernandez in Heaven, Leupp, Arizona, 1942 / Garrett Hongo -- Night in blue / Brian Turner -- This place is here / Annie Finch -- Tienanmen, the aftermath / Marilyn Chin -- In mystic / Joy Harjo -- All Hallows Eve / Christopher Merrill -- History lesson / Natasha Trethewey -- An essay on liberation / David St. John -- November 11 / Kim Addonizio -- Parable of the Jew without a name / Tony Barnstone -- Tahrir / Marilyn Hacker -- Unrest / Kimiko Hahn -- Summer of '09 / Andrew Hudgins -- Reading about Rwanda / Charles Harper Webb -- The freeways considered as earth gods / Dana Gioia -- The squash man / Stuart Dischell -- The bridge of intellectuals / Richard Katrovas -- Dialogue (of the imagination's fear) / Jorie Graham -- Nelson Mandela's; Gift of contributor David Mason, CC professor of English, 2013"@en ;
+    bf:isbn "9781557286291" ;
+    bf:provisionActivityStatement "Fayetteville : The University of Arkansas Press, 2013"@en ;
+    bf:title "Breaking the jaws of silence : sixty American poets speak to the world"@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:editor "edited by Sholeh Wolpe"@en ;
+    schema:publicationDate "2013" ;
+    cite:callNumber "PS593.P77 B74 2013" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b2199460~s5> a bf:Book ;
     bf:editionStatement ""@en ;
     bf:isbn "9780195387773" ;
@@ -25591,6 +25758,18 @@
     cite:callNumber "LB2328.32.U6 R46 2014" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b2272060~s5> a bf:Book ;
+    bf:Note "40022702587; edited by Bruce E. Altschuler and Michael A. Genovese; ix, 202 pages ; 24 cm; text; unmediated; volume; Includes bibliographical references and index (pages 194- 199); ch. 1 On Shakespeare's Commanders and Kings: Leadership, Politics, and Hubris / Michael A. Genovese and Thomas E. Cronin -- ch. 2 Macbeth and Political Corruption / Bruce E. Altschuler -- ch. 3 A Dionysian Hamlet / Sarah A. Shea -- ch. 4 Antony and Cleopatra: Empire, Globalization, and the Clash of Civilizations / Paul A. Cantor -- ch. 5 Decisions, Decisions, Decisions: Tyrannicide in Julius Caesar / Philip Abbott -- ch. 6 Why Iago Is Evil: Othello and the American Desire to Understand Corruption / Coyle Neal -- ch. 7 Richard III, Tyranny, and the Modern Financial Elite / Marlene K. Sokolon -- ch. 8 Cymbeline and the Origins of Modern Liberty / David Ramsey -- ch. 9 Shakespeare's Henry V and Responsibility for War / John M. Parrish -- ch. 10 Troilus and Cressida: The Value of Reputations and the Corruption of Society / Lilly J. Goren -- ch. 11 Deception and Persuasion in Measure for Measure / Carol McNamara -- Contents note continued: ch. 12 Absurdity and Amateur Hour in the American Political Forest: A Midsummer Night's Dream and the Nightmare of Polarization / Kevan M. Yenerall; Contributing author, Thomas Cronin, is CC professor of political science"@en ;
+    bf:isbn "9781612051581" ;
+    bf:provisionActivityStatement "Boulder, CO; London : Paradigm Publishers, "@en ;
+    bf:title "Shakespeare and Politics : What a Sixteenth-Century Playwright Can Tell Us About Twenty-First-Century Politics"@en ;
+    schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
+    schema:editor "{edited by Bruce E. Altschuler; Michael A. Genovese.} year={2013}"@en ;
+    schema:publicationDate "" ;
+    cite:authorString "Michael A. Genovese, Tom Cronin" ;
+    cite:callNumber "PR3017 .S53 2013" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b2288715~s5> a bf:Book ;
     bf:Note "ID: 2014-01832; Accession Number: 2014-01832. Record Type: Main Record Document Type: Article in a collection of essays. Language: English."@en ;
     bf:editionStatement ""@en ;
@@ -25601,6 +25780,18 @@
     schema:publicationDate "" ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=rih&AN=A856274" ;
     cite:callNumber "ML420.W452 C85 2014" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2289210~s5> a bf:Book ;
+    bf:Note "edited by Jeffrey T. Kenney and Ebrahim Moosa; : ill. ; 26 cm; Includes bibliographical references and index; Introduction / Jeffrey T. Kenney and Ebrahim Moosa -- Part I. Traditions and Transformations: 1. Scripture in the modern Muslim world: the Qurran and Hadith / Jonathan Brown; 2. Ethical landscape: laws, norms, and morality / Ebrahim Moosa; 3. Government and governance / Robert D. Lee; 4. From Isfahan to the internet: Islamic theology in the global village / Anthony R. Byrd and Richard C. Martin; 5. Piety and devotion / Carl W. Ernst; 6. The multiple faces of Islamic education in a secular age / Malika Zeghal -- Part II. Themes and Trends: 7. Women and gender in the Muslim world / Valentine M. Moghadam and Namrata Mitra; 8. #Islam, social networking, and the cloud / Gary R. Bunt; 9. Islam: unbound and global / Bruce B. Lawrence; 10. Militant movements / William Shepard; 11. Secularization and the search for an authentic Muslim modern / Jeffrey T. Kenneyl 12. Islam and popular culture / Mark Sedgwick -- Part III. Case Studies of Tradition and Change: 13. The emergence of media preachers: Yusuf al-Qaradawi / Marcia Hermansen; 14. Assertive secularism, Islam, and democracy in Turkey / Ahmet T. Kuru; 15. The new Muslim Europe / JÃƒÂ¸rgen S. Nielsen; 16. Routinizing the Iranian Revolution / Mohsen Kadivar; 17. Muslim advocacy in America / Kathleen M. Moore; 18. Women and Islamic law in Bangladesh: finding a space for the fatwa / Tiffany A. Hodge; 19. Far from Mecca: modern Islam in Indonesia and Malaysia / Muhamad Ali; 20. Politics and Islamization in African public spheres / Abdulkader Tayob -- Appendix : maps and tables; Chapter 3 authored by CC Political Science faculty, Robert Lee; Religions in the modern world"@en ;
+    bf:isbn "9780415780858" ;
+    bf:provisionActivityStatement "Abingdon, Oxon; New York, NY : Routledge, 2014"@en ;
+    bf:title "Islam in the modern world"@en ;
+    schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008> ;
+    schema:editor "edited by Jeffrey T. Kenney; Ebrahim Moosa"@en ;
+    schema:publicationDate "2014" ;
+    cite:authorString "Robert Lee" ;
+    cite:callNumber "BP161.3 .I739 2014" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2357881~s5> a bf:Book ;
@@ -25661,6 +25852,19 @@
     cite:callNumber "LB1623.5 .F36 2009" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b2476943~s5> a bf:Book ;
+    bf:Note "edited by Michael A. Flower; xx, 520 pages : illustrations, maps ; 24 cm; text txt; unmediated n; volume nc; Includes bibliographical references (pages 461-494) and index; Introduction / Michael A. Flower -- Part I. Contexts: 1. Xenophon and his times / John W. I. Lee ; 2. Xenophon and Greek philosophy / Louis-AndrÃƒÂ© Dorion ; 3. Xenophon and Greek political thought / Sarah Brown Ferrario ; 4. Xenophon's place in fourth-century Greek historiography / Nino Luraghi -- Part II. Individual Works: 5. Xenophon's Anabasis and Hellenica / John Marincola ; 6. Xenophon's Apology and Memorabilia / David M. Johnson ; 7. Xenophon's Symposium / Gabriel Danzig ; 8. Xenophon's Oeconomicus / Fiona Hobden ; 9. Xenophon's Cyropaedia: tentative answers to an enigma / Melina Tamiolaki ; 10. Xenophon: the small works / John Dillery -- Part III. Techniques: 11. Xenophon's language and expression / Vivienne Gray ; 12. Xenophon's authorial voice / Christopher Pelling ; 13. Xenophon's narrative style / Tim Rood ; 14. The character and function of speeches in Xenophon / Emily Baragwanath -- Part IV. Major Subjects: 15. Xenophon as a historian / Michael A. Flower ; 16. Xenophon on leadership / Richard Fernando Buxton ; 17. Xenophon and Athens / Christopher Tuplin ; 18. Xenophon on Persia / Kostas Vlassopoulos ; 19. Xenophon's views on Sparta / Paul Christesen -- Part V. Reception and Influence: 20. Xenophon's influence in Imperial Greece Ewen Bowie ; 21. Xenophon and the instruction of princes / Noreen Humble ; 22. Xenophon's changing fortunes in the modern world / Tim Rood -- Epilogue: Xenophon: magician and friend / Edith Hall -- Important dates in the life of Xenophon; CC Rm copy is gift of contributor Richard Buxton, CC classics faculty, 2017; Cambridge companions to literature"@en ;
+    bf:Summary "\"This Companion, the first dedicated to the philosopher and historian Xenophon of Athens, gives readers a sense of why he has held such a prominent place in literary and political culture from antiquity to the present and has been a favourite author of individuals as diverse as Machiavelli, Thomas Jefferson, and Leo Tolstoy. It also sets out the major problems and issues that are at stake in the study of his writings, while simultaneously pointing the way forward to newer methodologies, issues, and questions. Although Xenophon's historical, philosophical, and technical works are usually studied in isolation because they belong to different modern genres, the emphasis here is on themes that cut across his large and varied body of writings. This volume is accessible to students and general readers, including those previously unfamiliar with Xenophon, and will also be of interest to scholars in various fields\"-- Provided by publisher"@en ;
+    bf:isbn "9781107050068" ;
+    bf:provisionActivityStatement "Cambridge, United Kingdom; New York, NY : Cambridge University Press, 2017"@en ;
+    bf:title "The Cambridge companion to Xenophon"@en ;
+    schema:author <http://catalog.coloradocollege.edu/218c8b64-c89f-11e7-adfd-005056c00008> ;
+    schema:editor "edited by Michael A. Flower."@en ;
+    schema:publicationDate "2017" ;
+    cite:authorString "Richard Fernando Buxton" ;
+    cite:callNumber "PA4497 .C434 2017" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b2482974~s5> a bf:Book ;
     bf:Note "pages ; 20 cm; text txt; unmediated n; volume nc; Superiority fantasy / Nathan James -- Holes in my identity / Nathan Yungerberg -- They shootin! or, I ain't neva scared ... / Idris Goodwin -- Dead of night ... the execution of ... / Nambi E. Kelly -- Abortion / NSangou Njikam -- Walking next to Michael Brown / Eric Micha Holmes -- How I feed / Dennis A. Allen II; Contributor Idris Goodwin is CC theatre and dance faculty, 2017"@en ;
     bf:Summary "\"In light of the police shootings of Mike Brown in Ferguson, Missouri and John Crawford III in Beavercreek, Ohio, among others, The New Black Fest commissioned seven emerging black playwrights to write 10-15 minute monologues that explore their feelings about the well- being of black in a culture of institutional profiling.\"-- Publisher's Web site"@en ;
@@ -25671,6 +25875,20 @@
     schema:publicationDate "2016" ;
     cite:authorString "Plays by Nathan James, Nathan Yungerberg, Idris Goodwin, Nambi E. Kelley, NSangou Njikam, Eric Micha Holmes, Dennis A. Allen II." ;
     cite:callNumber "PS627.N4 N48 2016" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2575985~s5> a bf:Book ;
+    bf:note "Marinescu, Andreea; Allen de Oliveira, Tessa (translator)"@en ;
+    bf:editionStatement ""@en ;
+    bf:isbn "9780814341063" ;
+    bf:provisionActivityStatement "Detroit, MI : Wayne State UP, 2017"@en ;
+    bf:title "Raul Ruiz's Cinema of Inquiry"@en ;
+    schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
+    schema:editor "edited by Ignacio Lopez-Vicuna; Andreea Marinescu"@en ;
+    schema:publicationDate "2017" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=mzh&AN=2017443843" ;
+    cite:authorString "Andreea Marinescu, Tessa de Oliveira Allen (translator)" ;
+    cite:callNumber "PN1998.3.R8355 R38 2017" ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/000f4c5c-3d0f-11e8-9521-a41f7283f8d4> a schema:Periodical ;
@@ -26021,10 +26239,6 @@
 <http://catalog.coloradocollege.edu/6da921e5-3911-11e8-a863-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1814" ;
     schema:partOf <http://catalog.coloradocollege.edu/6da921e4-3911-11e8-947a-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/6eff3498-4276-11e8-970f-a41f7283f8d4> a schema:Periodical ;
-    schema:issn "0016-7037" ;
-    schema:name "Geochimica et Cosmochimica Acta"@en .
 
 <http://catalog.coloradocollege.edu/6faa9798-4276-11e8-8082-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/6f894458-4276-11e8-8c82-a41f7283f8d4> ;
@@ -26425,6 +26639,20 @@
     schema:issn "0269-1191" ;
     schema:name "French History"@en .
 
+<https://tiger.coloradocollege.edu/record=b2102505~s5> a bf:Book ;
+    bf:Note "edited by Robert Timothy Chasson and Thomas J. Sienkewicz; : ill., some col. ; 29 cm; Foreword / Christopher Welna -- Preface: Botticelli, bureaucrats and bankers : a view of Florence from Chicago / Elizabeth Hayford -- Biography of Janet Goodhue Smith -- Courses taught by Janet Goodhue Smith -- Teaching in Florence for thirty-six years / Janet Goodhue Smith -- About the contributors -- pt. 1. Art History -- Lorenzo de'Medici and Poggio a Caiano: an Augustan ambiguity of purpose in building / Edmund Burke -- Theseus' lyre / Stephen Fineberg -- A revealing omission in Alberti's De re aedificatoria / Jeffrey Hoover -- Alexandre Lenoir's tomb for Blanche of Castille / Mary B. Shephard -- \"Yankee stonecutter, Florentine sculptor: Thoughts on revising our model for studying expatriot artists / Julia Sienkewicz -- Teaching Hercules in Florence / Thomas J. Sienkewicz -- \"How do you solve a problem like Maria?\": Fashioning the Virgin in Renaissance Venice / Katherine R. Smith Abbott - - Teaching heaven, hell, and Taddeo di Bartolo at San Gimignano / Gail E. Solberg -- In the margin: Meditations on Bernardino Poccetti / Robert Warde -- pt. 2. The city - - Janet Smith's and Machiavelli's Florence then back to the future / Salvatore Bizzarro -- When \"The wild West\" went to Florence / William L. Urban -- When Florence was a flood plain / Robert Hellenga -- Tuscany / Robert Hellenga -- pt. 3. Italian politics -- Enforcing justice: The controversial case of Giuseppe Musolino / Susan A. Ashley -- Italy's Mediterranean vocation / Robert Lee -- The contentious path of the Italian Left, 1920-2010 / W. Rand Smith -- pt. 4. Literature and literary criticism -- Images from Italy / Robert Grafsgaard -- \"Worn out shoes,\" a translation from Natalia Ginzburg's Le piccole virtu / Virginia Hellenga -- \"My poetry won't change the world,\" selected poems translated from Patrizia Cavalli's Le mie poesie non cambieranno il mondo / Virginia Hellenga -- A holy career in early modern Florence: The Vita of Maria Minima Stozzi di San Filippo Neri / Anne Jacobson Schutte -- Four poems / Nicholas Regiacorte -- \"Mixed field greens\" and \"At Madonna dell'Incoronata,\" both translated from Fujj' ammÃƒÂ«sÃŒâ€ che, poems in Vastese / Nicholas Regiacorte -- Il cuore perduto / Sylvia Zethmayr Shults -- Ut pictura poesis: A note on the word order in De rerum natura I. 99 / Daniel J. Taylor -- Prudenza as spectacle: Machiavelli, Cervantes, and their leading ladies / Patricia Vilches -- Inferno...and beyond / Susan Warde -- Afterword: Janet Goodhue Smith's humanism / Diane Mockbridge -- Appendix: Visiting faculty for ACM Florence programs -- Visiting faculty courses for ACM Florence programs; Gift of the publisher, 2012; Contributors Susan A. Ashley, Robert Lee, and Salvatore Bizzarro are CC history, political science, and Romance languages faculty, respectively"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Chicago, Ill. : Associated Colleges of the Midwest, 2012"@en ;
+    bf:title "The power of place : a festschrift for Janet Goodhue Smith"@en ;
+    schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008>,
+        <http://catalog.coloradocollege.edu/5f93d92e-b0f0-11e6-aeec-005056c00008> ;
+    schema:editor "edited by Robert Timothy Chasson; Thomas J. Sienkewicz"@en ;
+    schema:publicationDate "2012" ;
+    cite:authorString "Robert Lee",
+        "Susan A. Ashley" ;
+    cite:callNumber "LC196 .P69 2012" ;
+    cite:citationType "book"@en .
+
 <http://catalog.coloradocollege.edu/06746940-41c4-11e8-82a8-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/5ec28546-3911-11e8-b7fe-a41f7283f8d4> ;
     schema:volumeNumber "219" .
@@ -26448,10 +26676,6 @@
 <http://catalog.coloradocollege.edu/0dc268ac-3d0f-11e8-ab0b-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0030-8684" ;
     schema:name "Pacific Historical Review"@en .
-
-<http://catalog.coloradocollege.edu/10340cba-3d0f-11e8-8f02-a41f7283f8d4> a schema:Periodical ;
-    schema:issn "0036-8075" ;
-    schema:name "Science"@en .
 
 <http://catalog.coloradocollege.edu/1412ec28-3911-11e8-9c97-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0027-8424" ;
@@ -26633,6 +26857,10 @@
 <http://catalog.coloradocollege.edu/0b25df58-3911-11e8-b9cf-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0037-3052" ;
     schema:name "Sewanee Review"@en .
+
+<http://catalog.coloradocollege.edu/10340cba-3d0f-11e8-8f02-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0036-8075" ;
+    schema:name "Science"@en .
 
 <http://catalog.coloradocollege.edu/56f98599-3911-11e8-a016-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
