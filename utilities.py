@@ -211,6 +211,10 @@ class Citation(object):
         print("Self.author is ",self.raw_citation["author"])
         self.author_string = self.raw_citation["author"]
         self.author_string = self.author_string.replace(" and ",", ")
+        # remove any periods at end of author string
+        if self.author_string != None and self.author_string != "":
+            if self.author_string[len(self.author_string)-1] == ".":
+                self.author_string=self.author_string[:len(self.author_string)-1]
 
     def __CC_author__(self):
         
@@ -504,7 +508,7 @@ class Article_Citation(Citation):
         # add the author string
         self.creative_works.add((self.doi_iri,
                                  CITATION_EXTENSION.authorString,
-                                 rdflib.Literal(self.author_string)))
+                                 rdflib.Literal(self.author_string,lang="en")))
 
         # add the publication year
         self.creative_works.add((self.doi_iri,SCHEMA.datePublished,rdflib.Literal(self.year)))
@@ -682,7 +686,7 @@ class Book_Citation(Citation):
             self.creative_works.add((self.bib_uri,SCHEMA.author,author))
 
         #add author_string
-        self.creative_works.add((self.bib_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string)))
+        self.creative_works.add((self.bib_uri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string,lang="en")))
 
         #add editor if field present
         if self.editor != "" and self.editor != None:
