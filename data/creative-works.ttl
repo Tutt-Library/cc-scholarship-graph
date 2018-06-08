@@ -252,7 +252,7 @@
     bf:provisionActivityStatement "New York, N.Y. : Routledge, 2015"@en ;
     bf:title "Advancing collaboration theory: Models, typologies, and evidence"@en ;
     schema:author <http://orcid.org/0000-0003-0573-2852> ;
-	schema:editor "edited by John C. Morris and Katrina Miller-Stevens"@en ;
+    schema:editor "edited by John C. Morris and Katrina Miller-Stevens"@en ;
     schema:publicationDate "2015" ;
     schema:url "https://lccn.loc.gov/2015013414" ;
     cite:citationType "book"@en .
@@ -929,6 +929,9 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/2c0d2842-3912-11e8-9207-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Record, The (Kitchener/Cambridge/Waterloo, ON)"@en .
+
 <http://catalog.coloradocollege.edu/2d192163-3912-11e8-99b1-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses the importance of pharmaceutical innovation and intellectual property rights to improving the U.S.' public health. Topics include the provisions on the standards of protection for pharmaceuticals contained in the Trans-Pacific Partnership Trade Agreement, the need for the global community too address the issues that inhibit access to medicines, and the link between better health and incentivizing the development of treatments for diseases of the poor." ;
     schema:author <http://catalog.coloradocollege.edu/39135a12-bcd4-11e6-a418-005056c00008> ;
@@ -1131,9 +1134,9 @@
     bf:provisionActivityStatement "Cambridge : Cambridge University Press, 2010"@en ;
     bf:title "Kierkegaard's 'Concluding Unscientific Postscript' : A Critical Guide"@en ;
     schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
+    schema:editor "Edited by Rick Anthony Furtak"@en ;
     schema:publicationDate "2010" ;
     schema:url "https://lccn.loc.gov/2010011448" ;
-	schema:editor "Edited by Rick Anthony Furtak"@en ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/3d549f5a-3911-11e8-b088-a41f7283f8d4> a bf:Book ;
@@ -1142,7 +1145,7 @@
     bf:provisionActivityStatement "New York : Fordham Univ. Press, 2012"@en ;
     bf:title "Thoreau's importance for philosophy"@en ;
     schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
-	schema:editor "edited by Rick Anthony Furtak, Jonathan Ellsworth, and James D. Reid"@en ;
+    schema:editor "edited by Rick Anthony Furtak, Jonathan Ellsworth, and James D. Reid"@en ;
     schema:publicationDate "2012" ;
     schema:url "https://lccn.loc.gov/2011037076" ;
     cite:citationType "book"@en .
@@ -2116,7 +2119,7 @@
 <http://catalog.coloradocollege.edu/6baf761e-65d6-11e8-95b4-a41f7283f8d4> a schema:Chapter ;
     schema:PartOf <https://tiger.coloradocollege.edu/record=b2575985~s5> ;
     schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
-    schema:name "Conversation with Raul Ruiz, 2008"@en ;
+    schema:name "Conversation with Raúl Ruiz, 2008"@en ;
     cite:authorString "Andreea Marinescu, Tessa de Oliveira Allen"@en ;
     cite:citationType "book chapter"@en .
 
@@ -2345,19 +2348,6 @@
     schema:pageStart "626" ;
     schema:partOf <http://catalog.coloradocollege.edu/83b155c1-3f54-11e8-8b17-a41f7283f8d4> ;
     schema:url "http://0-www.jstor.org.tiger.coloradocollege.edu/stable/40026427" ;
-    cite:authorString "Juan D. Lindau"@en ;
-    cite:citationType "article" ;
-    cite:month "" .
-
-<https://doi.org/10.1080/00396330500433472> a schema:ScholarlyArticle ;
-    schema:about "" ;
-    schema:author <http://catalog.coloradocollege.edu/28f6fd36-b0f2-11e6-940f-005056c00008> ;
-    schema:datePublished "2005" ;
-    schema:name "The new American militarism: how Americans are seduced by war"@en ;
-    schema:pageEnd "170" ;
-    schema:pageStart "169" ;
-    schema:partOf <http://catalog.coloradocollege.edu/84108cc1-3f54-11e8-adee-a41f7283f8d4> ;
-    schema:url "https://doi.org/10.1080/00396330500433472" ;
     cite:authorString "Juan D. Lindau"@en ;
     cite:citationType "article" ;
     cite:month "" .
@@ -2933,10 +2923,6 @@
     cite:citationType "article" ;
     cite:month "Sep" .
 
-<http://catalog.coloradocollege.edu/9a004cb7-4276-11e8-905e-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "1" ;
-    schema:partOf <http://catalog.coloradocollege.edu/9a004cb6-4276-11e8-8c2b-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/9a084f31-3f55-11e8-8041-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9a084f30-3f55-11e8-9bcf-a41f7283f8d4> .
@@ -3142,6 +3128,19 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/9f511169-6b3a-11e8-96d8-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:datePublished "2001" ;
+    schema:name "Review"@en ;
+    schema:pageEnd "463" ;
+    schema:pageStart "461" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9f74c60b-6b3a-11e8-90a2-a41f7283f8d4> ;
+    schema:url <http://0-www.jstor.org.tiger.coloradocollege.edu/stable/3118134> ;
+    cite:authorString "Timothy Fuller, Wendell John Coats"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/9f9607b0-41c3-11e8-a195-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -3166,6 +3165,19 @@
     cite:authorString "J. Kathirithamby, Steve Taylor"@en ;
     cite:citationType "article" ;
     cite:month "SEP 30" .
+
+<http://catalog.coloradocollege.edu/9fc81628-6b3a-11e8-8a71-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Reviewed Works: The Ideas That Conquered the World: Peace, Democracy and Free Markets in the Twenty-First Century by Michael Mandelbaum; The Tragedy of Great Power Politics by John J. Mearsheimer" ;
+    schema:author <http://catalog.coloradocollege.edu/28185d06-b0f2-11e6-aa7f-005056c00008> ;
+    schema:datePublished "2003" ;
+    schema:name "The Lion and the Lamb: Realism and Liberalism Reconsidered"@en ;
+    schema:pageEnd "102" ;
+    schema:pageStart "93" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9a004cb7-4276-11e8-905e-a41f7283f8d4> ;
+    schema:url <http://0-www.jstor.org.tiger.coloradocollege.edu/stable/40209851> ;
+    cite:authorString "David C. Hendrickson"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/a006f07f-3911-11e8-98a8-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article reviews the book \"Literary Form, Philosophical Content: Historical Studies of Philosophical Genres,\" edited by Jonathan Lavery and Louis Groarke." ;
@@ -3204,6 +3216,19 @@
     cite:citationType "article" ;
     cite:month "MAR 7" .
 
+<http://catalog.coloradocollege.edu/a0a7fe7a-6b3a-11e8-83a7-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Numerous studies propose shortening models for foreland arches, yet there has been a dearth of the detailed crustal-scale seismic imaging to test them. Proposed models predict different crustal and basin geometries. The Bighorn Arch in northern Wyoming is an archetype of Laramide foreland arches and provides an excellent setting for the investigation of such structures. Two large Laramide foreland basins bound the arch, the Powder River Basin on its eastern flank and Bighorn Basin to the west. The Powder River Basin is deepest in the foredeep on its eastern edge, which bounds the Bighorn Arch, and shallows to the east. The foredeep of the Bighorn Basin is on its western edge and the basin thins eastward towards the Bighorn Arch. The geometry of these basins relative to the geometry of lithospheric features (e.g., the Moho) provides a crucial test of the shortening kinematics of the Bighorn Mountains. We present passive source crustal imaging through the combination of teleseismic P wave receiver function and surface wave data. Our data was obtained from the Bighorns Arch Seismic Experiment (BASE) and EarthScope USArray Transportable Array (TA). We constrain P-wave velocity, S-wave velocity, and the depth of crustal interfaces (e.g., the Moho and basement sediment contact) in order to create 2D cross-sections through the Bighorn Basin, Bighorn Mountains, and Powder River Basin. We find that the Moho thins underneath the arch with no apparent crustal root or major fault offsets. The Moho deepens east of the range, distinctly different than the west-dipping basement-sediment contact in the Powder River Basin. Our results demonstrate that geometry of the sediment-basement contact is distinctly different from the geometry of the Moho. Combined geophysical and geological studies such as these are needed to resolve the link between the lower crust, Moho geometry, and surface deformation. The geometry and evolution of sedimentary basins provide important clues to understanding larger scale lithospheric tectonics. Our results imply that foreland basement-involved arches and their load-generated foreland basins are either independent of the underlying Moho geometry or related through complex processes such as a zone of detachment, a ductile lower crust processes, or lithospheric scale flexure." ;
+    schema:author <http://catalog.coloradocollege.edu/2c7e25f4-b0e3-11e6-8530-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Conference Paper: Basin and crustal structure of the Bighorn Mountain region from teleseismic receiver function and surface wave analysis; implications for the kinematics of Laramide shortening"@en ;
+    schema:pageStart "669" ;
+    schema:partOf <http://catalog.coloradocollege.edu/68233959-4276-11e8-aae7-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2014-059576> ;
+    cite:authorString "William Luther Yeck, Josh Stachnik, Justin Ball, Anne F. Sheehan, Megan Anderson, Eric A. Erslev, Kate Miller, Christine S. Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a0eb8590-41c3-11e8-a36c-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -3238,6 +3263,18 @@
     schema:partOf <http://catalog.coloradocollege.edu/a12ec527-4276-11e8-a3e5-a41f7283f8d4> ;
     schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=9859313> ;
     cite:authorString "Douglas Monroy"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/a134e4ca-6b3a-11e8-8f2d-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "In the Colorado Front Range, granite-hosted sandstone dikes bordering the Ute Pass Fault form an array exceeding 70 km in length. Few global examples exist of clastic dikes of this extent within a crystalline host, thus the array offers a singular opportunity to investigate emplacement mechanisms, transport energy and direction, and fluid-grain transport characteristics. We present new anisotropy of magnetic susceptibility (AMS) data used to determine the alignment of detrital magnetite resulting from shear interaction of fluidized sediment with host-rock boundaries. Selected dikes are 1 to 2 meters wide, outcropping laterally up to 30 meters, with little or no overprint by brittle fracturing or shearing associated with the UPF. Where possible, samples were obtained on paired margins and in transect to test for imbrication of the magnetic foliation plane and directionality of flow. A full description of magnetic fabrics present in the dikes will help to define the emplacement behavior of the dikes, including information about the direction and flow regime of injection. Rock magnetic properties provide information about post-emplacement diagenesis and fluid flow. AMS fabrics are predominately oblate with the magnetic foliation plane, defined by the K1-K2 axes, parallel to dike or sill margins. Several sites exhibit prolate fabrics with maximum susceptibility axes oriented parallel or sub-parallel to dike margins. One premier sampling site reveals a strongly expressed subhorizontal prolate imbrication fabric. The results of our study corroborate textural petrography findings in that the dikes formed as injectites with prevalent laminar flow. Evidence points to rapid injection of dike sediment due to elevated pore-fluid pressures arising from high lithostatic or tectonic loads. We hypothesize that high sediment accumulation rates and fluid overpressure occurred in association with sediment-gravity deposition in a narrow fault-controlled trough. Our ongoing investigation extends to the tabular sandstone bodies that represent the remnants of source sands for the dikes that may have undergone liquefaction in response to a seismic or glaciogenic trigger (Siddoway et al. 2013, GSA Field Guide v. 33)." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Conference Paper: Anisotropy of magnetic susceptibility as a proxy for emplacement patterns of basement-hosted sandstone dikes, Colorado Front Range"@en ;
+    schema:pageStart "514" ;
+    schema:partOf <http://catalog.coloradocollege.edu/68233959-4276-11e8-aae7-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2014-057578> ;
+    cite:authorString "David Freedman, Michael Petronis, Christine S. Siddoway"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -3304,6 +3341,19 @@
     cite:citationType "article" ;
     cite:month "MAR" .
 
+<http://catalog.coloradocollege.edu/a222ee4a-6b3a-11e8-b218-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The Bighorn Project documented the geometry and kinematics of the Bighorn Arch, a Laramide basement-involved arch in the NE Rocky Mountains. These foreland arches have been explained by (1) crustal block translations and rotations on through-going faults, (2) crustal buckling and detachment, (3) lithospheric buckling, and (4) pure shear thickening. We tested these hypotheses with detailed arch- and crustal-scale geophysical imaging and structural studies. BASE, the Bighorn Arch Seismic Experiment, integrated passive seismic data (3 arrays with up to 850 seismometers) with active reflection/refraction data (24 shots, 1800 seismometers) collected over a 300X200 km area encompassing the central Bighorn Mountains and much of the adjoining Bighorn and Powder River basins. Complex shear wave splitting in the mantle below suggests intact Precambrian mantle lithosphere without wholesale Phanerozoic modification. Seismic tomography and gravity models show upper crustal thickening under the arch, with shallow low-velocity and low-density regions at arch margins that may correspond to Laramide fault zones. They reveal an unfaulted, continuous Moho and a heterogeneous lower crust with discontinuous patches of high velocity (>7 km/s) crust quite unlike the continuous slab of high velocity lower crust to the west. The Moho surface is arched under the northern Bighorn Arch, but this arch trends NE, at a high angle to NNW-trending Laramide arching defined by folded Phanerozoic strata. The Moho arch is probably dominantly Precambrian in age because it parallels Precambrian tends, not Laramide trends. Minor faults, paleomagnetic data and structural balancing show regional Laramide ENE-WSW shortening, locally combined with gravity spreading away from the arch high. Despite a lack of a clear impedance contrast illuminating major fault surfaces, the ENE-verging arch geometry combined with depth-to-detachment calculations indicates Laramide crustal detachment at approximately 30 km depth. The Bighorn master thrust, with associated rotational fault-propagation folding, ramped off that detachment, thickening the upper crust and forming the Bighorn Arch. We propose that the Bighorn Arch, and much of the Laramide Rockies, formed above a mid-crustal detachment rooted in the hinterland of the Sevier collisional belt." ;
+    schema:author <http://catalog.coloradocollege.edu/2c7e25f4-b0e3-11e6-8530-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Conference Paper: Laramide mid-crustal detachment in the Rockies; results from the NSF/Earthscope Bighorn Project"@en ;
+    schema:pageStart "59" ;
+    schema:partOf <http://catalog.coloradocollege.edu/68233959-4276-11e8-aae7-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2014-038531> ;
+    cite:authorString "Eric A. Erslev, Anne F. Sheehan, Kate C. Miller, Megan Anderson, Christine S. Siddoway, William Yeck, Lindsay Lowe Worthington, Karen Aydinian, Colin O'Rourke"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a25c539e-41c3-11e8-8151-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -3327,6 +3377,19 @@
     cite:authorString "David Scott Booth, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a309d3a9-6b3a-11e8-8b93-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/2c7e25f4-b0e3-11e6-8530-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Conference Paper: Imaging and modeling large-scale Laramide thrust detachment; results from the NSF-Earthscope Bighorn Project, with implications to hydrocarbon resource plays"@en ;
+    schema:pageStart "50" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a32d884a-6b3a-11e8-b2d3-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-082772> ;
+    cite:authorString "Eric Erslev, Karen Aydinian, Kate Miller, Lindsay Worthington, Anne Sheehan, Williams Yeck, Christine Siddoway, Megan Anderson"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/a33c2987-3911-11e8-9962-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "An essay is presented on the arguments concerning the acceptance of lesbian, gay, bisexual, and transgender (LGBT) people into the faith communities. It explores the reason why many Christian denominations and some strands of Judaism remain resistant to complete inclusion of LGBT people into their faith-based communities. It suggests that faith communities should welcome LGBT people to join their commitment to religion." ;
@@ -3366,6 +3429,14 @@
     cite:citationType "article" ;
     cite:month "SEP" .
 
+<http://catalog.coloradocollege.edu/a467bdcb-6b3a-11e8-9d96-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:name ""@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/a467bdca-6b3a-11e8-b879-a41f7283f8d4> ;
+    cite:authorString "Christine Siddoway, Paul Myrow, Elisa Fitz-Diaz"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/a468c570-41c3-11e8-adfa-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -3376,6 +3447,18 @@
     cite:authorString "Hunter Scott Oliver-Allen, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a4d53d0b-6b3a-11e8-82ee-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "A diorite pluton and widely distributed mafic dikes occur in the Fosdick migmatite-granite complex, which is interpreted to represent middle-to-lower crustal rocks of the paleo-Pacific active continental margin of Gondwana. The mafic dykes exhibit a variety of relationships with host rocks in the field ranging from undeformed dikes with sharp contacts with host gneisses to dismembered dykes with comingled textures and numerous back-veins of leucosome intruded from host migmatitic gneisses suggestive of significant interaction with crustal rocks. U-Pb ages for magmatic zircon in these rocks yields Cretaceous crystallization ages ranging from ca. 113 Ma to ca. 98 Ma for the mafic dykes and ca. 100 Ma for the diorite pluton. These mafic intrusive rocks, which contain abundant hydrous minerals, are medium- to high-K-series calc-alkaline rocks with basic-intermediate compositions (47-59 wt % SiO (sub 2) for mafic dikes and 52-56 wt % SiO (sub 2) for the diorite pluton). They have trace element patterns characterized by LILE enrichments and negative Nb anomalies indicating an origin from a hydrous mantle source metasomatized by slab-derived components. The samples without evidence of interaction with crustal rocks, which are likely to better reflect the mantle source composition, have positive epsilon Sr (sub (100Ma)) values (+8.1 to +14.5) and negative to slightly positive epsilon Nd (sub (100Ma)) values (-1.6 to +2.5) consistent with derivation from an enriched mantle source. These samples may be divided into two groups either characterized by higher LILE/HFSE ratios, less radiogenic epsilon Sr (sub (100Ma)) values and more radiogenic epsilon Nd (sub (100Ma)) values, or characterized by relatively lower LILE/HFSE ratios, more radiogenic epsilon Sr (sub (100Ma)) values and less radiogenic epsilon Nd (sub (100Ma)) values suggesting differences in the mantle source. The results of this study are consistent with melting of a variably metasomatized sub-arc mantle source during a transition from a wrench to a transtensional tectonic setting, but are inconsistent with a mantle plume origin." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Conference Paper: Petrogenesis of Cretaceous mafic intrusive rocks in the Fosdick Mountains, Marie Byrd Land, West Antarctica; melting of metasomatized sub-continental arc mantle along the active plate margin of Gondwana"@en ;
+    schema:pageStart "2515" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4fa784a-6b3a-11e8-98b2-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-033169> ;
+    cite:authorString "S. Saito, M. Brown, F. J. Korhonen, R. R. McFadden, Christine S. Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/a4d60630-41c3-11e8-b48e-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3411,6 +3494,18 @@
     cite:authorString "Stephanie K. Furniss, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a55029ca-6b3a-11e8-b233-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "A longstanding problem in the geology of Colorado, USA, has been the origin and age of mature quartz sandstone hosted by Mesoproterozoic plutono-metamorphic rocks. The sandstone unit, informally named Tava sandstone, consists of structureless moderately fine to fine grained quartz sandstone supporting dispersed, non-touching granule-to-cobble-sized rounded to subrounded quartz clasts, with some angular feldspar and lithics. It forms dikes and sills, that are granite-hosted in most instances, and large fault-bounded, internally-faulted bodies that attain volumes of millions of cubic meters. Rare instances of dikes and sills within a Tava sandstone host are found, and one locality there is continuity of injectites from a Tava host into a crystalline host. The distinctive sedimentological characteristics and geological context suggest liquefaction and remobilization of mature quartz sediment, some portion of which was injected into parent material and wall rock. In some instances it is clear that the sediment injected along preexisting faults; nearly all sites also display a brittle deformation overprint. Eleven detrital zircon (DZ) samples from seven sites in the Colorado Front Range and one site in the Williams Creek Range were analyzed, with acquisition of 100 to 235 zircons per sample. All contain a dominant broad age group of 0.97 to 1.33 Ga, indicative of derivation of DZs from the distant Grenville orogen, and a majority also display narrow, defined age peaks at circa 1.09 Ma, 1.45 and 1.68 Ga. These Tava sandstone shares these DZ age characteristics in common, and shows a high probability of statistical correlation, with siliciclastic units of Neoproterozoic age in the western USA. DZ data for Phanerozoic mature sandstones are dissimilar. On this basis, we conclude that Tava sandstone represents a vestige of the 800-660 Ma intracratonic sediment distribution system, that its age of origin is Neoproterozoic, and that Tava offers a new repository of paleoclimatic and paleogeographic information for Laurentia. The spatial association of Tava sandstone with NNW-oriented faults, considered together with the unusual physical conditions required for liquefaction and formation of injectites, point to a role for seismicity as a trigger for liquefaction/remobilization of sand." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2014" ;
+    schema:name "Conference Paper: Cryogenian sandstones in Colorado; a new terrestrial record for Laurentia (Rodinia) revealed through detrital zircon provenance analysis"@en ;
+    schema:pageStart "763" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6939e147-4276-11e8-99d9-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-033873> ;
+    cite:authorString "Christine S. Siddoway, G. E. Gehrels"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/a5603207-4276-11e8-a85f-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
@@ -3453,6 +3548,18 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/a5cbf14a-6b3a-11e8-ba60-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Detrital zircon (DZ) provenance analysis is used to resolve the time of emplacement of remobilized sandstones hosted by Mesoproterozoic plutono-metamorphic rocks of the Colorado Front Range (CFR). Informally named Tava sandstone, the formation represents a foremost example of sedimentary injectites within a non-sedimentary host, due to the scale of the system. Basement-hosted sandstones occur over a distance > or =75 km, with single dikes up to 6 meters in width, dike sets up to 7 km long, and putative parent bodies with volumes > or =6X10 (super 6) m (super 3) . Introduced to the geological community 130 years ago by Cross (1894), the sandstone dikes have been attributed to nearly every geological time period, including the Holocene, however paleomagnetic attributes constrain the dikes' emplacement to Pennsylvanian or older. DZ attributes may be used to refine the age brackets yet further, under the assumption that proximal, same-aged siliciclastic units contain similar diagnostic age distributions. To this end, U-Pb DZ ages were obtained for three Tava sandstone dikes and one parent body, to be compared with new U-Pb DZ ages for mature sandstone beds from four Paleozoic units of differing age. All samples are mature quartz arenite. All four Tava samples exhibit a dominant broad peak of 0.94-1.31 Ga in normalized relative age probability curves, indicative of detritus of the Grenville orogen that is prominent in mid-Cryogenian strata of the western USA. Two CFR samples exhibit pronounced peaks at ca. 1.46 and ca. 1.65 Ga, attributable to proximal sources in the Berthoud and Routt plutonic suites, that are absent in the other two samples. The DZ data from four CFR Paleozoic quartz arenite beds yield contrasting results. Basal Cambrian sandstone lacks DZs <1.30 Ga. Upper Paleozoic samples contain ca. 430 Ma zircons that are absent from remobilized sandstones, and only a small group of 0.97-1.30 Ga recycled zircons. The lack of correlation in DZ characteristics allows a proposed Paleozoic age for sandstone remobilization to be ruled out. A statistical similarity to published DZ distributions for Cryogenian strata in the western USA suggests instead that the remobilized sandstones' ancestry can be traced to the interval 770-740 Ma in Rodinia, opening avenues to deeper understanding of continental paleoenvironments and paleogeography of the time." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2014" ;
+    schema:name "Conference Paper:&nbsp; 'New' Neoproterozoic comes to light in the Colorado Front Range; detrital zircon provenance analysis resolves the age of basement-hosted injectites and remobilized mature sandstones"@en ;
+    schema:pageStart "80" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6939e147-4276-11e8-99d9-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-015859> ;
+    cite:authorString "Christine S. Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a5ddcd8b-3911-11e8-91fa-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Examines the usefulness of existing theories of settlement failure in explaining conflict in divorce disputes. Theoretical models of settlement failure; Comparison of predictions of the models; Determinants of court usage." ;
     schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
@@ -3489,6 +3596,18 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/a6586268-6b3a-11e8-bd9d-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The Colorado Front Range is a semiarid region along the urban-wildland interface characterized by summertime monsoon circulation. Understanding erosion resulting from extreme precipitation and flooding events, such as those experienced by Colorado during September 2013, is vital for mitigating consequences of more frequent extreme precipitation events expected with anthropogenic climate change. Located in Colorado Springs near the mouth of Cheyenne Canyon, the study area is a small, 2 m and deposited >1000 m (super 3) of sediment over an area of approximately 400 m (super 2) on the toe of the alluvial fan. Depositional timing can be conservatively constrained by the onset and end of precipitation. A more plausible constraint is that sedimentation only occurred above a precipitation intensity threshold at which we observed alluvial processes to initiate. In either scenario, results of the rapid sedimentation are striking. Precipitation events associated with monsoonal atmospheric circulation like the Colorado event are projected to be more extreme in nature with climate change. Coupled with periods of extended aridity, precipitation events will have compounded consequences for downstream communities as large and more frequent floods redistribute sediment over wide areas. The rates and magnitude of sedimentation from this study yield an analog for possible impacts expected during future extreme precipitation events of this nature." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2014" ;
+    schema:name "Conference Paper: Sedimentation rates and alluvial processes during extreme precipitation events in semiarid environments; dramatic growth of an alluvial fan at the urban-wildland interface, Colorado, September 2013"@en ;
+    schema:pageStart "27" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6939e147-4276-11e8-99d9-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-006817> ;
+    cite:authorString "Dirk Rasmussen, Christine S. Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a6a15050-41c3-11e8-b1fb-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -3499,6 +3618,18 @@
     cite:authorString "Shane Fancher Strom, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a6d1c88a-6b3a-11e8-bebd-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Detachment systems and MCCs, localized upon gneiss domes, formed due to intracontinental extension in East Gondwana in Cretaceous time, prior to breakup between West Antarctica and Zealandia. The Fosdick Mountains gneiss dome contains a rich record of the events within Antarctica, revealing an association between crustal melting and coalescence of granites with the formation of an oblique detachment system. Integrated structural and SHRIMP U-Pb zircon geochronology of anatectic granites in the Cretaceous Fosdick Mountains gneiss dome reveal a progression in strain from wrench at 117-115 Ma to transtension at 109-102 Ma. The extent of crustal melting and degree of hybridization of magmas varied over this short time interval, according to SHRIMP oxygen and LA-ICPMS hafnium isotope analyses of zircon, with U Pb geochronology. A further discovery comes from comparison of granites within the complex to regional Byrd Coast Granite plutons (BCG, 105-102 Ma) outside, at higher structural levels. Granites within the complex typically have large positive Eu anomalies and geochemistry due to early accumulation of feldspar and quartz, whereas BCG plutons have large negative Eu anomalies and elevated K (sub 2) O contents. Furthermore, the Hf and O zircon isotope compositions for BCG are consistent with derivation from crystallizing granites within the Fosdick complex. These attributes suggest a source-sink relationship between the Fosdick gneiss dome and outlying granites, wherein a cumulate granite component remained in the dome, creating a solid framework through which K20-enriched melts could migrate, ultimately, out of the dome. Possible evidence of strain localization within a cumulate framework (quasi-solid-state) is the presence of sillimanite shear zones from mm- to decimeters thick, within and bordering K-feldspar porphyritic granite sills and sheets. The sillimanite is thought to be a product of stress localization due to impingement of feldspars in cumulates, causing dissolution and mass transfer of alkalis and silica away with the percolating melt, leaving behind a sillimanite 'residue'. These findings suggest that granites in gneiss domes form principally as accumulations of feldspar and quartz rather than as primary or minimum-melt compositions." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2014" ;
+    schema:name "Conference Paper: Characteristics of an oblique detachment system in West Antarctica, and contributions to the breakup of Gondwana's accretionary margin"@en ;
+    schema:pageStart "24" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6939e147-4276-11e8-99d9-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-006801> ;
+    cite:authorString "Christine S. Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/a71dac40-41c3-11e8-b7c1-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3521,6 +3652,18 @@
     cite:authorString "Stephanie K. Furniss, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a7844fa8-6b3a-11e8-9d2e-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Conference Paper: Combined U-Pb ages and Hf isotopic data of detrital zircon (DZ) grains can be used to improve the spatial resolution of provenance determinations where there are multiple potential source regions. In this study, such data are used to refine the sources of DZs in Neoproterozoic-Cambrian sediment deposited across Laurentia, comprising the so-called \"Grenville sand sheet\". We compared the U-Pb ages and Hf isotope values for 1.0 Ga to 1.2 Ga crystalline rocks of North America, as a baseline for comparison to four intracratonal basal sandstones from the central U.S. DZ ages from the upper Cambrian Lamotte Sandstone, Missouri, are dominated by approximately 1.1 Ga ages, with an absence of ca. 1.4 Ga and Archean grains. epsilon (sub Hf) for these grains has a restricted range of -27.4 to -20.0, which overlaps with sources in the S. Appalachian Mountains. Glauconitic sandstones from drill core in eastern Colorado, potentially of Cambrian age, were deposited on approximately 1.4 Ga basement, but contain abundant 1.0-1.2 Ga age zircon. These, and zircon from the Neoproterozoic Tava Sandstone (CO) to the west, show a wide range of epsilon (sub Hf) values from -42.5 to -14.4. Wide ranges in epsilon (sub Hf) and U-Pb ages suggests mixing of 1.0-1.2 Ga crustal material from both proximal sources, such as the approximately 1.1 Ga Pikes Peak Batholith (CO), and distal sources, such as Grenville age accretionary terrane of the Llano Uplift (TX). A wider range in epsilon (sub Hf) of 1.0-1.2 Ga detrital zircon is observed with distance from Appalachian Mountains, suggesting the provenance of these zircon becomes more varied as a function of westward transport distance across the U.S. Low zircon supply from basement rocks indicates that much of the continent had low relief and served as a depocenter for detritus from the south and east. The Upper Flathead (WY) and Sawatch (CO) basal Cambrian sandstones contain no DZs of Grenville age, an indication that Grenville DZ sources to the east or south were shut off. The Flathead is dominated by approximately 1.7 Ga DZs; although it rests on Archean basement, it contains few Archean grains. The Sawatch rests upon Pikes Peak Granite but yielded no approximately 1.1 Ga DZs; a dominance of DZs are approximately 1.4 and approximately 1.7 Ga. The presence or absence of Grenville derived detrital sediments in the Cambrian sandstones at the \"Great Unconformity\" may be controlled by external forcing, including irregular transgression of the Sauk Sea." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Hafnium isotope evidence on the sources of Grenville-age detrital zircon deposited at the great unconformity"@en ;
+    schema:pageStart "861" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2016-091677> ;
+    cite:authorString "Aaron L. Hantsche, G. L. Farmer, Christine Siddoway, Christopher M. Fedo"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/a7baa830-3f55-11e8-8b46-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "A new supplemented concept of the genus Traegaardhia Zacharda, 1980 (Acari: Rhagidiidae) is presented and descriptions of seven new species of the genus are given. These are Traegaardhia cavernarum n. sp., T. cavernicola n. sp., T. distosolenidia n. sp., T. gracilis n. sp., T. nasuta n. sp., T. subterranea n. sp., from caves located in northeastern Prealps, Italy, and T. similis n. sp. from the Ozark Plateaus, southeastern USA. The neotype of Foveacheles holsingeri Zacharda, 1980 is assigned, the species is redescribed and together with Foveacheles paralleloseta Zacharda, 1985, transferred into the genus Traegaardhia. Foveacheles thaleri n. sp. is described as the possible epigean ancestor of the derivative troglobiotic T. subterranea and the adaptive shift hypothesis and parapatric speciation of T. subterranea is outlined. A key to adults of the known eleven species of the genus Traegaardhia is presented. The biogeography, morphological adaptations to life in caves (troglomorphisms), vicariance and distribution of the presented taxa are briefly discussed. All new taxa are authored by M. Zacharda only." ;
@@ -3556,6 +3699,19 @@
     schema:partOf <http://catalog.coloradocollege.edu/a8b066a7-4276-11e8-a3b3-a41f7283f8d4> ;
     schema:url "http://0-www.jstor.org.tiger.coloradocollege.edu/stable/27501816" ;
     cite:authorString "Douglas Monroy"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/a88b20e8-6b3a-11e8-9d11-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Results from the Deep Probe and CD-ROM experiments showed that the crustal structure of the Rocky Mountain west records a history of complex lithospheric evolution from Precambrian accretion to Cretaceous-Paleogene Laramide shortening. The NSF/EarthScope-funded Bighorn Arch Seismic Experiment (BASE) collected two active source P-wave velocity model profiles across north-central Wyoming in 2010. Analysis of these velocity models and single-fold reflection data, together with potential field modeling of regional gravity and magnetic signals, constrains crustal structure and thickness of the Bighorn region. We image a west-dipping reflection boundary and model a sharp magnetic contact east of the Bighorn Arch that together may be part of a previously undetected Precambrian suture zone. Localized patches of a high-velocity, high-density lower crustal layer (the '7.x layer') occur across the study area, but are largely absent beneath the Bighorn arch culmination. Moho topography is relatively smooth with no large-scale offsets, with depths ranging from approximately 50-37 km, and is largely decoupled from Laramide basement topography. These observations suggest that: 1) the edge of the Archean Wyoming craton may lie just east of the Bighorn Mountains, approximately 300 km east of previous interpretations; and 2) Laramide deformation may be localized in areas with thin or absent 7.x layer, due to its relatively weak lower crust, leading to detachment faulting. Our findings provide important new details about Precambrian tectonics and crustal architecture in Wyoming that augment the discoveries made in the Deep Probe and CD-ROM projects for which G. Randy Keller served as a lead investigator. In addition they indicate that basement-involved foreland arches may be critically dependent on pre-existing lateral heterogeneities in crustal structure." ;
+    schema:author <http://catalog.coloradocollege.edu/2c7e25f4-b0e3-11e6-8530-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Conference Paper: Building on the legacy of deep probe and CD-ROM; crustal structure of the Bighorn Mountains, Wyoming and its relationship to Precambrian and Laramide tectonics"@en ;
+    schema:pageStart "463" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2016-027965> ;
+    cite:authorString "Lindsay Lowe Worthington, Kate C. Miller, Kevin R. Chamberlain, Eric Erslev, Anne Sheehan, Megan Anderson, Steven Harder, Christine S. Siddoway"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -3618,6 +3774,18 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/a9531468-6b3a-11e8-bcfe-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Migmatitic paragneiss and orthogneiss from the Fosdick migmatite-granite complex in West Antarctica record two metamorphic events: one in the Devonian-Carboniferous and the other in the Cretaceous. SHRIMP U-Pb monazite ages define two dominant populations at 365-300 Ma (from cores of polychronic grains) and 120-96 Ma (from rims of polychronic grains and from monochronic grains). For five paragneisses and two orthogneisses, Lu-Hf garnet ages range from 116 to 111 Ma, c. 12-17 Myr older than Sm-Nd garnet ages of 102-99 Ma from three of the same samples. LA-ICP-MS analysis shows that garnet grains have Lu-enriched rims relative to Lu-depleted cores. By contrast, garnet grains generally have flat Sm concentrations consistent with high-temperature diffusive resetting. Lutetium enrichment of garnet rims is interpreted to record the breakdown of a Lu-rich accessory mineral such as apatite or monazite during the final stage of garnet growth immediately prior to the metamorphic peak. Alternatively, the Lu-enriched rims may reflect the preferential retention of Lu in garnet during breakdown to cordierite in the presence of melt concomitant with the initial stages of exhumation. Therefore, garnet is interpreted to be part of the Cretaceous mineral paragenesis and the Lu-Hf garnet ages are interpreted to record the timing of close-to-peak metamorphism for this event. For the Devonian-Carboniferous event, phase equilibria modelling of the metasedimentary protoliths to the paragneiss and a diatexite migmatite restrict the peak P-T conditions to 720-800 degrees C at 0.45-1.0 GPa. For the Cretaceous event, using both forward and inverse phase equilibria modelling of residual paragneiss and orthogneiss compositions, the P-T conditions after decompression are estimated to have been 850-880 degrees C at 0.65-0.80 GPa. These P-T conditions occurred between c. 106 and c. 96 Ma, determined from Y-enriched rims on monazite that record the timing of garnet and biotite breakdown to cordierite in the presence of melt. The effects of this younger metamorphic event are dominant throughout the Fosdick complex." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Conference Paper: Decoding multiple high-temperature metamorphic events using phase equilibria modelling, Lu-Hf garnet geochronology and in situ U-Pb monazite geochronology"@en ;
+    schema:pageStart "431" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2016-032642> ;
+    cite:authorString "Chris Yakymchuk, Michael Brown, Fawna J. Korhonen, Christine S. Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a958d770-3f55-11e8-89bf-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "A review of Acanthocephala of America north of Mexico is presented with an updated key to species. A. confraterna is considered a junior synonym of A. terminalis, thus reducing the number of known species in this region from five to four. New state and country records are presented." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
@@ -3677,6 +3845,18 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/aa1d905a-6b3a-11e8-8e0b-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Detrital zircon (DZ) U-Pb ages aid the investigation of the sedimentary provenance of basal Cambrian Sawatch Sandstone and Neoproterozoic remobilized siliciclastic rocks in central Colorado, with bearing on intracontinental paleogeography and tectonics of Laurentia. Eighteen DZ samples were obtained from 12 sites of clastic-crystalline contacts, separated by up to 120 km, and analyzed by LA-ICPMS at the Arizona Laserchron Center. Cambrian Sawatch Sandstone, sampled from quartz arenite beds overlying the Great Unconformity at three locations, lack 1.31 to 0.93 Ga zircons. U-Pb ages define sharp peaks at ca. 1.44 Ga (51% of analyses) and ca. 1.70 Ga (45%) on normalized probability plots. Five tightly clustered youngest grains in 1 sample produce a weighted mean age of 520+ or -11 Ma, for a maximum age of Sawatch deposition. Neoproterozoic Tava sandstone, composed of unsorted fine-grained quartz arenite supporting isolated rounded pebbles, yields prevalent ages 1.31 to 0.93 Ga. The broad age peak in normalized relative age probability diagrams for all Tava samples correlates to the widespread U Pb age signature of Grenville orogen detritus, that is pronounced in DZ age distributions for other Neoproterozoic strata in Utah, Arizona and California. Kolmogorov-Smirnov (K-S) statistics show a high probability of correlation among the 15 Tava samples, broadening the Tava sandstone's known areal extent to 25000 km2, and moderately high correlation factors to other Neoprot. strata. This suggests that the Colorado siliciclastics initiated as part of the continental system carrying well-mixed detritus away from Grenville mountains to sites of deposition across a broad, low relief, intercontinental region. Four Tava sandstone injectite samples, however, display sharp narrow age peaks at ca. 1.45 and ca. 1.72 Ga that are attributable to local sources in the Routt and Berthod plutonic suites. The presence of locally derived, 1.7 and 1.4 Ga DZ in forcefully injected Tava sandstone requires erosion and exhumation of Proterozoic crystalline basement, well in advance of development of the Great Unconformity. There is a possibility of initiation of fault-controlled depocenters. During Sawatch deposition, Grenville detritus was no longer available and DZs derived from local Proterozoic sources." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Conference Paper: Laurentia intracontinental breakup structures and paleogeography, illuminated by detrital zircon age spectra from Neoproterozoic-Cambrian sandstones of regional extent in Colorado, USA"@en ;
+    schema:pageStart "159" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2016-009916> ;
+    cite:authorString "Sally Shatford, Christine Siddoway, Sergio Perez, Charlotte Cadow"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/aa37f647-3911-11e8-92a7-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Focuses on the life and work of American poet Anthony Hecht. Published poems; Personal background; Themes and subjects of Hecht's poetry; Literary style; Major works; Reputation." ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
@@ -3711,6 +3891,18 @@
     cite:authorString "Allison O'Connell, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/aad0177a-6b3a-11e8-bccc-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "A NE-SW trending, steeply-dipping shear zone in the southern gneiss terrain of the southern Bighorn Mountains of north-central Wyoming may be a foreland thrust-fault related to the Oregon Trail structural belt (OTSB) of the Granite Mountains, approximately 150 km to the south. Preliminary U-Pb apatite dates (450 degrees C cooling dates) document unroofing of the southern Bighorn Mountains during the Archean, ca. 2.65 Ga, coeval with movement on the OTSB. U-Pb dates of syntectonic sphene collected from a sheared mafic dike suggest the Powder River Pass shear zone developed at ca. 2.64 Ga. Microstructures analyzed in thin-section exhibit a strong fabric, syntectonic growth of sphene, and sub-grain rotation of feldspar. Both sigma and delta-augens analyzed from hand-sample suggest a south-side up sense of movement. An alternative model of south-side up bulk tilting of the basement without movement on a discrete fault will be tested by high temperature thermal histories on either side of the fault through U-Pb dating of apatite. The OTSB transects the Granite Mountains, an east-west trending uplift in south-central Wyoming and is interpreted as a deformation front related to continent-arc collisions ca. 2.65-2.62 Ga. This study provides important insights into the tectonic evolution of the Wyoming province and southern Bighorn Mountains during the Neoarchean approximately 2.65 Ga and may lead to better tectonic models for thick-skinned basement uplifts associated with continent-arc collisions." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Conference Paper: The Powder River Pass shear zone; roots of an Archean foreland thrust fault?"@en ;
+    schema:pageStart "39" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-121182> ;
+    cite:authorString "Grace E. Parker, Kevin Chamberlain, Christine Siddoway"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/aad04e07-3911-11e8-9fd1-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article presents the poem \"The Language of the Gun,\" by David Mason. First Line: Tikas had seen the village of Segundo; Last Line: though wit means little in the face of war." ;
@@ -3796,6 +3988,19 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/abf9a35a-6b3a-11e8-abc9-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The Bighorn Project documented the geometry and kinematics of the Bighorn Arch, a Laramide basement-involved arch in the NE Rocky Mountains. Foreland arches have been explained by 1) crustal block translations and rotations on mantle-cutting faults, 2) crustal buckling and detachment, 3) lithospheric buckling, and 4) pure shear thickening. These hypotheses were tested with crustal-scale geophysical imaging and structural studies. The Bighorn Arch Seismic Experiment integrated passive seismic data (3 arrays with up to 850 seismometers) with active reflection/refraction data (24 shots, 1800 seismometers) collected over a 300 X 200 km area encompassing the central Bighorn Mountains and much of the adjoining Bighorn and Powder River basins. Complex shear wave splitting in the mantle below suggests intact Precambrian mantle lithosphere without wholesale Phanerozoic modification. Seismic tomography and gravity models show upper crustal thickening under the arch, with low-velocity and low-density regions at arch margins that co-locate with Laramide fault zones. Seismic tomography reveal a continuous, unfaulted Moho and a heterogeneous lower crust with discontinuous patches of high velocity (>7 km/s) crust quite unlike the more continuous high velocity lower crust to the west. The Moho surface is arched under the northern Bighorn Arch, but this NE-trending arch is at a high angle to the NNW-trending Laramide arch defined by folded Phanerozoic strata. This suggests that the Moho arch is largely Precambrian in age and that Laramide deformation was driven by crustal detachment. Minor faults, paleomagnetic data and structural balancing show Laramide ENE-WSW shortening, locally complicated slip partitioning at the arch's northern plunge. Serial cross-sections show symmetric to ENE-verging arch geometries and reveal that the Bighorn Arch developed progressively by ENE-WSW layer-parallel shortening and detachment folding followed by ENE-directed slip on the Bighorn master thrust and associated folding. Depth-to-detachment calculations indicate Laramide crustal detachment at approximately 30 km depth. This structural sequence is identical to that of many thin-skinned thrust belts, suggesting that the Laramide Rocky Mountains formed as a crustal-scale thrust belt rooted in the hinterland of the Cordilleran orogen." ;
+    schema:author <http://catalog.coloradocollege.edu/2c7e25f4-b0e3-11e6-8530-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2015" ;
+    schema:name "Conference Paper: Basement-involved Laramide thrusting and lower-crustal detachment in the Rockies; results from the NSF/Earthscope Bighorn Project"@en ;
+    schema:pageStart "9" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2015-109688> ;
+    cite:authorString "Eric A. Erslev, Lindsay Lowe Worthington, Karen Aydinian, Kate C. Miller, A. Sheehan, William Yeck, Colin O'Rourke, Christine S. Siddoway, Megan Anderson, Steve Harder"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/ac16b7fa-3911-11e8-9573-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "This essay discusses the concept of the terms memory and imagination in the poems of B. H. Fairchild. According to the author, memory and imagination refers to only one thing based on the meaning given by author Thomas Hobbes. The author also aimed to correct other authors' mispresentation of Fairchild as a poet of memory. The author stressed that Fairchild is far more thoughtful, far more complicated writer than many critics have yet understood. He is a philosophical poet embodying his ideas in narratives about a variety of people." ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
@@ -3843,6 +4048,18 @@
     schema:partOf <http://catalog.coloradocollege.edu/ac9159f7-4276-11e8-b837-a41f7283f8d4> ;
     schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=hia&AN=66614499> ;
     cite:authorString "Joan E. Ericson"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/acae8bda-6b3a-11e8-8e61-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "A cryptic record of Cryogenian paleogeography is preserved in Colorado in sparse yet widespread outcrops of Tava sandstone, a deep red to purple sandstone and quartzite which forms large fault-bounded panels and injected dikes within Proterozoic crystalline rock. Tava sandstone consists of granule- to cobble-sized clasts of dominant polymict quartz and subsidiary granite suspended in a non- to poorly-sorted sand matrix, and may be aptly termed diamictite. At 3 locations, specularite veins cut injectites. A stratigraphic context is lacking, but detrital zircon (DZ) U-Pb age data reveal contrasting provenance for injected versus in-faulted diamictite. All 13 Tava DZ samples display a 0.97 to 1.33 Ga age distribution attributable to the Grenville orogen. Injectites are distinguished by ca. 1.4 and 1.7 Ga DZs indicative of local plutonic sources. The DZ age distinctions suggest an integrated, well-homogenized sediment during formation of the major Tava sandstone phase, contrasting with emergent bedrock highs and segmented sediment transport at the time of sandstone liquefaction and injectition. To provide independent constraints on a younger age limit for Tava sandstone, we obtained hematite (U-Th)/He dates on coarse but variable grain size specularite. We compare these results to zircon (U-Th)/He data from one Tava sample, and both zircon and apatite (U-Th)/He data from the Boulder Creek Granodiorite host. Individual hematite He dates for four polycrystalline samples range from nearly equal 610-145 Ma. Samples characterized by distributions of thick hematite plates appear to yield the oldest dates (610-512 Ma and 600-318 Ma), with additional work underway to test the date-grain size relationship. Apatite He dates from host rock are 111-59 Ma. Individual Tava sandstone zircon He dates of 331-51 Ma exhibit an inverse date-eU correlation, likely from radiation damage accumulation due to prolonged residence of Tava zircons at near surface conditions. The zircon He dates are younger than individual host granite results of 465-415 Ma for the same eU range, implying potential U-Th zoning effects or He loss due to fluid circulation during Ancestral Rockies and/or Laramide tectonism. We interpret the oldest hematite He dates of 610 and 600 Ma from two samples to provide a younger age limit upon the time of injection of Tava sandstone." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Conference Paper: A hematite (U-Th)/He minimum age for Cryogenian Tava Sandstone, Colorado, and variations in detrital zircon provenance that illuminate the paleogeography of the region"@en ;
+    schema:pageStart "5" ;
+    schema:partOf <http://catalog.coloradocollege.edu/08cddec7-3911-11e8-93b2-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-043304> ;
+    cite:authorString "Christine S. Siddoway, Alexis K. Ault, Peter W. Reiners"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -3953,6 +4170,18 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/adcc30da-6b3a-11e8-bfa8-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Using area resources, the Pikes Peak Pebble Pups lead the development of programs that bring new approaches to student engagement in the Earth sciences. The program, the first of its kind in the nation, is designed by Earth scientists and educators to provide students in grades K through 12 with authentic science experiences that deepen their knowledge of Earth science. Students learn how to practice science and acquire new skills from experiences at regional museums, the Florissant Fossil Beds National Monument, and from independent research and fieldwork. These experiences include working with selected science content, observation, laboratory investigation, training in secondary research methods, writing, and public speaking. This is followed by fieldwork in the summer. At the core of the program are experiences that provide a wider and deeper exposure to the Earth sciences and we can claim a number of past successes that include Pebble Pups presenting papers at the 2013 Geological Society of America Annual Meeting in Denver and at other professional meetings. Pebble Pups volunteer as uniformed rangers at the Florissant Fossil Beds National Monument. They participate in Cool Science programs at Colorado College and the University of Colorado at Colorado Springs, assist in coaching and scoring tests for the Science Olympiad, and have presented original research to the public at the Denver Gem and Mineral Show for the past three years. Recently, a Pebble Pup assisted a Colorado College professor at the Automated Mineralogy Laboratory, Colorado School of Mines, using a QEMSCAN(R) instrument to analyze detrital minerals that hold information about the origins of Tava Sandstone. Pebble Pups, working with local geologists and publication editors, communicate their knowledge through publication in newspapers, newsletters, regional and international Earth science magazines where they have received national and regional awards for writing. The combination of focused experiences and an informal setting allows the freedom to explore topics that result in intellectual growth and increased self-confidence. Not only that, but they act as examples of what pre-college students can do for other students, their parents, and their teachers." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Conference Paper: Informal education in geoscience; the Pikes Peak Pebble Pups and Earth science scholars"@en ;
+    schema:pageStart "5" ;
+    schema:partOf <http://catalog.coloradocollege.edu/08cddec7-3911-11e8-93b2-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-023011> ;
+    cite:authorString "Steven Wade Veatch, Christine S. Siddoway, Carl Robert Carnein, John M. Rakowski, Betty B. Cain, Alister Cruickshanks, Jeff Wolin, Betty Merchant, Jenna M. Salvat"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/adcf6330-41c3-11e8-a814-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -4002,6 +4231,18 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/ae91c2fa-6b3a-11e8-b1fd-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Due to the presence of extensive sheet, bedrock exposures in Marie Byrd Land (MBL) are relatively sparse. However, they provide important constraints on the geological evolution and glacial history of West Antarctica. The most extensive area of outcrops is found in the Ford Ranges and Edward VII Peninsula, bordering the Ross Ice Shelf. We used ground-based geological observations to develop the first digital geological map for Marie Byrd Land, as a component of the new SCAR GeoMap project (http://www.scar.org/geomap). Feature attribution uses the international GeoSciML data format. The map covers a coastal area of 135 000 km (super 2) between 140 degrees E to 160 degrees E, from 75 degrees S to 80 degrees S, at around 1:250 000 scale. Exposed rock is delimited by 911 polygons, occupying 250 km (super 2) that comprises 0.2% of the total area. There are 119 mapped till deposit polygons (11.2 km (super 2) ), 58 supraglacial tills (5.7 km (super 2) ) and 69 seasonal water features (21.5 km (super 2) ) that provide a baseline for past and future glaciological change. Rendered in Esri (super C) ArcMap, the GIS will be made publicly available as an ArcGIS map service and Google Earth files. Using the new GIS, an interpretive map of sub-glacial bedrock geology has been generated for the region, drawing upon archival airborne geophysical data (magnetics, gravity, ice thickness, and sub-ice topography) recorded at 5.3 and 10.6 km line spacing over the Ford Ranges (Luyendyk et al., 2003), augmented by marine bathymetry (e.g. Luyendyk et al., 2001; Sorlien et al., 2006). Polygon features correspond to geological formations, and line features to inferred crustal faults at regional scale. Pliocene and younger volcanism, and glacial deposits were mapped with extreme care due to their potential consequences for ice sheet stability. The current configuration is rendered upon BEDMAP2 subglacial topography. The re-examination of archival data is timely within ongoing geophysical exploration and dataset compilation for Antarctica, such as SCAR ADMAP, NASA Icebridge, and POLEnet. The new subglacial framework of bedrock structure in MBL is used to test existing hypotheses about the tectonic evolution and identify factors that may affect ice sheet stability. It provides a geological context for the eastern boundary of the Ross Ice Shelf region being mapped by the 2015-2018 USAP ROSETTA-Ice airborne geophysical investigation." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Conference Paper: First digital geological map dataset of Marie Byrd Land; a product of the SCAR GeoMap Project"@en ;
+    schema:pageStart "20" ;
+    schema:partOf <http://catalog.coloradocollege.edu/08cddec7-3911-11e8-93b2-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-022657> ;
+    cite:authorString "Samuel C. Elkind, Christine S. Siddoway, Simon Cox, Paul Morin, Belinda Smith-Lyttle"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/aeac9c01-41c3-11e8-a01f-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b9a5518c-b0e1-11e6-8781-005056c00008> ;
@@ -4028,6 +4269,18 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/af313f1a-6b3a-11e8-8687-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "One of the largest and least known active rift provinces on Earth is the West Antarctic Rift System (WARS), the broad region of extended continental crust, 750-1000 km wide, that underlies the Ross Embayment and West Antarctic ice sheet. The province today varies in crustal thickness from 22 to approximately 30 km, with crustal stretching factors of beta = 1.3 to 1.8, and is underlain by warm mantle with low seismic velocities. Major broad extension occurred as little as 20 million years in the middle Cretaceous, with approximately 600 km of translation in the south and > or =1000 km in the north, based on paleomagnetic work. One extensive exposure of granulite grade gneisses and granite, the Fosdick Mountains, forms a dome exhumed upon a detachment fault and rapidly cooled at circa 100 Ma. Also in this time interval, mylonites developed in the Cape Colbeck shear zone and a detachment system was active on the Ross Sea's Central High. On the whole, however, the crustal structures responsible for large intracontinental extension have been poorly known in respect to location, dimension, kinematics and timing, because they are obscured by ice sheets, ice shelves, and ocean. The disadvantageous situation is being addressed through a new aerogeophysics acquisition over a vast under-explored sector of the rift, the Ross Ice Shelf. The multi-institution, multidisciplinary program in 2015 to 2017 is called ROSETTA-Ice, for Ross Ocean and ice Shelf Environment, and Tectonic setting Through Aerogeophysical surveys and modeling. The investigation of crustal geology combines new gravity data with magnetics to model bathymetry, then delineate sediments, bedrock geological units, and faults beneath the Ross Ice Shelf. The results are being used to interpret the locations and characteristics of faults and tectonic basins, and thereby achieve a greater understanding of Mesozoic large-scale extension across the West Antarctic rift system, active volcanism from Oligocene to present, and ongoing narrow extensional to wrench deformation in the province. This contribution aims to provide an overview of the tectonic evolution of the West Antarctic extensional province, reexamine 'legacy' geophysical data within the context of 21 (super st) century datasets, and introduce new hypotheses about large scale continental extension in Antarctica, based on analysis of ROSETTA-Ice data." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Conference Paper: Large scale continental extension in West Antarctica"@en ;
+    schema:pageStart "12" ;
+    schema:partOf <http://catalog.coloradocollege.edu/08cddec7-3911-11e8-93b2-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-015430> ;
+    cite:authorString "Christine S. Siddoway, Kirsteen Tinto, Robin E. Bell"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/af7f4d81-41c3-11e8-81b3-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b9a5518c-b0e1-11e6-8781-005056c00008> ;
@@ -4050,6 +4303,18 @@
     schema:partOf <http://catalog.coloradocollege.edu/b007ee10-41c3-11e8-b2fa-a41f7283f8d4> ;
     schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=eue&AN=508041227> ;
     cite:authorString "Tracy Santa"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/affdf55a-6b3a-11e8-8724-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Bedrock exposures are relatively sparse in Marie Byrd Land (MBL), where rock is concealed by the West Antarctic ice sheet, but they provide direct insight into the geological evolution and glacial history of West Antarctica. MBL is tectonically active, as evidenced by Late Pleistocene to Holocene volcanism and 2012 seismicity (3 events, M4.4 to M5.5) at sites beside Ross Sea. There are geological influences upon the ice sheet, namely, subglacial volcanism and associated geothermal flux, fault zone alteration/mineralization, and bedrock roughess. The former may influence the position and velocity of outlet glaciers and the latter may anchor or accelerate sectors of the ice sheet. To make MBL's geological framework accessible to investigators with diverse research priorities, we are preparing the first digital geological map of MBL by compiling ground-based geological data, incorporating firsthand observations, published geological maps and literature. The map covers an on-continent coastal area of approximately 900 000 km (super 2) between 090 degrees E to 160 degrees E, from 72 degrees S to 80 degrees S, at 1:250 000 scale or better. Exposed rock is delimited by 1976 polygons, occupying 410 km (super 2) . Supraglacial features and glacial till, seasonal water and blue ice, are also mapped, as a baseline for past and future glaciological change. Rendered in the ArcMap GIS software by Esri, the database employs international GeoSciML data protocols for feature classification and description of rock and moraine polygons from the Antarctic Digital Database (www.add.scar.org), with shape and location adjusted to align with features in Landsat Image Mosaic of Antarctica imagery (lima.usgs.gov), where necessary. The GIS database is attribute-rich and queriable; including links to bibliographic source files for primary literature and published maps. It will soon be available as GoogleEarth kmz files and an ArcGIS online map service. An initial application is to the interpretation of sub-ice geology for a subglacial geotectonic map of this active region. This is undertaken as part of ROSETTA-Ice, an integrated systems science investigation of the Ross Ice Shelf that commenced in 2015. The next phases of MBL database development will assess icesheet-ocean interactions near grounding line, environmental domain analysis and ecological research." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Conference Paper: Digital Geological Map for Marie Byrd Land, West Antarctica; a resource for investigation of geotectonic frameworks and future glaciological change"@en ;
+    schema:pageStart "0731" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0240b5a-6b3a-11e8-bf07-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-077322> ;
+    cite:authorString "Christine S. Siddoway, Tristan White, Samuel Elkind, Simon C. Cox, Belinda Smith Lyttle, P. J. Morin"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -4114,6 +4379,18 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/b0ba01fa-6b3a-11e8-83e0-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Rock exposures in the Ford Ranges, Marie Byrd Land (MBL), on the eastern margin of the Ross Embayment, contain direct evidence of the geological processes that led to formation of West Antarctica's continental lithosphere. Processes include wide regional extension, volcanism, and thermal reequilibration, with creation of crustal structures that are prone to reactivation today. Marie Byrd Land is tectonically active, as is evident from Late Pleistocene to Holocene eruptive centers, englacial volcanic tephra as young as 2200 years, a site of magma propagation inferred from POLEnet seismic records, and the occurrence of a 2012 earthquake cluster of magnitude M4.4 to M5.5 north of Edward VII Peninsula. However, the lithosphere underlying the Ross Ice Shelf (RIS) is poorly known due to the thick cover of shelf ice floating on the ocean, difficult to penetrate by satellite remote sensing or other methods. Airborne geophysical data for the Ford Ranges and the Ross Ice Shelf (RIS) suggest that the rock formations and structures that underlie MBL continue beneath the RIS. Notable features known in outcrop and detected/inferred from potential fields data are Pleistocene or younger mafic volcanic centers and Cretaceous core complexes, both likely associated with wrench faults. The Ford Ranges legacy dataset that now provides a fundamental basis for sub-RIS geological interpretation is a product of research in coastal MBL led by B.P. Luyendyk from 1989 - 2006. To improve our knowledge of lithospheric evolution, identify active faults and prospective zones of volcanism/heat flow, and to determine the sub-RIS bathymetry, the RIS sector is being explored via new Icepod aerogeophysics acquisition during the ROSETTA-Ice project (Ross Ocean and ice Shelf Environment, and Tectonic setting Through Aerogeophysical surveys and modeling), now underway over this vast under-explored sector of the Ross Embayment. ROSETTA-Ice collects and employs new gravity data with magnetics to delineate sediments, bedrock geological units, and faults beneath the RIS, then model bathymetry. This poster will share preliminary results and interpretations. The improved characterization of the subglacial geology and bathymetry will aid in refinement of the tectonic framework and models of oceanographic circulation, with bearing on RIS stability." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Conference Paper: Ross Ice Shelf, Antarctica; bathymetry, structural geology and ocean circulation from new IcePod airborne geophysical data"@en ;
+    schema:pageStart "0724" ;
+    schema:partOf <http://catalog.coloradocollege.edu/b0240b5a-6b3a-11e8-bf07-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2017-077315> ;
+    cite:authorString "Christine S. Siddoway, Kristy J. Tinto, Robin Elizabeth Bell, Laurence Padman, Helen Amanda Fricker, Scott R. Springer"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/b11db047-4276-11e8-82a3-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b62804d4-b0e1-11e6-b218-005056c00008> ;
@@ -4138,6 +4415,18 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/b16201ca-6b3a-11e8-887e-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The East Gondwana convergent margin-now consisting of submerged plateaus and rises bordering Australia, Zealandia and Antarctica-consists of a belt of accreted terranes that was stitched by magmatic arcs, then attenuated to form throughgoing continental ribbons separated by narrow failed rift basins. This crustal architecture was discerned from marine geophysical exploration for the midlatitude coastal plateaus and rises. The ROSETTA-ICE project, a new airborne study of the little-known Ross Ice Shelf region, aims to determine crustal makeup, locate tectonic boundaries and calculate seafloor bathymetry using potential fields data. LC130 aircraft equipped with gravimeters, magnetometer and geopositioning are surveying 91 E-W lines at 10 km and 15 N-S tie lines at 55 km spacing, positioned to overfly 1970s depth and gravity points. ROSETTA-ICE geophysics provides magnetic anomalies, Werner depth-to-basement solutions, a new gravity-based bathymetric model at 20-km resolution, and mapping of crustal density tied to the 1970s data. Contrary to current knowledge, the data reveal a major lithospheric boundary 300 km east of the Transantarctic Mountains beneath the floating sector of the West Antarctic ice sheet (WAIS), and demarcate two crustal regions that have contrasting geophysical characteristics and bathymetry. The East Antarctic side consists of a relatively dense integrated column of rock, with low amplitude magnetic anomalies, and deep bathymetry. The West Antarctic side displays high amplitude magnetic anomalies, lower overall density and shallower water depths. The Central High, a basement structure cored at DSDP Site 270 and seismically imaged in the Ross Sea, continues southward as a prominent ribbon of fault-riven continental crust that coincides with the tectonic boundary. Integrated with surface geology bordering the Ross Ice Shelf, the geophysical properties indicate a continuity of Gondwana margin crustal architecture beneath the WAIS, and the need for revision of the existing tectonic framework for West Antarctica. The crustal boundary-well-separated from the Transantarctic Mountains front, and associated narrow rift basins and transfer zones, control the bathymetry, influence oceanographic circulation, and may affect fluids and heat flow beneath the Ross Ice Shelf." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Conference Paper: New tectonic boundary and Gondwana margin inheritance revealed in crust beneath Ross Ice Shelf, Antarctica, through ROSETTA-ICE project integration of aerogeophysics, geology, and ocean data"@en ;
+    schema:pageStart "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6cbd5319-4276-11e8-a4dc-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=guh&AN=813938-100> ;
+    cite:authorString "Christine S. Siddoway, Kirsteen Tinto, Robin E. Bell, Alec Lockett"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/b18c8f18-4276-11e8-9a53-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b62804d4-b0e1-11e6-b218-005056c00008> ;
@@ -4159,6 +4448,18 @@
     schema:partOf <http://catalog.coloradocollege.edu/b211dc18-4276-11e8-8b92-a41f7283f8d4> ;
     schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=mzh&AN=2017140657> ;
     cite:authorString "Genevieve Love"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/b2194ba8-6b3a-11e8-b6c0-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The GeoMap Project is building a detailed digital geological dataset of Antarctica, under auspices of the Scientific Committee on Antarctic Research (http://www.scar.org/ssg/geosciences/geomap). The initiative aims to develop a continent-wide integrated online resource for cross-discipline use, by capturing existing geological map data and enhancing the spatial reliability of bedrock exposures, glacial sequences and geomorphology. The international team is collaboratively classifying and describing around 72,000 distinct areas that cover 51,000 km (super 2) of 'known geology' from rock exposures. The digital map data incorporate first-hand geological field observations and laboratory analyses, published geological maps and literature. Glacial deposits and supraglacial features are an important focus, given their potential to provide underutilized records of ice fluctuations, of relevance to climate change. Our poster highlights: (1) Completed digital map database for the entire Ross Sea region and Marie Byrd Land, created at a scale of 1:250,000 (reaching 1:50,000 resolution, in some cases), with geological attributes assigned to all rock polygons. (2) Local legends and tectonostratigraphic schemes that record geological variations. (3) Progress towards a unified classification scheme. (4) Bibliographic links referencing authors of key original work. A large number of hard-copy geological maps and data sources have been utilized, that range in scale, detail, and quality. There is great potential for the dataset to support new inter- and cross-discipline perspectives, through attribute queries and interrogation of continent-wide time-space plots in the context of cryosphere and biosphere geospatial data. The availability of continent-wide geological map data for Antarctica will allow geospatial research questions to be explored, such as: How does geology influence water, minerals and energy availability to sustain biota? Do rock outcrops serve as refugia for at-risk or invasive species? How do rock outcrops affect ice sheet albedo and influence melting? Does higher resolution continent wide mapping of topography and geology contribute to improved climate-ice sheet models? Do volcanic and ice sheet processes correlate, and with what effects on lithosphere, crust and mantle properties?" ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Conference Paper: Digital geological dataset for the Ross Sea region, Antarctica, and other mapping initiatives of the Antarctic GeoMap Project"@en ;
+    schema:pageStart "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6cbd5319-4276-11e8-a4dc-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=guh&AN=813928-66> ;
+    cite:authorString "Simon Cox, Christine S. Siddoway, Alexie Millikin, Belinda Smith-Lyttle"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -4421,7 +4722,7 @@
     bf:provisionActivityStatement "Boulder, Colo. : Geological Society of America, 2004"@en ;
     bf:title "Gneiss domes in orogeny"@en ;
     schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
-	schema:editor "edited by Donna L. Whitney, Christian Teyssier, Christine S. Siddoway"@en ;
+    schema:editor "edited by Donna L. Whitney, Christian Teyssier, Christine S. Siddoway"@en ;
     schema:publicationDate "2004" ;
     cite:citationType "book"@en .
 
@@ -4762,6 +5063,10 @@
     schema:partOf <https://tiger.coloradocollege.edu/record=b1794198~s5> ;
     cite:authorString "Steven Hayward"@en ;
     cite:citationType "book chapter" .
+
+<http://catalog.coloradocollege.edu/cc16b69d-3911-11e8-836c-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/cc16b69c-3911-11e8-8d9a-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/cc6ec959-3911-11e8-90d9-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses the human paradox of wanting to be alone and to be part of the community and how to manage the contradictions. According to the article, an effective leader recognizes the moods and needs of the moment and devises his leadership style to respond accordingly. Amid paradoxes, the article also suggests that a leader must be able to read the signs, adapt a strategy to the demand of the times, work to persuade followers, devise a governing strategy, manage the machinery of the organization and reevaluate and revise strategies." ;
@@ -7594,7 +7899,7 @@
     schema:pageStart "218" ;
     schema:partOf <http://catalog.coloradocollege.edu/f2328dc3-3910-11e8-bb4f-a41f7283f8d4> ;
     schema:url "https://doi.org/10.1017/S1537592716004667" ;
-    cite:authorString "Timothy Fuller"@en;
+    cite:authorString "Timothy Fuller"@en ;
     cite:citationType "article" ;
     cite:month "MAR" .
 
@@ -11679,7 +11984,7 @@
     bf:provisionActivityStatement "Montreal : McGill-Queen's University Press, 2000"@en ;
     bf:title "Aboriginal rights and self-government : the Canadian and Mexican experience in North American perspective"@en ;
     schema:author <http://catalog.coloradocollege.edu/28f6fd36-b0f2-11e6-940f-005056c00008> ;
-	schema:editor "edited by Curtis Cook, Juan D. Lindau"@en ;
+    schema:editor "edited by Curtis Cook, Juan D. Lindau"@en ;
     schema:publicationDate "2000" ;
     cite:callNumber "E91.A26 2000" ;
     cite:citationType "book"@en .
@@ -11691,7 +11996,7 @@
     bf:provisionActivityStatement "Notre Dame, Ind. : University of Notre Dame Press, 2000"@en ;
     bf:title "Leading and leadership"@en ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
-	schema:editor "edited by Timothy Fuller"@en ;
+    schema:editor "edited by Timothy Fuller"@en ;
     schema:publicationDate "2000" ;
     cite:callNumber "HM1261 .L43 2000" ;
     cite:citationType "book"@en .
@@ -11703,7 +12008,7 @@
     bf:provisionActivityStatement "New York : Oxford University Press, 2001"@en ;
     bf:title "Homosexuality in early modern France : a documentary collection"@en ;
     schema:author <http://catalog.coloradocollege.edu/61ff6e74-b0f0-11e6-a459-005056c00008> ;
-	schema:editor "edited by Jeffrey Merrick, Bryant T. Ragan, Jr."@en ;
+    schema:editor "edited by Jeffrey Merrick, Bryant T. Ragan, Jr."@en ;
     schema:publicationDate "2001" ;
     schema:url <https://tiger.coloradocollege.edu/search~S5> ;
     cite:citationType "book"@en .
@@ -11727,7 +12032,7 @@
     bf:provisionActivityStatement "Washington, D.C. : American Maritain Association, 2001"@en ;
     bf:title "Reassessing the liberal state : reading maritain's man and the state"@en ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
-	schema:editor "edited by Timothy Fuller and John P. Hittinger"@en ;
+    schema:editor "edited by Timothy Fuller and John P. Hittinger"@en ;
     schema:publicationDate "2001" ;
     cite:callNumber "JC261.M323 R43 2001" ;
     cite:citationType "book"@en .
@@ -11763,7 +12068,7 @@
     bf:provisionActivityStatement "Middleton, Wis. : Published for the American Musicological Society by A-R Editions, Inc., 2002"@en ;
     bf:title "Writing American Indian music : historic transcriptions, notations, and arrangements"@en ;
     schema:author <http://catalog.coloradocollege.edu/fc919764-b0f0-11e6-ad95-005056c00008> ;
-	schema:editor "edited by Victoria Lindsay Levine"@en ;
+    schema:editor "edited by Victoria Lindsay Levine"@en ;
     schema:publicationDate "2002" ;
     cite:callNumber "M2.3.U6 R4 v. 44" ;
     cite:citationType "book"@en .
@@ -11775,7 +12080,7 @@
     bf:provisionActivityStatement "Hanover, N.H. : Dartmouth College, 2001"@en ;
     bf:title "Letter to Beaumont, letters written from the mountain, and related writings"@en ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
-	schema:editor "edited by Christopher Kelly and Eve Grace ; translated by Christopher Kelly and Judith R. Bush"@en ;
+    schema:editor "edited by Christopher Kelly and Eve Grace ; translated by Christopher Kelly and Judith R. Bush"@en ;
     schema:publicationDate "2001" ;
     cite:callNumber "PQ2034 .A3 1990 v. 9" ;
     cite:citationType "book"@en .
@@ -11859,7 +12164,7 @@
     bf:provisionActivityStatement "Toronto : Published by University of Toronto Press in association with the Medieval Academy of America, 2004"@en ;
     bf:title "Medieval families : perspectives on marriage, household, and children"@en ;
     schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
-	schema:editor "edited by Carol Neel"@en ;
+    schema:editor "edited by Carol Neel"@en ;
     schema:publicationDate "2004" ;
     cite:callNumber "HQ513 .M42 2004" ;
     cite:citationType "book"@en .
@@ -11882,7 +12187,7 @@
     bf:provisionActivityStatement "Baltimore, MD : Lanahan Publishers, 2004"@en ;
     bf:title "The Lanahan readings in the psychology of women"@en ;
     schema:author <http://catalog.coloradocollege.edu/a3ad551c-b0f4-11e6-a3d1-005056c00008> ;
-	schema:editor "edited by Tomi-Ann Roberts"@en ;
+    schema:editor "edited by Tomi-Ann Roberts"@en ;
     schema:publicationDate "2004" ;
     cite:callNumber "HQ1206 .L36 2004" ;
     cite:citationType "book"@en .
@@ -11931,7 +12236,7 @@
     bf:title "George Crumb & the alchemy of sound : essays on his music"@en ;
     schema:author <http://catalog.coloradocollege.edu/fb2aeefe-b0f0-11e6-b1d9-005056c00008>,
         <http://catalog.coloradocollege.edu/fbdd761c-b0f0-11e6-852e-005056c00008> ;
-	schema:editor "edited by Steven Bruns & Ofer Ben-Amots ; Michael D. Grace, general editor"@en ;
+    schema:editor "edited by Steven Bruns & Ofer Ben-Amots ; Michael D. Grace, general editor"@en ;
     schema:publicationDate "2005" ;
     cite:callNumber "MT92 .C78 2005" ;
     cite:citationType "book"@en .
@@ -11942,8 +12247,8 @@
     bf:isbn "1845400097" ;
     bf:provisionActivityStatement "Exeter : Imprint Academic, 2005"@en ;
     bf:title "The intellectual legacy of Michael Oakeshott"@en ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
     schema:editor "edited by Corey Abel and Timothy Fuller"@en ;
-	schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008>;
     schema:publicationDate "2005" ;
     cite:callNumber "JA84.O177 I48 2005" ;
     cite:citationType "book"@en .
@@ -11992,7 +12297,7 @@
     bf:provisionActivityStatement "Houndmills, Basingstoke, Hampshire; New York : Palgrave, 2001"@en ;
     bf:title "Plagues and politics : infectious disease and international policy"@en ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
-	schema:editor "edited by Andrew T. Price-Smith"@en ;
+    schema:editor "edited by Andrew T. Price-Smith"@en ;
     schema:publicationDate "2001" ;
     cite:callNumber "RA643 .P675 2001" ;
     cite:citationType "book"@en .
@@ -12391,7 +12696,7 @@
     bf:provisionActivityStatement "Oxford; New York : Oxford University Press, 2013"@en ;
     bf:title "The sexualization of girls and girlhood : causes, consequences, and resistance"@en ;
     schema:author <http://catalog.coloradocollege.edu/a3ad551c-b0f4-11e6-a3d1-005056c00008> ;
-	schema:editor "edited by Eileen L. Zurbriggen and Tomi-Ann Roberts"@en ;
+    schema:editor "edited by Eileen L. Zurbriggen and Tomi-Ann Roberts"@en ;
     schema:publicationDate "2013" ;
     cite:callNumber "HQ27.5 .S494 2013" ;
     cite:citationType "book"@en .
@@ -12441,7 +12746,7 @@
     bf:provisionActivityStatement "Cambridge; New York : Cambridge University Press, 2013"@en ;
     bf:title "The challenge of Rousseau"@en ;
     schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
-	schema:editor "edited by Eve Grace, Christopher Kelly"@en ;
+    schema:editor "edited by Eve Grace, Christopher Kelly"@en ;
     schema:publicationDate "2013" ;
     cite:callNumber "B2137 .C43 2013" ;
     cite:citationType "book"@en .
@@ -12528,7 +12833,7 @@
     bf:provisionActivityStatement "New York : Oxford University Press, 2015"@en ;
     bf:title "Rising threats, enduring challenges : readings in U.S. foreign policy"@en ;
     schema:author <http://catalog.coloradocollege.edu/29d4786c-b0f2-11e6-8935-005056c00008> ;
-	schema:editor "[edited by] Andrew Price-Smith"@en ;
+    schema:editor "[edited by] Andrew Price-Smith"@en ;
     schema:publicationDate "2015" ;
     cite:callNumber "E183.7 .R57 2015" ;
     cite:citationType "book"@en .
@@ -12540,7 +12845,7 @@
     bf:provisionActivityStatement "London; New York : Routledge, 2014"@en ;
     bf:title "Evolution of government policy towards homosexuality in the US military : the rise and fall of DADT"@en ;
     schema:author <http://catalog.coloradocollege.edu/39a44354-bcd4-11e6-8b8e-005056c00008> ;
-	schema:editor "edited by James E. Parco and David A. Levy"@en ;
+    schema:editor "edited by James E. Parco and David A. Levy"@en ;
     schema:publicationDate "2014" ;
     cite:callNumber "UB418.G38 E93 2014" ;
     cite:citationType "book"@en .
@@ -12615,7 +12920,7 @@
     bf:provisionActivityStatement "Santa Barbara, California : Praeger, an imprint of ABC- CLIO, LLC, 2015"@en ;
     bf:title "The economics of the family : how the household affects markets and economic growth"@en ;
     schema:author <http://catalog.coloradocollege.edu/3b2997b4-bcd4-11e6-9953-005056c00008> ;
-	schema:editor "Esther Redmount, editor"@en ;
+    schema:editor "Esther Redmount, editor"@en ;
     schema:publicationDate "2015" ;
     cite:callNumber "HQ519 .E386 2015" ;
     cite:citationType "book"@en .
@@ -12627,7 +12932,7 @@
     bf:provisionActivityStatement "Lanham, Maryland : Rowman & Littlefield, 2015"@en ;
     bf:title "This thing called music : essays in honor of Bruno Nettl"@en ;
     schema:author <http://catalog.coloradocollege.edu/fc919764-b0f0-11e6-ad95-005056c00008> ;
-	schema:editor "edited by Victoria Lindsay Levine, Philip V. Bohlman"@en ;
+    schema:editor "edited by Victoria Lindsay Levine, Philip V. Bohlman"@en ;
     schema:publicationDate "2015" ;
     cite:callNumber "ML3798 .T56 2015" ;
     cite:citationType "book"@en .
@@ -12663,7 +12968,7 @@
     bf:provisionActivityStatement "Philadelphia : University of Pennsylvania Press, 2016"@en ;
     bf:title "Machiavelli's legacy : The Prince after five hundred years"@en ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
-	schema:editor "edited by Timothy Fuller"@en ;
+    schema:editor "edited by Timothy Fuller"@en ;
     schema:publicationDate "2016" ;
     cite:callNumber "JC143.M4 M3228 2016" ;
     cite:citationType "book"@en .
@@ -12736,7 +13041,7 @@
     bf:provisionActivityStatement "Switzerland : Springer, 2016"@en ;
     bf:title "Feminist perspectives on building a better psychological science of gender"@en ;
     schema:author <http://catalog.coloradocollege.edu/a3ad551c-b0f4-11e6-a3d1-005056c00008> ;
-	schema:editor "Tomi-Ann Roberts, Nicola Curtin, Lauren E. Duncan, Lilia M. Cortina, editors"@en ;
+    schema:editor "Tomi-Ann Roberts, Nicola Curtin, Lauren E. Duncan, Lilia M. Cortina, editors"@en ;
     schema:publicationDate "2016" ;
     cite:callNumber "BF201.4 .F456 2016" ;
     cite:citationType "book"@en .
@@ -12760,7 +13065,7 @@
     bf:provisionActivityStatement "San Diego, Calif. : So Say We All Press, 2016"@en ;
     bf:title "Gross and unlikeable"@en ;
     schema:author <http://catalog.coloradocollege.edu/b6ce757e-b0e1-11e6-b172-005056c00008> ;
-	schema:editor "guest edited by Natanya Ann Pulley"@en ;
+    schema:editor "guest edited by Natanya Ann Pulley"@en ;
     schema:publicationDate "2016" ;
     cite:callNumber "PN6071.H727 G76 2016" ;
     cite:citationType "book"@en .
@@ -12772,7 +13077,7 @@
     bf:provisionActivityStatement "Amherst : University of Massachusetts Press, 2016"@en ;
     bf:title "I am because we are : readings in Africana philosophy"@en ;
     schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
-	schema:editor "edited with introductions by Fred Lee Hord (Mzee Lasana Okpara) and Jonathan Scott Lee"@en ;
+    schema:editor "edited with introductions by Fred Lee Hord (Mzee Lasana Okpara) and Jonathan Scott Lee"@en ;
     schema:publicationDate "2016" ;
     cite:callNumber "DT15 .I15 2016" ;
     cite:citationType "book"@en .
@@ -12858,7 +13163,7 @@
     bf:provisionActivityStatement "New York : Encounter Books, 2017"@en ;
     bf:title "On liberty and its enemies : essays of Kenneth Minogue"@en ;
     schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
-	schema:editor "edited by Timothy Fuller"@en ;
+    schema:editor "edited by Timothy Fuller"@en ;
     schema:publicationDate "2017" ;
     cite:callNumber "JC585 .M7796 2017" ;
     cite:citationType "book"@en .
@@ -12958,8 +13263,8 @@
     bf:provisionActivityStatement "Cham : Springer International Publishing, 2018"@en ;
     bf:title "Contemporary Philosophical Proposals for the University : Toward a Philosophy of Higher Education"@en ;
     schema:author <https://orcid.org/0000-0002-5976-3083> ;
+    schema:editor "edited by Aaron Stoller, Eli Kramer"@en ;
     schema:publicationDate "2018" ;
-	schema:editor "edited by Aaron Stoller, Eli Kramer"@en ;
     schema:url "http://0-www.springerlink.com.tiger.coloradocollege.edu/ openurl.asp?genre=book&id=doi:10.1007/978-3-319-72128-6" ;
     cite:citationType "book"@en .
 
@@ -14372,9 +14677,6 @@
 <http://catalog.coloradocollege.edu/2bdd787b-3d0f-11e8-a274-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/2bdd787a-3d0f-11e8-b38e-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/2c0d2842-3912-11e8-9207-a41f7283f8d4> a schema:Periodical ;
-    schema:name "Record, The (Kitchener/Cambridge/Waterloo, ON)"@en .
 
 <http://catalog.coloradocollege.edu/2c156db6-3911-11e8-8829-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0340-269X" ;
@@ -16116,18 +16418,15 @@
     bf:isbn "0309296404" ;
     bf:provisionActivityStatement "Washington, DC, US : National Academies Press, 2014"@en ;
     bf:title "In the light of evolution: Volume VII: The human mental machinery"@en ;
-    schema:author <http://catalog.coloradocollege.edu/a34607ca-b0f4-11e6-ac87-005056c00008> ;
     schema:editor "Cela-Conde,  Camilo J.; Lombardo, Raul G.; Avise,  John C.; Ayala,  Francisco J."@en ;
     schema:publicationDate "2014" ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=psyh&AN=2014-23001-008" ;
-    cite:authorString "Serena Bianchi, Cheryl D. Stimpson, Tetyana Duka, Michael D. Larsen, William G. M. Janssen, Zachary Collins, Amy L. Bauernfeind, Steven J. Schapiro, Wallace B. Baze, Mark J. McArthur, William D. Hopkins, Derek E. Wildman, Leonard Lipovich, Christopher W. Kuzawa, Bob Jacobs, Patrick R. Hof, Chet C. Sherwood"@en ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/6af5cae2-65d6-11e8-b397-a41f7283f8d4> a bf:Book ;
     bf:isbn "9780823249541" ;
     bf:provisionActivityStatement "New York, NY : Fordham UP, 2012"@en ;
     bf:title "Thoreau's Importance for Philosophy"@en ;
-    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
     schema:editor "edited; introduction by: Furtak,  Rick A.,  Ellsworth,  Jonathan,  Reid,  James D."@en ;
     schema:publicationDate "2012" ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=mzh&AN=2016307877" ;
@@ -16137,7 +16436,6 @@
     bf:isbn "9780199601301" ;
     bf:provisionActivityStatement "Oxford, England : Oxford UP, 2013"@en ;
     bf:title "The Oxford Handbook of Kierkegaard"@en ;
-    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
     schema:editor "edited; introduction by Lippitt, John; Pattison, George"@en ;
     schema:publicationDate "2013" ;
     schema:url "http://0-www.oxfordhandbooks.com.tiger.coloradocollege.edu/view/10.1093/oxfordhb/9780199601301.001.0001/oxfordhb-9780199601301" ;
@@ -16148,7 +16446,6 @@
     bf:isbn "9781589661608" ;
     bf:provisionActivityStatement "Scranton : University of Scranton Press, 2007"@en ;
     bf:title "Sonnets to Orpheus : a new English version"@en ;
-    schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
     schema:publicationDate "2007" ;
     cite:authorString "Rainer Maria Rilke, Rick Anthony Furtak" ;
     cite:citationType "book"@en .
@@ -18003,6 +18300,10 @@
     schema:partOf <http://catalog.coloradocollege.edu/971fa2c6-4276-11e8-9fb3-a41f7283f8d4> ;
     schema:volumeNumber "20" .
 
+<http://catalog.coloradocollege.edu/9a004cb7-4276-11e8-905e-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9a004cb6-4276-11e8-8c2b-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/9a084f30-3f55-11e8-9bcf-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/ba486c66-3911-11e8-bd86-a41f7283f8d4> ;
     schema:volumeNumber "117" .
@@ -18271,6 +18572,10 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/9efe48c6-4276-11e8-922f-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/9f511168-6b3a-11e8-b370-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0003-0554,15375943" ;
+    schema:name "The American Political Science Review"@en .
+
 <http://catalog.coloradocollege.edu/9f56cb08-3911-11e8-b219-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/9f46216e-3911-11e8-9bea-a41f7283f8d4> ;
     schema:volumeNumber "286" .
@@ -18286,6 +18591,14 @@
 <http://catalog.coloradocollege.edu/9f687811-3f55-11e8-8cec-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "4" ;
     schema:partOf <http://catalog.coloradocollege.edu/9f687810-3f55-11e8-825e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/9f74c60a-6b3a-11e8-8758-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/9f511168-6b3a-11e8-b370-a41f7283f8d4> ;
+    schema:volumeNumber "95" .
+
+<http://catalog.coloradocollege.edu/9f74c60b-6b3a-11e8-90a2-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9f74c60a-6b3a-11e8-8758-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/9fb3a080-3911-11e8-a408-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/319f2cb4-3911-11e8-848c-a41f7283f8d4> ;
@@ -18463,6 +18776,13 @@
     schema:issueNumber "6" ;
     schema:partOf <http://catalog.coloradocollege.edu/a2e67828-3911-11e8-88bd-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/a309d3a8-6b3a-11e8-9d88-a41f7283f8d4> a schema:Periodical ;
+    schema:name "AIPG Annual Meeting - Program"@en .
+
+<http://catalog.coloradocollege.edu/a32d884a-6b3a-11e8-b2d3-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a309d3a8-6b3a-11e8-9d88-a41f7283f8d4> ;
+    schema:volumeNumber "50" .
+
 <http://catalog.coloradocollege.edu/a33c2158-4276-11e8-b443-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/a31ace18-4276-11e8-8170-a41f7283f8d4> ;
     schema:volumeNumber "41" .
@@ -18535,6 +18855,18 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/a3bcb700-3f55-11e8-ac60-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/a3cf65ca-6b3a-11e8-acfd-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0305-8719" ;
+    schema:name "Special Publication - Geological Society of London"@en .
+
+<http://catalog.coloradocollege.edu/a3f31a68-6b3a-11e8-8f4e-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3cf65ca-6b3a-11e8-acfd-a41f7283f8d4> ;
+    schema:volumeNumber "383" .
+
+<http://catalog.coloradocollege.edu/a3f31a69-6b3a-11e8-a9d9-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1; 1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3f31a68-6b3a-11e8-8f4e-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/a40fd000-41c3-11e8-b753-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/a3f47fd0-41c3-11e8-9ff4-a41f7283f8d4> ;
     schema:volumeNumber "14" .
@@ -18558,6 +18890,20 @@
 <http://catalog.coloradocollege.edu/a4576cae-3911-11e8-8666-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0165-0270" ;
     schema:name "Journal of neuroscience methods"@en .
+
+<http://catalog.coloradocollege.edu/a467bdca-6b3a-11e8-b879-a41f7283f8d4> a bf:Book ;
+    bf:Note "ID: 2013-088905; Accession Number: 2013-088905; Language: English; Coordinates: N385000N385000W1044900W1044900; Coden: #05176; Collation: 26; Collation: 331-356; Publication Types: Serial; Updated Code: 201324; Illustration(s): illus. incl. sects., geol. sketch map, strat. cols.; Number of References: 109; Monograph Title: Classic concepts and new directions; exploring 125 years of GSA discoveries in the Rocky Mountain region; Monograph Author(s): Abbott, Lon D. editor]; Hancock, Gregory S. editor]; Reviewed Item: Analytic"@en ;
+    bf:Summary "Although the southern Front Range in Colorado Springs and Manitou Springs contains a near-complete record of Rocky Mountains geological evolution from Proterozoic to Present, there nevertheless are persistent geological problems that have eluded understanding for as much as 125 years. In keeping with the 2013 GSA Annual Meeting theme, \"Celebrating Advances in Geoscience,\" this field trip visits long-known elements of Front Range geology that merit reexamination within the context of new paleoenvironmental and geochronology data. Of note are: (1) the Great Unconformity and its chemically weathered substrate that correspond to a time of profound changes in global ocean chemistry; (2) lower Paleozoic strata that record sea-level fluctuations, attributable in part to regional tectonism; (3) an array of granite-hosted sandstone dikes, for which a new emplacement model is proposed; and (4) the Front Range monocline at Garden of the Gods Park, examined from the standpoint of its temporal evolution, newly bracketed by results of (super 40) Ar/ (super 39) Ar age analysis of illite generated by shear upon bedding-parallel faults."@en ;
+    bf:isbn "9780813756332" ;
+    bf:provisionActivityStatement "United States : Geological Society of America : Boulder, CO, United States, 2013"@en ;
+    bf:title "GSA Field Guide vol. 33:&nbsp;Classic Concepts and New Directions: Exploring 125 Years of GSA Discoveries in the Rocky Mountain Regio&nbsp;"@en ;
+    schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008>,
+        <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:editor "Lon D. Abbott; Gregory S. Hancock"@en ;
+    schema:publicationDate "2013" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=geh&AN=2013-088905" ;
+    cite:authorString "Christine Siddoway, Paul Myrow, Elisa Fitz-Diaz"@en ;
+    cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/a4681646-3911-11e8-8012-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/a4576cae-3911-11e8-8666-a41f7283f8d4> ;
@@ -18598,6 +18944,10 @@
 <http://catalog.coloradocollege.edu/a4f2b2c7-4276-11e8-9bbc-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/a4f2b2c6-4276-11e8-851f-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a4fa784a-6b3a-11e8-98b2-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d53d0a-6b3a-11e8-9f65-a41f7283f8d4> ;
+    schema:volumeNumber "2013" .
 
 <http://catalog.coloradocollege.edu/a52da812-3911-11e8-808e-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1386-9795" ;
@@ -20223,10 +20573,6 @@
     schema:partOf <http://catalog.coloradocollege.edu/eacdb68c-3910-11e8-abbd-a41f7283f8d4> ;
     schema:volumeNumber "28" .
 
-<http://catalog.coloradocollege.edu/cc16b69d-3911-11e8-836c-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "3" ;
-    schema:partOf <http://catalog.coloradocollege.edu/cc16b69c-3911-11e8-8d9a-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/cc6b9e26-4276-11e8-85b2-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0012-9658" ;
     schema:name "Ecology"@en .
@@ -21432,6 +21778,10 @@
 
 <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> a schema:Periodical ;
     schema:name "test journal title"@en .
+
+<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "2" ;
+    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/ebe8f9b6-3910-11e8-b59f-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-7685" ;
@@ -23289,15 +23639,21 @@
     cite:month "" .
 
 <https://doi.org/10.1080/00396330500433472> a schema:ScholarlyArticle ;
-    schema:about "The article reviews several books about strategy and international relations including \"The New American Militarism: How Americans are Seduced by War,\" by Andrew Bacevich, \"Rising to the Challenge: China's Grand Strategy and International Security,\" by Avery Goldstein, \"Enforcing the Peace: Lessons From the Imperial Past,\" by Kimberly Zisk Marten, \"At War's End: Building Peace After Civil Conflict,\" by Roland Paris, and \"Nuclear Weapons and Strategy: U.S. Nuclear Policy for the Twenty-First Century,\" by Stephen J. Cimbala." ;
+    schema:about "",
+        "The article reviews several books about strategy and international relations including \"The New American Militarism: How Americans are Seduced by War,\" by Andrew Bacevich, \"Rising to the Challenge: China's Grand Strategy and International Security,\" by Avery Goldstein, \"Enforcing the Peace: Lessons From the Imperial Past,\" by Kimberly Zisk Marten, \"At War's End: Building Peace After Civil Conflict,\" by Roland Paris, and \"Nuclear Weapons and Strategy: U.S. Nuclear Policy for the Twenty-First Century,\" by Stephen J. Cimbala." ;
     schema:author <http://catalog.coloradocollege.edu/28f6fd36-b0f2-11e6-940f-005056c00008> ;
     schema:datePublished "2005" ;
-    schema:name "Book Review: The new American militarism: how Americans are seduced by war, by Andrew Bacevich"@en ;
-    schema:pageEnd "177" ;
+    schema:name "Book Review: The new American militarism: how Americans are seduced by war, by Andrew Bacevich"@en,
+        "The new American militarism: how Americans are seduced by war"@en ;
+    schema:pageEnd "170",
+        "177" ;
     schema:pageStart "169" ;
-    schema:partOf <http://catalog.coloradocollege.edu/832c08c1-3f54-11e8-8345-a41f7283f8d4> ;
-    schema:url <https://doi.org/10.1080/00396330500433472> ;
-    cite:authorString "Juan D. Lindau, Bates Gill, Mary Kaldor, Michael Krepon"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/832c08c1-3f54-11e8-8345-a41f7283f8d4>,
+        <http://catalog.coloradocollege.edu/84108cc1-3f54-11e8-adee-a41f7283f8d4> ;
+    schema:url <https://doi.org/10.1080/00396330500433472>,
+        "https://doi.org/10.1080/00396330500433472" ;
+    cite:authorString "Juan D. Lindau"@en,
+        "Juan D. Lindau, Bates Gill, Mary Kaldor, Michael Krepon"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -23627,7 +23983,7 @@
 <https://doi.org/10.1080/17565529.2011.626715> a schema:ScholarlyArticle ;
     schema:about "The Kyoto Protocol has initiated Clean Development Mechanism projects in developing countries as one means to offset carbon emitted in developed nations. Biofuels may be a viable solution, but we argue here that it may also compete with local smallholder farming systems and labour resources. This study assesses the integration of tree bio-diesel crop Jatropha curcas into smallholder agriculture in Tamil Nadu, India using data collected from 66 farms through surveys and interviews. Jatropha cultivation carries significant risks for the smallholders. Jatropha competes for space and harvest labour with other market and subsistence crops and does not produce any economic returns until three years after planting. If the jatropha harvests or market price fail or fluctuate, smallholders could default on their loans. This risk could lead to significant changes in the land-holding class structure. Climate change policies, non-governmental organizationss, and national and regional governments should support landholders to sustainably integrate a new crop like jatropha into current holdings, otherwise the current alternative energy revolution could create more problems than it solves. Smallholders are particularly vulnerable to economic risk and crop failure exposure even with well-planned biofuel policies." ;
     schema:author <http://catalog.coloradocollege.edu/26f0f36c-b0e5-11e6-94e7-005056c00008>,
-		<http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
+        <http://catalog.coloradocollege.edu/278aaee4-b0e5-11e6-9700-005056c00008> ;
     schema:datePublished "2011" ;
     schema:name "The local climate-development nexus: Jatropha and smallholder adaptation in Tamil Nadu, India"@en ;
     schema:pageEnd "343" ;
@@ -24351,6 +24707,19 @@
     cite:authorString "John E. Hobbie, Erik A. Hobbie, Howard Drossman, Maureen Conte, J. C. Weber, Julee Shamhart, Melissa Weinrobe." ;
     cite:citationType "article" ;
     cite:month "JAN" .
+
+<https://doi.org/10.1144/SP383.7> a schema:ScholarlyArticle ;
+    schema:about "The Fosdick migmatite-granite complex of West Antarctica preserves evidence of two crustal differentiation events along a segment of the former active margin of Gondwana, one in the Devonian-Carboniferous and another in the Cretaceous. The Hf-O isotope composition of zircons from Devonian-Carboniferous granites is explained by mixing of material from two crustal sources represented by the high-grade metamorphosed equivalents of a Lower Palaeozoic turbidite sequence and a Devonian calc-alkaline plutonic suite, consistent with an interpretation that the Devonian-Carboniferous granites record crustal reworking without input from a more juvenile source. The Hf-O isotope composition of zircons from Cretaceous granites reflects those same two sources, together with a contribution from a more juvenile source that is most evident in the detachment-hosted, youngest granites. The relatively non-radiogenic epsilon Hf isotope characteristics of zircons from the Fosdick complex granites are similar those from the Permo-Triassic granites from the Antarctic Peninsula. However, the Fosdick complex granites contrast with coeval granites in other localities along and across the former active margin of Gondwana, including the Tasmanides of Australia and the Western Province of New Zealand, where the wider range of more radiogenic epsilon Hf values of zircon suggests that crustal growth through the addition of juvenile material plays a larger role in granite genesis. These new results highlight prominent arc-parallel and arc-normal variations in the mechanisms and timing of crustal reworking v. crustal growth along the former active margin of Gondwana." ;
+    schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
+    schema:datePublished "2013" ;
+    schema:name "Anatectic reworking and differentiation of continental crust along the active margin of Gondwana; a zircon Hf-O perspective from West Antarctica"@en ;
+    schema:pageEnd "210" ;
+    schema:pageStart "169" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a3f31a69-6b3a-11e8-a9d9-a41f7283f8d4> ;
+    schema:url <https://doi.org/10.1144/SP383.7> ;
+    cite:authorString "Chris Yakymchuk, Christine S. Siddoway, C. M. Fanning, Rory McFadden, Fawna J. Korhonen, Michael Brown"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <https://doi.org/10.1162/jinh.2006.37.2.301> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -25509,7 +25878,6 @@
     bf:isbn "0415926955" ;
     bf:provisionActivityStatement "New York : Routledge, 2001"@en ;
     bf:title "Feminist Science Studies: A New Generation"@en ;
-    schema:author <http://catalog.coloradocollege.edu/ccffc7dc-b0f0-11e6-9273-005056c00008> ;
     schema:editor "Maralee Mayberry,  Banu Subramaniam,  Lisa H. Weasel"@en ;
     schema:publicationDate "2001" ;
     cite:callNumber "Q175.5 .M385 2001" ;
@@ -25599,8 +25967,8 @@
     bf:isbn "9781841694580" ;
     bf:provisionActivityStatement "New York : Psychology Press, 2007"@en ;
     bf:title "Evolution and the social mind : evolutionary psychology and social cognition"@en ;
-    schema:publicationDate "2007" ;
     schema:editor "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel." ;
+    schema:publicationDate "2007" ;
     cite:callNumber "BF323.S63 E96 2007" ;
     cite:citationType "book"@en .
 
@@ -25610,8 +25978,8 @@
     bf:isbn "9781897190159" ;
     bf:provisionActivityStatement "Montreal : DC Books, 2007"@en ;
     bf:title "Dingers : contemporary baseball writing"@en ;
-    schema:publicationDate "2007" ;
     schema:editor "edited by David McGimpsey." ;
+    schema:publicationDate "2007" ;
     cite:callNumber "PR9194.52.B37 D56 2007" ;
     cite:citationType "book"@en .
 
@@ -25632,7 +26000,6 @@
     bf:isbn "9780963082961" ;
     bf:provisionActivityStatement "Llano, Tex. : Seven Oaks Pub., 2011"@en ;
     bf:title "An elevated view : Colorado writers on writing"@en ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:editor "W.C. Jameson,  editor"@en ;
     schema:publicationDate "2011" ;
     cite:callNumber "PS571.C6 J347 2011" ;
@@ -25677,7 +26044,6 @@
     bf:isbn "9780271054070" ;
     bf:provisionActivityStatement "University Park, Penn. : Pennsylvania State University Press, 2012"@en ;
     bf:title "A companion to Michael Oakeshott"@en ;
-    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
     schema:editor "edited by Paul Franco; Leslie Marsh."@en ;
     schema:publicationDate "2012" ;
     cite:callNumber "B1649.O344 C66 2012" ;
@@ -25688,7 +26054,6 @@
     bf:isbn "9781557286291" ;
     bf:provisionActivityStatement "Fayetteville : The University of Arkansas Press, 2013"@en ;
     bf:title "Breaking the jaws of silence : sixty American poets speak to the world"@en ;
-    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:editor "edited by Sholeh Wolpe"@en ;
     schema:publicationDate "2013" ;
     cite:callNumber "PS593.P77 B74 2013" ;
@@ -25722,10 +26087,8 @@
     bf:isbn "9781612051581" ;
     bf:provisionActivityStatement "Boulder, CO; London : Paradigm Publishers, "@en ;
     bf:title "Shakespeare and Politics : What a Sixteenth-Century Playwright Can Tell Us About Twenty-First-Century Politics"@en ;
-    schema:author <http://catalog.coloradocollege.edu/25f0606c-b0f2-11e6-abc7-005056c00008> ;
     schema:editor "{edited by Bruce E. Altschuler; Michael A. Genovese.} year={2013}"@en ;
     schema:publicationDate "" ;
-    cite:authorString "Michael A. Genovese, Tom Cronin" ;
     cite:callNumber "PR3017 .S53 2013" ;
     cite:citationType "book"@en .
 
@@ -25746,10 +26109,8 @@
     bf:isbn "9780415780858" ;
     bf:provisionActivityStatement "Abingdon, Oxon; New York, NY : Routledge, 2014"@en ;
     bf:title "Islam in the modern world"@en ;
-    schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008> ;
     schema:editor "edited by Jeffrey T. Kenney; Ebrahim Moosa"@en ;
     schema:publicationDate "2014" ;
-    cite:authorString "Robert Lee" ;
     cite:callNumber "BP161.3 .I739 2014" ;
     cite:citationType "book"@en .
 
@@ -25817,10 +26178,8 @@
     bf:isbn "9781107050068" ;
     bf:provisionActivityStatement "Cambridge, United Kingdom; New York, NY : Cambridge University Press, 2017"@en ;
     bf:title "The Cambridge companion to Xenophon"@en ;
-    schema:author <http://catalog.coloradocollege.edu/218c8b64-c89f-11e7-adfd-005056c00008> ;
     schema:editor "edited by Michael A. Flower."@en ;
     schema:publicationDate "2017" ;
-    cite:authorString "Richard Fernando Buxton" ;
     cite:callNumber "PA4497 .C434 2017" ;
     cite:citationType "book"@en .
 
@@ -25837,11 +26196,11 @@
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2575985~s5> a bf:Book ;
-    bf:note "Marinescu, Andreea; Allen de Oliveira, Tessa (translator)"@en ;
     bf:editionStatement ""@en ;
     bf:isbn "9780814341063" ;
+    bf:note "Marinescu, Andreea; Allen de Oliveira, Tessa (translator)"@en ;
     bf:provisionActivityStatement "Detroit, MI : Wayne State UP, 2017"@en ;
-    bf:title "Raul Ruiz's Cinema of Inquiry"@en ;
+    bf:title "Raúl Ruiz's Cinema of Inquiry"@en ;
     schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
     schema:editor "edited by Ignacio Lopez-Vicuna; Andreea Marinescu"@en ;
     schema:publicationDate "2017" ;
@@ -26171,14 +26530,6 @@
     schema:issueNumber "6; 6" ;
     schema:partOf <http://catalog.coloradocollege.edu/671d3b06-4276-11e8-a20e-a41f7283f8d4> .
 
-<http://catalog.coloradocollege.edu/68233959-4276-11e8-aae7-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "7; 7" ;
-    schema:partOf <http://catalog.coloradocollege.edu/68233958-4276-11e8-83e8-a41f7283f8d4> .
-
-<http://catalog.coloradocollege.edu/6939e147-4276-11e8-99d9-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "6; 6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/6939e146-4276-11e8-b848-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/6987a4e3-3911-11e8-836b-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "9-10" ;
     schema:partOf <http://catalog.coloradocollege.edu/6987a4e2-3911-11e8-8470-a41f7283f8d4> .
@@ -26190,10 +26541,6 @@
 <http://catalog.coloradocollege.edu/6bb4ccc6-3911-11e8-8f5e-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0024-4937" ;
     schema:name "Lithos"@en .
-
-<http://catalog.coloradocollege.edu/6cbd5319-4276-11e8-a4dc-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "6; 6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/6cbd5318-4276-11e8-9ddc-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/6da921e5-3911-11e8-a863-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1814" ;
@@ -26387,6 +26734,9 @@
     schema:issn "1467-8039" ;
     schema:name "Arthropod Structure & Development"@en .
 
+<http://catalog.coloradocollege.edu/a4d53d0a-6b3a-11e8-9f65-a41f7283f8d4> a schema:Periodical ;
+    schema:name "American Geophysical Union Fall Meeting"@en .
+
 <http://catalog.coloradocollege.edu/a6aaaa82-3911-11e8-81e1-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0038-4038" ;
     schema:name "Southern Economic Journal"@en .
@@ -26410,6 +26760,10 @@
 <http://catalog.coloradocollege.edu/afa68c2e-3911-11e8-99e7-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0273-0340" ;
     schema:name "Henry James Review"@en .
+
+<http://catalog.coloradocollege.edu/b0240b5a-6b3a-11e8-bf07-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a4d53d0a-6b3a-11e8-9f65-a41f7283f8d4> ;
+    schema:volumeNumber "2016" .
 
 <http://catalog.coloradocollege.edu/b09a2866-4276-11e8-a0bb-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0748-2558" ;
@@ -26550,10 +26904,6 @@
     schema:issn "1069-9384" ;
     schema:name "Psychonomic bulletin & review"@en .
 
-<http://catalog.coloradocollege.edu/ebe46f1a-3e8f-11e8-8297-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "2" ;
-    schema:partOf <http://catalog.coloradocollege.edu/ebd1641a-3e8f-11e8-b350-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/edb6eac6-3910-11e8-9f90-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0140-525X" ;
     schema:name "Behavioral and Brain Sciences"@en .
@@ -26603,12 +26953,8 @@
     bf:isbn "" ;
     bf:provisionActivityStatement "Chicago, Ill. : Associated Colleges of the Midwest, 2012"@en ;
     bf:title "The power of place : a festschrift for Janet Goodhue Smith"@en ;
-    schema:author <http://catalog.coloradocollege.edu/2887e7b4-b0f2-11e6-8163-005056c00008>,
-        <http://catalog.coloradocollege.edu/5f93d92e-b0f0-11e6-aeec-005056c00008> ;
     schema:editor "edited by Robert Timothy Chasson; Thomas J. Sienkewicz"@en ;
     schema:publicationDate "2012" ;
-    cite:authorString "Robert Lee",
-        "Susan A. Ashley" ;
     cite:callNumber "LC196 .P69 2012" ;
     cite:citationType "book"@en .
 
@@ -26619,10 +26965,6 @@
 <http://catalog.coloradocollege.edu/0771fbfa-3d0f-11e8-99a8-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0261-5606" ;
     schema:name "Journal of International Money and Finance"@en .
-
-<http://catalog.coloradocollege.edu/08cddec7-3911-11e8-93b2-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "7; 7" ;
-    schema:partOf <http://catalog.coloradocollege.edu/08cddec6-3911-11e8-b650-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/0a305030-41c4-11e8-87cb-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/5ec28546-3911-11e8-b7fe-a41f7283f8d4> ;
@@ -26706,7 +27048,8 @@
     schema:name "Armed Forces Journal"@en .
 
 <http://catalog.coloradocollege.edu/971fa2c6-4276-11e8-9fb3-a41f7283f8d4> a schema:Periodical ;
-    schema:issn "0740-2775" ;
+    schema:issn "0740-2775",
+        "0740-2775,19360924" ;
     schema:name "World Policy Journal"@en .
 
 <http://catalog.coloradocollege.edu/9cb32b41-41c3-11e8-8cf4-a41f7283f8d4> a schema:issueNumber ;
@@ -26744,10 +27087,6 @@
 <http://catalog.coloradocollege.edu/b90e0986-4276-11e8-ba84-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/5ec28546-3911-11e8-b7fe-a41f7283f8d4> ;
     schema:volumeNumber "233" .
-
-<http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "6; 6" ;
-    schema:partOf <http://catalog.coloradocollege.edu/c163329e-41c3-11e8-8fee-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/cd0e54d8-3911-11e8-9032-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0002-7189" ;
@@ -26829,6 +27168,10 @@
     schema:issn "0883-1351" ;
     schema:name "Palaios"@en .
 
+<http://catalog.coloradocollege.edu/6cbd5319-4276-11e8-a4dc-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6; 6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6cbd5318-4276-11e8-9ddc-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/6f894458-4276-11e8-8c82-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0272-4634" ;
     schema:name "Journal of Vertebrate Paleontology"@en .
@@ -26901,6 +27244,10 @@
     schema:issn "0002-9483" ;
     schema:name "American Journal of Physical Anthropology"@en .
 
+<http://catalog.coloradocollege.edu/68233959-4276-11e8-aae7-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7; 7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/68233958-4276-11e8-83e8-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/85dc678b-3911-11e8-8ec7-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/85dc678a-3911-11e8-89bf-a41f7283f8d4> .
@@ -26942,9 +27289,17 @@
     schema:issueNumber "4" ;
     schema:partOf <http://catalog.coloradocollege.edu/0b022ac8-3911-11e8-9e34-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/6939e147-4276-11e8-99d9-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6; 6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/6939e146-4276-11e8-b848-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/aa3ae230-41c3-11e8-a877-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/62774688-3911-11e8-a5d5-a41f7283f8d4> ;
     schema:volumeNumber "26" .
+
+<http://catalog.coloradocollege.edu/08cddec7-3911-11e8-93b2-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "7; 7" ;
+    schema:partOf <http://catalog.coloradocollege.edu/08cddec6-3911-11e8-b650-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/9b74cfb0-3f55-11e8-b281-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0013-872X" ;
@@ -26961,6 +27316,10 @@
 <http://catalog.coloradocollege.edu/0b2f64d5-3911-11e8-b927-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "3" ;
     schema:partOf <http://catalog.coloradocollege.edu/0b2f64d4-3911-11e8-b164-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/c163329f-41c3-11e8-8322-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "6; 6" ;
+    schema:partOf <http://catalog.coloradocollege.edu/c163329e-41c3-11e8-8fee-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/e8878870-3910-11e8-b30c-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0378-1119" ;
@@ -26985,5 +27344,4 @@
 <http://catalog.coloradocollege.edu/08c6baa6-3911-11e8-8ee9-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0016-7592" ;
     schema:name "Abstracts with Programs - Geological Society of America"@en .
-
 
