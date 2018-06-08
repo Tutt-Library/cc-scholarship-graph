@@ -43,13 +43,14 @@
                 <a href="mailto:{{ row }}">{{ row }}</a>
                 {% if not loop.last %},{% endif %}
             {% endfor %}
-			
+		
                 {% if info.citations|length > 0 or info.book_citations|length > 0 or info.book_chapter_citations|length > 0 %}
-		<div style="margin-left:5px; margin-top: 10px;">
-				
+		<div style="margin-top:10px; border-top:#d09b2c solid 2px;">
 		<h3>Recent Works</h3>
+		          {% if info.citations|length > 0 %}
 		<h4>Articles</h4>
-                {% if info.citations|length > 0 %}
+		<p style="font-style:italic;">Scholarly articles and other short works published in journals and periodicals; conference & working papers.</p>
+		<div style="margin:10px; border-bottom:#d09b2c solid 2px;">
 		{% for row in info.citations %}
 			<p>
 			{{ row|article_link_filter|safe }}
@@ -58,10 +59,13 @@
 			{% if row|page_number_filter|safe %}{{ row|page_number_filter|safe }}{% endif %}
 			</p>
 		{% endfor %}
+		</div>
                 {% endif %}
 				
                 {% if info.book_citations|length > 0 %}
 		<h4>Books</h4>
+		<p style="font-style:italic;">Monographs or other single publications, written or edited by CC authors.</p>
+		<div style="margin:10px; border-bottom:#d09b2c solid 2px;">
 		{% for row in info.book_citations %}
 			<p>
 			<em>{{ row|book_title_filter|safe }}</em>. 
@@ -69,22 +73,26 @@
 			{{ row.provisionActivityStatement.value }}.
 			</p>
 		{% endfor %}
-
+		</div>
                 {% endif %}
+		
 
 		        {% if info.book_chapter_citations|length > 0 %}		
 		<h4>Book Chapters</h4>
+		<p style="font-style:italic;">Contributions to monographs or other single publications, including chapters, essays, poems, and introductions.</p>
+		<div style="margin:10px; border-bottom:#d09b2c solid 2px;">
 		{% for row in info.book_chapter_citations %}
 		<p>
 		{{ row.book_chapter_title.value	 }}
 		{% if row|page_number_filter|safe %}({{ row|page_number_filter|safe }}){% endif %}
 		 in 
 		<em>{{ row|book_title_filter|safe }}</em>
-		{% if 'editor' in row %}({{ row.editor.value }}.) {% endif %}
+		{% if 'editor' in row %}({{ row.editor.value }}) {% endif %}
 		{{ row|book_edition_filter|safe }}.
 		{% if 'provisionActivityStatement' in row %}{{ row.provisionActivityStatement.value }}.{% endif %}
 		</p>
 		{% endfor %}
+		</div>
 		        {% endif %}
 		</div>
 						{% endif %}
