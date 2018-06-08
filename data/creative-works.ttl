@@ -2654,6 +2654,28 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/8fa1115b-6b3c-11e8-9252-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Is the notion that men's social insecurity may be meaningfully linked to male violence mere apologia, as critics argue, or a useful framework for analysis, policy and prevention? Drawing from long-term ethnographic research on masculinity and violence in Brazil, as well as a survey of cross-cultural research, this paper argues that the insecurity proposition offers important insights for distinguishing between different patterns of male violence. Related theories of male violence, including resource theory and status inconsistency, are incorporated in proposing two contrasting models of conjugal violence: the abuser/victim model and the contestatory model." ;
+    schema:author <http://catalog.coloradocollege.edu/9f02c8c0-b0dd-11e6-b1ed-005056c00008> ;
+    schema:datePublished "2000" ;
+    schema:name "Conference Paper: Male 'Insecurity' and violence?"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/8fa1115a-6b3c-11e8-ab92-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=sih&AN=SN084335> ;
+    cite:authorString "Sarah Hautzinger"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/8ff2001b-6b3c-11e8-861c-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "This paper examines the relations between violence and masculinity in North East Brazil. The testimonies reveal the acute limitations on shifts in men's attitudes relevant to issues surrounding cultural tolerance. The impact of criminalisation appears to be especially profound for young, poor, under-employed African-Brazilian men of the social standing. The institutional responses confined to punitive and pother palliative measures are insufficient. The meanings and functions associated with men's partner violence must be discovered and alternative models of masculine behavior and identity must be constructed. The construction of models of masculine behavior relies on social formations that shape and enforce structural violence and relations of domination. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/9f02c8c0-b0dd-11e6-b1ed-005056c00008> ;
+    schema:datePublished "2001" ;
+    schema:name "Working Paper: The crowing of the rooster: violence and masculinity in North East Brazil"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/8ff2001a-6b3c-11e8-86c3-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=fmh&AN=MRB-SRI081030-020> ;
+    cite:authorString "Sarah Hautzinger"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/91437bd1-3911-11e8-9e6e-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article offers suggestions on managing the risks of the analytics approach used in higher education. It describes some of the key factors affecting decision-making in higher education, including increases in the value of higher education to economic competitiveness and upward mobility and growing scrutiny and accountability. It outlines some of the cautions added by the authors of the book \"Analytics at Work: Smarter Decisions, Better Results\" to make a case for analytics. The risks of analytics include data and information quality, compliance and governance risks." ;
     schema:author <http://catalog.coloradocollege.edu/3c2bf9be-bcd4-11e6-a9c4-005056c00008> ;
@@ -2689,6 +2711,19 @@
     schema:partOf <http://catalog.coloradocollege.edu/91de34ef-3911-11e8-83a3-a41f7283f8d4> ;
     schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=a9h&AN=79852788" ;
     cite:authorString "David Mason"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/91f4291a-6b3c-11e8-8c1d-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "The author focuses on Albert Borgmann's book, \"Real American Ethics.\" According to the author, in its attention to physical, social and technological dimensions of moral life, the book emphasizes issues of central importance to environmental ethics. Particular attention is given to Borgmann's theories on philosophy, culture and every day life, as well as the influence of the book. Article topics include a review of the notable topics in \"Real American Ethics,\" the concept of real ethics, a discussion on various personal and professional virtues as they relate to modern life, and the psychology of Americans. Excerpt from the book are also provided." ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:datePublished "2008" ;
+    schema:name "Reclaiming the Mundane: Comments on Albert Borgmann's Real American Ethics"@en ;
+    schema:pageEnd "73" ;
+    schema:pageStart "65" ;
+    schema:partOf <http://catalog.coloradocollege.edu/e7637cc7-4276-11e8-ae69-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=eih&AN=28834842> ;
+    cite:authorString "Marion Hourdequin"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -2731,6 +2766,17 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/92be7dfb-6b3c-11e8-a366-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Studies of political ambition suggest politicians carefully weigh their options when deciding to run for higher office. These studies either implicitly or explicitly assume a failed campaign for higher political office will be a political liability when it comes time to turn for re-election to the office holder's current position, yet there is no literature which proves this is true for failed presidential bids. Political losses are typically factored into ambition analysis as a component of the costs of running for higher office; yet if failed runs at higher office do not impact chances for re-election, they should not be considered costs. In this paper, we examine the effects of a failed presidential bid on the re-election prospects of incumbent U.S. Congress members and challenge the assumption that past political action affects future political fortune. ..PAT.-Unpublished Manuscript ABSTRACT FROM AUTHOR]; Copyright of Conference Papers -- Southern Political Science Association is the property of Southern Political Science Association and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/2574db54-b0f2-11e6-a307-005056c00008> ;
+    schema:datePublished "2008" ;
+    schema:name "Conference Paper: Fail to the Chief: The Effect of Failed Presidential Primary Bids on Congressional Re-Election Campaigns"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/92be7dfa-6b3c-11e8-a1c3-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=poh&AN=34722218> ;
+    cite:authorString "Ellen Key, Elizabeth Coggins, Cynthia McMeekin"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/92fbd976-3911-11e8-aff6-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/a34607ca-b0f4-11e6-ac87-005056c00008> ;
@@ -2754,6 +2800,39 @@
     cite:authorString "Sarah Hautzinger"@en ;
     cite:citationType "article" ;
     cite:month "Mar" .
+
+<http://catalog.coloradocollege.edu/933f083b-6b3c-11e8-8f71-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Despite the disparate outcomes, most scholarly analysis suggests that negative ads stimulate voter turnout. What we do not know, however, is how this mobilizing effect plays out on Election Day. We use individual level data on turnout in gubernatorial elections to investigate the relationship between negative advertising and vote choice. We suggest that negative advertising can shape voting directly by altering the views voters have of the candidates and indirectly through who is actually mobilized. Candidates are rational, strategic, vote maximizers. Armed with the knowledge that negative ads increase turnout, we expect that candidates will fund negative advertising with the belief that it will benefit their campaigns. Specifically, we hypothesize that candidates with higher proportions of negative advertising will be victorious on Election Day. Voter theory provides support for our hypothesis. Scholars have surmised that negative ads drive up turnout because they typically provide more specific information about candidates and salient issues, and because voters are risk averse. This design allows us to extend the literature of negative advertising to its impact on individual-level behavior. ..PAT.-Unpublished Manuscript ABSTRACT FROM AUTHOR]; Copyright of Conference Papers -- Midwestern Political Science Association is the property of Midwestern Political Science Association and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/2574db54-b0f2-11e6-a307-005056c00008> ;
+    schema:datePublished "2009" ;
+    schema:name "Conference Paper: How Negative Advertising Affects Individual Level Vote Choice"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/933f083a-6b3c-11e8-8fa6-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=poh&AN=45298198> ;
+    cite:authorString "Elizabeth Coggins, Thomas Carsey"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/93a301fa-6b3c-11e8-ad09-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Open and free elections provide a fundamental connection between American institutions and the American public. As a result, the way candidates contest elections and how voters respond has attracted considerable attention from political scientists. The vast majority of this large literature focuses on individual-level voter behavior and its individual-level predictors. When the influence of campaigns on voters has been considered, the focus has been primarily on the impact of candidate contacting (e.g. Wielhouwer and Lockerbie 1994), candidate spending (e.g. Jacobson 1990, Green and Krasno 1988) and/or negative advertising (e.g. Stevens 2007) on voter turnout. While some controversy remains, the consensus is that such activity generally stimulates voter participation. Scholars know comparatively less about how such stimulants affect the choices voters make after they get to the polls. In this paper, we begin such an exploration, focusing specifically on the impact of negative advertising on voter behavior.We do not expect to uncover a simple direct effect of campaign negativity on vote choice. Rather, we expect the impact of negative advertising to depend upon the mix of such advertising between the two candidates, the partisanship of the voters exposed to that advertising, and their political efficacy. We evaluate our theory using advertising data from the Wisconsin Ad Project and voter behavior data from ANES in three Senate elections. ..PAT.-Unpublished Manuscript ABSTRACT FROM AUTHOR]; Copyright of Conference Papers -- Southern Political Science Association is the property of Southern Political Science Association and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/2574db54-b0f2-11e6-a307-005056c00008> ;
+    schema:datePublished "2010" ;
+    schema:name "Conference Paper: Negative Advertising, Efficacy, and Vote Choice in Senate Elections"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/92be7dfa-6b3c-11e8-a1c3-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=poh&AN=54437239> ;
+    cite:authorString "Elizabeth Coggins"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<http://catalog.coloradocollege.edu/93fb14da-6b3c-11e8-aa99-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Two prominent theories of legal decision making provide seemingly contradictory explanations for judicial outcomes. In political science, the Attitudinal Model suggests that judicial outcomes are driven by judges' sincere policy preferences -- judges bring their ideological inclinations to the decision making process and their case outcome choices largely reflect these policy preferences. In contrast, in the law and economics literature, Priest and Klein's well-known Selection Hypothesis posits that court outcomes are largely driven by the litigants' strategic choices in the selection of cases for formal dispute or adjudication -- forward thinking litigants settle cases where potential judicial outcomes are readily discernable (e.g. judicial attitudes are known), hence nullifying the impact of judicial ideological preferences on case outcomes. I believe that the strategic case sorting process proposed in the law and economics literature does, in fact, affect the influence of judge ideology or attitudes on judicial outcomes. However, these two perspectives can be effectively wed to provide an integrated model of judicial decision making that accounts for the influences of both the strategic behavior of litigants and the attitudinal preferences of judges. I test this integrated model of decision making on case outcomes in state supreme courts in the United States and employ an interactive specification to assess the influence of judicial ideology on outcomes while simultaneously accounting for litigants' (and justices') strategic case sorting behavior. ..PAT.-Unpublished Manuscript ABSTRACT FROM AUTHOR]; Copyright of Conference Papers -- Southern Political Science Association is the property of Southern Political Science Association and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
+    schema:author <http://catalog.coloradocollege.edu/2574db54-b0f2-11e6-a307-005056c00008> ;
+    schema:datePublished "2009" ;
+    schema:name "Conference Paper: An Integrated Approach to Judicial Decision Making in the State Supreme Courts"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/92be7dfa-6b3c-11e8-a1c3-a41f7283f8d4> ;
+    schema:url <http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=poh&AN=44916885> ;
+    cite:authorString "Elizabeth Coggins"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
 
 <http://catalog.coloradocollege.edu/971fa2c7-4276-11e8-8392-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3291,6 +3370,19 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/a151b94b-6b3c-11e8-8a2e-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "Researchers and policy makers overwhelmingly stress the harmonious nature of parent involvement. Researchers have focused on individual forms of parent involvement, yet collective efforts of parents in parent-teacher organizations (PTOs) are a key dynamic in schools. Drawing on a case study of an elementary school in an upper-middle-class community, we show that very high levels of parent involvement led to many conflicts. There were three main sources of these routine conflicts. Parents and educators had different priorities; parents favored a warm, friendly, and nonbureaucratic environment while the principal favored an orderly, safe, and bureaucratic environment. There were battles over authority, particularly over the planning of events. And finally, the PTO was a volunteer organization with high levels of turnover, weak lines of communication, and minimal training. This case study suggests the need to reconceptualize our models of family involvement in schooling. ABSTRACT FROM PUBLISHER]" ;
+    schema:author <http://catalog.coloradocollege.edu/41073d14-b0f5-11e6-bc35-005056c00008> ;
+    schema:datePublished "2012" ;
+    schema:name "\"You're Not Going to Call the Shots\": Structural Conflicts between the Principal and the PTO at a Suburban Public Elementary School"@en ;
+    schema:pageEnd "218" ;
+    schema:pageStart "201" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a177cf4b-6b3c-11e8-9931-a41f7283f8d4> ;
+    schema:url <> ;
+    cite:authorString "Annette Lareau, Vanessa Lopes MuÃ±oz"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a16019c0-3f55-11e8-b428-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Lentireduvius Cai & Taylor, new genus, and one new species, L. brasiliensis Cai & Taylor, are described in the subfamily Peiratinae based on a single male specimen from Brazil. The dorsal habitus, antennal segments, male genitalia, and other diagnostic morphological features are illustrated with 25 figures. A key to the genera of Peiratinae of the Western Hemisphere is provided." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
@@ -3328,6 +3420,13 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/a1fabae8-6b3c-11e8-b455-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b58a4648-b0e1-11e6-b367-005056c00008> ;
+    schema:name "Introduction"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2033357~s5> ;
+    cite:authorString "Nino Ricci, Tony Urquhart, Steven Hayward"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/a1fd3481-3f55-11e8-b0a1-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "Premise: Prey species may possess inappropriate behavioural, morphological, and/or physiological responses to introduced, novel predators. Thus, introduced predators may exert strong selection on prey species. Organisms: Black-capped vireo, Vireo atricapilla, and the fire ant, Solenopsis invicta. Data: Behavioural response of and time-energy budget for parental vireo defence against nest predation by fire ants. Field site: Fort Hood, Texas, an 88,500-hectare US military installation. Results: Fire ants usually attacked vireo nests near midnight as parents slept. All attacked nests - whether with eggs or nestlings - failed. However, adults defended their nests vigorously. Nest defence was prolonged, with a mean duration of 7.7 +/- 1.5 hours (25 times longer than that against native snake predators). Compared with brooding or incubation, nest defence is energetically expensive, depleting an estimated 59% of fat stores. Conclusions: Fire ants are effective nest predators on this low-nesting bird species. The behavioural response of vireos to this novel predator is wholly inappropriate, with no benefits and considerable costs. Besides the energetic costs, defence results in numerous bites and venomous stings. Vireos ought to abandon their nests when first attacked by fire ants." ;
     schema:author <http://orcid.org/0000-0002-3020-5205> ;
@@ -3354,6 +3453,17 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/a22f1929-6b3c-11e8-b2f8-a41f7283f8d4> a schema:ScholarlyArticle ;
+    schema:about "We conduct cusum tests of structural change in a rational addiction model of cigarette demand estimated using a panel of annual time series of state-level data. In contrast to the one previous application of cusum tests to the question of cigarette demand stability, our results provide strong evidence of downward shifts in demand during the modern era of health warnings and anti-smoking campaigns." ;
+    schema:author <http://orcid.org/0000-0002-0674-7995> ;
+    schema:datePublished "2005" ;
+    schema:name "Working Paper: Structural Change in Cigarette Demand: Cusum Tests using Panel Data"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/a22f1928-6b3c-11e8-a467-a41f7283f8d4> ;
+    schema:url <http://www.accessecon.com/includes/CountdownloadPDF.aspx?PaperID=EB-05I10004> ;
+    cite:authorString "John R. Schroeter, Aju J. Fenn"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
 <http://catalog.coloradocollege.edu/a25c539e-41c3-11e8-8151-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/5081ee9e-b0e0-11e6-b5bb-005056c00008> ;
@@ -3377,6 +3487,13 @@
     cite:authorString "David Scott Booth, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a2df8d0a-6b3c-11e8-bfb7-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Introduction"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1627879~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/a309d3a9-6b3a-11e8-8b93-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3416,6 +3533,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/a3b36768-6b3c-11e8-ab60-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Smoke and Nothing"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1650421~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/a3de4028-6b3c-11e8-bafc-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Song of the Powers"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1681462~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/a3fd0ff6-4276-11e8-898d-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/60f09682-b0f0-11e6-bee4-005056c00008> ;
@@ -3428,6 +3559,27 @@
     cite:authorString "Douglas Monroy"@en ;
     cite:citationType "article" ;
     cite:month "SEP" .
+
+<http://catalog.coloradocollege.edu/a40918e8-6b3c-11e8-b5b3-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Spooning"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1761600~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/a433f1a8-6b3c-11e8-8fcc-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "Song of the Powers"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1761600~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/a45eca68-6b3c-11e8-b893-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "The Lost House"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1761600~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/a467bdcb-6b3a-11e8-9d96-a41f7283f8d4> a schema:Chapter ;
     schema:author <http://catalog.coloradocollege.edu/2e08aa0c-b0e3-11e6-ba28-005056c00008>,
@@ -3447,6 +3599,27 @@
     cite:authorString "Hunter Scott Oliver-Allen, Neena Grover"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
+
+<http://catalog.coloradocollege.edu/a4769828-6b3c-11e8-9764-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/d1432a6c-b0de-11e6-9f9b-005056c00008> ;
+    schema:name "A new building, a new direction for music"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1714701~s5> ;
+    cite:authorString "Ruth Kolarik"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/a490c74a-6b3c-11e8-8dc6-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/fbdd761c-b0f0-11e6-852e-005056c00008> ;
+    schema:name "Packard Hall addition and renovation"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1714701~s5> ;
+    cite:authorString "Michael Grace"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/a4afb928-6b3c-11e8-87b7-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/26cc1a6c-b0f2-11e6-96e9-005056c00008> ;
+    schema:name "The poetics of the civil life"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2489921~s5> ;
+    cite:authorString "Timothy Fuller"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/a4d53d0b-6b3a-11e8-82ee-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "A diorite pluton and widely distributed mafic dikes occur in the Fosdick migmatite-granite complex, which is interpreted to represent middle-to-lower crustal rocks of the paleo-Pacific active continental margin of Gondwana. The mafic dykes exhibit a variety of relationships with host rocks in the field ranging from undeformed dikes with sharp contacts with host gneisses to dismembered dykes with comingled textures and numerous back-veins of leucosome intruded from host migmatitic gneisses suggestive of significant interaction with crustal rocks. U-Pb ages for magmatic zircon in these rocks yields Cretaceous crystallization ages ranging from ca. 113 Ma to ca. 98 Ma for the mafic dykes and ca. 100 Ma for the diorite pluton. These mafic intrusive rocks, which contain abundant hydrous minerals, are medium- to high-K-series calc-alkaline rocks with basic-intermediate compositions (47-59 wt % SiO (sub 2) for mafic dikes and 52-56 wt % SiO (sub 2) for the diorite pluton). They have trace element patterns characterized by LILE enrichments and negative Nb anomalies indicating an origin from a hydrous mantle source metasomatized by slab-derived components. The samples without evidence of interaction with crustal rocks, which are likely to better reflect the mantle source composition, have positive epsilon Sr (sub (100Ma)) values (+8.1 to +14.5) and negative to slightly positive epsilon Nd (sub (100Ma)) values (-1.6 to +2.5) consistent with derivation from an enriched mantle source. These samples may be divided into two groups either characterized by higher LILE/HFSE ratios, less radiogenic epsilon Sr (sub (100Ma)) values and more radiogenic epsilon Nd (sub (100Ma)) values, or characterized by relatively lower LILE/HFSE ratios, more radiogenic epsilon Sr (sub (100Ma)) values and less radiogenic epsilon Nd (sub (100Ma)) values suggesting differences in the mantle source. The results of this study are consistent with melting of a variably metasomatized sub-arc mantle source during a transition from a wrench to a transtensional tectonic setting, but are inconsistent with a mantle plume origin." ;
@@ -3471,6 +3644,20 @@
     cite:citationType "article" ;
     cite:month "APR" .
 
+<http://catalog.coloradocollege.edu/a4da91e8-6b3c-11e8-ab7b-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "They took our picture"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2481807~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/a5056aa8-6b3c-11e8-8890-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "What I seen"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2481807~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/a52da813-3911-11e8-9df4-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "In both psychology and philosophy, cognitive theories of emotion have met with increasing opposition in recent years. However, this apparent controversy is not so much a gridlock between antithetical stances as a critical debate in which each side is being forced to qualify its position in order to accommodate the other side of the story. Here, I attempt to sort out some of the disagreements between cognitivism and its rivals, adjudicating some disputes while showing that others are merely superficial. Looking at evidence from neuroscience and social psychology, as well as thought experiments and theoretical arguments, I conclude that it is necessary to acknowledge both that emotions have intentional content and that they involve somatic agitation. I also point out some of the more promising directions for future research in this area." ;
     schema:author <http://catalog.coloradocollege.edu/7f729c8c-b0f1-11e6-94c0-005056c00008> ;
@@ -3483,6 +3670,13 @@
     cite:authorString "Rick Anthony Furtak"@en ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/a5304368-6b3c-11e8-a4b3-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "What I learnt in school"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2481807~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/a5382362-41c3-11e8-b8c6-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -3507,9 +3701,23 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/a55b1c28-6b3c-11e8-8ec8-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "What we ate"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2481807~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/a5603207-4276-11e8-a85f-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/a5603206-4276-11e8-a90d-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a577aca8-6b3c-11e8-9b17-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/ccd34394-b0e4-11e6-a920-005056c00008> ;
+    schema:name "Images of suffering: Trauma and Homer's Troy in Euripides' Hecuba"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2477675~s5> ;
+    cite:authorString "Lisa B. Hughes"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/a57e96b1-3911-11e8-943a-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses the early Sanskrit versions of the gopis story in the Indian God, Krsna's life. The said versions are called the Hariva?sa and the Bhagavata Pura?a. The former is reportedly the most influential while the latter is said to be not much known. The article also explores both versions and provides a comparison in relation to the identity of the gopis." ;
@@ -4415,6 +4623,13 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/b14b79da-6b3c-11e8-bdb5-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/e7542aee-3458-11e8-a78a-a41f7283f8d4> ;
+    schema:name "The city -- Janet Smith's and Machiavelli's Florence then back to the future"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2102505~s5> ;
+    cite:authorString "Salvatore Bizzarro"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/b16201ca-6b3a-11e8-887e-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The East Gondwana convergent margin-now consisting of submerged plateaus and rises bordering Australia, Zealandia and Antarctica-consists of a belt of accreted terranes that was stitched by magmatic arcs, then attenuated to form throughgoing continental ribbons separated by narrow failed rift basins. This crustal architecture was discerned from marine geophysical exploration for the midlatitude coastal plateaus and rises. The ROSETTA-ICE project, a new airborne study of the little-known Ross Ice Shelf region, aims to determine crustal makeup, locate tectonic boundaries and calculate seafloor bathymetry using potential fields data. LC130 aircraft equipped with gravimeters, magnetometer and geopositioning are surveying 91 E-W lines at 10 km and 15 N-S tie lines at 55 km spacing, positioned to overfly 1970s depth and gravity points. ROSETTA-ICE geophysics provides magnetic anomalies, Werner depth-to-basement solutions, a new gravity-based bathymetric model at 20-km resolution, and mapping of crustal density tied to the 1970s data. Contrary to current knowledge, the data reveal a major lithospheric boundary 300 km east of the Transantarctic Mountains beneath the floating sector of the West Antarctic ice sheet (WAIS), and demarcate two crustal regions that have contrasting geophysical characteristics and bathymetry. The East Antarctic side consists of a relatively dense integrated column of rock, with low amplitude magnetic anomalies, and deep bathymetry. The West Antarctic side displays high amplitude magnetic anomalies, lower overall density and shallower water depths. The Central High, a basement structure cored at DSDP Site 270 and seismically imaged in the Ross Sea, continues southward as a prominent ribbon of fault-riven continental crust that coincides with the tectonic boundary. Integrated with surface geology bordering the Ross Ice Shelf, the geophysical properties indicate a continuity of Gondwana margin crustal architecture beneath the WAIS, and the need for revision of the existing tectonic framework for West Antarctica. The crustal boundary-well-separated from the Transantarctic Mountains front, and associated narrow rift basins and transfer zones, control the bathymetry, influence oceanographic circulation, and may affect fluids and heat flow beneath the Ross Ice Shelf." ;
     schema:author <http://catalog.coloradocollege.edu/2eadfe42-b0e3-11e6-ba86-005056c00008> ;
@@ -4426,6 +4641,13 @@
     cite:authorString "Christine S. Siddoway, Kirsteen Tinto, Robin E. Bell, Alec Lockett"@en ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/b182397a-6b3c-11e8-8b4d-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:name "The poetry of life and the life of poetry"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2481727~s5> ;
+    cite:authorString "David Mason"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/b18c8f18-4276-11e8-9a53-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -4440,6 +4662,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/b192e31a-6b3c-11e8-a16e-a41f7283f8d4> a schema:Chapter ;
+    schema:author <https://orcid.org/0000-0002-5352-9886> ;
+    schema:name "Snow White sick"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2481823~s5> ;
+    cite:authorString "Jessy Randall"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/b1aab0da-6b3c-11e8-9c2c-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ;
+    schema:name "The social prediction dynamic: a legacy of cognition"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b1778513~s5> ;
+    cite:authorString "Emily Chan"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/b211dc19-4276-11e8-99fb-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
     schema:author <http://catalog.coloradocollege.edu/b62804d4-b0e1-11e6-b218-005056c00008> ;
@@ -4450,6 +4686,13 @@
     cite:authorString "Genevieve Love"@en ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/b213bb7b-6b3c-11e8-9c78-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/a10f6534-b0f4-11e6-8c2f-005056c00008> ;
+    schema:name "Trusting Medical Authorities: Effects of Cognitive Aging and Social Vigilance"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/b213bb7a-6b3c-11e8-9f5e-a41f7283f8d4> ;
+    cite:authorString "Emily Chan, Oscar Ybarra, Denise C. Park, Joel Rodriguez, Julie A. Garcia"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/b2194ba8-6b3a-11e8-b6c0-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The GeoMap Project is building a detailed digital geological dataset of Antarctica, under auspices of the Scientific Committee on Antarctic Research (http://www.scar.org/ssg/geosciences/geomap). The initiative aims to develop a continent-wide integrated online resource for cross-discipline use, by capturing existing geological map data and enhancing the spatial reliability of bedrock exposures, glacial sequences and geomorphology. The international team is collaboratively classifying and describing around 72,000 distinct areas that cover 51,000 km (super 2) of 'known geology' from rock exposures. The digital map data incorporate first-hand geological field observations and laboratory analyses, published geological maps and literature. Glacial deposits and supraglacial features are an important focus, given their potential to provide underutilized records of ice fluctuations, of relevance to climate change. Our poster highlights: (1) Completed digital map database for the entire Ross Sea region and Marie Byrd Land, created at a scale of 1:250,000 (reaching 1:50,000 resolution, in some cases), with geological attributes assigned to all rock polygons. (2) Local legends and tectonostratigraphic schemes that record geological variations. (3) Progress towards a unified classification scheme. (4) Bibliographic links referencing authors of key original work. A large number of hard-copy geological maps and data sources have been utilized, that range in scale, detail, and quality. There is great potential for the dataset to support new inter- and cross-discipline perspectives, through attribute queries and interrogation of continent-wide time-space plots in the context of cryosphere and biosphere geospatial data. The availability of continent-wide geological map data for Antarctica will allow geospatial research questions to be explored, such as: How does geology influence water, minerals and energy availability to sustain biota? Do rock outcrops serve as refugia for at-risk or invasive species? How do rock outcrops affect ice sheet albedo and influence melting? Does higher resolution continent wide mapping of topography and geology contribute to improved climate-ice sheet models? Do volcanic and ice sheet processes correlate, and with what effects on lithosphere, crust and mantle properties?" ;
@@ -4476,6 +4719,20 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/b2304bfb-6b3c-11e8-b3a2-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/f055f394-b0e3-11e6-819e-005056c00008> ;
+    schema:name "A new era of women writers"@en ;
+    schema:partOf <http://catalog.coloradocollege.edu/b2304bfa-6b3c-11e8-8e3f-a41f7283f8d4> ;
+    cite:authorString "Joan Ericson"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/b270911a-6b3c-11e8-a071-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:name "Conclusion"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2409007~s5> ;
+    cite:authorString "Marion Hourdequin, David G. Havlick"@en ;
+    cite:citationType "book chapter"@en .
+
 <http://catalog.coloradocollege.edu/b2711319-4276-11e8-aa85-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "The article discusses various papers published within this issue, including one by Todd Andrew Borlik on visual culture and the performance of stasis in David Garrick's \"Hamlet\" and another by Frank Nicholas Clary on the relationship between theatrical performance and the visual arts." ;
     schema:author <http://catalog.coloradocollege.edu/b62804d4-b0e1-11e6-b218-005056c00008> ;
@@ -4488,6 +4745,20 @@
     cite:authorString "Genevieve Love"@en ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/b2b0d63a-6b3c-11e8-a62c-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:name "Introduction: Ecological Restoration and Layered Landscapes"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2409007~s5> ;
+    cite:authorString "Marion Hourdequin, David G. Havlick"@en ;
+    cite:citationType "book chapter"@en .
+
+<http://catalog.coloradocollege.edu/b2f11b5a-6b3c-11e8-922c-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:name "Ecological Restoration, Continuity, and Change"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2409007~s5> ;
+    cite:authorString "Marion Hourdequin, David G. Havlick"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/b2f4f27a-3911-11e8-bd53-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -4514,6 +4785,13 @@
     cite:authorString "Genevieve Love"@en ;
     cite:citationType "article" ;
     cite:month "" .
+
+<http://catalog.coloradocollege.edu/b308e91a-6b3c-11e8-ac99-a41f7283f8d4> a schema:Chapter ;
+    schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
+    schema:name "RaÃºl Ruiz's Surrealist Documentary of Return: Le Retour d'un amateur de bibliotheques (1983) and Cofralandes (2002)"@en ;
+    schema:partOf <https://tiger.coloradocollege.edu/record=b2575985~s5> ;
+    cite:authorString "Andreea Marinescu"@en ;
+    cite:citationType "book chapter"@en .
 
 <http://catalog.coloradocollege.edu/b3484277-3911-11e8-acb9-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "" ;
@@ -12133,6 +12411,17 @@
     cite:callNumber "JK516 .C73 2004" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b1606047~s5> a bf:Book ;
+    bf:Note "edited by Dana Gioia, David Mason, Meg Schoerke; : ill. ; 24 cm; Includes bibliographical references (p. [1044]-1116) and index; Special Collections copy is gift of David Mason, CC English faculty, 2003"@en ;
+    bf:isbn "0072400196" ;
+    bf:provisionActivityStatement "New York : McGraw Hill, 2004"@en ;
+    bf:title "Twentieth-century American poetry"@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:publicationDate "2004" ;
+    cite:authorString "Dana Gioia, David Mason, Meg Schoerke"@en ;
+    cite:callNumber "PS323.5 .T88 2004" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b1606247~s5> a bf:Book ;
     bf:Note "George Butte; ill. ; 24 cm; Includes bibliographical references (p. 253-262) and index; Theory. Starting over: intersubjectivity and narrative -- Representing deep intersubjectivity: narrative practices. Case studies: deep intersubjectivity and genre. Comedy, film and film comedy -- Deep intersubjectivity and the subversion of comedy -- Deep intersubjectivity and masquerade; System requirements: Adobe Acrobat Reader.; Special Collections copy is a gift of the author, George Butte, CC Professor of English, 2004.; Theory and interpretation of narrative series"@en ;
     bf:editionStatement ""@en ;
@@ -12190,6 +12479,17 @@
     schema:editor "edited by Tomi-Ann Roberts"@en ;
     schema:publicationDate "2004" ;
     cite:callNumber "HQ1206 .L36 2004" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b1635828~s5> a bf:Book ;
+    bf:Note "edited by Sandra McNew and David Mason; ; 21 cm; Includes poems by Rebecca Laroche, Jane Wampler, Clark C. Smith, Beth Ann Bassein, Gail Waldstein, Anita Jepson- Gilbert, Ron Noel, Liz Lewis, Price Strobridge, Lara Adams Gaydos, Janice Hays, Jenn Koiter, Lois Beebe Hayna, and Hal Gimpelson; Editor, David Mason, is CC English Faculty; contributor, Liz Lewis, is CC library staff."@en ;
+    bf:isbn "0935052429" ;
+    bf:provisionActivityStatement "Colorado Springs, CO : Hulbert Center Press, The Colorado College, 2004"@en ;
+    bf:title "Poems from the Baca Grande : a tenth anniversary celebration of Poetry West at the Baca"@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:publicationDate "2004" ;
+    cite:authorString "Lois Beebe Hayna, Jane Wampler, David Mason, Sandra McNew"@en ;
+    cite:callNumber "PS571.C6 P6 2004" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b1637894~s5> a bf:Book ;
@@ -12446,6 +12746,17 @@
     cite:callNumber "HM741 .G58 2009" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b1806748~s5> a bf:Book ;
+    bf:Note "edited by Christopher Kelly and Eve Grace; : ill. ; 24 cm; Includes bibliographical references and index; Gender identity -- Narcissus; or, the lover of himself / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Queen whimsical / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- The two sexes (from the Letter to D'Alembert) / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Women -- \"On women\" / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- \"Sophie; or, woman\" (from Emile) / translated by Eve Grace and edited by Eve Grace and Christopher Kelly -- Women of Paris (from Julie) / translated and edited by Philip Stewart and Jean Vach -- Women of Geneva (from the Letter to D'Alembert) / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Letters to \"Henriette\" / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Women and politics -- The death of Lucretia / translated by Charles Butterworth and edited by Charles Butterworth, Christopher Kelly, and Eve Grace -- Essay on the important events of which women have been the secret cause / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- The Levite of Ephraim / translated by John T. Scott nd edited by John T. Scott, Eve Grace, and Christopher Kelly -- Love -- The loves of Milord Edward Bomston / translated and edited by Philip Stewart and Jean Vach -- Pygmalion / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- On love (from Emile) / translated by Eve Grace and edited by Eve Grace and Christopher Kelly -- On love (from the Letter to D'Alembert) / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Letters to Sara / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Family -- The naturalness of the family (from the second discourse) / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Mothers and infants (from Emile) / translated by Eve Grace and edited by Eve Grace and Christopher Kelly -- Domestic life (from Julie) / translated and edited by Philip Stewart and Jean Vach -- \"A household on Rue St. Denis\" / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace -- Emile and Sophie; or, the solitaries / translated by Christopher Kelly and edited by Christopher Kelly and Eve Grace; Editor Eve Grace is CC political science faculty, 2011; CC Rm copy is gift of the publisher"@en ;
+    bf:isbn "9781584657507" ;
+    bf:provisionActivityStatement "Hanover, N.H. : Dartmouth College Press, 2009"@en ;
+    bf:title "Rousseau on women, love, and family"@en ;
+    schema:author <http://catalog.coloradocollege.edu/27a7864c-b0f2-11e6-a1db-005056c00008> ;
+    schema:publicationDate "2009" ;
+    cite:authorString "Jean-Jacques Rousseau, Christopher Kelly, Eve Grace"@en ;
+    cite:callNumber "B2132 .E5 2009" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b1806821~s5> a bf:Book ;
     bf:Note "Thomas E. Cronin, Colorado College, Michael A. Genovese, New York, Oxford University Press; ix, 370 pages : illustrations ; 24 cm; text; unmediated; volume; Includes bibliographical references and index; Co-author Tom Cronin is CC political science professor"@en ;
     bf:editionStatement "Third"@en ;
@@ -12677,6 +12988,17 @@
     cite:callNumber "BD450 .S766 2013" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b2102509~s5> a bf:Book ;
+    bf:Note "[Katherine Giuffre]; v. (unpaged) : col. ill. ; 11 cm; Publication information supplied by cataloger; Gift of the author, CC professor of sociology, 2012"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Colorado Springs : Katherine Giuffre, 2012"@en ;
+    bf:title "Letters from Raro"@en ;
+    schema:author <http://catalog.coloradocollege.edu/4028b06c-b0f5-11e6-979a-005056c00008> ;
+    schema:publicationDate "2012" ;
+    cite:authorString "Katherine Anne Giuffre"@en ;
+    cite:callNumber "N7433.35.C55 G58 2012" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b2103044~s5> a bf:Book ;
     bf:Note "Thomas E. Cronin and Robert D. Loevy; ill., maps ; 23 cm; Rev. and expanded ed. of: Colorado politics & government. c1993; Includes bibliographical references and index; The character and spirit of Colorado -- Coloradans and their political beliefs -- A brief sociopolitical history of Colorado -- The Colorado constitution and its politics -- Political parties and elections in Colorado -- Electing Colorado legislators -- Legislative politics and processes -- The Colorado governorship -- Judges and justice in Colorado -- Colorado in the federal system -- The important role of local government -- Colorado's assets and liabilities; Authors are CC professors of political science; Politics and governments of the American states"@en ;
     bf:editionStatement ""@en ;
@@ -12763,6 +13085,18 @@
     cite:callNumber "ND1049.C47 B46 2012" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b2195455~s5> a bf:Book ;
+    bf:Note "col. ill. ; 22 p; \"Presented in the exhibition are : Poems written by Japanese [with English translation], portraits by Naoto Nakagawa, photographs by Magdalena SolÃ©, collages of damaged photos by Yoshihito et Saori Sasaguchi.\"; \"Voices from Japan is presented by : Studio for Cultural Exchange, Asian Cultural Council, New Heritage Theatre Group and The Cathedral Church of St. John the Divine.\"; Isao Tsujimoto, Project Director; Library copy gift of project volunteer, Joan Ericson, CC professor of East Asian languages, 2012"@en ;
+    bf:Summary "\"This exhibition shares the heart of the Japanese people, through poems, photographs and portraits. The exhibition underscoress an essential aspect of our increasingly interconnected world: while as global citizens we have unique cultural heritages and influences, as humans we share a common universality - a common bond.\"--P. 4"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "New York : Studio for Cultural Exchange, 2012"@en ;
+    bf:title "Voices from Japan : despair and hope from disaster : The Cathedral Church of Saint John the Divine, New York City, June 15-August 8, 2012"@en ;
+    schema:author <http://catalog.coloradocollege.edu/f055f394-b0e3-11e6-819e-005056c00008> ;
+    schema:publicationDate "2012" ;
+    cite:authorString "Naoto Nakagawa, Magdalena SolÃ©, Yoshihito Sasaguchi, Saori Sasaguchi, Isao Tsujimoto, Joan E. Ericson"@en ;
+    cite:callNumber "PL782.E3 V653 2012" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b2199311~s5> a bf:Book ;
     bf:Note "Katherine Giuffre; viii, 227 pages : illustrations ; 23 cm; text; unmediated; volume; Includes bibliographical references (pages 216-221) and index; Author is CC sociology faculty"@en ;
     bf:editionStatement ""@en ;
@@ -12773,6 +13107,19 @@
     schema:publicationDate "2013" ;
     cite:authorString "Katherine Giuffre"@en ;
     cite:callNumber "HM756 .G58 2013" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2201889~s5> a bf:Book ;
+    bf:Note "edited by Robert D. Loevy; : ill., ports. ; 28 cm; Includes bibliographical references and index; Congregationalist schools: Colorado College -- The pioneer days of Colorado College / James Hutchinson Kerr -- Introduction to \"The history of Colorado College 1874- 1904\" / Louise Buckley -- Excerpts from \"The new West\" / E.P. Tenney -- Excerpts from \"Looking into the past\" / E.P. Tenney -- Professor Marden's life work finished -- President William Frederick Slocum / James W. Park -- A letter to Mr. Ormes / Ruth Loomis -- A 1901-02 magazine review of \"Colorado College\" -- Artus and Anne Van Briggle and Colorado College / R. Laurie and Thomas H. Simmons -- Stormy young rebels / Mabel Barbee Lee -- The Cowles Commission: the early years / Vibha Kapuria-Foreman -- Colorado College and World War II / John L. Zorack -- Edith Bramhall / Robert D. Loevy -- I remember Edith / Letitia Finn Saunders Rehm -- Oral history on the development of the Block Plan / Glenn Brooks -- Fred Sondermann / Robert D. Loevy -- A history of outdoor recreation at Colorado College / Andrew Wallace -- A history of gender at Colorado College / Hannah Varnell and Robert D. Loevy; Also available online in the Colorado College Digital Archives, https://digitalcc.coloradocollege.edu/islandora/ object/coccc:16304; Library copies are signed by, and gift of, the author, CC professor emeritus of political science"@en ;
+    bf:Summary "\"A Colorado College reader: selected writings on the history of Colorado College\" is a collection of stories about and photographs of the people and events that comprise the history of the college, compiled and edited by Political Science Professor Emeritus Robert D. Loevy, written by Dr. Loevy and others"@en ;
+    bf:isbn "9780935052541" ;
+    bf:provisionActivityStatement "Colorado Springs : Colorado College, 2012"@en ;
+    bf:title "A Colorado College reader : selected writings on the history of Colorado College"@en ;
+    schema:author <http://catalog.coloradocollege.edu/389040ae-bcd4-11e6-a733-005056c00008> ;
+    schema:publicationDate "2012" ;
+    schema:url "https:// digitalcc.coloradocollege.edu/islandora/object/coccc:16304" ;
+    cite:authorString "Robert D. Loevy, Horace Morrison Hale, James Hutchison Kerr, Louise Buckley, E. P. Tenney, George Nathaniel Marden, James William Park, Ruth Loomis, R. Laurie Simmons, Thomas H. Simmons, Mabel Barbee Lee, Vibha Kapuria-Foreman, John L. Zorack, Letitia Finn Saunders Rehm, Glenn E. Brooks, Andrew Wallace, Hannah Varnell"@en ;
+    cite:callNumber "LD1133 .L68 2012" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2204714~s5> a bf:Book ;
@@ -13216,6 +13563,17 @@
     schema:publicationDate "2017" ;
     cite:authorString "Karen R. Roybal"@en ;
     cite:callNumber "F790.M5 R69 2017" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2568000~s5> a bf:Book ;
+    bf:Note "Presented by the InterDisciplinary Experimental Arts at Colorado College ; introduction by Joan E. Ericson; pages : color illustrations ; 22 cm; text txt; unmediated n; volume nc; \"The 100-tanka collection by 55 poets in Voices from Japan was compiled by Studio for Cultural Exchange with the cooperation of the Asahi Shimbun newspaper.\"--Page 2; Project directors, Isao Tsujimoto and Kyoko Tsujimoto. Curator, Jessica Hunter-Larsen. Translators, Laurel R. Rodd, Amy V. Heinrich, and Joan E. Ericson; Gift of Joan E. Ericson, CC professor of East Asian languages, 2013"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Colorado Springs : IDEA Space, Colorado College, 2013"@en ;
+    bf:title "Voices from Japan : Perspectives on Disaster and Hope : March 25-April 6. 2013"@en ;
+    schema:author <http://catalog.coloradocollege.edu/f055f394-b0e3-11e6-819e-005056c00008> ;
+    schema:publicationDate "2013" ;
+    cite:authorString "Isao Tsujimoto, Kyoko Tsujimoto, Joan E. Ericson, Laurel R. Rodd, Amy V. Heinrich, Jessica Hunter Larsen"@en ;
+    cite:callNumber "PL782.E3 V653 2013" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2568159~s5> a bf:Book ;
@@ -17810,6 +18168,9 @@
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/8f8e98d0-3f54-11e8-859f-a41f7283f8d4> .
 
+<http://catalog.coloradocollege.edu/8fa1115a-6b3c-11e8-ab92-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Men's Studies Association Meeting"@en .
+
 <http://catalog.coloradocollege.edu/8ff03130-3f54-11e8-b486-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/8f7469b0-3f54-11e8-acc0-a41f7283f8d4> ;
     schema:volumeNumber "340" .
@@ -17817,6 +18178,9 @@
 <http://catalog.coloradocollege.edu/8ff03131-3f54-11e8-b0de-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1" ;
     schema:partOf <http://catalog.coloradocollege.edu/8ff03130-3f54-11e8-b486-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/8ff2001a-6b3c-11e8-86c3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "United Nations International Research and Training Institute for the Advancement of Women (INSTRAW)"@en .
 
 <http://catalog.coloradocollege.edu/900ec476-4276-11e8-bd25-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0091-8369" ;
@@ -17885,6 +18249,14 @@
 <http://catalog.coloradocollege.edu/9153051f-3f54-11e8-9852-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "12" ;
     schema:partOf <http://catalog.coloradocollege.edu/9153051e-3f54-11e8-922a-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/9186a9da-6b3c-11e8-9ba2-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/d86cebc6-4276-11e8-b85e-a41f7283f8d4> ;
+    schema:volumeNumber "344" .
+
+<http://catalog.coloradocollege.edu/9186a9db-6b3c-11e8-9750-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9186a9da-6b3c-11e8-9ba2-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/9189b446-4276-11e8-a1b7-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0762-308990" ;
@@ -17996,6 +18368,9 @@
 <http://catalog.coloradocollege.edu/932e3c87-4276-11e8-bf68-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/932e3c86-4276-11e8-805e-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/933f083a-6b3c-11e8-8fa6-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Conference Papers -- Midwestern Political Science Association"@en .
 
 <http://catalog.coloradocollege.edu/93475b10-3f54-11e8-a0b0-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/620e8a34-3911-11e8-844c-a41f7283f8d4> ;
@@ -18692,6 +19067,10 @@
     schema:issn "0090-6514" ;
     schema:name "Telos: A Quarterly Journal of Critical Thought"@en .
 
+<http://catalog.coloradocollege.edu/a151b94a-6b3c-11e8-8539-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0038-0407" ;
+    schema:name "Sociology of Education"@en .
+
 <http://catalog.coloradocollege.edu/a16e5f86-3911-11e8-8d15-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/a14aaaf6-3911-11e8-93f3-a41f7283f8d4> ;
     schema:volumeNumber "151" .
@@ -18699,6 +19078,14 @@
 <http://catalog.coloradocollege.edu/a16e6200-3f55-11e8-b298-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "1360" ;
     schema:partOf <http://catalog.coloradocollege.edu/9fbe2990-3f55-11e8-80a8-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a177cf4a-6b3c-11e8-94d9-a41f7283f8d4> a schema:volumeNumber ;
+    schema:partOf <http://catalog.coloradocollege.edu/a151b94a-6b3c-11e8-8539-a41f7283f8d4> ;
+    schema:volumeNumber "85" .
+
+<http://catalog.coloradocollege.edu/a177cf4b-6b3c-11e8-9931-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "3" ;
+    schema:partOf <http://catalog.coloradocollege.edu/a177cf4a-6b3c-11e8-94d9-a41f7283f8d4> .
 
 <http://catalog.coloradocollege.edu/a17b8d66-4276-11e8-af2a-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1544-824X" ;
@@ -18739,6 +19126,9 @@
 <http://catalog.coloradocollege.edu/a217639f-3f55-11e8-b51f-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "3" ;
     schema:partOf <http://catalog.coloradocollege.edu/a217639e-3f55-11e8-ab35-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/a22f1928-6b3c-11e8-a467-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Iowa State University, Department of Economics"@en .
 
 <http://catalog.coloradocollege.edu/a246fc4a-3911-11e8-be3c-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/a22a6bd8-3911-11e8-ae91-a41f7283f8d4> ;
@@ -19671,9 +20061,27 @@
 <http://catalog.coloradocollege.edu/b211dc18-4276-11e8-8b92-a41f7283f8d4> a schema:Periodical ;
     schema:name "Upstart: A Journal of English Renaissance Studies"@en .
 
+<http://catalog.coloradocollege.edu/b213bb7a-6b3c-11e8-9f5e-a41f7283f8d4> a bf:Book ;
+    bf:Summary "It is reasonable to expect that people should be inclined to take the advice of a person they think is honest and competent but less inclined to be persuaded by either an untrustworthy or incompetent person. In this chapter we describe research that has examined how younger and older adults process information that has to do with others' moral and competence characteristics and how cognitive functioning differences between the age groups may affect the manner in which older and younger adults generate inferences about others' personalities. (PsycINFO Database Record (c) 2016 APA, all rights reserved)"@en ;
+    bf:isbn "1-59147-731-X" ;
+    bf:provisionActivityStatement "Washington, DC, US : American Psychological Association, 2007"@en ;
+    bf:title "Medical adherence and aging: Social and cognitive perspectives"@en ;
+    schema:editor "Park,  Denise C.; Liu,  Linda L. (Ed)"@en ;
+    schema:publicationDate "2007" ;
+    cite:citationType "book"@en .
+
 <http://catalog.coloradocollege.edu/b22c3570-41c3-11e8-8fc8-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0022-5258" ;
     schema:name "Journal of Transport Economics & Policy"@en .
+
+<http://catalog.coloradocollege.edu/b2304bfa-6b3c-11e8-8e3f-a41f7283f8d4> a bf:Book ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Cambridge, England : Cambridge University Press, 2016"@en ;
+    bf:title "The Cambridge history of Japanese literature"@en ;
+    schema:editor "Shirane, Haruo; Suzuki, Tomi; Lurie, David,  eds"@en ;
+    schema:publicationDate "2016" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=bas&AN=BAS888823" ;
+    cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/b24b0810-41c3-11e8-b3d1-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/b22c3570-41c3-11e8-8fc8-a41f7283f8d4> ;
@@ -21564,10 +21972,6 @@
     schema:partOf <http://catalog.coloradocollege.edu/e73d66c6-4276-11e8-a4e3-a41f7283f8d4> ;
     schema:volumeNumber "21" .
 
-<http://catalog.coloradocollege.edu/e7637cc7-4276-11e8-ae69-a41f7283f8d4> a schema:issueNumber ;
-    schema:issueNumber "1" ;
-    schema:partOf <http://catalog.coloradocollege.edu/e7637cc6-4276-11e8-9779-a41f7283f8d4> .
-
 <http://catalog.coloradocollege.edu/e7aeebac-3910-11e8-a7aa-a41f7283f8d4> a schema:volumeNumber ;
     schema:partOf <http://catalog.coloradocollege.edu/e7aa28ee-3910-11e8-b3a5-a41f7283f8d4> ;
     schema:volumeNumber "33" .
@@ -23270,6 +23674,18 @@
     schema:partOf <http://catalog.coloradocollege.edu/dc99d467-4276-11e8-8efa-a41f7283f8d4> ;
     schema:url <https://doi.org/10.1016/j.ydbio.2008.07.035> ;
     cite:authorString "Darrell J. Killian, Elizabeth Harvey, Peter Johnson, Muneyoshi Otori, Shohei Mitani, Ding Xue"@en ;
+    cite:citationType "article" ;
+    cite:month "" .
+
+<https://doi.org/10.1016/j.ydbio.2010.05.298> a schema:ScholarlyArticle ;
+    schema:about "" ;
+    schema:author <http://catalog.coloradocollege.edu/cca70d06-b0f0-11e6-b828-005056c00008> ;
+    schema:datePublished "2010" ;
+    schema:name "Characterization and mapping of mutants that affect sex-specific neurons in C. elegans"@en ;
+    schema:pageStart "497" ;
+    schema:partOf <http://catalog.coloradocollege.edu/9186a9db-6b3c-11e8-9750-a41f7283f8d4> ;
+    schema:url <https://doi.org/10.1016/j.ydbio.2010.05.298> ;
+    cite:authorString "Darrell J. Killian, Gulden Kaplan, Mazhgan Rowneki"@en ;
     cite:citationType "article" ;
     cite:month "" .
 
@@ -25906,6 +26322,36 @@
     cite:callNumber "DT365.18 .E27 2001" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b1627879~s5> a bf:Book ;
+    bf:Note "introduction by David Mason; ill. ; 21 cm; \"Published to accompany exhibitions at: Colorado College, 17 September - 24 October, 2000; Swarthmore College, 1 November - 30 November, 2000.\"; \"Aralia Press: checklist of titles\": p. 11-29; \"Eleven hundred copies printed. Set in Hermann Zapf's Aldus type. Designed by Jerry Kelly.\"--Colophon; David Mason is CC Professor of English, 2004"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "West Chester, Pa. : Aralia Press, 2000"@en ;
+    bf:title "Aralia Press : poetry and fine printing"@en ;
+    schema:editor "Jerry Kelly"@en ;
+    schema:publicationDate "2000" ;
+    cite:callNumber "Z239.A6495 A725 2000" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b1650421~s5> a bf:Book ;
+    bf:Note "edited by William Thompson; ; 23 cm; Bouts-Rimés fashioned from Shakespeare's Sonnet 20 by various authors; Gift of contributor David Mason, CC Professor of English, 2005"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Madison, Wis. : Parallel Press, 2005"@en ;
+    bf:title "Fashioned pleasures : twenty-four poets play Bouts-Rimés with a Shakespearean sonnet"@en ;
+    schema:editor "edited by William Thompson"@en ;
+    schema:publicationDate "2005" ;
+    cite:callNumber "PN1514 .F37 2005" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b1681462~s5> a bf:Book ;
+    bf:Note "edited by Dan Stone and Stephen Young; At head of title: National Endowment for the Arts and the Poetry Foundation present; ; 23 cm; \"Provides students with more that 100 celebrated poems that are suitable for performance...\"--Back cover; Includes bibliographical references (p. 164-169); Gift of contributor David Mason, CC English faculty, 2006"@en ;
+    bf:isbn "1881505111" ;
+    bf:provisionActivityStatement "Chicago : Poetry Foundation, 2005"@en ;
+    bf:title "The anthology : poems for Poetry Out Loud : National Recitation Contest"@en ;
+    schema:editor "edited by Dan Stone; Stephen Young"@en ;
+    schema:publicationDate "2005" ;
+    cite:callNumber "PS584 .A6 2005" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b1687137~s5> a bf:Book ;
     bf:Summary "English language--Rhetoric--Study and teaching--Handbooks, manuals, etc.; Report writing--Study and teaching (Higher)--Handbooks, manuals, etc.; Writing centers--Administration--Handbooks, manuals, etc."@en ;
     bf:editionStatement ""@en ;
@@ -25961,17 +26407,6 @@
     cite:callNumber "BF335 .R35 2008" ;
     cite:citationType "book"@en .
 
-<https://tiger.coloradocollege.edu/record=b1778513~s5> a bf:Book ;
-    bf:Note "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel; ill. ; 24 cm; Includes bibliographical references and indexes; Contributor Emily Chan, CC Psychology Faculty, 2009; Sydney Symposium of Social Psychology series ; v. 9"@en ;
-    bf:editionStatement ""@en ;
-    bf:isbn "9781841694580" ;
-    bf:provisionActivityStatement "New York : Psychology Press, 2007"@en ;
-    bf:title "Evolution and the social mind : evolutionary psychology and social cognition"@en ;
-    schema:editor "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel." ;
-    schema:publicationDate "2007" ;
-    cite:callNumber "BF323.S63 E96 2007" ;
-    cite:citationType "book"@en .
-
 <https://tiger.coloradocollege.edu/record=b1794198~s5> a bf:Book ;
     bf:Note "edited by David McGimpsey; 22 cm; Gift of contributor Steven Hayward, CC English faculty, 2009; Moosehead anthology (Montreal) ; XI"@en ;
     bf:editionStatement ""@en ;
@@ -25981,6 +26416,16 @@
     schema:editor "edited by David McGimpsey." ;
     schema:publicationDate "2007" ;
     cite:callNumber "PR9194.52.B37 D56 2007" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2033357~s5> a bf:Book ;
+    bf:Note "{Nino Ricci ; illustrations by Tony Urquhart ; introduction by Steven Hayward; 263: 1011; col. ill. ; 25 cm; Contributor Steven Hayward is CC English faculty},"@en ;
+    bf:editionStatement "20th anniversary"@en ;
+    bf:isbn "9781897151983" ;
+    bf:provisionActivityStatement "Toronto : Cormorant Books, 2010"@en ;
+    bf:title "Lives of the saints"@en ;
+    schema:publicationDate "2010" ;
+    cite:callNumber "PR9199.3.R512 L58 2010" ;
     cite:citationType "book"@en .
 
 <https://tiger.coloradocollege.edu/record=b2033737~s5> a bf:Book ;
@@ -26183,6 +26628,39 @@
     cite:callNumber "PA4497 .C434 2017" ;
     cite:citationType "book"@en .
 
+<https://tiger.coloradocollege.edu/record=b2477675~s5> a bf:Book ;
+    bf:Note "edited by Danielle Schaub and Elspeth McInnes; xi, 259 pages : color illustrations ; 20 cm; text; unmediated; volume; Includes bibliographical references; Contributor Lisa B. Hughes is CC comparative literature faculty"@en ;
+    bf:editionStatement "First"@en ;
+    bf:isbn "9781848884557" ;
+    bf:provisionActivityStatement "Oxford, United Kingdom : Inter-Disciplinary Press, 2016"@en ;
+    bf:title "Trauma and meaning making"@en ;
+    schema:editor "edited by Danielle Schaub; Elspeth McInnes"@en ;
+    schema:publicationDate "2016" ;
+    cite:callNumber "BF175.5.P75 T72 2016" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2481727~s5> a bf:Book ;
+    bf:Note "edited by Ronald Koury ; with an introduction by William H. Pritchard; xx, 311 pages ; 24 cm; text txt; unmediated n; volume nc; Includes bibliographical references; Contributor David Mason is CC professor of English, 2017; Hudson Review"@en ;
+    bf:editionStatement "First"@en ;
+    bf:isbn "9780815634874" ;
+    bf:provisionActivityStatement "Syracuse : Syracuse University Press, 2017"@en ;
+    bf:title "Literary awakenings : Personal Essays from The Hudson Review"@en ;
+    schema:editor "edited by Ronald Khoury"@en ;
+    schema:publicationDate "2017" ;
+    cite:callNumber "PN452 .L55 2016" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2481823~s5> a bf:Book ;
+    bf:Note "introduction by Jennifer Finstrom ; foreword by Chris Lott; xxi, 180 pages ; 23 cm; text txt; unmediated n; volume nc; Contributor Jessy Randall is CC Archivist and Curator of Special Collections, 2017"@en ;
+    bf:Summary "Poetry selected from www.elclectica.org October 1996 through February 2016"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Albuquerque, NM : Eclectica Publishing Intl LLC, 2016"@en ;
+    bf:title "Eclectica Magazine : Best Poetry : Celebrating 20 Years Online"@en ;
+    schema:editor "Eclectica Magazine"@en ;
+    schema:publicationDate "2016" ;
+    cite:callNumber "PS617 .E25 2016" ;
+    cite:citationType "book"@en .
+
 <https://tiger.coloradocollege.edu/record=b2482974~s5> a bf:Book ;
     bf:Note "pages ; 20 cm; text txt; unmediated n; volume nc; Superiority fantasy / Nathan James -- Holes in my identity / Nathan Yungerberg -- They shootin! or, I ain't neva scared ... / Idris Goodwin -- Dead of night ... the execution of ... / Nambi E. Kelly -- Abortion / NSangou Njikam -- Walking next to Michael Brown / Eric Micha Holmes -- How I feed / Dennis A. Allen II; Contributor Idris Goodwin is CC theatre and dance faculty, 2017"@en ;
     bf:Summary "\"In light of the police shootings of Mike Brown in Ferguson, Missouri and John Crawford III in Beavercreek, Ohio, among others, The New Black Fest commissioned seven emerging black playwrights to write 10-15 minute monologues that explore their feelings about the well- being of black in a culture of institutional profiling.\"-- Publisher's Web site"@en ;
@@ -26195,18 +26673,14 @@
     cite:callNumber "PS627.N4 N48 2016" ;
     cite:citationType "book"@en .
 
-<https://tiger.coloradocollege.edu/record=b2575985~s5> a bf:Book ;
-    bf:editionStatement ""@en ;
-    bf:isbn "9780814341063" ;
-    bf:note "Marinescu, Andreea; Allen de Oliveira, Tessa (translator)"@en ;
-    bf:provisionActivityStatement "Detroit, MI : Wayne State UP, 2017"@en ;
-    bf:title "Raúl Ruiz's Cinema of Inquiry"@en ;
-    schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
-    schema:editor "edited by Ignacio Lopez-Vicuna; Andreea Marinescu"@en ;
+<https://tiger.coloradocollege.edu/record=b2489921~s5> a bf:Book ;
+    bf:Note "edited by Noël O'Sullivan; ; 25 cm; Includes bibliographical references and index; Contributor Timothy Fuller is CC professor of political science"@en ;
+    bf:isbn "9781845409272" ;
+    bf:provisionActivityStatement "Exeter, U.K. : Imprint Academic, 2017"@en ;
+    bf:title "The Place of Michael Oakeshott in Contemporary Western and Non-Western Thought"@en ;
+    schema:editor "edited by Noël O'Sullivan"@en ;
     schema:publicationDate "2017" ;
-    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=mzh&AN=2017443843" ;
-    cite:authorString "Andreea Marinescu, Tessa de Oliveira Allen (translator)" ;
-    cite:callNumber "PN1998.3.R8355 R38 2017" ;
+    cite:callNumber "JC257.O244 P53 2017" ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/000f4c5c-3d0f-11e8-9521-a41f7283f8d4> a schema:Periodical ;
@@ -26883,6 +27357,10 @@
         "1520-5126" ;
     schema:name "Journal of the American Chemical Society"@en .
 
+<http://catalog.coloradocollege.edu/e7637cc7-4276-11e8-ae69-a41f7283f8d4> a schema:issueNumber ;
+    schema:issueNumber "1" ;
+    schema:partOf <http://catalog.coloradocollege.edu/e7637cc6-4276-11e8-9779-a41f7283f8d4> .
+
 <http://catalog.coloradocollege.edu/e7aa28ee-3910-11e8-b3a5-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0743-7463",
         "1520-5827" ;
@@ -26948,14 +27426,39 @@
     schema:issn "0269-1191" ;
     schema:name "French History"@en .
 
-<https://tiger.coloradocollege.edu/record=b2102505~s5> a bf:Book ;
-    bf:Note "edited by Robert Timothy Chasson and Thomas J. Sienkewicz; ill., some col. ; 29 cm; Foreword / Christopher Welna -- Preface: Botticelli, bureaucrats and bankers : a view of Florence from Chicago / Elizabeth Hayford -- Biography of Janet Goodhue Smith -- Courses taught by Janet Goodhue Smith -- Teaching in Florence for thirty-six years / Janet Goodhue Smith -- About the contributors -- pt. 1. Art History -- Lorenzo de'Medici and Poggio a Caiano: an Augustan ambiguity of purpose in building / Edmund Burke -- Theseus' lyre / Stephen Fineberg -- A revealing omission in Alberti's De re aedificatoria / Jeffrey Hoover -- Alexandre Lenoir's tomb for Blanche of Castille / Mary B. Shephard -- \"Yankee stonecutter, Florentine sculptor: Thoughts on revising our model for studying expatriot artists / Julia Sienkewicz -- Teaching Hercules in Florence / Thomas J. Sienkewicz -- \"How do you solve a problem like Maria?\": Fashioning the Virgin in Renaissance Venice / Katherine R. Smith Abbott - - Teaching heaven, hell, and Taddeo di Bartolo at San Gimignano / Gail E. Solberg -- In the margin: Meditations on Bernardino Poccetti / Robert Warde -- pt. 2. The city - - Janet Smith's and Machiavelli's Florence then back to the future / Salvatore Bizzarro -- When \"The wild West\" went to Florence / William L. Urban -- When Florence was a flood plain / Robert Hellenga -- Tuscany / Robert Hellenga -- pt. 3. Italian politics -- Enforcing justice: The controversial case of Giuseppe Musolino / Susan A. Ashley -- Italy's Mediterranean vocation / Robert Lee -- The contentious path of the Italian Left, 1920-2010 / W. Rand Smith -- pt. 4. Literature and literary criticism -- Images from Italy / Robert Grafsgaard -- \"Worn out shoes,\" a translation from Natalia Ginzburg's Le piccole virtu / Virginia Hellenga -- \"My poetry won't change the world,\" selected poems translated from Patrizia Cavalli's Le mie poesie non cambieranno il mondo / Virginia Hellenga -- A holy career in early modern Florence: The Vita of Maria Minima Stozzi di San Filippo Neri / Anne Jacobson Schutte -- Four poems / Nicholas Regiacorte -- \"Mixed field greens\" and \"At Madonna dell'Incoronata,\" both translated from Fujj' ammÃƒÂ«sÃŒâ€ che, poems in Vastese / Nicholas Regiacorte -- Il cuore perduto / Sylvia Zethmayr Shults -- Ut pictura poesis: A note on the word order in De rerum natura I. 99 / Daniel J. Taylor -- Prudenza as spectacle: Machiavelli, Cervantes, and their leading ladies / Patricia Vilches -- Inferno...and beyond / Susan Warde -- Afterword: Janet Goodhue Smith's humanism / Diane Mockbridge -- Appendix: Visiting faculty for ACM Florence programs -- Visiting faculty courses for ACM Florence programs; Gift of the publisher, 2012; Contributors Susan A. Ashley, Robert Lee, and Salvatore Bizzarro are CC history, political science, and Romance languages faculty, respectively"@en ;
-    bf:isbn "" ;
-    bf:provisionActivityStatement "Chicago, Ill. : Associated Colleges of the Midwest, 2012"@en ;
-    bf:title "The power of place : a festschrift for Janet Goodhue Smith"@en ;
-    schema:editor "edited by Robert Timothy Chasson; Thomas J. Sienkewicz"@en ;
-    schema:publicationDate "2012" ;
-    cite:callNumber "LC196 .P69 2012" ;
+<https://tiger.coloradocollege.edu/record=b1714701~s5> a bf:Book ;
+    bf:Note "edited by Elaine Freed; : ill. (some col.), plans ; 26 cm; Plans on the endpapers; Foreword / Franz Schulze -- Introduction / Elaine Freed -- Teaching Packard Hall / Ruth Kolarik -- A new building, a new direction for music / Michael Grace -- Packard Hall addition and renovation / Adam Yarinsky -- Open cloister: public art as collaboration / Carl Reed -- Other voices on Packard / Elaine Freed -- Construction facts sheets: Packard Hall and addition; Winner of the 2007 Star of Excellence Awards, \"Best of Class\": \"Colorado College, management design, print craft, for print excellence in books, book jackets and diaries\"; Elaine Freed is former CC development staff; Ruth Kolarik is CC professor of art; Carl Reed is CC professor of art; Michael Grace is CC professor of music"@en ;
+    bf:isbn "9780935052466" ;
+    bf:provisionActivityStatement "Colorado Springs, Col. : The Colorado College Studies, 2007"@en ;
+    bf:title "Architecture as teacher : Packard Hall at Colorado College"@en ;
+    schema:editor "Elaine Freed"@en ;
+    schema:publicationDate "2007" ;
+    cite:callNumber "NA6602.A76 A724 2007" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b1778513~s5> a bf:Book ;
+    bf:Note "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel; : ill. ; 24 cm; Includes bibliographical references and indexes; Contributor Emily Chan, CC Psychology Faculty, 2009; Sydney Symposium of Social Psychology series ; v. 9"@en ;
+    bf:editionStatement ""@en ;
+    bf:isbn "9781841694580" ;
+    bf:provisionActivityStatement "New York : Psychology Press, 2007"@en ;
+    bf:title "Evolution and the social mind : evolutionary psychology and social cognition"@en ;
+    schema:editor "edited by Joseph P. Forgas, Martie G. Haselton, William von Hippel." ;
+    schema:publicationDate "2007" ;
+    cite:callNumber "BF323.S63 E96 2007" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2575985~s5> a bf:Book ;
+    bf:editionStatement ""@en ;
+    bf:isbn "9780814341063" ;
+    bf:note "Marinescu, Andreea; Allen de Oliveira, Tessa (translator)"@en ;
+    bf:provisionActivityStatement "Detroit, MI : Wayne State UP, 2017"@en ;
+    bf:title "Raúl Ruiz's cinema of inquiry"@en ;
+    schema:author <http://catalog.coloradocollege.edu/c4d6c0ee-b0f5-11e6-bf5a-005056c00008> ;
+    schema:editor "edited by Ignacio López-Vicuña; Andreea Marinescu"@en ;
+    schema:publicationDate "2017" ;
+    schema:url "http://0-search.ebscohost.com.tiger.coloradocollege.edu/login.aspx?direct=true&db=mzh&AN=2017443840" ;
+    cite:authorString "Andreea Marinescu, Tessa de Oliveira Allen (translator)" ;
+    cite:callNumber "PN1998.3.R8355 R38 2017" ;
     cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/06746940-41c4-11e8-82a8-a41f7283f8d4> a schema:volumeNumber ;
@@ -27046,6 +27549,9 @@
 <http://catalog.coloradocollege.edu/8bf498b6-4276-11e8-a4a3-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1559-162X" ;
     schema:name "Armed Forces Journal"@en .
+
+<http://catalog.coloradocollege.edu/92be7dfa-6b3c-11e8-a1c3-a41f7283f8d4> a schema:Periodical ;
+    schema:name "Conference Papers -- Southern Political Science Association"@en .
 
 <http://catalog.coloradocollege.edu/971fa2c6-4276-11e8-9fb3-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0740-2775",
@@ -27148,6 +27654,37 @@
     schema:issn "0094-8276" ;
     schema:name "Geophysical Research Letters"@en .
 
+<https://tiger.coloradocollege.edu/record=b1761600~s5> a bf:Book ;
+    bf:Note "Sostavitel' Eipril Lindner; 22 cm; English and Russian on facing pages; Gift of contributor David Mason, CC English faculty, 2007; Contains David Mason poems \"Spooning,\" Song of the Powers, \" and \"The Lost House\""@en ;
+    bf:isbn "9785942824366" ;
+    bf:provisionActivityStatement "Moscow : Ogi, 2007"@ru ;
+    bf:title "Sovremennaia amerikanskaia poeziia : antologiia"@ru ;
+    schema:editor "Compiled by Eipril Lindner"@en ;
+    schema:publicationDate "2007" ;
+    cite:callNumber "PS619.R8 S68 2007" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2102505~s5> a bf:Book ;
+    bf:Note "edited by Robert Timothy Chasson and Thomas J. Sienkewicz; : ill., some col. ; 29 cm; Foreword / Christopher Welna -- Preface: Botticelli, bureaucrats and bankers : a view of Florence from Chicago / Elizabeth Hayford -- Biography of Janet Goodhue Smith -- Courses taught by Janet Goodhue Smith -- Teaching in Florence for thirty-six years / Janet Goodhue Smith -- About the contributors -- pt. 1. Art History -- Lorenzo de'Medici and Poggio a Caiano: an Augustan ambiguity of purpose in building / Edmund Burke -- Theseus' lyre / Stephen Fineberg -- A revealing omission in Alberti's De re aedificatoria / Jeffrey Hoover -- Alexandre Lenoir's tomb for Blanche of Castille / Mary B. Shephard -- \"Yankee stonecutter, Florentine sculptor: Thoughts on revising our model for studying expatriot artists / Julia Sienkewicz -- Teaching Hercules in Florence / Thomas J. Sienkewicz -- \"How do you solve a problem like Maria?\": Fashioning the Virgin in Renaissance Venice / Katherine R. Smith Abbott - - Teaching heaven, hell, and Taddeo di Bartolo at San Gimignano / Gail E. Solberg -- In the margin: Meditations on Bernardino Poccetti / Robert Warde -- pt. 2. The city - - Janet Smith's and Machiavelli's Florence then back to the future / Salvatore Bizzarro -- When \"The wild West\" went to Florence / William L. Urban -- When Florence was a flood plain / Robert Hellenga -- Tuscany / Robert Hellenga -- pt. 3. Italian politics -- Enforcing justice: The controversial case of Giuseppe Musolino / Susan A. Ashley -- Italy's Mediterranean vocation / Robert Lee -- The contentious path of the Italian Left, 1920-2010 / W. Rand Smith -- pt. 4. Literature and literary criticism -- Images from Italy / Robert Grafsgaard -- \"Worn out shoes,\" a translation from Natalia Ginzburg's Le piccole virtu / Virginia Hellenga -- \"My poetry won't change the world,\" selected poems translated from Patrizia Cavalli's Le mie poesie non cambieranno il mondo / Virginia Hellenga -- A holy career in early modern Florence: The Vita of Maria Minima Stozzi di San Filippo Neri / Anne Jacobson Schutte -- Four poems / Nicholas Regiacorte -- \"Mixed field greens\" and \"At Madonna dell'Incoronata,\" both translated from Fujj' ammÃƒÂ«sÃŒâ€ che, poems in Vastese / Nicholas Regiacorte -- Il cuore perduto / Sylvia Zethmayr Shults -- Ut pictura poesis: A note on the word order in De rerum natura I. 99 / Daniel J. Taylor -- Prudenza as spectacle: Machiavelli, Cervantes, and their leading ladies / Patricia Vilches -- Inferno...and beyond / Susan Warde -- Afterword: Janet Goodhue Smith's humanism / Diane Mockbridge -- Appendix: Visiting faculty for ACM Florence programs -- Visiting faculty courses for ACM Florence programs; Gift of the publisher, 2012; Contributors Susan A. Ashley, Robert Lee, and Salvatore Bizzarro are CC history, political science, and Romance languages faculty, respectively"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Chicago, Ill. : Associated Colleges of the Midwest, 2012"@en ;
+    bf:title "The power of place : a festschrift for Janet Goodhue Smith"@en ;
+    schema:editor "edited by Robert Timothy Chasson; Thomas J. Sienkewicz"@en ;
+    schema:publicationDate "2012" ;
+    cite:callNumber "LC196 .P69 2012" ;
+    cite:citationType "book"@en .
+
+<https://tiger.coloradocollege.edu/record=b2409007~s5> a bf:Book ;
+    bf:isbn "9780190240349" ;
+    bf:provisionActivityStatement "[Place of publication not identified] : [Publisher not identified], 2016"@en ;
+    bf:title "Restoring layered landscapes : history, ecology, and culture"@en ;
+    schema:author <http://catalog.coloradocollege.edu/803abb06-b0f1-11e6-8bde-005056c00008> ;
+    schema:editor "edited by Marion Hourdequin; David G. Havlick"@en ;
+    schema:publicationDate "2016" ;
+    schema:url "http://0-dx.doi.org.tiger.coloradocollege.edu/10.1093/acprof:oso/9780190240318.001.0001" ;
+    cite:authorString "Marion Hourdequin, David G. Havlick"@en ;
+    cite:citationType "book"@en .
+
 <http://catalog.coloradocollege.edu/07d8571c-3d0f-11e8-9602-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0022-0485" ;
     schema:name "Journal of Economic Education"@en .
@@ -27200,10 +27737,6 @@
     schema:issn "0021-9193" ;
     schema:name "Journal of Bacteriology"@en .
 
-<http://catalog.coloradocollege.edu/d86cebc6-4276-11e8-b85e-a41f7283f8d4> a schema:Periodical ;
-    schema:issn "0012-1606" ;
-    schema:name "Developmental biology"@en .
-
 <http://catalog.coloradocollege.edu/dd2cb0f4-3910-11e8-9876-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0884-9382" ;
     schema:name "National Interest"@en .
@@ -27223,6 +27756,16 @@
 <http://catalog.coloradocollege.edu/fd05a776-3910-11e8-9193-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0008-4166" ;
     schema:name "Canadian journal of microbiology"@en .
+
+<https://tiger.coloradocollege.edu/record=b2481807~s5> a bf:Book ;
+    bf:Note "edited by Marilyn Nelson; pages : illustration ; 23 cm; text txt; unmediated n; volume nc; Poems inspired by a 1955 family photo of Mrs. Nelson, a school teacher, and her 2nd grade elementary class. Mrs. Nelson was the only person of color in the photo with 20 white children. Twenty poets each \"claimed\" a child in the photo, and wrote one or two poems in the voice of the child, with perspectives about Mrs. Nelson and their own lives on a Salina, Kansas Air Force base; Gift of contributor David Mason, CC professor of English, 2017"@en ;
+    bf:isbn "" ;
+    bf:provisionActivityStatement "Tillamook, OR : World Enough Writers, 2017"@en ;
+    bf:title "Mrs. Nelson's Class"@en ;
+    schema:editor "edited by Marilyn Nelson"@en ;
+    schema:publicationDate "2017" ;
+    cite:callNumber "PS617 .M77 2017" ;
+    cite:citationType "book"@en .
 
 <http://catalog.coloradocollege.edu/0fefc176-3911-11e8-a285-a41f7283f8d4> a schema:Periodical ;
     schema:issn "1527-0904" ;
@@ -27263,6 +27806,10 @@
 <http://catalog.coloradocollege.edu/a9394391-3911-11e8-9343-a41f7283f8d4> a schema:issueNumber ;
     schema:issueNumber "2" ;
     schema:partOf <http://catalog.coloradocollege.edu/a9394390-3911-11e8-9b87-a41f7283f8d4> .
+
+<http://catalog.coloradocollege.edu/d86cebc6-4276-11e8-b85e-a41f7283f8d4> a schema:Periodical ;
+    schema:issn "0012-1606" ;
+    schema:name "Developmental biology"@en .
 
 <http://catalog.coloradocollege.edu/deb311d0-3910-11e8-8fd1-a41f7283f8d4> a schema:Periodical ;
     schema:issn "0012-821X" ;
