@@ -420,12 +420,16 @@ class Article_Citation(Citation):
         # If there is a real doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
         # Please note some citations have a doi field entry which isn't a real doi but a base link.
         self.url = ""
+        # watch out for multiple urls
         if "doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0:
             if self.raw_citation["doi"].startswith("http") == False:
                 self.url="https://doi.org/" + self.raw_citation["doi"]
         elif "link" in self.raw_citation.keys():
             #if self.raw_citation["link"].startswith("http"):
             self.url = self.raw_citation["link"]
+
+        if " " in self.url:
+            self.url=self.url[:self.url.find(" ")]
 
     def __month__(self):
         
@@ -786,7 +790,7 @@ class Book_Chapter_Citation(Book_Citation):
         self.creative_works.add((self.book_chapter_uri,rdflib.RDF.type,SCHEMA.Chapter))
 
         #add book chapter is part of book
-        self.creative_works.add((self.book_chapter_uri,SCHEMA.PartOf,self.bib_uri))
+        self.creative_works.add((self.book_chapter_uri,SCHEMA.partOf,self.bib_uri))
 
         #add CC author(s)
         for author in self.cc_authors:
