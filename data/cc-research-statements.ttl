@@ -13,6 +13,9 @@
             prov:atTime "2018-06-20T19:13:24.381900"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://catalog.coloradocollege.edu/7af8bf90-c89e-11e7-84f8-005056c00008> ] ;
     prov:qualifiedRevision [ a prov:Revision ;
+            prov:atTime "2018-06-20T21:04:52.597027"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://catalog.coloradocollege.edu/7af8bf90-c89e-11e7-84f8-005056c00008> ],
+        [ a prov:Revision ;
             prov:atTime "2018-06-20T19:13:54.117514"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://catalog.coloradocollege.edu/7af8bf90-c89e-11e7-84f8-005056c00008> ] .
 
