@@ -5,6 +5,14 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://catalog.coloradocollege.edu/00fa527c-74be-11e8-8df9-0242ac130004> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Jessica Kisunzu"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/7af8bf90-c89e-11e7-84f8-005056c00008> ;
+    schema:description "Dr. Kisunzu’s research interests are related to the formation and application of highly strained and reactive compounds called benzynes, as well as related compounds. Once formed, these intermediates can participate in a variety of reactions to access different carbon frameworks, which can then be used to synthesize biologically or medically relevant small molecules. Specific research directions include: 1) exploring the reactivity of benzynes with different nucleophiles, 2) developing methods to synthesize and use aromatic alkynes in systems of different ring sizes (5, 6, and 7-membered rings), 3) exploring new methods for generating benzyne intermediates, and 4) using computer modeling methods and programs to analyze the intermediates and their reactivity. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2018-06-20T19:13:24.381900"^^xsd:dateTime ;
+            prov:wasGeneratedBy <http://catalog.coloradocollege.edu/7af8bf90-c89e-11e7-84f8-005056c00008> ] .
+
 <http://catalog.coloradocollege.edu/028a186e-db66-11e7-8bf9-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Gypsy Ames"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/e9ac4dc6-b0f5-11e6-9f13-005056c00008> ;
