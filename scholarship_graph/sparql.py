@@ -281,6 +281,15 @@ WHERE {{
     FILTER (<{0}> = ?person)
 }}"""
 
+RESEARCH_STMT_IRI = PREFIX + """
+SELECT ?iri
+WHERE {{
+    ?iri schema:accountablePerson ?person ;
+         schema:description ?statement .
+    FILTER (<{0}> = ?person)
+}}"""
+
+
 SUBJECTS = PREFIX + """
 SELECT ?subject ?label
 WHERE {{

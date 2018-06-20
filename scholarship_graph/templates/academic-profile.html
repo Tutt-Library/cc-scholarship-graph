@@ -86,17 +86,24 @@
             aria-label="Add Article">
                         <i class="fas fa-file-alt"></i> Article
     </button>
-	<button class="btn btn-success"
-            onclick="return false"
-	    data-toggle="modal" data-target="#book-dlg"
-	    aria-label="Add Book">
-						<i class="fas fa-book"></i> Book
-	</button>
+    <button class="btn btn-success"
+        onclick="return false"
+        data-toggle="modal" data-target="#book-dlg"
+        aria-label="Add Book">
+        <i class="fas fa-book"></i> Book
+    </button>
+    <button class="btn btn-success"
+        data-toggle="modal" data-target="#book-chapter-dlg"
+        onclick="return false"
+        aria-label="Add Book Chapter">
+            <i class="fas fa-book"></i><i data-fa-mask="fas fa-file-alt"></i> Book Chapter
+    </button>
     <div id="citations">
        {% for row in citations %}
        <div class="row mb-1">
            <div class="col-1 text-center"><i class="{{ row.icon }}"></i></div>
            <div class="col-7">
+            <input type="hidden" name="citations" value="{{ row|get_iri }}">
             {% if "article" in row %}
             {{ row|article_link_filter|safe }}
             {% if 'journal_title' in row %}<em>{{ row.journal_title.value }}</em>{% endif %} ({{ row.datePublished.value }})
@@ -247,7 +254,39 @@ function saveBook(dlg_id) {
     $(dlg_selector).modal('hide');
     {# $("#processingProfile").modal('show');#}
     var action = $(form_selector).attr("action");
-    console.log("Action is " + action);
+    $.post(action,
+	       data=data,
+               success=function(data) {
+                        {#$("#processingProfile").modal('hide');#}
+
+                        if (data['status'] === true) {
+                            $("#citations").append(data['html']);
+                            alert(data["message"]);
+
+                        } else {
+                            if(data['message'] === "Invalid fields") {
+                                $("#" + dlg_id).modal('show');
+                                console.log(data["errors"]);
+                            } else {
+                                alert(data["message"]);
+                            }
+
+                        }
+		   }
+	);
+  return false; 
+}
+
+function saveBookChapter(dlg_id) {
+    var dlg_selector = "#" + dlg_id;
+    var data = $(dlg_selector + " :input").serializeArray();
+    if(dlg_id.startsWith("book-dlg") > 0) {
+        var form_selector = "#add_book_chapter_form";
+    } else {
+        var form_selector = "#edit_book_chapter_form";
+    }
+    $(dlg_selector).modal('hide');
+    var action = $(form_selector).attr("action");
     $.post(action,
 	       data=data,
                success=function(data) {
@@ -294,6 +333,7 @@ function saveBook(dlg_id) {
 {% include 'about-fast-dlg.html' %}
 {% include 'add-article-dlg.html' %}
 {% include 'add-book-dlg.html' %}
+{% include 'add-book-chpt-dlg.html' %}
 {% include 'process-profile.html' %}
 {% include 'success-profile-update.html' %}
 </div>

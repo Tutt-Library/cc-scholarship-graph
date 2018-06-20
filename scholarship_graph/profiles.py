@@ -24,8 +24,13 @@ from flask import current_app
 from github import Github, GithubException
 
 import utilities
-from .sparql import EMAIL_LOOKUP, SUBJECTS_IRI
+from .sparql import EMAIL_LOOKUP, SUBJECTS_IRI, RESEARCH_STMT_IRI
 from .sparql import add_qualified_generation, add_qualified_revision 
+
+BF = rdflib.Namespace("http://id.loc.gov/ontologies/bibframe/")
+CITE = rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/")
+PROV = rdflib.Namespace("http://www.w3.org/ns/prov#")
+SCHEMA = rdflib.Namespace("http://schema.org/")
 
 class GitProfile(object):
 
@@ -172,6 +177,202 @@ class GitProfile(object):
             result = subprocess.run(['git', 'pull', 'origin', 'master'])
             click.echo(result.returncode, result.stdout)
         config_mgr.conns.datastore.mgr.reset()
+
+class EmailProfile(object):
+    """Simple Email Profile class that creates a local RDF graph for new 
+    profile or editing profile that is send via email to the Administrators
+    for review."""
+
+    def __init__(self, config):
+        self.triplestore_url = config.get("TRIPLESTORE_URL")
+        self.graph = rdflib.Graph()
+        self.graph.namespace_manager.bind("bf", BF)
+        self.graph.namespace_manager.bind("cite", CITE)
+        self.graph.namespace_manager.bind("schema", SCHEMA)
+        self.graph.namespace_manager.bind("prov", PROV)
+        self.email = config.get("EMAIL")
+        self.recipients = config.get("ADMINS")
+
+
+    def __send_email__(self, subject, body):
+        """Sends email to administrators with attached profile graph"""
+        message = MIMEMultipart()
+        message["From"] = self.email.get("user")
+        message["To"] = ",".join(["<{0}>".format(r) for r in self.recipients])
+        message["Subject"] = subject
+        email_server = smtplib.SMTP(
+            self.email.get("host"),
+            self.email.get("port"))
+        email_server.ehlo()
+        if self.email.get("tls"):
+            email_server.starttls()
+        body = MIMEText(body, _charset="UTF-8")
+        message.attach(body)
+        graph_turtle = io.StringIO(
+            self.graph.serialize(format='turtle').decode())
+        attachment = MIMEText(graph_turtle.read())
+        attachment.add_header('Content-Disposition', 
+            'attachment',
+            filename='profile.ttl')
+        message.attach(attachment)
+        email_server.login(
+            self.email.get("user"),
+            self.email.get("password"))
+        recipients = list(set(self.recipients)) # Quick dedup
+        email_server.sendmail(self.email.get("user"), 
+            recipients, 
+            message.as_string())
+        email_server.close()
+
+    def __add_book__(self, work, work_form):
+        
+        self.graph.add((work, rdflib.RDF.type, SCHEMA.Book))
+        self.graph.add((work, 
+            SCHEMA.title,
+            rdflib.Literal(work_form.book_title.data)))
+        if work_form.isbn.data is not None:
+            self.graph.add((work, 
+                SCHEMA.isbn, 
+                rdflib.Literal(work_form.isbn.data)))
+        if work_form.editionStatement.data is not None:
+            self.graph.add(
+                (work,
+                 SCHEMA.editionStatement,
+                 rdflib.Literal(work_form.editionStatement.data)))
+        if work_form.editor.data is not None:
+            self.graph.add((work,
+                            SCHEMA.editor,
+                            rdflib.Literal(work_form.editor.data)))
+        if work_form.provisionActivityStatement.data is not None:
+            self.graph.add(
+                (work,
+                 SCHEMA.provisionActivityStatement,
+                 rdflib.Literal(work_form.provisionActivityStatement.data)))
+        if work_form.notes.data is not None:
+            self.graph.add(
+                (work,
+                 SCHEMA.description,
+                 rdflib.Literal(work_form.notes.data)))
+
+    def __populate_work__(self, work_form):
+        """Populates graph with new work
+
+        Args:
+            form(Flask.request.form): Dict of form values
+        """
+
+        if len(work_form.iri.data) > 0:
+            work_iri = rdflib.URIRef(work_form.iri.data)
+        else: # Mint IRI for new work
+            if work_form.doi.data != None:
+                work_iri = rdflib.URIRef(work_form.doi.data)
+            else:
+                work_iri = rdflib.URIRef(
+                    "http://catalog.coloradocollege.edu/{}".format(
+                        uuid.uuid1()))
+
+        self.graph.add((work_iri, 
+                        SCHEMA.dataPublished, 
+                        rdflib.Literal(work_form.datePublished.data)))
+        self.graph.add((work_iri,
+                        CITE.authorString,
+                        rdflib.Literal(work_form.author_string.data)))
+        citation_type = work_form.citation_type.data
+        self.graph.add((work_iri,
+                        CITE.citationType,
+                        rdflib.Literal(citation_type)))
+        if work_form.url.data != None:
+            self.graph.add((work_iri,
+                SCHEMA.url,
+                rdflib.URIRef(work_form.url.data)))
+        if work_form.abstract.data != None:
+            self.graph.add((work_iri,
+                SCHEMA.about,
+                rdflib.Literal(work_form.abstract.data)))
+        if citation_type.startswith("article"):
+            self.graph.add((work_iri, 
+                rdflib.RDF.type, 
+                SCHEMA.ScholarlyArticle))
+            self.graph.add((work_iri,
+                SCHEMA.name,              
+                rdflib.Literal(work_form.article_title.data)))
+            if work_form.page_start.data !=None:
+                self.graph.add((work_iri,
+                                SCHEMA.pageStart,
+                                rdflib.Literal(work_form.page_start.data)))
+            if work_form.page_end.data !=None:
+                self.graph.add((work_iri,
+                                SCHEMA.pageEnd,
+                                rdflib.Literal(work_form.page_end.data)))
+            journal = rdflib.BNode()
+            self.graph.add((journal, rdflib.RDF.type, SCHEMA.Periodical))
+            self.graph.add((journal, 
+                            SCHEMA.name, 
+                            rdflib.Literal(work_form.journal_title.data)))
+            issue, volume = None, None
+            if work_form.volume_number.data != None:
+                volume = rdflib.BNode()
+                self.graph.add((volume, rdflib.RDF.type, SCHEMA.PublicationVolume))
+                self.graph.add((volume,
+                                SCHEMA.volumeNumber,
+                                rdflib.Literal(work_form.volume_number.data)))
+                self.graph.add((volume, SCHEMA.partOf, journal))
+            if work_form.issue_number.data != None:
+                issue = rdflib.BNode()
+                self.graph.add((issue, rdflib.RDF.type, SCHEMA.PublicationIssue))
+                self.graph.add((issue,
+                                SCHEMA.issueNumber,
+                                rdflib.Literal(work_form.issue_number.data)))
+                if volume is not None:
+                    self.graph.add((issue, 
+                                    SCHEMA.partOf,
+                                    volume))
+                else:
+                    self.graph.add((issue,
+                                    SCHEMA.partOf,
+                                    journal))
+                self.graph.add((work_iri, SCHEMA.partOf, issue))
+            elif volume is not None:
+                self.graph.add((work_iri, SCHEMA.partOf, volume))
+            else:
+                # Add work_iri to Journal as last resort
+                self.graph.add((work_iri, SCHEMA.partOf, journal))
+
+            if work_form.month.data != None:
+                self.graph.add((work_iri,
+                                CITE.month,
+                                rdflib.Literal(work_form.month.data)))
+            
+        elif citation_type.startswith("book-chapter"):
+            self.graph.add((work_iri, rdflib.RDF.type, SCHEMA.Chapter))
+            book_bnode = rdflib.BNode()
+            self.graph.add((work_iri, SCHEMA.partOf, book_bnode))
+            self.__add_book__(book_bnode, work_form)
+        
+        elif citation_type.startswith("book"):
+            self.__add_book__(work_iri, work_form) 
+        else:
+            abort(500)
+        if work_form.abstract.data != None:
+            self.graph.add((work_iri, 
+                            SCHEMA.about,
+                            rdflib.Literal(work_form.abstract.data)))
+        return work_iri
+
+    def add(self, work_form):
+        work_iri = self.__populate_work__(work_form)
+        self.__send_email__("Added New Work", "New work added for creator")
+        return True
+
+    def new(self, message):
+        """Adds a new profile"""
+        self.__send_email__("Add new profile", message)
+    
+    def update(self, message):
+        """Edits existing profile"""
+        self.__send_email__("Updating Profile", message)
+
+
 
 def __email_work__(**kwargs):
     """Function takes a work graph and configuration and emails the graph in
@@ -367,13 +568,12 @@ WHERE {{
 def add_creative_work(**kwargs):
     """Calls utilities to populate and save to datastore"""
     config = kwargs.get("config")
-    git_profile = GitProfile(config)
+    profile = EmailProfile(config)
     current_user = kwargs.get("current_user")
     config_manager = kwargs.get('config_manager')
     connection = config_manager.conns
     generated_by = kwargs.get("generated_by")
-    raw_citation = kwargs.get("citation")
-    work_type = kwargs.get("work_type", "article")
+    work_form = kwargs.get("work_form")
     BF = config_manager.nsm.bf
     SCHEMA = config_manager.nsm.schema
     sparql = EMAIL_LOOKUP.format(
@@ -382,56 +582,12 @@ def add_creative_work(**kwargs):
     if len(email_results) > 0:
         generated_by = rdflib.URIRef(
             email_results[0].get("person").get('value'))
-
-    temp_work = rdflib.Graph()
-    temp_work.namespace_manager.bind("cite",
-        rdflib.Namespace("https://www.coloradocollege.edu/library/ns/citation/"))
-    for prefix, namespace in git_profile.cc_people.namespaces():
-            temp_work.namespace_manager.bind(prefix, namespace)
- 
-    if work_type.startswith("article"):
-       citation = utilities.Article_Citation(raw_citation,
-            temp_work,
-            git_profile.cc_people,
-            False)
-       citation.populate()
-       citation.populate_article()
-       citation.add_article()
-    elif work_type.startswith("book"):
-        citation = utilities.Book_Citation(raw_citation,
-            temp_work,
-            git_profile.cc_people,
-            False)
-        citation.populate()
-        citation.populate_book()
-        citation.add_book()
+    work_iri = rdflib.URIRef(profile.add(work_form))
     if generated_by:
-        if hasattr(citation, "bib_uri") :
-            work_iri = citation.bib_uri
-        elif hasattr(citation, "doi_iri"):
-            work_iri = citation.doi_iri
-        add_qualified_generation(temp_work, 
+        add_qualified_generation(profile.graph, 
             work_iri, 
             generated_by)
-    
-    #! with open("D:/2018/tmp/creative_works.ttl", "wb+") as fo:
-    #!    fo.write(git_profile.creative_works.serialize(format='turtle'))
-    #git_profile.__save_graph__(
-    #    git_repo=git_profile.scholarship_repo,
-    #    file_path="/data/creative-works.ttl",
-    #    graph_name="creative_works")
-    #git_profile.__reload_triplestore__(connection)
-    if work_type.startswith("article"):
-        __reconcile_article__(temp_work, connection)
-    __email_work__(graph=temp_work, 
-        config=config,
-        carbon_copy=[current_user.data.get('mail'),],
-        subject='Add Creative Work {}'.format(work_iri),
-        text="New {} generated by {} on {}, see attached turtle file".format( 
-            citation.citation_type,
-            generated_by, 
-            datetime.datetime.utcnow().isoformat())
-        )
+    profile.update("Added or Updated Creative Work")
     return {"message": "New work has been submitted for review",
             "status": True,
             "iri": work_iri}
@@ -443,9 +599,10 @@ def add_creative_work(**kwargs):
 def add_profile(**kwargs):
     """Adds a profile stub to scholarship graph"""
     config = kwargs.get("config")
-    git_profile = GitProfile(config)
+
     current_user = kwargs.get("current_user")
     config_manager = kwargs.get('config_manager')
+    profile = EmailProfile(config)
     connection = config_manager.conns
     BF = config_manager.nsm.bf
     SCHEMA = config_manager.nsm.schema
@@ -465,38 +622,38 @@ def add_profile(**kwargs):
     person_iri = rdflib.URIRef(person_uri)
     if generated_by is None:
         generated_by = person_iri
-    git_profile.cc_people.add(
+    profile.graph.add(
         (person_iri, 
          rdflib.RDF.type, 
          BF.Person.rdflib))
     
     given_name = form.get("given_name")
     if given_name is not None:
-        git_profile.cc_people.add(
+        profile.graph.add(
             (person_iri,
              SCHEMA.givenName.rdflib,
              rdflib.Literal(given_name, lang="en")))
     family_name = form.get("family_name")
     if family_name is not None:
-        git_profile.cc_people.add((person_iri,
+        profile.graph.add((person_iri,
             SCHEMA.familyName.rdflib,
             rdflib.Literal(family_name, lang="en")))
     label = "{} {}".format(given_name, family_name)
-    git_profile.cc_people.add((person_iri,
+    profile.graph.add((person_iri,
         rdflib.RDFS.label,
         rdflib.Literal(label, lang="en")))
     email = form.get("email")
-    git_profile.cc_people.add((person_iri,
+    profile.graph.add((person_iri,
         SCHEMA.email.rdflib,
         rdflib.Literal(email)))
-    add_qualified_generation(git_profile.cc_people, 
+    add_qualified_generation(profile.graph, 
         person_iri, 
         generated_by)
     dept_year = kwargs.get("year-iri")
     if dept_year is not None:
         dept_year_iri = rdflib.URIRef(dept_year_iri)
         title = kwargs.get("title-iri")
-        git_profile.current_year.add(
+        profile.graph.add(
             (dept_year_iri, 
              rdflib.URIRef(title),
              person_iri))
@@ -504,24 +661,24 @@ def add_profile(**kwargs):
     if statement is not None:
         statement_iri = rdflib.URIRef("http://catalog.coloradocollege.edu/{}".format(
             uuid.uuid1()))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri,
              rdflib.RDF.type,
              SCHEMA.DigitalDocument.rdflib))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri,
              rdflib.RDFS.label,
              rdflib.Literal("Research Statement for {}".format(label),
                 lang="en")))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri,
              SCHEMA.accountablePerson.rdflib,
              person_iri))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri,
              SCHEMA.description.rdflib,
              rdflib.Literal(statement, lang="en")))
-        add_qualified_generation(git_profile.research_statements, 
+        add_qualified_generation(profile.graph, 
             statement_iri, 
             generated_by)
     form_subjects = form.getlist("subjects")
@@ -533,30 +690,28 @@ def add_profile(**kwargs):
         else:
             fast_uri = "http://id.worldcat.org/fast/{}".format(fast_id[3:])
         new_subjects[fast_uri] = fast_label
-    subjects = connection.datastore.query(
-        SUBJECTS_IRI.format(person_iri))
     for fast_subject, fast_label  in new_subjects.items():
         iri_subject = rdflib.URIRef(fast_subject)
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri,
              SCHEMA.about.rdflib,
              iri_subject))
-        existing_label = git_profile.fast_subjects.value(
+        existing_label = profile.fast_subjects.value(
             subject=iri_subject,
             predicate=rdflib.RDFS.label)
         if existing_label is None:
-            git_profile.fast_subjects.add(
+            profile.graph.add(
                 (iri_subject,
                  rdflib.RDF.type,
                  BF.Topic.rdflib)) 
-            git_profile.fast_subjects.add(
+            profile.graph.add(
                 (iri_subject, 
                  rdflib.RDFS.label,
                  rdflib.Literal(fast_label, lang="en")))
-    git_profile.update_all(person_iri, "Add", config_manager)
-    return "Added {} as {} to Colorado College's Scholarship Graph".format(
+    message = "New {} as {} to Colorado College's Scholarship Graph".format(
         label,
         person_iri)
+    profile.new(message)
 
 def delete_creative_work(**kwargs):
     config = kwargs.get("config")
@@ -644,10 +799,9 @@ def update_profile(**kwargs):
     connection = config_manager.conns
     BF = config_manager.nsm.bf
     SCHEMA = config_manager.nsm.schema
-    
     form = kwargs.get('form')
     current_user = kwargs.get("current_user")
-    git_profile = GitProfile(config_manager) 
+    profile = EmailProfile(config_manager) 
     output = ''
     person_iri = rdflib.URIRef(form.get("iri"))
     results = connection.datastore.query(
@@ -657,47 +811,48 @@ def update_profile(**kwargs):
         generated_by = rdflib.URIRef(results[0].get("person").get('value'))
     else:
         generated_by = person_iri
-    statement_iri = git_profile.research_statements.value(
-        predicate=SCHEMA.accountablePerson.rdflib,
-        object=person_iri)
-    if statement_iri is None:
+    statement_iri_results = connection.datastore.query(
+        RESEARCH_STMT_IRI.format(
+            person_iri))
+    if len(statement_iri_results) > 0:
+        statement_iri = rdflib.URIRef(
+            statement_iri_results[0].get("iri").get("value"))
+        add_qualified_revision(profile.graph, 
+            statement_iri, 
+            generated_by)   
+    else:
         statement_iri = rdflib.URIRef(
             "http://catalog.coloradocollege.edu/{}".format(uuid.uuid1()))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri, 
              rdflib.RDF.type, 
              SCHEMA.DigitalDocument.rdflib))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri, 
              SCHEMA.accountablePerson.rdflib, 
              person_iri))
-        git_profile.research_statements.add(
+        profile.graph.add(
             (statement_iri, 
              rdflib.RDFS.label, 
              rdflib.Literal("Research Statement for {} {}".format(
                 form.get('given_name'),
                 form.get('family_name')), lang="en")))
         add_qualified_generation(
-            git_profile.research_statements, 
+            profile.graph, 
             statement_iri, 
             generated_by)
-    else:
-        add_qualified_revision(git_profile.research_statements, 
-            statement_iri, 
-            generated_by)    
+    citations = form.getlist("citations")
+    for uri in citations:
+        profile.graph.add(
+            (rdflib.URIRef(uri),
+             SCHEMA.author.rdflib,
+             person_iri)) 
     statement = form.get("research_stmt")
-    existing_stmt = git_profile.research_statements.value(
-        subject=statement_iri,
-        predicate=SCHEMA.description.rdflib)
-    if existing_stmt and str(existing_stmt) != statement:
-        git_profile.research_statements.remove(
+    if len(statement) > 0:
+        profile.graph.add(
             (statement_iri, 
              SCHEMA.description.rdflib, 
-             existing_stmt))
-    git_profile.research_statements.add(
-        (statement_iri, 
-         SCHEMA.description.rdflib, 
-         rdflib.Literal(statement, lang="en")))
+             rdflib.Literal(statement, lang="en")))
     form_subjects = form.getlist("subjects")
     new_subjects = {} 
     for row in form_subjects:
@@ -706,36 +861,23 @@ def update_profile(**kwargs):
             fast_uri = fast_id
         else:
             fast_uri = "http://id.worldcat.org/fast/{}".format(fast_id[3:])
-        new_subjects[fast_uri] = fast_label
-    subjects = connection.datastore.query(
-        SUBJECTS_IRI.format(person_iri))
-    # Remove any existing subjects that aren't current
-    for row in subjects:
-        existing_subject = row.get("subject").get("value")
-        if not existing_subject in new_subjects:
-            git_profile.research_statements.remove(
-                (statement_iri,
-                 SCHEMA.about.rdflib,
-                 rdflib.URIRef(existing_subject)))
-    for fast_subject, fast_label  in new_subjects.items():
-        iri_subject = rdflib.URIRef(fast_subject)
-        git_profile.research_statements.add(
+        iri_subject = rdflib.URIRef(fast_uri)
+        profile.graph.add(
             (statement_iri,
              SCHEMA.about.rdflib,
              iri_subject))
-        existing_label = git_profile.fast_subjects.value(
-            subject=iri_subject,
-            predicate=rdflib.RDFS.label)
-        if existing_label is None:
-            git_profile.fast_subjects.add(
-                (iri_subject,
-                 rdflib.RDF.type,
-                 BF.Topic.rdflib)) 
-            git_profile.fast_subjects.add(
-                (iri_subject, 
-                 rdflib.RDFS.label,
-                 rdflib.Literal(fast_label, lang="en")))
-    git_profile.update_all(person_iri, "Update", config_manager)
-    return output
+        profile.graph.add(
+            (iri_subject,
+             rdflib.RDF.type,
+             BF.Topic.rdflib)) 
+        profile.graph.add(
+            (iri_subject, 
+             rdflib.RDFS.label,
+             rdflib.Literal(fast_label, lang="en")))
+    msg = "See attached profile.ttl for updated RDF"
+    profile.update(msg)
+    return {"message": msg,
+            "status": True}
+           
 
 

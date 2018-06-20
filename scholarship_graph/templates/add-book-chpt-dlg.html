@@ -1,0 +1,60 @@
+<div class="modal fade" id="{% if dialog_id %}{{ dialog_id }}{% else %}book-chapter-dlg{% endif %}" 
+        tabindex="-1" role="dialog" aria-labelledby="book-dlg-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{% if dialog_id %}Edit{% else %}New{% endif %} Book Chapter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+	  <form method = "POST" id="{% if dialog_id %}edit{% else %}add{% endif %}_book_chapter_form"
+			action = "{% if dialog_id %}{{ url_for('edit_work') }}{% else %}{{ url_for('add_work') }}{% endif %}">
+			
+      <div class="modal-body">
+
+			{{ book_chapter_form.csrf_token }}
+                        {{ book_chapter_form.iri }}
+                        {{ book_chapter_form.citation_type(value='book chapter') }}
+			{{ book_chapter_form.author_string.label }} <span class="text-danger">*</span>
+			{{ book_chapter_form.author_string(class_="form-control mb-2") }}
+                        {{ book_chapter_form.name.label }}<span class="text-danger">*</span>
+                        {{ book_chapter_form.name(class_="form-control mb-2") }}
+			{{ book_chapter_form.book_title.label }} <span class="text-danger">*</span>
+			{{ book_chapter_form.book_title(class_="form-control mb-2") }}
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						{{ book_chapter_form.datePublished.label }} <span class="text-danger">*</span>
+						{{ book_chapter_form.datePublished(class_="form-control mb-2") }}
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						{{ book_chapter_form.isbn.label }}
+						{{ book_chapter_form.isbn(class_="form-control mb-2") }}
+					</div>
+				</div>
+			</div>
+			{{ book_chapter_form.provisionActivityStatement.label }}
+			{{ book_chapter_form.provisionActivityStatement(class_="form-control mb-2") }}
+			{{ book_chapter_form.editionStatement.label }}
+			{{ book_chapter_form.editionStatement(class_="form-control mb-2") }}
+			{{ book_chapter_form.url.label }}
+			{{ book_chapter_form.url(class_="form-control mb-2") }}
+			{{ book_chapter_form.abstract.label }}
+			{{ book_chapter_form.abstract(class_="form-control mb-2") }}
+			{{ book_chapter_form.notes.label }}
+			{{ book_chapter_form.notes(class_="form-control mb-2") }}			
+			</form>
+			<span class="text-danger">* indicates required fields</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning" input type="reset">Reset form</button>
+        <button type="button" class="btn btn-primary" 
+            onclick="saveBookChapter('{% if dialog_id %}{{ dialog_id }}{% else %}book-chapter-dlg{% endif %}')">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

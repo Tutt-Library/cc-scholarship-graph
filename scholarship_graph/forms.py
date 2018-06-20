@@ -45,8 +45,10 @@ class BookForm(CitationForm):
     book_title = StringField("Book title",validators=[DataRequired()])
     isbn = StringField("ISBN")
     provisionActivityStatement = StringField("Place of publication and publisher, for example New York, XYZ Publisher")
+    editor = StringField("Editor")
     editionStatement = StringField("Edition statement, for example Second, Third, Fourth, etc.")
     url = StringField("Link to book, if available")
     notes = StringField("Additional notes")
 
-
+class BookChapterForm(BookForm):
+    name = StringField("Chapter title", validators=[DataRequired()])

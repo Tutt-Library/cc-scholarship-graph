@@ -32,7 +32,7 @@ from flask_ldap3_login.forms import LDAPLoginForm
 
 from jinja2 import contextfilter
 
-from .forms import ProfileForm, SearchForm, ArticleForm, BookForm
+from .forms import ProfileForm, SearchForm, ArticleForm, BookForm, BookChapterForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
 from .sparql import CITATION, BOOK_CITATION,BOOK_CHAPTER_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
@@ -289,6 +289,7 @@ def academic_profile():
                            citations=citations,
                            new_article_form = ArticleForm(),
                            book_form = BookForm(),
+                           book_chapter_form = BookChapterForm(),
                            subjects=subjects)
 
        
@@ -614,23 +615,12 @@ def add_work():
         elif citation_type.startswith("book"):
             work_form = BookForm(request.form)
         if work_form.validate():
-##        try:
-            raw_citation = __populate_citation__(work_form)
             output = add_creative_work(
                 config=app.config,
-                citation=raw_citation,
                 config_manager=CONFIG_MANAGER,
                 current_user=current_user,
+                work_form=work_form,
                 work_type=citation_type)
-            #output["html"] = generate_citation_html(raw_citation)
-##        except:
-##            click.echo("Error {}".format(
-##                traceback.print_tb(sys.exc_info()[-1])))
-##            output = {
-##                "message": """Work not added, 
-##Error:\n{}""".format(
-##                    sys.exc_info()[0]),
-##                "status": False }
         else:
             output = {"message": "Invalid fields",
                       "status": False,
