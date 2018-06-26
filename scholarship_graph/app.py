@@ -775,8 +775,8 @@ def book_title(book_citation):
             url = ""
     if uri.startswith("https://tiger.coloradocollege.edu/"):
         title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
-    elif url.startswith("http"):
-        title_string = "<a href='" + url + "', target='_blank'>" + title + "</a>"
+    elif uri.startswith("http"):
+        title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
     #elif book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
     #    title_string = "<a href='" + book_citation["url"]["value"] + ",target= 'blank'>" + title + "</a>"
     else:
