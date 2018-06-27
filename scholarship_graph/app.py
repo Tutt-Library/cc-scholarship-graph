@@ -276,6 +276,11 @@ def academic_profile():
         for row in book_result:
             row['icon'] = 'fas fa-book'
             citations.append(row)
+        book_chapter_sparql = BOOK_CHAPTER_CITATION.format(fields['iri'])
+        book_chapter_result = CONNECTION.datastore.query(book_chapter_sparql)
+        for row in book_chapter_result:
+            row['icon'] = 'fas fa-bookmark'
+            citations.append(row)
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(fields.get("email")))
     

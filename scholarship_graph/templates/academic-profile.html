@@ -59,9 +59,14 @@
     <div class="row">
         <div class="col-3">
             <h4>Find subjects</h4>
-            <div id="fast-suggestion">
+           <div id="fast-suggestion">
                 <input class="typeahead form-control" type="text" id='subject-of'></input>
             </div>
+            <p class="text-muted text-sm">If your terms/keywords are not matching properly, try using the searchFAST web service 
+                at <a href="https://fast.oclc.org/searchfast/">fast.oclc.org</a> and pasting the correct term/word 
+                into this search box.
+            </p>
+ 
         </div>
         <div class="col">
             <div id="research-subjects">
@@ -96,7 +101,7 @@
         data-toggle="modal" data-target="#book-chapter-dlg"
         onclick="return false"
         aria-label="Add Book Chapter">
-            <i class="fas fa-book"></i><i data-fa-mask="fas fa-file-alt"></i> Book Chapter
+            <i class="fas fa-bookmark"></i><i data-fa-mask="fas fa-file-alt"></i> Book Chapter
     </button>
     <div id="citations">
        {% for row in citations %}
