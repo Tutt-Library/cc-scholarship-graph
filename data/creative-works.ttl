@@ -7,6 +7,79 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<b16712730> a schema:CreativeWork ;
+    bf:note ""@en ;
+    schema:abstract ""@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:datePublished "2003" ;
+    schema:name "Sound Recording: Along these lines"@en ;
+    schema:url <> ;
+    cite:authorString "David Mason, Dana Gioia"@en .
+
+<b17145302> a schema:CreativeWork ;
+    bf:note ""@en ;
+    schema:abstract ""@en ;
+    schema:author <http://catalog.coloradocollege.edu/b4a4c082-b0e1-11e6-9354-005056c00008> ;
+    schema:datePublished "2005" ;
+    schema:name "Sound Recording: Cleanness"@en ;
+    schema:url <> ;
+    cite:authorString "Regula Meyer Evitt, Michael Calabrese, Troy K. Sales, Chaucer Studio"@en .
+
+<b17749414> a schema:CreativeWork ;
+    bf:note ""@en ;
+    schema:abstract ""@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:datePublished "2004" ;
+    schema:name "Score: Swimmers on the shore : for baritone voice and piano"@en ;
+    schema:url <> ;
+    cite:authorString "Lori Laitman, David Mason"@en .
+
+<b24915920> a schema:CreativeWork ;
+    bf:note ""@en ;
+    schema:abstract ""@en ;
+    schema:author <http://catalog.coloradocollege.edu/b4a4c082-b0e1-11e6-9354-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Sound Recording: The Parson's Prologue and Tale and Chaucer's Retraction"@en ;
+    schema:url <> ;
+    cite:authorString "Geoffrey Chaucer, Regula Evitt, Paul Thomas, Troy Sales, Chaucer Studio"@en .
+
+<b25630647> a schema:CreativeWork ;
+    bf:note ""@en ;
+    schema:abstract ""@en ;
+    schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
+    schema:datePublished "2005" ;
+    schema:name "Score: Zusammenhang : for solo bass clarinet, with piano resonance"@en ;
+    schema:url <> ;
+    cite:authorString "Jonathan Scott Lee"@en .
+
+<b25665133> a schema:CreativeWork ;
+    bf:note ""@en ;
+    schema:abstract ""@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:datePublished "2016" ;
+    schema:name "Sound Recording: The scarlet letter"@en ;
+    schema:url <> ;
+    cite:authorString "Lori Laitman, David Mason, Laura Claycomb, Margaret Gawrysiak, Dominic Armstrong, Kyle Knapp, Malcolm Mackenzie, Daniel Belcher, Ari Pelto, Opera Colorado, Opera Colorado"@en .
+
+<b25715380> a schema:CreativeWork ;
+    bf:note "After Life imagines a post-mortem reunion of Pablo Picasso and Gertrude Stein. Stein believes her beloved Alice B. Toklas has conjured her back to life, while PIcasso wonders which of his many lovers has called him up from the abyss...."@en ;
+    schema:abstract "After Life imagines a post-mortem reunion of Pablo Picasso and Gertrude Stein. Stein believes her beloved Alice B. Toklas has conjured her back to life, while PIcasso wonders which of his many lovers has called him up from the abyss...."@en ;
+    schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
+    schema:datePublished "2017" ;
+    schema:name "Libretto: After life : chamber opera in one act"@en ;
+    schema:url <> ;
+    cite:authorString "David Mason"@en .
+
+<b25819471> a schema:CreativeWork ;
+    bf:note "An array of printed materials and pieces, chiefly broadsides, that were in the original exhibition in Colorado College's Coburn Gallery from March 27 to April 17, 2017. Amplify & Multiply presents the art of resistance---the varied means in which activism has been channeled into visual expression in the fight against racism, white supremacy, misogyny and other forms of oppression. Over 150 artists, from seven different countries (the United States, Australia, New Zealand, Mexico, the United Kingdom, Canada, and Poland), contributed pieces for this exhibit"@en ;
+    schema:abstract "An array of printed materials and pieces, chiefly broadsides, that were in the original exhibition in Colorado College's Coburn Gallery from March 27 to April 17, 2017. Amplify & Multiply presents the art of resistance---the varied means in which activism has been channeled into visual expression in the fight against racism, white supremacy, misogyny and other forms of oppression. Over 150 artists, from seven different countries (the United States, Australia, New Zealand, Mexico, the United Kingdom, Canada, and Poland), contributed pieces for this exhibit"@en ;
+    schema:author <http://catalog.coloradocollege.edu/f4b1701c-3699-11e8-944c-a41f7283f8d4>,
+        <https://orcid.org/0000-0002-5352-9886> ;
+    schema:datePublished "" ;
+    schema:name "Exhibition: Amplify & Multiply : Recent Printed Activist Ephemera"@en ;
+    schema:url <> ;
+    cite:authorString "Nethery Wylie, Han Sayles, Peyton Davis, Laura Ben Amots, Tom Leech, Frank Brannon, Emily K. Larned, Kyle Schlesinger, Jessy Randall, Bridget Elmer, Lucy Holtsnider, Aaron Cohick, Press at Colorado Colleg"@en .
+
 <http://catalog.coloradocollege.edu/000f4c5d-3d0f-11e8-8f0e-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "For m ? N, let Sm be the Suzuki curve defined over F22m+1. It is well-known that Sm is supersingular, but the p-torsion group scheme of its Jacobian is not known. The a-number is an invariant of the isomorphism class of the p-torsion group scheme. In this paper, we compute a closed formula for the a-number of Sm using the action of the Cartier operator on H0(Sm,O1). ABSTRACT FROM AUTHOR]; Copyright of Proceedings of the American Mathematical Society is the property of American Mathematical Society and its content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's express written permission. However, users may print, download, or email articles for individual use. This abstract may be abridged. No warranty is given about the accuracy of the copy. Users should refer to the original published version of the material for the full abstract. (Copyright applies to all Abstracts.)" ;
     schema:author <http://catalog.coloradocollege.edu/c80ebc92-c8a0-11e7-9261-005056c00008> ;
@@ -766,6 +839,17 @@
     cite:citationType "article" ;
     cite:month "" .
 
+<http://catalog.coloradocollege.edu/148ad59e-7a50-11e8-8a80-a41f7283f8d4> a bf:Book ;
+    bf:Note "translated by Ambrose Criste, O. Praem, and Carol Neel; ; 22 cm; Includes bibliographical references; Preface -- Foreword -- Introduction -- Anticimenon: on the unity of the faith and the controversies with the Greeks - - Prologue -- Book 1 -- Book 2 -- Book 3; Special Collections copy is gift of co-translator Carol Neel, CC professor of history, 2010; Premonstratensian texts and studies ; 1; Cistercian studies series ; no. 232"@en ;
+    bf:isbn "9780879071066" ;
+    bf:provisionActivityStatement "Collegeville, Minn. : Liturgical Press, 2010"@en ;
+    bf:title "Anselm of Havelberg, Anticimenon : on the unity of the faith and the controversies with the Greeks"@en ;
+    schema:author <http://catalog.coloradocollege.edu/61aeb664-b0f0-11e6-b454-005056c00008> ;
+    schema:publicationDate "2010" ;
+    cite:authorString "Anselm, Ambrose Criste, Carol Neel, Francois Petit"@en ;
+    cite:callNumber "BR115.H5 A513 2010" ;
+    cite:citationType "book"@en .
+
 <http://catalog.coloradocollege.edu/1495d792-3911-11e8-aea0-a41f7283f8d4> a schema:ScholarlyArticle ;
     schema:about "We consider philanthropy by college alums from an innovative and provocative perspective: what if prospective college students were considered members of asset classes with different risk-return combinations? Using forty years of merged admissions-philanthropy records on students at a highly selective liberal arts college, we estimate the simple financial model that this allegory implies. We find benefits to diversification, identify the slope of the market risk-return line, and point out the most (and least) attractive potential students in terms of their projected future donations." ;
     schema:author <http://catalog.coloradocollege.edu/38063594-bcd4-11e6-894f-005056c00008> ;
@@ -1236,7 +1320,7 @@
     schema:name "Assessing gum availability in bushbaby (Galago moholi and Otolemur crassicaudatus) habitat at Loskop Dam Nature Reserve and Leshiba Wilderness Reserve, South Africa"@en ;
     schema:pageStart "86" ;
     schema:partOf <http://catalog.coloradocollege.edu/42e10b8c-6dcb-11e8-a585-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "Krista Fish, Claire Bresnan, Ian Ray, Brandi Wren"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -1270,7 +1354,7 @@
     schema:name "Bushbaby (Galago moholi) nest site activity during the dry season at Loskop Dam Nature Reserve, South Africa"@en ;
     schema:pageStart "36" ;
     schema:partOf <http://catalog.coloradocollege.edu/42e10b8c-6dcb-11e8-a585-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "Claire Bresnan, Krista Fish, Ian Ray, Brandi Wren"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -1732,7 +1816,7 @@
     schema:name "Reflecting on the good life: intergenerational dialogue"@en ;
     schema:pageStart "66" ;
     schema:partOf <http://catalog.coloradocollege.edu/4eb3ee5d-6dcb-11e8-ac1b-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "Alberto Hernandez-Lemus"@en ;
     cite:citationType "article" ;
     cite:month "" .
@@ -1777,7 +1861,7 @@
     schema:name "Conference Paper: Thermal and water balance physiology of attacking mountain pine beetles"@en ;
     schema:pageStart "E194" ;
     schema:partOf <http://catalog.coloradocollege.edu/509d95ee-6dcb-11e8-9264-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "Emilie M. Gray, C. M. Bowen"@en ;
     cite:citationType "article" ;
     cite:month "MAR" .
@@ -1789,7 +1873,7 @@
     schema:name "Conference Paper: Thermal acclimation affects the aerobic scope of hissing cockroaches"@en ;
     schema:pageStart "E351" ;
     schema:partOf <http://catalog.coloradocollege.edu/5127113e-6dcb-11e8-94be-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "Kelsey L. Wise, Emilie M. Gray"@en ;
     cite:citationType "article" ;
     cite:month "APR" .
@@ -1827,7 +1911,7 @@
     schema:name "Conference Paper: Effects of desiccation stress on gene expression in the mosquito Aedes aegypti"@en ;
     schema:pageStart "E287" ;
     schema:partOf <http://catalog.coloradocollege.edu/5320492e-6dcb-11e8-bc6d-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "J. Hoffman, M. Sylla, Emilie M. Gray"@en ;
     cite:citationType "article" ;
     cite:month "" .
@@ -1839,7 +1923,7 @@
     schema:name "Post-mortal CO2 release by insects at high temperatures"@en ;
     schema:pageStart "E88" ;
     schema:partOf <http://catalog.coloradocollege.edu/53f4d73e-6dcb-11e8-9650-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "E. C. Heinrich, Emilie M. Gray, A. S. Vorhees, S. G. Meigher, T. J. Bradley"@en ;
     cite:citationType "article" ;
     cite:month "" .
@@ -1850,7 +1934,7 @@
     schema:datePublished "2014" ;
     schema:name "Post-mortal CO2 release by insects at high temperatures"@en ;
     schema:partOf <http://catalog.coloradocollege.edu/7ddfc535-3911-11e8-a937-a41f7283f8d4> ;
-    schema:url <> ;
+    schema:url <file:///C:/CCKnowledgeGraph/cc-scholarship-graph/data/creative-works.ttl> ;
     cite:authorString "Erica Heinrich, Emilie Gray, Ashley Vorhees, Timothy Bradley"@en ;
     cite:citationType "article" ;
     cite:month "APR" .

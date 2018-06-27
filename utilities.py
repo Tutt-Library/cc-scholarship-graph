@@ -176,11 +176,20 @@ def chapter_lookup(creative_works,lookup_string):
 	for i in results:
 		return i[0]
 
-# function to return unique IRI using UUID
+# return unique IRI using UUID
 def unique_IRI(self):
         unique_IRI="http://catalog.coloradocollege.edu/{}".format(uuid.uuid1())
         return rdflib.URIRef(unique_IRI)
 
+# Clean URLs
+
+def URL_check(url):
+    # Multiple URLs can be returned from EBSCO, they are delimited by spaces
+    if " " in url:
+        url = url[:url.find(" ")]
+    # Make sure URL starts properly [but do we need to worry about http vs. https?]
+    if not url.startswith("http://"):
+        url = "http://" + url
 
 class Citation(object):
 
@@ -355,8 +364,81 @@ class Citation(object):
             self.abstract = ""
 
     def __citation_type__(self):
-        self.citation_type=self.raw_citation["ENTRYTYPE"]
+        self.citation_type = self.raw_citation["ENTRYTYPE"]
+        if self.citation_type == "misc":
+            self.citation_type = "creativework"
 
+
+class Creative_Work_Citation(Citation):
+    # GENERIC / MISC CITATIONS
+    def __init__(self,
+            raw_citation, 
+            creative_works, 
+            people,
+            is_interactive=True):
+        super(Creative_Work_Citation, self).__init__(
+            raw_citation,
+            creative_works,
+            people,
+            is_interactive)
+        
+    def populate_creative_work(self):
+        self.__title__()
+        self.__url__()
+        self.__note__()
+        self.__call__()
+
+    def __title__(self):
+        self.title = self.raw_citation["title"]       
+
+    def __url__(self):
+        self.url = ""
+        if "url" in self.raw_citation.keys():
+            self.url = self.raw_citation["url"]
+        elif "link" in self.raw_citation.keys():
+            self.url = self.raw_citation["link"]
+        
+        if self.url != "":
+            self.url = URL_check(self.url)
+
+    def __note__(self):
+        self.note = ""
+        if "note" in self.raw_citation.keys():
+            self.note = self.raw_citation["note"]
+
+    def __call__(self):
+        if "call" in self.raw_citation.keys():
+            self.call = self.raw_citation["call"]
+        else:
+            self.call = ""
+
+    def add_creative_work(self):
+        # If there is not a bib, generate unique IRI for the Creative Work
+        if "bib" in self.raw_citation.keys():
+            self.iri=self.raw_citation["bib"]
+            self.iri=rdflib.URIRef(self.iri)
+        else:
+            self.iri = unique_IRI(self)
+        # add the IRI for the creative work to the creative works graph
+        self.creative_works.add((self.iri,rdflib.RDF.type,SCHEMA.CreativeWork))
+        # add the name (title) of the creative work
+        self.creative_works.add((self.iri,SCHEMA.name,rdflib.Literal(self.title,lang="en")))
+        # add the CC author IRIs
+        for author in self.cc_authors:
+            self.creative_works.add((self.iri,SCHEMA.author,author))
+        # add the author string
+        self.creative_works.add((self.iri,CITATION_EXTENSION.authorString,rdflib.Literal(self.author_string,lang="en")))
+        # add the indicated year(s), at this point no validation is done for datePublished so a range of years could be entered
+        if self.year != "" or self.year != None:
+            self.creative_works.add((self.iri,SCHEMA.datePublished,rdflib.Literal(self.year)))
+        # add the URL
+        self.creative_works.add((self.iri,SCHEMA.url,rdflib.URIRef(self.url)))
+        # add abstract if present
+        if self.abstract != "" or self.abstract != None:
+            self.creative_works.add((self.iri,SCHEMA.abstract,rdflib.Literal(self.abstract,lang="en")))
+        # add note if present
+        if self.note != "" or self.note != None:
+            self.creative_works.add((self.iri,BF.note,rdflib.Literal(self.abstract,lang="en")))
                                       
 class Article_Citation(Citation):
     def __init__(self,
@@ -420,16 +502,17 @@ class Article_Citation(Citation):
         # If there is a real doi, turn it into a doi link. If there is no doi, look for exported link from RefWorks.
         # Please note some citations have a doi field entry which isn't a real doi but a base link.
         self.url = ""
-        # watch out for multiple urls
         if "doi" in self.raw_citation.keys() and len(self.raw_citation["doi"]) > 0:
             if self.raw_citation["doi"].startswith("http") == False:
                 self.url="https://doi.org/" + self.raw_citation["doi"]
         elif "link" in self.raw_citation.keys():
-            #if self.raw_citation["link"].startswith("http"):
             self.url = self.raw_citation["link"]
+        elif "url" in self.raw_citation.keys():
+            self.url = self.raw_citation["url"]
 
-        if " " in self.url:
-            self.url=self.url[:self.url.find(" ")]
+        if self.url != "":
+            self.url = URL_check(self.url)
+        
 
     def __month__(self):
         
@@ -648,18 +731,18 @@ class Book_Citation(Citation):
             self.call = ""
 
     def __url__(self):
+        self.url=""
         if "link" in self.raw_citation.keys():
             if self.raw_citation["link"].startswith("http"):
                 self.url = self.raw_citation["link"]
         elif "url" in self.raw_citation.keys():
             if self.raw_citation["link"].startswith("http"):
                 self.url = self.raw_citation["url"]
-        else:
-            self.url = ""
+        if self.url != "":
+           self.url = URL_check(self.url)
 
     def add_book(self):
-
-        #bib number as unique ID?
+        #bib number as unique ID
         citation_fields = self.raw_citation.keys()
         if "bib" in citation_fields:
             self.bib=self.raw_citation["bib"]
@@ -852,6 +935,12 @@ def load_citations(bibtext_filepath, creative_works_path):
             citation.populate_book_chapter()
             citation.add_book()
             citation.add_book_chapter()
+            i = i + 1
+        elif row["ENTRYTYPE"]=="misc":
+            citation = Creative_Work_Citation(row, creative_works, people)
+            citation.populate()
+            citation.populate_creative_work()
+            citation.add_creative_work()
             i = i + 1
 
     # save the graph to disk
