@@ -157,6 +157,7 @@ def server_error(e):
 def person_history(person_iri):
     current_date = datetime.datetime.utcnow()
     ul = etree.Element("ul")
+    
     results = CONNECTION.datastore.query(
         PERSON_HISTORY.format(person_iri,
                               current_date.isoformat()))
@@ -316,12 +317,14 @@ def fast_suggest():
 @app.route("/org")
 def org_browsing():
     org_iri = request.args.get("uri")
+    date = request.args.get("date") # Should be in ISO format YYYY-MM-DDTHH:MM:00.0000
     org_info = {"people":dict(),
                 "url": org_iri, 
                 "years": dict()}
-    now = datetime.datetime.utcnow()
+    if date is None:
+        date = datetime.datetime.utcnow().isoformat()
     org_sparql =  ORG_INFO.format(org_iri, 
-        now.isoformat())
+        date)
     results = CONNECTION.datastore.query(org_sparql)
     for row in results:
         if not "name" in org_info:
@@ -607,6 +610,7 @@ def __populate_citation__(work_form):
 @app.route("/work", methods=['POST', 'DELETE'])
 @login_required
 def add_work():
+    click.echo("Citation type:\n{}".format(request.form.get("citation_type")))
     if request.method.endswith("DELETE"):
         output = delete_creative_work(config=app.config,
             iri=request.form['iri'],
@@ -615,8 +619,11 @@ def add_work():
             current_user=current_user)
     else:
         citation_type = request.form['citation_type']
+
         if citation_type.startswith("article"):
             work_form = ArticleForm(request.form)
+        elif citation_type.startswith("book chapter"):
+            work_form = BookChapterForm(request.form)
         elif citation_type.startswith("book"):
             work_form = BookForm(request.form)
         if work_form.validate():

@@ -250,7 +250,9 @@
 
 function saveBook(dlg_id) {
     var dlg_selector = "#" + dlg_id;
-    var data = $(dlg_selector + " :input").serializeArray();
+    var data = $(dlg_selector + " :input");
+    data = data.serializeArray();
+    console.log("Data is " + data);
     if(dlg_id.startsWith("book-dlg") > 0) {
         var form_selector = "#add_book_form";
     } else {

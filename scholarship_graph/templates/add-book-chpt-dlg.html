@@ -16,6 +16,10 @@
 			{{ book_chapter_form.csrf_token }}
                         {{ book_chapter_form.iri }}
                         {{ book_chapter_form.citation_type(value='book chapter') }}
+                        {% if request.args.person %}
+                        {{ book_chapter_form.author(value=request.args.person) }}
+                        {% endif %}
+
 			{{ book_chapter_form.author_string.label }} <span class="text-danger">*</span>
 			{{ book_chapter_form.author_string(class_="form-control mb-2") }}
                         {{ book_chapter_form.name.label }}<span class="text-danger">*</span>

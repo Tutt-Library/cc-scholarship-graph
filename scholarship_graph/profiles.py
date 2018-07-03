@@ -224,6 +224,66 @@ class EmailProfile(object):
             message.as_string())
         email_server.close()
 
+    def __add_article__(self, work_iri, work_form):
+        """Article specific data added to creative work
+
+        Args:
+            work_iri(rdflib.URIRef): Creative Work IRI for Article
+            work_form(Flask.request.form): Dict of form values
+        """
+        self.graph.add((work_iri, 
+            rdflib.RDF.type, 
+            SCHEMA.ScholarlyArticle))
+        self.graph.add((work_iri,
+            SCHEMA.name,              
+            rdflib.Literal(work_form.article_title.data)))
+        if work_form.page_start.data !=None:
+            self.graph.add((work_iri,
+                            SCHEMA.pageStart,
+                            rdflib.Literal(work_form.page_start.data)))
+        if work_form.page_end.data !=None:
+            self.graph.add((work_iri,
+                            SCHEMA.pageEnd,
+                            rdflib.Literal(work_form.page_end.data)))
+        journal = rdflib.BNode()
+        self.graph.add((journal, rdflib.RDF.type, SCHEMA.Periodical))
+        self.graph.add((journal, 
+                        SCHEMA.name, 
+                        rdflib.Literal(work_form.journal_title.data)))
+        issue, volume = None, None
+        if work_form.volume_number.data != None:
+            volume = rdflib.BNode()
+            self.graph.add((volume, rdflib.RDF.type, SCHEMA.PublicationVolume))
+            self.graph.add((volume,
+                            SCHEMA.volumeNumber,
+                            rdflib.Literal(work_form.volume_number.data)))
+            self.graph.add((volume, SCHEMA.partOf, journal))
+        if work_form.issue_number.data != None:
+            issue = rdflib.BNode()
+            self.graph.add((issue, rdflib.RDF.type, SCHEMA.PublicationIssue))
+            self.graph.add((issue,
+                            SCHEMA.issueNumber,
+                            rdflib.Literal(work_form.issue_number.data)))
+            if volume is not None:
+                self.graph.add((issue, 
+                                SCHEMA.partOf,
+                                volume))
+            else:
+                self.graph.add((issue,
+                                SCHEMA.partOf,
+                                journal))
+            self.graph.add((work_iri, SCHEMA.partOf, issue))
+        elif volume is not None:
+            self.graph.add((work_iri, SCHEMA.partOf, volume))
+        else:
+            # Add work_iri to Journal as last resort
+            self.graph.add((work_iri, SCHEMA.partOf, journal))
+
+        if work_form.month.data != None:
+            self.graph.add((work_iri,
+                            CITE.month,
+                            rdflib.Literal(work_form.month.data)))
+
     def __add_book__(self, work, work_form):
         
         self.graph.add((work, rdflib.RDF.type, SCHEMA.Book))
@@ -254,34 +314,45 @@ class EmailProfile(object):
                  SCHEMA.description,
                  rdflib.Literal(work_form.notes.data)))
 
-    def __populate_work__(self, work_form):
+
+    def __populate_work__(self, work_form, generated_by=None):
         """Populates graph with new work
 
         Args:
             form(Flask.request.form): Dict of form values
         """
-
         if len(work_form.iri.data) > 0:
             work_iri = rdflib.URIRef(work_form.iri.data)
         else: # Mint IRI for new work
-            if work_form.doi.data != None:
+            if "doi" in work_form and len(work_form.doi.data) > 0:
                 work_iri = rdflib.URIRef(work_form.doi.data)
             else:
                 work_iri = rdflib.URIRef(
                     "http://catalog.coloradocollege.edu/{}".format(
                         uuid.uuid1()))
-
         self.graph.add((work_iri, 
                         SCHEMA.dataPublished, 
                         rdflib.Literal(work_form.datePublished.data)))
         self.graph.add((work_iri,
                         CITE.authorString,
                         rdflib.Literal(work_form.author_string.data)))
+        if generated_by:
+            add_qualified_generation(self.graph, 
+                work_iri, 
+                generated_by)
         citation_type = work_form.citation_type.data
         self.graph.add((work_iri,
                         CITE.citationType,
                         rdflib.Literal(citation_type)))
-        if work_form.url.data != None:
+        if "author" in work_form and len(work_form.author.data) > 0:
+            self.graph.add((work_iri,
+                SCHEMA.author,
+                rdflib.URIRef(work_form.author.data)))
+        elif generated_by:
+            self.graph.add((work_iri,
+                SCHEMA.author,
+                generated_by))
+        if "url" in work_form and len(work_form.url.data) > 0:
             self.graph.add((work_iri,
                 SCHEMA.url,
                 rdflib.URIRef(work_form.url.data)))
@@ -290,65 +361,12 @@ class EmailProfile(object):
                 SCHEMA.about,
                 rdflib.Literal(work_form.abstract.data)))
         if citation_type.startswith("article"):
-            self.graph.add((work_iri, 
-                rdflib.RDF.type, 
-                SCHEMA.ScholarlyArticle))
-            self.graph.add((work_iri,
-                SCHEMA.name,              
-                rdflib.Literal(work_form.article_title.data)))
-            if work_form.page_start.data !=None:
-                self.graph.add((work_iri,
-                                SCHEMA.pageStart,
-                                rdflib.Literal(work_form.page_start.data)))
-            if work_form.page_end.data !=None:
-                self.graph.add((work_iri,
-                                SCHEMA.pageEnd,
-                                rdflib.Literal(work_form.page_end.data)))
-            journal = rdflib.BNode()
-            self.graph.add((journal, rdflib.RDF.type, SCHEMA.Periodical))
-            self.graph.add((journal, 
-                            SCHEMA.name, 
-                            rdflib.Literal(work_form.journal_title.data)))
-            issue, volume = None, None
-            if work_form.volume_number.data != None:
-                volume = rdflib.BNode()
-                self.graph.add((volume, rdflib.RDF.type, SCHEMA.PublicationVolume))
-                self.graph.add((volume,
-                                SCHEMA.volumeNumber,
-                                rdflib.Literal(work_form.volume_number.data)))
-                self.graph.add((volume, SCHEMA.partOf, journal))
-            if work_form.issue_number.data != None:
-                issue = rdflib.BNode()
-                self.graph.add((issue, rdflib.RDF.type, SCHEMA.PublicationIssue))
-                self.graph.add((issue,
-                                SCHEMA.issueNumber,
-                                rdflib.Literal(work_form.issue_number.data)))
-                if volume is not None:
-                    self.graph.add((issue, 
-                                    SCHEMA.partOf,
-                                    volume))
-                else:
-                    self.graph.add((issue,
-                                    SCHEMA.partOf,
-                                    journal))
-                self.graph.add((work_iri, SCHEMA.partOf, issue))
-            elif volume is not None:
-                self.graph.add((work_iri, SCHEMA.partOf, volume))
-            else:
-                # Add work_iri to Journal as last resort
-                self.graph.add((work_iri, SCHEMA.partOf, journal))
-
-            if work_form.month.data != None:
-                self.graph.add((work_iri,
-                                CITE.month,
-                                rdflib.Literal(work_form.month.data)))
-            
-        elif citation_type.startswith("book-chapter"):
+            self.__add_article__(work_iri, work_form)
+        elif citation_type.startswith("book chapter"):
             self.graph.add((work_iri, rdflib.RDF.type, SCHEMA.Chapter))
             book_bnode = rdflib.BNode()
             self.graph.add((work_iri, SCHEMA.partOf, book_bnode))
             self.__add_book__(book_bnode, work_form)
-        
         elif citation_type.startswith("book"):
             self.__add_book__(work_iri, work_form) 
         else:
@@ -359,10 +377,16 @@ class EmailProfile(object):
                             rdflib.Literal(work_form.abstract.data)))
         return work_iri
 
-    def add(self, work_form):
-        work_iri = self.__populate_work__(work_form)
-        self.__send_email__("Added New Work", "New work added for creator")
-        return True
+    def add(self, work_form, generated_by=None):
+        work_iri = self.__populate_work__(work_form, generated_by)
+        email_body = "Properties and Values for Creative Work {}".format(work_iri)
+        for row in work_form._fields:
+            if row.startswith("csrf_token"):
+                continue
+            field = getattr(work_form, row)
+            email_body += "\n{}:\t{}".format(row, field.data)
+        self.__send_email__("Added New Work", email_body)
+        return work_iri
 
     def new(self, message):
         """Adds a new profile"""
@@ -582,12 +606,8 @@ def add_creative_work(**kwargs):
     if len(email_results) > 0:
         generated_by = rdflib.URIRef(
             email_results[0].get("person").get('value'))
-    work_iri = rdflib.URIRef(profile.add(work_form))
-    if generated_by:
-        add_qualified_generation(profile.graph, 
-            work_iri, 
-            generated_by)
-    profile.update("Added or Updated Creative Work")
+    work_iri = rdflib.URIRef(profile.add(work_form, generated_by))
+    #profile.update("Added or Updated Creative Work")
     return {"message": "New work has been submitted for review",
             "status": True,
             "iri": work_iri}
@@ -804,6 +824,7 @@ def update_profile(**kwargs):
     profile = EmailProfile(config_manager) 
     output = ''
     person_iri = rdflib.URIRef(form.get("iri"))
+    msg = ""
     results = connection.datastore.query(
         EMAIL_LOOKUP.format(
             current_user.data.get('mail').lower()))
@@ -811,6 +832,9 @@ def update_profile(**kwargs):
         generated_by = rdflib.URIRef(results[0].get("person").get('value'))
     else:
         generated_by = person_iri
+    msg = "{} made the following changes to {}'s academic profile:\n".format(
+        generated_by,
+        form['display_name'].value)
     statement_iri_results = connection.datastore.query(
         RESEARCH_STMT_IRI.format(
             person_iri))
@@ -874,7 +898,6 @@ def update_profile(**kwargs):
             (iri_subject, 
              rdflib.RDFS.label,
              rdflib.Literal(fast_label, lang="en")))
-    msg = "See attached profile.ttl for updated RDF"
     profile.update(msg)
     return {"message": msg,
             "status": True}
