@@ -7,77 +7,77 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<b16712730> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b1671273~s5> a schema:CreativeWork ;
     bf:note ""@en ;
     schema:abstract ""@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2003" ;
     schema:name "Sound Recording: Along these lines"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b1671273~s5> ;
     cite:authorString "David Mason, Dana Gioia"@en .
 
-<b17145302> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b1714530~s5> a schema:CreativeWork ;
     bf:note ""@en ;
     schema:abstract ""@en ;
     schema:author <http://catalog.coloradocollege.edu/b4a4c082-b0e1-11e6-9354-005056c00008> ;
     schema:datePublished "2005" ;
     schema:name "Sound Recording: Cleanness"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b1714530~s5> ;
     cite:authorString "Regula Meyer Evitt, Michael Calabrese, Troy K. Sales, Chaucer Studio"@en .
 
-<b17749414> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b1774941~s5> a schema:CreativeWork ;
     bf:note ""@en ;
     schema:abstract ""@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2004" ;
     schema:name "Score: Swimmers on the shore : for baritone voice and piano"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b1774941~s5> ;
     cite:authorString "Lori Laitman, David Mason"@en .
 
-<b24915920> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b2491592~s5> a schema:CreativeWork ;
     bf:note ""@en ;
     schema:abstract ""@en ;
     schema:author <http://catalog.coloradocollege.edu/b4a4c082-b0e1-11e6-9354-005056c00008> ;
     schema:datePublished "2016" ;
     schema:name "Sound Recording: The Parson's Prologue and Tale and Chaucer's Retraction"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b2491592~s5> ;
     cite:authorString "Geoffrey Chaucer, Regula Evitt, Paul Thomas, Troy Sales, Chaucer Studio"@en .
 
-<b25630647> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b2563064~s5> a schema:CreativeWork ;
     bf:note ""@en ;
     schema:abstract ""@en ;
     schema:author <http://catalog.coloradocollege.edu/80a32d4c-b0f1-11e6-ade9-005056c00008> ;
     schema:datePublished "2005" ;
     schema:name "Score: Zusammenhang : for solo bass clarinet, with piano resonance"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b2563064~s5> ;
     cite:authorString "Jonathan Scott Lee"@en .
 
-<b25665133> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b2566513~s5> a schema:CreativeWork ;
     bf:note ""@en ;
     schema:abstract ""@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2016" ;
     schema:name "Sound Recording: The scarlet letter"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b25665133~s5> ;
     cite:authorString "Lori Laitman, David Mason, Laura Claycomb, Margaret Gawrysiak, Dominic Armstrong, Kyle Knapp, Malcolm Mackenzie, Daniel Belcher, Ari Pelto, Opera Colorado, Opera Colorado"@en .
 
-<b25715380> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b2571538~s5> a schema:CreativeWork ;
     bf:note "After Life imagines a post-mortem reunion of Pablo Picasso and Gertrude Stein. Stein believes her beloved Alice B. Toklas has conjured her back to life, while PIcasso wonders which of his many lovers has called him up from the abyss...."@en ;
     schema:abstract "After Life imagines a post-mortem reunion of Pablo Picasso and Gertrude Stein. Stein believes her beloved Alice B. Toklas has conjured her back to life, while PIcasso wonders which of his many lovers has called him up from the abyss...."@en ;
     schema:author <http://catalog.coloradocollege.edu/b67a2bc8-b0e1-11e6-8fff-005056c00008> ;
     schema:datePublished "2017" ;
     schema:name "Libretto: After life : chamber opera in one act"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b2571538~s5> ;
     cite:authorString "David Mason"@en .
 
-<b25819471> a schema:CreativeWork ;
+<https://tiger.coloradocollege.edu/record=b2581947~s5> a schema:CreativeWork ;
     bf:note "An array of printed materials and pieces, chiefly broadsides, that were in the original exhibition in Colorado College's Coburn Gallery from March 27 to April 17, 2017. Amplify & Multiply presents the art of resistance---the varied means in which activism has been channeled into visual expression in the fight against racism, white supremacy, misogyny and other forms of oppression. Over 150 artists, from seven different countries (the United States, Australia, New Zealand, Mexico, the United Kingdom, Canada, and Poland), contributed pieces for this exhibit"@en ;
     schema:abstract "An array of printed materials and pieces, chiefly broadsides, that were in the original exhibition in Colorado College's Coburn Gallery from March 27 to April 17, 2017. Amplify & Multiply presents the art of resistance---the varied means in which activism has been channeled into visual expression in the fight against racism, white supremacy, misogyny and other forms of oppression. Over 150 artists, from seven different countries (the United States, Australia, New Zealand, Mexico, the United Kingdom, Canada, and Poland), contributed pieces for this exhibit"@en ;
     schema:author <http://catalog.coloradocollege.edu/f4b1701c-3699-11e8-944c-a41f7283f8d4>,
         <https://orcid.org/0000-0002-5352-9886> ;
     schema:datePublished "" ;
     schema:name "Exhibition: Amplify & Multiply : Recent Printed Activist Ephemera"@en ;
-    schema:url <> ;
+    schema:url <https://tiger.coloradocollege.edu/record=b2581947~s5> ;
     cite:authorString "Nethery Wylie, Han Sayles, Peyton Davis, Laura Ben Amots, Tom Leech, Frank Brannon, Emily K. Larned, Kyle Schlesinger, Jessy Randall, Bridget Elmer, Lucy Holtsnider, Aaron Cohick, Press at Colorado Colleg"@en .
 
 <http://catalog.coloradocollege.edu/000f4c5d-3d0f-11e8-8f0e-a41f7283f8d4> a schema:ScholarlyArticle ;

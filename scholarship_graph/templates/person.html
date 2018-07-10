@@ -44,7 +44,7 @@
                 {% if not loop.last %},{% endif %}
             {% endfor %}
 		
-                {% if info.citations|length > 0 or info.book_citations|length > 0 or info.book_chapter_citations|length > 0 %}
+                {% if info.citations|length > 0 or info.book_citations|length > 0 or info.book_chapter_citations|length > 0 or info.creative_work_cations|length > 0 %}
 		<div style="margin-top:10px; border-top:#d09b2c solid 2px;">
 		<h3>Recent Works</h3>
 		          {% if info.citations|length > 0 %}
@@ -92,6 +92,19 @@
 		{% if 'provisionActivityStatement' in row %}{{ row.provisionActivityStatement.value }}.{% endif %}
 		</p>
 		{% endfor %}
+		</div>
+		        {% endif %}
+				{% if info.creative_work_citations|length > 0 %}		
+		<h4>Other works</h4>
+		<p style="font-style:italic;">Creative and scholarly works such as websites, blogs, musical scores, audio recordings, and art pieces.</p>
+		<div style="margin:10px; border-bottom:#d09b2c solid 2px;">
+		{% for row in info.creative_work_citations %}
+		<p>
+		{{ row|creative_work_title_filter|safe }}
+		{% if 'publicationDate' in row %}{{ row.publicationDate.value }}.{% endif %}
+		</p>
+		{% endfor %}
+
 		</div>
 		        {% endif %}
 		</div>

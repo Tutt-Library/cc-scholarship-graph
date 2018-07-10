@@ -35,7 +35,7 @@ from jinja2 import contextfilter
 from .forms import ProfileForm, SearchForm, ArticleForm, BookForm, BookChapterForm
 from github import Github
 from .sparql import add_qualified_generation, add_qualified_revision
-from .sparql import CITATION, BOOK_CITATION,BOOK_CHAPTER_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
+from .sparql import CITATION, BOOK_CITATION,BOOK_CHAPTER_CITATION,CREATIVE_WORK_CITATION,EMAIL_LOOKUP, ORG_INFO, ORG_LISTING, ORG_PEOPLE
 from .sparql import PERSON_HISTORY, PERSON_INFO, PERSON_LABEL, PREFIX, PROFILE
 from .sparql import RESEARCH_STMT, SUBJECTS, SUBJECTS_IRI
 from .sparql import COUNT_ARTICLES, COUNT_BOOKS, COUNT_JOURNALS, COUNT_ORGS, COUNT_PEOPLE, COUNT_CHAPTERS
@@ -363,7 +363,8 @@ def person_view():
     person_info = {"url": person_iri,
                    "citations":[],
                    "book_citations": [],
-                   "book_chapter_citations": []}
+                   "book_chapter_citations": [],
+                   "creative_work_citations": []}
     sparql = PERSON_INFO.format(person_iri)
     results = CONNECTION.datastore.query(sparql)
     for row in results:
@@ -389,6 +390,11 @@ def person_view():
     book_chapter_citations_result = CONNECTION.datastore.query(book_chapter_citations_sparql)
     for row in book_chapter_citations_result:
         person_info["book_chapter_citations"].append(row)
+
+    creative_work_citations_sparql = CREATIVE_WORK_CITATION.format(person_iri)
+    creative_work_citations_result = CONNECTION.datastore.query(creative_work_citations_sparql)
+    for row in creative_work_citations_result:
+        person_info["creative_work_citations"].append(row)
     
     subjects = CONNECTION.datastore.query(
         SUBJECTS.format(email))
@@ -791,6 +797,24 @@ def book_title(book_citation):
         title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
     #elif book_citation["url"]["value"] != None and book_citation["url"]["value"] != "":
     #    title_string = "<a href='" + book_citation["url"]["value"] + ",target= 'blank'>" + title + "</a>"
+    else:
+        title_string = title
+    return(title_string)
+
+@app.template_filter("creative_work_title_filter")
+def creative_work_title(creative_work_citation):
+    title_string=""
+    title = creative_work_citation["title"]["value"]
+    uri = str(creative_work_citation["creative_work"]["value"])
+    if "url" in creative_work_citation.keys():
+        if creative_work_citation["url"]["value"] != None and creative_work_citation["url"]["value"] != "":
+            url = str(creative_work_citation["url"]["value"])
+        else:
+            url = ""
+    if uri.startswith("https://tiger.coloradocollege.edu/"):
+        title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
+    elif uri.startswith("http"):
+        title_string = "<a href='" + uri + "', target='_blank'>" + title + "</a>"
     else:
         title_string = title
     return(title_string)

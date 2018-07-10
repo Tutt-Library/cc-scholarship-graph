@@ -116,6 +116,20 @@ WHERE {{
 	OPTIONAL {{?book_chapter schema:pageEnd ?page_end .}}
 	}}
 	ORDER BY DESC(?publicationDate)"""
+
+CREATIVE_WORK_CITATION = PREFIX + """
+SELECT DISTINCT ?creative_work ?author ?title ?publicationDate ?abstract ?note ?url
+WHERE {{
+	?creative_work rdf:type schema:CreativeWork ;
+                 schema:name ?title ;
+	         schema:author ?author .
+	FILTER(<{0}> = ?author)
+	OPTIONAL {{?creative_work schema:datePublished ?publicationDate.}}
+	OPTIONAL {{?creative_work schema:abstract ?abstract.}}
+	OPTIONAL {{?creative_work bf:note ?note.}}
+	OPTIONAL {{?creative_work schema:url ?url.}}
+	}}
+"""
 	
 COUNT_ARTICLES = PREFIX + """
 SELECT (COUNT(?article) as ?count)
