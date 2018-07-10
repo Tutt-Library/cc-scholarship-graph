@@ -10,6 +10,7 @@ import os
 import pprint
 import smtplib
 import subprocess
+import threading
 import uuid
 
 from email.mime.multipart import MIMEMultipart
@@ -178,13 +179,131 @@ class GitProfile(object):
             click.echo(result.returncode, result.stdout)
         config_mgr.conns.datastore.mgr.reset()
 
+class ProfileUpdateThread(threading.Thread):
+
+    def __init__(self, **kwargs):
+        threading.Thread.__init__(self)
+        config = kwargs.get("config")
+        cc_github = Github(config.get("GITHUB_USER"),
+                           config.get("GITHUB_PWD"))
+        self.tutt_github = cc_github.get_organization("Tutt-Library")
+        self.statement_msg = kwargs.get("msg")
+        self.person_iri = kwargs.get("person")
+        self.research_statements = rdflib.Graph()
+        self.fast_subjects = rdflib.Graph()
+        self.scholarship_repo = self.tutt_github.get_repo("cc-scholarship-graph")
+        for content in self.scholarship_repo.get_dir_contents("/data/"):
+            raw_turtle = self.__get_content__("scholarship_repo",
+                                              content)
+            if content.name.startswith("cc-research-statements"):
+                self.research_statements_git = content
+                self.research_statements.parse(
+                    data=raw_turtle,
+                    format='turtle')
+            if content.name.startswith("cc-fast-subjects"):
+                self.fast_subjects_git = content
+                self.fast_subjects.parse(
+                    data=raw_turtle,
+                    format='turtle')
+
+
+    def __save_graph__(self, **kwargs):
+        file_path = kwargs.get("file_path")
+        branch = kwargs.get("branch")
+        graph_name = kwargs.get("graph_name")
+        graph = getattr(self, graph_name)
+        message = kwargs.get("message", "Updating {}".format(graph_name))
+        git_graph = getattr(self, "{}_git".format(graph_name))
+        if branch:
+            self.scholarship_repo.update_file(file_path,
+                message,
+                graph.serialize(format='turtle'),
+                git_graph.sha,
+                branch=branch)
+        else:
+            self.scholarship_repo.update_file(file_path,
+                message,
+                graph.serialize(format='turtle'),
+                git_graph.sha)
+
+    def __update_fast_subjects__(self):
+        existing_subjects, new_subjects = set(), set() 
+        existing_stmt = self.research_statements.value(
+            predicate=SCHEMA.accountablePerson,
+            object=self.person_iri)
+        for row in self.research_statements.objects(
+            subject=existing_stmt,
+            predicate=SCHEMA.about):
+            existing_stmt.add(row)
+        for fast_heading in self.profile.graph.objects(
+            subject=existing_stmt,
+            predicate=SCHEMA.about):
+            new_subjects.add(fast_heading)
+        for subject in list(existing_subjects.difference(new_subjects)):
+            self.research_statements.remove((existing_stmt,
+                                             SCHEMA.about,
+                                             subject))
+        for subject in list(new_subjects.difference(existing_subjects)):
+            # Add new subject to research statements and fast subjects
+            self.research_statements.add((existing_stmt,
+                                          SCHEMA.about,
+                                          subject))
+            self.fast_subjects.add((subject, 
+                                    rdflib.RDF.type, 
+                                    BF.Topic))
+            subject_label = self.profile.graph.value(subject=subject,
+                                                     predicate=rdflib.RDFS.label)
+            if subject_label is not None:
+                self.fast_subjects.add((subject,
+                                        rdflib.RDFS.label,
+                                        subject_label))
+        
+ 
+            
+
+    def __update_research_statements__(self):
+        existing_stmt = self.research_statements.value(
+            predicate=SCHEMA.accountablePerson,
+            object=self.person_iri)
+        current_description = self.research_statements.value(
+            subject=existing_stmt,
+            predicate=SCHEMA.description)
+        new_description = self.profile.graph.value(
+            subject=existing_stmt,
+            predicate=SCHEMA.description)
+        if new_description is not None \
+           and str(current_description) != str(new_description):
+           self.research_statements.remove((existing_stmt,
+                                            SCHEMA.description,
+                                            current_description))
+           self.research_statements.add((existing_stmt,
+                                         SCHEMA.description,
+                                         new_description))
+
+
+
+    def run(self):
+        # Function iterates and commits any changes to
+        self.__update_fast_subjects__()
+        self.__update_research_statements__() 
+        self.__save_graph__(
+            file_path="/data/cc-research-statements.ttl",
+            graph_name="research_statements",
+            message=self.statement_msg)
+        self.__save_graph__(
+            file_path ="/data/cc-fast-subjects.ttl",
+            graph_name="fast_subjects",
+            message="Fast subject added")
+
+
 class EmailProfile(object):
     """Simple Email Profile class that creates a local RDF graph for new 
     profile or editing profile that is send via email to the Administrators
     for review."""
 
     def __init__(self, config):
-        self.triplestore_url = config.get("TRIPLESTORE_URL")
+        self.config = config
+        self.triplestore_url = self.config.get("TRIPLESTORE_URL")
         self.graph = rdflib.Graph()
         self.graph.namespace_manager.bind("bf", BF)
         self.graph.namespace_manager.bind("cite", CITE)
@@ -345,10 +464,12 @@ class EmailProfile(object):
                         CITE.citationType,
                         rdflib.Literal(citation_type)))
         if "author" in work_form and len(work_form.author.data) > 0:
+            self.person_iri = rdflib.URIRef(work_form.author.data)
             self.graph.add((work_iri,
                 SCHEMA.author,
-                rdflib.URIRef(work_form.author.data)))
+                self.person_iri))
         elif generated_by:
+            self.person_iri = generated_by
             self.graph.add((work_iri,
                 SCHEMA.author,
                 generated_by))
@@ -394,6 +515,13 @@ class EmailProfile(object):
     
     def update(self, message):
         """Edits existing profile"""
+        global BACKGROUND_THREAD
+        BACKGROUND_THREAD = ProfileUpdateThread(
+            config=self.config,
+            msg=message,
+            person_iri=self.person_iri,
+            profile=self)
+        BACKGROUND_THREAD.start()
         self.__send_email__("Updating Profile", message)
 
 
@@ -834,7 +962,7 @@ def update_profile(**kwargs):
         generated_by = person_iri
     msg = "{} made the following changes to {}'s academic profile:\n".format(
         generated_by,
-        form['display_name'].value)
+        form['label'])
     statement_iri_results = connection.datastore.query(
         RESEARCH_STMT_IRI.format(
             person_iri))
