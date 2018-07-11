@@ -24,6 +24,9 @@
 <http://id.worldcat.org/fast/01896555> a bf:Topic ;
     rdfs:label "Linked data"@en .
 
+<http://id.worldcat.org/fast/01896579> a bf:Topic ;
+    rdfs:label "Non-relational databases"@en .
+
 <http://id.worldcat.org/fast/01896579_4.2> a bf:Topic ;
     rdfs:label "NoSQL databases"@en .
 
