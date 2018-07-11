@@ -191,10 +191,14 @@ class ProfileUpdateThread(threading.Thread):
         self.person_iri = kwargs.get("person")
         self.research_statements = rdflib.Graph()
         self.fast_subjects = rdflib.Graph()
+        self.profile = kwargs.get("profile")
         self.scholarship_repo = self.tutt_github.get_repo("cc-scholarship-graph")
         for content in self.scholarship_repo.get_dir_contents("/data/"):
-            raw_turtle = self.__get_content__("scholarship_repo",
-                                              content)
+            try:
+                raw_turtle = content.decoded_content
+            except GithubException:
+                blob = self.scholarship_repo.get_git_blob(content.sha)
+                raw_turtle = base64.b64decode(blob.content)
             if content.name.startswith("cc-research-statements"):
                 self.research_statements_git = content
                 self.research_statements.parse(
@@ -234,7 +238,7 @@ class ProfileUpdateThread(threading.Thread):
         for row in self.research_statements.objects(
             subject=existing_stmt,
             predicate=SCHEMA.about):
-            existing_stmt.add(row)
+            existing_subjects.add(row)
         for fast_heading in self.profile.graph.objects(
             subject=existing_stmt,
             predicate=SCHEMA.about):
@@ -301,7 +305,7 @@ class EmailProfile(object):
     profile or editing profile that is send via email to the Administrators
     for review."""
 
-    def __init__(self, config):
+    def __init__(self, config, person_iri):
         self.config = config
         self.triplestore_url = self.config.get("TRIPLESTORE_URL")
         self.graph = rdflib.Graph()
@@ -311,6 +315,7 @@ class EmailProfile(object):
         self.graph.namespace_manager.bind("prov", PROV)
         self.email = config.get("EMAIL")
         self.recipients = config.get("ADMINS")
+        self.person_iri = person_iri
 
 
     def __send_email__(self, subject, body):
@@ -519,7 +524,7 @@ class EmailProfile(object):
         BACKGROUND_THREAD = ProfileUpdateThread(
             config=self.config,
             msg=message,
-            person_iri=self.person_iri,
+            person=self.person_iri,
             profile=self)
         BACKGROUND_THREAD.start()
         self.__send_email__("Updating Profile", message)
@@ -949,9 +954,9 @@ def update_profile(**kwargs):
     SCHEMA = config_manager.nsm.schema
     form = kwargs.get('form')
     current_user = kwargs.get("current_user")
-    profile = EmailProfile(config_manager) 
     output = ''
     person_iri = rdflib.URIRef(form.get("iri"))
+    profile = EmailProfile(config_manager, person_iri) 
     msg = ""
     results = connection.datastore.query(
         EMAIL_LOOKUP.format(
