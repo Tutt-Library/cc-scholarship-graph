@@ -1413,10 +1413,10 @@
 <http://catalog.coloradocollege.edu/376894d2-1c16-11e8-9022-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Jeremy Nelson"@en ;
     schema:about <http://id.worldcat.org/fast/00946584>,
+        <http://id.worldcat.org/fast/00997669>,
         <http://id.worldcat.org/fast/01084736>,
         <http://id.worldcat.org/fast/01086226>,
         <http://id.worldcat.org/fast/01896555>,
-        <http://id.worldcat.org/fast/01896579>,
         <http://id.worldcat.org/fast/01896579_4.2>,
         <http://id.worldcat.org/fast/01920455> ;
     schema:accountablePerson <http://orcid.org/0000-0002-7543-3893> ;
