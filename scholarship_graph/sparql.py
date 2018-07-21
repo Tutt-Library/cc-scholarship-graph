@@ -73,9 +73,9 @@ WHERE {{
 	OPTIONAL {{?article schema:pageStart ?page_start .}}
 	OPTIONAL {{?article schema:pageEnd ?page_end .}}
 	FILTER(<{0}> = ?author)
-
-	}}
-	ORDER BY DESC(?publicationDate)"""
+}}
+	
+	ORDER BY DESC(?datePublished)"""
 
 
 BOOK_CITATION = PREFIX + """
