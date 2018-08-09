@@ -43,7 +43,7 @@
                 <a href="mailto:{{ row }}">{{ row }}</a>
                 {% if not loop.last %},{% endif %}
             {% endfor %}
-		
+			{# 
                 {% if info.citations|length > 0 or info.book_citations|length > 0 or info.book_chapter_citations|length > 0 or info.creative_work_cations|length > 0 %}
 		<div style="margin-top:10px; border-top:#d09b2c solid 2px;">
 		<h3>Recent Works</h3>
@@ -111,7 +111,9 @@
 						{% endif %}
 
         </div>
+		#}
     </div>
+
 </div>
 {% endblock main %}
 
