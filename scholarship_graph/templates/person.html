@@ -21,7 +21,7 @@
                     {{ info.url|get_statement }}
                 </div>
             </article>
-            {% if info.subjects %}
+            {#{% if info.subjects %}
             <h3>FAST Subjects <sup><a href="#about-fast" data-target="#about-fast" data-toggle="modal">
             <i class="fas fa-info-circle fa-sm"></i>
         </a></sup></h3>
@@ -31,7 +31,7 @@
                     {{ subject.label.value }}</a></li>
             {% endfor %}
             </ul>
-            {% endif %}
+            {% endif %}#}
             <h3>
         </div>
         <div class="col-md-6">
@@ -116,7 +116,8 @@
 
 </div>
 {% endblock main %}
-
+{#
 {% block dialogs %}
 {% include 'about-fast-dlg.html' %}
 {% endblock %}
+#}
