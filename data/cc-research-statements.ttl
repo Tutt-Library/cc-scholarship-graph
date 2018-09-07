@@ -1472,7 +1472,7 @@
 <http://catalog.coloradocollege.edu/4fe9ebe6-4319-11e8-9292-001fc69cf6df> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Jonathan Driscoll"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/4fe99dba-4319-11e8-83ca-001fc69cf6df> ;
-    schema:description "Test statement."@en ;
+    schema:description "Test"@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2018-04-18T15:01:02.878386"^^xsd:dateTime ;
             prov:wasGeneratedBy <http://catalog.coloradocollege.edu/4fe99dba-4319-11e8-83ca-001fc69cf6df> ] .
