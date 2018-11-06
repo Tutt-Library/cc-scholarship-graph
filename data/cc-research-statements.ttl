@@ -1341,9 +1341,7 @@
 <http://catalog.coloradocollege.edu/09592ee4-db66-11e7-b2ba-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Manya Whitaker"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/08067c6c-b0e1-11e6-8a0c-005056c00008> ;
-    schema:description """Dr. Manya Whitaker is  a developmental educational psychologist with expertise in social and political issues in education. Her courses include Urban Education, Diversity & Equity in Education, and Educational Psychology, among others. The majority of her research is focused on how teacher educators can change teachers’ deficit-oriented beliefs about culturally and linguistically diverse students so that teachers can a) see the need for, and value in, multicultural teaching practices, and b) be motivated and willing to implement multicultural teaching practices.  She is the author of Learning from the Inside-Out: Child Development and School Choice and co-editor of Counternarratives from Women of Color Academics.  \r
-\r
-"""@en ;
+    schema:description "Dr. Manya Whitaker is a developmental educational psychologist with expertise in social and political issues in education. Her courses include Urban Education, Diversity & Equity in Education, and Educational Psychology, among others. The majority of her research is focused on how teacher educators can change teachers’ deficit-oriented beliefs about culturally and linguistically diverse students so that teachers can a) see the need for, and value in, multicultural teaching practices, and b) be motivated and willing to implement multicultural teaching practices.  She is the author of Learning from the Inside-Out: Child Development and School Choice and co-editor of Counternarratives from Women of Color Academics. "@en ;
     prov:qualifiedGeneration [ a prov:Generation ;
             prov:atTime "2017-12-07T15:48:14.808126" ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
