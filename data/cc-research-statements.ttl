@@ -650,6 +650,14 @@
             prov:atTime "2017-12-07T15:48:08.103626" ;
             prov:wasGeneratedBy <http://orcid.org/0000-0002-7543-3893> ] .
 
+<http://catalog.coloradocollege.edu/a3500e8a-12d1-11e9-a52a-a41f7283f8d4> a schema:DigitalDocument ;
+    rdfs:label "Research Statement for Scott Ingram"@en ;
+    schema:accountablePerson <http://catalog.coloradocollege.edu/9f469f80-b0dd-11e6-9d4f-005056c00008> ;
+    schema:description "Scott Ingram is an archaeological anthropologist focused on advancing academic and public understanding of climate and human behavior relationships and regional depopulations in the North American Southwest, 1100 to 1500 CE.  He is developing new areas of scholarship toward documenting, describing, and interpreting Colorado's past, ca. 1850 – 1950 CE, enabled by abundant opportunities to engage students in active research on the block plan.  Most aspects of his work involve attention to applications of archaeology to contemporary socio-environmental problems. "@en ;
+    prov:qualifiedGeneration [ a prov:Generation ;
+            prov:atTime "2019-01-07T15:48:08.904626" ;
+            prov:wasGeneratedBy <https://orcid.org/0000-0002-8845-2954> ] .
+					
 <http://catalog.coloradocollege.edu/0560f2a4-db66-11e7-9561-005056c00008> a schema:DigitalDocument ;
     rdfs:label "Research Statement for Robert Jacobs"@en ;
     schema:accountablePerson <http://catalog.coloradocollege.edu/a34607ca-b0f4-11e6-ac87-005056c00008> ;
