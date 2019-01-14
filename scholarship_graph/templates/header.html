@@ -121,7 +121,14 @@
     }
 </style>
 {% endblock %}
-<div class="header container">
+
+<header role="banner">
+        <nav style="background-color: rgb(208, 155, 44); color: #000">
+		<span style="font-size:200%; padding: 10px;">Colorado College</span>
+        </nav>
+    </header>
+
+<!--<div class="header container">
     <div class="row" >
         <div class="col-md-6" style="padding-top: 1em;">
             <img src="{{ url_for('static', filename='img/cc-logo.png') }}" 
@@ -164,8 +171,10 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </div> 
+</div>-->
+
+<!--
 {# START Secondary Navigation #}
 <div class="container-flex cc-bg-gold">
     <div class="container cc-bg-gold">
@@ -250,3 +259,4 @@
             </div>
 {# END Secondary Navigation #}
         </div>
+-->
