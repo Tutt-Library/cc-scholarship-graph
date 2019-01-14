@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Colorado College Scholarly Interests Database</title>
+    <title>Colorado College Scholarship Search Database</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,7 +14,7 @@
     {% block header %}
         {% include 'header.html' %}
         <div class="btn-group float-right mt-1 mr-2">
-            <a href="{{ url_for('home') }}" class="btn btn-primary" alt="Search Scholar Database">
+            <a href="{{ url_for('home') }}" class="btn btn-primary" alt="Search Scholarship">
                 <i class="fas fa-search"></i> Search
             </a>
             {% if not scholar.is_anonymous %}
