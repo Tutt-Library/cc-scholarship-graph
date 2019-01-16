@@ -1,6 +1,145 @@
 {% block more_css %}
 <style>
-    body {
+    
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Montserrat:300,700");
+body {
+  margin:0;
+  font-family: "Crimson Text", serif;
+  background-color: #fff;
+  font-size: 1.15rem;
+}
+#cc-main {
+}
+#cc-main #content, div#cc-main header h1{
+  max-width:1200px;
+  margin:0 auto;
+}
+#cc-main #content {
+  padding-left: 10px;
+}
+#cc-main h1{font-size:32px}
+#cc-main h2{font-size:28px}
+#cc-main h3{font-size:22px}
+#cc-main h4{font-size:19px}
+#cc-main h5{font-size:16px}
+#cc-main h6{font-size:13px}
+
+#cc-main h1,
+#cc-main h2,
+#cc-main h3,
+#cc-main h4,
+#cc-main h5,
+#cc-main h6 {
+  font-family: "Montserrat", sans-serif !important;
+  color: #000;
+  font-weight: bold;
+}
+#cc-main #header-wrapper {
+  overflow: hidden;
+  padding-bottom: 0;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+#cc-main #header {
+  background: rgb(208, 155, 44);
+  border-bottom: none;
+  padding: 0;
+}
+
+#cc-main #header h1 {
+/*   margin: 0 0 0 -16px; */
+}
+
+#cc-main #header h1 a {
+  color: #423c25;
+  display: block;
+  width: 460px;
+  height: 66px;
+  text-decoration: none;
+  background: transparent
+    url(https://www.coloradocollege.edu/global/images/2017/CC-LOGO-Horiz-RGB-Solid-White-Sm.png)
+    no-repeat scroll 0% 0%;
+  text-indent: -999em;
+  margin-left: 0px !important;
+}
+
+#cc-main #header .navigation-toggle {
+    display: none !important;
+}
+
+#cc-main #ContentSearch {
+  display: none;
+}
+#cc-main #content {
+  background-color: #fff;
+}
+#cc-main a {
+    color: #7a6646;
+}
+#cc-main a:hover {
+    color: #812b19;
+}
+#cc-main #content figure {
+    font-size: 1em;
+}
+#cc-main aside.subnavigation {
+  margin: 0 0 30px 0;
+  background: #232323 !important;
+  border: 0;
+  box-shadow: none;
+}
+#cc-main aside.subnavigation .wrapper {
+  border: 0;
+  padding-top: 10px;
+}
+#cc-main aside.subnavigation h3 {
+  font-size: 24px !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  background-color: transparent;
+  text-align: left;
+  margin: 0 0 10px 5px !important;
+}
+
+#cc-main #content aside.subnavigation ul li {
+  list-style-type: none;
+  margin: 0 0 4px 0;
+  padding-left: 3px;
+}
+#cc-main #content aside.subnavigation ul li a {
+    color: #d09d1e;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif !important;
+}
+#cc-main #footer {
+  display: none;
+}
+#cc-main .inline-right {
+  float:right;
+  width:40%;
+  padding: 0 1rem;
+  margin: 0 1rem;
+  border: 1px solid #ddd;
+}
+@media screen and (max-width: 576px) {
+  #content .stage {
+    max-width: 540px;
+  }
+  #cc-main .inline-right {
+    float: none;
+    width: 94%;
+    padding: 0 .5rem;
+    margin: 0;
+  }
+}	
+	
+/* Old style	
+	body {
         background-color: #fff;
     }
 
@@ -16,7 +155,7 @@
         color: #212529;
         font-weight: 800;
     }
-
+*/
     div.library-tabs {
         background-image: url("{{ url_for('static', filename='img/busy-library.jpg') }}");
         height: 75px;
@@ -118,16 +257,21 @@
 
     .main-body {
         background-color: #f1ece5;
-    }
+    } 
+
 </style>
 {% endblock %}
 
-<header role="banner">
-        <nav style="background-color: rgb(208, 155, 44); color: #FFF">
-		<span style="font-size: 36px; font-weight:700; line-height: 57.6px; padding: 20px; font-family: Montserrat; "><a href="https://www.coloradocollege.edu/" style="color:#FFF;text-decoration: none;text-decoration-color:#FFF;text-decoration-line: none;text-decoration-style: solid;">Colorado College</a></span>
-        </nav>
-    </header>
 
+<div id="cc-main style="">
+  <div id="header-wrapper">
+    <header id="header">
+      <div class="stage">
+        <h1 style="background-color: rgb(208,155,44);"><a href="http://www.coloradocollege.edu" ><img src="https://www.coloradocollege.edu/global/images/2017/CC-LOGO-Horiz-RGB-Solid-White-Sm.png"></a></h1>
+      </div>
+    </header>
+  </div>
+  
 <!--<div class="header container">
     <div class="row" >
         <div class="col-md-6" style="padding-top: 1em;">
