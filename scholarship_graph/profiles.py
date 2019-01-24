@@ -280,6 +280,7 @@ class ProfileUpdateThread(threading.Thread):
            self.research_statements.remove((existing_stmt,
                                             SCHEMA.description,
                                             current_description))
+           self.research_statements.replace('"','\"')
            self.research_statements.add((existing_stmt,
                                          SCHEMA.description,
                                          new_description))
