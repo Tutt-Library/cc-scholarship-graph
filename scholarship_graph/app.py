@@ -143,8 +143,8 @@ def server_error(e):
         current_user,
         request.url,
         str(e))
-    if app.config.get("DEBUG"):
-        click.echo(body)
+    #if app.config.get("DEBUG"):
+    #    click.echo(body)
     else:
         __send_email__({"recipients": app.config.get("ADMINS"),
                         "subject": "CC Scholarship 500 Error",
