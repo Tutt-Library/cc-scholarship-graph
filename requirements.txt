@@ -1,5 +1,5 @@
 Flask_Login==0.4.1
-Werkzeug==0.14.1
+werkzeug>=0.15.3
 rdfframework.egg==info
 Flask_WTF==0.14.2
 rdflib==4.2.2
